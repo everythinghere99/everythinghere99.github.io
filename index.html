@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Shree's Store</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Nunito:wght@400;500;600;700&family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <!--
+        EmailJS is intentionally initialized with the ORDER account.
+        Contact email uses its own Public Key directly in emailjs.send().
+    -->
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("rtEfinvD0NNpYxlO2");
+        })();
+    </script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="display: flex; flex-direction: column; min-height: 100vh;">
+
+    <header>
+        <div class="header-top">
+            <div class="logo" style="-webkit-tap-highlight-color: transparent;">
+                <span class="logo-text">Shree's Store <i class="fa-regular fa-heart logo-heart"></i></span>
+            </div>
+
+            <div class="header-right">
+                <i class="fa-solid fa-magnifying-glass"
+                   style="cursor: pointer;"
+                   onclick="toggleSearchModal()"></i>
+
+                <div style="position: relative; cursor: pointer;"
+                     onclick="toggleCartDrawer()">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="cart-badge" id="cart-count">0</span>
+                </div>
+            </div>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a id="nav-home" onclick="switchPage('home-page', this)" class="active">Home</a></li>
+                <li><a id="nav-finds" onclick="switchPage('finds-page', this)">Finds</a></li>
+                <li><a id="nav-closet" onclick="switchPage('closet-page', this)">Closet</a></li>
+                <li><a id="nav-categories" onclick="switchPage('categories-page', this)">Categories</a></li>
+                <li><a id="nav-about" onclick="switchPage('about-page', this)">About Us</a></li>
+                <li><a id="nav-contact" onclick="switchPage('contact-page', this)">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- SEARCH OVERLAY -->
+    <div id="search-modal" class="search-modal-overlay" style="display: none;">
+        <div class="search-modal-content">
+            <div class="search-header-row">
+                <h3>Search Cozy Treasures ✨</h3>
+                <span class="close-search" onclick="toggleSearchModal()">&times;</span>
+            </div>
+
+            <input type="text"
+                   id="search-input"
+                   placeholder="Search for dresses, kurtis, shoes..."
+                   onkeyup="performSearch()">
+
+            <div id="search-results-container" class="search-results-grid">
+                <p style="text-align: center; color: var(--text-light); font-size: 13px; grid-column: span 4; margin-top: 20px;">
+                    Type something to find your favorite picks 🤍
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- TOAST -->
+    <div class="cozy-toast" id="cozy-toast">
+        <img id="toast-img" src="" alt="product">
+        <div>
+            <div style="font-weight:700;" id="toast-title">Added!</div>
+            <div style="font-size:11px; color:var(--text-light);">
+                Successfully added to bag 🤍
+            </div>
+        </div>
+    </div>
+
+    <!-- CART -->
+    <div class="cart-drawer" id="cart-drawer">
+        <div class="cart-header">
+            <h3>Your Shopping Bag 🛍️</h3>
+            <span class="close-cart" onclick="toggleCartDrawer()">&times;</span>
+        </div>
+
+        <div class="cart-body" id="cart-items-container">
+            <p style="text-align: center; color: var(--text-light); margin-top: 40px;">
+                Your cart is empty!
+            </p>
+        </div>
+
+        <div class="cart-footer" id="cart-footer-section" style="display: none;">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total-price">₹0</span>
+            </div>
+
+            <button class="btn-checkout" onclick="openCheckoutPage()">
+                Proceed to Checkout 🤍
+            </button>
+        </div>
+    </div>
+
+    <!-- CHECKOUT -->
+    <div id="checkout-page" class="page-section">
+        <div class="section-wrapper">
+            <div class="checkout-container">
+
+                <button class="btn-back" onclick="toggleCartDrawer()">
+                    <i class="fa-solid fa-arrow-left"></i> Back to Cart
+                </button>
+
+                <h2>Checkout Details ✨</h2>
+
+                <form id="order-form" onsubmit="handlePlaceOrder(event)">
+
+                    <div class="form-group">
+                        <label>Full Name *</label>
+                        <input type="text"
+                               id="chk-name"
+                               placeholder="Enter your full name"
+                               required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Email Address *</label>
+                        <input type="email"
+                               id="chk-email"
+                               placeholder="Enter your email address"
+                               required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Mobile Number *</label>
+                        <input type="tel"
+                               id="chk-phone"
+                               placeholder="Enter 10-digit mobile number"
+                               pattern="[0-9]{10}"
+                               required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Delivery Address *</label>
+                        <textarea id="chk-address"
+                                  rows="3"
+                                  placeholder="House No, Street, Landmark, City"
+                                  required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Pincode *</label>
+                        <input type="text"
+                               id="chk-pincode"
+                               placeholder="Enter 6-digit Pincode"
+                               pattern="[0-9]{6}"
+                               maxlength="6"
+                               required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Payment Method *</label>
+                        <select id="chk-payment" required>
+                            <option value="cod">
+                                Cash on Delivery (COD)
+                            </option>
+                        </select>
+                    </div>
+
+                    <button type="submit"
+                            class="btn-place-order"
+                            id="place-order-btn">
+                        Place Order 🚀
+                    </button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- SUCCESS PAGE -->
+    <div id="success-page" class="page-section">
+        <div class="section-wrapper">
+            <div class="success-box">
+                <i class="fa-solid fa-circle-check"></i>
+
+                <h2>Order Placed Successfully! 🎉</h2>
+
+                <p id="success-message">
+                    Thank you for shopping with Shree's Store.
+                    Your order has been placed successfully.
+                </p>
+
+                <button class="btn-small"
+                        style="padding: 10px 20px; font-size: 14px;"
+                        onclick="switchPage('home-page', document.getElementById('nav-home'))">
+                    Continue Shopping 🤍
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- HOME -->
+    <div id="home-page" class="page-section active-page">
+
+        <section class="hero">
+            <div class="hero-banner-link"
+                 onclick="switchPage('finds-page', document.getElementById('nav-finds'))">
+
+                <img src="https://i.ibb.co/TxZ0HKy9/1784994471079.png"
+                     alt="Special Offers Banner">
+
+            </div>
+        </section>
+
+        <section class="section-wrapper">
+
+            <h2 class="section-title">
+                Featured Products
+                <i class="fa-regular fa-heart"></i>
+            </h2>
+
+            <p class="section-subtitle">
+                Handpicked by Shree for you
+            </p>
+
+            <div class="product-grid" id="home-products"></div>
+
+        </section>
+
+        <section class="category-section">
+
+            <h2 class="section-title">
+                Shop by
+                <i class="fa-regular fa-heart" style="margin: 0 2px;"></i>
+                Category
+            </h2>
+
+            <p class="section-subtitle">
+                Everything you need, all in one place
+            </p>
+
+            <div class="category-grid">
+
+                <div class="category-card"
+                     onclick="switchPage('categories-page', document.getElementById('nav-categories'))">
+
+                    <img src="https://i.ibb.co/VYfW70F4/file-00000000becc8208891c44f11d4fb2d6-1.png"
+                         alt="Study Essentials">
+
+                </div>
+
+                <div class="category-card"
+                     onclick="switchPage('categories-page', document.getElementById('nav-categories'))">
+
+                    <img src="https://i.ibb.co/chhFJTyX/file-00000000becc8208891c44f11d4fb2d6-2.png"
+                         alt="Room Decor">
+
+                </div>
+
+                <div class="category-card"
+                     onclick="switchPage('categories-page', document.getElementById('nav-categories'))">
+
+                    <img src="https://i.ibb.co/gMX8kbVq/file-00000000becc8208891c44f11d4fb2d6-3.png"
+                         alt="Cute Accessories">
+
+                </div>
+
+                <div class="category-card"
+                     onclick="switchPage('categories-page', document.getElementById('nav-categories'))">
+
+                    <img src="https://i.ibb.co/pB8vZrZy/file-00000000becc8208891c44f11d4fb2d6-4.png"
+                         alt="Tech Gadgets">
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="why-choose-section">
+
+            <h2 class="section-title desktop-heading">
+                Why Choose Shree's Store?
+                <i class="fa-regular fa-heart"></i>
+            </h2>
+
+            <h2 class="section-title mobile-heading">
+                Why Choose Shree's
+                <i class="fa-regular fa-heart logo-heart" style="margin:0 2px;"></i>
+                Store?
+            </h2>
+
+            <div class="why-choose-grid">
+
+                <div class="why-choose-item">
+                    <div class="why-icon-circle circle-pink">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <div class="why-text-content">
+                        <span class="title">Handpicked Products</span>
+                    </div>
+                </div>
+
+                <div class="why-choose-item">
+                    <div class="why-icon-circle circle-green">
+                        <i class="fa-solid fa-tag"></i>
+                    </div>
+                    <div class="why-text-content">
+                        <span class="title">Best Deals</span>
+                    </div>
+                </div>
+
+                <div class="why-choose-item">
+                    <div class="why-icon-circle circle-purple">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="why-text-content">
+                        <span class="title">Trusted Recommendations</span>
+                    </div>
+                </div>
+
+                <div class="why-choose-item">
+                    <div class="why-icon-circle circle-teal">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <div class="why-text-content">
+                        <span class="title">Easy & Safe Shopping</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
+    <!-- FINDS -->
+    <div id="finds-page" class="page-section products-bg">
+
+        <section class="section-wrapper">
+
+            <h2 class="section-title">
+                Shree's Finds
+                <i class="fa-solid fa-wand-magic-sparkles"
+                   style="color: var(--accent-pink);"></i>
+            </h2>
+
+            <p class="section-subtitle">
+                Swipe through images or tap to view in full size
+            </p>
+
+            <div class="product-grid" id="finds-products"></div>
+
+        </section>
+
+    </div>
+
+    <!-- CLOSET -->
+    <div id="closet-page" class="page-section products-bg">
+
+        <section class="section-wrapper">
+
+            <h2 class="section-title">
+                Shree's Closet
+                <i class="fa-regular fa-heart"
+                   style="color: var(--accent-pink);"></i>
+            </h2>
+
+            <p class="section-subtitle">
+                Aesthetic picks curated specially for your cozy space 🤍
+            </p>
+
+            <div class="product-grid" id="closet-products"></div>
+
+        </section>
+
+    </div>
+
+    <!-- PRODUCT DETAIL -->
+    <div id="product-detail-page" class="page-section">
+        <div class="static-page-wrapper" id="detail-wrapper"></div>
+    </div>
+
+    <!-- CATEGORIES -->
+    <div id="categories-page" class="page-section">
+
+        <div class="static-page-wrapper">
+
+            <h2>Explore Categories 🌿</h2>
+
+            <p style="text-align: center; color: var(--text-light); margin-bottom: 35px;">
+                Handpicked aesthetic collections curated specially for your cozy space.
+            </p>
+
+            <div class="cat-detail-grid">
+
+                <div class="cat-detail-card"
+                     onclick="switchPage('finds-page', document.getElementById('nav-finds'))"
+                     style="cursor: pointer;">
+
+                    <img src="https://i.ibb.co/VYfW70F4/file-00000000becc8208891c44f11d4fb2d6-1.png"
+                         alt="Study">
+
+                    <div>
+                        <h3>Study Essentials</h3>
+                        <p>
+                            Lamps, aesthetic planners, cute pens & organizers for productive study vibes.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="cat-detail-card"
+                     onclick="switchPage('finds-page', document.getElementById('nav-finds'))"
+                     style="cursor: pointer;">
+
+                    <img src="https://i.ibb.co/chhFJTyX/file-00000000becc8208891c44f11d4fb2d6-2.png"
+                         alt="Decor">
+
+                    <div>
+                        <h3>Room Decor</h3>
+                        <p>
+                            Cozy lights, artificial vases, and aesthetic touches to transform your room.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="cat-detail-card"
+                     onclick="switchPage('finds-page', document.getElementById('nav-finds'))"
+                     style="cursor: pointer;">
+
+                    <img src="https://i.ibb.co/gMX8kbVq/file-00000000becc8208891c44f11d4fb2d6-3.png"
+                         alt="Accessories">
+
+                    <div>
+                        <h3>Cute Accessories</h3>
+                        <p>
+                            Adorable plushies, keychains, and tiny details that bring joy.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="cat-detail-card"
+                     onclick="switchPage('finds-page', document.getElementById('nav-finds'))"
+                     style="cursor: pointer;">
+
+                    <img src="https://i.ibb.co/pB8vZrZy/file-00000000becc8208891c44f11d4fb2d6-4.png"
+                         alt="Tech">
+
+                    <div>
+                        <h3>Tech Gadgets</h3>
+                        <p>
+                            Pastel headphones, mini instant cameras, and aesthetic desk tech.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+    <div id="about-page" class="page-section">
+
+        <div class="static-page-wrapper">
+
+            <h2>About Us 🤍</h2>
+
+            <div class="about-content"
+                 style="max-width: 850px; margin: 0 auto; text-align: left; line-height: 1.8;">
+
+                <div style="background: #F0F3EA; padding: 22px; border-radius: 12px; border: 1.5px solid #678A6C; margin-bottom: 25px;">
+
+                    <h3 style="color: var(--primary-green); margin-bottom: 10px; font-size: 18px;">
+                        ✨ Welcome to Shree's Store Universe! 🌿
+                    </h3>
+
+                    <p style="margin-bottom: 10px; font-size: 14px;">
+                        Aapke man me ye sawal aa raha hoga ki yahan **Finds** aur **Closet** do alag sections kyu hain?
+                        Toh chaliye ek choti si kahani me samjhate hain! 🤍
+                    </p>
+
+                    <p style="margin-bottom: 10px; font-size: 14px;">
+                        👉 **Shree's Finds** me aapko milte hain handpicked **Affiliate Products**.
+                        Jab aap yahan kisi product par **'View Deal'** click karte hain,
+                        toh aap seedha Amazon par chale jaate hain aur wahan se secure shopping kar sakte hain!
+                    </p>
+
+                    <p style="margin-bottom: 10px; font-size: 14px;">
+                        👉 Aur rahi baat **Shree's Closet** ki...
+                        toh yahan aapko milta hai ekdum apna personal cozy collection!
+                        Yahan ke products ke liye aapko kahin aur jaane ki zaroorat nahi—
+                        aap yahin se direct **Add to Cart** ya **Buy Now** karke cash on delivery (COD)
+                        ke sath shopping kar sakte hain.
+                    </p>
+
+                </div>
+
+                <p>
+                    Welcome to <strong>Shree's Store</strong> — your ultimate destination for all things cozy, aesthetic, and premium!
+                </p>
+
+                <!-- FAQ -->
+                <div class="faq-section-container" style="margin-top: 40px;">
+
+                    <h3 style="color: var(--primary-green); font-size: 24px; margin-bottom: 20px; text-align: center;">
+                        Frequently Asked Questions (FAQ) ✨
+                    </h3>
+
+                    <div class="faq-item"
+                         style="background: white; padding: 18px; border-radius: 10px; margin-bottom: 12px; border: 1px solid #eee;">
+
+                        <h4 style="font-size: 15px; color: var(--text-dark); margin-bottom: 6px; font-weight: 700;">
+                            Q: What is the difference between Finds and Closet?
+                        </h4>
+
+                        <p style="font-size: 14px; color: var(--text-light); margin: 0;">
+                            Ans: Finds contains handpicked affiliate items where you checkout directly on Amazon.
+                            Closet contains products available directly for purchase on Shree's Store via COD!
+                        </p>
+
+                    </div>
+
+                    <div class="faq-item"
+                         style="background: white; padding: 18px; border-radius: 10px; margin-bottom: 12px; border: 1px solid #eee;">
+
+                        <h4 style="font-size: 15px; color: var(--text-dark); margin-bottom: 6px; font-weight: 700;">
+                            Q: How does Cash on Delivery (COD) work?
+                        </h4>
+
+                        <p style="font-size: 14px; color: var(--text-light); margin: 0;">
+                            Ans: You can choose COD at checkout, fill in your delivery details,
+                            and pay when your cozy order arrives at your doorstep.
+                        </p>
+
+                    </div>
+
+                    <div class="faq-item"
+                         style="background: white; padding: 18px; border-radius: 10px; margin-bottom: 12px; border: 1px solid #eee;">
+
+                        <h4 style="font-size: 15px; color: var(--text-dark); margin-bottom: 6px; font-weight: 700;">
+                            Q: How can I track my order or contact support?
+                        </h4>
+
+                        <p style="font-size: 14px; color: var(--text-light); margin: 0;">
+                            Ans: You can reach out to us anytime using the Contact page
+                            or email us directly at pikapipikachuu2009@gmail.com.
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div id="contact-page" class="page-section">
+
+        <div class="static-page-wrapper">
+
+            <h2>Get in Touch ✨</h2>
+
+            <p style="text-align: center; color: var(--text-light);">
+                Have a question about a product or collaboration? Send us a message!
+            </p>
+
+            <div class="contact-box">
+
+                <form id="contact-form" onsubmit="handleContactForm(event)">
+
+                    <input type="text"
+                           id="contact-name"
+                           placeholder="Your Name"
+                           required>
+
+                    <input type="email"
+                           id="contact-email"
+                           placeholder="Your Email Address"
+                           required>
+
+                    <textarea id="contact-message"
+                              rows="4"
+                              placeholder="Write your message here..."
+                              required></textarea>
+
+                    <button type="submit" id="contact-btn">
+                        Send Message 🤍
+                    </button>
+
+                    <p id="contact-status"
+                       style="margin-top: 12px; font-size: 13px; font-weight: 700; color: var(--primary-green); text-align: center; display: none;">
+                    </p>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer-wrapper">
+
+        <div class="footer-wave"></div>
+
+        <div class="footer-desktop-container">
+
+            <img src="https://i.ibb.co/XktGmpdb/file-00000000becc8208891c44f11d4fb2d6-5.png"
+                 alt="Footer Banner"
+                 class="footer-custom-img">
+
+            <span class="footer-hotspot footer-link-home"
+                  onclick="switchPage('home-page', document.getElementById('nav-home'))"></span>
+
+            <span class="footer-hotspot footer-link-finds"
+                  onclick="switchPage('finds-page', document.getElementById('nav-finds'))"></span>
+
+            <span class="footer-hotspot footer-link-categories"
+                  onclick="switchPage('categories-page', document.getElementById('nav-categories'))"></span>
+
+            <span class="footer-hotspot footer-link-about"
+                  onclick="switchPage('about-page', document.getElementById('nav-about'))"></span>
+
+            <span class="footer-hotspot footer-link-contact"
+                  onclick="switchPage('contact-page', document.getElementById('nav-contact'))"></span>
+
+        </div>
+
+        <div class="footer-mobile-container">
+
+            <div class="footer-mobile-grid">
+
+                <div class="footer-mobile-col">
+
+                    <h4>Quick Links</h4>
+
+                    <ul class="footer-mobile-links">
+
+                        <li><a onclick="switchPage('home-page', document.getElementById('nav-home'))">Home</a></li>
+                        <li><a onclick="switchPage('finds-page', document.getElementById('nav-finds'))">Finds</a></li>
+                        <li><a onclick="switchPage('closet-page', document.getElementById('nav-closet'))">Closet</a></li>
+                        <li><a onclick="switchPage('categories-page', document.getElementById('nav-categories'))">Categories</a></li>
+                        <li><a onclick="switchPage('about-page', document.getElementById('nav-about'))">About Us</a></li>
+                        <li><a onclick="switchPage('contact-page', document.getElementById('nav-contact'))">Contact</a></li>
+
+                    </ul>
+
+                </div>
+
+                <div class="footer-mobile-col">
+
+                    <h4>Contact Us</h4>
+
+                    <p>
+                        <strong>Email:</strong><br>
+                        pikapipikachuu2009@gmail.com
+                    </p>
+
+                    <div class="mobile-pot-crop">
+
+                        <img src="https://i.ibb.co/XktGmpdb/file-00000000becc8208891c44f11d4fb2d6-5.png"
+                             alt="Sticker and Pot">
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- LIGHTBOX -->
+    <div id="image-lightbox" class="lightbox-modal">
+
+        <span class="close-lightbox" onclick="closeLightbox()">&times;</span>
+
+        <i class="fa-solid fa-chevron-left lightbox-nav lightbox-prev"
+           onclick="changeLightboxImage(-1)"></i>
+
+        <div class="lightbox-content" id="lightbox-box">
+
+            <img class="lightbox-img"
+                 id="lightbox-main-img"
+                 src="">
+
+        </div>
+
+        <i class="fa-solid fa-chevron-right lightbox-nav lightbox-next"
+           onclick="changeLightboxImage(1)"></i>
+
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+
+</body>
+</html>
+
