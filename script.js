@@ -1800,3 +1800,24 @@ document.getElementById('image-lightbox').addEventListener('click', function(e) 
         closeLightbox();
     }
 });
+// Check if URL has a product ID on page load
+window.addEventListener('DOMContentLoaded', () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const productId = urlParams.get('id');
+    
+    if (productId) {
+        // Check in Closet products
+        let closetIdx = resellingProducts.findIndex(p => p.id === productId);
+        if (closetIdx !== -1) {
+            setTimeout(() => openProductDetail('closet', closetIdx), 300);
+            return;
+        }
+        
+        // Check in Finds products
+        let findsIdx = affiliateProducts.findIndex(p => p.id === productId);
+        if (findsIdx !== -1) {
+            setTimeout(() => openProductDetail('finds', findsIdx), 300);
+            return;
+        }
+    }
+});
