@@ -1828,3 +1828,28 @@ if (document.readyState === 'loading') {
 } else {
     checkAndOpenProductFromURL();
 }
+// Auto-open product from URL query param (?id=...)
+window.addEventListener('DOMContentLoaded', () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const productId = urlParams.get('id');
+    
+    if (productId) {
+        let closetIdx = resellingProducts.findIndex(p => p.id === productId);
+        if (closetIdx !== -1) {
+            setTimeout(() => openProductDetail('closet', closetIdx), 400);
+            return;
+        }
+        let findsIdx = affiliateProducts.findIndex(p => p.id === productId);
+        if (findsIdx !== -1) {
+            setTimeout(() => openProductDetail('finds', findsIdx), 400);
+            return;
+        }
+    }
+});
+
+// Lightbox Close Listener
+document.getElementById('image-lightbox').addEventListener('click', function(e) {
+    if(e.target === this) {
+        closeLightbox();
+    }
+});
