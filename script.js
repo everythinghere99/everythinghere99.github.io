@@ -1802,54 +1802,53 @@ document.getElementById('image-lightbox').addEventListener('click', function(e) 
 });
 // ==========================================
 // AUTO-OPEN PRODUCT FROM URL QUERY PARAM (?id=...)
+// Supports: Home, Finds, Closet
+// Example: ?id=SHREE-P03
 // ==========================================
+
 function checkAndOpenProductFromURL() {
     const urlParams = new URLSearchParams(window.location.search);
     const productId = urlParams.get('id');
-    
-    if (productId) {
-        let closetIdx = resellingProducts.findIndex(p => p.id === productId);
-        if (closetIdx !== -1) {
-            setTimeout(() => openProductDetail('closet', closetIdx), 300);
-            return;
-        }
-        
-        let findsIdx = affiliateProducts.findIndex(p => p.id === productId);
-        if (findsIdx !== -1) {
-            setTimeout(() => openProductDetail('finds', findsIdx), 300);
-            return;
-        }
+
+    if (!productId) return;
+
+    // 1. HOME FEATURED PRODUCTS
+    const homeIdx = homeFeaturedProducts.findIndex(p => p.id === productId);
+
+    if (homeIdx !== -1) {
+        setTimeout(() => {
+            openProductDetail('home', homeIdx);
+        }, 400);
+        return;
     }
+
+    // 2. AFFILIATE / FINDS PRODUCTS
+    const findsIdx = affiliateProducts.findIndex(p => p.id === productId);
+
+    if (findsIdx !== -1) {
+        setTimeout(() => {
+            openProductDetail('finds', findsIdx);
+        }, 400);
+        return;
+    }
+
+    // 3. RESELLING / CLOSET PRODUCTS
+    const closetIdx = resellingProducts.findIndex(p => p.id === productId);
+
+    if (closetIdx !== -1) {
+        setTimeout(() => {
+            openProductDetail('closet', closetIdx);
+        }, 400);
+        return;
+    }
+
+    console.log("Product not found for ID:", productId);
 }
 
-// Run immediately if DOM is already loaded, otherwise wait
+
+// Run after DOM is ready
 if (document.readyState === 'loading') {
     window.addEventListener('DOMContentLoaded', checkAndOpenProductFromURL);
 } else {
     checkAndOpenProductFromURL();
 }
-// Auto-open product from URL query param (?id=...)
-window.addEventListener('DOMContentLoaded', () => {
-    const urlParams = new URLSearchParams(window.location.search);
-    const productId = urlParams.get('id');
-    
-    if (productId) {
-        let closetIdx = resellingProducts.findIndex(p => p.id === productId);
-        if (closetIdx !== -1) {
-            setTimeout(() => openProductDetail('closet', closetIdx), 400);
-            return;
-        }
-        let findsIdx = affiliateProducts.findIndex(p => p.id === productId);
-        if (findsIdx !== -1) {
-            setTimeout(() => openProductDetail('finds', findsIdx), 400);
-            return;
-        }
-    }
-});
-
-// Lightbox Close Listener
-document.getElementById('image-lightbox').addEventListener('click', function(e) {
-    if(e.target === this) {
-        closeLightbox();
-    }
-});
