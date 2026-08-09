@@ -1807,48 +1807,39 @@ document.getElementById('image-lightbox').addEventListener('click', function(e) 
 // ==========================================
 
 function checkAndOpenProductFromURL() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const productId = urlParams.get('id');
+    const productId = new URLSearchParams(window.location.search).get('id');
 
     if (!productId) return;
 
-    // 1. HOME FEATURED PRODUCTS
-    const homeIdx = homeFeaturedProducts.findIndex(p => p.id === productId);
+    let index = resellingProducts.findIndex(p => p.id === productId);
 
-    if (homeIdx !== -1) {
+    if (index !== -1) {
         setTimeout(() => {
-            openProductDetail('home', homeIdx);
-        }, 400);
+            openProductDetail('closet', index);
+        }, 500);
         return;
     }
 
-    // 2. AFFILIATE / FINDS PRODUCTS
-    const findsIdx = affiliateProducts.findIndex(p => p.id === productId);
+    index = affiliateProducts.findIndex(p => p.id === productId);
 
-    if (findsIdx !== -1) {
+    if (index !== -1) {
         setTimeout(() => {
-            openProductDetail('finds', findsIdx);
-        }, 400);
+            openProductDetail('finds', index);
+        }, 500);
         return;
     }
 
-    // 3. RESELLING / CLOSET PRODUCTS
-    const closetIdx = resellingProducts.findIndex(p => p.id === productId);
+    index = homeFeaturedProducts.findIndex(p => p.id === productId);
 
-    if (closetIdx !== -1) {
+    if (index !== -1) {
         setTimeout(() => {
-            openProductDetail('closet', closetIdx);
-        }, 400);
-        return;
+            openProductDetail('home', index);
+        }, 500);
     }
-
-    console.log("Product not found for ID:", productId);
 }
 
-
-// Run after DOM is ready
 if (document.readyState === 'loading') {
-    window.addEventListener('DOMContentLoaded', checkAndOpenProductFromURL);
+    document.addEventListener('DOMContentLoaded', checkAndOpenProductFromURL);
 } else {
     checkAndOpenProductFromURL();
 }
