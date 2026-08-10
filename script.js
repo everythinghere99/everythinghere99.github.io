@@ -1230,8 +1230,47 @@ const resellingProducts = [
             { name: "XL", price: "₹239" },
             { name: "XXL", price: "₹239" }
         ]
-    }
-];
+    },
+    {
+        id: "SHREE-C20",
+        name: "Brooklyn T shirt",
+        images: [
+            "https://i.ibb.co/tMpH3GKc/ms-montb-512-667586579.jpg"
+        ],
+        shortDescription: "Pure Kapaas Brooklyn T shirt available in multiple colors.",
+        description: "Pure Kapaas Brooklyn T shirt featuring comfortable fabric and stylish look.",
+        price: "₹349",
+        colors: [
+            {
+                name: "Green",
+                image: "https://i.ibb.co/tMpH3GKc/ms-montb-512-667586579.jpg",
+                images: [
+                    "https://i.ibb.co/tMpH3GKc/ms-montb-512-667586579.jpg",
+                    "https://i.ibb.co/zVQNmVQJ/ms-j3t2r-512-667586579.jpg",
+                    "https://i.ibb.co/C5gnchyt/ms-74fao-512-667586579.jpg"
+                ],
+                price: "₹349"
+            },
+            {
+                name: "Black",
+                image: "https://i.ibb.co/YFpvF5qF/ms-iedyg-512-667586580.jpg",
+                images: [
+                    "https://i.ibb.co/YFpvF5qF/ms-iedyg-512-667586580.jpg",
+                    "https://i.ibb.co/fGCjkYs4/ms-tr3se-512-667586580.jpg",
+                    "https://i.ibb.co/2Y7GWQzy/ms-9bhdl-512-667586580.jpg"
+                ],
+                price: "₹349"
+            }
+        ],
+        sizes: [
+            { name: "S", price: "₹349" },
+            { name: "M", price: "₹349" },
+            { name: "L", price: "₹349" },
+            { name: "XL", price: "₹349" },
+            { name: "XXL", price: "₹349" }
+        ]
+        }
+    ];
 
 // CART STATE
 let cart = JSON.parse(localStorage.getItem('shree_cart')) || [];
