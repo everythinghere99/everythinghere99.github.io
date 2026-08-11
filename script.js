@@ -298,8 +298,32 @@ const affiliateProducts = [
         description: "Intricate detailing for a refined look.",
         price: "₹799",
         affiliateLink: "https://link.amazon/B06lRViYN"
+    },
+    {
+        id: "SHREE-P22",
+        name: "Cozy Pillows",
+        images: [
+            "https://i.ibb.co/0ysFS841/IMG-20260811-WA0000.jpg"
+        ],
+        shortDescription: "Soft and aesthetic cozy pillow to upgrade your room vibe.",
+        description: "Soft and aesthetic cozy pillow to upgrade your room vibe and comfort.",
+        price: "₹664",
+        colors: [
+            { 
+                name: "Standard", 
+                image: "https://i.ibb.co/0ysFS841/IMG-20260811-WA0000.jpg", 
+                images: [
+                    "https://i.ibb.co/0ysFS841/IMG-20260811-WA0000.jpg"
+                ],
+                price: "₹664" 
+            }
+        ],
+        sizes: [
+            { name: "Standard", price: "₹664" }
+        ]
     }
-];
+    ];
+
 
 // RESELLING CLOSET PRODUCTS
 const resellingProducts = [
@@ -1270,7 +1294,7 @@ const resellingProducts = [
             { name: "XXL", price: "₹349" }
         ]
         }
-    ];
+     ];
 
 // CART STATE
 let cart = JSON.parse(localStorage.getItem('shree_cart')) || [];
