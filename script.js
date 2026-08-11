@@ -1293,8 +1293,416 @@ const resellingProducts = [
             { name: "XL", price: "₹349" },
             { name: "XXL", price: "₹349" }
         ]
-        }
-     ];
+        },
+         {
+        id: "SHREE-C-21",
+        name: "Dori belt dress",
+        images: ["https://i.ibb.co/p63N6q47/ms-yo45x-512-277086555.jpg"],
+        shortDescription: "Stylish jorjet dori belt dress available in multiple vibrant colors.",
+        description: "Elegant and comfortable jorjet fabric dress featuring a flattering dori belt design.",
+        price: "₹249",
+        colors: [
+            { name: "Maroon", image: "https://i.ibb.co/p63N6q47/ms-yo45x-512-277086555.jpg", images: ["https://i.ibb.co/p63N6q47/ms-yo45x-512-277086555.jpg", "https://i.ibb.co/Psk8hTzt/ms-s60pk-512-277086555.jpg"], price: "₹249" },
+            { name: "Black", image: "https://i.ibb.co/tw1kQcSk/ms-bbdky-512-277086556.jpg", images: ["https://i.ibb.co/tw1kQcSk/ms-bbdky-512-277086556.jpg"], price: "₹249" },
+            { name: "Yellow", image: "https://i.ibb.co/bgKJgP06/ms-tcuro-512-277086553.jpg", images: ["https://i.ibb.co/bgKJgP06/ms-tcuro-512-277086553.jpg", "https://i.ibb.co/LhJKcMsj/ms-rwioj-512-277086553.jpg", "https://i.ibb.co/274xCgT2/ms-5ndpu-512-277086553.jpg"], price: "₹249" },
+            { name: "Purple", image: "https://i.ibb.co/4w5pnvcP/ms-v47t8-512-277086557.jpg", images: ["https://i.ibb.co/4w5pnvcP/ms-v47t8-512-277086557.jpg", "https://i.ibb.co/vx249YCD/ms-li8i5-512-277086557.jpg"], price: "₹249" },
+            { name: "Light Pink", image: "https://i.ibb.co/d0RkTFjD/ms-r5ben-512-277086554.jpg", images: ["https://i.ibb.co/d0RkTFjD/ms-r5ben-512-277086554.jpg", "https://i.ibb.co/21HjggW2/ms-eimsa-512-277086554.jpg"], price: "₹249" }
+        ],
+        sizes: [
+            { name: "XS", price: "₹249" },
+            { name: "S", price: "₹249" },
+            { name: "M", price: "₹249" },
+            { name: "L", price: "₹249" }
+        ]
+    },
+    {
+        id: "SHREE-C-22",
+        name: "Women's Mini Dress",
+        images: ["https://i.ibb.co/GQVkpVRH/ms-xoa6x-512-316602636.jpg"],
+        shortDescription: "Chic crepe mini dress designed for casual outings and parties.",
+        description: "Trendy women's mini dress crafted from soft crepe fabric for an effortless stylish look.",
+        price: "₹249",
+        colors: [
+            { name: "Brown", image: "https://i.ibb.co/GQVkpVRH/ms-xoa6x-512-316602636.jpg", images: ["https://i.ibb.co/GQVkpVRH/ms-xoa6x-512-316602636.jpg"], price: "₹249" },
+            { name: "Beige", image: "https://i.ibb.co/HL3yMPxR/ms-ywwr3-512-316602637.jpg", images: ["https://i.ibb.co/HL3yMPxR/ms-ywwr3-512-316602637.jpg"], price: "₹249" },
+            { name: "Maroon", image: "https://i.ibb.co/Fk0KQ8dC/ms-xyo9p-512-316602639.jpg", images: ["https://i.ibb.co/Fk0KQ8dC/ms-xyo9p-512-316602639.jpg", "https://i.ibb.co/qYfkcghm/ms-xiqr1-512-316602638.jpg"], price: "₹249" },
+            { name: "Green", image: "https://i.ibb.co/21YXZ5Xs/ms-yt08v-512-316602635.jpg", images: ["https://i.ibb.co/21YXZ5Xs/ms-yt08v-512-316602635.jpg"], price: "₹249" },
+            { name: "Black", image: "https://i.ibb.co/6250bwS/ms-w6ed8-512-316602634.jpg", images: ["https://i.ibb.co/6250bwS/ms-w6ed8-512-316602634.jpg"], price: "₹249" }
+        ],
+        sizes: [
+            { name: "XS", price: "₹249" },
+            { name: "S", price: "₹249" },
+            { name: "M", price: "₹249" },
+            { name: "L", price: "₹249" }
+        ]
+    },
+    {
+        id: "SHREE-C-23",
+        name: "Women's Kurti",
+        images: ["https://i.ibb.co/B5zg3nbg/ms-gbnbv-512-985903375.jpg"],
+        shortDescription: "Elegant rayon kurti featuring fine prints and classic fit.",
+        description: "Comfortable and graceful rayon kurti designed for daily wear and ethnic styling.",
+        price: "₹429",
+        colors: [
+            { name: "Blue", image: "https://i.ibb.co/B5zg3nbg/ms-gbnbv-512-985903375.jpg", images: ["https://i.ibb.co/B5zg3nbg/ms-gbnbv-512-985903375.jpg", "https://i.ibb.co/nNSkhnLd/ms-bik7i-512-985903375.jpg", "https://i.ibb.co/MkfDr44Y/ms-xmap4-512-985903375.jpg"], price: "₹429" },
+            { name: "Orange", image: "https://i.ibb.co/93NQzfsj/ms-6atmf-512-985903377.jpg", images: ["https://i.ibb.co/93NQzfsj/ms-6atmf-512-985903377.jpg", "https://i.ibb.co/xKsWRrWL/ms-tman4-512-985903377.jpg", "https://i.ibb.co/PsNjcd7d/ms-qjafo-512-985903377.jpg"], price: "₹429" },
+            { name: "Yellow", image: "https://i.ibb.co/4RV2VVPs/ms-dgujn-512-985903378.jpg", images: ["https://i.ibb.co/4RV2VVPs/ms-dgujn-512-985903378.jpg", "https://i.ibb.co/xSZbKyFr/ms-4rddj-512-985903378.jpg", "https://i.ibb.co/Q7cGPns4/ms-voe1i-512-985903378.jpg"], price: "₹429" }
+        ],
+        sizes: [
+            { name: "XS", price: "₹429" },
+            { name: "S", price: "₹429" },
+            { name: "M", price: "₹429" },
+            { name: "L", price: "₹429" },
+            { name: "XL", price: "₹429" },
+            { name: "XXL", price: "₹429" },
+            { name: "XXXL", price: "₹429" },
+            { name: "4XL", price: "₹429" },
+            { name: "5XL", price: "₹429" }
+        ]
+    },
+    {
+        id: "SHREE-C-24",
+        name: "Women's Kurta Set",
+        images: ["https://i.ibb.co/jm3SBs5/ms-8ee5x-512-588164719.jpg"],
+        shortDescription: "Premium cotton kurta set offering superior comfort and traditional appeal.",
+        description: "Classic cotton kurta set featuring exquisite patterns ideal for festive and casual wear.",
+        price: "₹349",
+        colors: [
+            { name: "Maroon", image: "https://i.ibb.co/jm3SBs5/ms-8ee5x-512-588164719.jpg", images: ["https://i.ibb.co/jm3SBs5/ms-8ee5x-512-588164719.jpg", "https://i.ibb.co/TqWHWTB4/ms-otxu9-512-588164719.jpg", "https://i.ibb.co/tMVr1Y5G/ms-ane4x-512-588164719.jpg", "https://i.ibb.co/KpBHRXbd/ms-uvw9p-512-588164719.jpg"], price: "₹349" }
+        ],
+        sizes: [
+            { name: "XXS", price: "₹349" },
+            { name: "XS", price: "₹349" },
+            { name: "S", price: "₹349" },
+            { name: "M", price: "₹349" },
+            { name: "L", price: "₹349" },
+            { name: "XL", price: "₹349" },
+            { name: "XXL", price: "₹349" },
+            { name: "XXXL", price: "₹349" }
+        ]
+    },
+    {
+        id: "SHREE-C-25",
+        name: "Designer Kurta Set",
+        images: ["https://i.ibb.co/HTh5NFbT/ms-b3pwq-512-972567633.jpg"],
+        shortDescription: "Designer cotton kurta set crafted with fine detailing and elegant finish.",
+        description: "High-quality cotton designer kurta set that brings sophisticated style to your ethnic wardrobe.",
+        price: "₹369",
+        colors: [
+            { name: "Black", image: "https://i.ibb.co/HTh5NFbT/ms-b3pwq-512-972567633.jpg", images: ["https://i.ibb.co/HTh5NFbT/ms-b3pwq-512-972567633.jpg", "https://i.ibb.co/23Gxgfpf/ms-fmvh3-512-972567633.jpg", "https://i.ibb.co/TBvRg8Y5/ms-sohfm-512-972567633.jpg", "https://i.ibb.co/szDZpTD/ms-vevhq-512-972567633.jpg"], price: "₹369" }
+        ],
+        sizes: [
+            { name: "M", price: "₹369" },
+            { name: "L", price: "₹369" },
+            { name: "XL", price: "₹369" },
+            { name: "XXL", price: "₹369" },
+            { name: "XXXL", price: "₹369" },
+            { name: "4XL", price: "₹369" },
+            { name: "5XL", price: "₹369" }
+        ]
+    },
+    {
+        id: "SHREE-C-26",
+        name: "Women's Cozy Dress",
+        images: ["https://i.ibb.co/MD8VsGJG/ms-amvpn-512-504507253.jpg"],
+        shortDescription: "Soft khaadi cotton cozy dress designed for all-day relaxed comfort.",
+        description: "Cozy and breathable khaadi cotton dress offering an aesthetic silhouette and supreme comfort.",
+        price: "₹399",
+        colors: [
+            { name: "Pink", image: "https://i.ibb.co/MD8VsGJG/ms-amvpn-512-504507253.jpg", images: ["https://i.ibb.co/MD8VsGJG/ms-amvpn-512-504507253.jpg", "https://i.ibb.co/27hT64xn/ms-woxdf-512-504507253.jpg", "https://i.ibb.co/8gYFyvRY/ms-vla3f-512-504507253.jpg", "https://i.ibb.co/HTVPfkX8/ms-yzxag-512-504507253.jpg"], price: "₹399" }
+        ],
+        sizes: [
+            { name: "XS", price: "₹399" },
+            { name: "S", price: "₹479" },
+            { name: "M", price: "₹399" },
+            { name: "L", price: "₹479" },
+            { name: "XL", price: "₹479" },
+            { name: "XXL", price: "₹479" },
+            { name: "XXXL", price: "₹479" },
+            { name: "4XL", price: "₹489" },
+            { name: "5XL", price: "₹489" }
+        ]
+    },
+    {
+        id: "SHREE-C-27",
+        name: "Women's latest Kurti",
+        images: ["https://i.ibb.co/Nn9t7gWK/ms-i9eio-512-468271645.jpg"],
+        shortDescription: "Trendy rayon kurti featuring contemporary patterns and rich maroon tone.",
+        description: "Latest design rayon kurti tailored to give you a chic and elegant everyday ethnic look.",
+        price: "₹469",
+        colors: [
+            { name: "Maroon", image: "https://i.ibb.co/Nn9t7gWK/ms-i9eio-512-468271645.jpg", images: ["https://i.ibb.co/Nn9t7gWK/ms-i9eio-512-468271645.jpg", "https://i.ibb.co/TMxbx36H/ms-1bnwy-512-468271645.jpg", "https://i.ibb.co/GfkfzgJS/ms-4yync-512-468271645.jpg", "https://i.ibb.co/yCZ4nPC/ms-uzvd0-512-468271645.jpg"], price: "₹469" }
+        ],
+        sizes: [
+            { name: "L", price: "₹469" },
+            { name: "XXL", price: "₹469" },
+            { name: "XXXL", price: "₹469" }
+        ]
+    },
+    {
+        id: "SHREE-C-28",
+        name: "Women's Flat Heels",
+        images: ["https://i.ibb.co/V1dMR9H/ms-8z35e-512-530997519.jpg"],
+        shortDescription: "Comfortable 2-inch flat heels in classic beige for graceful styling.",
+        description: "Stylish women's flat heels with a comfortable 2-inch elevation, perfect for daily wear and special occasions.",
+        price: "₹349",
+        colors: [
+            { name: "Beige", image: "https://i.ibb.co/V1dMR9H/ms-8z35e-512-530997519.jpg", images: ["https://i.ibb.co/V1dMR9H/ms-8z35e-512-530997519.jpg", "https://i.ibb.co/tp7RPYyh/ms-vmhzp-512-530997519.jpg", "https://i.ibb.co/s8CX6mK/ms-ptrvb-512-530997519.jpg", "https://i.ibb.co/zTLKWx7G/ms-qouce-512-530997519.jpg"], price: "₹349" }
+        ],
+        sizes: [
+            { name: "IND 4", price: "₹349" },
+            { name: "IND 5", price: "₹349" },
+            { name: "IND 6", price: "₹349" },
+            { name: "IND 7", price: "₹349" },
+            { name: "IND 8", price: "₹349" }
+        ]
+    },
+    {
+        id: "SHREE-C-29",
+        name: "Men's Stylish Shirt",
+        images: ["https://i.ibb.co/bRmtLMBj/ms-mrunx-512-527490671.jpg"],
+        shortDescription: "Textured popcorn fabric men's shirt for a sharp and modern look.",
+        description: "Trendy men's stylish shirt made from comfortable popcorn fabric, built for casual and smart-casual wear.",
+        price: "₹249",
+        colors: [
+            { name: "White", image: "https://i.ibb.co/bRmtLMBj/ms-mrunx-512-527490671.jpg", images: ["https://i.ibb.co/bRmtLMBj/ms-mrunx-512-527490671.jpg", "https://i.ibb.co/tj6TjFj/ms-vjwfo-512-527490671.jpg"], price: "₹249" },
+            { name: "Black", image: "https://i.ibb.co/9mdtjv14/ms-reeub-512-527490672.jpg", images: ["https://i.ibb.co/9mdtjv14/ms-reeub-512-527490672.jpg", "https://i.ibb.co/wrcYS7vD/ms-fykza-512-527490672.jpg"], price: "₹249" }
+        ],
+        sizes: [
+            { name: "S", price: "₹249" },
+            { name: "M", price: "₹249" },
+            { name: "L", price: "₹249" },
+            { name: "XL", price: "₹249" }
+        ]
+    },
+    {
+        id: "SHREE-C-30",
+        name: "Men's Casual Shirt",
+        images: ["https://i.ibb.co/v6hM62Lk/ms-9omkk-512-375103171.jpg"],
+        shortDescription: "Versatile popcorn fabric men's casual shirt in multiple solid colors.",
+        description: "Comfortable and light textured popcorn fabric shirt designed for everyday casual comfort.",
+        price: "₹229",
+        colors: [
+            { name: "Sky Blue", image: "https://i.ibb.co/v6hM62Lk/ms-9omkk-512-375103171.jpg", images: ["https://i.ibb.co/v6hM62Lk/ms-9omkk-512-375103171.jpg", "https://i.ibb.co/SZpXVFF/ms-vosnb-512-375103171.jpg"], price: "₹229" },
+            { name: "Navy Blue", image: "https://i.ibb.co/35PSsLdx/ms-fzfyu-512-375103167.jpg", images: ["https://i.ibb.co/35PSsLdx/ms-fzfyu-512-375103167.jpg"], price: "₹249" },
+            { name: "Black", image: "https://i.ibb.co/GQgpsFpd/ms-lpwfp-512-375103166.jpg", images: ["https://i.ibb.co/GQgpsFpd/ms-lpwfp-512-375103166.jpg"], price: "₹239" },
+            { name: "Maroon", image: "https://i.ibb.co/YTqf8jCk/ms-et9qu-512-375103170.jpg", images: ["https://i.ibb.co/YTqf8jCk/ms-et9qu-512-375103170.jpg"], price: "₹249" },
+            { name: "Grey", image: "https://i.ibb.co/CNXM5Kq/ms-cy54t-512-375103169.jpg", images: ["https://i.ibb.co/CNXM5Kq/ms-cy54t-512-375103169.jpg"], price: "₹259" },
+            { name: "Lavender", image: "https://i.ibb.co/1G0qXC45/ms-zef8g-512-375103173.jpg", images: ["https://i.ibb.co/1G0qXC45/ms-zef8g-512-375103173.jpg"], price: "₹269" },
+            { name: "White", image: "https://i.ibb.co/wFgLwx6M/ms-8clna-512-375103172.jpg", images: ["https://i.ibb.co/wFgLwx6M/ms-8clna-512-375103172.jpg"], price: "₹229" },
+            { name: "Green", image: "https://i.ibb.co/B5gmPxmC/ms-myvn4-512-375103168.jpg", images: ["https://i.ibb.co/B5gmPxmC/ms-myvn4-512-375103168.jpg"], price: "₹239" }
+        ],
+        sizes: [
+            { name: "S", price: "₹229" },
+            { name: "M", price: "₹229" },
+            { name: "L", price: "₹229" },
+            { name: "XL", price: "₹229" },
+            { name: "XXL", price: "₹229" }
+        ]
+    },
+    {
+        id: "SHREE-C-31",
+        name: "Oversized T shirt (Combo Pack)",
+        images: ["https://i.ibb.co/zVM84wqr/ms-hulta-512-516216298.jpg"],
+        shortDescription: "Value combo pack of 2 pure kapaas oversized t-shirts with vibrant dual-tone themes.",
+        description: "Double up your style with this value-packed combo set of 2 premium kapaas oversized t-shirts, offering unmatched comfort and standout street style aesthetics.",
+        price: "₹399",
+        colors: [
+            { name: "Brown + Blue", image: "https://i.ibb.co/zVM84wqr/ms-hulta-512-516216298.jpg", images: ["https://i.ibb.co/zVM84wqr/ms-hulta-512-516216298.jpg", "https://i.ibb.co/dwxbP3z2/ms-q1xaf-512-516216298.jpg"], price: "₹399" },
+            { name: "Brown + Red", image: "https://i.ibb.co/C5n7C2Yv/ms-dx0ka-512-516216300.jpg", images: ["https://i.ibb.co/C5n7C2Yv/ms-dx0ka-512-516216300.jpg"], price: "₹399" },
+            { name: "Blue + Red", image: "https://i.ibb.co/hJgcbf8V/ms-rpavn-512-516216305.jpg", images: ["https://i.ibb.co/hJgcbf8V/ms-rpavn-512-516216305.jpg"], price: "₹399" },
+            { name: "Green + Black", image: "https://i.ibb.co/0j4mgdwF/ms-2bd4k-512-516216301.jpg", images: ["https://i.ibb.co/0j4mgdwF/ms-2bd4k-512-516216301.jpg"], price: "₹399" },
+            { name: "Grey + Green", image: "https://i.ibb.co/VYyFMGP5/ms-xipep-512-516216303.jpg", images: ["https://i.ibb.co/VYyFMGP5/ms-xipep-512-516216303.jpg"], price: "₹399" },
+            { name: "Brown + Green", image: "https://i.ibb.co/LzgxhPv1/ms-qrnf5-512-516216304.jpg", images: ["https://i.ibb.co/LzgxhPv1/ms-qrnf5-512-516216304.jpg"], price: "₹399" },
+            { name: "Black + Pink", image: "https://i.ibb.co/4w6pPXth/ms-grtn5-512-516216297.jpg", images: ["https://i.ibb.co/4w6pPXth/ms-grtn5-512-516216297.jpg"], price: "₹399" },
+            { name: "Green + Red", image: "https://i.ibb.co/Z6kJj85X/ms-mzd2x-512-516216299.jpg", images: ["https://i.ibb.co/Z6kJj85X/ms-mzd2x-512-516216299.jpg"], price: "₹399" }
+        ],
+        sizes: [
+            { name: "S", price: "₹399" },
+            { name: "M", price: "₹399" },
+            { name: "L", price: "₹399" },
+            { name: "XL", price: "₹399" },
+            { name: "XXL", price: "₹399" }
+        ]
+    },
+    {
+        id: "SHREE-C-32",
+        name: "Men's Printed Shirt",
+        images: ["https://i.ibb.co/9Hwxx21L/ms-ubn5w-512-456371139.jpg"],
+        shortDescription: "Cotton men's printed shirt featuring eye-catching modern patterns.",
+        description: "Stylish and breathable cotton printed shirt designed to elevate your casual wardrobe effortlessly.",
+        price: "₹329",
+        colors: [
+            { name: "Black", image: "https://i.ibb.co/9Hwxx21L/ms-ubn5w-512-456371139.jpg", images: ["https://i.ibb.co/9Hwxx21L/ms-ubn5w-512-456371139.jpg"], price: "₹339" },
+            { name: "Blue", image: "https://i.ibb.co/21QqhGCn/ms-iasy5-512-456371137.jpg", images: ["https://i.ibb.co/21QqhGCn/ms-iasy5-512-456371137.jpg"], price: "₹329" },
+            { name: "White", image: "https://i.ibb.co/CKgQ5XtM/ms-j9wua-512-456371138.jpg", images: ["https://i.ibb.co/CKgQ5XtM/ms-j9wua-512-456371138.jpg"], price: "₹329" }
+        ],
+        sizes: [
+            { name: "S", price: "₹329" },
+            { name: "M", price: "₹329" },
+            { name: "L", price: "₹329" },
+            { name: "XL", price: "₹329" },
+            { name: "XXL", price: "₹329" }
+        ]
+    },
+    {
+        id: "SHREE-C-33",
+        name: "Women's Short Kurti",
+        images: ["https://i.ibb.co/5W123zmb/ms-prsik-512-983823213.jpg"],
+        shortDescription: "Bright yellow cotton short kurti for a fresh and cheerful everyday look.",
+        description: "Charming cotton short kurti crafted with breathable fabric and elegant detailing for casual styling.",
+        price: "₹299",
+        colors: [
+            { name: "Yellow", image: "https://i.ibb.co/5W123zmb/ms-prsik-512-983823213.jpg", images: ["https://i.ibb.co/5W123zmb/ms-prsik-512-983823213.jpg", "https://i.ibb.co/6J4yCpXc/ms-2r7dn-512-983823213.jpg", "https://i.ibb.co/sdYg9G6d/ms-lz0fx-512-983823213.jpg"], price: "₹299" }
+        ],
+        sizes: [
+            { name: "XS", price: "₹299" },
+            { name: "S", price: "₹299" },
+            { name: "M", price: "₹299" },
+            { name: "L", price: "₹299" },
+            { name: "XL", price: "₹299" },
+            { name: "XXL", price: "₹299" }
+        ]
+    },
+    {
+        id: "SHREE-C-34",
+        name: "Women's Short Kurti",
+        images: ["https://i.ibb.co/rRmhpwxF/ms-nfs4e-512-1041181898.jpg"],
+        shortDescription: "Sleek black cotton short kurti pairing modern fit with ethnic comfort.",
+        description: "Versatile black cotton short kurti that adds a touch of elegance to your daily wardrobe.",
+        price: "₹299",
+        colors: [
+            { name: "Black", image: "https://i.ibb.co/rRmhpwxF/ms-nfs4e-512-1041181898.jpg", images: ["https://i.ibb.co/rRmhpwxF/ms-nfs4e-512-1041181898.jpg", "https://i.ibb.co/4wXyvtht/ms-ukcfq-512-1041181898.jpg", "https://i.ibb.co/T6nVBsJ/ms-mm2sq-512-1041181898.jpg"], price: "₹299" }
+        ],
+        sizes: [
+            { name: "XS", price: "₹299" },
+            { name: "S", price: "₹299" },
+            { name: "M", price: "₹299" },
+            { name: "L", price: "₹299" },
+            { name: "XL", price: "₹299" }
+        ]
+    },
+    {
+        id: "SHREE-C-35",
+        name: "Women's Short Kurti",
+        images: ["https://i.ibb.co/yn33DD5r/ms-9d8pq-512-1020792947.jpg"],
+        shortDescription: "Vibrant red cotton short kurti for a stylish everyday ethnic look.",
+        description: "Lightweight and comfortable cotton short kurti designed in a striking red tone.",
+        price: "₹299",
+        colors: [
+            { name: "Red", image: "https://i.ibb.co/yn33DD5r/ms-9d8pq-512-1020792947.jpg", images: ["https://i.ibb.co/yn33DD5r/ms-9d8pq-512-1020792947.jpg", "https://i.ibb.co/fVWhFSGW/ms-0ujbn-512-1020792947.jpg"], price: "₹299" }
+        ],
+        sizes: [
+            { name: "S", price: "₹299" },
+            { name: "M", price: "₹299" },
+            { name: "L", price: "₹299" },
+            { name: "XL", price: "₹299" }
+        ]
+    },
+    {
+        id: "SHREE-C-36",
+        name: "Women's Short Kurti",
+        images: ["https://i.ibb.co/7tpqK6CD/ms-1kl5l-512-977386124.jpg"],
+        shortDescription: "Affordable and cozy blue cotton short kurti for casual wear.",
+        description: "Easy-breezy cotton short kurti in a soothing blue shade, offering high value and comfort.",
+        price: "₹199",
+        colors: [
+            { name: "Blue", image: "https://i.ibb.co/7tpqK6CD/ms-1kl5l-512-977386124.jpg", images: ["https://i.ibb.co/7tpqK6CD/ms-1kl5l-512-977386124.jpg", "https://i.ibb.co/zWGwbTfb/ms-qgrfg-512-977386124.jpg"], price: "₹199" }
+        ],
+        sizes: [
+            { name: "XS", price: "₹199" },
+            { name: "S", price: "₹199" },
+            { name: "M", price: "₹199" },
+            { name: "L", price: "₹199" },
+            { name: "XL", price: "₹199" },
+            { name: "XXL", price: "₹199" }
+        ]
+    },
+    {
+        id: "SHREE-C-37",
+        name: "Women's Kurta",
+        images: ["https://i.ibb.co/DgMnKhh8/ms-soeyf-512-556963070.jpg"],
+        shortDescription: "Graceful rayon kurta in rich color variations for elegant ethnic wear.",
+        description: "Soft and flowing rayon kurta crafted with beautiful finish for standard casual and festive occasions.",
+        price: "₹399",
+        colors: [
+            { name: "Green", image: "https://i.ibb.co/DgMnKhh8/ms-soeyf-512-556963070.jpg", images: ["https://i.ibb.co/DgMnKhh8/ms-soeyf-512-556963070.jpg", "https://i.ibb.co/gbfCVhtR/ms-c7981-512-556963070.jpg", "https://i.ibb.co/nMYQSdRC/ms-ul0ay-512-556963070.jpg"], price: "₹399" },
+            { name: "Purple", image: "https://i.ibb.co/2mcmK9d/ms-ag7qk-512-556963072.jpg", images: ["https://i.ibb.co/2mcmK9d/ms-ag7qk-512-556963072.jpg", "https://i.ibb.co/MWb6VKW/ms-2lybj-512-556963072.jpg", "https://i.ibb.co/Cp0MQzTJ/ms-7xbgz-512-556963072.jpg"], price: "₹399" },
+            { name: "Orange", image: "https://i.ibb.co/jZ1NwFz1/ms-qpsac-512-556963071.jpg", images: ["https://i.ibb.co/jZ1NwFz1/ms-qpsac-512-556963071.jpg", "https://i.ibb.co/N6pPMXpR/ms-y4iov-512-556963071.jpg"], price: "₹399" }
+        ],
+        sizes: [
+            { name: "S", price: "₹399" },
+            { name: "M", price: "₹359" },
+            { name: "L", price: "₹399" },
+            { name: "XL", price: "₹399" },
+            { name: "XXL", price: "₹399" }
+        ]
+    },
+    {
+        id: "SHREE-C-38",
+        name: "Women's Jaipuri Kurti",
+        images: ["https://i.ibb.co/1fgYPQPf/ms-uviso-512-616446241.jpg"],
+        shortDescription: "Traditional Jaipuri print rayon kurti offering vibrant ethnic charm.",
+        description: "Classic Jaipuri style rayon kurti featuring exquisite cultural prints and comfortable fit.",
+        price: "₹349",
+        colors: [
+            { name: "Purple", image: "https://i.ibb.co/1fgYPQPf/ms-uviso-512-616446241.jpg", images: ["https://i.ibb.co/1fgYPQPf/ms-uviso-512-616446241.jpg", "https://i.ibb.co/8L8mJYPm/ms-uh8jl-512-616446241.jpg", "https://i.ibb.co/G4B2sWxS/ms-rp610-512-616446241.jpg"], price: "₹349" },
+            { name: "Green", image: "https://i.ibb.co/wZBCks2V/ms-nqzmz-512-616446240.jpg", images: ["https://i.ibb.co/wZBCks2V/ms-nqzmz-512-616446240.jpg", "https://i.ibb.co/CKkVqJMc/ms-ysneq-512-616446240.jpg", "https://i.ibb.co/21yWFZvY/ms-kwrxj-512-616446240.jpg"], price: "₹339" }
+        ],
+        sizes: [
+            { name: "XS", price: "₹349" },
+            { name: "S", price: "₹349" },
+            { name: "M", price: "₹329" },
+            { name: "L", price: "₹349" },
+            { name: "XL", price: "₹349" },
+            { name: "XXL", price: "₹349" },
+            { name: "XXXL", price: "₹339" }
+        ]
+    },
+    {
+        id: "SHREE-C-39",
+        name: "Combo Trousers",
+        images: ["https://i.ibb.co/xrJ5BVH/ms-0rhvw-512-620266054.jpg"],
+        shortDescription: "Comfortable cotton-blend combo trousers featuring versatile multi-color options.",
+        description: "Durable and cozy kapaas combo trousers tailored for ultimate comfort and everyday wearability.",
+        price: "₹319",
+        colors: [
+            { name: "Black + Pink", image: "https://i.ibb.co/xrJ5BVH/ms-0rhvw-512-620266054.jpg", images: ["https://i.ibb.co/xrJ5BVH/ms-0rhvw-512-620266054.jpg", "https://i.ibb.co/hFHskGYN/ms-xr5o8-512-620266054.jpg", "https://i.ibb.co/KSyX5xQ/ms-2skgs-512-620266053.jpg"], price: "₹319" },
+            { name: "Black + Brown", image: "https://i.ibb.co/v6n8LLDt/ms-s5qk1-512-620266050.jpg", images: ["https://i.ibb.co/v6n8LLDt/ms-s5qk1-512-620266050.jpg", "https://i.ibb.co/Cr4dV2P/ms-enedk-512-620266050.jpg"], price: "₹319" },
+            { name: "Beige + Brown", image: "https://i.ibb.co/LD9rPLy3/ms-atgo2-512-620266052.jpg", images: ["https://i.ibb.co/LD9rPLy3/ms-atgo2-512-620266052.jpg", "https://i.ibb.co/BDJ4WSy/ms-wiixt-512-620266052.jpg"], price: "₹319" },
+            { name: "Beige + Pink", image: "https://i.ibb.co/WNwgKh5F/ms-wivpc-512-620266053.jpg", images: ["https://i.ibb.co/WNwgKh5F/ms-wivpc-512-620266053.jpg", "https://i.ibb.co/spZTT2CJ/ms-yn9do-512-620266053.jpg"], price: "₹319" },
+            { name: "Black + Beige", image: "https://i.ibb.co/DPjmrLLx/ms-uxnvm-512-620266051.jpg", images: ["https://i.ibb.co/DPjmrLLx/ms-uxnvm-512-620266051.jpg", "https://i.ibb.co/NgbX3bQH/ms-oxbmh-512-620266051.jpg"], price: "₹319" }
+        ],
+        sizes: [
+            { name: "S", price: "₹319" },
+            { name: "M", price: "₹319" },
+            { name: "L", price: "₹319" },
+            { name: "XL", price: "₹319" },
+            { name: "XXL", price: "₹319" }
+        ]
+    },
+    {
+        id: "SHREE-C-40",
+        name: "Blackberry Dress",
+        images: ["https://i.ibb.co/XZ0DRGt1/ms-sahxc-512-382519791.jpg"],
+        shortDescription: "Stunning jorjet Blackberry dress designed for parties and special outings.",
+        description: "Graceful jorjet fabric dress featuring a sleek cut and sophisticated look for an effortless statement.",
+        price: "₹399",
+        colors: [
+            { name: "Black", image: "https://i.ibb.co/XZ0DRGt1/ms-sahxc-512-382519791.jpg", images: ["https://i.ibb.co/XZ0DRGt1/ms-sahxc-512-382519791.jpg", "https://i.ibb.co/cc5h6PQD/ms-mz1wn-512-382519791.jpg", "https://i.ibb.co/jv88RnVT/ms-hpcjt-512-382519791.jpg"], price: "₹399" }
+        ],
+        sizes: [
+            { name: "XS", price: "₹399" },
+            { name: "S", price: "₹399" },
+            { name: "M", price: "₹339" },
+            { name: "L", price: "₹399" },
+            { name: "XL", price: "₹399" },
+            { name: "XXL", price: "₹399" },
+            { name: "XXXL", price: "₹399" },
+            { name: "4XL", price: "₹399" }
+        ]
+    }
+  ];
 
 // CART STATE
 let cart = JSON.parse(localStorage.getItem('shree_cart')) || [];
