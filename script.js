@@ -2174,7 +2174,7 @@ function executeOrderFinalization(data) {
         items: itemsDetails
     };
 
-    emailjs.send('service_shreestore', 'template_xgf26mm', templateParams)
+    emailjs.send('service_shreestore', 'template_o99gixn', templateParams)
         .then(function(res) {
             console.log('Admin email sent successfully!', res.status, res.text);
         }, function(err) {
@@ -2197,7 +2197,7 @@ function executeOrderFinalization(data) {
         items: plainItemsDetails
     };
 
-    emailjs.send('service_shreestore', 'template_o99gixn', customerParams)
+    emailjs.send('service_shreestore', 'template_xgf26mm', customerParams)
         .then(function(res) {
             console.log('Customer email sent successfully!', res.status, res.text);
         }, function(err) {
