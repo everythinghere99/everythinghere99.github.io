@@ -47,7 +47,7 @@
         <a href="index.html" style="text-decoration: none; color: blue;">⬅ Back to Store</a>
     </div>
 
-                 <script>
+                     <script>
         function extractSmartDetails() {
             const text = document.getElementById('product-text').value;
             const resultDiv = document.getElementById('scraper-result');
@@ -63,58 +63,58 @@
             let color = "Nahi mila";
             let size = "Nahi mila";
 
-            // 1. Name Extractor 
-            let nameMatch = text.match(/Name\s*:\s*([^\n\r]+)/i);
-            if (nameMatch && nameMatch[1]) {
-                name = nameMatch[1].trim();
-            } else {
-                let lines = text.split('\n').map(l => l.trim()).filter(l => l.length > 0);
-                for (let i = 0; i < lines.length; i++) {
-                    if (!lines[i].match(/[\u0900-\u097F]/) && !lines[i].includes('₹') && lines[i].length > 5) {
-                        name = lines[i];
+            // Har line ko strictly alag kar diya hai
+            const lines = text.split(/[\n\r]+/).map(l => l.trim()).filter(l => l.length > 0);
+
+            for (let i = 0; i < lines.length; i++) {
+                let line = lines[i];
+                let low = line.toLowerCase();
+
+                // Name
+                if (low.startsWith('name:') && name === "Nahi mila") {
+                    name = line.substring(line.indexOf(':') + 1).trim();
+                }
+                
+                // Price
+                let pMatch = line.match(/₹\s*([0-9,]+)/);
+                if (pMatch && price === "Nahi mila") {
+                    price = "₹" + pMatch[1];
+                }
+                
+                // Color
+                if ((low.includes('color:') || low.includes('colour:')) && color === "Nahi mila") {
+                    color = line.substring(line.indexOf(':') + 1).trim();
+                }
+                
+                // Fabric / Material
+                if ((low.includes('fabric:') || low.includes('material:')) && fabric === "Nahi mila") {
+                    fabric = line.substring(line.indexOf(':') + 1).trim();
+                }
+                
+                // Size (Strict filter taaki 'Woman's' ka S ya faltu text na aaye)
+                if (low.startsWith('size') && size === "Nahi mila") {
+                    let val = line.includes(':') ? line.substring(line.indexOf(':') + 1).trim() : "";
+                    if (!val && i + 1 < lines.length) {
+                        val = lines[i+1].trim();
+                    }
+                    
+                    let sMatch = val.match(/\b(IND-\d+|S|M|L|XL|XXL|Free Size)\b/gi);
+                    if (sMatch) {
+                        size = [...new Set(sMatch.map(s => s.toUpperCase()))].join(', ');
+                    }
+                }
+            }
+
+            // Fallback for Name agar Name: tag na likha ho
+            if (name === "Nahi mila") {
+                for (let l of lines) {
+                    if (!l.match(/[\u0900-\u097F]/) && !l.includes('₹') && l.length > 5) {
+                        name = l;
                         break;
                     }
                 }
             }
 
-            // 2. Price Extractor
-            let priceMatch = text.match(/(?:₹|rs\.?|price\s*:)\s*([\d,]+)/i);
-            if (priceMatch && priceMatch[1]) {
-                price = "₹" + priceMatch[1].trim();
-            }
-
-            // 3. Color Extractor (Ab strictly usi line tak padhega)
-            let colorMatch = text.match(/(?:color|colour)\s*:\s*([^\n\r]+)/i);
-            if (colorMatch && colorMatch[1]) {
-                color = colorMatch[1].trim();
-            }
-
-            // 4. Fabric Extractor (Ab strictly usi line tak padhega)
-            let fabricMatch = text.match(/(?:fabric|material)\s*:\s*([^\n\r]+)/i);
-            if (fabricMatch && fabricMatch[1]) {
-                fabric = fabricMatch[1].trim();
-            }
-
-            // 5. Smart Size Extractor
-            // "Woman's" wale 's ko hide kar rahe hain taaki wo Size 'S' na bane
-            let safeText = text.replace(/'s\b/gi, ''); 
-            
-            // IND sizes me end boundary hata di, ab agar IND-8Woman likha hoga tab bhi IND-8 nikal lega
-            let sizeRegex = /(IND\s*-\s*\d+|UK\s*-\s*\d+|US\s*-\s*\d+|EU\s*-\s*\d+|\bXS\b|\bS\b|\bM\b|\bL\b|\bXL\b|\bXXL\b|\bXXXL\b|\bFree\s*Size\b)/gi;
-            let sizesFound = safeText.match(sizeRegex);
-            
-            if (sizesFound) {
-                // Duplicates hata kar format clean karna
-                let uniqueSizes = [...new Set(sizesFound.map(s => s.toUpperCase().replace(/\s+/g, '')))];
-                size = uniqueSizes.join(', ').replace(/IND-/g, 'IND-'); 
-            } else {
-                let numSizesMatch = text.match(/(?:Size|Sizes)\s*:\s*([^\n\r]+)/i);
-                if (numSizesMatch && numSizesMatch[1]) {
-                    size = numSizesMatch[1].trim();
-                }
-            }
-
-            // Final Assignment to Boxes
             document.getElementById('res-name').value = name;
             document.getElementById('res-price').value = price;
             document.getElementById('res-fabric').value = fabric;
