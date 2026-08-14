@@ -47,13 +47,13 @@
         <a href="index.html" style="text-decoration: none; color: blue;">⬅ Back to Store</a>
     </div>
 
-    <script>
+        <script>
         function extractSmartDetails() {
             const text = document.getElementById('product-text').value;
             const resultDiv = document.getElementById('scraper-result');
 
             if (!text.trim()) {
-                alert("Bhai pehle text toh paste kar!");
+                alert("Bhai pehle text paste kar!");
                 return;
             }
 
@@ -63,24 +63,18 @@
             let color = "Nahi mila";
             let size = "Nahi mila";
 
-            // Text ko alag-alag lines me todna aur faltu spaces hatana
             const lines = text.split('\n').map(l => l.trim()).filter(l => l.length > 0);
 
-            // 1. Smart Name Extractor: Faltu words skip karega
+            // 1. Name: Starting ki lines me se lamba naam uthayega
             for (let i = 0; i < Math.min(10, lines.length); i++) {
                 let lower = lines[i].toLowerCase();
-                if (!lower.includes('₹') && 
-                    !lower.includes('delivery') && 
-                    !lower.includes('rating') && 
-                    !lower.includes('reviews') && 
-                    !lower.includes('shop') && 
-                    lines[i].length > 8) {
+                if (!lower.includes('₹') && !lower.includes('delivery') && !lower.includes('rating') && lines[i].length > 6) {
                     name = lines[i];
-                    break; // Pehla valid lamba naam milte hi ruk jayega
+                    break;
                 }
             }
 
-            // 2. Scan every line for Details
+            // 2. Exact Line Scanner (Bina Colon (:) ke bhi kaam karega)
             for (let i = 0; i < lines.length; i++) {
                 let line = lines[i];
                 let lower = line.toLowerCase();
@@ -91,29 +85,26 @@
                     if (match) price = "₹" + match[1];
                 }
 
-                // Smart Value Extractor (Colon ho ya next line me ho, sab check karega)
-                function extractValue(keyword1, keyword2) {
-                    if (lower.includes(keyword1) || (keyword2 && lower.includes(keyword2))) {
-                        // Agar same line me colon (:) ya dash (-) ke baad likha hai
-                        if (line.includes(':')) return line.split(':')[1].trim();
-                        if (line.includes('-')) return line.split('-')[1].trim();
-                        // Agar word yahan hai aur uski value theek agli line me hai
-                        if (i + 1 < lines.length && lines[i+1].length < 30) return lines[i+1];
-                    }
-                    return null;
+                // Color Extract: 'Color' word hatake aage ka sab copy kar lega
+                if ((lower.startsWith('color') || lower.startsWith('colour')) && color === "Nahi mila") {
+                    let val = line.replace(/^(color|colour)[\s:\-]*/i, '').trim();
+                    // Agar aage kuch likha hai to wo lega, warna next line lega
+                    color = val ? val : (lines[i+1] || "Nahi mila"); 
                 }
 
-                let c = extractValue('color', 'colour');
-                if (c && color === "Nahi mila") color = c;
+                // Fabric Extract
+                if ((lower.startsWith('fabric') || lower.startsWith('material')) && fabric === "Nahi mila") {
+                    let val = line.replace(/^(fabric|material)[\s:\-]*/i, '').trim();
+                    fabric = val ? val : (lines[i+1] || "Nahi mila");
+                }
 
-                let f = extractValue('fabric', 'material');
-                if (f && fabric === "Nahi mila") fabric = f;
-
-                let s = extractValue('size', 'sizes');
-                if (s && size === "Nahi mila") size = s;
+                // Size Extract
+                if ((lower.startsWith('size') || lower.startsWith('sizes')) && size === "Nahi mila") {
+                    let val = line.replace(/^(sizes?)[\s:\-]*/i, '').trim();
+                    size = val ? val : (lines[i+1] || "Nahi mila");
+                }
             }
 
-            // Results ko input boxes me daalna taaki edit kar sako
             document.getElementById('res-name').value = name;
             document.getElementById('res-price').value = price;
             document.getElementById('res-fabric').value = fabric;
@@ -123,5 +114,6 @@
             resultDiv.style.display = "block";
         }
     </script>
+
 </body>
 </html>
