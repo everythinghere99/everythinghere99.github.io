@@ -9,6 +9,8 @@
         .container { background: white; padding: 20px; border-radius: 8px; max-width: 500px; margin: auto; }
         input, button { width: 100%; padding: 10px; margin-top: 10px; box-sizing: border-box; }
         button { background: #333; color: white; border: none; cursor: pointer; margin-top: 15px;}
+        .result-box { margin-top: 20px; padding: 15px; background: #eef; border-radius: 8px; border: 1px solid #ccd; }
+        .result-box p { margin: 5px 0; }
     </style>
 </head>
 <body>
@@ -16,7 +18,7 @@
         <h2>Product Details Extractor</h2>
         <input type="text" id="product-link" placeholder="Meesho ya kisi product ka link paste karo...">
         <button onclick="fetchProductDetails()">Get Details</button>
-        <div id="scraper-result" style="margin-top: 20px;"></div>
+        <div id="scraper-result"></div>
         
         <br><br>
         <a href="index.html" style="text-decoration: none; color: blue;">⬅ Back to Store</a>
@@ -45,15 +47,21 @@
 
                 if (data.success) {
                     resultDiv.innerHTML = `
-                        <h4>Result:</h4>
-                        <p><strong>Name:</strong> ${data.product.name}</p>
-                        <p style="color: green; font-size: 14px;">${data.product.message}</p>
+                        <div class="result-box">
+                            <h4>Scraped Details:</h4>
+                            <p><strong>Name:</strong> ${data.product.name}</p>
+                            <p><strong>Price:</strong> ${data.product.price}</p>
+                            <p><strong>Fabric:</strong> ${data.product.fabric}</p>
+                            <p><strong>Size:</strong> ${data.product.size}</p>
+                            <p><strong>Color:</strong> ${data.product.color}</p>
+                            <p style="color: green; font-size: 14px; margin-top: 10px;">${data.product.message}</p>
+                        </div>
                     `;
                 } else {
                     resultDiv.innerHTML = `<p style="color: red;">Error: ${data.error}</p>`;
                 }
             } catch (error) {
-                resultDiv.innerHTML = `<p style="color: red;">Backend connect nahi hua. Shayad server sleep mode me hai, 1 min ruko aur try karo.</p>`;
+                resultDiv.innerHTML = `<p style="color: red;">Backend connect nahi hua. Shayad server sleep mode me hai.</p>`;
             }
         }
     </script>
