@@ -657,6 +657,8 @@
                         <li><a onclick="switchPage('about-page', document.getElementById('nav-about'))">About Us</a></li>
                         <li><a onclick="switchPage('contact-page', document.getElementById('nav-contact'))">Contact</a></li>
 
+<li><a href="#" onclick="checkAdminPassword(event)">Admin's Work</a></li>
+
                     </ul>
 
                 </div>
@@ -707,5 +709,18 @@
     <!-- JS -->
     <script src="script.js"></script>
 
+<script>function checkAdminPassword(event) {
+    event.preventDefault(); // Page refresh hone se rokne ke liye
+    let password = prompt("Please enter admin's password':");
+    
+    // Yahan "chepu" ko apne pasand ke password se badal sakte ho
+    if (password === "chepu") {
+        window.location.href = "admin.html";
+    } else if (password !== null) { // Agar koi cancel daba de to kuch mat dikhao
+        alert("Galat password! Entry restricted.");
+    }
+}
+</script>
 </body>
 </html>
+
