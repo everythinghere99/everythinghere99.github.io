@@ -47,7 +47,7 @@
         <a href="index.html" style="text-decoration: none; color: blue;">⬅ Back to Store</a>
     </div>
 
-             <script>
+                 <script>
         function extractSmartDetails() {
             const text = document.getElementById('product-text').value;
             const resultDiv = document.getElementById('scraper-result');
@@ -63,12 +63,11 @@
             let color = "Nahi mila";
             let size = "Nahi mila";
 
-            // 1. Name Extractor (Directly Name: ke aage ka text pakdega)
-            let nameMatch = text.match(/Name\s*:\s*(.+)/i);
+            // 1. Name Extractor 
+            let nameMatch = text.match(/Name\s*:\s*([^\n\r]+)/i);
             if (nameMatch && nameMatch[1]) {
                 name = nameMatch[1].trim();
             } else {
-                // Agar 'Name:' nahi likha, toh pehli aisi line lega jisme Hindi na ho aur '₹' na ho
                 let lines = text.split('\n').map(l => l.trim()).filter(l => l.length > 0);
                 for (let i = 0; i < lines.length; i++) {
                     if (!lines[i].match(/[\u0900-\u097F]/) && !lines[i].includes('₹') && lines[i].length > 5) {
@@ -78,42 +77,44 @@
                 }
             }
 
-            // 2. Price Extractor (Agar text me price copy hua hoga toh)
+            // 2. Price Extractor
             let priceMatch = text.match(/(?:₹|rs\.?|price\s*:)\s*([\d,]+)/i);
             if (priceMatch && priceMatch[1]) {
                 price = "₹" + priceMatch[1].trim();
             }
 
-            // 3. Color Extractor (Primary Color ho, ya Color ho, sabse Beige nikal lega)
-            let colorMatch = text.match(/(?:color|colour)\s*:\s*([a-zA-Z\s]+)/i);
+            // 3. Color Extractor (Ab strictly usi line tak padhega)
+            let colorMatch = text.match(/(?:color|colour)\s*:\s*([^\n\r]+)/i);
             if (colorMatch && colorMatch[1]) {
                 color = colorMatch[1].trim();
             }
 
-            // 4. Fabric Extractor (Material: Synthetic ya Fabric: Cotton, sab pakdega)
-            let fabricMatch = text.match(/(?:fabric|material)\s*:\s*([a-zA-Z\s\-]+)/i);
+            // 4. Fabric Extractor (Ab strictly usi line tak padhega)
+            let fabricMatch = text.match(/(?:fabric|material)\s*:\s*([^\n\r]+)/i);
             if (fabricMatch && fabricMatch[1]) {
                 fabric = fabricMatch[1].trim();
             }
 
-            // 5. Smart Size Extractor (Sirf Asli Sizes pakdega, baaki sab ignore)
-            // Ye list me likhe format ke alawa koi word size me add hi nahi hoga
-            let sizeRegex = /\b(IND\s*-\s*\d+|UK\s*-\s*\d+|US\s*-\s*\d+|EU\s*-\s*\d+|XS|S|M|L|XL|XXL|XXXL|Free\s*Size)\b/gi;
-            let sizesFound = text.match(sizeRegex);
+            // 5. Smart Size Extractor
+            // "Woman's" wale 's ko hide kar rahe hain taaki wo Size 'S' na bane
+            let safeText = text.replace(/'s\b/gi, ''); 
+            
+            // IND sizes me end boundary hata di, ab agar IND-8Woman likha hoga tab bhi IND-8 nikal lega
+            let sizeRegex = /(IND\s*-\s*\d+|UK\s*-\s*\d+|US\s*-\s*\d+|EU\s*-\s*\d+|\bXS\b|\bS\b|\bM\b|\bL\b|\bXL\b|\bXXL\b|\bXXXL\b|\bFree\s*Size\b)/gi;
+            let sizesFound = safeText.match(sizeRegex);
             
             if (sizesFound) {
-                // Duplicate hata kar comma lagayega (Jaise: IND-4, IND-5, IND-6)
+                // Duplicates hata kar format clean karna
                 let uniqueSizes = [...new Set(sizesFound.map(s => s.toUpperCase().replace(/\s+/g, '')))];
                 size = uniqueSizes.join(', ').replace(/IND-/g, 'IND-'); 
             } else {
-                // Agar size 28, 30 number me hai (Jeans wagera ke liye)
-                let numSizesMatch = text.match(/(?:Size|Sizes)\s*:\s*([\d,\s]+)/i);
+                let numSizesMatch = text.match(/(?:Size|Sizes)\s*:\s*([^\n\r]+)/i);
                 if (numSizesMatch && numSizesMatch[1]) {
                     size = numSizesMatch[1].trim();
                 }
             }
 
-            // Screen par Input Boxes me data daalna
+            // Final Assignment to Boxes
             document.getElementById('res-name').value = name;
             document.getElementById('res-price').value = price;
             document.getElementById('res-fabric').value = fabric;
