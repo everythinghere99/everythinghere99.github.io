@@ -7,24 +7,41 @@
     <style>
         body { font-family: Arial, sans-serif; padding: 20px; background: #f4f4f4; }
         .container { background: white; padding: 20px; border-radius: 8px; max-width: 500px; margin: auto; }
-        textarea, button { width: 100%; padding: 10px; margin-top: 10px; box-sizing: border-box; }
-        textarea { height: 150px; resize: vertical; }
-        button { background: #333; color: white; border: none; cursor: pointer; margin-top: 15px; font-weight: bold;}
+        textarea, button { width: 100%; padding: 10px; margin-top: 10px; box-sizing: border-box; font-family: inherit; }
+        textarea { height: 180px; resize: vertical; }
+        button { background: #333; color: white; border: none; cursor: pointer; margin-top: 15px; font-weight: bold; font-size: 16px; padding: 12px;}
         button:hover { background: #555; }
         .result-box { margin-top: 20px; padding: 15px; background: #eef; border-radius: 8px; border: 1px solid #ccd; display: none; }
-        .result-box p { margin: 5px 0; }
+        .result-box input { width: 100%; margin-bottom: 10px; padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
+        .result-box label { font-size: 12px; font-weight: bold; color: #555; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h2>Smart Product Extractor 🎯</h2>
-        <p style="font-size: 14px; color: #555;">Meesho app/website se product ka poora text copy karo aur yahan paste kar do.</p>
+        <h2>Smart Extractor 🎯</h2>
+        <p style="font-size: 14px; color: #555;">Meesho ka poora product text copy karke yahan paste karo.</p>
         
-        <textarea id="product-text" placeholder="Yahan Meesho ka text paste karo... (Name, Price, Details etc.)"></textarea>
+        <textarea id="product-text" placeholder="Paste here..."></textarea>
         
         <button onclick="extractSmartDetails()">Extract Details</button>
         
-        <div id="scraper-result" class="result-box"></div>
+        <div id="scraper-result" class="result-box">
+            <h4>Extracted Details (Editable):</h4>
+            <label>Name:</label>
+            <input type="text" id="res-name">
+            
+            <label>Price:</label>
+            <input type="text" id="res-price">
+            
+            <label>Fabric:</label>
+            <input type="text" id="res-fabric">
+            
+            <label>Color:</label>
+            <input type="text" id="res-color">
+            
+            <label>Size:</label>
+            <input type="text" id="res-size">
+        </div>
         
         <br><br>
         <a href="index.html" style="text-decoration: none; color: blue;">⬅ Back to Store</a>
@@ -36,7 +53,7 @@
             const resultDiv = document.getElementById('scraper-result');
 
             if (!text.trim()) {
-                alert("Pehle Meesho ka text paste karo!");
+                alert("Bhai pehle text toh paste kar!");
                 return;
             }
 
@@ -46,52 +63,64 @@
             let color = "Nahi mila";
             let size = "Nahi mila";
 
-            // Text ko lines me todna
-            const lines = text.split('\n').map(line => line.trim()).filter(line => line.length > 0);
+            // Text ko alag-alag lines me todna aur faltu spaces hatana
+            const lines = text.split('\n').map(l => l.trim()).filter(l => l.length > 0);
 
-            // 1. Name: Usually sabse pehli ya dusri line hoti hai
-            if (lines.length > 0) {
-                name = lines[0]; 
+            // 1. Smart Name Extractor: Faltu words skip karega
+            for (let i = 0; i < Math.min(10, lines.length); i++) {
+                let lower = lines[i].toLowerCase();
+                if (!lower.includes('₹') && 
+                    !lower.includes('delivery') && 
+                    !lower.includes('rating') && 
+                    !lower.includes('reviews') && 
+                    !lower.includes('shop') && 
+                    lines[i].length > 8) {
+                    name = lines[i];
+                    break; // Pehla valid lamba naam milte hi ruk jayega
+                }
             }
 
-            // 2. Scan every line for exact words
+            // 2. Scan every line for Details
             for (let i = 0; i < lines.length; i++) {
-                let currentLine = lines[i];
-                let lowerLine = currentLine.toLowerCase();
+                let line = lines[i];
+                let lower = line.toLowerCase();
 
-                // Price dhoondhna (₹ symbol ke sath)
-                if (currentLine.includes('₹') && price === "Nahi mila") {
-                    let pMatch = currentLine.match(/₹\s*([0-9,]+)/);
-                    if (pMatch) price = "₹" + pMatch[1];
+                // Price Extract
+                if (lower.includes('₹') && price === "Nahi mila") {
+                    let match = line.match(/₹\s*([0-9,]+)/);
+                    if (match) price = "₹" + match[1];
                 }
 
-                // Fabric / Material
-                if (lowerLine.startsWith('fabric') || lowerLine.startsWith('material')) {
-                    fabric = currentLine.includes(':') ? currentLine.split(':')[1].trim() : lines[i+1];
+                // Smart Value Extractor (Colon ho ya next line me ho, sab check karega)
+                function extractValue(keyword1, keyword2) {
+                    if (lower.includes(keyword1) || (keyword2 && lower.includes(keyword2))) {
+                        // Agar same line me colon (:) ya dash (-) ke baad likha hai
+                        if (line.includes(':')) return line.split(':')[1].trim();
+                        if (line.includes('-')) return line.split('-')[1].trim();
+                        // Agar word yahan hai aur uski value theek agli line me hai
+                        if (i + 1 < lines.length && lines[i+1].length < 30) return lines[i+1];
+                    }
+                    return null;
                 }
 
-                // Color / Colour
-                if (lowerLine.startsWith('color') || lowerLine.startsWith('colour')) {
-                    color = currentLine.includes(':') ? currentLine.split(':')[1].trim() : lines[i+1];
-                }
+                let c = extractValue('color', 'colour');
+                if (c && color === "Nahi mila") color = c;
 
-                // Sizes
-                if (lowerLine.startsWith('size') || lowerLine.startsWith('sizes')) {
-                    size = currentLine.includes(':') ? currentLine.split(':')[1].trim() : lines[i+1];
-                }
+                let f = extractValue('fabric', 'material');
+                if (f && fabric === "Nahi mila") fabric = f;
+
+                let s = extractValue('size', 'sizes');
+                if (s && size === "Nahi mila") size = s;
             }
 
-            // Screen par result dikhana
+            // Results ko input boxes me daalna taaki edit kar sako
+            document.getElementById('res-name').value = name;
+            document.getElementById('res-price').value = price;
+            document.getElementById('res-fabric').value = fabric;
+            document.getElementById('res-color').value = color;
+            document.getElementById('res-size').value = size;
+
             resultDiv.style.display = "block";
-            resultDiv.innerHTML = `
-                <h4>Extracted Details:</h4>
-                <p><strong>Name:</strong> ${name}</p>
-                <p><strong>Price:</strong> ${price}</p>
-                <p><strong>Fabric:</strong> ${fabric}</p>
-                <p><strong>Color:</strong> ${color}</p>
-                <p><strong>Size:</strong> ${size}</p>
-                <p style="color: green; font-size: 13px; margin-top: 10px;">✅ 100% Offline & Block-Free!</p>
-            `;
         }
     </script>
 </body>
