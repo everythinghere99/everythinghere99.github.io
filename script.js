@@ -321,7 +321,125 @@ const affiliateProducts = [
         sizes: [
             { name: "Standard", price: "₹664" }
         ]
+    },
+    {
+        id: "SHREE-P23",
+        name: "Women's Sleeveless kurti",
+        images: [
+            "https://i.ibb.co/gLzrNv59/cf99bfbb5899656f7c3623bf90dc20dd.jpg"
+        ],
+        shortDescription: "Chic and stylish sleeveless kurti designed for effortless everyday ethnic elegance.",
+        description: "Chic and stylish sleeveless kurti designed for effortless everyday ethnic elegance and comfort.",
+        price: "₹999",
+        affiliateLink: "https://link.amazon/B08nTCaC8",
+        colors: [
+            { 
+                name: "Standard", 
+                image: "https://i.ibb.co/gLzrNv59/cf99bfbb5899656f7c3623bf90dc20dd.jpg", 
+                images: [
+                    "https://i.ibb.co/gLzrNv59/cf99bfbb5899656f7c3623bf90dc20dd.jpg",
+                    "https://i.ibb.co/gFX1Jbtb/61cl-OCC9-Lq-L-SX679.jpg",
+                    "https://i.ibb.co/tTpsrNqh/61ls-S-u-ZKn-L-SX679.jpg"
+                ],
+                price: "₹999" 
+            }
+        ],
+        sizes: [
+            { name: "S", price: "₹999" },
+            { name: "M", price: "₹999" },
+            { name: "L", price: "₹999" },
+            { name: "XL", price: "₹999" }
+        ]
+    },
+    {
+        id: "SHREE-P24",
+        name: "Women's Sleeveless kurti",
+        images: [
+            "https://i.ibb.co/TB89Dh0T/f4a8af5325e019e96aeb3c1b7d907e92.jpg"
+        ],
+        shortDescription: "Trendy sleeveless kurti featuring premium fabric for a gorgeous summer ethnic look.",
+        description: "Trendy sleeveless kurti featuring premium fabric for a gorgeous summer ethnic look and relaxed feel.",
+        price: "₹999",
+        affiliateLink: "https://www.amazon.in/dp/B0H2Q174S8",
+        colors: [
+            { 
+                name: "Standard", 
+                image: "https://i.ibb.co/TB89Dh0T/f4a8af5325e019e96aeb3c1b7d907e92.jpg", 
+                images: [
+                    "https://i.ibb.co/TB89Dh0T/f4a8af5325e019e96aeb3c1b7d907e92.jpg",
+                    "https://i.ibb.co/wrW7jfdJ/71-Z8-QAHVi-WL-SX679.jpg",
+                    "https://i.ibb.co/CSMhmMg/61-NOk-JH59j-L-SX679.jpg",
+                    "https://i.ibb.co/cX3RwK13/51g-Tth2tv-GL-SY879.jpg"
+                ],
+                price: "₹999" 
+            }
+        ],
+        sizes: [
+            { name: "S", price: "₹999" },
+            { name: "M", price: "₹999" },
+            { name: "L", price: "₹999" },
+            { name: "XL", price: "₹999" }
+        ]
+    },
+    {
+        id: "SHREE-P25",
+        name: "Women's Shirt",
+        images: [
+            "https://i.ibb.co/yFfkRt7p/IMG-20260818-WA0003.jpg"
+        ],
+        shortDescription: "Smart and casual women's shirt tailored for a clean, everyday modern outfit.",
+        description: "Smart and casual women's shirt tailored for a clean, everyday modern outfit and comfortable fit.",
+        price: "₹449",
+        affiliateLink: "https://link.amazon/B0gPAuGGh",
+        colors: [
+            { 
+                name: "Standard", 
+                image: "https://i.ibb.co/yFfkRt7p/IMG-20260818-WA0003.jpg", 
+                images: [
+                    "https://i.ibb.co/yFfkRt7p/IMG-20260818-WA0003.jpg"
+                ],
+                price: "₹449" 
+            }
+        ],
+        sizes: [
+            { name: "S", price: "₹449" },
+            { name: "M", price: "₹449" },
+            { name: "L", price: "₹449" },
+            { name: "XL", price: "₹449" }
+        ]
+    },
+    {
+        id: "SHREE-P26",
+        name: "Aesthetic Men's Shirt",
+        images: [
+            "https://i.ibb.co/hJWvCF2b/IMG-20260818-WA0002.jpg"
+        ],
+        shortDescription: "Aesthetic men's shirt offering a cool textured look and ultimate daily comfort.",
+        description: "Aesthetic men's shirt offering a cool textured look, sharp styling, and ultimate daily comfort.",
+        price: "₹499",
+        affiliateLink: "https://link.amazon/B0bxp0L1q",
+        colors: [
+            { 
+                name: "Standard", 
+                image: "https://i.ibb.co/hJWvCF2b/IMG-20260818-WA0002.jpg", 
+                images: [
+                    "https://i.ibb.co/hJWvCF2b/IMG-20260818-WA0002.jpg",
+                    "https://i.ibb.co/hhkkbRn/31g04b5-KEIL.jpg",
+                    "https://i.ibb.co/3YWCVCZD/310-Web-JS-UL.jpg",
+                    "https://i.ibb.co/zWGpfSvk/41m-L4-M3cq-L.jpg",
+                    "https://i.ibb.co/RTfys6fg/41-Ef-Lijok-NL.jpg"
+                ],
+                price: "₹499" 
+            }
+        ],
+        sizes: [
+            { name: "S", price: "₹499" },
+            { name: "M", price: "₹499" },
+            { name: "L", price: "₹499" },
+            { name: "XL", price: "₹499" }
+        ]
     }
+
     ];
 
 
