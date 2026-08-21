@@ -302,709 +302,346 @@ const affiliateProducts = [
     {
         id: "SHREE-P22",
         name: "Cozy Pillows",
-        images: [
-            "https://i.ibb.co/0ysFS841/IMG-20260811-WA0000.jpg"
-        ],
-        shortDescription: "Soft and aesthetic cozy pillow to upgrade your room vibe.",
+        images: ["https://i.ibb.co/0ysFS841/IMG-20260811-WA0000.jpg"],
         description: "Soft and aesthetic cozy pillow to upgrade your room vibe and comfort.",
-        price: "₹664",
-        colors: [
-            { 
-                name: "Standard", 
-                image: "https://i.ibb.co/0ysFS841/IMG-20260811-WA0000.jpg", 
-                images: [
-                    "https://i.ibb.co/0ysFS841/IMG-20260811-WA0000.jpg"
-                ],
-                price: "₹664" 
-            }
-        ],
-        sizes: [
-            { name: "Standard", price: "₹664" }
-        ]
+        price: "₹664"
     },
     {
         id: "SHREE-P23",
         name: "Women's Sleeveless kurti",
         images: [
-            "https://i.ibb.co/gLzrNv59/cf99bfbb5899656f7c3623bf90dc20dd.jpg"
+            "https://i.ibb.co/gLzrNv59/cf99bfbb5899656f7c3623bf90dc20dd.jpg",
+            "https://i.ibb.co/gFX1Jbtb/61cl-OCC9-Lq-L-SX679.jpg",
+            "https://i.ibb.co/tTpsrNqh/61ls-S-u-ZKn-L-SX679.jpg"
         ],
-        shortDescription: "Chic and stylish sleeveless kurti designed for effortless everyday ethnic elegance.",
         description: "Chic and stylish sleeveless kurti designed for effortless everyday ethnic elegance and comfort.",
         price: "₹999",
-        affiliateLink: "https://link.amazon/B08nTCaC8",
-        colors: [
-            { 
-                name: "Standard", 
-                image: "https://i.ibb.co/gLzrNv59/cf99bfbb5899656f7c3623bf90dc20dd.jpg", 
-                images: [
-                    "https://i.ibb.co/gLzrNv59/cf99bfbb5899656f7c3623bf90dc20dd.jpg",
-                    "https://i.ibb.co/gFX1Jbtb/61cl-OCC9-Lq-L-SX679.jpg",
-                    "https://i.ibb.co/tTpsrNqh/61ls-S-u-ZKn-L-SX679.jpg"
-                ],
-                price: "₹999" 
-            }
-        ],
-        sizes: [
-            { name: "S", price: "₹999" },
-            { name: "M", price: "₹999" },
-            { name: "L", price: "₹999" },
-            { name: "XL", price: "₹999" }
-        ]
+        affiliateLink: "https://link.amazon/B08nTCaC8"
     },
     {
         id: "SHREE-P24",
         name: "Women's Sleeveless kurti",
         images: [
-            "https://i.ibb.co/TB89Dh0T/f4a8af5325e019e96aeb3c1b7d907e92.jpg"
+            "https://i.ibb.co/TB89Dh0T/f4a8af5325e019e96aeb3c1b7d907e92.jpg",
+            "https://i.ibb.co/wrW7jfdJ/71-Z8-QAHVi-WL-SX679.jpg",
+            "https://i.ibb.co/CSMhmMg/61-NOk-JH59j-L-SX679.jpg",
+            "https://i.ibb.co/cX3RwK13/51g-Tth2tv-GL-SY879.jpg"
         ],
-        shortDescription: "Trendy sleeveless kurti featuring premium fabric for a gorgeous summer ethnic look.",
         description: "Trendy sleeveless kurti featuring premium fabric for a gorgeous summer ethnic look and relaxed feel.",
         price: "₹999",
-        affiliateLink: "https://www.amazon.in/dp/B0H2Q174S8",
-        colors: [
-            { 
-                name: "Standard", 
-                image: "https://i.ibb.co/TB89Dh0T/f4a8af5325e019e96aeb3c1b7d907e92.jpg", 
-                images: [
-                    "https://i.ibb.co/TB89Dh0T/f4a8af5325e019e96aeb3c1b7d907e92.jpg",
-                    "https://i.ibb.co/wrW7jfdJ/71-Z8-QAHVi-WL-SX679.jpg",
-                    "https://i.ibb.co/CSMhmMg/61-NOk-JH59j-L-SX679.jpg",
-                    "https://i.ibb.co/cX3RwK13/51g-Tth2tv-GL-SY879.jpg"
-                ],
-                price: "₹999" 
-            }
-        ],
-        sizes: [
-            { name: "S", price: "₹999" },
-            { name: "M", price: "₹999" },
-            { name: "L", price: "₹999" },
-            { name: "XL", price: "₹999" }
-        ]
+        affiliateLink: "https://www.amazon.in/dp/B0H2Q174S8"
     },
     {
         id: "SHREE-P25",
         name: "Women's Shirt",
-        images: [
-            "https://i.ibb.co/yFfkRt7p/IMG-20260818-WA0003.jpg"
-        ],
-        shortDescription: "Smart and casual women's shirt tailored for a clean, everyday modern outfit.",
+        images: ["https://i.ibb.co/yFfkRt7p/IMG-20260818-WA0003.jpg"],
         description: "Smart and casual women's shirt tailored for a clean, everyday modern outfit and comfortable fit.",
         price: "₹449",
-        affiliateLink: "https://link.amazon/B0gPAuGGh",
-        colors: [
-            { 
-                name: "Standard", 
-                image: "https://i.ibb.co/yFfkRt7p/IMG-20260818-WA0003.jpg", 
-                images: [
-                    "https://i.ibb.co/yFfkRt7p/IMG-20260818-WA0003.jpg"
-                ],
-                price: "₹449" 
-            }
-        ],
-        sizes: [
-            { name: "S", price: "₹449" },
-            { name: "M", price: "₹449" },
-            { name: "L", price: "₹449" },
-            { name: "XL", price: "₹449" }
-        ]
+        affiliateLink: "https://link.amazon/B0gPAuGGh"
     },
     {
         id: "SHREE-P26",
         name: "Aesthetic Men's Shirt",
         images: [
-            "https://i.ibb.co/hJWvCF2b/IMG-20260818-WA0002.jpg"
+            "https://i.ibb.co/hJWvCF2b/IMG-20260818-WA0002.jpg",
+            "https://i.ibb.co/hhkkbRn/31g04b5-KEIL.jpg",
+            "https://i.ibb.co/3YWCVCZD/310-Web-JS-UL.jpg",
+            "https://i.ibb.co/zWGpfSvk/41m-L4-M3cq-L.jpg",
+            "https://i.ibb.co/RTfys6fg/41-Ef-Lijok-NL.jpg"
         ],
-        shortDescription: "Aesthetic men's shirt offering a cool textured look and ultimate daily comfort.",
         description: "Aesthetic men's shirt offering a cool textured look, sharp styling, and ultimate daily comfort.",
         price: "₹499",
-        affiliateLink: "https://link.amazon/B0bxp0L1q",
-        colors: [
-            { 
-                name: "Standard", 
-                image: "https://i.ibb.co/hJWvCF2b/IMG-20260818-WA0002.jpg", 
-                images: [
-                    "https://i.ibb.co/hJWvCF2b/IMG-20260818-WA0002.jpg",
-                    "https://i.ibb.co/hhkkbRn/31g04b5-KEIL.jpg",
-                    "https://i.ibb.co/3YWCVCZD/310-Web-JS-UL.jpg",
-                    "https://i.ibb.co/zWGpfSvk/41m-L4-M3cq-L.jpg",
-                    "https://i.ibb.co/RTfys6fg/41-Ef-Lijok-NL.jpg"
-                ],
-                price: "₹499" 
-            }
-        ],
-        sizes: [
-            { name: "S", price: "₹499" },
-            { name: "M", price: "₹499" },
-            { name: "L", price: "₹499" },
-            { name: "XL", price: "₹499" }
-        ]
+        affiliateLink: "https://link.amazon/B0bxp0L1q"
     },
     {
-        id: "SHREE-P-27",
+        id: "SHREE-P27",
         name: "Cozy Coffee Mug",
-        images: ["https://i.ibb.co/BHVCWnRs/51at-Qk-MHWn-L.jpg"],
-        shortDescription: "Aesthetic and cozy coffee mug to make your daily sips feel extra special.",
+        images: [
+            "https://i.ibb.co/BHVCWnRs/51at-Qk-MHWn-L.jpg",
+            "https://i.ibb.co/fdqNrbhw/41-Fn0-Zk3-Pj-L.jpg",
+            "https://i.ibb.co/j96PhCbC/41yp-cs09-LL.jpg",
+            "https://i.ibb.co/svH5dTBy/41sos-UKym-CL.jpg",
+            "https://i.ibb.co/MDkmMPYC/51-Dc-ETyp1-RL.jpg"
+        ],
         description: "Aesthetic and cozy coffee mug designed to elevate your daily coffee or tea ritual with style.",
         price: "₹599",
-        affiliateLink: "https://link.amazon/B0gdIN5BJ",
-        colors: [
-            { 
-                name: "Standard", 
-                image: "https://i.ibb.co/BHVCWnRs/51at-Qk-MHWn-L.jpg", 
-                images: [
-                    "https://i.ibb.co/BHVCWnRs/51at-Qk-MHWn-L.jpg",
-                    "https://i.ibb.co/fdqNrbhw/41-Fn0-Zk3-Pj-L.jpg",
-                    "https://i.ibb.co/j96PhCbC/41yp-cs09-LL.jpg",
-                    "https://i.ibb.co/svH5dTBy/41sos-UKym-CL.jpg",
-                    "https://i.ibb.co/MDkmMPYC/51-Dc-ETyp1-RL.jpg"
-                ],
-                price: "₹599" 
-            }
-        ],
-        sizes: [{ name: "Standard", price: "₹599" }]
+        affiliateLink: "https://link.amazon/B0gdIN5BJ"
     },
     {
-        id: "SHREE-P-28",
+        id: "SHREE-P28",
         name: "Couple's Coffee Mug",
-        images: ["https://i.ibb.co/WNz1z5SZ/41-Tw9-QE9-Gx-L.jpg"],
-        shortDescription: "Cute matching couple coffee mugs perfect for sharing sweet moments together.",
+        images: [
+            "https://i.ibb.co/WNz1z5SZ/41-Tw9-QE9-Gx-L.jpg",
+            "https://i.ibb.co/xK2V5n6d/41v8-Ip-S1c-KL.jpg",
+            "https://i.ibb.co/xKR6cxbY/41-Ir1-Xj-Zlt-L.jpg"
+        ],
         description: "Charming couple's coffee mug set designed for sharing special moments and cozy mornings.",
         price: "₹785",
-        affiliateLink: "https://link.amazon/B0iCbOcSf",
-        colors: [
-            { 
-                name: "Standard", 
-                image: "https://i.ibb.co/WNz1z5SZ/41-Tw9-QE9-Gx-L.jpg", 
-                images: [
-                    "https://i.ibb.co/WNz1z5SZ/41-Tw9-QE9-Gx-L.jpg",
-                    "https://i.ibb.co/xK2V5n6d/41v8-Ip-S1c-KL.jpg",
-                    "https://i.ibb.co/xKR6cxbY/41-Ir1-Xj-Zlt-L.jpg"
-                ],
-                price: "₹785" 
-            }
-        ],
-        sizes: [{ name: "Standard", price: "₹785" }]
+        affiliateLink: "https://link.amazon/B0iCbOcSf"
     },
     {
-        id: "SHREE-P-29",
+        id: "SHREE-P29",
         name: "Cute Little Bottle",
-        images: ["https://i.ibb.co/qL8ZY0gN/41cp-G18-D61-L.jpg"],
-        shortDescription: "Compact and adorable little water bottle to carry your hydration in style.",
+        images: [
+            "https://i.ibb.co/qL8ZY0gN/41cp-G18-D61-L.jpg",
+            "https://i.ibb.co/bMd4SJ6y/41f-F-Yb-qf-L.jpg",
+            "https://i.ibb.co/FkBfJJX6/51y-Cq-E9-B9q-L.jpg"
+        ],
         description: "Compact, portable, and super cute little bottle designed for easy everyday use.",
         price: "₹199",
-        affiliateLink: "https://link.amazon/B0cW1GBms",
-        colors: [
-            { 
-                name: "Standard", 
-                image: "https://i.ibb.co/qL8ZY0gN/41cp-G18-D61-L.jpg", 
-                images: [
-                    "https://i.ibb.co/qL8ZY0gN/41cp-G18-D61-L.jpg",
-                    "https://i.ibb.co/bMd4SJ6y/41f-F-Yb-qf-L.jpg",
-                    "https://i.ibb.co/FkBfJJX6/51y-Cq-E9-B9q-L.jpg"
-                ],
-                price: "₹199" 
-            }
-        ],
-        sizes: [{ name: "Standard", price: "₹199" }]
+        affiliateLink: "https://link.amazon/B0cW1GBms"
     },
     {
-        id: "SHREE-P-30",
+        id: "SHREE-P30",
         name: "Cozy Alarm Clock",
-        images: ["https://i.ibb.co/PZNxcym4/41u-OKdfod-OL.jpg"],
-        shortDescription: "Vintage-styled cozy alarm clock to give your bedside table a warm aesthetic vibe.",
+        images: [
+            "https://i.ibb.co/PZNxcym4/41u-OKdfod-OL.jpg",
+            "https://i.ibb.co/hF4Yw1pS/41-Bu6-PYLmx-L.jpg",
+            "https://i.ibb.co/vvhhVyn1/41e0-Ydh-WAe-L.jpg",
+            "https://i.ibb.co/93Yj4CtM/41c3-B4-CDf1-L.jpg",
+            "https://i.ibb.co/fdysMjNn/418-Ur-R-t-AEL.jpg"
+        ],
         description: "Charming cozy alarm clock featuring a classic design to brighten up your desk or bedroom decor.",
         price: "₹496",
-        affiliateLink: "https://link.amazon/B00blXMZQ",
-        colors: [
-            { 
-                name: "Standard", 
-                image: "https://i.ibb.co/PZNxcym4/41u-OKdfod-OL.jpg", 
-                images: [
-                    "https://i.ibb.co/PZNxcym4/41u-OKdfod-OL.jpg",
-                    "https://i.ibb.co/hF4Yw1pS/41-Bu6-PYLmx-L.jpg",
-                    "https://i.ibb.co/vvhhVyn1/41e0-Ydh-WAe-L.jpg",
-                    "https://i.ibb.co/93Yj4CtM/41c3-B4-CDf1-L.jpg",
-                    "https://i.ibb.co/fdysMjNn/418-Ur-R-t-AEL.jpg"
-                ],
-                price: "₹496" 
-            }
-        ],
-        sizes: [{ name: "Standard", price: "₹496" }]
+        affiliateLink: "https://link.amazon/B00blXMZQ"
     },
     {
-        id: "SHREE-P-31",
+        id: "SHREE-P31",
         name: "Earrings for Women",
-        images: ["https://i.ibb.co/67JY61bs/41xo-HRQuit-L.jpg"],
-        shortDescription: "Elegant and stylish earrings designed to elevate your everyday and party outfits.",
+        images: [
+            "https://i.ibb.co/67JY61bs/41xo-HRQuit-L.jpg",
+            "https://i.ibb.co/R4HjyPHv/41ig6x6d-f-L.jpg",
+            "https://i.ibb.co/zHfrX7Qb/41z-Pc5y5-EWL.jpg"
+        ],
         description: "Gorgeous women's earrings offering a chic and graceful finish to complement any look.",
         price: "₹607",
-        affiliateLink: "https://link.amazon/B0ddOwAXC",
-        colors: [
-            { 
-                name: "Standard", 
-                image: "https://i.ibb.co/67JY61bs/41xo-HRQuit-L.jpg", 
-                images: [
-                    "https://i.ibb.co/67JY61bs/41xo-HRQuit-L.jpg",
-                    "https://i.ibb.co/R4HjyPHv/41ig6x6d-f-L.jpg",
-                    "https://i.ibb.co/zHfrX7Qb/41z-Pc5y5-EWL.jpg"
-                ],
-                price: "₹607" 
-            }
-        ],
-        sizes: [{ name: "Standard", price: "₹607" }]
+        affiliateLink: "https://link.amazon/B0ddOwAXC"
     },
     {
-        id: "SHREE-P-32",
+        id: "SHREE-P32",
         name: "Ethnic Girls Earrings",
-        images: ["https://i.ibb.co/gb3X5S4r/41z-EZh-CDr-FL.jpg"],
-        shortDescription: "Traditional ethnic earrings that add a touch of grace to festive and ethnic outfits.",
+        images: [
+            "https://i.ibb.co/gb3X5S4r/41z-EZh-CDr-FL.jpg",
+            "https://i.ibb.co/5gnvMr5p/51u-L5-Hyiqb-L.jpg",
+            "https://i.ibb.co/DHSVmdvg/41-JCn-NATqm-L.jpg"
+        ],
         description: "Beautiful ethnic earrings designed with fine details to make your traditional style stand out.",
         price: "₹339",
-        affiliateLink: "https://link.amazon/B07WFU2nt",
-        colors: [
-            { 
-                name: "Standard", 
-                image: "https://i.ibb.co/gb3X5S4r/41z-EZh-CDr-FL.jpg", 
-                images: [
-                    "https://i.ibb.co/gb3X5S4r/41z-EZh-CDr-FL.jpg",
-                    "https://i.ibb.co/5gnvMr5p/51u-L5-Hyiqb-L.jpg",
-                    "https://i.ibb.co/DHSVmdvg/41-JCn-NATqm-L.jpg"
-                ],
-                price: "₹339" 
-            }
-        ],
-        sizes: [{ name: "Standard", price: "₹339" }]
+        affiliateLink: "https://link.amazon/B07WFU2nt"
     },
     {
-        id: "SHREE-P-33",
+        id: "SHREE-P33",
         name: "Wall's Photo Frame",
-        images: ["https://i.ibb.co/TxRMcqwL/51-B-XFe-Vsp-L.jpg"],
-        shortDescription: "Modern wall photo frame to display your favorite memories with an aesthetic touch.",
+        images: [
+            "https://i.ibb.co/TxRMcqwL/51-B-XFe-Vsp-L.jpg",
+            "https://i.ibb.co/p6vn31TN/51-WQ0-s-Li-L.jpg",
+            "https://i.ibb.co/Fknp4BrQ/51lj-3-OY1y-L.jpg",
+            "https://i.ibb.co/fzB579xf/51-Pwa-Bzeo-QL.jpg"
+        ],
         description: "Stylish photo frame designed to decorate your walls and showcase your best moments.",
         price: "₹238",
-        affiliateLink: "https://link.amazon/B09HPpj0T",
-        colors: [
-            { 
-                name: "Standard", 
-                image: "https://i.ibb.co/TxRMcqwL/51-B-XFe-Vsp-L.jpg", 
-                images: [
-                    "https://i.ibb.co/TxRMcqwL/51-B-XFe-Vsp-L.jpg",
-                    "https://i.ibb.co/p6vn31TN/51-WQ0-s-Li-L.jpg",
-                    "https://i.ibb.co/Fknp4BrQ/51lj-3-OY1y-L.jpg",
-                    "https://i.ibb.co/fzB579xf/51-Pwa-Bzeo-QL.jpg"
-                ],
-                price: "₹238" 
-            }
-        ],
-        sizes: [{ name: "Standard", price: "₹238" }]
+        affiliateLink: "https://link.amazon/B09HPpj0T"
     },
     {
-        id: "SHREE-P-34",
+        id: "SHREE-P34",
         name: "Wooden wall frame",
-        images: ["https://i.ibb.co/q3rHHVRr/41gbn-z1-IYL.jpg"],
-        shortDescription: "Rustic wooden wall frame bringing natural warmth and elegance to your room decor.",
+        images: [
+            "https://i.ibb.co/q3rHHVRr/41gbn-z1-IYL.jpg",
+            "https://i.ibb.co/Fb4P53zC/41z-KTRok7b-L.jpg",
+            "https://i.ibb.co/F9XCN4X/516-O56-FNi2-L.jpg"
+        ],
         description: "Premium wooden wall frame tailored to give a classic aesthetic look to your home walls.",
         price: "₹228",
-        affiliateLink: "https://link.amazon/B05jDTQrp",
-        colors: [
-            { 
-                name: "Standard", 
-                image: "https://i.ibb.co/q3rHHVRr/41gbn-z1-IYL.jpg", 
-                images: [
-                    "https://i.ibb.co/q3rHHVRr/41gbn-z1-IYL.jpg",
-                    "https://i.ibb.co/Fb4P53zC/41z-KTRok7b-L.jpg",
-                    "https://i.ibb.co/F9XCN4X/516-O56-FNi2-L.jpg"
-                ],
-                price: "₹228" 
-            }
-        ],
-        sizes: [{ name: "Standard", price: "₹228" }]
+        affiliateLink: "https://link.amazon/B05jDTQrp"
     },
     {
-        id: "SHREE-P-35",
+        id: "SHREE-P35",
         name: "Deer Wall Lamp",
-        images: ["https://i.ibb.co/QFRtmwnj/41-Mo-YPw-SXSL.jpg"],
-        shortDescription: "Unique deer-themed wall lamp to create a warm and cozy ambient room lighting.",
+        images: [
+            "https://i.ibb.co/QFRtmwnj/41-Mo-YPw-SXSL.jpg",
+            "https://i.ibb.co/WWx8j5XY/41xo-EBw1-Ng-L.jpg"
+        ],
         description: "Creative deer wall lamp that serves as both a stylish decor piece and soft ambient light.",
         price: "₹399",
-        affiliateLink: "https://link.amazon/B08rXsYkq",
-        colors: [
-            { 
-                name: "Standard", 
-                image: "https://i.ibb.co/QFRtmwnj/41-Mo-YPw-SXSL.jpg", 
-                images: [
-                    "https://i.ibb.co/QFRtmwnj/41-Mo-YPw-SXSL.jpg",
-                    "https://i.ibb.co/WWx8j5XY/41xo-EBw1-Ng-L.jpg"
-                ],
-                price: "₹399" 
-            }
-        ],
-        sizes: [{ name: "Standard", price: "₹399" }]
+        affiliateLink: "https://link.amazon/B08rXsYkq"
     },
     {
-        id: "SHREE-P-36",
+        id: "SHREE-P36",
         name: "Decoration Solar Lights",
-        images: ["https://i.ibb.co/HfFBwnCZ/41bf-S948-S7-L.jpg"],
-        shortDescription: "Eco-friendly solar decorative string lights to brighten up your outdoor and indoor spaces.",
+        images: [
+            "https://i.ibb.co/HfFBwnCZ/41bf-S948-S7-L.jpg",
+            "https://i.ibb.co/pBv13XD0/41cnak-IHz-OL.jpg",
+            "https://i.ibb.co/fdr2QMrs/41a-Nz-TLh8-KL.jpg",
+            "https://i.ibb.co/FqzXnNrn/51v9-Cen-FGu-L.jpg",
+            "https://i.ibb.co/23cw92nY/51i-k6-X5c-HL.jpg"
+        ],
         description: "Beautiful decoration solar lights that add a magical glow to your balcony, garden, or room.",
         price: "₹399",
-        affiliateLink: "https://link.amazon/B0ebcKcxE",
-        colors: [
-            { 
-                name: "Standard", 
-                image: "https://i.ibb.co/HfFBwnCZ/41bf-S948-S7-L.jpg", 
-                images: [
-                    "https://i.ibb.co/HfFBwnCZ/41bf-S948-S7-L.jpg",
-                    "https://i.ibb.co/pBv13XD0/41cnak-IHz-OL.jpg",
-                    "https://i.ibb.co/fdr2QMrs/41a-Nz-TLh8-KL.jpg",
-                    "https://i.ibb.co/FqzXnNrn/51v9-Cen-FGu-L.jpg",
-                    "https://i.ibb.co/23cw92nY/51i-k6-X5c-HL.jpg"
-                ],
-                price: "₹399" 
-            }
-        ],
-        sizes: [{ name: "Standard", price: "₹399" }]
+        affiliateLink: "https://link.amazon/B0ebcKcxE"
     },
     {
-        id: "SHREE-P-37",
+        id: "SHREE-P37",
         name: "Apple Wrist Watch",
-        images: ["https://i.ibb.co/gFrsLkGN/41-KQAyl-Cgr-L.jpg"],
-        shortDescription: "Sleek and modern smartwatch designed for daily fitness tracking and smart styling.",
+        images: [
+            "https://i.ibb.co/gFrsLkGN/41-KQAyl-Cgr-L.jpg",
+            "https://i.ibb.co/gLmMzC7Y/414c6h-T-7x-L.jpg",
+            "https://i.ibb.co/1Y4p14yM/51x-Mysnfy-L.jpg",
+            "https://i.ibb.co/pjz3D55w/419ia-W6-SNQL.jpg"
+        ],
         description: "Feature-packed Apple style wrist watch offering a seamless digital experience and sleek look.",
         price: "₹599",
-        affiliateLink: "https://link.amazon/B0iR3W1VO",
-        colors: [
-            { 
-                name: "Standard", 
-                image: "https://i.ibb.co/gFrsLkGN/41-KQAyl-Cgr-L.jpg", 
-                images: [
-                    "https://i.ibb.co/gFrsLkGN/41-KQAyl-Cgr-L.jpg",
-                    "https://i.ibb.co/gLmMzC7Y/414c6h-T-7x-L.jpg",
-                    "https://i.ibb.co/1Y4p14yM/51x-Mysnfy-L.jpg",
-                    "https://i.ibb.co/pjz3D55w/419ia-W6-SNQL.jpg"
-                ],
-                price: "₹599" 
-            }
-        ],
-        sizes: [{ name: "Standard", price: "₹599" }]
+        affiliateLink: "https://link.amazon/B0iR3W1VO"
     },
     {
-        id: "SHREE-P-38",
+        id: "SHREE-P38",
         name: "Women's Heel Sandal",
-        images: ["https://i.ibb.co/7dCnYDmq/41f-T0d0xig-L.jpg"],
-        shortDescription: "Chic women's heel sandals offering comfortable elevation and stunning party style.",
+        images: [
+            "https://i.ibb.co/7dCnYDmq/41f-T0d0xig-L.jpg",
+            "https://i.ibb.co/Y7KtyLvM/31-Zg-X-k-A5-L.jpg",
+            "https://i.ibb.co/xKCTVHGd/41y-QOe-XMpw-L.jpg"
+        ],
         description: "Elegant heel sandals designed to give you a graceful posture and comfortable everyday wear.",
         price: "₹550",
-        affiliateLink: "https://link.amazon/B03TSJPPV",
-        colors: [
-            { 
-                name: "Standard", 
-                image: "https://i.ibb.co/7dCnYDmq/41f-T0d0xig-L.jpg", 
-                images: [
-                    "https://i.ibb.co/7dCnYDmq/41f-T0d0xig-L.jpg",
-                    "https://i.ibb.co/Y7KtyLvM/31-Zg-X-k-A5-L.jpg",
-                    "https://i.ibb.co/xKCTVHGd/41y-QOe-XMpw-L.jpg"
-                ],
-                price: "₹550" 
-            }
-        ],
-        sizes: [
-            { name: "IND 5", price: "₹550" },
-            { name: "IND 6", price: "₹550" },
-            { name: "IND 7", price: "₹550" },
-            { name: "IND 8", price: "₹550" }
-        ]
+        affiliateLink: "https://link.amazon/B03TSJPPV"
     },
     {
-        id: "SHREE-P-39",
+        id: "SHREE-P39",
         name: "Women Heel Sandal",
-        images: ["https://i.ibb.co/qY4M9G9t/31jr-Lh-LI1d-L.jpg"],
-        shortDescription: "Stylish and trendy heel sandals crafted to complete your glamorous outfit.",
+        images: [
+            "https://i.ibb.co/qY4M9G9t/31jr-Lh-LI1d-L.jpg",
+            "https://i.ibb.co/xKZBkF9Q/31xbmf-RY8-TL.jpg"
+        ],
         description: "Fashionable women's heel sandals offering a perfect blend of comfort and chic aesthetics.",
         price: "₹589",
-        affiliateLink: "https://link.amazon/B06LgpKNF",
-        colors: [
-            { 
-                name: "Standard", 
-                image: "https://i.ibb.co/qY4M9G9t/31jr-Lh-LI1d-L.jpg", 
-                images: [
-                    "https://i.ibb.co/qY4M9G9t/31jr-Lh-LI1d-L.jpg",
-                    "https://i.ibb.co/xKZBkF9Q/31xbmf-RY8-TL.jpg"
-                ],
-                price: "₹589" 
-            }
-        ],
-        sizes: [
-            { name: "IND 5", price: "₹589" },
-            { name: "IND 6", price: "₹589" },
-            { name: "IND 7", price: "₹589" },
-            { name: "IND 8", price: "₹589" }
-        ]
+        affiliateLink: "https://link.amazon/B06LgpKNF"
     },
     {
-        id: "SHREE-P-40",
+        id: "SHREE-P40",
         name: "Elegent Women's Dress",
-        images: ["https://i.ibb.co/WNpVpt3z/41sn-Rx-M1-Z9-L.jpg"],
-        shortDescription: "Stunning and elegant women's dress tailored for a flawless party or casual look.",
+        images: [
+            "https://i.ibb.co/WNpVpt3z/41sn-Rx-M1-Z9-L.jpg",
+            "https://i.ibb.co/HLMBd9vk/41-Qm-Y4-Uaz-CL.jpg",
+            "https://i.ibb.co/PGwBKjMs/41-Lot91n-ZRL.jpg",
+            "https://i.ibb.co/5hHcRg3b/514-Bjb2-MVx-L.jpg"
+        ],
         description: "Graceful women's dress featuring a flattering fit and comfortable fabric for special outings.",
         price: "₹639",
-        affiliateLink: "https://link.amazon/B09GICw5m",
-        colors: [
-            { 
-                name: "Standard", 
-                image: "https://i.ibb.co/WNpVpt3z/41sn-Rx-M1-Z9-L.jpg", 
-                images: [
-                    "https://i.ibb.co/WNpVpt3z/41sn-Rx-M1-Z9-L.jpg",
-                    "https://i.ibb.co/HLMBd9vk/41-Qm-Y4-Uaz-CL.jpg",
-                    "https://i.ibb.co/PGwBKjMs/41-Lot91n-ZRL.jpg",
-                    "https://i.ibb.co/5hHcRg3b/514-Bjb2-MVx-L.jpg"
-                ],
-                price: "₹639" 
-            }
-        ],
-        sizes: [
-            { name: "S", price: "₹639" },
-            { name: "M", price: "₹639" },
-            { name: "L", price: "₹639" },
-            { name: "XL", price: "₹639" }
-        ]
+        affiliateLink: "https://link.amazon/B09GICw5m"
     },
     {
-        id: "SHREE-P-41",
+        id: "SHREE-P41",
         name: "Kurta for Women",
-        images: ["https://i.ibb.co/PsKqYmMw/31-IC34-Qs2n-L.jpg"],
-        shortDescription: "Traditional and comfortable women's kurta designed for everyday ethnic wear.",
+        images: [
+            "https://i.ibb.co/PsKqYmMw/31-IC34-Qs2n-L.jpg",
+            "https://i.ibb.co/tpGt3dm4/31-B060eqo9-L.jpg",
+            "https://i.ibb.co/B5S4CJNq/31r-Hi-I3xls-L.jpg"
+        ],
         description: "Classic ethnic kurta for women offering breathable comfort and a refined traditional look.",
         price: "₹598",
-        affiliateLink: "https://link.amazon/B0cACRQgQ",
-        colors: [
-            { 
-                name: "Standard", 
-                image: "https://i.ibb.co/PsKqYmMw/31-IC34-Qs2n-L.jpg", 
-                images: [
-                    "https://i.ibb.co/PsKqYmMw/31-IC34-Qs2n-L.jpg",
-                    "https://i.ibb.co/tpGt3dm4/31-B060eqo9-L.jpg",
-                    "https://i.ibb.co/B5S4CJNq/31r-Hi-I3xls-L.jpg"
-                ],
-                price: "₹598" 
-            }
-        ],
-        sizes: [
-            { name: "S", price: "₹598" },
-            { name: "M", price: "₹598" },
-            { name: "L", price: "₹598" },
-            { name: "XL", price: "₹598" },
-            { name: "XXL", price: "₹598" }
-        ]
+        affiliateLink: "https://link.amazon/B0cACRQgQ"
     },
     {
-        id: "SHREE-P-42",
+        id: "SHREE-P42",
         name: "Cozy Desk Lamp",
-        images: ["https://i.ibb.co/tp3MMRxy/21d-PNOG6-ANL.jpg"],
-        shortDescription: "Minimalist cozy desk lamp providing warm and focused light for study or work.",
+        images: [
+            "https://i.ibb.co/tp3MMRxy/21d-PNOG6-ANL.jpg",
+            "https://i.ibb.co/Sw7Jcxgb/41-Mc96-QV4o-L.jpg",
+            "https://i.ibb.co/m5YzBHb0/51-EMRcz-JAk-L.jpg",
+            "https://i.ibb.co/prKhqqH6/417kpj-UEin-L.jpg",
+            "https://i.ibb.co/CpyZCjNn/41h4-Nexn-Xm-L.jpg"
+        ],
         description: "Sleek and aesthetic cozy desk lamp designed to upgrade your study or workspace lighting.",
         price: "₹298",
-        affiliateLink: "https://link.amazon/B033O2UPy",
-        colors: [
-            { 
-                name: "Standard", 
-                image: "https://i.ibb.co/tp3MMRxy/21d-PNOG6-ANL.jpg", 
-                images: [
-                    "https://i.ibb.co/tp3MMRxy/21d-PNOG6-ANL.jpg",
-                    "https://i.ibb.co/Sw7Jcxgb/41-Mc96-QV4o-L.jpg",
-                    "https://i.ibb.co/m5YzBHb0/51-EMRcz-JAk-L.jpg",
-                    "https://i.ibb.co/prKhqqH6/417kpj-UEin-L.jpg",
-                    "https://i.ibb.co/CpyZCjNn/41h4-Nexn-Xm-L.jpg"
-                ],
-                price: "₹298" 
-            }
-        ],
-        sizes: [{ name: "Standard", price: "₹298" }]
+        affiliateLink: "https://link.amazon/B033O2UPy"
     },
     {
-        id: "SHREE-P-43",
+        id: "SHREE-P43",
         name: "Cozy Alarm Clock",
-        images: ["https://i.ibb.co/gMGC3jG3/41-N0nxo22-BL.jpg"],
-        shortDescription: "Compact and reliable cozy alarm clock to keep you on schedule with style.",
+        images: [
+            "https://i.ibb.co/gMGC3jG3/41-N0nxo22-BL.jpg",
+            "https://i.ibb.co/MxyJ1P9H/41-B2-CNv-Ubm-L.jpg",
+            "https://i.ibb.co/GfbscZj6/410-Se-Iaka9-L.jpg",
+            "https://i.ibb.co/JjZT7qm6/41b8-MYAv-Bs-L.jpg"
+        ],
         description: "Modern minimalist alarm clock that looks great on any bedside table or desk setup.",
         price: "₹377",
-        affiliateLink: "https://link.amazon/B0fbsQFZ2",
-        colors: [
-            { 
-                name: "Standard", 
-                image: "https://i.ibb.co/gMGC3jG3/41-N0nxo22-BL.jpg", 
-                images: [
-                    "https://i.ibb.co/gMGC3jG3/41-N0nxo22-BL.jpg",
-                    "https://i.ibb.co/MxyJ1P9H/41-B2-CNv-Ubm-L.jpg",
-                    "https://i.ibb.co/GfbscZj6/410-Se-Iaka9-L.jpg",
-                    "https://i.ibb.co/JjZT7qm6/41b8-MYAv-Bs-L.jpg"
-                ],
-                price: "₹377" 
-            }
-        ],
-        sizes: [{ name: "Standard", price: "₹377" }]
+        affiliateLink: "https://link.amazon/B0fbsQFZ2"
     },
     {
-        id: "SHREE-P-44",
+        id: "SHREE-P44",
         name: "Study Table",
-        images: ["https://i.ibb.co/xSQQLmkj/41-Necwev3x-L.jpg"],
-        shortDescription: "Compact and sturdy study table designed for comfortable learning and working.",
+        images: [
+            "https://i.ibb.co/xSQQLmkj/41-Necwev3x-L.jpg",
+            "https://i.ibb.co/0jqSJHmb/51g-D61-Zi-t-L.jpg",
+            "https://i.ibb.co/PZDZwM4g/41-Gl2q-URRSL.jpg",
+            "https://i.ibb.co/DPZNprdb/51-In-Mm3dz9-L.jpg"
+        ],
         description: "Durable and space-saving study table perfect for students and work-from-home setups.",
         price: "₹499",
-        affiliateLink: "https://link.amazon/B016sDxWZ",
-        colors: [
-            { 
-                name: "Standard", 
-                image: "https://i.ibb.co/xSQQLmkj/41-Necwev3x-L.jpg", 
-                images: [
-                    "https://i.ibb.co/xSQQLmkj/41-Necwev3x-L.jpg",
-                    "https://i.ibb.co/0jqSJHmb/51g-D61-Zi-t-L.jpg",
-                    "https://i.ibb.co/PZDZwM4g/41-Gl2q-URRSL.jpg",
-                    "https://i.ibb.co/DPZNprdb/51-In-Mm3dz9-L.jpg"
-                ],
-                price: "₹499" 
-            }
-        ],
-        sizes: [{ name: "Standard", price: "₹499" }]
+        affiliateLink: "https://link.amazon/B016sDxWZ"
     },
     {
-        id: "SHREE-P-45",
+        id: "SHREE-P45",
         name: "Women's Trouser",
-        images: ["https://i.ibb.co/wb2KwcB/410s82-QDj-GL.jpg"],
-        shortDescription: "Comfortable and tailored women's trouser for a sleek daily professional look.",
+        images: [
+            "https://i.ibb.co/wb2KwcB/410s82-QDj-GL.jpg",
+            "https://i.ibb.co/Y4ZB67vd/41-H-q-Nxz-Ic-L.jpg",
+            "https://i.ibb.co/G4pyyhBF/41-A1t0-D50e-L.jpg"
+        ],
         description: "Classic women's trouser crafted for maximum comfort and an effortless smart-casual fit.",
         price: "₹698",
-        affiliateLink: "https://link.amazon/B0ehnc17L",
-        colors: [
-            { 
-                name: "Standard", 
-                image: "https://i.ibb.co/wb2KwcB/410s82-QDj-GL.jpg", 
-                images: [
-                    "https://i.ibb.co/wb2KwcB/410s82-QDj-GL.jpg",
-                    "https://i.ibb.co/Y4ZB67vd/41-H-q-Nxz-Ic-L.jpg",
-                    "https://i.ibb.co/G4pyyhBF/41-A1t0-D50e-L.jpg"
-                ],
-                price: "₹698" 
-            }
-        ],
-        sizes: [
-            { name: "S", price: "₹698" },
-            { name: "M", price: "₹698" },
-            { name: "L", price: "₹698" },
-            { name: "XL", price: "₹698" }
-        ]
+        affiliateLink: "https://link.amazon/B0ehnc17L"
     },
     {
-        id: "SHREE-P-46",
+        id: "SHREE-P46",
         name: "Women's Trouser",
-        images: ["https://i.ibb.co/tMsX3VSG/41f-OIdnp-DFL.jpg"],
-        shortDescription: "Stylish and flexible women's trouser designed for all-day cozy wear.",
+        images: [
+            "https://i.ibb.co/tMsX3VSG/41f-OIdnp-DFL.jpg",
+            "https://i.ibb.co/GQMy4G09/31x-SJwj-Nfg-L.jpg",
+            "https://i.ibb.co/60gPbHX7/21-Mosk-UZXL.jpg"
+        ],
         description: "Relaxed-fit women's trouser offering superior comfort and versatile everyday style.",
         price: "₹628",
-        affiliateLink: "https://link.amazon/B0510wNYv",
-        colors: [
-            { 
-                name: "Standard", 
-                image: "https://i.ibb.co/tMsX3VSG/41f-OIdnp-DFL.jpg", 
-                images: [
-                    "https://i.ibb.co/tMsX3VSG/41f-OIdnp-DFL.jpg",
-                    "https://i.ibb.co/GQMy4G09/31x-SJwj-Nfg-L.jpg",
-                    "https://i.ibb.co/60gPbHX7/21-Mosk-UZXL.jpg"
-                ],
-                price: "₹628" 
-            }
-        ],
-        sizes: [
-            { name: "S", price: "₹628" },
-            { name: "M", price: "₹628" },
-            { name: "L", price: "₹628" },
-            { name: "XL", price: "₹628" }
-        ]
+        affiliateLink: "https://link.amazon/B0510wNYv"
     },
     {
-        id: "SHREE-P-47",
+        id: "SHREE-P47",
         name: "Women's Crop Top",
-        images: ["https://i.ibb.co/G4P3wMcV/31-Kgyou-W5-YL.jpg"],
-        shortDescription: "Trendy women's crop top crafted for a cool and casual streetwear look.",
+        images: [
+            "https://i.ibb.co/G4P3wMcV/31-Kgyou-W5-YL.jpg",
+            "https://i.ibb.co/Ld7Sd8P6/31fjq-jil-XL.jpg",
+            "https://i.ibb.co/NgKJQDzx/31-mnat5-ML.jpg"
+        ],
         description: "Chic women's crop top offering a comfortable fit and stylish modern aesthetic.",
         price: "₹311",
-        affiliateLink: "https://link.amazon/B09HelAGp",
-        colors: [
-            { 
-                name: "Standard", 
-                image: "https://i.ibb.co/G4P3wMcV/31-Kgyou-W5-YL.jpg", 
-                images: [
-                    "https://i.ibb.co/G4P3wMcV/31-Kgyou-W5-YL.jpg",
-                    "https://i.ibb.co/Ld7Sd8P6/31fjq-jil-XL.jpg",
-                    "https://i.ibb.co/NgKJQDzx/31-mnat5-ML.jpg"
-                ],
-                price: "₹311" 
-            }
-        ],
-        sizes: [
-            { name: "S", price: "₹311" },
-            { name: "M", price: "₹311" },
-            { name: "L", price: "₹311" },
-            { name: "XL", price: "₹311" }
-        ]
+        affiliateLink: "https://link.amazon/B09HelAGp"
     },
     {
-        id: "SHREE-P-48",
+        id: "SHREE-P48",
         name: "Women's Skirt",
-        images: ["https://i.ibb.co/Xfd1LP85/31s5ptq2-Wz-L.jpg"],
-        shortDescription: "Graceful and stylish women's skirt designed for effortless chic styling.",
+        images: [
+            "https://i.ibb.co/Xfd1LP85/31s5ptq2-Wz-L.jpg",
+            "https://i.ibb.co/998CNc9L/31d-S6g2v-Mr-L.jpg"
+        ],
         description: "Flowing women's skirt that brings a playful and elegant vibe to your casual wardrobe.",
         price: "₹569",
-        affiliateLink: "https://link.amazon/B07Hr2TYo",
-        colors: [
-            { 
-                name: "Standard", 
-                image: "https://i.ibb.co/Xfd1LP85/31s5ptq2-Wz-L.jpg", 
-                images: [
-                    "https://i.ibb.co/Xfd1LP85/31s5ptq2-Wz-L.jpg",
-                    "https://i.ibb.co/998CNc9L/31d-S6g2v-Mr-L.jpg"
-                ],
-                price: "₹569" 
-            }
-        ],
-        sizes: [
-            { name: "S", price: "₹569" },
-            { name: "M", price: "₹569" },
-            { name: "L", price: "₹569" },
-            { name: "XL", price: "₹569" }
-        ]
+        affiliateLink: "https://link.amazon/B07Hr2TYo"
     },
     {
-        id: "SHREE-P-49",
+        id: "SHREE-P49",
         name: "Women's Kurti",
-        images: ["https://i.ibb.co/yF5tMShc/41-UVQ6-Ig6u-L.jpg"],
-        shortDescription: "Beautiful printed women's kurti for a charming daily ethnic look.",
+        images: [
+            "https://i.ibb.co/yF5tMShc/41-UVQ6-Ig6u-L.jpg",
+            "https://i.ibb.co/jkXpc9T4/41r-Vg-NSy-Zv-L.jpg",
+            "https://i.ibb.co/4ZRSYfBj/41-SQJ5im-QBL.jpg",
+            "https://i.ibb.co/M5STPf01/413j-U-Su-BSL.jpg"
+        ],
         description: "Comfortable and graceful women's kurti featuring classic prints for casual and festive days.",
         price: "₹589",
-        affiliateLink: "https://link.amazon/B05ID83LN",
-        colors: [
-            { 
-                name: "Standard", 
-                image: "https://i.ibb.co/yF5tMShc/41-UVQ6-Ig6u-L.jpg", 
-                images: [
-                    "https://i.ibb.co/yF5tMShc/41-UVQ6-Ig6u-L.jpg",
-                    "https://i.ibb.co/jkXpc9T4/41r-Vg-NSy-Zv-L.jpg",
-                    "https://i.ibb.co/4ZRSYfBj/41-SQJ5im-QBL.jpg",
-                    "https://i.ibb.co/M5STPf01/413j-U-Su-BSL.jpg"
-                ],
-                price: "₹589" 
-            }
-        ],
-        sizes: [
-            { name: "S", price: "₹589" },
-            { name: "M", price: "₹589" },
-            { name: "L", price: "₹589" },
-            { name: "XL", price: "₹589" },
-            { name: "XXL", price: "₹589" }
-        ]
+        affiliateLink: "https://link.amazon/B05ID83LN"
     }
-    
-    ];
+];
+
 
 
 // RESELLING CLOSET PRODUCTS
