@@ -617,113 +617,149 @@ const affiliateProducts = [
         affiliateLink: "https://link.amazon/B09HelAGp"
     },
     {
-        id: "SHREE-P48",
-        name: "Women's Skirt",
-        images: [
-            "https://i.ibb.co/Xfd1LP85/31s5ptq2-Wz-L.jpg",
-            "https://i.ibb.co/998CNc9L/31d-S6g2v-Mr-L.jpg"
-        ],
-        description: "Flowing women's skirt that brings a playful and elegant vibe to your casual wardrobe.",
-        price: "₹569",
-        affiliateLink: "https://link.amazon/B07Hr2TYo"
-    },
-    {
-        id: "SHREE-P49",
-        name: "Women's Kurti",
-        images: [
-            "https://i.ibb.co/yF5tMShc/41-UVQ6-Ig6u-L.jpg",
-            "https://i.ibb.co/jkXpc9T4/41r-Vg-NSy-Zv-L.jpg",
-            "https://i.ibb.co/4ZRSYfBj/41-SQJ5im-QBL.jpg",
-            "https://i.ibb.co/M5STPf01/413j-U-Su-BSL.jpg"
-        ],
-        description: "Comfortable and graceful women's kurti featuring classic prints for casual and festive days.",
-        price: "₹589",
-        affiliateLink: "https://link.amazon/B05ID83LN"
-  },
-  {
+    id: "SHREE-P48",
+    name: "Women's Skirt",
+    images: [
+        "https://i.ibb.co/Xfd1LP85/31s5ptq2-Wz-L.jpg",
+        "https://i.ibb.co/998CNc9L/31d-S6g2v-Mr-L.jpg"
+    ],
+    description: "Flowing women's skirt that brings a playful and elegant vibe to your casual wardrobe.",
+    price: "₹569",
+    affiliateLink: "https://link.amazon/B07Hr2TYo"
+},
+{
+    id: "SHREE-P49",
+    name: "Women's Kurti",
+    images: [
+        "https://i.ibb.co/yF5tMShc/41-UVQ6-Ig6u-L.jpg",
+        "https://i.ibb.co/jkXpc9T4/41r-Vg-NSy-Zv-L.jpg",
+        "https://i.ibb.co/4ZRSYfBj/41-SQJ5im-QBL.jpg",
+        "https://i.ibb.co/M5STPf01/413j-U-Su-BSL.jpg"
+    ],
+    description: "Comfortable and graceful women's kurti featuring classic prints for casual and festive days.",
+    price: "₹589",
+    affiliateLink: "https://link.amazon/B05ID83LN"
+},
+{
     id: "SHREE-P50",
     name: "Polo T Shirt",
-    price: 699,
-    image: "https://i.ibb.co/LhtLmWPt/Screenshot-20260824-084520-Amazon.jpg",
+    images: [
+        "https://i.ibb.co/LhtLmWPt/Screenshot-20260824-084520-Amazon.jpg"
+    ],
+    description: "Classic men's polo T-shirt with a comfortable and versatile style for everyday wear.",
+    price: "₹699",
     affiliateLink: "https://link.amazon/B0j3jgiqE"
-  },
-  {
+},
+{
     id: "SHREE-P51",
     name: "Polo T Shirt",
-    price: 429,
-    image: "https://i.ibb.co/N63q3Gs8/Screenshot-20260824-084621-Amazon.jpg",
+    images: [
+        "https://i.ibb.co/N63q3Gs8/Screenshot-20260824-084621-Amazon.jpg"
+    ],
+    description: "Stylish polo T-shirt designed for a comfortable and smart casual look.",
+    price: "₹429",
     affiliateLink: "https://link.amazon/B0dUZZGMt"
-  },
-  {
+},
+{
     id: "SHREE-P52",
     name: "Oversized T Shirt",
-    price: 299,
-    image: "https://i.ibb.co/BVYYS0GF/Screenshot-20260824-084912-Amazon.jpg",
+    images: [
+        "https://i.ibb.co/BVYYS0GF/Screenshot-20260824-084912-Amazon.jpg"
+    ],
+    description: "Comfortable oversized T-shirt with a relaxed fit, perfect for casual everyday outfits.",
+    price: "₹299",
     affiliateLink: "https://link.amazon/B03jnJNvb"
-  },
-  {
+},
+{
     id: "SHREE-P53",
     name: "Men's Cotton Shirt",
-    price: 349,
-    image: "https://i.ibb.co/vRwMg87/Screenshot-20260824-085049-Amazon.jpg",
+    images: [
+        "https://i.ibb.co/vRwMg87/Screenshot-20260824-085049-Amazon.jpg"
+    ],
+    description: "Comfortable men's cotton shirt suitable for casual and everyday wear.",
+    price: "₹349",
     affiliateLink: "https://link.amazon/B04ySeDJr"
-  },
-  {
+},
+{
     id: "SHREE-P54",
     name: "Men's Kurta T Shirt",
-    price: 495,
-    image: "https://i.ibb.co/LdhP3Tzk/Screenshot-20260824-085406-Amazon.jpg",
+    images: [
+        "https://i.ibb.co/LdhP3Tzk/Screenshot-20260824-085406-Amazon.jpg"
+    ],
+    description: "Stylish men's kurta-style T-shirt combining traditional inspiration with a casual modern look.",
+    price: "₹495",
     affiliateLink: "https://link.amazon/B03UuMFE8"
-  },
-  {
+},
+{
     id: "SHREE-P55",
     name: "Men's Denim Jeans",
-    price: 799,
-    image: "https://i.ibb.co/zVbM6yy2/Screenshot-20260824-085601-Amazon.jpg",
+    images: [
+        "https://i.ibb.co/zVbM6yy2/Screenshot-20260824-085601-Amazon.jpg"
+    ],
+    description: "Classic men's denim jeans designed for comfortable everyday styling.",
+    price: "₹799",
     affiliateLink: "https://link.amazon/B03Vp99Cb"
-  },
-  {
+},
+{
     id: "SHREE-P56",
     name: "Men's Cargo Jeans",
-    price: 949,
-    image: "https://i.ibb.co/JRM9Jp4w/Screenshot-20260824-085654-Amazon.jpg",
+    images: [
+        "https://i.ibb.co/JRM9Jp4w/Screenshot-20260824-085654-Amazon.jpg"
+    ],
+    description: "Casual men's cargo jeans with a practical and versatile everyday style.",
+    price: "₹949",
     affiliateLink: "https://link.amazon/B0c5Hefs2"
-  },
-  {
+},
+{
     id: "SHREE-P57",
     name: "Healthy Seeds",
-    price: 249,
-    image: "https://i.ibb.co/gZGWcqNJ/Screenshot-20260824-085825-Amazon.jpg",
+    images: [
+        "https://i.ibb.co/gZGWcqNJ/Screenshot-20260824-085825-Amazon.jpg"
+    ],
+    description: "A convenient selection of healthy seeds suitable for adding to everyday meals and snacks.",
+    price: "₹249",
     affiliateLink: "https://link.amazon/B07EJvXMp"
-  },
-  {
+},
+{
     id: "SHREE-P58",
     name: "Girl's Lip Gloss",
-    price: 110,
-    image: "https://i.ibb.co/394rRDCJ/Screenshot-20260824-090059-Amazon.jpg",
+    images: [
+        "https://i.ibb.co/394rRDCJ/Screenshot-20260824-090059-Amazon.jpg"
+    ],
+    description: "Glossy lip product with a fun and stylish look.",
+    price: "₹110",
     affiliateLink: "https://link.amazon/B0hkQaKgj"
-  },
-  {
+},
+{
     id: "SHREE-P59",
     name: "Girl's Cozy Handbag",
-    price: 1549,
-    image: "https://i.ibb.co/0yTbqF5M/Screenshot-20260824-090402-Amazon.jpg",
+    images: [
+        "https://i.ibb.co/0yTbqF5M/Screenshot-20260824-090402-Amazon.jpg"
+    ],
+    description: "Cute and stylish handbag designed to complement everyday outfits.",
+    price: "₹1549",
     affiliateLink: "https://link.amazon/B06XZaCza"
-  },
-  {
+},
+{
     id: "SHREE-P60",
     name: "Handbag for Girls",
-    price: 1599,
-    image: "https://i.ibb.co/twwzPVx6/Screenshot-20260824-090528-Amazon.jpg",
+    images: [
+        "https://i.ibb.co/twwzPVx6/Screenshot-20260824-090528-Amazon.jpg"
+    ],
+    description: "Stylish girls' handbag with a versatile design for everyday use.",
+    price: "₹1599",
     affiliateLink: "https://link.amazon/B0bAC03On"
-  },
-  {
+},
+{
     id: "SHREE-P61",
     name: "Girl's Cozy Headband",
-    price: 399,
-    image: "https://i.ibb.co/wN3V1phD/Screenshot-20260824-090701-Amazon.jpg",
+    images: [
+        "https://i.ibb.co/wN3V1phD/Screenshot-20260824-090701-Amazon.jpg"
+    ],
+    description: "Cute and comfortable headband designed to add a stylish touch to everyday looks.",
+    price: "₹399",
     affiliateLink: "https://link.amazon/B0dK2bSJu"
-  }
+}
 ];
 
 
