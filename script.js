@@ -639,8 +639,81 @@ const affiliateProducts = [
         description: "Comfortable and graceful women's kurti featuring classic prints for casual and festive days.",
         price: "₹589",
         affiliateLink: "https://link.amazon/B05ID83LN"
-    }
+  },
+  {
+    name: "Polo T Shirt",
+    price: 699,
+    image: "https://i.ibb.co/LhtLmWPt/Screenshot-20260824-084520-Amazon.jpg",
+    affiliateLink: "https://link.amazon/B0j3jgiqE"
+  },
+  {
+    name: "Polo T Shirt",
+    price: 429,
+    image: "https://i.ibb.co/N63q3Gs8/Screenshot-20260824-084621-Amazon.jpg",
+    affiliateLink: "https://link.amazon/B0dUZZGMt"
+  },
+  {
+    name: "Oversized T Shirt",
+    price: 299,
+    image: "https://i.ibb.co/BVYYS0GF/Screenshot-20260824-084912-Amazon.jpg",
+    affiliateLink: "https://link.amazon/B03jnJNvb"
+  },
+  {
+    name: "Men's Cotton Shirt",
+    price: 349,
+    image: "https://i.ibb.co/vRwMg87/Screenshot-20260824-085049-Amazon.jpg",
+    affiliateLink: "https://link.amazon/B04ySeDJr"
+  },
+  {
+    name: "Men's Kurta T Shirt",
+    price: 495,
+    image: "https://i.ibb.co/LdhP3Tzk/Screenshot-20260824-085406-Amazon.jpg",
+    affiliateLink: "https://link.amazon/B03UuMFE8"
+  },
+  {
+    name: "Men's Denim Jeans",
+    price: 799,
+    image: "https://i.ibb.co/zVbM6yy2/Screenshot-20260824-085601-Amazon.jpg",
+    affiliateLink: "https://link.amazon/B03Vp99Cb"
+  },
+  {
+    name: "Men's Cargo Jeans",
+    price: 949,
+    image: "https://i.ibb.co/JRM9Jp4w/Screenshot-20260824-085654-Amazon.jpg",
+    affiliateLink: "https://link.amazon/B0c5Hefs2"
+  },
+  {
+    name: "Healthy Seeds",
+    price: 249,
+    image: "https://i.ibb.co/gZGWcqNJ/Screenshot-20260824-085825-Amazon.jpg",
+    affiliateLink: "https://link.amazon/B07EJvXMp"
+  },
+  {
+    name: "Girl's Lip Gloss",
+    price: 110,
+    image: "https://i.ibb.co/394rRDCJ/Screenshot-20260824-090059-Amazon.jpg",
+    affiliateLink: "https://link.amazon/B0hkQaKgj"
+  },
+  {
+    name: "Girl's Cozy Handbag",
+    price: 1549,
+    image: "https://i.ibb.co/0yTbqF5M/Screenshot-20260824-090402-Amazon.jpg",
+    affiliateLink: "https://link.amazon/B06XZaCza"
+  },
+  {
+    name: "Handbag for Girls",
+    price: 1599,
+    image: "https://i.ibb.co/twwzPVx6/Screenshot-20260824-090528-Amazon.jpg",
+    affiliateLink: "https://link.amazon/B0bAC03On"
+  },
+  {
+    name: "Girl's Cozy Headband",
+    price: 399,
+    image: "https://i.ibb.co/wN3V1phD/Screenshot-20260824-090701-Amazon.jpg",
+    affiliateLink: "https://link.amazon/B0dK2bSJu"
+  }
 ];
+
 
 
 
