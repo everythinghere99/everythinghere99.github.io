@@ -641,72 +641,84 @@ const affiliateProducts = [
         affiliateLink: "https://link.amazon/B05ID83LN"
   },
   {
+    id: "SHREE-P50",
     name: "Polo T Shirt",
     price: 699,
     image: "https://i.ibb.co/LhtLmWPt/Screenshot-20260824-084520-Amazon.jpg",
     affiliateLink: "https://link.amazon/B0j3jgiqE"
   },
   {
+    id: "SHREE-P51",
     name: "Polo T Shirt",
     price: 429,
     image: "https://i.ibb.co/N63q3Gs8/Screenshot-20260824-084621-Amazon.jpg",
     affiliateLink: "https://link.amazon/B0dUZZGMt"
   },
   {
+    id: "SHREE-P52",
     name: "Oversized T Shirt",
     price: 299,
     image: "https://i.ibb.co/BVYYS0GF/Screenshot-20260824-084912-Amazon.jpg",
     affiliateLink: "https://link.amazon/B03jnJNvb"
   },
   {
+    id: "SHREE-P53",
     name: "Men's Cotton Shirt",
     price: 349,
     image: "https://i.ibb.co/vRwMg87/Screenshot-20260824-085049-Amazon.jpg",
     affiliateLink: "https://link.amazon/B04ySeDJr"
   },
   {
+    id: "SHREE-P54",
     name: "Men's Kurta T Shirt",
     price: 495,
     image: "https://i.ibb.co/LdhP3Tzk/Screenshot-20260824-085406-Amazon.jpg",
     affiliateLink: "https://link.amazon/B03UuMFE8"
   },
   {
+    id: "SHREE-P55",
     name: "Men's Denim Jeans",
     price: 799,
     image: "https://i.ibb.co/zVbM6yy2/Screenshot-20260824-085601-Amazon.jpg",
     affiliateLink: "https://link.amazon/B03Vp99Cb"
   },
   {
+    id: "SHREE-P56",
     name: "Men's Cargo Jeans",
     price: 949,
     image: "https://i.ibb.co/JRM9Jp4w/Screenshot-20260824-085654-Amazon.jpg",
     affiliateLink: "https://link.amazon/B0c5Hefs2"
   },
   {
+    id: "SHREE-P57",
     name: "Healthy Seeds",
     price: 249,
     image: "https://i.ibb.co/gZGWcqNJ/Screenshot-20260824-085825-Amazon.jpg",
     affiliateLink: "https://link.amazon/B07EJvXMp"
   },
   {
+    id: "SHREE-P58",
     name: "Girl's Lip Gloss",
     price: 110,
     image: "https://i.ibb.co/394rRDCJ/Screenshot-20260824-090059-Amazon.jpg",
     affiliateLink: "https://link.amazon/B0hkQaKgj"
   },
   {
+    id: "SHREE-P59",
     name: "Girl's Cozy Handbag",
     price: 1549,
     image: "https://i.ibb.co/0yTbqF5M/Screenshot-20260824-090402-Amazon.jpg",
     affiliateLink: "https://link.amazon/B06XZaCza"
   },
   {
+    id: "SHREE-P60",
     name: "Handbag for Girls",
     price: 1599,
     image: "https://i.ibb.co/twwzPVx6/Screenshot-20260824-090528-Amazon.jpg",
     affiliateLink: "https://link.amazon/B0bAC03On"
   },
   {
+    id: "SHREE-P61",
     name: "Girl's Cozy Headband",
     price: 399,
     image: "https://i.ibb.co/wN3V1phD/Screenshot-20260824-090701-Amazon.jpg",
