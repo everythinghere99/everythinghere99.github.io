@@ -759,10 +759,582 @@ const affiliateProducts = [
     description: "Cute and comfortable headband designed to add a stylish touch to everyday looks.",
     price: "₹399",
     affiliateLink: "https://link.amazon/B0dK2bSJu"
-}
+},
+{
+    id: "SHREE-P62",
+    name: "Aesthetic Earbuds",
+    images: [
+        "https://i.ibb.co/qFrtP1Yy/51-Fxekpc-CLL.jpg",
+        "https://i.ibb.co/CXWcz0x/41-QHN3emlo-L.jpg",
+        "https://i.ibb.co/Kcd6rcHQ/51-Ej7loc-HHL.jpg",
+        "https://i.ibb.co/SDWtPVsV/51-SJmt-Oe-Uq-L.jpg",
+        "https://i.ibb.co/QFk5hB9h/41ph-XOy4-E1-L.jpg",
+        "https://i.ibb.co/cXvKzFhd/51-Eu-Pif-SQw-L.jpg",
+        "https://i.ibb.co/PvzYLxyw/41t-VFc1b-WUL.jpg",
+        "https://i.ibb.co/v6rLhkqB/41-Q19-Sv-GLKL.jpg"
+    ],
+    description: "Premium aesthetic design with crystal-clear audio and deep bass. Comfortable fit for all-day seamless listening.",
+    price: "₹2654",
+    affiliateLink: "https://link.amazon/B00QAKfOx"
+},
+{
+    id: "SHREE-P63",
+    name: "Portonics Earbuds",
+    images: [
+        "https://i.ibb.co/v60V8bt1/416f-Wi3-IZYL.jpg",
+        "https://i.ibb.co/rGPcCgFH/51-Pi-TZl-PREL.jpg",
+        "https://i.ibb.co/F4K5h6gX/41j-Gj-Ifn-PTL.jpg",
+        "https://i.ibb.co/Df06GS9f/31hodnx5m-GL.jpg",
+        "https://i.ibb.co/Df6vJzLK/41-Nsmr-Ityl-L.jpg"
+    ],
+    description: "Compact wireless earbuds delivering punchy sound and quick pairing. Perfect companion for daily workouts and calls.",
+    price: "₹739",
+    affiliateLink: "https://link.amazon/B04vQ3hSe"
+},
+{
+    id: "SHREE-P64",
+    name: "Ptron Earbuds",
+    images: [
+        "https://i.ibb.co/23FSHLqm/41-Sz0i-U5-WFL.jpg",
+        "https://i.ibb.co/LVC40WY/41-P-xw-Ggv0-L.jpg",
+        "https://i.ibb.co/DH3jWxfn/411-ZZZZJ1i-L.jpg",
+        "https://i.ibb.co/mF5tNQt0/41-E0-t-U7j2-L.jpg",
+        "https://i.ibb.co/gLDMLnCt/310-Kg-SWNo5-L.jpg",
+        "https://i.ibb.co/67PNHnnF/41-R8-P4-J3p-EL.jpg"
+    ],
+    description: "Ultra-lightweight earbuds with HD stereo sound and stable connectivity. Features smart touch controls for effortless access.",
+    price: "₹649",
+    affiliateLink: "https://link.amazon/B06O0cnJ6"
+},
+{
+    id: "SHREE-P65",
+    name: "Ptrons Earbuds",
+    images: [
+        "https://i.ibb.co/wr7jRHLf/41582-HCr9-ZL.jpg",
+        "https://i.ibb.co/3YQLPrnG/41-Bi0-Ms-Ss1-L.jpg",
+        "https://i.ibb.co/K1FF8H6/41z-Fv6z-L4-LL.jpg",
+        "https://i.ibb.co/yFw0y7Bb/41n-Ae-Hg7xd-L.jpg",
+        "https://i.ibb.co/GvwThfTh/414na-BUkp-VL.jpg",
+        "https://i.ibb.co/4nNtkF95/31-UNcf0-Fo-L.jpg",
+        "https://i.ibb.co/rR5X4C4Z/31-Hz-CZe-Xwq-L.jpg"
+    ],
+    description: "Ergonomic in-ear design with powerful bass and long battery backup. Ideal for music lovers on a budget.",
+    price: "₹599",
+    affiliateLink: "https://link.amazon/B097Hs1lX"
+},
+{
+    id: "SHREE-P66",
+    name: "Ptron Earbuds",
+    images: [
+        "https://i.ibb.co/LhNK9rqK/41am-W8a-P8g-L.jpg",
+        "https://i.ibb.co/p6LJFp4q/41-V6-c-A3-HL.jpg",
+        "https://i.ibb.co/PG8NtRR4/21nf-YTSe0-ML.jpg"
+    ],
+    description: "Sleek wireless earbuds engineered for rich vocals and low-latency gaming. Comes with a pocket-friendly charging case.",
+    price: "₹699",
+    affiliateLink: "https://link.amazon/B095OQSm1"
+},
+{
+    id: "SHREE-P67",
+    name: "Noise Buds N1",
+    images: [
+        "https://i.ibb.co/vx2X28zk/41pcya-RY-l-L.jpg",
+        "https://i.ibb.co/tTQ93gY3/41ee-FYKk5t-L.jpg",
+        "https://i.ibb.co/fdyWX2Y7/51rj-Fmtd5v-L.jpg",
+        "https://i.ibb.co/RGTpqXw1/41tu-RRHx-CL.jpg",
+        "https://i.ibb.co/HT4xDvNP/31-Mms-THz2-LL.jpg"
+    ],
+    description: "Modern chrome finish buds with ultra-low latency and dynamic sound drivers. Built for clear calling and nonstop entertainment.",
+    price: "₹999",
+    affiliateLink: "https://link.amazon/B0j3ojog4"
+},
+{
+    id: "SHREE-P68",
+    name: "Sony Headphones",
+    images: [
+        "https://i.ibb.co/0Rx40tFm/41a46d-xqz-L.jpg",
+        "https://i.ibb.co/4n7qRvgK/41l5g-PW6-TUL.jpg",
+        "https://i.ibb.co/chgK6NfH/31s-YPw8qzb-L.jpg"
+    ],
+    description: "High-resolution studio acoustics paired with superior active noise cancellation. Ultra-cushioned earcups ensure premium comfort.",
+    price: "₹9879",
+    affiliateLink: "https://link.amazon/B07byJbmD"
+},
+{
+    id: "SHREE-P69",
+    name: "Boat Earphones",
+    images: [
+        "https://i.ibb.co/yBF4xPkt/41x-ANVHKNa-L.jpg",
+        "https://i.ibb.co/MxyGLGdd/41-Hb-UP3i-P5-L.jpg",
+        "https://i.ibb.co/VY5VLL8M/313-U7-Xx9b4-L.jpg",
+        "https://i.ibb.co/Gfs3ncC2/41tyzj-ic-WL.jpg"
+    ],
+    description: "Signature boat bass with a tangle-free cable and built-in microphone. Sturdy, reliable, and made for daily rough use.",
+    price: "₹399",
+    affiliateLink: "https://link.amazon/B01jWUOVV"
+},
+{
+    id: "SHREE-P70",
+    name: "Noise Headphones",
+    images: [
+        "https://i.ibb.co/Hf2C5d1f/31-SRz85wv3-L.jpg",
+        "https://i.ibb.co/994VSQQg/31-CDbwwzx-JL.jpg",
+        "https://i.ibb.co/7NCVVsSw/41-Fxvg-Kbd-L.jpg",
+        "https://i.ibb.co/KxdZFM61/41-EZx-Irxt4-L.jpg",
+        "https://i.ibb.co/RkjYVL6g/41-HDj1tny-L.jpg",
+        "https://i.ibb.co/Nd1h4hHh/31-B4pj7j7-ZL.jpg"
+    ],
+    description: "Over-ear wireless headphones offering immersive sound and active noise cancellation. Massive battery life for long journeys.",
+    price: "₹4999",
+    affiliateLink: "https://link.amazon/B0dyxuMpn"
+},
+{
+    id: "SHREE-P71",
+    name: "Noise Buds",
+    images: [
+        "https://i.ibb.co/5h97XwYc/41-ZQBz-TJxt-L.jpg",
+        "https://i.ibb.co/bMFBbShh/51-R2-CXDFt-ML.jpg",
+        "https://i.ibb.co/W4QBKrdk/419-L0a0-TCCL.jpg",
+        "https://i.ibb.co/7NGLFPbs/41-Xp-Mb0-VUn-L.jpg",
+        "https://i.ibb.co/8DtCFRbm/31-Rf-JSay-Si-L.jpg"
+    ],
+    description: "True wireless earbuds offering crisp acoustics and environmental noise cancellation. Fast charging support keeps you going.",
+    price: "₹1299",
+    affiliateLink: "https://link.amazon/B08GoYNrS"
+},
+{
+    id: "SHREE-P72",
+    name: "Boat Airdopes",
+    images: [
+        "https://i.ibb.co/7x53mGZz/41-HGp8-Zy-Jf-L.jpg",
+        "https://i.ibb.co/XR7MtCD/41-VMT50-Io8-L.jpg",
+        "https://i.ibb.co/TBD0RgsP/41-Mg-Ib9-AAg-L.jpg",
+        "https://i.ibb.co/6cnmttxn/41v-Vo-ECl6-TL.jpg",
+        "https://i.ibb.co/bjGkg2rb/415t-Tcu-Irg-L.jpg"
+    ],
+    description: "Insta Wake N’ Pair technology with thumping bass and water resistance. Stylish pocket case with extended playtime.",
+    price: "₹899",
+    affiliateLink: "https://link.amazon/B0cwwBDCo"
+},
+{
+    id: "SHREE-P73",
+    name: "Heart Shape Earbuds",
+    images: [
+        "https://i.ibb.co/twWrcYNx/Screenshot-20260904-135853-Amazon.jpg"
+    ],
+    description: "Unique heart-shaped aesthetic earbuds that combine cute fashion with punchy audio. A standout accessory and perfect gift.",
+    price: "₹999",
+    affiliateLink: "https://link.amazon/B0bgBWnN8"
+},
+{
+    id: "SHREE-P74",
+    name: "Noide Buds VS102",
+    images: [
+        "https://i.ibb.co/xK04P45V/Screenshot-20260904-140421-Chrome.jpg"
+    ],
+    description: "Flybird design with rich bass and clear hands-free calling. Ergonomic fit tailored for non-stop daily music.",
+    price: "₹1499",
+    affiliateLink: "https://link.amazon/B0flCSAfi"
+},
+    {
+        id: "SHREE-P75",
+        name: "Aura Earbuds",
+        images: [
+            "https://i.ibb.co/DftMvmQs/517t-Ls-Z0-GTL.jpg",
+            "https://i.ibb.co/rV9RGRC/418-KOHl-T1-UL.jpg",
+            "https://i.ibb.co/V0XP28gy/41y-TR5-CRq4-L.jpg"
+        ],
+        description: "Futuristic transparent case design delivering crisp trebles and balanced bass. Ultra-fast Bluetooth sync with touch controls.",
+        price: "₹699",
+        affiliateLink: "https://link.amazon/B0j576UVY"
+    },
+    {
+        id: "SHREE-P76",
+        name: "Wired headphones",
+        images: [
+            "https://i.ibb.co/CK31SHpm/31-FVtqh-aj-L.jpg",
+            "https://i.ibb.co/NcvRqKH/41u-H7-Des-Yl-L.jpg",
+            "https://i.ibb.co/NgtJjWK2/51xvu2w-Fr1-L.jpg",
+            "https://i.ibb.co/vCkLbbk2/41gel-Fgpyl-L.jpg",
+            "https://i.ibb.co/vCkLbbk2/41gel-Fgpyl-L.jpg"
+        ],
+        description: "Classic on-ear headphones with soft cushioned ear pads and zero audio lag. Reliable wired connectivity for studio and desk setups.",
+        price: "₹1499",
+        affiliateLink: "https://link.amazon/B05KcrWJC"
+    },
+    {
+        id: "SHREE-P77",
+        name: "Cute Earbuds",
+        images: [
+            "https://i.ibb.co/m5gV6T9C/31-ZE6j-PRkk-L.jpg",
+            "https://i.ibb.co/JwDTGfbr/419-O3i-C-lx-L.jpg"
+        ],
+        description: "Charming pastel-toned design packed with rich audio performance. Compact, lightweight, and super comfortable in ears.",
+        price: "₹1999",
+        affiliateLink: "https://link.amazon/B09RqaZsz"
+    },
+    {
+        id: "SHREE-P78",
+        name: "Casual Shoes",
+        images: [
+            "https://i.ibb.co/ymBmKcV7/31-F1-Lmt-Nd7-L.jpg",
+            "https://i.ibb.co/xwb5NyT/414-XW9t-7r-L.jpg",
+            "https://i.ibb.co/1tdw8m6B/4183m61-Zhe-L.jpg"
+        ],
+        description: "Versatile everyday shoes with a breathable upper and cushioned insole. Perfect for college, casual outings, or daily walks.",
+        price: "₹659",
+        affiliateLink: "https://link.amazon/B05kNgNxU"
+    },
+    {
+        id: "SHREE-P79",
+        name: "Running Shoes",
+        images: [
+            "https://i.ibb.co/QvZyHxTV/Screenshot-20260904-143004-Chrome.jpg"
+        ],
+        description: "Lightweight running sneakers featuring responsive sole cushioning. Engineered for maximum grip and effortless morning jogs.",
+        price: "₹499",
+        affiliateLink: "https://link.amazon/B0aLQjGDa"
+    },
+    {
+        id: "SHREE-P80",
+        name: "Men's Sneakers",
+        images: [
+            "https://i.ibb.co/21xpB5n3/Screenshot-20260904-143134-Amazon.jpg"
+        ],
+        description: "Trendy street-style sneakers designed with durable soles and flexible upper. Elevates any casual denim look instantly.",
+        price: "₹799",
+        affiliateLink: "https://link.amazon/B0aINqqmN"
+    },
+    {
+        id: "SHREE-P81",
+        name: "Stylish Sneakers",
+        images: [
+            "https://i.ibb.co/zHFFyMVn/Screenshot-20260904-143249-Amazon.jpg"
+        ],
+        description: "Eye-catching contemporary sneaker silhouette with anti-skid traction. Blends sporty comfort with bold fashion effortlessly.",
+        price: "₹849",
+        affiliateLink: "https://link.amazon/B04XvH3F5"
+    },
+    {
+        id: "SHREE-P82",
+        name: "Cozy Sneakers",
+        images: [
+            "https://i.ibb.co/N29s1DHK/Screenshot-20260904-143414-Amazon.jpg"
+        ],
+        description: "Extra soft footbed sneakers ensuring cloud-like comfort all day. Modern minimalist profile that pairs with anything.",
+        price: "₹999",
+        affiliateLink: "https://link.amazon/B0iRhMcOx"
+    },
+    {
+        id: "SHREE-P83",
+        name: "Casual Sneakers",
+        images: [
+            "https://i.ibb.co/d0FgkLBc/Screenshot-20260904-143605-Amazon.jpg"
+        ],
+        description: "Classic lace-up sneakers offering a snug fit and solid ground grip. Durable construction ready for daily travel.",
+        price: "₹750",
+        affiliateLink: "https://link.amazon/B0gfObRYf"
+    },
+    {
+        id: "SHREE-P84",
+        name: "Casual Sneakers",
+        images: [
+            "https://i.ibb.co/60tDz5Hh/Screenshot-20260904-143749-Amazon.jpg"
+        ],
+        description: "Budget-friendly lightweight sneakers crafted with breathable mesh. Keeps your feet cool and relaxed through long days.",
+        price: "₹549",
+        affiliateLink: "https://link.amazon/B08UlKpHl"
+    },
+    {
+        id: "SHREE-P85",
+        name: "Asthetic Sneakers",
+        images: [
+            "https://i.ibb.co/YTyr7xd7/Screenshot-20260904-143933-Amazon.jpg"
+        ],
+        description: "Clean aesthetic profile with contrasting accents and durable rubber outsole. An absolute wardrobe essential for youth.",
+        price: "₹479",
+        affiliateLink: "https://link.amazon/B0f41waHk"
+    },
+    {
+        id: "SHREE-P86",
+        name: "Cozy Sneakers",
+        images: [
+            "https://i.ibb.co/ns0jXX4g/Screenshot-20260904-144115-Amazon.jpg",
+            "https://i.ibb.co/LdvzX92x/Screenshot-20260904-144103-Amazon.jpg"
+        ],
+        description: "Premium comfort footwear engineered with high-rebound cushioning. Delivers luxury walking feel and sturdy durability.",
+        price: "₹2599",
+        affiliateLink: "https://link.amazon/B02EMw7FE"
+    },
+    {
+        id: "SHREE-P87",
+        name: "Men's Sneakers",
+        images: [
+            "https://i.ibb.co/QvN9b7cH/Screenshot-20260904-144258-Amazon.jpg"
+        ],
+        description: "Sleek low-top sneakers built with sturdy canvas and flexible rubber base. Great value for daily commuting and college wear.",
+        price: "₹449",
+        affiliateLink: "https://link.amazon/B0bUzWtIl"
+    },
+    {
+        id: "SHREE-P88",
+        name: "Running Shoes",
+        images: [
+            "https://i.ibb.co/LXX2VXFQ/Screenshot-20260904-144439-Amazon.jpg",
+            "https://i.ibb.co/qM3pkk4D/Screenshot-20260904-144454-Amazon.jpg"
+        ],
+        description: "Athletic running trainers equipped with shock-absorbing soles. Keeps your feet energized through intense workouts.",
+        price: "₹599",
+        affiliateLink: "https://link.amazon/B01aasp0L"
+    },
+    {
+        id: "SHREE-P89",
+        name: "Stylish Shoes",
+        images: [
+            "https://i.ibb.co/m5vfnHtz/Screenshot-20260904-144640-Amazon.jpg"
+        ],
+        description: "Fashion-forward footwear with sharp detailing and supportive arch fit. Enhances your casual evening outings in style.",
+        price: "₹629",
+        affiliateLink: "https://link.amazon/B0aQ7Cnav"
+    },
+    {
+        id: "SHREE-P90",
+        name: "Cozy Sneakers",
+        images: [
+            "https://i.ibb.co/Fqw5pdwM/Screenshot-20260904-144848-Amazon.jpg",
+            "https://i.ibb.co/ZR2jMB5H/Screenshot-20260904-144822-Amazon.jpg"
+        ],
+        description: "Padded insole sneakers designed to reduce foot fatigue during extended wear. Simple, stylish, and highly comfortable.",
+        price: "₹499",
+        affiliateLink: "https://link.amazon/B05SRi8lt"
+    },
+    {
+        id: "SHREE-P91",
+        name: "Cozy Sneakers",
+        images: [
+            "https://i.ibb.co/0pMZ9Xxy/Screenshot-20260904-145027-Amazon.jpg",
+            "https://i.ibb.co/nM6PBQdV/Screenshot-20260904-145015-Amazon.jpg"
+        ],
+        description: "Everyday comfort sneakers with slip-resistant soles and soft inner lining. Reliable pick for routine outdoor walks.",
+        price: "₹449",
+        affiliateLink: "https://link.amazon/B09FW5XY3"
+    },
+    {
+        id: "SHREE-P92",
+        name: "Men's Sneakers",
+        images: [
+            "https://i.ibb.co/4Zdw5WSy/Screenshot-20260904-145225-Amazon.jpg"
+        ],
+        description: "Bold sneaker silhouette made with high-grade synthetic leather finish. Offers premium looks and exceptional durability.",
+        price: "₹999",
+        affiliateLink: "https://link.amazon/B01o7s2xl"
+    },
+    {
+        id: "SHREE-P93",
+        name: "Bata's Sneakers",
+        images: [
+            "https://i.ibb.co/4gsxc1Qc/Screenshot-20260904-145323-Amazon.jpg"
+        ],
+        description: "Trusted Bata craftsmanship offering long-lasting build and ergonomic support. Clean design suited for smart-casual wear.",
+        price: "₹1469",
+        affiliateLink: "https://link.amazon/B0bnmCgkE"
+    },
+    {
+        id: "SHREE-P94",
+        name: "Men's Shoe",
+        images: [
+            "https://i.ibb.co/P8C2jcb/Screenshot-20260904-145442-Amazon.jpg"
+        ],
+        description: "Smart semi-formal shoes crafted with durable stitching and cushioned base. Matches seamlessly with trousers and chinos.",
+        price: "₹709",
+        affiliateLink: "https://link.amazon/B05IFC5kF"
+    },
+    {
+        id: "SHREE-P95",
+        name: "Men's Formal Shoe",
+        images: [
+            "https://i.ibb.co/NnLf8cb9/Screenshot-20260904-145654-Amazon.jpg"
+        ],
+        description: "Polished formal derby shoes designed for office meetings and formal occasions. Offers an elegant look with non-slip sole.",
+        price: "₹769",
+        affiliateLink: "https://link.amazon/B05KoYwkI"
+    },
+    {
+        id: "SHREE-P96",
+        name: "Men's Shoes",
+        images: [
+            "https://i.ibb.co/qvbxP6N/Screenshot-20260904-145811-Amazon.jpg"
+        ],
+        description: "Versatile men's lifestyle shoes featuring a balanced sole and comfortable fit. Designed for active and daily lifestyles.",
+        price: "₹849",
+        affiliateLink: "https://link.amazon/B0aAk5VBh"
+    },
+    {
+        id: "SHREE-P97",
+        name: "Casual Sneakers",
+        images: [
+            "https://i.ibb.co/NdMwPxQt/Screenshot-20260904-145922-Amazon.jpg"
+        ],
+        description: "Urban street sneakers featuring reinforced toe caps and flexible soles. A solid everyday addition to your shoe rack.",
+        price: "₹749",
+        affiliateLink: "https://link.amazon/B0aGrHjnt"
+    },
+    {
+        id: "SHREE-P98",
+        name: "Casual Sneakers",
+        images: [
+            "https://i.ibb.co/n8Pqr6Dn/Screenshot-20260904-150059-Amazon.jpg"
+        ],
+        description: "Modern two-tone sneakers delivering maximum airflow and all-day ease. Perfect choice for casual weekend hangouts.",
+        price: "₹759",
+        affiliateLink: "https://link.amazon/B0ggVxyvG"
+    },
+    {
+        id: "SHREE-P99",
+        name: "Gold Plated Earrings",
+        images: [
+            "https://i.ibb.co/Xxc9KT94/Screenshot-20260904-150309-Amazon.jpg"
+        ],
+        description: "Intricately designed gold-plated earrings featuring high shine and elegance. Ideal for festive functions and weddings.",
+        price: "₹614",
+        affiliateLink: "https://link.amazon/B0dIQtNAz"
+    },
+    {
+        id: "SHREE-P100",
+        name: "Kashmiri Earrings",
+        images: [
+            "https://i.ibb.co/Gv1Vt6BV/Screenshot-20260904-150535-Amazon.jpg"
+        ],
+        description: "Traditional Kashmiri style drop earrings with exquisite ethnic detailing. Adds a timeless grace to ethnic outfits.",
+        price: "₹614",
+        affiliateLink: "https://link.amazon/B0dwWSkpv"
+    },
+    {
+        id: "SHREE-P101",
+        name: "Anarkali Kurta",
+        images: [
+            "https://i.ibb.co/chfLPzyN/Screenshot-20260904-150722-Amazon.jpg"
+        ],
+        description: "Graceful flowing Anarkali kurta crafted from breathable lightweight fabric. Features delicate patterns for family celebrations.",
+        price: "₹799",
+        affiliateLink: "https://link.amazon/B0eQp7IfX"
+    },
+    {
+        id: "SHREE-P102",
+        name: "Kurti With Pant",
+        images: [
+            "https://i.ibb.co/vCjHKHLs/Screenshot-20260904-150931-Amazon.jpg"
+        ],
+        description: "Chic coordinated kurti and pant set designed for modern ethnic comfort. Perfect for office wear or festive gatherings.",
+        price: "₹1799",
+        affiliateLink: "https://link.amazon/B0hcvuSBW"
+    },
+    {
+        id: "SHREE-P103",
+        name: "Anarkali Kurta",
+        images: [
+            "https://i.ibb.co/zjQdqhz/Screenshot-20260904-151054-Amazon.jpg"
+        ],
+        description: "Flared silhouette Anarkali embellished with traditional floral motifs. Offers a regal ethnic touch with effortless drape.",
+        price: "₹1271",
+        affiliateLink: "https://link.amazon/B09o4ZkKw"
+    },
+    {
+        id: "SHREE-P104",
+        name: "Kurta Plazzo",
+        images: [
+            "https://i.ibb.co/VptDj9cb/Screenshot-20260904-151233-Amazon.jpg"
+        ],
+        description: "Relaxed-fit kurta paired with wide-leg palazzo pants. Soft, airy cotton blend fabric for unmatched daily comfort.",
+        price: "₹698",
+        affiliateLink: "https://link.amazon/B04C5JtUM"
+    },
+    {
+        id: "SHREE-P105",
+        name: "Floral Kurta Set",
+        images: [
+            "https://i.ibb.co/s9kXmxXk/Screenshot-20260904-151407-Amazon.jpg"
+        ],
+        description: "Bright and vibrant floral print ethnic kurta set with fine borders. A refreshing pick for daytime events and pooja functions.",
+        price: "₹949",
+        affiliateLink: "https://link.amazon/B05OIfRax"
+    },
+    {
+        id: "SHREE-P106",
+        name: "Women's Dress",
+        images: [
+            "https://i.ibb.co/BK5Q8d3g/Screenshot-20260904-151806-Amazon.jpg"
+        ],
+        description: "Contemporary Western dress tailored with a flattering cut and comfortable drape. Easy to style for brunch or dinner dates.",
+        price: "₹699",
+        affiliateLink: "https://link.amazon/B04KCSO3g"
+    },
+    {
+        id: "SHREE-P107",
+        name: "Women's Cozy Sneakers",
+        images: [
+            "https://i.ibb.co/xKQdLRZJ/Screenshot-20260904-151931-Amazon.jpg"
+        ],
+        description: "Ultra-cushioned sneakers made specifically for female foot contours. Featherlight build ensuring fatigue-free steps all day.",
+        price: "₹1627",
+        affiliateLink: "https://link.amazon/B09jLLqXu"
+    },
+    {
+        id: "SHREE-P108",
+        name: "Women's Sleepers",
+        images: [
+            "https://i.ibb.co/MmxzqGp/Screenshot-20260904-152057-Amazon.jpg"
+        ],
+        description: "Soft anti-skid indoor and outdoor slippers with durable foot straps. Lightweight daily comfort for home use.",
+        price: "₹499",
+        affiliateLink: "https://link.amazon/B08A4wfl1"
+    },
+    {
+        id: "SHREE-P109",
+        name: "Showpiece Motor Bike",
+        images: [
+            "https://i.ibb.co/rfzm8wgx/Screenshot-20260904-152239-Amazon.jpg"
+        ],
+        description: "Handcrafted miniature motorbike decor item with vintage metallic finish. Eye-catching collectible for desks and bookshelves.",
+        price: "₹445",
+        affiliateLink: "https://link.amazon/B01jM6hs7"
+    },
+    {
+        id: "SHREE-P110",
+        name: "Showpiece Elephant",
+        images: [
+            "https://i.ibb.co/Y4cYSdV6/Screenshot-20260904-152435-Amazon.jpg",
+            "https://i.ibb.co/7xh0jFx5/Screenshot-20260904-152446-Amazon.jpg"
+        ],
+        description: "Artistic handcrafted elephant figurine symbolizing prosperity and elegance. Enhances home entryway or living room decor.",
+        price: "₹1499",
+        affiliateLink: "https://link.amazon/B08mjL1sM"
+    },
+    {
+        id: "SHREE-P111",
+        name: "Balaji Showpiece",
+        images: [
+            "https://i.ibb.co/5x1jxS15/Screenshot-20260904-152726-Amazon.jpg",
+            "https://i.ibb.co/5g62srZk/Screenshot-20260904-152738-Amazon.jpg"
+        ],
+        description: "Spiritual Lord Balaji idol detailed with intricate carving and divine finish. Ideal for home temple or gifting on auspicious occasions.",
+        price: "₹1199",
+        affiliateLink: "https://link.amazon/B095bAnc7"
+    },
+    {
+        id: "SHREE-P112",
+        name: "Helicopter Dispenser",
+        images: [
+            "https://i.ibb.co/fY0L1DKS/Screenshot-20260904-152936-Amazon.jpg",
+            "https://i.ibb.co/1tWQwdxq/Screenshot-20260904-153030-Amazon.jpg"
+        ],
+        description: "Novelty helicopter-shaped dispenser featuring an automatic fun design. A creative functional accent piece for any desk.",
+        price: "₹481",
+        affiliateLink: "https://link.amazon/B0evPmNUt"
+    }
 
- ];
-
+   ];
+   
 
 
 
@@ -2165,28 +2737,31 @@ const findsContainer = document.getElementById('finds-products');
 let findsHtml = '';
 
 affiliateProducts.forEach((product, index) => {
+    // Single main image display (matches Closet layout)
     const firstImg = (Array.isArray(product.images) && product.images.length > 0) 
         ? product.images[0] 
         : (product.image || product.images || '');
 
     const cleanPrice = String(product.price ?? '').trim().replace(/^[₹\s]+/, '');
-    const formattedPrice = `₹${cleanPrice}`;
+    const displayPrice = `₹${cleanPrice}`;
+    const swipeImagesHtml = `<div class="swipe-img-item" onclick="openLightbox('finds', ${index}, 0)"><img src="${firstImg}" alt="product image"></div>`;
 
     findsHtml += `
         <div class="product-card">
-            <img src="${firstImg}" alt="${product.name}" onclick="openLightbox('finds', ${index}, 0)" style="cursor: pointer; width: 100%; object-fit: cover; aspect-ratio: 1/1; border-radius: 12px; display: block;">
-            <h3 onclick="openProductDetail('finds', ${index})" style="cursor: pointer;">${product.name}</h3>
+            <div class="swipe-gallery-container" id="swipe-container-finds-${index}">
+                ${swipeImagesHtml}
+            </div>
+            <h3 onclick="openProductDetail('finds', ${index})">${product.name}</h3>
             <p>${product.description || ''}</p>
-            <div class="price-row" style="display: flex; align-items: center; justify-content: space-between; margin-top: 8px;">
-                <span class="price" style="font-weight: 700; font-size: 16px;">${formattedPrice}</span>
-                <a href="${product.affiliateLink || '#'}" target="_blank" rel="noopener noreferrer" class="btn-small" style="text-decoration: none; padding: 6px 14px; border-radius: 20px; font-size: 12px; font-weight: 600; white-space: nowrap;">View Deal 🤍</a>
+            <div class="price-row">
+                <span class="price">${displayPrice}</span>
+                <a href="${product.affiliateLink || '#'}" target="_blank" rel="noopener noreferrer" class="btn-small">View Deal</a>
             </div>
         </div>
     `;
 });
 
 findsContainer.innerHTML = findsHtml;
-
 
 
 
