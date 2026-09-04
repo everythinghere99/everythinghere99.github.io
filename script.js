@@ -2163,28 +2163,31 @@ homeContainer.innerHTML = homeHtml;
 // Render Finds Products
 const findsContainer = document.getElementById('finds-products');
 let findsHtml = '';
+
 affiliateProducts.forEach((product, index) => {
-    const firstImg = (product.images && product.images.length > 0) ? product.images[0] : '';
+    const firstImg = (Array.isArray(product.images) && product.images.length > 0) 
+        ? product.images[0] 
+        : (product.image || product.images || '');
+
+    // Agar price me pehle se ₹ laga ho toh duplicate nahi hoga
+    const cleanPrice = String(product.price ?? '').trim().replace(/^[₹\s]+/, '');
+    const formattedPrice = `₹${cleanPrice}`;
 
     findsHtml += `
         <div class="product-card">
-            <div class="product-img-box" onclick="openLightbox('finds', ${index}, 0)">
-                <img src="${firstImg}" alt="${product.name}" loading="lazy">
-            </div>
-            <div class="product-info">
-                <h3 class="product-title" onclick="openProductDetail('finds', ${index})">${product.name}</h3>
-                <p class="product-desc">${product.description || ''}</p>
-                <div class="product-price">₹${product.price}</div>
-                <div class="product-actions" style="grid-template-columns: 1fr;">
-                    <a href="${product.affiliateLink || '#'}" target="_blank" rel="noopener noreferrer" class="btn-buy-now" style="text-align: center; text-decoration: none; display: flex; align-items: center; justify-content: center;">
-                        View Deal 🤍
-                    </a>
-                </div>
+            <img src="${firstImg}" alt="${product.name}" onclick="openLightbox('finds', ${index}, 0)" style="cursor: pointer;">
+            <h3 onclick="openProductDetail('finds', ${index})" style="cursor: pointer;">${product.name}</h3>
+            <p>${product.description || ''}</p>
+            <div class="price-row">
+                <span class="price">${formattedPrice}</span>
+                <a href="${product.affiliateLink || '#'}" target="_blank" rel="noopener noreferrer" class="btn-small">View Deal 🤍</a>
             </div>
         </div>
     `;
 });
+
 findsContainer.innerHTML = findsHtml;
+
 
 
 // Render Closet Products
