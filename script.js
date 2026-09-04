@@ -759,14 +759,9 @@ const affiliateProducts = [
     description: "Cute and comfortable headband designed to add a stylish touch to everyday looks.",
     price: "₹399",
     affiliateLink: "https://link.amazon/B0dK2bSJu"
-},
+}
 
-    ],
-    description: "Everyday comfort sneakers with slip-resistant soles and soft inner lining. Reliable pick for routine outdoor walks.",
-    price: 449,
-    affiliateLink: "https://link.amazon/B09FW5XY3"
-  }
-];
+ ];
 
 
 
