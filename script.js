@@ -2169,24 +2169,24 @@ affiliateProducts.forEach((product, index) => {
         ? product.images[0] 
         : (product.image || product.images || '');
 
-    // Agar price me pehle se ₹ laga ho toh duplicate nahi hoga
     const cleanPrice = String(product.price ?? '').trim().replace(/^[₹\s]+/, '');
     const formattedPrice = `₹${cleanPrice}`;
 
     findsHtml += `
         <div class="product-card">
-            <img src="${firstImg}" alt="${product.name}" onclick="openLightbox('finds', ${index}, 0)" style="cursor: pointer;">
+            <img src="${firstImg}" alt="${product.name}" onclick="openLightbox('finds', ${index}, 0)" style="cursor: pointer; width: 100%; object-fit: cover; aspect-ratio: 1/1; border-radius: 12px; display: block;">
             <h3 onclick="openProductDetail('finds', ${index})" style="cursor: pointer;">${product.name}</h3>
             <p>${product.description || ''}</p>
-            <div class="price-row">
-                <span class="price">${formattedPrice}</span>
-                <a href="${product.affiliateLink || '#'}" target="_blank" rel="noopener noreferrer" class="btn-small">View Deal 🤍</a>
+            <div class="price-row" style="display: flex; align-items: center; justify-content: space-between; margin-top: 8px;">
+                <span class="price" style="font-weight: 700; font-size: 16px;">${formattedPrice}</span>
+                <a href="${product.affiliateLink || '#'}" target="_blank" rel="noopener noreferrer" class="btn-small" style="text-decoration: none; padding: 6px 14px; border-radius: 20px; font-size: 12px; font-weight: 600; white-space: nowrap;">View Deal 🤍</a>
             </div>
         </div>
     `;
 });
 
 findsContainer.innerHTML = findsHtml;
+
 
 
 
