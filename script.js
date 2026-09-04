@@ -2743,13 +2743,28 @@ homeContainer.innerHTML = homeHtml;
 const findsContainer = document.getElementById('finds-products');
 let findsHtml = '';
 affiliateProducts.forEach((product, index) => {
-    let swipeImagesHtml = '';
-    product.images.forEach((imgLink, imgIndex) => {
-        swipeImagesHtml += `<div class="swipe-img-item" onclick="openLightbox('finds', ${index}, ${imgIndex})"><img src="${imgLink}" alt="product image"></div>`;
-    });
-    findsHtml += `<div class="product-card"><div class="swipe-gallery-container" id="swipe-container-finds-${index}">${swipeImagesHtml}</div><h3 onclick="openProductDetail('finds', ${index})">${product.name}</h3><p>${product.description}</p><div class="price-row"><span class="price">${product.price}</span><a href="${product.affiliateLink}" target="_blank" class="btn-small">View Deal</a></div></div>`;
+    const firstImg = (product.images && product.images.length > 0) ? product.images[0] : '';
+
+    findsHtml += `
+        <div class="product-card">
+            <div class="product-img-box" onclick="openLightbox('finds', ${index}, 0)">
+                <img src="${firstImg}" alt="${product.name}" loading="lazy">
+            </div>
+            <div class="product-info">
+                <h3 class="product-title" onclick="openProductDetail('finds', ${index})">${product.name}</h3>
+                <p class="product-desc">${product.description || ''}</p>
+                <div class="product-price">₹${product.price}</div>
+                <div class="product-actions" style="grid-template-columns: 1fr;">
+                    <a href="${product.affiliateLink || '#'}" target="_blank" rel="noopener noreferrer" class="btn-buy-now" style="text-align: center; text-decoration: none; display: flex; align-items: center; justify-content: center;">
+                        View Deal 🤍
+                    </a>
+                </div>
+            </div>
+        </div>
+    `;
 });
 findsContainer.innerHTML = findsHtml;
+
 
 // Render Closet Products
 const closetContainer = document.getElementById('closet-products');
