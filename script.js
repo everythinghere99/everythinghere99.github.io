@@ -1331,7 +1331,256 @@ const affiliateProducts = [
         description: "Novelty helicopter-shaped dispenser featuring an automatic fun design. A creative functional accent piece for any desk.",
         price: "₹481",
         affiliateLink: "https://link.amazon/B0evPmNUt"
-    }
+    },
+    {
+    id: "SHREE-P113",
+    name: "Car Perfume",
+    images: [
+        "https://i.ibb.co/wZDLTym6/Screenshot-20260913-183819-Amazon.jpg"
+    ],
+    description: "A stylish car perfume for a fresh and pleasant drive.",
+    price: "₹777",
+    affiliateLink: "https://link.amazon/B0f2hpVTi"
+},
+{
+    id: "SHREE-P114",
+    name: "Hanuman Idol",
+    images: [
+        "https://i.ibb.co/JwG7yF7m/Screenshot-20260913-184054-Amazon.jpg"
+    ],
+    description: "A beautiful Hanuman idol for your home or pooja space.",
+    price: "₹599",
+    affiliateLink: "https://link.amazon/B0hwLWIKq"
+},
+{
+    id: "SHREE-P115",
+    name: "Buddha Idol",
+    images: [
+        "https://i.ibb.co/4nqDcJ3t/Screenshot-20260913-184433-Amazon.jpg"
+    ],
+    description: "A peaceful Buddha idol for a calm and aesthetic space.",
+    price: "₹370",
+    affiliateLink: "https://link.amazon/B0eNz9A58"
+},
+{
+    id: "SHREE-P116",
+    name: "Buddha Monk Idol",
+    images: [
+        "https://i.ibb.co/j9nhx5Kx/Screenshot-20260913-184709-Amazon.jpg"
+    ],
+    description: "A serene Buddha monk idol for peaceful home decor.",
+    price: "₹429",
+    affiliateLink: "https://link.amazon/B03Ztzp3o"
+},
+{
+    id: "SHREE-P117",
+    name: "4 Panda Idols",
+    images: [
+        "https://i.ibb.co/S4tSjh71/Screenshot-20260913-184850-Amazon.jpg"
+    ],
+    description: "Cute panda idols to add a playful touch to your decor.",
+    price: "₹331",
+    affiliateLink: "https://link.amazon/B0h3v9cWX"
+},
+{
+    id: "SHREE-P118",
+    name: "6 Cat Idols",
+    images: [
+        "https://i.ibb.co/NgwTksNg/Screenshot-20260913-185122-Amazon.jpg"
+    ],
+    description: "Adorable cat idols for cute and charming home decor.",
+    price: "₹299",
+    affiliateLink: "https://link.amazon/B06qElUdf"
+},
+{
+    id: "SHREE-P119",
+    name: "Kurta with Palazzos",
+    images: [
+        "https://i.ibb.co/HskcxvQ/Screenshot-20260913-185349-Amazon.jpg"
+    ],
+    description: "A stylish kurta and palazzo set for an elegant everyday look.",
+    price: "₹818",
+    affiliateLink: "https://link.amazon/B0fA4PNrr"
+},
+{
+    id: "SHREE-P120",
+    name: "Women's Salwar Suit",
+    images: [
+        "https://i.ibb.co/Gv7TwvyW/Screenshot-20260913-185954-Amazon.jpg"
+    ],
+    description: "A graceful women's salwar suit for a stylish ethnic look.",
+    price: "₹749",
+    affiliateLink: "https://link.amazon/B01xBuxn3"
+},
+{
+    id: "SHREE-P121",
+    name: "Women's Kurta Pant",
+    images: [
+        "https://i.ibb.co/xKgG2697/Screenshot-20260913-190154-Amazon.jpg"
+    ],
+    description: "A chic kurta pant set for a comfortable ethnic look.",
+    price: "₹599",
+    affiliateLink: "https://link.amazon/B05TLEtbE"
+},
+{
+    id: "SHREE-P122",
+    name: "Women's Kurta Pant",
+    images: [
+        "https://i.ibb.co/BVbmrv0L/Screenshot-20260913-190621-Amazon.jpg"
+    ],
+    description: "A stylish kurta pant set perfect for effortless everyday fashion.",
+    price: "₹959",
+    affiliateLink: "https://link.amazon/B0iD36EqV"
+},
+{
+    id: "SHREE-P123",
+    name: "Cozy Water Bottle",
+    images: [
+        "https://i.ibb.co/vx0zp5Mt/Screenshot-20260913-190809-Amazon.jpg"
+    ],
+    description: "A cozy and stylish water bottle for everyday use.",
+    price: "₹1599",
+    affiliateLink: "https://link.amazon/B0gZ7gGkb"
+},
+{
+    id: "SHREE-P124",
+    name: "2 Cozy Bottles",
+    images: [
+        "https://i.ibb.co/pvmxmWQq/Screenshot-20260913-191001-Amazon.jpg",
+        "https://i.ibb.co/C3cxyK92/Screenshot-20260913-191018-Amazon.jpg",
+        "https://i.ibb.co/jvKdpjrQ/Screenshot-20260913-191037-Amazon.jpg"
+    ],
+    description: "Two cute and cozy bottles for everyday hydration.",
+    price: "₹280",
+    affiliateLink: "https://link.amazon/B0da4X7m8"
+},
+{
+    id: "SHREE-P125",
+    name: "Cozy Glass Bottle",
+    images: [
+        "https://i.ibb.co/fYLwkbCK/Screenshot-20260913-191204-Amazon.jpg"
+    ],
+    description: "A cute glass bottle with a cozy aesthetic for daily use.",
+    price: "₹199",
+    affiliateLink: "https://link.amazon/B05LyChS9"
+},
+{
+    id: "SHREE-P126",
+    name: "Aesthetic Glass Bottle",
+    images: [
+        "https://i.ibb.co/Tqc49MsH/Screenshot-20260913-191401-Amazon.jpg",
+        "https://i.ibb.co/ccfPLp5S/Screenshot-20260913-191416-Amazon.jpg"
+    ],
+    description: "An aesthetic glass bottle for stylish everyday hydration.",
+    price: "₹249",
+    affiliateLink: "https://link.amazon/B0fSi7aka"
+},
+{
+    id: "SHREE-P127",
+    name: "Cozy Small Projector",
+    images: [
+        "https://i.ibb.co/rfv31vPH/Screenshot-20260913-191609-Amazon.jpg",
+        "https://i.ibb.co/Y7bH4C4j/Screenshot-20260913-191737-Amazon.jpg",
+        "https://i.ibb.co/HL8MQ8FX/Screenshot-20260913-191751-Amazon.jpg",
+        "https://i.ibb.co/chPwM5Df/Screenshot-20260913-191812-Amazon.jpg"
+    ],
+    description: "A compact cozy projector for creating a relaxing atmosphere.",
+    price: "₹1280",
+    affiliateLink: "https://link.amazon/B08qK7f8S"
+},
+{
+    id: "SHREE-P128",
+    name: "Cozy Bunny Lamp",
+    images: [
+        "https://i.ibb.co/8gQ6zR8d/Screenshot-20260913-192039-Amazon.jpg",
+        "https://i.ibb.co/Y4MPSJYb/Screenshot-20260913-192028-Amazon.jpg",
+        "https://i.ibb.co/V18wzgt/Screenshot-20260913-192053-Amazon.jpg",
+        "https://i.ibb.co/3ygWwdF7/Screenshot-20260913-192103-Amazon.jpg"
+    ],
+    description: "A cute bunny lamp to bring a soft and cozy touch to your room.",
+    price: "₹1071",
+    affiliateLink: "https://link.amazon/B07gUZYrt"
+},
+{
+    id: "SHREE-P129",
+    name: "Cute Mirror",
+    images: [
+        "https://i.ibb.co/MxtVYwcN/Screenshot-20260913-192329-Amazon.jpg",
+        "https://i.ibb.co/fYQ0fZ67/Screenshot-20260913-192341-Amazon.jpg",
+        "https://i.ibb.co/4gKZ9bYP/Screenshot-20260913-192355-Amazon.jpg",
+        "https://i.ibb.co/cKwNNkgH/Screenshot-20260913-192408-Amazon.jpg"
+    ],
+    description: "A cute decorative mirror for your vanity or room.",
+    price: "₹347",
+    affiliateLink: "https://link.amazon/B0199BgSA"
+},
+{
+    id: "SHREE-P130",
+    name: "Unicorn Table Lamp",
+    images: [
+        "https://i.ibb.co/s9Ln6tVv/Screenshot-20260913-192552-Amazon.jpg",
+        "https://i.ibb.co/tT0rVkZM/Screenshot-20260913-192606-Amazon.jpg"
+    ],
+    description: "A cute unicorn table lamp for a playful room setup.",
+    price: "₹333",
+    affiliateLink: "https://link.amazon/B09wQqmBv"
+},
+{
+    id: "SHREE-P131",
+    name: "Cycle Shape Pot",
+    images: [
+        "https://i.ibb.co/GQD0Xkmq/Screenshot-20260913-192906-Amazon.jpg",
+        "https://i.ibb.co/Xx1QBDy8/Screenshot-20260913-192920-Amazon.jpg"
+    ],
+    description: "A decorative cycle-shaped pot for adding charm to your space.",
+    price: "₹299",
+    affiliateLink: "https://link.amazon/B0hGeNNhW"
+},
+{
+    id: "SHREE-P132",
+    name: "Najar Battu Hanger",
+    images: [
+        "https://i.ibb.co/WNgtX4W9/Screenshot-20260913-193213-Amazon.jpg",
+        "https://i.ibb.co/WNtk1Q39/Screenshot-20260913-193222-Amazon.jpg"
+    ],
+    description: "A decorative Najar Battu hanger for your home entrance or wall.",
+    price: "₹199",
+    affiliateLink: "https://link.amazon/B0dpLavsw"
+},
+{
+    id: "SHREE-P133",
+    name: "Cozy Decorative Cycle",
+    images: [
+        "https://i.ibb.co/yc4Gs6WH/Screenshot-20260913-220047-Amazon.jpg",
+        "https://i.ibb.co/hR62zD41/Screenshot-20260913-220058-Amazon.jpg"
+    ],
+    description: "A charming decorative cycle for a cozy aesthetic setup.",
+    price: "₹423",
+    affiliateLink: "https://link.amazon/B0aUytIWC"
+},
+{
+    id: "SHREE-P134",
+    name: "Polo T Shirt",
+    images: [
+        "https://i.ibb.co/hR6b540N/Screenshot-20260914-105725-Amazon.jpg",
+        "https://i.ibb.co/r8WFr06/Screenshot-20260914-105743-Amazon.jpg"
+    ],
+    description: "A stylish polo T shirt for a clean and casual look.",
+    price: "₹399",
+    affiliateLink: "https://link.amazon/B0434SkFk"
+},
+{
+    id: "SHREE-P135",
+    name: "Milton Bottle",
+    images: [
+        "https://i.ibb.co/KcY5g4ww/Screenshot-20260914-110001-Amazon.jpg",
+        "https://i.ibb.co/QFQpJFsm/Screenshot-20260914-110015-Amazon.jpg",
+        "https://i.ibb.co/1J6FPx7z/Screenshot-20260914-110024-Amazon.jpg"
+    ],
+    description: "A practical Milton bottle for everyday hydration.",
+    price: "₹2275",
+    affiliateLink: "https://link.amazon/B0aIVXEGS"
+}
 
    ];
    
