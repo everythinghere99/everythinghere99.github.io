@@ -1580,9 +1580,276 @@ const affiliateProducts = [
     description: "A practical Milton bottle for everyday hydration.",
     price: "₹2275",
     affiliateLink: "https://link.amazon/B0aIVXEGS"
-}
-
-   ];
+},
+    {
+        id: "SHREE-P136",
+        name: "Noise Headphones",
+        images: [
+            "https://i.ibb.co/PvG90kZ1/Screenshot-20260914-113701-Amazon.jpg",
+            "https://i.ibb.co/Q33QZcnM/Screenshot-20260914-113721-Amazon.jpg",
+            "https://i.ibb.co/TqW1bDyn/Screenshot-20260914-113743-Amazon.jpg"
+        ],
+        description: "Premium wireless sound with punchy bass and comfort fit.",
+        price: "₹4,499",
+        affiliateLink: "https://link.amazon/B05TLAYKc"
+    },
+    {
+        id: "SHREE-P137",
+        name: "Asthetic Wall Frame",
+        images: [
+            "https://i.ibb.co/8DyDSR0h/Screenshot-20260914-114353-Amazon.jpg",
+            "https://i.ibb.co/HDCBJRPX/Screenshot-20260914-114403-Amazon.jpg"
+        ],
+        description: "Elegant wall frame piece to elevate modern room aesthetics.",
+        price: "₹899",
+        affiliateLink: "https://link.amazon/B0afENjXX"
+    },
+    {
+        id: "SHREE-P138",
+        name: "Women's Maxi Dress",
+        images: [
+            "https://i.ibb.co/3m7fWFtm/Screenshot-20260914-114528-Amazon.jpg",
+            "https://i.ibb.co/gLND7ptQ/Screenshot-20260914-114543-Amazon.jpg"
+        ],
+        description: "Flowy and breathable casual dress for everyday outings.",
+        price: "₹999",
+        affiliateLink: "https://link.amazon/B0bFTw8E0"
+    },
+    {
+        id: "SHREE-P139",
+        name: "Women's Dress",
+        images: [
+            "https://i.ibb.co/8gZcCtrj/Screenshot-20260914-114711-Amazon.jpg",
+            "https://i.ibb.co/C3dS95Kn/Screenshot-20260914-114723-Amazon.jpg"
+        ],
+        description: "Stylish everyday attire with a soft and flattering finish.",
+        price: "₹879",
+        affiliateLink: "https://link.amazon/B02IC6eip"
+    },
+    {
+        id: "SHREE-P140",
+        name: "Women's Stylish Kurti",
+        images: [
+            "https://i.ibb.co/b5ST2RJ1/Screenshot-20260914-114944-Amazon.jpg",
+            "https://i.ibb.co/jvm4c0JB/Screenshot-20260914-115000-Amazon.jpg"
+        ],
+        description: "Chic ethnic wear pairing comfort with contemporary trends.",
+        price: "₹493",
+        affiliateLink: "https://link.amazon/B04NYW7GS"
+    },
+    {
+        id: "SHREE-P141",
+        name: "Cozy Party Wear",
+        images: [
+            "https://i.ibb.co/v6v07zgp/Screenshot-20260914-115327-Amazon.jpg",
+            "https://i.ibb.co/YBVH7PDj/Screenshot-20260914-115339-Amazon.jpg"
+        ],
+        description: "Statement party outfit delivering luxury comfort and glam appeal.",
+        price: "₹7,974",
+        affiliateLink: "https://link.amazon/B00x9BmdQ"
+    },
+    {
+        id: "SHREE-P142",
+        name: "Women's Dress",
+        images: [
+            "https://i.ibb.co/XxbD3X8q/Screenshot-20260914-115510-Amazon.jpg"
+        ],
+        description: "Minimalist everyday dress offering total ease and subtle charm.",
+        price: "₹550",
+        affiliateLink: "https://link.amazon/B0dDEf5dU"
+    },
+    {
+        id: "SHREE-P143",
+        name: "Women's Pretty Dress",
+        images: [
+            "https://i.ibb.co/PZ4dg8Zs/Screenshot-20260914-115649-Amazon.jpg",
+            "https://i.ibb.co/LdG6Y91z/Screenshot-20260914-115716-Amazon.jpg"
+        ],
+        description: "Graceful silhouette crafted for special occasions and dates.",
+        price: "₹7,862",
+        affiliateLink: "https://link.amazon/B0axHR7wu"
+    },
+    {
+        id: "SHREE-P144",
+        name: "Women's Asthetic Dress",
+        images: [
+            "https://i.ibb.co/spGK9jTV/Screenshot-20260914-131308-Amazon.jpg",
+            "https://i.ibb.co/wNLP2pv0/Screenshot-20260914-131318-Amazon.jpg"
+        ],
+        description: "High-end designer cut made with ultra-premium fabric detailing.",
+        price: "₹10,658",
+        affiliateLink: "https://link.amazon/B04luQI0O"
+    },
+    {
+        id: "SHREE-P145",
+        name: "Cozy Wall Decor",
+        images: [
+            "https://i.ibb.co/27xrY4Zx/Screenshot-20260914-175631-Amazon.jpg",
+            "https://i.ibb.co/jvxZ3cVR/Screenshot-20260914-175649-Amazon.jpg",
+            "https://i.ibb.co/TDChBN72/Screenshot-20260914-175702-Amazon.jpg"
+        ],
+        description: "Warm artistic accent to create a relaxing home ambiance.",
+        price: "₹1,499",
+        affiliateLink: "https://link.amazon/B0fVMRFcz"
+    },
+    {
+        id: "SHREE-P146",
+        name: "Kids Room Kit",
+        images: [
+            "https://i.ibb.co/SDYHZs7t/Screenshot-20260914-175900-Amazon.jpg",
+            "https://i.ibb.co/k2Ydr4v1/Screenshot-20260914-175914-Amazon.jpg",
+            "https://i.ibb.co/zq4rc3B/Screenshot-20260914-175923-Amazon.jpg"
+        ],
+        description: "Fun decorative pack tailored to brighten up any child's room.",
+        price: "₹1,729",
+        affiliateLink: "https://link.amazon/B0bMwV8l1"
+    },
+    {
+        id: "SHREE-P147",
+        name: "Wooden House Decor",
+        images: [
+            "https://i.ibb.co/Xf8SFdjd/Screenshot-20260914-180057-Amazon.jpg",
+            "https://i.ibb.co/nq0g4NTQ/Screenshot-20260914-180112-Amazon.jpg",
+            "https://i.ibb.co/ymRsSjPr/Screenshot-20260914-180122-Amazon.jpg",
+            "https://i.ibb.co/Fkf62HCz/Screenshot-20260914-180142-Amazon.jpg"
+        ],
+        description: "Rustic wooden showpiece adding warmth and organic style.",
+        price: "₹429",
+        affiliateLink: "https://link.amazon/B00gnVTeS"
+    },
+    {
+        id: "SHREE-P148",
+        name: "Wall Decor",
+        images: [
+            "https://i.ibb.co/NnYYbvw6/Screenshot-20260914-180256-Amazon.jpg"
+        ],
+        description: "Versatile decorative piece suited for halls, rooms, or study corners.",
+        price: "₹770",
+        affiliateLink: "https://link.amazon/B0hP7MLdv"
+    },
+    {
+        id: "SHREE-P149",
+        name: "Tiny Ai Robot",
+        images: [
+            "https://i.ibb.co/JwFn7VBw/Screenshot-20260914-180430-Amazon.jpg",
+            "https://i.ibb.co/XZbS3gLk/Screenshot-20260914-180421-Amazon.jpg",
+            "https://i.ibb.co/4h1rNJk/Screenshot-20260914-180440-Amazon.jpg",
+            "https://i.ibb.co/SX1tFC5Y/Screenshot-20260914-180449-Amazon.jpg"
+        ],
+        description: "Compact smart desktop companion featuring interactive AI behavior.",
+        price: "₹10,600",
+        affiliateLink: "https://link.amazon/B0e3mz3N8"
+    },
+    {
+        id: "SHREE-P150",
+        name: "Baba Yoda Toy",
+        images: [
+            "https://i.ibb.co/2pwFX11/Screenshot-20260914-180734-Amazon.jpg",
+            "https://i.ibb.co/20JfDH1m/Screenshot-20260914-180725-Amazon.jpg",
+            "https://i.ibb.co/QFY0sxND/Screenshot-20260914-180753-Amazon.jpg"
+        ],
+        description: "Adorable collectible plush figure perfect for fans and kids alike.",
+        price: "₹4,499",
+        affiliateLink: "https://link.amazon/B06vI4XzB"
+    },
+    {
+        id: "SHREE-P151",
+        name: "Dog Soft Toy",
+        images: [
+            "https://i.ibb.co/gkH32qY/Screenshot-20260914-181014-Amazon.jpg",
+            "https://i.ibb.co/8nLsQgjF/Screenshot-20260914-181022-Amazon.jpg",
+            "https://i.ibb.co/Pv86gs31/Screenshot-20260914-181038-Amazon.jpg"
+        ],
+        description: "Super soft cuddly companion made with huggable, safe material.",
+        price: "₹499",
+        affiliateLink: "https://link.amazon/B0iErHl0G"
+    },
+    {
+        id: "SHREE-P152",
+        name: "Capybara Soft Toy",
+        images: [
+            "https://i.ibb.co/SwdG5JCf/Screenshot-20260914-181226-Amazon.jpg"
+        ],
+        description: "Charming plushie with a calm vibe, great for desk decor or gifting.",
+        price: "₹407",
+        affiliateLink: "https://link.amazon/B0iPhRpCy"
+    },
+    {
+        id: "SHREE-P153",
+        name: "Ai Robot Pet",
+        images: [
+            "https://i.ibb.co/tTDYV5Zv/Screenshot-20260914-181447-Amazon.jpg",
+            "https://i.ibb.co/mF0h5dzh/Screenshot-20260914-181457-Amazon.jpg",
+            "https://i.ibb.co/rRztCknm/Screenshot-20260914-181505-Amazon.jpg"
+        ],
+        description: "Lifelike smart interactive robotic buddy that responds on touch.",
+        price: "₹7,407",
+        affiliateLink: "https://link.amazon/B0eI8dA58"
+    },
+    {
+        id: "SHREE-P154",
+        name: "Ai Robot Combo",
+        images: [
+            "https://i.ibb.co/dsrLPY4Q/Screenshot-20260914-181909-Amazon.jpg",
+            "https://i.ibb.co/bgQhGhF3/Screenshot-20260914-181919-Amazon.jpg",
+            "https://i.ibb.co/RkBts21V/Screenshot-20260914-181927-Amazon.jpg",
+            "https://i.ibb.co/qMWsryRK/Screenshot-20260914-181937-Amazon.jpg",
+            "https://i.ibb.co/wZCkhCT3/Screenshot-20260914-181956-Amazon.jpg",
+            "https://i.ibb.co/CsYvh2rv/Screenshot-20260914-182008-Amazon.jpg"
+        ],
+        description: "Comprehensive robotic tech kit built for advanced play and learning.",
+        price: "₹41,939",
+        affiliateLink: "https://link.amazon/B0hGVnyD6"
+    },
+    {
+        id: "SHREE-P155",
+        name: "Robot Toy",
+        images: [
+            "https://i.ibb.co/XfjD88kZ/Screenshot-20260914-182139-Amazon.jpg",
+            "https://i.ibb.co/1YDbsz6H/Screenshot-20260914-182154-Amazon.jpg",
+            "https://i.ibb.co/V0SWWPVT/Screenshot-20260914-182203-Amazon.jpg",
+            "https://i.ibb.co/8gJHmZT4/Screenshot-20260914-182218-Amazon.jpg"
+        ],
+        description: "Engaging dynamic robot packed with lights, sounds, and motion.",
+        price: "₹7,296",
+        affiliateLink: "https://link.amazon/B08ocwyii"
+    },
+    {
+        id: "SHREE-P156",
+        name: "Storytelling Robot",
+        images: [
+            "https://i.ibb.co/rRMTybc7/Screenshot-20260914-182335-Amazon.jpg",
+            "https://i.ibb.co/Xrnn22KY/Screenshot-20260914-182348-Amazon.jpg",
+            "https://i.ibb.co/VYLWmKd2/Screenshot-20260914-182404-Amazon.jpg"
+        ],
+        description: "Educational smart toy that narrates tales and teaches through voice.",
+        price: "₹899",
+        affiliateLink: "https://link.amazon/B03AGUWve"
+    },
+    {
+        id: "SHREE-P157",
+        name: "Kids Smart Watch",
+        images: [
+            "https://i.ibb.co/9mb40Dgf/Screenshot-20260914-182551-Amazon.jpg",
+            "https://i.ibb.co/PGbY2GdX/Screenshot-20260914-182559-Amazon.jpg",
+            "https://i.ibb.co/FkGRByNt/Screenshot-20260914-182609-Amazon.jpg",
+            "https://i.ibb.co/tpyzfzWc/Screenshot-20260914-182539-Amazon.jpg"
+        ],
+        description: "Durable smartwatch packed with calling features and safety tracker.",
+        price: "₹3,149",
+        affiliateLink: "https://link.amazon/B0hqdzCZG"
+    },
+    {
+        id: "SHREE-P158",
+        name: "Kid's Smart Watch",
+        images: [
+            "https://i.ibb.co/RGn2ZcPw/Screenshot-20260914-183429-Amazon.jpg"
+        ],
+        description: "Feature-rich touch smartwatch with long battery life and games.",
+        price: "₹6,499",
+        affiliateLink: "https://link.amazon/B04gdk87H"
+    }
+];
    
 
 
