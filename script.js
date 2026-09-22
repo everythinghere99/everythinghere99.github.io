@@ -2289,6 +2289,16 @@ const affiliateProducts = [
         description: "Useful Women's Saree with a stylish design, made for convenient everyday use.",
         price: "₹1559",
         affiliateLink: "https://www.amazon.in/dp/B0DZ2N9Z9M?tag=pikafinds-21"
+    },
+    {
+        id: "SHREE-P203",
+        name: "Women's Saree",
+        images: [
+            "https://m.media-amazon.com/images/I/71EEu4SCnML._SY445_.jpg"
+        ],
+        description: "Useful Women's Saree with a stylish design, made for convenient everyday use.",
+        price: "₹999",
+        affiliateLink: "https://www.amazon.in/dp/B0H3VXGLND?tag=pikafinds-21"
     }
 ];
    
