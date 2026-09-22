@@ -1879,6 +1879,16 @@ const affiliateProducts = [
         price: "₹1259",
         affiliateLink: "https://www.amazon.in/dp/B0H4HCYQJJ?tag=pikafinds-21"
 
+    },
+    {
+        id: "SHREE-P162",
+        name: "Women's Top",
+        images: [
+            "https://m.media-amazon.com/images/I/51kQah3PHvL._SX342_.jpg"
+        ],
+        description: "Stylish Women's Top designed for a comfortable fit and an easy everyday look.",
+        price: "₹379",
+        affiliateLink: "https://www.amazon.in/dp/B0GN938PJL?tag=pikafinds-21"
     }
 ];
    
