@@ -1858,6 +1858,16 @@ const affiliateProducts = [
         description: "Stylish Women's Kurti designed for a comfortable fit and an easy everyday look.",
         price: "₹499",
         affiliateLink: "https://www.amazon.in/dp/B0HD7PCFNQ?tag=pikafinds-21"
+    },
+    {
+        id: "SHREE-P160",
+        name: "Women's Kurti",
+        images: [
+            "https://m.media-amazon.com/images/I/4160dBegarL._SY445_.jpg"
+        ],
+        description: "Stylish Women's Kurti designed for a comfortable fit and an easy everyday look.",
+        price: "₹739",
+        affiliateLink: "https://www.amazon.in/dp/B0H8PBS2GH?tag=pikafinds-21"
     }
 ];
    
