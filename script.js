@@ -1868,6 +1868,16 @@ const affiliateProducts = [
         description: "Stylish Women's Kurti designed for a comfortable fit and an easy everyday look.",
         price: "₹739",
         affiliateLink: "https://www.amazon.in/dp/B0H8PBS2GH?tag=pikafinds-21"
+    },
+    {
+        id: "SHREE-P161",
+        name: "Women's Anarkali Suit",
+        images: [
+            "https://m.media-amazon.com/images/I/714SoL6pDhL._SY445_.jpg"
+        ],
+        description: "Useful Women's Anarkali Suit with a stylish design, made for convenient everyday use.",
+        price: "₹1259",
+        affiliateLink: "https://www.amazon.in/dp/B0H4HCYQJJ?tag=pikafinds-21"
     }
 ];
    
