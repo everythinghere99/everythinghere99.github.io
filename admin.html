@@ -316,8 +316,27 @@ function resetFormForNextLink() {
         "none";
 
 
-    /* GitHub button reset */
+    /* Extract button unlock */
+    const extractBtn =
+        document.getElementById("btn-extract");
 
+    extractBtn.disabled = false;
+    extractBtn.innerText =
+        "⚡ Extract Details Instantly";
+
+
+    /* Copy button reset */
+    const copyBtn =
+        document.getElementById("btn-copy-all");
+
+    copyBtn.disabled = false;
+    copyBtn.innerText =
+        "📋 Copy All Details";
+    copyBtn.style.background =
+        "#5b7c61";
+
+
+    /* GitHub button reset */
     const githubBtn =
         document.getElementById("btn-generate-github");
 
@@ -325,7 +344,6 @@ function resetFormForNextLink() {
 
     githubBtn.innerText =
         "🚀 Generate Product Code & Update GitHub";
-
 
     document.getElementById("github-update-status").innerText =
         "";
@@ -339,7 +357,6 @@ function resetFormForNextLink() {
 
     statusDiv.innerText =
         "✨ Cleaned! Agla link paste karo.";
-
 
     document.getElementById("product-page-url").focus();
 }
@@ -359,7 +376,6 @@ function generateSmartName(rawTitle) {
         rawTitle.toLowerCase();
 
     let gender = "";
-
 
     if (
         /\b(women's|womens|women|female|ladies|girls|girl)\b/i
@@ -436,7 +452,6 @@ function generateSmartName(rawTitle) {
         { match: /\b(smartwatch|smart watch)\b/i, name: "Smartwatch" },
         { match: /\b(bluetooth speaker|speaker)\b/i, name: "Bluetooth Speaker" },
         { match: /\b(power bank|powerbank)\b/i, name: "Power Bank" },
-
         { match: /\b(wall clock|clock)\b/i, name: "Wall Clock" },
         { match: /\b(table lamp|lamp)\b/i, name: "Lamp" },
         { match: /\b(water bottle|bottle)\b/i, name: "Water Bottle" },
@@ -473,11 +488,9 @@ function generateSmartName(rawTitle) {
                 "Power Bank"
             ];
 
-
             if (noGender.includes(item.name)) {
                 return item.name;
             }
-
 
             return gender
                 ? `${gender} ${item.name}`
@@ -568,38 +581,29 @@ async function extractDetails() {
             .value
             .trim();
 
-
     const statusDiv =
         document.getElementById("fetch-status");
-
 
     const resultBox =
         document.getElementById("scraper-result");
 
-
     const resName =
         document.getElementById("res-name");
-
 
     const resPrice =
         document.getElementById("res-price");
 
-
     const resImg =
         document.getElementById("res-image-link");
-
 
     const preview =
         document.getElementById("img-preview");
 
-
     const resAffiliate =
         document.getElementById("res-affiliate");
 
-
     const extractBtn =
         document.getElementById("btn-extract");
-
 
     const githubBtn =
         document.getElementById("btn-generate-github");
@@ -644,9 +648,6 @@ async function extractDetails() {
         "⏳ Extracting...";
 
 
-    /* New extraction start hone par
-       GitHub button disable */
-
     githubBtn.disabled = true;
 
     githubBtn.innerText =
@@ -667,12 +668,10 @@ async function extractDetails() {
     resultBox.style.display =
         "none";
 
-
     preview.style.display =
         "none";
 
     preview.src = "";
-
 
     resName.value = "";
     resPrice.value = "";
@@ -700,7 +699,6 @@ async function extractDetails() {
 
 
         let result;
-
 
         try {
 
@@ -745,9 +743,7 @@ async function extractDetails() {
         resPrice.value =
             data.price || "";
 
-
         if (!data.price) {
-
             resPrice.placeholder =
                 "₹ Price nahi mila";
         }
@@ -766,7 +762,6 @@ async function extractDetails() {
 
             preview.style.display =
                 "block";
-
 
             preview.onerror =
                 function () {
@@ -788,7 +783,6 @@ async function extractDetails() {
         resultBox.style.display =
             "block";
 
-
         statusDiv.style.color =
             "#386641";
 
@@ -796,8 +790,7 @@ async function extractDetails() {
             "✅ Done! Details ready.";
 
 
-        /* New product ready:
-           GitHub button enable */
+        /* GitHub button enable */
 
         githubBtn.disabled = false;
 
@@ -825,7 +818,6 @@ async function extractDetails() {
         statusDiv.style.color =
             "#bc4749";
 
-
         statusDiv.innerText =
             "❌ " +
             (
@@ -834,22 +826,21 @@ async function extractDetails() {
             );
 
 
-        /* Extraction failed,
-           GitHub button disabled */
-
         githubBtn.disabled = true;
-    }
 
+    } finally {
 
-    finally {
+        /*
+         * IMPORTANT:
+         * Extract button remains locked after
+         * the first click.
+         * Only Reset can unlock it.
+         */
 
-        extractBtn.disabled =
-            false;
-
+        extractBtn.disabled = true;
 
         extractBtn.innerText =
-            "⚡ Extract Details Instantly";
-
+            "🔒 Extracted — Reset for Next Link";
 
         activeAbortController =
             null;
@@ -858,7 +849,7 @@ async function extractDetails() {
 
 
 /* =========================================================
-   COPY ALL DETAILS
+   COPY READY-TO-PASTE PRODUCT CODE
 ========================================================= */
 
 async function copyAllFormattedDetails() {
@@ -869,13 +860,11 @@ async function copyAllFormattedDetails() {
             .value
             .trim();
 
-
     const price =
         document
             .getElementById("res-price")
             .value
             .trim();
-
 
     const image =
         document
@@ -883,46 +872,166 @@ async function copyAllFormattedDetails() {
             .value
             .trim();
 
-
     const affiliate =
         document
             .getElementById("res-affiliate")
             .value
             .trim();
 
-
     const copyBtn =
         document.getElementById("btn-copy-all");
 
+    const statusDiv =
+        document.getElementById("fetch-status");
 
-    const formattedText =
-`Name:
-${name}
 
-Price:
-${price}
+    if (!name) {
 
-Images:
-${image}
+        alert(
+            "Pehle product extract karo."
+        );
 
-Affiliate Link:
-${affiliate}`;
+        return;
+    }
+
+
+    if (!image) {
+
+        alert(
+            "Product image URL missing hai."
+        );
+
+        return;
+    }
+
+
+    if (!affiliate) {
+
+        alert(
+            "Affiliate link missing hai."
+        );
+
+        return;
+    }
+
+
+    copyBtn.disabled = true;
+
+    copyBtn.innerText =
+        "⏳ Product Code Generate Ho Raha Hai...";
 
 
     try {
 
-        await navigator.clipboard.writeText(
-            formattedText
-        );
+        statusDiv.style.color =
+            "#a36232";
+
+        statusDiv.innerText =
+            "🔢 Latest SHREE-P ID check ho rahi hai...";
 
 
-        const oldText =
-            copyBtn.innerText;
+        const response =
+            await fetch(
+                `${BACKEND_URL}/api/generate-product-code`,
+                {
+                    method: "POST",
+
+                    headers: {
+                        "Content-Type":
+                            "application/json"
+                    },
+
+                    body: JSON.stringify({
+                        name,
+                        price,
+                        image,
+                        affiliateLink:
+                            affiliate
+                    })
+                }
+            );
+
+
+        const data =
+            await response
+                .json()
+                .catch(() => ({}));
+
+
+        if (
+            !response.ok ||
+            !data.success ||
+            !data.code
+        ) {
+
+            throw new Error(
+                data.error ||
+                "Product code generate nahi ho paaya."
+            );
+        }
+
+
+        const productCode =
+            data.code;
+
+
+        /* Clipboard */
+
+        try {
+
+            await navigator.clipboard.writeText(
+                productCode
+            );
+
+        } catch (clipboardError) {
+
+            const textarea =
+                document.createElement("textarea");
+
+            textarea.value =
+                productCode;
+
+            textarea.style.position =
+                "fixed";
+
+            textarea.style.left =
+                "-9999px";
+
+            textarea.style.top =
+                "0";
+
+            document.body.appendChild(
+                textarea
+            );
+
+            textarea.focus();
+            textarea.select();
+
+            const copied =
+                document.execCommand("copy");
+
+            document.body.removeChild(
+                textarea
+            );
+
+            if (!copied) {
+
+                throw new Error(
+                    "Clipboard copy failed."
+                );
+            }
+        }
+
+
+        statusDiv.style.color =
+            "#386641";
+
+        statusDiv.innerText =
+            `✅ ${data.productId} ready! script.js mein paste kar sakte ho.`;
 
 
         copyBtn.innerText =
-            "✅ Copied to Clipboard!";
-
+            `✅ ${data.productId} Copied!`;
 
         copyBtn.style.background =
             "#386641";
@@ -931,78 +1040,52 @@ ${affiliate}`;
         setTimeout(
             function () {
 
+                copyBtn.disabled =
+                    false;
+
                 copyBtn.innerText =
-                    oldText;
+                    "📋 Copy All Details";
 
                 copyBtn.style.background =
                     "#5b7c61";
 
             },
-            2000
+            2500
         );
 
 
     } catch (error) {
 
-        /* Fallback */
-
-        const textarea =
-            document.createElement("textarea");
-
-
-        textarea.value =
-            formattedText;
-
-
-        textarea.style.position =
-            "fixed";
-
-
-        textarea.style.opacity =
-            "0";
-
-
-        document.body.appendChild(
-            textarea
+        console.error(
+            "Product code copy error:",
+            error
         );
 
 
-        textarea.focus();
-        textarea.select();
+        statusDiv.style.color =
+            "#bc4749";
 
-
-        try {
-
-            document.execCommand(
-                "copy"
+        statusDiv.innerText =
+            "❌ " +
+            (
+                error.message ||
+                "Product code generate nahi ho paaya."
             );
 
 
-            copyBtn.innerText =
-                "✅ Copied!";
+        copyBtn.disabled =
+            false;
+
+        copyBtn.innerText =
+            "📋 Copy All Details";
+
+        copyBtn.style.background =
+            "#5b7c61";
 
 
-            setTimeout(
-                () => {
-
-                    copyBtn.innerText =
-                        "📋 Copy All Details";
-
-                },
-                2000
-            );
-
-
-        } catch (fallbackError) {
-
-            alert(
-                "Copy nahi ho paaya. Details manually copy kar lo."
-            );
-        }
-
-
-        document.body.removeChild(
-            textarea
+        alert(
+            error.message ||
+            "Product code generate nahi ho paaya."
         );
     }
 }
@@ -1020,13 +1103,11 @@ async function generateProductAndUpdateGitHub() {
             .value
             .trim();
 
-
     const price =
         document
             .getElementById("res-price")
             .value
             .trim();
-
 
     const image =
         document
@@ -1034,25 +1115,21 @@ async function generateProductAndUpdateGitHub() {
             .value
             .trim();
 
-
     const affiliate =
         document
             .getElementById("res-affiliate")
             .value
             .trim();
 
-
     const keyInput =
         document.getElementById(
             "github-admin-key"
         );
 
-
     const status =
         document.getElementById(
             "github-update-status"
         );
-
 
     const btn =
         document.getElementById(
@@ -1170,7 +1247,6 @@ async function generateProductAndUpdateGitHub() {
                 );
             }
 
-
             throw new Error(
                 data.error ||
                 "GitHub update failed."
@@ -1189,18 +1265,15 @@ async function generateProductAndUpdateGitHub() {
         status.style.color =
             "#386641";
 
-
         status.innerText =
             `✅ ${data.productId} successfully GitHub par add ho gaya!`;
 
 
-        /* SUCCESS:
-           Button permanently disabled
-           until next product extraction/reset */
+        /* Success:
+           Disable until next reset */
 
         btn.innerText =
             `✅ ${data.productId} Added`;
-
 
         btn.disabled = true;
 
@@ -1210,16 +1283,14 @@ async function generateProductAndUpdateGitHub() {
         status.style.color =
             "#b23a48";
 
-
         status.innerText =
             `❌ ${error.message}`;
 
 
-        /* FAILURE:
+        /* Failure:
            Retry allowed */
 
         btn.disabled = false;
-
 
         btn.innerText =
             "🚀 Generate Product Code & Update GitHub";
