@@ -3,466 +3,726 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Chepu Store - Admin</title>
+    <title>Shree Store - Admin</title>
+
     <style>
-        /* Warm & Cozy Theme */
-        body { 
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
-            padding: 30px 15px; 
-            background: #f7f4ef; 
-            margin: 0; 
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            padding: 30px 15px;
+            background: #f7f4ef;
+            margin: 0;
             color: #3e3832;
         }
-        .container { 
-            background: #ffffff; 
-            padding: 28px; 
-            border-radius: 16px; 
-            max-width: 480px; 
-            margin: auto; 
-            box-shadow: 0 8px 30px rgba(80, 60, 40, 0.08); 
+
+        .container {
+            background: #ffffff;
+            padding: 28px;
+            border-radius: 16px;
+            max-width: 480px;
+            margin: auto;
+            box-shadow: 0 8px 30px rgba(80, 60, 40, 0.08);
             border: 1px solid #eee8df;
         }
-        h2 { 
-            text-align: center; 
-            margin: 0 0 18px 0; 
+
+        h2 {
+            text-align: center;
+            margin: 0 0 18px;
             color: #2b2621;
             font-size: 22px;
         }
-        label { 
-            font-size: 13px; 
-            font-weight: 600; 
-            color: #635a52; 
-            display: block; 
-            margin-top: 10px; 
+
+        label {
+            font-size: 13px;
+            font-weight: 600;
+            color: #635a52;
+            display: block;
+            margin-top: 10px;
         }
-        input[type="text"] { 
-            width: 100%; 
-            padding: 12px 14px; 
-            margin-top: 6px; 
-            box-sizing: border-box; 
-            font-size: 14px; 
+
+        input[type="text"] {
+            width: 100%;
+            padding: 12px 14px;
+            margin-top: 6px;
+            box-sizing: border-box;
+            font-size: 14px;
             border: 1.5px solid #e2dad0;
             border-radius: 10px;
             background: #faf8f5;
             color: #333;
             transition: border-color 0.2s;
         }
+
         input[type="text"]:focus {
             outline: none;
             border-color: #c48b5f;
             background: #fff;
         }
-        button { 
-            width: 100%; 
-            padding: 13px; 
-            margin-top: 14px; 
-            box-sizing: border-box; 
-            font-size: 15px; 
-            font-weight: 700; 
-            border: none; 
-            border-radius: 10px; 
-            cursor: pointer; 
-            transition: all 0.2s ease; 
+
+        button {
+            width: 100%;
+            padding: 13px;
+            margin-top: 14px;
+            box-sizing: border-box;
+            font-size: 15px;
+            font-weight: 700;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.2s ease;
         }
-        .btn-magic { 
-            background: #2b2621; 
-            color: #f7f4ef; 
+
+        button:disabled {
+            opacity: 0.65;
+            cursor: not-allowed;
+            transform: none !important;
         }
-        .btn-magic:hover { 
-            background: #453e36; 
+
+        .btn-magic {
+            background: #2b2621;
+            color: #f7f4ef;
+        }
+
+        .btn-magic:hover:not(:disabled) {
+            background: #453e36;
             transform: translateY(-1px);
         }
+
         .btn-reset {
             background: #e2dad0;
             color: #3e3832;
             margin-top: 10px;
         }
+
         .btn-reset:hover {
             background: #d4c8bb;
         }
-        .btn-copy { 
-            background: #5b7c61; 
-            color: white; 
-            margin-top: 16px; 
+
+        .btn-copy {
+            background: #5b7c61;
+            color: white;
+            margin-top: 16px;
         }
-        .btn-copy:hover { 
-            background: #4a6850; 
+
+        .btn-copy:hover {
+            background: #4a6850;
         }
-        .result-box { 
-            margin-top: 22px; 
-            padding: 18px; 
-            background: #fbfaf7; 
-            border-radius: 12px; 
-            border: 1px solid #ede7dd; 
+
+        .result-box {
+            margin-top: 22px;
+            padding: 18px;
+            background: #fbfaf7;
+            border-radius: 12px;
+            border: 1px solid #ede7dd;
         }
+
         .result-box h4 {
-            margin: 0 0 10px 0;
+            margin: 0 0 10px;
             color: #3a322b;
             font-size: 15px;
         }
-        .preview-img { 
-            max-width: 100%; 
-            max-height: 230px; 
-            object-fit: contain; 
-            border-radius: 10px; 
-            margin: 10px 0; 
-            display: none; 
-            border: 1px solid #e8e1d7; 
-            background: #fff; 
+
+        .preview-img {
+            max-width: 100%;
+            max-height: 230px;
+            object-fit: contain;
+            border-radius: 10px;
+            margin: 10px 0;
+            display: none;
+            border: 1px solid #e8e1d7;
+            background: #fff;
         }
-        .status-msg { 
-            font-size: 13px; 
-            font-weight: 600; 
-            margin-top: 12px; 
-            text-align: center; 
+
+        .status-msg {
+            font-size: 13px;
+            font-weight: 600;
+            margin-top: 12px;
+            text-align: center;
+            min-height: 18px;
+        }
+
+        .hint {
+            text-align: center;
+            font-size: 12px;
+            color: #8b8178;
+            margin-top: 8px;
         }
     </style>
 </head>
+
 <body>
 
-    <div class="container">
-        <h2>Smart Extractor 🎯</h2>
-        
-        <label>Product Link (Amazon / Meesho):</label>
-        <input type="text" id="product-page-url" placeholder="Paste link here..." autocomplete="off">
-        
-        <button class="btn-magic" id="btn-extract" onclick="extractDetails()">⚡ Extract Details Instantly</button>
-        <button class="btn-reset" onclick="resetFormForNextLink()">🔄 Reset & Add Next Link</button>
-        
-        <div id="fetch-status" class="status-msg"></div>
+<div class="container">
 
-        <div id="scraper-result" class="result-box" style="display: none;">
-            <h4>Extracted Details:</h4>
+    <h2>Shree Store Smart Extractor 🎯</h2>
 
-            <label>Name (Short & Clean):</label>
-            <input type="text" id="res-name" placeholder="Product name">
+    <label for="product-page-url">
+        Product Link (Amazon / Meesho):
+    </label>
 
-            <label>Price:</label>
-            <input type="text" id="res-price" placeholder="₹ Price nikaal rahe hain...">
+    <input
+        type="text"
+        id="product-page-url"
+        placeholder="Paste product link here..."
+        autocomplete="off"
+    >
 
-            <label>Direct HD Image Link:</label>
-            <input type="text" id="res-image-link" placeholder="Direct Image URL">
-            <img id="img-preview" class="preview-img" src="" alt="Product Preview">
+    <button
+        class="btn-magic"
+        id="btn-extract"
+        onclick="extractDetails()"
+    >
+        ⚡ Extract Details Instantly
+    </button>
 
-            <label>Affiliate Link (Same as input):</label>
-            <input type="text" id="res-affiliate" placeholder="Affiliate link">
+    <button
+        class="btn-reset"
+        onclick="resetFormForNextLink()"
+    >
+        🔄 Reset & Add Next Link
+    </button>
 
-            <button class="btn-copy" id="btn-copy-all" onclick="copyAllFormattedDetails()">📋 Copy All Details</button>
-        </div>
+    <div id="fetch-status" class="status-msg"></div>
 
-        <br>
-        <div style="text-align: center;">
-            <a href="index.html" style="text-decoration: none; color: #8c6d53; font-size: 13px; font-weight: 600;">⬅ Back to Store</a>
-        </div>
+    <div id="scraper-result" class="result-box" style="display: none;">
+
+        <h4>Extracted Details:</h4>
+
+        <label for="res-name">Name (Short & Clean):</label>
+        <input
+            type="text"
+            id="res-name"
+            placeholder="Product name"
+        >
+
+        <label for="res-price">Price:</label>
+        <input
+            type="text"
+            id="res-price"
+            placeholder="₹ Price"
+        >
+
+        <label for="res-image-link">Direct HD Image Link:</label>
+        <input
+            type="text"
+            id="res-image-link"
+            placeholder="Direct Image URL"
+        >
+
+        <img
+            id="img-preview"
+            class="preview-img"
+            src=""
+            alt="Product Preview"
+        >
+
+        <label for="res-affiliate">Affiliate Link:</label>
+        <input
+            type="text"
+            id="res-affiliate"
+            placeholder="Affiliate link"
+        >
+
+        <button
+            class="btn-copy"
+            id="btn-copy-all"
+            onclick="copyAllFormattedDetails()"
+        >
+            📋 Copy All Details
+        </button>
+
     </div>
 
-    <script>
-        let activeAbortController = null;
+    <div class="hint">
+        Product details are fetched through the Shree Store backend.
+    </div>
 
-        function resetFormForNextLink() {
-            if (activeAbortController) {
-                activeAbortController.abort();
-                activeAbortController = null;
-            }
+    <br>
 
-            const urlInput = document.getElementById('product-page-url');
-            urlInput.value = "";
-            document.getElementById('res-name').value = "";
-            document.getElementById('res-price').value = "";
-            document.getElementById('res-price').placeholder = "₹ Price likho";
-            document.getElementById('res-image-link').value = "";
-            document.getElementById('res-affiliate').value = "";
+    <div style="text-align: center;">
+        <a
+            href="index.html"
+            style="text-decoration: none; color: #8c6d53; font-size: 13px; font-weight: 600;"
+        >
+            ⬅ Back to Store
+        </a>
+    </div>
 
-            const preview = document.getElementById('img-preview');
-            preview.src = "";
-            preview.style.display = "none";
+</div>
 
-            document.getElementById('scraper-result').style.display = "none";
+<script>
+    // Shree Store backend
+    const API_BASE =
+        "https://shree-store-extractor.onrender.com";
 
-            const statusDiv = document.getElementById('fetch-status');
-            statusDiv.style.color = "#5b7c61";
-            statusDiv.innerText = "✨ Cleaned! Agla link paste karo.";
+    let activeAbortController = null;
 
-            urlInput.focus();
+    function resetFormForNextLink() {
+
+        if (activeAbortController) {
+            activeAbortController.abort();
+            activeAbortController = null;
         }
 
-        function extractASIN(str) {
-            if (!str) return null;
-            const match = str.match(/(?:dp\/|gp\/product\/|ASIN\/|\/)([B0-9][A-Z0-9]{9})(?:[/?&'"]|$)/i);
-            return match ? match[1].toUpperCase() : null;
+        document.getElementById("product-page-url").value = "";
+        document.getElementById("res-name").value = "";
+        document.getElementById("res-price").value = "";
+        document.getElementById("res-image-link").value = "";
+        document.getElementById("res-affiliate").value = "";
+
+        document.getElementById("res-price").placeholder = "₹ Price";
+
+        const preview = document.getElementById("img-preview");
+        preview.src = "";
+        preview.style.display = "none";
+        preview.onerror = null;
+
+        document.getElementById("scraper-result").style.display = "none";
+
+        const statusDiv = document.getElementById("fetch-status");
+        statusDiv.style.color = "#5b7c61";
+        statusDiv.innerText = "✨ Cleaned! Agla link paste karo.";
+
+        document.getElementById("product-page-url").focus();
+    }
+
+
+    function generateSmartName(rawTitle) {
+
+        if (!rawTitle) {
+            return "Item";
         }
 
-        function generateSmartName(rawTitle) {
-            if (!rawTitle) return "Item";
-            const lower = rawTitle.toLowerCase();
+        const lower = rawTitle.toLowerCase();
 
-            let gender = "";
-            if (/\b(women's|womens|women|female|ladies|girls|girl)\b/i.test(lower)) {
-                gender = "Women's";
-            } else if (/\b(men's|mens|men|male|boys|boy)\b/i.test(lower)) {
-                gender = "Men's";
-            }
+        let gender = "";
 
-            const productCategories = [
-                { match: /\b(kurti set|kurta set)\b/i, name: "Kurti Set" },
-                { match: /\b(kurti|kurtis)\b/i, name: "Kurti" },
-                { match: /\b(kurta|kurtas)\b/i, name: "Kurta" },
-                { match: /\b(anarkali)\b/i, name: "Anarkali Suit" },
-                { match: /\b(saree|sari)\b/i, name: "Saree" },
-                { match: /\b(lehenga|choli)\b/i, name: "Lehenga" },
-                { match: /\b(dupatta)\b/i, name: "Dupatta" },
-                { match: /\b(cargo joggers)\b/i, name: "Cargo Joggers" },
-                { match: /\b(cargo pants|cargos|cargo)\b/i, name: "Cargo Pants" },
-                { match: /\b(denim jeans|baggy jeans|wide leg jeans|skinny jeans|mom jeans|flared jeans)\b/i, name: "Denim Jeans" },
-                { match: /\b(jeans|denim)\b/i, name: "Jeans" },
-                { match: /\b(joggers|jogger)\b/i, name: "Joggers" },
-                { match: /\b(track pants|trackpants)\b/i, name: "Track Pants" },
-                { match: /\b(trousers|trouser)\b/i, name: "Trousers" },
-                { match: /\b(chinos|chino)\b/i, name: "Chinos" },
-                { match: /\b(shorts)\b/i, name: "Shorts" },
-                { match: /\b(leggings|jeggings)\b/i, name: "Leggings" },
-                { match: /\b(oversized t-shirt|oversized tshirt|baggy tee)\b/i, name: "Oversized T-Shirt" },
-                { match: /\b(t-shirt|tshirt|tee)\b/i, name: "T-Shirt" },
-                { match: /\b(casual shirt|formal shirt|shirt)\b/i, name: "Shirt" },
-                { match: /\b(hoodie|hoodies)\b/i, name: "Hoodie" },
-                { match: /\b(sweatshirt)\b/i, name: "Sweatshirt" },
-                { match: /\b(jacket|blazer|coat)\b/i, name: "Jacket" },
-                { match: /\b(top|crop top)\b/i, name: "Top" },
-                { match: /\b(dress|maxi dress|midi dress)\b/i, name: "Dress" },
-                { match: /\b(slippers|slipper|slides|chappal)\b/i, name: "Slippers" },
-                { match: /\b(sandals|sandal)\b/i, name: "Sandals" },
-                { match: /\b(sneakers|sneaker|casual shoes|running shoes|sports shoes)\b/i, name: "Sneakers" },
-                { match: /\b(heels|stilettos|pumps)\b/i, name: "Heels" },
-                { match: /\b(boots|boot)\b/i, name: "Boots" },
-                { match: /\b(earbuds|tws|airpods|earphones|buds)\b/i, name: "Wireless Earbuds" },
-                { match: /\b(headphone|headphones)\b/i, name: "Headphones" },
-                { match: /\b(neckband)\b/i, name: "Neckband" },
-                { match: /\b(smartwatch|smart watch)\b/i, name: "Smartwatch" },
-                { match: /\b(bluetooth speaker|speaker)\b/i, name: "Bluetooth Speaker" },
-                { match: /\b(power bank|powerbank)\b/i, name: "Power Bank" },
-                { match: /\b(wall clock|clock)\b/i, name: "Wall Clock" },
-                { match: /\b(table lamp|lamp)\b/i, name: "Lamp" },
-                { match: /\b(water bottle|bottle)\b/i, name: "Water Bottle" },
-                { match: /\b(earrings|jhumka|studs)\b/i, name: "Earrings" },
-                { match: /\b(necklace|chain|pendant)\b/i, name: "Necklace" },
-                { match: /\b(bracelet|bangle)\b/i, name: "Bracelet" },
-                { match: /\b(ring|rings)\b/i, name: "Ring" },
-                { match: /\b(handbag|tote bag|shoulder bag)\b/i, name: "Handbag" },
-                { match: /\b(backpack|bag)\b/i, name: "Backpack" },
-                { match: /\b(wallet)\b/i, name: "Wallet" },
-                { match: /\b(sunglasses|shades|goggles)\b/i, name: "Sunglasses" }
-            ];
+        if (/\b(women's|womens|women|female|ladies|girls|girl)\b/i.test(lower)) {
+            gender = "Women's";
+        }
+        else if (/\b(men's|mens|men|male|boys|boy)\b/i.test(lower)) {
+            gender = "Men's";
+        }
 
-            for (let item of productCategories) {
-                if (item.match.test(lower)) {
-                    const noGender = ["Wall Clock", "Lamp", "Water Bottle", "Wireless Earbuds", "Headphones", "Neckband", "Smartwatch", "Bluetooth Speaker", "Power Bank"];
-                    if (noGender.includes(item.name)) return item.name;
-                    return gender ? `${gender} ${item.name}` : item.name;
+        const productCategories = [
+
+            { match: /\b(kurti set|kurta set)\b/i, name: "Kurti Set" },
+            { match: /\b(kurti|kurtis)\b/i, name: "Kurti" },
+            { match: /\b(kurta|kurtas)\b/i, name: "Kurta" },
+            { match: /\b(anarkali)\b/i, name: "Anarkali Suit" },
+            { match: /\b(saree|sari)\b/i, name: "Saree" },
+            { match: /\b(lehenga|choli)\b/i, name: "Lehenga" },
+            { match: /\b(dupatta)\b/i, name: "Dupatta" },
+
+            { match: /\b(cargo joggers)\b/i, name: "Cargo Joggers" },
+            { match: /\b(cargo pants|cargos|cargo)\b/i, name: "Cargo Pants" },
+
+            {
+                match: /\b(denim jeans|baggy jeans|wide leg jeans|skinny jeans|mom jeans|flared jeans)\b/i,
+                name: "Denim Jeans"
+            },
+
+            { match: /\b(jeans|denim)\b/i, name: "Jeans" },
+            { match: /\b(joggers|jogger)\b/i, name: "Joggers" },
+            { match: /\b(track pants|trackpants)\b/i, name: "Track Pants" },
+            { match: /\b(trousers|trouser)\b/i, name: "Trousers" },
+            { match: /\b(chinos|chino)\b/i, name: "Chinos" },
+            { match: /\b(shorts)\b/i, name: "Shorts" },
+            { match: /\b(leggings|jeggings)\b/i, name: "Leggings" },
+
+            {
+                match: /\b(oversized t-shirt|oversized tshirt|baggy tee)\b/i,
+                name: "Oversized T-Shirt"
+            },
+
+            { match: /\b(t-shirt|tshirt|tee)\b/i, name: "T-Shirt" },
+            { match: /\b(casual shirt|formal shirt|shirt)\b/i, name: "Shirt" },
+            { match: /\b(hoodie|hoodies)\b/i, name: "Hoodie" },
+            { match: /\b(sweatshirt)\b/i, name: "Sweatshirt" },
+            { match: /\b(jacket|blazer|coat)\b/i, name: "Jacket" },
+            { match: /\b(top|crop top)\b/i, name: "Top" },
+            { match: /\b(dress|maxi dress|midi dress)\b/i, name: "Dress" },
+
+            { match: /\b(slippers|slipper|slides|chappal)\b/i, name: "Slippers" },
+            { match: /\b(sandals|sandal)\b/i, name: "Sandals" },
+            {
+                match: /\b(sneakers|sneaker|casual shoes|running shoes|sports shoes)\b/i,
+                name: "Sneakers"
+            },
+            { match: /\b(heels|stilettos|pumps)\b/i, name: "Heels" },
+            { match: /\b(boots|boot)\b/i, name: "Boots" },
+
+            {
+                match: /\b(earbuds|tws|airpods|earphones|buds)\b/i,
+                name: "Wireless Earbuds"
+            },
+            { match: /\b(headphone|headphones)\b/i, name: "Headphones" },
+            { match: /\b(neckband)\b/i, name: "Neckband" },
+            { match: /\b(smartwatch|smart watch)\b/i, name: "Smartwatch" },
+            { match: /\b(bluetooth speaker|speaker)\b/i, name: "Bluetooth Speaker" },
+            { match: /\b(power bank|powerbank)\b/i, name: "Power Bank" },
+
+            { match: /\b(wall clock|clock)\b/i, name: "Wall Clock" },
+            { match: /\b(table lamp|lamp)\b/i, name: "Lamp" },
+            { match: /\b(water bottle|bottle)\b/i, name: "Water Bottle" },
+
+            { match: /\b(earrings|jhumka|studs)\b/i, name: "Earrings" },
+            { match: /\b(necklace|chain|pendant)\b/i, name: "Necklace" },
+            { match: /\b(bracelet|bangle)\b/i, name: "Bracelet" },
+            { match: /\b(ring|rings)\b/i, name: "Ring" },
+
+            {
+                match: /\b(handbag|tote bag|shoulder bag)\b/i,
+                name: "Handbag"
+            },
+
+            { match: /\b(backpack|bag)\b/i, name: "Backpack" },
+            { match: /\b(wallet)\b/i, name: "Wallet" },
+            { match: /\b(sunglasses|shades|goggles)\b/i, name: "Sunglasses" }
+        ];
+
+        for (const item of productCategories) {
+
+            if (item.match.test(lower)) {
+
+                const noGender = [
+                    "Wall Clock",
+                    "Lamp",
+                    "Water Bottle",
+                    "Wireless Earbuds",
+                    "Headphones",
+                    "Neckband",
+                    "Smartwatch",
+                    "Bluetooth Speaker",
+                    "Power Bank"
+                ];
+
+                if (noGender.includes(item.name)) {
+                    return item.name;
                 }
-            }
 
-            const junkWords = ["100%", "100", "cotton", "polyester", "rayon", "fabric", "pure", "blend", "casual", "regular", "fit", "printed", "print", "stylish", "latest", "combo", "pack", "set", "amazon", "brand"];
-            let clean = rawTitle.replace(/^Amazon\.[a-z\.]+\s*:\s*/i, "").replace(/\(.*?\)|\[.*?\]/g, "").split(/[-–|:,\/]/)[0].trim();
-            const words = clean.split(/\s+/).filter(w => w.length > 2 && !junkWords.includes(w.toLowerCase()) && !w.match(/[0-9%]/));
-            if (words.length > 0) {
-                const finalWord = words.slice(0, 2).map(w => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase()).join(" ");
-                return gender ? `${gender} ${finalWord}` : finalWord;
+                return gender
+                    ? `${gender} ${item.name}`
+                    : item.name;
             }
-            return gender ? `${gender} Apparel` : "Fashion Item";
         }
 
-        // Guaranteed Fast Price Extraction (Max 5 Seconds)
-        async function fetchGuaranteedPrice(url, asin) {
-            const controller = new AbortController();
-            const timeoutId = setTimeout(() => controller.abort(), 4800); // Strict 4.8s limit
+        const junkWords = [
+            "100%",
+            "100",
+            "cotton",
+            "polyester",
+            "rayon",
+            "fabric",
+            "pure",
+            "blend",
+            "casual",
+            "regular",
+            "fit",
+            "printed",
+            "print",
+            "stylish",
+            "latest",
+            "combo",
+            "pack",
+            "set",
+            "amazon",
+            "brand"
+        ];
 
-            const requests = [];
+        let clean = rawTitle
+            .replace(/^Amazon\.[a-z\.]+\s*:\s*/i, "")
+            .replace(/\(.*?\)|\[.*?\]/g, "")
+            .split(/[-–|:,\/]/)[0]
+            .trim();
 
-            // 1. Agar ASIN available hai, toh Amazon structured direct endpoint
-            if (asin) {
-                const asinQuery = `https://r.jina.ai/https://www.amazon.in/dp/${asin}`;
-                requests.push(
-                    fetch(asinQuery, { signal: controller.signal })
-                        .then(r => r.text())
-                        .then(txt => {
-                            // Regex looking for price tags in Amazon markdown
-                            const m = txt.match(/(?:₹|INR|\bRs\.?)\s*([0-9,]+)/i) || txt.match(/price["\s:]+₹?([0-9,]+)/i);
-                            if (m && m[1]) {
-                                const val = m[1].replace(/,/g, "");
-                                if (parseInt(val) > 20) return "₹" + val;
-                            }
-                            throw new Error("ASIN direct price missed");
-                        })
+        const words = clean
+            .split(/\s+/)
+            .filter(
+                word =>
+                    word.length > 2 &&
+                    !junkWords.includes(word.toLowerCase()) &&
+                    !/[0-9%]/.test(word)
+            );
+
+        if (words.length > 0) {
+
+            const finalWord = words
+                .slice(0, 2)
+                .map(
+                    word =>
+                        word.charAt(0).toUpperCase() +
+                        word.slice(1).toLowerCase()
+                )
+                .join(" ");
+
+            return gender
+                ? `${gender} ${finalWord}`
+                : finalWord;
+        }
+
+        return gender
+            ? `${gender} Apparel`
+            : "Fashion Item";
+    }
+
+
+    async function extractDetails() {
+
+        const rawUrl =
+            document.getElementById("product-page-url").value.trim();
+
+        const statusDiv =
+            document.getElementById("fetch-status");
+
+        const resultBox =
+            document.getElementById("scraper-result");
+
+        const resName =
+            document.getElementById("res-name");
+
+        const resPrice =
+            document.getElementById("res-price");
+
+        const resImg =
+            document.getElementById("res-image-link");
+
+        const preview =
+            document.getElementById("img-preview");
+
+        const resAffiliate =
+            document.getElementById("res-affiliate");
+
+        const extractBtn =
+            document.getElementById("btn-extract");
+
+
+        if (!rawUrl) {
+
+            alert("Bhai pehle product link paste karo!");
+
+            return;
+        }
+
+
+        try {
+
+            new URL(rawUrl);
+
+        } catch (error) {
+
+            alert("Valid product link paste karo!");
+
+            return;
+        }
+
+
+        // Cancel previous request
+        if (activeAbortController) {
+            activeAbortController.abort();
+        }
+
+        activeAbortController =
+            new AbortController();
+
+
+        extractBtn.disabled = true;
+
+        extractBtn.innerText =
+            "⏳ Extracting...";
+
+
+        statusDiv.style.color =
+            "#a36232";
+
+        statusDiv.innerText =
+            "🔍 Server se product details aa rahi hain...";
+
+
+        resultBox.style.display =
+            "none";
+
+        preview.style.display =
+            "none";
+
+        preview.src = "";
+
+        resName.value = "";
+        resPrice.value = "";
+        resImg.value = "";
+        resAffiliate.value = "";
+
+
+        try {
+
+            const apiUrl =
+                API_BASE +
+                "/api/extract-product?url=" +
+                encodeURIComponent(rawUrl);
+
+
+            const response =
+                await fetch(
+                    apiUrl,
+                    {
+                        method: "GET",
+                        signal: activeAbortController.signal
+                    }
+                );
+
+
+            let result;
+
+            try {
+
+                result =
+                    await response.json();
+
+            } catch (error) {
+
+                throw new Error(
+                    "Server ne valid response nahi diya."
                 );
             }
 
-            // 2. Direct input URL parsing
-            requests.push(
-                fetch(`https://r.jina.ai/${url}`, { signal: controller.signal })
-                    .then(r => r.text())
-                    .then(txt => {
-                        const m = txt.match(/(?:₹|INR|\bRs\.?)\s*([0-9,]+)/i);
-                        if (m && m[1]) {
-                            const val = m[1].replace(/,/g, "");
-                            if (parseInt(val) > 20) return "₹" + val;
-                        }
-                        throw new Error("URL direct price missed");
-                    })
-            );
 
-            // 3. Microlink Selector Fallback
-            requests.push(
-                fetch(`https://api.microlink.io?url=${encodeURIComponent(url)}&data.price.selector=.a-price-whole,.a-offscreen&palette=false`, { signal: controller.signal })
-                    .then(r => r.json())
-                    .then(d => {
-                        let p = d?.data?.price;
-                        if (p) {
-                            let cleanP = String(typeof p === 'object' ? (p.amount || p) : p).replace(/[^0-9]/g, "");
-                            if (cleanP && parseInt(cleanP) > 20) return "₹" + cleanP;
-                        }
-                        throw new Error("Microlink missed");
-                    })
-            );
+            if (
+                !response.ok ||
+                !result ||
+                !result.success
+            ) {
 
-            try {
-                const finalPrice = await Promise.any(requests);
-                clearTimeout(timeoutId);
-                return finalPrice;
-            } catch (err) {
-                clearTimeout(timeoutId);
-                return null;
-            }
-        }
-
-        async function fetchMetadataMultiSource(url, signal) {
-            let title = "";
-            let image = "";
-            let resolvedUrl = url;
-
-            try {
-                const r = await fetch(`https://api.microlink.io?url=${encodeURIComponent(url)}&palette=false`, { signal });
-                if (r.ok) {
-                    const j = await r.json();
-                    if (j?.data) {
-                        if (j.data.title) title = j.data.title;
-                        if (j.data.url) resolvedUrl = j.data.url;
-                        if (j.data.image?.url && !j.data.image.url.toLowerCase().includes("prime")) {
-                            image = j.data.image.url.replace(/\._[A-Z0-9_,]+_\./i, ".");
-                        }
-                    }
-                }
-            } catch (e) {}
-
-            if (!title || !image) {
-                try {
-                    const r2 = await fetch(`https://jsonlink.io/api/extract?url=${encodeURIComponent(url)}`, { signal });
-                    if (r2.ok) {
-                        const j2 = await r2.json();
-                        if (!title && j2.title) title = j2.title;
-                        if (!image && j2.images && j2.images.length > 0) {
-                            for (let img of j2.images) {
-                                if (!img.toLowerCase().includes("prime") && !img.toLowerCase().includes("logo")) {
-                                    image = img.replace(/\._[A-Z0-9_,]+_\./i, ".");
-                                    break;
-                                }
-                            }
-                        }
-                    }
-                } catch (e) {}
+                throw new Error(
+                    result?.error ||
+                    "Product details extract nahi ho paaye."
+                );
             }
 
-            if (!extractASIN(url) && !extractASIN(resolvedUrl)) {
-                try {
-                    const unshortRes = await fetch(`https://unshorten.me/json/${encodeURIComponent(url)}`, { signal });
-                    const unshortData = await unshortRes.json();
-                    if (unshortData && unshortData.resolved_url) resolvedUrl = unshortData.resolved_url;
-                } catch (e) {}
+
+            const data =
+                result.data || {};
+
+
+            // Product name
+            resName.value =
+                generateSmartName(
+                    data.title || ""
+                );
+
+
+            // Price
+            resPrice.value =
+                data.price || "";
+
+
+            if (!data.price) {
+                resPrice.placeholder =
+                    "₹ Price nahi mila";
             }
 
-            return { title, image, resolvedUrl };
-        }
 
-        async function extractDetails() {
-            const rawUrl = document.getElementById('product-page-url').value.trim();
-            const statusDiv = document.getElementById('fetch-status');
-            const resultBox = document.getElementById('scraper-result');
-            const resName = document.getElementById('res-name');
-            const resPrice = document.getElementById('res-price');
-            const resImg = document.getElementById('res-image-link');
-            const preview = document.getElementById('img-preview');
-            const resAffiliate = document.getElementById('res-affiliate');
+            // Image
+            resImg.value =
+                data.image || "";
 
-            if (!rawUrl) {
-                alert("Bhai pehle product link paste karo!");
+
+            if (data.image) {
+
+                preview.src =
+                    data.image;
+
+                preview.style.display =
+                    "block";
+
+
+                preview.onerror =
+                    function () {
+
+                        preview.style.display =
+                            "none";
+                    };
+            }
+
+
+            // Affiliate / final URL
+            resAffiliate.value =
+                data.affiliateUrl ||
+                data.finalUrl ||
+                rawUrl;
+
+
+            resultBox.style.display =
+                "block";
+
+
+            statusDiv.style.color =
+                "#386641";
+
+            statusDiv.innerText =
+                "✅ Done! Details ready.";
+
+
+        } catch (error) {
+
+            if (
+                error.name ===
+                "AbortError"
+            ) {
                 return;
             }
 
-            // Affiliate link directly copied from input
-            resAffiliate.value = rawUrl;
 
-            if (activeAbortController) activeAbortController.abort();
-            activeAbortController = new AbortController();
-            const currentSignal = activeAbortController.signal;
+            console.error(error);
 
-            preview.style.display = "none";
-            resImg.value = "";
-            resName.value = "";
-            resPrice.value = "";
-            resPrice.placeholder = "⏳ 5s me price aa raha hai...";
 
-            statusDiv.style.color = "#a36232";
-            statusDiv.innerText = "🔍 Details extract ho rahi hain...";
+            statusDiv.style.color =
+                "#bc4749";
 
-            let preAsin = extractASIN(rawUrl);
-
-            // Parallel Fast Price Extraction (Max 5s)
-            fetchGuaranteedPrice(rawUrl, preAsin).then(price => {
-                if (price) {
-                    resPrice.value = price;
-                } else {
-                    resPrice.placeholder = "₹ Price khud likh lo";
-                }
-            });
-
-            try {
-                const meta = await fetchMetadataMultiSource(rawUrl, currentSignal);
-                let asin = preAsin || extractASIN(meta.resolvedUrl);
-                let targetImageUrl = meta.image;
-
-                if (asin && !targetImageUrl) {
-                    targetImageUrl = `https://images-na.ssl-images-amazon.com/images/P/${asin}.01._SCLZZZZZZZ_SX900_.jpg`;
-                }
-
-                resName.value = generateSmartName(meta.title);
-
-                if (!targetImageUrl) {
-                    throw new Error("Image nahi mil saki. Reset dabakar link check karo.");
-                }
-
-                resImg.value = targetImageUrl;
-                preview.src = targetImageUrl;
-                preview.style.display = "block";
-                resultBox.style.display = "block";
-
-                statusDiv.style.color = "#386641";
-                statusDiv.innerText = "✅ Done! Details ready.";
-
-            } catch (err) {
-                if (err.name === 'AbortError') return;
-                console.error(err);
-                statusDiv.style.color = "#bc4749";
-                statusDiv.innerText = "❌ " + err.message;
-            }
+            statusDiv.innerText =
+                "❌ " +
+                (
+                    error.message ||
+                    "Something went wrong."
+                );
         }
 
-        function copyAllFormattedDetails() {
-            const name = document.getElementById('res-name').value.trim();
-            const price = document.getElementById('res-price').value.trim();
-            const image = document.getElementById('res-image-link').value.trim();
-            const affiliate = document.getElementById('res-affiliate').value.trim();
-            const copyBtn = document.getElementById('btn-copy-all');
 
-            const formattedText = 
+        finally {
+
+            extractBtn.disabled =
+                false;
+
+            extractBtn.innerText =
+                "⚡ Extract Details Instantly";
+
+            activeAbortController =
+                null;
+        }
+    }
+
+
+    async function copyAllFormattedDetails() {
+
+        const name =
+            document.getElementById("res-name")
+                .value.trim();
+
+        const price =
+            document.getElementById("res-price")
+                .value.trim();
+
+        const image =
+            document.getElementById("res-image-link")
+                .value.trim();
+
+        const affiliate =
+            document.getElementById("res-affiliate")
+                .value.trim();
+
+        const copyBtn =
+            document.getElementById("btn-copy-all");
+
+
+        const formattedText =
 `Name:
 ${name}
 
@@ -475,17 +735,109 @@ ${image}
 Affiliate Link:
 ${affiliate}`;
 
-            navigator.clipboard.writeText(formattedText).then(() => {
-                const oldText = copyBtn.innerText;
-                copyBtn.innerText = "✅ Copied to Clipboard!";
-                copyBtn.style.background = "#386641";
 
-                setTimeout(() => {
-                    copyBtn.innerText = oldText;
-                    copyBtn.style.background = "#5b7c61";
-                }, 2000);
-            });
+        try {
+
+            await navigator.clipboard.writeText(
+                formattedText
+            );
+
+
+            const oldText =
+                copyBtn.innerText;
+
+
+            copyBtn.innerText =
+                "✅ Copied to Clipboard!";
+
+            copyBtn.style.background =
+                "#386641";
+
+
+            setTimeout(
+                function () {
+
+                    copyBtn.innerText =
+                        oldText;
+
+                    copyBtn.style.background =
+                        "#5b7c61";
+
+                },
+                2000
+            );
+
+
+        } catch (error) {
+
+            // Fallback for browsers where
+            // navigator.clipboard is unavailable
+
+            const textarea =
+                document.createElement("textarea");
+
+            textarea.value =
+                formattedText;
+
+            textarea.style.position =
+                "fixed";
+
+            textarea.style.opacity =
+                "0";
+
+            document.body.appendChild(
+                textarea
+            );
+
+            textarea.focus();
+            textarea.select();
+
+            try {
+
+                document.execCommand(
+                    "copy"
+                );
+
+                copyBtn.innerText =
+                    "✅ Copied!";
+
+                setTimeout(
+                    () => {
+                        copyBtn.innerText =
+                            "📋 Copy All Details";
+                    },
+                    2000
+                );
+
+            } catch (fallbackError) {
+
+                alert(
+                    "Copy nahi ho paaya. Details manually copy kar lo."
+                );
+            }
+
+            document.body.removeChild(
+                textarea
+            );
         }
-    </script>
+    }
+
+
+    // Enter key se bhi extraction chalega
+    document
+        .getElementById("product-page-url")
+        .addEventListener(
+            "keydown",
+            function (event) {
+
+                if (
+                    event.key === "Enter"
+                ) {
+                    extractDetails();
+                }
+            }
+        );
+</script>
+
 </body>
 </html>
