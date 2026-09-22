@@ -1929,6 +1929,16 @@ const affiliateProducts = [
         description: "Comfortable Women's Sandals made for everyday use with a practical and stylish look.",
         price: "₹549",
         affiliateLink: "https://www.amazon.in/dp/B0GVJKJCJ8?tag=pikafinds-21"
+    },
+    {
+        id: "SHREE-P167",
+        name: "Women's Sandals",
+        images: [
+            "https://m.media-amazon.com/images/I/41v3hFPuHOL._SY395_.jpg"
+        ],
+        description: "Comfortable Women's Sandals made for everyday use with a practical and stylish look.",
+        price: "₹399",
+        affiliateLink: "https://www.amazon.in/dp/B0GDVLTVH7?tag=pikafinds-21"
     }
 ];
    
