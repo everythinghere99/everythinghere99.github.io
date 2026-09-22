@@ -2039,6 +2039,16 @@ const affiliateProducts = [
         description: "Useful Men's Kurta with a stylish design, made for convenient everyday use.",
         price: "₹799",
         affiliateLink: "https://www.amazon.in/dp/B0H9F5KR7Q?tag=pikafinds-21"
+    },
+    {
+        id: "SHREE-P178",
+        name: "Men's Shirt",
+        images: [
+            "https://m.media-amazon.com/images/I/71-ese1eCpL._SY445_.jpg"
+        ],
+        description: "Stylish Men's Shirt designed for a comfortable fit and an easy everyday look.",
+        price: "₹399",
+        affiliateLink: "https://www.amazon.in/dp/B0DS8KQ12C?tag=pikafinds-21"
     }
 ];
    
