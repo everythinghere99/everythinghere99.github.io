@@ -1848,6 +1848,16 @@ const affiliateProducts = [
         description: "Feature-rich touch smartwatch with long battery life and games.",
         price: "₹6,499",
         affiliateLink: "https://link.amazon/B04gdk87H"
+    },
+    {
+        id: "SHREE-P159",
+        name: "Women's Kurti",
+        images: [
+            "https://m.media-amazon.com/images/I/612YIRZkefL._SY445_.jpg"
+        ],
+        description: "Stylish Women's Kurti designed for a comfortable fit and an easy everyday look.",
+        price: "₹499",
+        affiliateLink: "https://www.amazon.in/dp/B0HD7PCFNQ?tag=pikafinds-21"
     }
 ];
    
