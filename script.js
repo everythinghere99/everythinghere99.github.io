@@ -1999,6 +1999,16 @@ const affiliateProducts = [
         description: "Stylish Men's Cargo Pants designed for a comfortable fit and an easy everyday look.",
         price: "₹649",
         affiliateLink: "https://www.amazon.in/dp/B0D91WCYXJ?tag=pikafinds-21"
+    },
+    {
+        id: "SHREE-P174",
+        name: "Men's Kurta",
+        images: [
+            "https://m.media-amazon.com/images/I/61KeD8F60GL._SX342_.jpg"
+        ],
+        description: "Useful Men's Kurta with a stylish design, made for convenient everyday use.",
+        price: "₹499",
+        affiliateLink: "https://www.amazon.in/dp/B0DHL5Y64T?tag=pikafinds-21"
     }
 ];
    
