@@ -1989,6 +1989,16 @@ const affiliateProducts = [
         description: "Useful Men's Jeans with a stylish design, made for convenient everyday use.",
         price: "₹460",
         affiliateLink: "https://www.amazon.in/dp/B0DWK2B887?tag=pikafinds-21"
+    },
+    {
+        id: "SHREE-P173",
+        name: "Men's Cargo Pants",
+        images: [
+            "https://m.media-amazon.com/images/I/61j9jJhrStL._SY445_.jpg"
+        ],
+        description: "Stylish Men's Cargo Pants designed for a comfortable fit and an easy everyday look.",
+        price: "₹649",
+        affiliateLink: "https://www.amazon.in/dp/B0D91WCYXJ?tag=pikafinds-21"
     }
 ];
    
