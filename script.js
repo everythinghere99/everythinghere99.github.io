@@ -2089,6 +2089,16 @@ const affiliateProducts = [
         description: "Useful Women's Rangriti with a stylish design, made for convenient everyday use.",
         price: "₹298",
         affiliateLink: "https://www.amazon.in/dp/B0GF1QHD5D?tag=pikafinds-21"
+    },
+    {
+        id: "SHREE-P183",
+        name: "Women's Necklace",
+        images: [
+            "https://m.media-amazon.com/images/I/71vIqsskd2L._SY395_.jpg"
+        ],
+        description: "Elegant Women's Necklace that adds a simple and stylish touch to your everyday look.",
+        price: "₹254",
+        affiliateLink: "https://www.amazon.in/dp/B0FB47SJMB?tag=pikafinds-21"
     }
 ];
    
