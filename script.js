@@ -1889,6 +1889,16 @@ const affiliateProducts = [
         description: "Stylish Women's Top designed for a comfortable fit and an easy everyday look.",
         price: "₹379",
         affiliateLink: "https://www.amazon.in/dp/B0GN938PJL?tag=pikafinds-21"
+    },
+    {
+        id: "SHREE-P163",
+        name: "Women's Sandals",
+        images: [
+            "https://m.media-amazon.com/images/I/618oMavp+SL._SY395_.jpg"
+        ],
+        description: "Comfortable Women's Sandals made for everyday use with a practical and stylish look.",
+        price: "₹699",
+        affiliateLink: "https://www.amazon.in/dp/B09VFFBMTP?tag=pikafinds-21"
     }
 ];
    
