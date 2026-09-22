@@ -1979,6 +1979,16 @@ const affiliateProducts = [
         description: "Stylish Men's Track Pant designed for a comfortable fit and an easy everyday look.",
         price: "₹448",
         affiliateLink: "https://www.amazon.in/dp/B0G6F5LWJM?tag=pikafinds-21"
+    },
+    {
+        id: "SHREE-P172",
+        name: "Men's Jeans",
+        images: [
+            "https://m.media-amazon.com/images/I/61dFcpPdJkL._SY445_.jpg"
+        ],
+        description: "Useful Men's Jeans with a stylish design, made for convenient everyday use.",
+        price: "₹460",
+        affiliateLink: "https://www.amazon.in/dp/B0DWK2B887?tag=pikafinds-21"
     }
 ];
    
