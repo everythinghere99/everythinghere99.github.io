@@ -2069,6 +2069,16 @@ const affiliateProducts = [
         description: "Stylish Men's Shirt designed for a comfortable fit and an easy everyday look.",
         price: "₹324",
         affiliateLink: "https://www.amazon.in/dp/B0DJMJYNW3?tag=pikafinds-21"
+    },
+    {
+        id: "SHREE-P181",
+        name: "Women's Necklace",
+        images: [
+            "https://m.media-amazon.com/images/I/71K4r1Yd27L._SY395_.jpg"
+        ],
+        description: "Elegant Women's Necklace that adds a simple and stylish touch to your everyday look.",
+        price: "₹399",
+        affiliateLink: "https://www.amazon.in/dp/B0B2LX5NJT?tag=pikafinds-21"
     }
 ];
    
