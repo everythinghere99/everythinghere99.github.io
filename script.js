@@ -2129,6 +2129,16 @@ const affiliateProducts = [
         description: "Elegant Women's Earrings that adds a simple and stylish touch to your everyday look.",
         price: "₹599",
         affiliateLink: "https://www.amazon.in/dp/B0H7QHFQ9M?tag=pikafinds-21"
+    },
+    {
+        id: "SHREE-P187",
+        name: "Women's Necklace",
+        images: [
+            "https://m.media-amazon.com/images/I/61lzyJCkTtL._SX342_.jpg"
+        ],
+        description: "Elegant Women's Necklace that adds a simple and stylish touch to your everyday look.",
+        price: "₹489",
+        affiliateLink: "https://www.amazon.in/dp/B0GHMYXDDZ?tag=pikafinds-21"
     }
 ];
    
