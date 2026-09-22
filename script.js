@@ -2059,6 +2059,16 @@ const affiliateProducts = [
         description: "Stylish Men's Shirt designed for a comfortable fit and an easy everyday look.",
         price: "₹529",
         affiliateLink: "https://www.amazon.in/dp/B0822NT5MB?tag=pikafinds-21"
+    },
+    {
+        id: "SHREE-P180",
+        name: "Men's Shirt",
+        images: [
+            "https://m.media-amazon.com/images/I/81vVzUJvi8L._SY445_.jpg"
+        ],
+        description: "Stylish Men's Shirt designed for a comfortable fit and an easy everyday look.",
+        price: "₹324",
+        affiliateLink: "https://www.amazon.in/dp/B0DJMJYNW3?tag=pikafinds-21"
     }
 ];
    
