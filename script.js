@@ -1969,6 +1969,16 @@ const affiliateProducts = [
         description: "Comfortable Women's Slippers made for everyday use with a practical and stylish look.",
         price: "₹499",
         affiliateLink: "https://www.amazon.in/dp/B0HG3FZ4WY?tag=pikafinds-21"
+    },
+    {
+        id: "SHREE-P171",
+        name: "Men's Track Pant",
+        images: [
+            "https://m.media-amazon.com/images/I/51NPDLXe9NL._SX342_.jpg"
+        ],
+        description: "Stylish Men's Track Pant designed for a comfortable fit and an easy everyday look.",
+        price: "₹448",
+        affiliateLink: "https://www.amazon.in/dp/B0G6F5LWJM?tag=pikafinds-21"
     }
 ];
    
