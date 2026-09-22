@@ -39,7 +39,8 @@
             margin-top: 10px;
         }
 
-        input[type="text"] {
+        input[type="text"],
+        input[type="password"] {
             width: 100%;
             padding: 12px 14px;
             margin-top: 6px;
@@ -52,7 +53,8 @@
             transition: border-color 0.2s;
         }
 
-        input[type="text"]:focus {
+        input[type="text"]:focus,
+        input[type="password"]:focus {
             outline: none;
             border-color: #c48b5f;
             background: #fff;
@@ -103,7 +105,7 @@
             margin-top: 16px;
         }
 
-        .btn-copy:hover {
+        .btn-copy:hover:not(:disabled) {
             background: #4a6850;
         }
 
@@ -243,6 +245,7 @@
             id="btn-generate-github"
             onclick="generateProductAndUpdateGitHub()"
             style="margin-top:10px; background:#7b5e3f;"
+            disabled
         >
             🚀 Generate Product Code & Update GitHub
         </button>
@@ -272,204 +275,266 @@
 </div>
 
 <script>
-const BACKEND_URL = "https://shree-store-extractor.onrender.com";
-    // Shree Store backend
-    const API_BASE =
-        "https://shree-store-extractor.onrender.com";
 
-    let activeAbortController = null;
+const BACKEND_URL =
+    "https://shree-store-extractor.onrender.com";
 
-    function resetFormForNextLink() {
+const API_BASE =
+    "https://shree-store-extractor.onrender.com";
 
-        if (activeAbortController) {
-            activeAbortController.abort();
-            activeAbortController = null;
-        }
+let activeAbortController = null;
 
-        document.getElementById("product-page-url").value = "";
-        document.getElementById("res-name").value = "";
-        document.getElementById("res-price").value = "";
-        document.getElementById("res-image-link").value = "";
-        document.getElementById("res-affiliate").value = "";
 
-        document.getElementById("res-price").placeholder = "₹ Price";
+/* =========================================================
+   RESET FOR NEXT PRODUCT
+========================================================= */
 
-        const preview = document.getElementById("img-preview");
-        preview.src = "";
-        preview.style.display = "none";
-        preview.onerror = null;
+function resetFormForNextLink() {
 
-        document.getElementById("scraper-result").style.display = "none";
+    if (activeAbortController) {
+        activeAbortController.abort();
+        activeAbortController = null;
+    }
 
-        const statusDiv = document.getElementById("fetch-status");
-        statusDiv.style.color = "#5b7c61";
-        statusDiv.innerText = "✨ Cleaned! Agla link paste karo.";
+    document.getElementById("product-page-url").value = "";
+    document.getElementById("res-name").value = "";
+    document.getElementById("res-price").value = "";
+    document.getElementById("res-image-link").value = "";
+    document.getElementById("res-affiliate").value = "";
 
-        document.getElementById("product-page-url").focus();
+    document.getElementById("res-price").placeholder =
+        "₹ Price";
+
+    const preview =
+        document.getElementById("img-preview");
+
+    preview.src = "";
+    preview.style.display = "none";
+    preview.onerror = null;
+
+    document.getElementById("scraper-result").style.display =
+        "none";
+
+
+    /* GitHub button reset */
+
+    const githubBtn =
+        document.getElementById("btn-generate-github");
+
+    githubBtn.disabled = true;
+
+    githubBtn.innerText =
+        "🚀 Generate Product Code & Update GitHub";
+
+
+    document.getElementById("github-update-status").innerText =
+        "";
+
+
+    const statusDiv =
+        document.getElementById("fetch-status");
+
+    statusDiv.style.color =
+        "#5b7c61";
+
+    statusDiv.innerText =
+        "✨ Cleaned! Agla link paste karo.";
+
+
+    document.getElementById("product-page-url").focus();
+}
+
+
+/* =========================================================
+   SMART PRODUCT NAME
+========================================================= */
+
+function generateSmartName(rawTitle) {
+
+    if (!rawTitle) {
+        return "Item";
+    }
+
+    const lower =
+        rawTitle.toLowerCase();
+
+    let gender = "";
+
+
+    if (
+        /\b(women's|womens|women|female|ladies|girls|girl)\b/i
+            .test(lower)
+    ) {
+        gender = "Women's";
+    }
+
+    else if (
+        /\b(men's|mens|men|male|boys|boy)\b/i
+            .test(lower)
+    ) {
+        gender = "Men's";
     }
 
 
-    function generateSmartName(rawTitle) {
+    const productCategories = [
 
-        if (!rawTitle) {
-            return "Item";
-        }
+        { match: /\b(kurti set|kurta set)\b/i, name: "Kurti Set" },
+        { match: /\b(kurti|kurtis)\b/i, name: "Kurti" },
+        { match: /\b(kurta|kurtas)\b/i, name: "Kurta" },
+        { match: /\b(anarkali)\b/i, name: "Anarkali Suit" },
+        { match: /\b(saree|sari)\b/i, name: "Saree" },
+        { match: /\b(lehenga|choli)\b/i, name: "Lehenga" },
+        { match: /\b(dupatta)\b/i, name: "Dupatta" },
 
-        const lower = rawTitle.toLowerCase();
+        { match: /\b(cargo joggers)\b/i, name: "Cargo Joggers" },
+        { match: /\b(cargo pants|cargos|cargo)\b/i, name: "Cargo Pants" },
 
-        let gender = "";
+        {
+            match: /\b(denim jeans|baggy jeans|wide leg jeans|skinny jeans|mom jeans|flared jeans)\b/i,
+            name: "Denim Jeans"
+        },
 
-        if (/\b(women's|womens|women|female|ladies|girls|girl)\b/i.test(lower)) {
-            gender = "Women's";
-        }
-        else if (/\b(men's|mens|men|male|boys|boy)\b/i.test(lower)) {
-            gender = "Men's";
-        }
+        { match: /\b(jeans|denim)\b/i, name: "Jeans" },
+        { match: /\b(joggers|jogger)\b/i, name: "Joggers" },
+        { match: /\b(track pants|trackpants)\b/i, name: "Track Pants" },
+        { match: /\b(trousers|trouser)\b/i, name: "Trousers" },
+        { match: /\b(chinos|chino)\b/i, name: "Chinos" },
+        { match: /\b(shorts)\b/i, name: "Shorts" },
+        { match: /\b(leggings|jeggings)\b/i, name: "Leggings" },
 
-        const productCategories = [
+        {
+            match: /\b(oversized t-shirt|oversized tshirt|baggy tee)\b/i,
+            name: "Oversized T-Shirt"
+        },
 
-            { match: /\b(kurti set|kurta set)\b/i, name: "Kurti Set" },
-            { match: /\b(kurti|kurtis)\b/i, name: "Kurti" },
-            { match: /\b(kurta|kurtas)\b/i, name: "Kurta" },
-            { match: /\b(anarkali)\b/i, name: "Anarkali Suit" },
-            { match: /\b(saree|sari)\b/i, name: "Saree" },
-            { match: /\b(lehenga|choli)\b/i, name: "Lehenga" },
-            { match: /\b(dupatta)\b/i, name: "Dupatta" },
+        { match: /\b(t-shirt|tshirt|tee)\b/i, name: "T-Shirt" },
+        { match: /\b(casual shirt|formal shirt|shirt)\b/i, name: "Shirt" },
+        { match: /\b(hoodie|hoodies)\b/i, name: "Hoodie" },
+        { match: /\b(sweatshirt)\b/i, name: "Sweatshirt" },
+        { match: /\b(jacket|blazer|coat)\b/i, name: "Jacket" },
+        { match: /\b(top|crop top)\b/i, name: "Top" },
+        { match: /\b(dress|maxi dress|midi dress)\b/i, name: "Dress" },
 
-            { match: /\b(cargo joggers)\b/i, name: "Cargo Joggers" },
-            { match: /\b(cargo pants|cargos|cargo)\b/i, name: "Cargo Pants" },
+        { match: /\b(slippers|slipper|slides|chappal)\b/i, name: "Slippers" },
+        { match: /\b(sandals|sandal)\b/i, name: "Sandals" },
 
-            {
-                match: /\b(denim jeans|baggy jeans|wide leg jeans|skinny jeans|mom jeans|flared jeans)\b/i,
-                name: "Denim Jeans"
-            },
+        {
+            match: /\b(sneakers|sneaker|casual shoes|running shoes|sports shoes)\b/i,
+            name: "Sneakers"
+        },
 
-            { match: /\b(jeans|denim)\b/i, name: "Jeans" },
-            { match: /\b(joggers|jogger)\b/i, name: "Joggers" },
-            { match: /\b(track pants|trackpants)\b/i, name: "Track Pants" },
-            { match: /\b(trousers|trouser)\b/i, name: "Trousers" },
-            { match: /\b(chinos|chino)\b/i, name: "Chinos" },
-            { match: /\b(shorts)\b/i, name: "Shorts" },
-            { match: /\b(leggings|jeggings)\b/i, name: "Leggings" },
+        { match: /\b(heels|stilettos|pumps)\b/i, name: "Heels" },
+        { match: /\b(boots|boot)\b/i, name: "Boots" },
 
-            {
-                match: /\b(oversized t-shirt|oversized tshirt|baggy tee)\b/i,
-                name: "Oversized T-Shirt"
-            },
+        {
+            match: /\b(earbuds|tws|airpods|earphones|buds)\b/i,
+            name: "Wireless Earbuds"
+        },
 
-            { match: /\b(t-shirt|tshirt|tee)\b/i, name: "T-Shirt" },
-            { match: /\b(casual shirt|formal shirt|shirt)\b/i, name: "Shirt" },
-            { match: /\b(hoodie|hoodies)\b/i, name: "Hoodie" },
-            { match: /\b(sweatshirt)\b/i, name: "Sweatshirt" },
-            { match: /\b(jacket|blazer|coat)\b/i, name: "Jacket" },
-            { match: /\b(top|crop top)\b/i, name: "Top" },
-            { match: /\b(dress|maxi dress|midi dress)\b/i, name: "Dress" },
+        { match: /\b(headphone|headphones)\b/i, name: "Headphones" },
+        { match: /\b(neckband)\b/i, name: "Neckband" },
+        { match: /\b(smartwatch|smart watch)\b/i, name: "Smartwatch" },
+        { match: /\b(bluetooth speaker|speaker)\b/i, name: "Bluetooth Speaker" },
+        { match: /\b(power bank|powerbank)\b/i, name: "Power Bank" },
 
-            { match: /\b(slippers|slipper|slides|chappal)\b/i, name: "Slippers" },
-            { match: /\b(sandals|sandal)\b/i, name: "Sandals" },
-            {
-                match: /\b(sneakers|sneaker|casual shoes|running shoes|sports shoes)\b/i,
-                name: "Sneakers"
-            },
-            { match: /\b(heels|stilettos|pumps)\b/i, name: "Heels" },
-            { match: /\b(boots|boot)\b/i, name: "Boots" },
+        { match: /\b(wall clock|clock)\b/i, name: "Wall Clock" },
+        { match: /\b(table lamp|lamp)\b/i, name: "Lamp" },
+        { match: /\b(water bottle|bottle)\b/i, name: "Water Bottle" },
 
-            {
-                match: /\b(earbuds|tws|airpods|earphones|buds)\b/i,
-                name: "Wireless Earbuds"
-            },
-            { match: /\b(headphone|headphones)\b/i, name: "Headphones" },
-            { match: /\b(neckband)\b/i, name: "Neckband" },
-            { match: /\b(smartwatch|smart watch)\b/i, name: "Smartwatch" },
-            { match: /\b(bluetooth speaker|speaker)\b/i, name: "Bluetooth Speaker" },
-            { match: /\b(power bank|powerbank)\b/i, name: "Power Bank" },
+        { match: /\b(earrings|jhumka|studs)\b/i, name: "Earrings" },
+        { match: /\b(necklace|chain|pendant)\b/i, name: "Necklace" },
+        { match: /\b(bracelet|bangle)\b/i, name: "Bracelet" },
+        { match: /\b(ring|rings)\b/i, name: "Ring" },
 
-            { match: /\b(wall clock|clock)\b/i, name: "Wall Clock" },
-            { match: /\b(table lamp|lamp)\b/i, name: "Lamp" },
-            { match: /\b(water bottle|bottle)\b/i, name: "Water Bottle" },
+        {
+            match: /\b(handbag|tote bag|shoulder bag)\b/i,
+            name: "Handbag"
+        },
 
-            { match: /\b(earrings|jhumka|studs)\b/i, name: "Earrings" },
-            { match: /\b(necklace|chain|pendant)\b/i, name: "Necklace" },
-            { match: /\b(bracelet|bangle)\b/i, name: "Bracelet" },
-            { match: /\b(ring|rings)\b/i, name: "Ring" },
+        { match: /\b(backpack|bag)\b/i, name: "Backpack" },
+        { match: /\b(wallet)\b/i, name: "Wallet" },
+        { match: /\b(sunglasses|shades|goggles)\b/i, name: "Sunglasses" }
+    ];
 
-            {
-                match: /\b(handbag|tote bag|shoulder bag)\b/i,
-                name: "Handbag"
-            },
 
-            { match: /\b(backpack|bag)\b/i, name: "Backpack" },
-            { match: /\b(wallet)\b/i, name: "Wallet" },
-            { match: /\b(sunglasses|shades|goggles)\b/i, name: "Sunglasses" }
-        ];
+    for (const item of productCategories) {
 
-        for (const item of productCategories) {
+        if (item.match.test(lower)) {
 
-            if (item.match.test(lower)) {
+            const noGender = [
+                "Wall Clock",
+                "Lamp",
+                "Water Bottle",
+                "Wireless Earbuds",
+                "Headphones",
+                "Neckband",
+                "Smartwatch",
+                "Bluetooth Speaker",
+                "Power Bank"
+            ];
 
-                const noGender = [
-                    "Wall Clock",
-                    "Lamp",
-                    "Water Bottle",
-                    "Wireless Earbuds",
-                    "Headphones",
-                    "Neckband",
-                    "Smartwatch",
-                    "Bluetooth Speaker",
-                    "Power Bank"
-                ];
 
-                if (noGender.includes(item.name)) {
-                    return item.name;
-                }
-
-                return gender
-                    ? `${gender} ${item.name}`
-                    : item.name;
+            if (noGender.includes(item.name)) {
+                return item.name;
             }
+
+
+            return gender
+                ? `${gender} ${item.name}`
+                : item.name;
         }
+    }
 
-        const junkWords = [
-            "100%",
-            "100",
-            "cotton",
-            "polyester",
-            "rayon",
-            "fabric",
-            "pure",
-            "blend",
-            "casual",
-            "regular",
-            "fit",
-            "printed",
-            "print",
-            "stylish",
-            "latest",
-            "combo",
-            "pack",
-            "set",
-            "amazon",
-            "brand"
-        ];
 
-        let clean = rawTitle
+    const junkWords = [
+        "100%",
+        "100",
+        "cotton",
+        "polyester",
+        "rayon",
+        "fabric",
+        "pure",
+        "blend",
+        "casual",
+        "regular",
+        "fit",
+        "printed",
+        "print",
+        "stylish",
+        "latest",
+        "combo",
+        "pack",
+        "set",
+        "amazon",
+        "brand"
+    ];
+
+
+    let clean =
+        rawTitle
             .replace(/^Amazon\.[a-z\.]+\s*:\s*/i, "")
             .replace(/\(.*?\)|\[.*?\]/g, "")
             .split(/[-–|:,\/]/)[0]
             .trim();
 
-        const words = clean
+
+    const words =
+        clean
             .split(/\s+/)
             .filter(
                 word =>
                     word.length > 2 &&
-                    !junkWords.includes(word.toLowerCase()) &&
+                    !junkWords.includes(
+                        word.toLowerCase()
+                    ) &&
                     !/[0-9%]/.test(word)
             );
 
-        if (words.length > 0) {
 
-            const finalWord = words
+    if (words.length > 0) {
+
+        const finalWord =
+            words
                 .slice(0, 2)
                 .map(
                     word =>
@@ -478,274 +543,359 @@ const BACKEND_URL = "https://shree-store-extractor.onrender.com";
                 )
                 .join(" ");
 
-            return gender
-                ? `${gender} ${finalWord}`
-                : finalWord;
-        }
 
         return gender
-            ? `${gender} Apparel`
-            : "Fashion Item";
+            ? `${gender} ${finalWord}`
+            : finalWord;
     }
 
 
-    async function extractDetails() {
-
-        const rawUrl =
-            document.getElementById("product-page-url").value.trim();
-
-        const statusDiv =
-            document.getElementById("fetch-status");
-
-        const resultBox =
-            document.getElementById("scraper-result");
-
-        const resName =
-            document.getElementById("res-name");
-
-        const resPrice =
-            document.getElementById("res-price");
-
-        const resImg =
-            document.getElementById("res-image-link");
-
-        const preview =
-            document.getElementById("img-preview");
-
-        const resAffiliate =
-            document.getElementById("res-affiliate");
-
-        const extractBtn =
-            document.getElementById("btn-extract");
+    return gender
+        ? `${gender} Apparel`
+        : "Fashion Item";
+}
 
 
-        if (!rawUrl) {
+/* =========================================================
+   EXTRACT PRODUCT
+========================================================= */
 
-            alert("Bhai pehle product link paste karo!");
+async function extractDetails() {
 
-            return;
-        }
+    const rawUrl =
+        document
+            .getElementById("product-page-url")
+            .value
+            .trim();
+
+
+    const statusDiv =
+        document.getElementById("fetch-status");
+
+
+    const resultBox =
+        document.getElementById("scraper-result");
+
+
+    const resName =
+        document.getElementById("res-name");
+
+
+    const resPrice =
+        document.getElementById("res-price");
+
+
+    const resImg =
+        document.getElementById("res-image-link");
+
+
+    const preview =
+        document.getElementById("img-preview");
+
+
+    const resAffiliate =
+        document.getElementById("res-affiliate");
+
+
+    const extractBtn =
+        document.getElementById("btn-extract");
+
+
+    const githubBtn =
+        document.getElementById("btn-generate-github");
+
+
+    if (!rawUrl) {
+
+        alert(
+            "Bhai pehle product link paste karo!"
+        );
+
+        return;
+    }
+
+
+    try {
+
+        new URL(rawUrl);
+
+    } catch (error) {
+
+        alert(
+            "Valid product link paste karo!"
+        );
+
+        return;
+    }
+
+
+    if (activeAbortController) {
+        activeAbortController.abort();
+    }
+
+
+    activeAbortController =
+        new AbortController();
+
+
+    extractBtn.disabled = true;
+
+    extractBtn.innerText =
+        "⏳ Extracting...";
+
+
+    /* New extraction start hone par
+       GitHub button disable */
+
+    githubBtn.disabled = true;
+
+    githubBtn.innerText =
+        "🚀 Generate Product Code & Update GitHub";
+
+    document.getElementById(
+        "github-update-status"
+    ).innerText = "";
+
+
+    statusDiv.style.color =
+        "#a36232";
+
+    statusDiv.innerText =
+        "🔍 Server se product details aa rahi hain...";
+
+
+    resultBox.style.display =
+        "none";
+
+
+    preview.style.display =
+        "none";
+
+    preview.src = "";
+
+
+    resName.value = "";
+    resPrice.value = "";
+    resImg.value = "";
+    resAffiliate.value = "";
+
+
+    try {
+
+        const apiUrl =
+            API_BASE +
+            "/api/extract-product?url=" +
+            encodeURIComponent(rawUrl);
+
+
+        const response =
+            await fetch(
+                apiUrl,
+                {
+                    method: "GET",
+                    signal:
+                        activeAbortController.signal
+                }
+            );
+
+
+        let result;
 
 
         try {
 
-            new URL(rawUrl);
+            result =
+                await response.json();
 
         } catch (error) {
 
-            alert("Valid product link paste karo!");
-
-            return;
+            throw new Error(
+                "Server ne valid response nahi diya."
+            );
         }
 
 
-        // Cancel previous request
-        if (activeAbortController) {
-            activeAbortController.abort();
+        if (
+            !response.ok ||
+            !result ||
+            !result.success
+        ) {
+
+            throw new Error(
+                result?.error ||
+                "Product details extract nahi ho paaye."
+            );
         }
 
-        activeAbortController =
-            new AbortController();
+
+        const data =
+            result.data || {};
 
 
-        extractBtn.disabled = true;
+        /* Product name */
 
-        extractBtn.innerText =
-            "⏳ Extracting...";
-
-
-        statusDiv.style.color =
-            "#a36232";
-
-        statusDiv.innerText =
-            "🔍 Server se product details aa rahi hain...";
+        resName.value =
+            generateSmartName(
+                data.title || ""
+            );
 
 
-        resultBox.style.display =
-            "none";
+        /* Price */
 
-        preview.style.display =
-            "none";
-
-        preview.src = "";
-
-        resName.value = "";
-        resPrice.value = "";
-        resImg.value = "";
-        resAffiliate.value = "";
+        resPrice.value =
+            data.price || "";
 
 
-        try {
+        if (!data.price) {
 
-            const apiUrl =
-                API_BASE +
-                "/api/extract-product?url=" +
-                encodeURIComponent(rawUrl);
-
-
-            const response =
-                await fetch(
-                    apiUrl,
-                    {
-                        method: "GET",
-                        signal: activeAbortController.signal
-                    }
-                );
+            resPrice.placeholder =
+                "₹ Price nahi mila";
+        }
 
 
-            let result;
+        /* Image */
 
-            try {
-
-                result =
-                    await response.json();
-
-            } catch (error) {
-
-                throw new Error(
-                    "Server ne valid response nahi diya."
-                );
-            }
+        resImg.value =
+            data.image || "";
 
 
-            if (
-                !response.ok ||
-                !result ||
-                !result.success
-            ) {
+        if (data.image) {
 
-                throw new Error(
-                    result?.error ||
-                    "Product details extract nahi ho paaye."
-                );
-            }
+            preview.src =
+                data.image;
 
-
-            const data =
-                result.data || {};
-
-
-            // Product name
-            resName.value =
-                generateSmartName(
-                    data.title || ""
-                );
-
-
-            // Price
-            resPrice.value =
-                data.price || "";
-
-
-            if (!data.price) {
-                resPrice.placeholder =
-                    "₹ Price nahi mila";
-            }
-
-
-            // Image
-            resImg.value =
-                data.image || "";
-
-
-            if (data.image) {
-
-                preview.src =
-                    data.image;
-
-                preview.style.display =
-                    "block";
-
-
-                preview.onerror =
-                    function () {
-
-                        preview.style.display =
-                            "none";
-                    };
-            }
-
-
-            // Affiliate / final URL
-            resAffiliate.value =
-                data.affiliateUrl ||
-                data.finalUrl ||
-                rawUrl;
-
-
-            resultBox.style.display =
+            preview.style.display =
                 "block";
 
 
-            statusDiv.style.color =
-                "#386641";
+            preview.onerror =
+                function () {
 
-            statusDiv.innerText =
-                "✅ Done! Details ready.";
-
-
-        } catch (error) {
-
-            if (
-                error.name ===
-                "AbortError"
-            ) {
-                return;
-            }
-
-
-            console.error(error);
-
-
-            statusDiv.style.color =
-                "#bc4749";
-
-            statusDiv.innerText =
-                "❌ " +
-                (
-                    error.message ||
-                    "Something went wrong."
-                );
+                    preview.style.display =
+                        "none";
+                };
         }
 
 
-        finally {
+        /* Affiliate / final URL */
 
-            extractBtn.disabled =
-                false;
+        resAffiliate.value =
+            data.affiliateUrl ||
+            data.finalUrl ||
+            rawUrl;
 
-            extractBtn.innerText =
-                "⚡ Extract Details Instantly";
 
-            activeAbortController =
-                null;
+        resultBox.style.display =
+            "block";
+
+
+        statusDiv.style.color =
+            "#386641";
+
+        statusDiv.innerText =
+            "✅ Done! Details ready.";
+
+
+        /* New product ready:
+           GitHub button enable */
+
+        githubBtn.disabled = false;
+
+        githubBtn.innerText =
+            "🚀 Generate Product Code & Update GitHub";
+
+        document.getElementById(
+            "github-update-status"
+        ).innerText = "";
+
+
+    } catch (error) {
+
+        if (
+            error.name ===
+            "AbortError"
+        ) {
+            return;
         }
+
+
+        console.error(error);
+
+
+        statusDiv.style.color =
+            "#bc4749";
+
+
+        statusDiv.innerText =
+            "❌ " +
+            (
+                error.message ||
+                "Something went wrong."
+            );
+
+
+        /* Extraction failed,
+           GitHub button disabled */
+
+        githubBtn.disabled = true;
     }
 
 
-    async function copyAllFormattedDetails() {
+    finally {
 
-        const name =
-            document.getElementById("res-name")
-                .value.trim();
-
-        const price =
-            document.getElementById("res-price")
-                .value.trim();
-
-        const image =
-            document.getElementById("res-image-link")
-                .value.trim();
-
-        const affiliate =
-            document.getElementById("res-affiliate")
-                .value.trim();
-
-        const copyBtn =
-            document.getElementById("btn-copy-all");
+        extractBtn.disabled =
+            false;
 
 
-        const formattedText =
+        extractBtn.innerText =
+            "⚡ Extract Details Instantly";
+
+
+        activeAbortController =
+            null;
+    }
+}
+
+
+/* =========================================================
+   COPY ALL DETAILS
+========================================================= */
+
+async function copyAllFormattedDetails() {
+
+    const name =
+        document
+            .getElementById("res-name")
+            .value
+            .trim();
+
+
+    const price =
+        document
+            .getElementById("res-price")
+            .value
+            .trim();
+
+
+    const image =
+        document
+            .getElementById("res-image-link")
+            .value
+            .trim();
+
+
+    const affiliate =
+        document
+            .getElementById("res-affiliate")
+            .value
+            .trim();
+
+
+    const copyBtn =
+        document.getElementById("btn-copy-all");
+
+
+    const formattedText =
 `Name:
 ${name}
 
@@ -759,200 +909,344 @@ Affiliate Link:
 ${affiliate}`;
 
 
+    try {
+
+        await navigator.clipboard.writeText(
+            formattedText
+        );
+
+
+        const oldText =
+            copyBtn.innerText;
+
+
+        copyBtn.innerText =
+            "✅ Copied to Clipboard!";
+
+
+        copyBtn.style.background =
+            "#386641";
+
+
+        setTimeout(
+            function () {
+
+                copyBtn.innerText =
+                    oldText;
+
+                copyBtn.style.background =
+                    "#5b7c61";
+
+            },
+            2000
+        );
+
+
+    } catch (error) {
+
+        /* Fallback */
+
+        const textarea =
+            document.createElement("textarea");
+
+
+        textarea.value =
+            formattedText;
+
+
+        textarea.style.position =
+            "fixed";
+
+
+        textarea.style.opacity =
+            "0";
+
+
+        document.body.appendChild(
+            textarea
+        );
+
+
+        textarea.focus();
+        textarea.select();
+
+
         try {
 
-            await navigator.clipboard.writeText(
-                formattedText
+            document.execCommand(
+                "copy"
             );
 
 
-            const oldText =
-                copyBtn.innerText;
-
-
             copyBtn.innerText =
-                "✅ Copied to Clipboard!";
-
-            copyBtn.style.background =
-                "#386641";
+                "✅ Copied!";
 
 
             setTimeout(
-                function () {
+                () => {
 
                     copyBtn.innerText =
-                        oldText;
-
-                    copyBtn.style.background =
-                        "#5b7c61";
+                        "📋 Copy All Details";
 
                 },
                 2000
             );
 
 
-        } catch (error) {
+        } catch (fallbackError) {
 
-            // Fallback for browsers where
-            // navigator.clipboard is unavailable
-
-            const textarea =
-                document.createElement("textarea");
-
-            textarea.value =
-                formattedText;
-
-            textarea.style.position =
-                "fixed";
-
-            textarea.style.opacity =
-                "0";
-
-            document.body.appendChild(
-                textarea
-            );
-
-            textarea.focus();
-            textarea.select();
-
-            try {
-
-                document.execCommand(
-                    "copy"
-                );
-
-                copyBtn.innerText =
-                    "✅ Copied!";
-
-                setTimeout(
-                    () => {
-                        copyBtn.innerText =
-                            "📋 Copy All Details";
-                    },
-                    2000
-                );
-
-            } catch (fallbackError) {
-
-                alert(
-                    "Copy nahi ho paaya. Details manually copy kar lo."
-                );
-            }
-
-            document.body.removeChild(
-                textarea
+            alert(
+                "Copy nahi ho paaya. Details manually copy kar lo."
             );
         }
+
+
+        document.body.removeChild(
+            textarea
+        );
+    }
+}
+
+
+/* =========================================================
+   GENERATE PRODUCT + UPDATE GITHUB
+========================================================= */
+
+async function generateProductAndUpdateGitHub() {
+
+    const name =
+        document
+            .getElementById("res-name")
+            .value
+            .trim();
+
+
+    const price =
+        document
+            .getElementById("res-price")
+            .value
+            .trim();
+
+
+    const image =
+        document
+            .getElementById("res-image-link")
+            .value
+            .trim();
+
+
+    const affiliate =
+        document
+            .getElementById("res-affiliate")
+            .value
+            .trim();
+
+
+    const keyInput =
+        document.getElementById(
+            "github-admin-key"
+        );
+
+
+    const status =
+        document.getElementById(
+            "github-update-status"
+        );
+
+
+    const btn =
+        document.getElementById(
+            "btn-generate-github"
+        );
+
+
+    if (!name) {
+
+        alert(
+            "Pehle product extract karo."
+        );
+
+        return;
     }
 
 
+    if (!image) {
 
-    async function generateProductAndUpdateGitHub() {
+        alert(
+            "Product image URL missing hai."
+        );
 
-        const name = document.getElementById("res-name").value.trim();
-        const price = document.getElementById("res-price").value.trim();
-        const image = document.getElementById("res-image-link").value.trim();
-        const affiliate = document.getElementById("res-affiliate").value.trim();
+        return;
+    }
 
-        const keyInput = document.getElementById("github-admin-key");
-        const status = document.getElementById("github-update-status");
-        const btn = document.getElementById("btn-generate-github");
 
-        if (!name) {
-            alert("Pehle product extract karo.");
-            return;
-        }
+    if (!affiliate) {
 
-        if (!image) {
-            alert("Product image URL missing hai.");
-            return;
-        }
+        alert(
+            "Affiliate link missing hai."
+        );
 
-        if (!affiliate) {
-            alert("Affiliate link missing hai.");
-            return;
-        }
+        return;
+    }
 
-        let adminKey =
-            keyInput.value.trim() ||
-            localStorage.getItem("shree_store_admin_key") ||
-            "";
 
-        if (!adminKey) {
-            alert("GitHub update key enter karo.");
-            keyInput.focus();
-            return;
-        }
+    let adminKey =
+        keyInput.value.trim() ||
+        localStorage.getItem(
+            "shree_store_admin_key"
+        ) ||
+        "";
 
-        btn.disabled = true;
-        btn.innerText = "⏳ GitHub update ho raha hai...";
-        status.innerText = "";
 
-        try {
-            const response = await fetch(
+    if (!adminKey) {
+
+        alert(
+            "GitHub update key enter karo."
+        );
+
+        keyInput.focus();
+
+        return;
+    }
+
+
+    /* Prevent double click */
+
+    btn.disabled = true;
+
+    btn.innerText =
+        "⏳ GitHub update ho raha hai...";
+
+    status.innerText = "";
+
+
+    try {
+
+        const response =
+            await fetch(
                 `${BACKEND_URL}/api/add-product-to-github`,
                 {
                     method: "POST",
+
                     headers: {
-                        "Content-Type": "application/json",
-                        "X-Admin-Key": adminKey
+                        "Content-Type":
+                            "application/json",
+
+                        "X-Admin-Key":
+                            adminKey
                     },
+
                     body: JSON.stringify({
                         name,
                         price,
                         image,
-                        affiliateLink: affiliate
+                        affiliateLink:
+                            affiliate
                     })
                 }
             );
 
-            const data = await response.json().catch(() => ({}));
 
-            if (!response.ok || !data.success) {
-                if (response.status === 401) {
-                    localStorage.removeItem("shree_store_admin_key");
-                }
-                throw new Error(data.error || "GitHub update failed.");
+        const data =
+            await response
+                .json()
+                .catch(
+                    () => ({})
+                );
+
+
+        if (
+            !response.ok ||
+            !data.success
+        ) {
+
+            if (
+                response.status ===
+                401
+            ) {
+
+                localStorage.removeItem(
+                    "shree_store_admin_key"
+                );
             }
 
-            localStorage.setItem("shree_store_admin_key", adminKey);
 
-            status.style.color = "#386641";
-            status.innerText =
-                `✅ ${data.productId} successfully GitHub par add ho gaya!`;
-
-            btn.innerText = `✅ ${data.productId} Added`;
-
-        } catch (error) {
-            status.style.color = "#b23a48";
-            status.innerText = `❌ ${error.message}`;
-            btn.innerText =
-                "🚀 Generate Product Code & Update GitHub";
-        } finally {
-            btn.disabled = false;
-
-            setTimeout(() => {
-                btn.innerText =
-                    "🚀 Generate Product Code & Update GitHub";
-            }, 3500);
+            throw new Error(
+                data.error ||
+                "GitHub update failed."
+            );
         }
-    }
 
 
-    // Enter key se bhi extraction chalega
-    document
-        .getElementById("product-page-url")
-        .addEventListener(
-            "keydown",
-            function (event) {
+        /* Save correct admin key */
 
-                if (
-                    event.key === "Enter"
-                ) {
-                    extractDetails();
-                }
-            }
+        localStorage.setItem(
+            "shree_store_admin_key",
+            adminKey
         );
+
+
+        status.style.color =
+            "#386641";
+
+
+        status.innerText =
+            `✅ ${data.productId} successfully GitHub par add ho gaya!`;
+
+
+        /* SUCCESS:
+           Button permanently disabled
+           until next product extraction/reset */
+
+        btn.innerText =
+            `✅ ${data.productId} Added`;
+
+
+        btn.disabled = true;
+
+
+    } catch (error) {
+
+        status.style.color =
+            "#b23a48";
+
+
+        status.innerText =
+            `❌ ${error.message}`;
+
+
+        /* FAILURE:
+           Retry allowed */
+
+        btn.disabled = false;
+
+
+        btn.innerText =
+            "🚀 Generate Product Code & Update GitHub";
+    }
+}
+
+
+/* =========================================================
+   ENTER KEY = EXTRACT
+========================================================= */
+
+document
+    .getElementById("product-page-url")
+    .addEventListener(
+        "keydown",
+        function (event) {
+
+            if (
+                event.key ===
+                "Enter"
+            ) {
+
+                extractDetails();
+            }
+        }
+    );
+
 </script>
 
 </body>
