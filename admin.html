@@ -230,6 +230,28 @@
             📋 Copy All Details
         </button>
 
+        <input
+            type="password"
+            id="github-admin-key"
+            placeholder="GitHub update key (first time only)"
+            autocomplete="off"
+            style="margin-top:10px;"
+        >
+
+        <button
+            class="btn-copy"
+            id="btn-generate-github"
+            onclick="generateProductAndUpdateGitHub()"
+            style="margin-top:10px; background:#7b5e3f;"
+        >
+            🚀 Generate Product Code & Update GitHub
+        </button>
+
+        <div
+            id="github-update-status"
+            style="margin-top:10px; font-size:13px; font-weight:700; text-align:center;"
+        ></div>
+
     </div>
 
     <div class="hint">
@@ -819,6 +841,99 @@ ${affiliate}`;
             document.body.removeChild(
                 textarea
             );
+        }
+    }
+
+
+
+    async function generateProductAndUpdateGitHub() {
+
+        const name = document.getElementById("res-name").value.trim();
+        const price = document.getElementById("res-price").value.trim();
+        const image = document.getElementById("res-image-link").value.trim();
+        const affiliate = document.getElementById("res-affiliate").value.trim();
+
+        const keyInput = document.getElementById("github-admin-key");
+        const status = document.getElementById("github-update-status");
+        const btn = document.getElementById("btn-generate-github");
+
+        if (!name) {
+            alert("Pehle product extract karo.");
+            return;
+        }
+
+        if (!image) {
+            alert("Product image URL missing hai.");
+            return;
+        }
+
+        if (!affiliate) {
+            alert("Affiliate link missing hai.");
+            return;
+        }
+
+        let adminKey =
+            keyInput.value.trim() ||
+            localStorage.getItem("shree_store_admin_key") ||
+            "";
+
+        if (!adminKey) {
+            alert("GitHub update key enter karo.");
+            keyInput.focus();
+            return;
+        }
+
+        btn.disabled = true;
+        btn.innerText = "⏳ GitHub update ho raha hai...";
+        status.innerText = "";
+
+        try {
+            const response = await fetch(
+                `${BACKEND_URL}/api/add-product-to-github`,
+                {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "X-Admin-Key": adminKey
+                    },
+                    body: JSON.stringify({
+                        name,
+                        price,
+                        image,
+                        affiliateLink: affiliate
+                    })
+                }
+            );
+
+            const data = await response.json().catch(() => ({}));
+
+            if (!response.ok || !data.success) {
+                if (response.status === 401) {
+                    localStorage.removeItem("shree_store_admin_key");
+                }
+                throw new Error(data.error || "GitHub update failed.");
+            }
+
+            localStorage.setItem("shree_store_admin_key", adminKey);
+
+            status.style.color = "#386641";
+            status.innerText =
+                `✅ ${data.productId} successfully GitHub par add ho gaya!`;
+
+            btn.innerText = `✅ ${data.productId} Added`;
+
+        } catch (error) {
+            status.style.color = "#b23a48";
+            status.innerText = `❌ ${error.message}`;
+            btn.innerText =
+                "🚀 Generate Product Code & Update GitHub";
+        } finally {
+            btn.disabled = false;
+
+            setTimeout(() => {
+                btn.innerText =
+                    "🚀 Generate Product Code & Update GitHub";
+            }, 3500);
         }
     }
 
