@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shree's Store - Meesho Extractor</title>
+
+<style>
+:root{
+    --green:#678A6C;
+    --green-dark:#4f7055;
+    --pink:#e99ab3;
+    --cream:#faf8f3;
+    --text:#303030;
+    --muted:#777;
+    --border:#e7e2d9;
+}
+
+*{box-sizing:border-box}
+
+body{
+    margin:0;
+    font-family:Arial,Helvetica,sans-serif;
+    background:var(--cream);
+    color:var(--text);
+}
+
+.container{
+    width:min(100% - 28px,1000px);
+    margin:0 auto;
+    padding:28px 0 50px;
+}
+
+.header{
+    background:white;
+    border-bottom:1px solid var(--border);
+    padding:18px 20px;
+    position:sticky;
+    top:0;
+    z-index:10;
+}
+
+.header-inner{
+    width:min(100%,1000px);
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:15px;
+}
+
+.logo{
+    font-size:21px;
+    font-weight:800;
+    color:var(--green-dark);
+}
+
+.back{
+    border:1px solid var(--border);
+    background:white;
+    border-radius:10px;
+    padding:9px 13px;
+    cursor:pointer;
+}
+
+.card{
+    background:white;
+    border:1px solid var(--border);
+    border-radius:18px;
+    padding:20px;
+    margin-bottom:18px;
+    box-shadow:0 5px 20px rgba(0,0,0,.04);
+}
+
+h1{
+    margin:0 0 7px;
+    font-size:27px;
+}
+
+.subtitle{
+    margin:0 0 20px;
+    color:var(--muted);
+    font-size:14px;
+}
+
+label{
+    display:block;
+    font-weight:700;
+    font-size:13px;
+    margin-bottom:7px;
+}
+
+input,textarea{
+    width:100%;
+    border:1px solid var(--border);
+    border-radius:11px;
+    padding:12px;
+    font-size:14px;
+    outline:none;
+}
+
+input:focus,textarea:focus{
+    border-color:var(--green);
+}
+
+.row{
+    display:grid;
+    grid-template-columns:1fr auto;
+    gap:10px;
+}
+
+button{
+    border:0;
+    border-radius:11px;
+    padding:12px 16px;
+    font-weight:700;
+    cursor:pointer;
+}
+
+.btn-green{
+    background:var(--green);
+    color:white;
+}
+
+.btn-pink{
+    background:var(--pink);
+    color:white;
+}
+
+.btn-light{
+    background:#f4f1ea;
+    color:var(--text);
+}
+
+button:disabled{
+    opacity:.5;
+    cursor:not-allowed;
+}
+
+.status{
+    margin-top:12px;
+    padding:11px 13px;
+    border-radius:10px;
+    background:#f5f7f2;
+    color:var(--green-dark);
+    font-size:13px;
+    display:none;
+}
+
+.error{
+    background:#fff0f0;
+    color:#b33;
+}
+
+.product-head{
+    display:grid;
+    grid-template-columns:150px 1fr;
+    gap:20px;
+}
+
+.main-image{
+    width:150px;
+    height:150px;
+    object-fit:cover;
+    border-radius:13px;
+    border:1px solid var(--border);
+    background:#fafafa;
+}
+
+.field{
+    margin-bottom:14px;
+}
+
+.field small{
+    color:var(--muted);
+    font-size:11px;
+}
+
+.image-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(90px,1fr));
+    gap:9px;
+    margin-top:10px;
+}
+
+.image-grid img{
+    width:100%;
+    aspect-ratio:1;
+    object-fit:cover;
+    border-radius:10px;
+    border:1px solid var(--border);
+    background:#fafafa;
+}
+
+.variant{
+    border:1px solid var(--border);
+    border-radius:14px;
+    padding:15px;
+    margin-top:12px;
+    background:#fffdf9;
+}
+
+.variant-title{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:10px;
+    margin-bottom:10px;
+}
+
+.variant-title strong{
+    font-size:15px;
+}
+
+.pill{
+    display:inline-block;
+    background:#eef4ed;
+    color:var(--green-dark);
+    border-radius:30px;
+    padding:4px 8px;
+    font-size:11px;
+}
+
+.code{
+    background:#171717;
+    color:#f7f7f7;
+    border-radius:13px;
+    padding:15px;
+    white-space:pre;
+    overflow:auto;
+    font-size:12px;
+    line-height:1.55;
+    max-height:500px;
+}
+
+.actions{
+    display:flex;
+    flex-wrap:wrap;
+    gap:9px;
+}
+
+.hidden{display:none}
+
+@media(max-width:650px){
+    .product-head{
+        grid-template-columns:1fr;
+    }
+
+    .main-image{
+        width:100%;
+        height:240px;
+    }
+
+    .row{
+        grid-template-columns:1fr;
+    }
+
+    h1{
+        font-size:23px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header class="header">
+    <div class="header-inner">
+        <div class="logo">Shree's Store 🛍️</div>
+        <button class="back" onclick="location.href='admin.html'">
+            ← Amazon Extractor
+        </button>
+    </div>
+</header>
+
+<main class="container">
+
+    <div class="card">
+        <h1>Meesho Extractor 🛍️</h1>
+        <p class="subtitle">
+            Meesho product ka name, images, colours, prices aur sizes extract karo.
+        </p>
+
+        <label for="product-url">Meesho Product Link</label>
+
+        <div class="row">
+            <input
+                id="product-url"
+                type="url"
+                placeholder="https://www.meesho.com/..."
+                autocomplete="off"
+            >
+
+            <button
+                id="extract-btn"
+                class="btn-green"
+                onclick="extractProduct()">
+                Extract Details
+            </button>
+        </div>
+
+        <div id="status" class="status"></div>
+    </div>
+
+    <div id="product-card" class="card hidden">
+
+        <div class="product-head">
+
+            <div>
+                <img
+                    id="main-image"
+                    class="main-image"
+                    src=""
+                    alt="Product">
+            </div>
+
+            <div>
+                <div class="field">
+                    <label>Product Name</label>
+                    <input id="product-name">
+                </div>
+
+                <div class="field">
+                    <label>Base Price</label>
+                    <input id="product-price">
+                </div>
+
+                <div class="field">
+                    <label>Description</label>
+                    <textarea id="product-description" rows="4"></textarea>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="field" style="margin-top:20px;">
+            <label>All Product Images</label>
+            <div id="general-images" class="image-grid"></div>
+        </div>
+
+        <div>
+            <label>Colours & Variants</label>
+            <div id="colors-container"></div>
+        </div>
+
+        <div style="margin-top:18px;">
+            <label>General Sizes</label>
+            <div id="sizes-container"></div>
+        </div>
+
+    </div>
+
+    <div id="actions-card" class="card hidden">
+        <div class="actions">
+            <button
+                id="copy-btn"
+                class="btn-pink"
+                onclick="copyProductCode()">
+                Copy All Details
+            </button>
+
+            <button
+                id="github-btn"
+                class="btn-green"
+                onclick="updateGitHub()">
+                Generate Product Code & Update GitHub
+            </button>
+
+            <button
+                class="btn-light"
+                onclick="resetExtractor()">
+                Reset & Add Next Link
+            </button>
+        </div>
+
+        <div id="code-status" class="status"></div>
+
+        <div
+            id="code-container"
+            class="hidden"
+            style="margin-top:15px;">
+            <label>Generated Product Code</label>
+            <pre id="generated-code" class="code"></pre>
+        </div>
+    </div>
+
+</main>
+
+<script>
+const API_BASE =
+    'https://shree-store-extractor.onrender.com';
+
+let extractedProduct = null;
+let generatedCode = '';
+
+function showStatus(message, isError = false) {
+    const box = document.getElementById('status');
+
+    box.textContent = message;
+    box.className = 'status' + (isError ? ' error' : '');
+    box.style.display = 'block';
+}
+
+function showCodeStatus(message, isError = false) {
+    const box = document.getElementById('code-status');
+
+    box.textContent = message;
+    box.className = 'status' + (isError ? ' error' : '');
+    box.style.display = 'block';
+}
+
+function clean(value) {
+    return String(value ?? '').trim();
+}
+
+function escapeHtml(value) {
+    return String(value ?? '')
+        .replaceAll('&','&amp;')
+        .replaceAll('<','&lt;')
+        .replaceAll('>','&gt;')
+        .replaceAll('"','&quot;')
+        .replaceAll("'","&#039;");
+}
+
+function renderProduct(data) {
+    extractedProduct = {
+        name: clean(data.title || data.name),
+        images: Array.isArray(data.images) ? data.images : [],
+        shortDescription:
+            clean(data.shortDescription || data.description),
+        description:
+            clean(data.description || data.shortDescription),
+        price: clean(data.price),
+        colors: Array.isArray(data.colors) ? data.colors : [],
+        sizes: Array.isArray(data.sizes) ? data.sizes : []
+    };
+
+    document.getElementById('product-name').value =
+        extractedProduct.name;
+
+    document.getElementById('product-price').value =
+        extractedProduct.price;
+
+    document.getElementById('product-description').value =
+        extractedProduct.description;
+
+    const mainImage =
+        document.getElementById('main-image');
+
+    mainImage.src =
+        extractedProduct.images[0] || '';
+
+    const imageBox =
+        document.getElementById('general-images');
+
+    imageBox.innerHTML =
+        extractedProduct.images.length
+            ? extractedProduct.images.map(url =>
+                `<img src="${escapeHtml(url)}" alt="Product image">`
+              ).join('')
+            : '<span style="color:#777;">No images found.</span>';
+
+    renderColors();
+    renderSizes();
+
+    document.getElementById('product-card')
+        .classList.remove('hidden');
+
+    document.getElementById('actions-card')
+        .classList.remove('hidden');
+}
+
+function renderColors() {
+    const box =
+        document.getElementById('colors-container');
+
+    if (!extractedProduct.colors.length) {
+        box.innerHTML =
+            '<p style="color:#777;font-size:13px;">No colour variants were detected. You can still copy the extracted product.</p>';
+        return;
+    }
+
+    box.innerHTML =
+        extractedProduct.colors.map((color, index) => {
+
+            const images =
+                Array.isArray(color.images)
+                    ? color.images
+                    : [];
+
+            const sizes =
+                Array.isArray(color.sizes)
+                    ? color.sizes
+                    : [];
+
+            return `
+                <div class="variant">
+                    <div class="variant-title">
+                        <strong>${escapeHtml(color.name)}</strong>
+                        ${
+                            color.price
+                                ? `<span class="pill">${escapeHtml(color.price)}</span>`
+                                : ''
+                        }
+                    </div>
+
+                    <div class="image-grid">
+                        ${
+                            images.length
+                                ? images.map(url =>
+                                    `<img src="${escapeHtml(url)}" alt="${escapeHtml(color.name)}">`
+                                  ).join('')
+                                : '<span style="color:#777;font-size:12px;">No colour images detected.</span>'
+                        }
+                    </div>
+
+                    ${
+                        sizes.length
+                            ? `
+                                <div style="margin-top:12px;">
+                                    <small style="color:#777;">Sizes</small>
+                                    <div style="display:flex;flex-wrap:wrap;gap:7px;margin-top:7px;">
+                                        ${
+                                            sizes.map(size =>
+                                                `<span class="pill">${escapeHtml(size.name)}${size.price ? ' · ' + escapeHtml(size.price) : ''}</span>`
+                                            ).join('')
+                                        }
+                                    </div>
+                                </div>
+                              `
+                            : ''
+                    }
+                </div>
+            `;
+        }).join('');
+}
+
+function renderSizes() {
+    const box =
+        document.getElementById('sizes-container');
+
+    if (!extractedProduct.sizes.length) {
+        box.innerHTML =
+            '<span style="color:#777;font-size:13px;">No general sizes detected.</span>';
+        return;
+    }
+
+    box.innerHTML =
+        `<div style="display:flex;flex-wrap:wrap;gap:7px;">
+            ${
+                extractedProduct.sizes.map(size =>
+                    `<span class="pill">${escapeHtml(size.name)}${size.price ? ' · ' + escapeHtml(size.price) : ''}</span>`
+                ).join('')
+            }
+        </div>`;
+}
+
+function syncEditedFields() {
+    if (!extractedProduct) return;
+
+    extractedProduct.name =
+        clean(document.getElementById('product-name').value);
+
+    extractedProduct.price =
+        clean(document.getElementById('product-price').value);
+
+    extractedProduct.description =
+        clean(document.getElementById('product-description').value);
+
+    extractedProduct.shortDescription =
+        extractedProduct.description;
+}
+
+async function extractProduct() {
+    const input =
+        document.getElementById('product-url');
+
+    const button =
+        document.getElementById('extract-btn');
+
+    const url =
+        clean(input.value);
+
+    if (!url) {
+        showStatus('Please enter a Meesho product link.', true);
+        return;
+    }
+
+    if (
+        !/^https?:\/\/(www\.)?meesho\.com\//i.test(url) &&
+        !/^https?:\/\/link\.meesho\.co\//i.test(url)
+    ) {
+        showStatus(
+            'Please enter a valid Meesho link.',
+            true
+        );
+        return;
+    }
+
+    button.disabled = true;
+    button.textContent = 'Extracting...';
+
+    showStatus(
+        'Meesho product details extract ho rahe hain...'
+    );
+
+    try {
+        const response =
+            await fetch(
+                `${API_BASE}/api/extract-product?url=${encodeURIComponent(url)}`
+            );
+
+        const result =
+            await response.json();
+
+        if (!response.ok || !result.success) {
+            throw new Error(
+                result.error ||
+                'Product extraction failed.'
+            );
+        }
+
+        renderProduct(result.data);
+
+        showStatus(
+            'Product details successfully extracted. 🤍'
+        );
+
+    } catch (error) {
+        console.error(error);
+
+        showStatus(
+            error.message ||
+            'Extraction failed.',
+            true
+        );
+    } finally {
+        button.disabled = false;
+        button.textContent = 'Extract Details';
+    }
+}
+
+function buildPayload() {
+    syncEditedFields();
+
+    return {
+        name: extractedProduct.name,
+        images: extractedProduct.images,
+        shortDescription:
+            extractedProduct.shortDescription,
+        description:
+            extractedProduct.description,
+        price: extractedProduct.price,
+        colors: extractedProduct.colors,
+        sizes: extractedProduct.sizes
+    };
+}
+
+async function copyProductCode() {
+    if (!extractedProduct) {
+        showCodeStatus(
+            'Pehle product extract karo.',
+            true
+        );
+        return;
+    }
+
+    const button =
+        document.getElementById('copy-btn');
+
+    button.disabled = true;
+    button.textContent = 'Generating...';
+
+    try {
+        const response =
+            await fetch(
+                `${API_BASE}/api/generate-meesho-product-code`,
+                {
+                    method:'POST',
+                    headers:{
+                        'Content-Type':'application/json'
+                    },
+                    body:JSON.stringify(
+                        buildPayload()
+                    )
+                }
+            );
+
+        const result =
+            await response.json();
+
+        if (!response.ok || !result.success) {
+            throw new Error(
+                result.error ||
+                'Product code generation failed.'
+            );
+        }
+
+        generatedCode = result.code;
+
+        document.getElementById('generated-code')
+            .textContent = generatedCode;
+
+        document.getElementById('code-container')
+            .classList.remove('hidden');
+
+        await navigator.clipboard.writeText(
+            generatedCode
+        );
+
+        showCodeStatus(
+            `${result.productId} generated and copied to clipboard. 🤍`
+        );
+
+    } catch (error) {
+        console.error(error);
+
+        showCodeStatus(
+            error.message ||
+            'Could not generate product code.',
+            true
+        );
+    } finally {
+        button.disabled = false;
+        button.textContent = 'Copy All Details';
+    }
+}
+
+async function updateGitHub() {
+    if (!extractedProduct) {
+        showCodeStatus(
+            'Pehle product extract karo.',
+            true
+        );
+        return;
+    }
+
+    const adminKey =
+        prompt('Enter GitHub Admin Key:');
+
+    if (adminKey === null) return;
+
+    if (!adminKey.trim()) {
+        showCodeStatus(
+            'Admin key required.',
+            true
+        );
+        return;
+    }
+
+    const button =
+        document.getElementById('github-btn');
+
+    button.disabled = true;
+    button.textContent = 'Updating GitHub...';
+
+    try {
+        const response =
+            await fetch(
+                `${API_BASE}/api/add-meesho-product-to-github`,
+                {
+                    method:'POST',
+                    headers:{
+                        'Content-Type':'application/json',
+                        'X-Admin-Key':adminKey.trim()
+                    },
+                    body:JSON.stringify(
+                        buildPayload()
+                    )
+                }
+            );
+
+        const result =
+            await response.json();
+
+        if (!response.ok || !result.success) {
+            throw new Error(
+                result.error ||
+                'GitHub update failed.'
+            );
+        }
+
+        showCodeStatus(
+            `${result.productId} successfully added to GitHub. 🎉`
+        );
+
+        if (result.code) {
+            generatedCode = result.code;
+
+            document.getElementById('generated-code')
+                .textContent = generatedCode;
+
+            document.getElementById('code-container')
+                .classList.remove('hidden');
+        }
+
+    } catch (error) {
+        console.error(error);
+
+        showCodeStatus(
+            error.message ||
+            'GitHub update failed.',
+            true
+        );
+    } finally {
+        button.disabled = false;
+        button.textContent =
+            'Generate Product Code & Update GitHub';
+    }
+}
+
+function resetExtractor() {
+    extractedProduct = null;
+    generatedCode = '';
+
+    document.getElementById('product-url').value = '';
+    document.getElementById('product-card')
+        .classList.add('hidden');
+    document.getElementById('actions-card')
+        .classList.add('hidden');
+    document.getElementById('code-container')
+        .classList.add('hidden');
+
+    document.getElementById('status').style.display = 'none';
+    document.getElementById('code-status').style.display = 'none';
+
+    window.scrollTo({
+        top:0,
+        behavior:'smooth'
+    });
+}
+</script>
+
+</body>
+</html>

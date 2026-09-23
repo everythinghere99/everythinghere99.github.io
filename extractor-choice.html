@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shree's Store - Choose Extractor</title>
+<style>
+*{box-sizing:border-box}
+body{
+    margin:0;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+    font-family:Arial,Helvetica,sans-serif;
+    background:#faf8f3;
+    color:#303030;
+}
+.box{
+    width:min(100%,460px);
+    background:#fff;
+    border:1px solid #e7e2d9;
+    border-radius:22px;
+    padding:28px 20px;
+    text-align:center;
+    box-shadow:0 8px 30px rgba(0,0,0,.06);
+}
+h1{margin:0 0 8px;color:#4f7055;font-size:27px}
+p{color:#777;font-size:14px;margin:0 0 24px}
+.buttons{display:grid;gap:13px}
+button{
+    width:100%;
+    padding:17px 16px;
+    border:0;
+    border-radius:14px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:800;
+}
+.amazon{background:#f2b24b;color:#fff}
+.meesho{background:#e99ab3;color:#fff}
+.back{
+    margin-top:18px;
+    background:#f3f0e9;
+    color:#444;
+    font-size:13px;
+    padding:11px;
+}
+</style>
+</head>
+<body>
+<div class="box">
+    <h1>Admin's Work 🔐</h1>
+    <p>Choose the extractor you want to use.</p>
+
+    <div class="buttons">
+        <button class="amazon" onclick="location.href='admin.html'">
+            🛒 Amazon Extractor
+        </button>
+
+        <button class="meesho" onclick="location.href='meesho-admin.html'">
+            🛍️ Meesho Extractor
+        </button>
+    </div>
+
+    <button class="back" onclick="location.href='index.html'">
+        ← Back to Store
+    </button>
+</div>
+</body>
+</html>
