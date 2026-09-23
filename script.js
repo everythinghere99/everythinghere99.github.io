@@ -3296,7 +3296,7 @@ const resellingProducts = [
         ]
         },
          {
-        id: "SHREE-C-21",
+        id: "SHREE-C21",
         name: "Dori belt dress",
         images: ["https://i.ibb.co/p63N6q47/ms-yo45x-512-277086555.jpg"],
         shortDescription: "Stylish jorjet dori belt dress available in multiple vibrant colors.",
@@ -3317,7 +3317,7 @@ const resellingProducts = [
         ]
     },
     {
-        id: "SHREE-C-22",
+        id: "SHREE-C22",
         name: "Women's Mini Dress",
         images: ["https://i.ibb.co/GQVkpVRH/ms-xoa6x-512-316602636.jpg"],
         shortDescription: "Chic crepe mini dress designed for casual outings and parties.",
@@ -3338,7 +3338,7 @@ const resellingProducts = [
         ]
     },
     {
-        id: "SHREE-C-23",
+        id: "SHREE-C23",
         name: "Women's Kurti",
         images: ["https://i.ibb.co/B5zg3nbg/ms-gbnbv-512-985903375.jpg"],
         shortDescription: "Elegant rayon kurti featuring fine prints and classic fit.",
@@ -3362,7 +3362,7 @@ const resellingProducts = [
         ]
     },
     {
-        id: "SHREE-C-24",
+        id: "SHREE-C24",
         name: "Women's Kurta Set",
         images: ["https://i.ibb.co/jm3SBs5/ms-8ee5x-512-588164719.jpg"],
         shortDescription: "Premium cotton kurta set offering superior comfort and traditional appeal.",
@@ -3383,7 +3383,7 @@ const resellingProducts = [
         ]
     },
     {
-        id: "SHREE-C-25",
+        id: "SHREE-C25",
         name: "Designer Kurta Set",
         images: ["https://i.ibb.co/HTh5NFbT/ms-b3pwq-512-972567633.jpg"],
         shortDescription: "Designer cotton kurta set crafted with fine detailing and elegant finish.",
@@ -3403,7 +3403,7 @@ const resellingProducts = [
         ]
     },
     {
-        id: "SHREE-C-26",
+        id: "SHREE-C26",
         name: "Women's Cozy Dress",
         images: ["https://i.ibb.co/MD8VsGJG/ms-amvpn-512-504507253.jpg"],
         shortDescription: "Soft khaadi cotton cozy dress designed for all-day relaxed comfort.",
@@ -3425,7 +3425,7 @@ const resellingProducts = [
         ]
     },
     {
-        id: "SHREE-C-27",
+        id: "SHREE-C27",
         name: "Women's latest Kurti",
         images: ["https://i.ibb.co/Nn9t7gWK/ms-i9eio-512-468271645.jpg"],
         shortDescription: "Trendy rayon kurti featuring contemporary patterns and rich maroon tone.",
@@ -3441,7 +3441,7 @@ const resellingProducts = [
         ]
     },
     {
-        id: "SHREE-C-28",
+        id: "SHREE-C28",
         name: "Women's Flat Heels",
         images: ["https://i.ibb.co/V1dMR9H/ms-8z35e-512-530997519.jpg"],
         shortDescription: "Comfortable 2-inch flat heels in classic beige for graceful styling.",
@@ -3459,7 +3459,7 @@ const resellingProducts = [
         ]
     },
     {
-        id: "SHREE-C-29",
+        id: "SHREE-C29",
         name: "Men's Stylish Shirt",
         images: ["https://i.ibb.co/bRmtLMBj/ms-mrunx-512-527490671.jpg"],
         shortDescription: "Textured popcorn fabric men's shirt for a sharp and modern look.",
@@ -3477,7 +3477,7 @@ const resellingProducts = [
         ]
     },
     {
-        id: "SHREE-C-30",
+        id: "SHREE-C30",
         name: "Men's Casual Shirt",
         images: ["https://i.ibb.co/v6hM62Lk/ms-9omkk-512-375103171.jpg"],
         shortDescription: "Versatile popcorn fabric men's casual shirt in multiple solid colors.",
@@ -3502,7 +3502,7 @@ const resellingProducts = [
         ]
     },
     {
-        id: "SHREE-C-31",
+        id: "SHREE-C31",
         name: "Oversized T shirt (Combo Pack)",
         images: ["https://i.ibb.co/zVM84wqr/ms-hulta-512-516216298.jpg"],
         shortDescription: "Value combo pack of 2 pure kapaas oversized t-shirts with vibrant dual-tone themes.",
@@ -3527,7 +3527,7 @@ const resellingProducts = [
         ]
     },
     {
-        id: "SHREE-C-32",
+        id: "SHREE-C32",
         name: "Men's Printed Shirt",
         images: ["https://i.ibb.co/9Hwxx21L/ms-ubn5w-512-456371139.jpg"],
         shortDescription: "Cotton men's printed shirt featuring eye-catching modern patterns.",
@@ -3547,7 +3547,7 @@ const resellingProducts = [
         ]
     },
     {
-        id: "SHREE-C-33",
+        id: "SHREE-C33",
         name: "Women's Short Kurti",
         images: ["https://i.ibb.co/5W123zmb/ms-prsik-512-983823213.jpg"],
         shortDescription: "Bright yellow cotton short kurti for a fresh and cheerful everyday look.",
@@ -3566,7 +3566,7 @@ const resellingProducts = [
         ]
     },
     {
-        id: "SHREE-C-34",
+        id: "SHREE-C34",
         name: "Women's Short Kurti",
         images: ["https://i.ibb.co/rRmhpwxF/ms-nfs4e-512-1041181898.jpg"],
         shortDescription: "Sleek black cotton short kurti pairing modern fit with ethnic comfort.",
@@ -3584,7 +3584,7 @@ const resellingProducts = [
         ]
     },
     {
-        id: "SHREE-C-35",
+        id: "SHREE-C35",
         name: "Women's Short Kurti",
         images: ["https://i.ibb.co/yn33DD5r/ms-9d8pq-512-1020792947.jpg"],
         shortDescription: "Vibrant red cotton short kurti for a stylish everyday ethnic look.",
@@ -3601,7 +3601,7 @@ const resellingProducts = [
         ]
     },
     {
-        id: "SHREE-C-36",
+        id: "SHREE-C36",
         name: "Women's Short Kurti",
         images: ["https://i.ibb.co/7tpqK6CD/ms-1kl5l-512-977386124.jpg"],
         shortDescription: "Affordable and cozy blue cotton short kurti for casual wear.",
@@ -3620,7 +3620,7 @@ const resellingProducts = [
         ]
     },
     {
-        id: "SHREE-C-37",
+        id: "SHREE-C37",
         name: "Women's Kurta",
         images: ["https://i.ibb.co/DgMnKhh8/ms-soeyf-512-556963070.jpg"],
         shortDescription: "Graceful rayon kurta in rich color variations for elegant ethnic wear.",
@@ -3640,7 +3640,7 @@ const resellingProducts = [
         ]
     },
     {
-        id: "SHREE-C-38",
+        id: "SHREE-C38",
         name: "Women's Jaipuri Kurti",
         images: ["https://i.ibb.co/1fgYPQPf/ms-uviso-512-616446241.jpg"],
         shortDescription: "Traditional Jaipuri print rayon kurti offering vibrant ethnic charm.",
@@ -3661,7 +3661,7 @@ const resellingProducts = [
         ]
     },
     {
-        id: "SHREE-C-39",
+        id: "SHREE-C39",
         name: "Combo Trousers",
         images: ["https://i.ibb.co/xrJ5BVH/ms-0rhvw-512-620266054.jpg"],
         shortDescription: "Comfortable cotton-blend combo trousers featuring versatile multi-color options.",
@@ -3683,7 +3683,7 @@ const resellingProducts = [
         ]
     },
     {
-        id: "SHREE-C-40",
+        id: "SHREE-C40",
         name: "Blackberry Dress",
         images: ["https://i.ibb.co/XZ0DRGt1/ms-sahxc-512-382519791.jpg"],
         shortDescription: "Stunning jorjet Blackberry dress designed for parties and special outings.",
