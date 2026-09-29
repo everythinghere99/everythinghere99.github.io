@@ -2327,7 +2327,7 @@ images: [
 description: "Useful Women's Saree with a stylish design, made for convenient everyday use.",
 price: "₹949",
 affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
-}
+},
 {
     id: "SHREE-P206",
     name: "Men's Jeans",
