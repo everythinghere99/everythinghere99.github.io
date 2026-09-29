@@ -1,4348 +1,4432 @@
 const homeFeaturedProducts = [
-    { id: "SHREE-H1", name: "Soft Cute kitty", image: "https://i.ibb.co/0kX0WzD/file-0000000030dc8206b14693c4d6249eb0-1.png", description: "Fluffy & adorable companion for cozy desk vibes.", price: "₹449", affiliateLink: "https://link.amazon/B0f7lRmfv" },
-    { id: "SHREE-H2", name: "Cozy pens", image: "https://i.ibb.co/C5GjcGR3/file-0000000054608230afbea9bebb4eba94-1.png", description: "Smooth pastel pens for aesthetic note-taking.", price: "₹239", affiliateLink: "https://link.amazon/B02KgAfwe" },
-    { id: "SHREE-H3", name: "Study Lamp", image: "https://i.ibb.co/kVWqLCXG/file-0000000054608230afbea9bebb4eba94-2.png", description: "Warm glowing light for late-night study sessions.", price: "₹389", affiliateLink: "https://link.amazon/B05q6slxB" },
-    { id: "SHREE-H4", name: "Cozy Tumbler", image: "https://i.ibb.co/kVCdCZqx/1785062539076.png", description: "Keep your favorite drinks cozy all day long.", price: "₹999", affiliateLink: "https://link.amazon/B01Y3aDhl" }
+{ id: "SHREE-H1", name: "Soft Cute kitty", image:
+"https://i.ibb.co/0kX0WzD/file-0000000030dc8206b14693c4d6249eb0-1.png", description:
+"Fluffy & adorable companion for cozy desk vibes.", price: "₹449", affiliateLink:
+"https://link.amazon/B0f7lRmfv" },
+{ id: "SHREE-H2", name: "Cozy pens", image:
+"https://i.ibb.co/C5GjcGR3/file-0000000054608230afbea9bebb4eba94-1.png", description:
+"Smooth pastel pens for aesthetic note-taking.", price: "₹239", affiliateLink:
+"https://link.amazon/B02KgAfwe" },
+{ id: "SHREE-H3", name: "Study Lamp", image:
+"https://i.ibb.co/kVWqLCXG/file-0000000054608230afbea9bebb4eba94-2.png", description:
+"Warm glowing light for late-night study sessions.", price: "₹389", affiliateLink:
+"https://link.amazon/B05q6slxB" },
+{ id: "SHREE-H4", name: "Cozy Tumbler", image:
+"https://i.ibb.co/kVCdCZqx/1785062539076.png", description: "Keep your favorite drinks cozy all day long.", price: "₹999", affiliateLink: "https://link.amazon/B01Y3aDhl" }
 ];
-
 const affiliateProducts = [
-    {
-        id: "SHREE-P01",
-        name: "Cozy Camera with Print ....",
-        images: [
-            "https://i.ibb.co/pBLpxHDv/Screenshot-20260725-162951-Amazon.jpg",
-            "https://i.ibb.co/gFj5CKJg/Screenshot-20260725-163005-Amazon.jpg",
-            "https://i.ibb.co/67JNnqMw/Screenshot-20260725-163014-Amazon.jpg",
-            "https://i.ibb.co/G3b7BMtM/Screenshot-20260725-162959-Amazon.jpg"
-        ],
-        description: "Print photos instantly with a cute design.",
-        price: "₹2595",
-        affiliateLink: "https://link.amazon/B0ebgY5wp" 
-    },
-    {
-        id: "SHREE-P02",
-        name: "Asthetic Summer Wear",
-        images: [
-            "https://i.ibb.co/LD4zXF4V/6ee16def9d8d8e76b7526c6d0ea8296e.jpg",
-            "https://i.ibb.co/jvYf3nW5/41-KV7iq-Uze-L.jpg",
-            "https://i.ibb.co/pvmLFg5n/51ikxj-DMYJL.jpg",
-            "https://i.ibb.co/LXTr6tvr/410-CP8x-Jl4-L.jpg",
-            "https://i.ibb.co/DPZxZD3R/41ccp-Vbvkn-L.jpg",
-            "https://i.ibb.co/FqNxq2pP/51-Gks-BDmw-ZL.jpg",
-            "https://i.ibb.co/Kj7bMmYc/51-Piy5e-EQCL.jpg"
-        ],
-        description: "Trendy & breezy style for warm days.",
-        price: "₹549",
-        affiliateLink: "https://link.amazon/B0cXUqF9L"
-    },
-    {
-        id: "SHREE-P03",
-        name: "Black floral Kurti",
-        images: [
-            "https://i.ibb.co/20skprv7/1785086742333.png",
-            "https://i.ibb.co/j9MFkVmR/41zf-JIuk-AGL.jpg",
-            "https://i.ibb.co/27ytq4zR/418o-Cir-Cs-XL.jpg",
-            "https://i.ibb.co/ks0Y94cw/41-WMpmn-OFML.jpg",
-            "https://i.ibb.co/xqrP17np/41-XMYYEJx4-L.jpg",
-            "https://i.ibb.co/b5HrwwpG/41-LUn-Yo3-BFL.jpg"
-        ],
-        description: "Graceful floral print for daily elegance.",
-        price: "₹289",
-        affiliateLink: "https://link.amazon/B0cKcL6GK"
-    },
-    {
-        id: "SHREE-P04",
-        name: "Cotton Frock Kurti",
-        images: [
-            "https://i.ibb.co/kV91vLdD/51-OUQn-Xzer-L.jpg",
-            "https://i.ibb.co/ymgqysQX/51a-TWtn7y-IL.jpg"
-        ],
-        description: "Pure cotton comfort for everyday charm.",
-        price: "₹350",
-        affiliateLink: "https://link.amazon/B0euys0QR"
-    },
-    {
-        id: "SHREE-P05",
-        name: "Stylish Rayon Kurti",
-        images: [
-            "https://i.ibb.co/gMDwmbGV/1785093583121.png",
-            "https://i.ibb.co/hxsfnKBb/41k2nx-SDuj-L.jpg",
-            "https://i.ibb.co/35BLDZpK/41-Kwm-R40-Ie-L.jpg",
-            "https://i.ibb.co/k6v6bjMJ/31-LSSt6-LOPL.jpg"
-        ],
-        description: "Chic rayon fabric with a cozy look.",
-        price: "₹493",
-        affiliateLink: "https://link.amazon/B0imlLnhy"
-    },
-    {
-        id: "SHREE-P06",
-        name: "Women Track Pant & Joggers",
-        images: [
-            "https://i.ibb.co/5x60w8Y3/1785094243573.png",
-            "https://i.ibb.co/Zz7884sh/41-Tpv-R-rtr-L.jpg",
-            "https://i.ibb.co/VcKB5dZy/41-THr-ZWl-Du-L.jpg"
-        ],
-        description: "Soft & relaxed fit for ultimate comfort.",
-        price: "₹447",
-        affiliateLink: "https://link.amazon/B00IxoJVj"
-    },
-    {
-        id: "SHREE-P07",
-        name: "Soft women jumpsuit",
-        images: [
-            "https://i.ibb.co/sJdmPks0/1785101387939.png",
-            "https://i.ibb.co/XrxHtg5n/21-QVGc-DPm-BL.jpg",
-            "https://i.ibb.co/VY3d26sb/31-Izp-EW8p5-L.jpg",
-            "https://i.ibb.co/k2ZXvgZW/41x-Tvv-Zr-FYL.jpg",
-            "https://i.ibb.co/xS6DGTSF/1785102466197.png",
-            "https://i.ibb.co/J4Y0qDw/41-Uj-AILXY9-L.jpg",
-            "https://i.ibb.co/Jjz2GfF8/51a-HMQAq4-IL.jpg"
-        ],
-        description: "Effortless style for your everyday look.",
-        price: "₹599",
-        affiliateLink: "https://link.amazon/B04bk8KS5"
-    },
-    {
-        id: "SHREE-P08",
-        name: "White Sport Shoes",
-        images: [
-            "https://i.ibb.co/svKY8B16/1785101991538-1.png",
-            "https://i.ibb.co/r2kPfdWQ/31-Bb-YMa83z-L.jpg",
-            "https://i.ibb.co/d4LyNZBf/41-Czqx-Qegi-L.jpg",
-            "https://i.ibb.co/wrBgtRC8/51h-TUwthfq-L.jpg",
-            "https://i.ibb.co/DFMGBgg/41-RLhoc-Ibi-L.jpg",
-            "https://i.ibb.co/XkdPmHGb/31-TXKSTqs-QL.jpg"
-        ],
-        description: "Clean design for comfortable daily steps.",
-        price: "₹1049",
-        affiliateLink: "https://link.amazon/B0jbcDF27"
-    },
-    {
-        id: "SHREE-P09",
-        name: "Casual Shirt Unisex",
-        images: [
-            "https://i.ibb.co/XZK9LHM0/1785127671691.png",
-            "https://i.ibb.co/GQWCpd6Q/31u-Ui-Qc-Hh-L.jpg",
-            "https://i.ibb.co/SX5kB1bZ/41-PEPBvj-9-L.jpg"
-        ],
-        description: "Relaxed fit with cozy vibe.",
-        price: "₹499",
-        affiliateLink: "https://link.amazon/B0iNHgBP6"
-    },
-    {
-        id: "SHREE-P10",
-        name: "Cotton Cargo Pant",
-        images: [
-            "https://i.ibb.co/cX2fDqFm/1785129521622.png",
-            "https://i.ibb.co/VYpDcCP4/314-S9n-Iwn8-L.jpg",
-            "https://i.ibb.co/qM4Lyfd7/31a6-Cq1x-JLL.jpg",
-            "https://i.ibb.co/fzQ6JmD6/31-F6-VWE9b-TL.jpg",
-            "https://i.ibb.co/bgc06j6z/31-Nn-MZ1jml-L.jpg",
-            "https://i.ibb.co/d4VvMHxq/31f-Wvr-I9-SBL.jpg"
-        ],
-        description: "Durable & stylish for a relaxed fit.",
-        price: "₹669",
-        affiliateLink: "https://link.amazon/B05lyNyvM"
-    },
-    {
-        id: "SHREE-P11",
-        name: "Pink Women Dress",
-        images: [
-            "https://i.ibb.co/2Y8PVjL2/IMG-20260728-WA0008.jpg",
-            "https://i.ibb.co/VYqJCb82/41-Rgisw-Lh3-L.jpg",
-            "https://i.ibb.co/gLZMKqgR/51ya-LPKXn-ML.jpg",
-            "https://i.ibb.co/PsFcdKsj/51-Su-Ty8s-Xu-L.jpg",
-            "https://i.ibb.co/Y7CPZfS3/511y9ot-Xnt-L.jpg"
-        ],
-        description: "Pretty style for cute day-out vibes.",
-        price: "₹366",
-        affiliateLink: "https://link.amazon/B0cGZssCZ"
-    },
-    {
-        id: "SHREE-P12",
-        name: "Cotten Western Dress",
-        images: [
-            "https://i.ibb.co/QjvLj4qD/41-qb-ZZ19-NL.jpg",
-            "https://i.ibb.co/qYyNQFSk/41-HJg-I60-Xn-L.jpg",
-            "https://i.ibb.co/3mq6MRy4/31hcsn-SRZ0-L.jpg",
-            "https://i.ibb.co/99TWbsF6/31-HCXie-CBy-L.jpg",
-            "https://i.ibb.co/mFdtY6sT/31va-Z4yq-Is-L.jpg",
-            "https://i.ibb.co/ym5gc76t/31-lau3a-MRL.jpg",
-            "https://i.ibb.co/DHNGCRqg/31-CBb0b-Z9-DL.jpg",
-            "https://i.ibb.co/gFf7pRf2/31-Dpi-Ra-d-FL.jpg"
-        ],
-        description: "Chic cotton style for everyday elegance.",
-        price: "₹599",
-        affiliateLink: "https://link.amazon/B06AZrl4C"
-    },
-    {
-        id: "SHREE-P13",
-        name: "Party Essential Dress",
-        images: [
-            "https://i.ibb.co/zVs3RqDt/IMG-20260728-WA0010.jpg",
-            "https://i.ibb.co/Jj1BWjGB/31-6-WQzkv-ML.jpg",
-            "https://i.ibb.co/jZrpfKDf/31ic-X30i-W3-L.jpg",
-            "https://i.ibb.co/5xvpw2B9/31nvh-Ju-RR9-L.jpg",
-            "https://i.ibb.co/6RSqMZrP/31h-Vxj2d-Zu-L.jpg",
-            "https://i.ibb.co/9HJTD06J/41-EUgnaa-3-L.jpg"
-        ],
-        description: "Stunning outfit for special evenings.",
-        price: "₹699",
-        affiliateLink: "https://link.amazon/B0b2ePn37"
-    },
-    {
-        id: "SHREE-P14",
-        name: "Stylish Stone Earrings",
-        images: [
-            "https://i.ibb.co/xSW2pS2H/IMG-20260729-WA0000.jpg",
-            "https://i.ibb.co/PvfRRdfs/41jr-KCEa5-CL.jpg",
-            "https://i.ibb.co/5WbxjrRm/41e8k-XYBQHL.jpg",
-            "https://i.ibb.co/938RgY5q/31vr-RBZT0y-L.jpg"
-        ],
-        description: "Gorgeous stone earrings for everyday look.",
-        price: "₹249",
-        affiliateLink: "https://link.amazon/B02wulj6X"
-    },
-    {
-        id: "SHREE-P15",
-        name: "Collared Maxi Dress",
-        images: [
-            "https://i.ibb.co/gZ4VDY1D/IMG-20260731-WA0015.jpg",
-            "https://i.ibb.co/5WNZ26BX/41huck-Bb0a-L.jpg",
-            "https://i.ibb.co/j9ZJ8sP5/31uavg0-H8-L.jpg",
-            "https://i.ibb.co/SXNYstH9/41-ggitmo-IL.jpg",
-            "https://i.ibb.co/F4WBnQQf/41y-GJ3dq-Yi-L.jpg"
-        ],
-        description: "Elegant maxi look for effortless style.",
-        price: "₹649",
-        affiliateLink: "https://link.amazon/B08cj0dBv"
-    },
-    {
-        id: "SHREE-P16",
-        name: "Women's Kurta Set",
-        images: [
-            "https://i.ibb.co/rKwvBt5F/IMG-20260731-WA0016.jpg",
-            "https://i.ibb.co/wFCqfMdX/317-Wk-Os-C7d-L.jpg",
-            "https://i.ibb.co/B5VLy9Nh/31-Ty-Pk-BS7v-L.jpg",
-            "https://i.ibb.co/pB3VcVSf/31yho5ku5-OL.jpg"
-        ],
-        description: "Graceful ethnic wear for festive vibes.",
-        price: "₹849",
-        affiliateLink: "https://link.amazon/B0azuTnbG"
-    },
-    {
-        id: "SHREE-P17",
-        name: "Dori Belt Dress",
-        images: [
-            "https://i.ibb.co/Xf97w9J8/IMG-20260731-WA0017.jpg",
-            "https://i.ibb.co/bgRyTWyF/41l8-GNZzx-L-SX679.jpg",
-            "https://i.ibb.co/cc3YYDWT/51fz19oe25-L-SX342-SY445-QL70-ML2.jpg",
-            "https://i.ibb.co/FLCN883M/41-NKdx1v-WL-SX679.jpg"
-        ],
-        description: "Flattering silhouette with a cozy feel.",
-        price: "₹395",
-        affiliateLink: "https://link.amazon/B0ihODMZg"
-    },
-    {
-        id: "SHREE-P18",
-        name: "Ethnic Flats Sandals ( white )",
-        images: [
-            "https://i.ibb.co/k2pTX42m/IMG-20260731-WA0018.jpg",
-            "https://i.ibb.co/7tbdp74M/41bobbs-H-WL.jpg",
-            "https://i.ibb.co/Fb6GZV55/41ne1o-B89q-L.jpg",
-            "https://i.ibb.co/vx5ry9gK/410q-IZ4a83-L.jpg"
-        ],
-        description: "Elegant white flats for daily outfits.",
-        price: "₹379",
-        affiliateLink: "https://link.amazon/B0f9lsLHq"
-    },
-    {
-        id: "SHREE-P19",
-        name: "Ethnic Flats Sandals ( pink )",
-        images: [
-            "https://i.ibb.co/wrW92md6/IMG-20260731-WA0019.jpg",
-            "https://i.ibb.co/bg6bwy8z/41l-Xi0f2-v-L.jpg",
-            "https://i.ibb.co/VW8nzpmD/51af-UQPYu-VL.jpg",
-            "https://i.ibb.co/WNRMB3rn/41-Vu-J2-ZGl-TL.jpg"
-        ],
-        description: "Charming pink flats for comfortable wear.",
-        price: "₹399",
-        affiliateLink: "https://link.amazon/B0gAGmj6s"
-    },
-    {
-        id: "SHREE-P20",
-        name: "Asthetic Shoulder Handbag",
-        images: [
-            "https://i.ibb.co/0RPQYncn/IMG-20260731-WA0020.jpg",
-            "https://i.ibb.co/5gCYMmKw/31-ZFnfv-OTw-L.jpg",
-            "https://i.ibb.co/7xrx4Bv9/31-MXhgx-C0-GL.jpg",
-            "https://i.ibb.co/FkdSTwc5/31s6-Pe-But-TL.jpg",
-            "https://i.ibb.co/tw5CKcj4/31-ER2-SVb-Fq-L.jpg",
-            "https://i.ibb.co/xSGjWLcp/21-Un8-Y3-Dsr-L.jpg"
-        ],
-        description: "Chic bag to carry essentials in style.",
-        price: "₹329",
-        affiliateLink: "https://link.amazon/B03j07UFq"
-    },
-    {
-        id: "SHREE-P21",
-        name: "Ethnic Elegance Kurti",
-        images: [
-            "https://i.ibb.co/5hXcftJW/IMG-20260731-WA0023.jpg",
-            "https://i.ibb.co/xSvrNq8k/IMG-20260731-WA0022.jpg",
-            "https://i.ibb.co/HQWTc1x/414-Iu-PSmej-L.jpg",
-            "https://i.ibb.co/KxJXZccm/41p5c-Zu-IAXL.jpg",
-            "https://i.ibb.co/1YVYBnqG/41d4-CC7-Xk0-L.jpg",
-            "https://i.ibb.co/XxqqTRqF/41hrh-Zp-Pj-JL.jpg"
-        ],
-        description: "Intricate detailing for a refined look.",
-        price: "₹799",
-        affiliateLink: "https://link.amazon/B06lRViYN"
-    },
-    {
-        id: "SHREE-P22",
-        name: "Cozy Pillows",
-        images: ["https://i.ibb.co/0ysFS841/IMG-20260811-WA0000.jpg"],
-        description: "Soft and aesthetic cozy pillow to upgrade your room vibe and comfort.",
-        price: "₹664"
-    },
-    {
-        id: "SHREE-P23",
-        name: "Women's Sleeveless kurti",
-        images: [
-            "https://i.ibb.co/gLzrNv59/cf99bfbb5899656f7c3623bf90dc20dd.jpg",
-            "https://i.ibb.co/gFX1Jbtb/61cl-OCC9-Lq-L-SX679.jpg",
-            "https://i.ibb.co/tTpsrNqh/61ls-S-u-ZKn-L-SX679.jpg"
-        ],
-        description: "Chic and stylish sleeveless kurti designed for effortless everyday ethnic elegance and comfort.",
-        price: "₹999",
-        affiliateLink: "https://link.amazon/B08nTCaC8"
-    },
-    {
-        id: "SHREE-P24",
-        name: "Women's Sleeveless kurti",
-        images: [
-            "https://i.ibb.co/TB89Dh0T/f4a8af5325e019e96aeb3c1b7d907e92.jpg",
-            "https://i.ibb.co/wrW7jfdJ/71-Z8-QAHVi-WL-SX679.jpg",
-            "https://i.ibb.co/CSMhmMg/61-NOk-JH59j-L-SX679.jpg",
-            "https://i.ibb.co/cX3RwK13/51g-Tth2tv-GL-SY879.jpg"
-        ],
-        description: "Trendy sleeveless kurti featuring premium fabric for a gorgeous summer ethnic look and relaxed feel.",
-        price: "₹999",
-        affiliateLink: "https://www.amazon.in/dp/B0H2Q174S8"
-    },
-    {
-        id: "SHREE-P25",
-        name: "Women's Shirt",
-        images: ["https://i.ibb.co/yFfkRt7p/IMG-20260818-WA0003.jpg"],
-        description: "Smart and casual women's shirt tailored for a clean, everyday modern outfit and comfortable fit.",
-        price: "₹449",
-        affiliateLink: "https://link.amazon/B0gPAuGGh"
-    },
-    {
-        id: "SHREE-P26",
-        name: "Aesthetic Men's Shirt",
-        images: [
-            "https://i.ibb.co/hJWvCF2b/IMG-20260818-WA0002.jpg",
-            "https://i.ibb.co/hhkkbRn/31g04b5-KEIL.jpg",
-            "https://i.ibb.co/3YWCVCZD/310-Web-JS-UL.jpg",
-            "https://i.ibb.co/zWGpfSvk/41m-L4-M3cq-L.jpg",
-            "https://i.ibb.co/RTfys6fg/41-Ef-Lijok-NL.jpg"
-        ],
-        description: "Aesthetic men's shirt offering a cool textured look, sharp styling, and ultimate daily comfort.",
-        price: "₹499",
-        affiliateLink: "https://link.amazon/B0bxp0L1q"
-    },
-    {
-        id: "SHREE-P27",
-        name: "Cozy Coffee Mug",
-        images: [
-            "https://i.ibb.co/BHVCWnRs/51at-Qk-MHWn-L.jpg",
-            "https://i.ibb.co/fdqNrbhw/41-Fn0-Zk3-Pj-L.jpg",
-            "https://i.ibb.co/j96PhCbC/41yp-cs09-LL.jpg",
-            "https://i.ibb.co/svH5dTBy/41sos-UKym-CL.jpg",
-            "https://i.ibb.co/MDkmMPYC/51-Dc-ETyp1-RL.jpg"
-        ],
-        description: "Aesthetic and cozy coffee mug designed to elevate your daily coffee or tea ritual with style.",
-        price: "₹599",
-        affiliateLink: "https://link.amazon/B0gdIN5BJ"
-    },
-    {
-        id: "SHREE-P28",
-        name: "Couple's Coffee Mug",
-        images: [
-            "https://i.ibb.co/WNz1z5SZ/41-Tw9-QE9-Gx-L.jpg",
-            "https://i.ibb.co/xK2V5n6d/41v8-Ip-S1c-KL.jpg",
-            "https://i.ibb.co/xKR6cxbY/41-Ir1-Xj-Zlt-L.jpg"
-        ],
-        description: "Charming couple's coffee mug set designed for sharing special moments and cozy mornings.",
-        price: "₹785",
-        affiliateLink: "https://link.amazon/B0iCbOcSf"
-    },
-    {
-        id: "SHREE-P29",
-        name: "Cute Little Bottle",
-        images: [
-            "https://i.ibb.co/qL8ZY0gN/41cp-G18-D61-L.jpg",
-            "https://i.ibb.co/bMd4SJ6y/41f-F-Yb-qf-L.jpg",
-            "https://i.ibb.co/FkBfJJX6/51y-Cq-E9-B9q-L.jpg"
-        ],
-        description: "Compact, portable, and super cute little bottle designed for easy everyday use.",
-        price: "₹199",
-        affiliateLink: "https://link.amazon/B0cW1GBms"
-    },
-    {
-        id: "SHREE-P30",
-        name: "Cozy Alarm Clock",
-        images: [
-            "https://i.ibb.co/PZNxcym4/41u-OKdfod-OL.jpg",
-            "https://i.ibb.co/hF4Yw1pS/41-Bu6-PYLmx-L.jpg",
-            "https://i.ibb.co/vvhhVyn1/41e0-Ydh-WAe-L.jpg",
-            "https://i.ibb.co/93Yj4CtM/41c3-B4-CDf1-L.jpg",
-            "https://i.ibb.co/fdysMjNn/418-Ur-R-t-AEL.jpg"
-        ],
-        description: "Charming cozy alarm clock featuring a classic design to brighten up your desk or bedroom decor.",
-        price: "₹496",
-        affiliateLink: "https://link.amazon/B00blXMZQ"
-    },
-    {
-        id: "SHREE-P31",
-        name: "Earrings for Women",
-        images: [
-            "https://i.ibb.co/67JY61bs/41xo-HRQuit-L.jpg",
-            "https://i.ibb.co/R4HjyPHv/41ig6x6d-f-L.jpg",
-            "https://i.ibb.co/zHfrX7Qb/41z-Pc5y5-EWL.jpg"
-        ],
-        description: "Gorgeous women's earrings offering a chic and graceful finish to complement any look.",
-        price: "₹607",
-        affiliateLink: "https://link.amazon/B0ddOwAXC"
-    },
-    {
-        id: "SHREE-P32",
-        name: "Ethnic Girls Earrings",
-        images: [
-            "https://i.ibb.co/gb3X5S4r/41z-EZh-CDr-FL.jpg",
-            "https://i.ibb.co/5gnvMr5p/51u-L5-Hyiqb-L.jpg",
-            "https://i.ibb.co/DHSVmdvg/41-JCn-NATqm-L.jpg"
-        ],
-        description: "Beautiful ethnic earrings designed with fine details to make your traditional style stand out.",
-        price: "₹339",
-        affiliateLink: "https://link.amazon/B07WFU2nt"
-    },
-    {
-        id: "SHREE-P33",
-        name: "Wall's Photo Frame",
-        images: [
-            "https://i.ibb.co/TxRMcqwL/51-B-XFe-Vsp-L.jpg",
-            "https://i.ibb.co/p6vn31TN/51-WQ0-s-Li-L.jpg",
-            "https://i.ibb.co/Fknp4BrQ/51lj-3-OY1y-L.jpg",
-            "https://i.ibb.co/fzB579xf/51-Pwa-Bzeo-QL.jpg"
-        ],
-        description: "Stylish photo frame designed to decorate your walls and showcase your best moments.",
-        price: "₹238",
-        affiliateLink: "https://link.amazon/B09HPpj0T"
-    },
-    {
-        id: "SHREE-P34",
-        name: "Wooden wall frame",
-        images: [
-            "https://i.ibb.co/q3rHHVRr/41gbn-z1-IYL.jpg",
-            "https://i.ibb.co/Fb4P53zC/41z-KTRok7b-L.jpg",
-            "https://i.ibb.co/F9XCN4X/516-O56-FNi2-L.jpg"
-        ],
-        description: "Premium wooden wall frame tailored to give a classic aesthetic look to your home walls.",
-        price: "₹228",
-        affiliateLink: "https://link.amazon/B05jDTQrp"
-    },
-    {
-        id: "SHREE-P35",
-        name: "Deer Wall Lamp",
-        images: [
-            "https://i.ibb.co/QFRtmwnj/41-Mo-YPw-SXSL.jpg",
-            "https://i.ibb.co/WWx8j5XY/41xo-EBw1-Ng-L.jpg"
-        ],
-        description: "Creative deer wall lamp that serves as both a stylish decor piece and soft ambient light.",
-        price: "₹399",
-        affiliateLink: "https://link.amazon/B08rXsYkq"
-    },
-    {
-        id: "SHREE-P36",
-        name: "Decoration Solar Lights",
-        images: [
-            "https://i.ibb.co/HfFBwnCZ/41bf-S948-S7-L.jpg",
-            "https://i.ibb.co/pBv13XD0/41cnak-IHz-OL.jpg",
-            "https://i.ibb.co/fdr2QMrs/41a-Nz-TLh8-KL.jpg",
-            "https://i.ibb.co/FqzXnNrn/51v9-Cen-FGu-L.jpg",
-            "https://i.ibb.co/23cw92nY/51i-k6-X5c-HL.jpg"
-        ],
-        description: "Beautiful decoration solar lights that add a magical glow to your balcony, garden, or room.",
-        price: "₹399",
-        affiliateLink: "https://link.amazon/B0ebcKcxE"
-    },
-    {
-        id: "SHREE-P37",
-        name: "Apple Wrist Watch",
-        images: [
-            "https://i.ibb.co/gFrsLkGN/41-KQAyl-Cgr-L.jpg",
-            "https://i.ibb.co/gLmMzC7Y/414c6h-T-7x-L.jpg",
-            "https://i.ibb.co/1Y4p14yM/51x-Mysnfy-L.jpg",
-            "https://i.ibb.co/pjz3D55w/419ia-W6-SNQL.jpg"
-        ],
-        description: "Feature-packed Apple style wrist watch offering a seamless digital experience and sleek look.",
-        price: "₹599",
-        affiliateLink: "https://link.amazon/B0iR3W1VO"
-    },
-    {
-        id: "SHREE-P38",
-        name: "Women's Heel Sandal",
-        images: [
-            "https://i.ibb.co/7dCnYDmq/41f-T0d0xig-L.jpg",
-            "https://i.ibb.co/Y7KtyLvM/31-Zg-X-k-A5-L.jpg",
-            "https://i.ibb.co/xKCTVHGd/41y-QOe-XMpw-L.jpg"
-        ],
-        description: "Elegant heel sandals designed to give you a graceful posture and comfortable everyday wear.",
-        price: "₹550",
-        affiliateLink: "https://link.amazon/B03TSJPPV"
-    },
-    {
-        id: "SHREE-P39",
-        name: "Women Heel Sandal",
-        images: [
-            "https://i.ibb.co/qY4M9G9t/31jr-Lh-LI1d-L.jpg",
-            "https://i.ibb.co/xKZBkF9Q/31xbmf-RY8-TL.jpg"
-        ],
-        description: "Fashionable women's heel sandals offering a perfect blend of comfort and chic aesthetics.",
-        price: "₹589",
-        affiliateLink: "https://link.amazon/B06LgpKNF"
-    },
-    {
-        id: "SHREE-P40",
-        name: "Elegent Women's Dress",
-        images: [
-            "https://i.ibb.co/WNpVpt3z/41sn-Rx-M1-Z9-L.jpg",
-            "https://i.ibb.co/HLMBd9vk/41-Qm-Y4-Uaz-CL.jpg",
-            "https://i.ibb.co/PGwBKjMs/41-Lot91n-ZRL.jpg",
-            "https://i.ibb.co/5hHcRg3b/514-Bjb2-MVx-L.jpg"
-        ],
-        description: "Graceful women's dress featuring a flattering fit and comfortable fabric for special outings.",
-        price: "₹639",
-        affiliateLink: "https://link.amazon/B09GICw5m"
-    },
-    {
-        id: "SHREE-P41",
-        name: "Kurta for Women",
-        images: [
-            "https://i.ibb.co/PsKqYmMw/31-IC34-Qs2n-L.jpg",
-            "https://i.ibb.co/tpGt3dm4/31-B060eqo9-L.jpg",
-            "https://i.ibb.co/B5S4CJNq/31r-Hi-I3xls-L.jpg"
-        ],
-        description: "Classic ethnic kurta for women offering breathable comfort and a refined traditional look.",
-        price: "₹598",
-        affiliateLink: "https://link.amazon/B0cACRQgQ"
-    },
-    {
-        id: "SHREE-P42",
-        name: "Cozy Desk Lamp",
-        images: [
-            "https://i.ibb.co/tp3MMRxy/21d-PNOG6-ANL.jpg",
-            "https://i.ibb.co/Sw7Jcxgb/41-Mc96-QV4o-L.jpg",
-            "https://i.ibb.co/m5YzBHb0/51-EMRcz-JAk-L.jpg",
-            "https://i.ibb.co/prKhqqH6/417kpj-UEin-L.jpg",
-            "https://i.ibb.co/CpyZCjNn/41h4-Nexn-Xm-L.jpg"
-        ],
-        description: "Sleek and aesthetic cozy desk lamp designed to upgrade your study or workspace lighting.",
-        price: "₹298",
-        affiliateLink: "https://link.amazon/B033O2UPy"
-    },
-    {
-        id: "SHREE-P43",
-        name: "Cozy Alarm Clock",
-        images: [
-            "https://i.ibb.co/gMGC3jG3/41-N0nxo22-BL.jpg",
-            "https://i.ibb.co/MxyJ1P9H/41-B2-CNv-Ubm-L.jpg",
-            "https://i.ibb.co/GfbscZj6/410-Se-Iaka9-L.jpg",
-            "https://i.ibb.co/JjZT7qm6/41b8-MYAv-Bs-L.jpg"
-        ],
-        description: "Modern minimalist alarm clock that looks great on any bedside table or desk setup.",
-        price: "₹377",
-        affiliateLink: "https://link.amazon/B0fbsQFZ2"
-    },
-    {
-        id: "SHREE-P44",
-        name: "Study Table",
-        images: [
-            "https://i.ibb.co/xSQQLmkj/41-Necwev3x-L.jpg",
-            "https://i.ibb.co/0jqSJHmb/51g-D61-Zi-t-L.jpg",
-            "https://i.ibb.co/PZDZwM4g/41-Gl2q-URRSL.jpg",
-            "https://i.ibb.co/DPZNprdb/51-In-Mm3dz9-L.jpg"
-        ],
-        description: "Durable and space-saving study table perfect for students and work-from-home setups.",
-        price: "₹499",
-        affiliateLink: "https://link.amazon/B016sDxWZ"
-    },
-    {
-        id: "SHREE-P45",
-        name: "Women's Trouser",
-        images: [
-            "https://i.ibb.co/wb2KwcB/410s82-QDj-GL.jpg",
-            "https://i.ibb.co/Y4ZB67vd/41-H-q-Nxz-Ic-L.jpg",
-            "https://i.ibb.co/G4pyyhBF/41-A1t0-D50e-L.jpg"
-        ],
-        description: "Classic women's trouser crafted for maximum comfort and an effortless smart-casual fit.",
-        price: "₹698",
-        affiliateLink: "https://link.amazon/B0ehnc17L"
-    },
-    {
-        id: "SHREE-P46",
-        name: "Women's Trouser",
-        images: [
-            "https://i.ibb.co/tMsX3VSG/41f-OIdnp-DFL.jpg",
-            "https://i.ibb.co/GQMy4G09/31x-SJwj-Nfg-L.jpg",
-            "https://i.ibb.co/60gPbHX7/21-Mosk-UZXL.jpg"
-        ],
-        description: "Relaxed-fit women's trouser offering superior comfort and versatile everyday style.",
-        price: "₹628",
-        affiliateLink: "https://link.amazon/B0510wNYv"
-    },
-    {
-        id: "SHREE-P47",
-        name: "Women's Crop Top",
-        images: [
-            "https://i.ibb.co/G4P3wMcV/31-Kgyou-W5-YL.jpg",
-            "https://i.ibb.co/Ld7Sd8P6/31fjq-jil-XL.jpg",
-            "https://i.ibb.co/NgKJQDzx/31-mnat5-ML.jpg"
-        ],
-        description: "Chic women's crop top offering a comfortable fit and stylish modern aesthetic.",
-        price: "₹311",
-        affiliateLink: "https://link.amazon/B09HelAGp"
-    },
-    {
-    id: "SHREE-P48",
-    name: "Women's Skirt",
-    images: [
-        "https://i.ibb.co/Xfd1LP85/31s5ptq2-Wz-L.jpg",
-        "https://i.ibb.co/998CNc9L/31d-S6g2v-Mr-L.jpg"
-    ],
-    description: "Flowing women's skirt that brings a playful and elegant vibe to your casual wardrobe.",
-    price: "₹569",
-    affiliateLink: "https://link.amazon/B07Hr2TYo"
+{
+id: "SHREE-P01",
+name: "Cozy Camera with Print ....",
+images: [
+"https://i.ibb.co/pBLpxHDv/Screenshot-20260725-162951-Amazon.jpg",
+"https://i.ibb.co/gFj5CKJg/Screenshot-20260725-163005-Amazon.jpg",
+"https://i.ibb.co/67JNnqMw/Screenshot-20260725-163014-Amazon.jpg",
+"https://i.ibb.co/G3b7BMtM/Screenshot-20260725-162959-Amazon.jpg"
+],
+description: "Print photos instantly with a cute design.",
+price: "₹2595",
+affiliateLink: "https://link.amazon/B0ebgY5wp"
 },
 {
-    id: "SHREE-P49",
-    name: "Women's Kurti",
-    images: [
-        "https://i.ibb.co/yF5tMShc/41-UVQ6-Ig6u-L.jpg",
-        "https://i.ibb.co/jkXpc9T4/41r-Vg-NSy-Zv-L.jpg",
-        "https://i.ibb.co/4ZRSYfBj/41-SQJ5im-QBL.jpg",
-        "https://i.ibb.co/M5STPf01/413j-U-Su-BSL.jpg"
-    ],
-    description: "Comfortable and graceful women's kurti featuring classic prints for casual and festive days.",
-    price: "₹589",
-    affiliateLink: "https://link.amazon/B05ID83LN"
+id: "SHREE-P02",
+name: "Asthetic Summer Wear",
+images: [
+"https://i.ibb.co/LD4zXF4V/6ee16def9d8d8e76b7526c6d0ea8296e.jpg",
+"https://i.ibb.co/jvYf3nW5/41-KV7iq-Uze-L.jpg",
+"https://i.ibb.co/pvmLFg5n/51ikxj-DMYJL.jpg",
+"https://i.ibb.co/LXTr6tvr/410-CP8x-Jl4-L.jpg",
+"https://i.ibb.co/DPZxZD3R/41ccp-Vbvkn-L.jpg",
+"https://i.ibb.co/FqNxq2pP/51-Gks-BDmw-ZL.jpg",
+"https://i.ibb.co/Kj7bMmYc/51-Piy5e-EQCL.jpg"
+],
+description: "Trendy & breezy style for warm days.",
+price: "₹549",
+affiliateLink: "https://link.amazon/B0cXUqF9L"
 },
 {
-    id: "SHREE-P50",
-    name: "Polo T Shirt",
-    images: [
-        "https://i.ibb.co/LhtLmWPt/Screenshot-20260824-084520-Amazon.jpg"
-    ],
-    description: "Classic men's polo T-shirt with a comfortable and versatile style for everyday wear.",
-    price: "₹699",
-    affiliateLink: "https://link.amazon/B0j3jgiqE"
+id: "SHREE-P03",
+name: "Black floral Kurti",
+images: [
+"https://i.ibb.co/20skprv7/1785086742333.png",
+"https://i.ibb.co/j9MFkVmR/41zf-JIuk-AGL.jpg",
+"https://i.ibb.co/27ytq4zR/418o-Cir-Cs-XL.jpg",
+"https://i.ibb.co/ks0Y94cw/41-WMpmn-OFML.jpg",
+"https://i.ibb.co/xqrP17np/41-XMYYEJx4-L.jpg",
+"https://i.ibb.co/b5HrwwpG/41-LUn-Yo3-BFL.jpg"
+],
+description: "Graceful floral print for daily elegance.",
+price: "₹289",
+affiliateLink: "https://link.amazon/B0cKcL6GK"
 },
 {
-    id: "SHREE-P51",
-    name: "Polo T Shirt",
-    images: [
-        "https://i.ibb.co/N63q3Gs8/Screenshot-20260824-084621-Amazon.jpg"
-    ],
-    description: "Stylish polo T-shirt designed for a comfortable and smart casual look.",
-    price: "₹429",
-    affiliateLink: "https://link.amazon/B0dUZZGMt"
+id: "SHREE-P04",
+name: "Cotton Frock Kurti",
+images: [
+"https://i.ibb.co/kV91vLdD/51-OUQn-Xzer-L.jpg",
+"https://i.ibb.co/ymgqysQX/51a-TWtn7y-IL.jpg"
+],
+description: "Pure cotton comfort for everyday charm.",
+price: "₹350",
+affiliateLink: "https://link.amazon/B0euys0QR"
 },
 {
-    id: "SHREE-P52",
-    name: "Oversized T Shirt",
-    images: [
-        "https://i.ibb.co/BVYYS0GF/Screenshot-20260824-084912-Amazon.jpg"
-    ],
-    description: "Comfortable oversized T-shirt with a relaxed fit, perfect for casual everyday outfits.",
-    price: "₹299",
-    affiliateLink: "https://link.amazon/B03jnJNvb"
+id: "SHREE-P05",
+name: "Stylish Rayon Kurti",
+images: [
+"https://i.ibb.co/gMDwmbGV/1785093583121.png",
+"https://i.ibb.co/hxsfnKBb/41k2nx-SDuj-L.jpg",
+"https://i.ibb.co/35BLDZpK/41-Kwm-R40-Ie-L.jpg",
+"https://i.ibb.co/k6v6bjMJ/31-LSSt6-LOPL.jpg"
+],
+description: "Chic rayon fabric with a cozy look.",
+price: "₹493",
+affiliateLink: "https://link.amazon/B0imlLnhy"
 },
 {
-    id: "SHREE-P53",
-    name: "Men's Cotton Shirt",
-    images: [
-        "https://i.ibb.co/vRwMg87/Screenshot-20260824-085049-Amazon.jpg"
-    ],
-    description: "Comfortable men's cotton shirt suitable for casual and everyday wear.",
-    price: "₹349",
-    affiliateLink: "https://link.amazon/B04ySeDJr"
+id: "SHREE-P06",
+name: "Women Track Pant & Joggers",
+images: [
+"https://i.ibb.co/5x60w8Y3/1785094243573.png",
+"https://i.ibb.co/Zz7884sh/41-Tpv-R-rtr-L.jpg",
+"https://i.ibb.co/VcKB5dZy/41-THr-ZWl-Du-L.jpg"
+],
+description: "Soft & relaxed fit for ultimate comfort.",
+price: "₹447",
+affiliateLink: "https://link.amazon/B00IxoJVj"
 },
 {
-    id: "SHREE-P54",
-    name: "Men's Kurta T Shirt",
-    images: [
-        "https://i.ibb.co/LdhP3Tzk/Screenshot-20260824-085406-Amazon.jpg"
-    ],
-    description: "Stylish men's kurta-style T-shirt combining traditional inspiration with a casual modern look.",
-    price: "₹495",
-    affiliateLink: "https://link.amazon/B03UuMFE8"
+id: "SHREE-P07",
+name: "Soft women jumpsuit",
+images: [
+"https://i.ibb.co/sJdmPks0/1785101387939.png",
+"https://i.ibb.co/XrxHtg5n/21-QVGc-DPm-BL.jpg",
+"https://i.ibb.co/VY3d26sb/31-Izp-EW8p5-L.jpg",
+"https://i.ibb.co/k2ZXvgZW/41x-Tvv-Zr-FYL.jpg",
+"https://i.ibb.co/xS6DGTSF/1785102466197.png",
+"https://i.ibb.co/J4Y0qDw/41-Uj-AILXY9-L.jpg",
+"https://i.ibb.co/Jjz2GfF8/51a-HMQAq4-IL.jpg"
+],
+description: "Effortless style for your everyday look.",
+price: "₹599",
+affiliateLink: "https://link.amazon/B04bk8KS5"
 },
 {
-    id: "SHREE-P55",
-    name: "Men's Denim Jeans",
-    images: [
-        "https://i.ibb.co/zVbM6yy2/Screenshot-20260824-085601-Amazon.jpg"
-    ],
-    description: "Classic men's denim jeans designed for comfortable everyday styling.",
-    price: "₹799",
-    affiliateLink: "https://link.amazon/B03Vp99Cb"
+id: "SHREE-P08",
+name: "White Sport Shoes",
+images: [
+"https://i.ibb.co/svKY8B16/1785101991538-1.png",
+"https://i.ibb.co/r2kPfdWQ/31-Bb-YMa83z-L.jpg",
+"https://i.ibb.co/d4LyNZBf/41-Czqx-Qegi-L.jpg",
+"https://i.ibb.co/wrBgtRC8/51h-TUwthfq-L.jpg",
+"https://i.ibb.co/DFMGBgg/41-RLhoc-Ibi-L.jpg",
+"https://i.ibb.co/XkdPmHGb/31-TXKSTqs-QL.jpg"
+],
+description: "Clean design for comfortable daily steps.",
+price: "₹1049",
+affiliateLink: "https://link.amazon/B0jbcDF27"
 },
 {
-    id: "SHREE-P56",
-    name: "Men's Cargo Jeans",
-    images: [
-        "https://i.ibb.co/JRM9Jp4w/Screenshot-20260824-085654-Amazon.jpg"
-    ],
-    description: "Casual men's cargo jeans with a practical and versatile everyday style.",
-    price: "₹949",
-    affiliateLink: "https://link.amazon/B0c5Hefs2"
+id: "SHREE-P09",
+name: "Casual Shirt Unisex",
+images: [
+"https://i.ibb.co/XZK9LHM0/1785127671691.png",
+"https://i.ibb.co/GQWCpd6Q/31u-Ui-Qc-Hh-L.jpg",
+"https://i.ibb.co/SX5kB1bZ/41-PEPBvj-9-L.jpg"
+],
+description: "Relaxed fit with cozy vibe.",
+price: "₹499",
+affiliateLink: "https://link.amazon/B0iNHgBP6"
 },
 {
-    id: "SHREE-P57",
-    name: "Healthy Seeds",
-    images: [
-        "https://i.ibb.co/gZGWcqNJ/Screenshot-20260824-085825-Amazon.jpg"
-    ],
-    description: "A convenient selection of healthy seeds suitable for adding to everyday meals and snacks.",
-    price: "₹249",
-    affiliateLink: "https://link.amazon/B07EJvXMp"
+id: "SHREE-P10",
+name: "Cotton Cargo Pant",
+images: [
+"https://i.ibb.co/cX2fDqFm/1785129521622.png",
+"https://i.ibb.co/VYpDcCP4/314-S9n-Iwn8-L.jpg",
+"https://i.ibb.co/qM4Lyfd7/31a6-Cq1x-JLL.jpg",
+"https://i.ibb.co/fzQ6JmD6/31-F6-VWE9b-TL.jpg",
+"https://i.ibb.co/bgc06j6z/31-Nn-MZ1jml-L.jpg",
+"https://i.ibb.co/d4VvMHxq/31f-Wvr-I9-SBL.jpg"
+],
+description: "Durable & stylish for a relaxed fit.",
+price: "₹669",
+affiliateLink: "https://link.amazon/B05lyNyvM"
 },
 {
-    id: "SHREE-P58",
-    name: "Girl's Lip Gloss",
-    images: [
-        "https://i.ibb.co/394rRDCJ/Screenshot-20260824-090059-Amazon.jpg"
-    ],
-    description: "Glossy lip product with a fun and stylish look.",
-    price: "₹110",
-    affiliateLink: "https://link.amazon/B0hkQaKgj"
+id: "SHREE-P11",
+name: "Pink Women Dress",
+images: [
+"https://i.ibb.co/2Y8PVjL2/IMG-20260728-WA0008.jpg",
+"https://i.ibb.co/VYqJCb82/41-Rgisw-Lh3-L.jpg",
+"https://i.ibb.co/gLZMKqgR/51ya-LPKXn-ML.jpg",
+"https://i.ibb.co/PsFcdKsj/51-Su-Ty8s-Xu-L.jpg",
+"https://i.ibb.co/Y7CPZfS3/511y9ot-Xnt-L.jpg"
+],
+description: "Pretty style for cute day-out vibes.",
+price: "₹366",
+affiliateLink: "https://link.amazon/B0cGZssCZ"
 },
 {
-    id: "SHREE-P59",
-    name: "Girl's Cozy Handbag",
-    images: [
-        "https://i.ibb.co/0yTbqF5M/Screenshot-20260824-090402-Amazon.jpg"
-    ],
-    description: "Cute and stylish handbag designed to complement everyday outfits.",
-    price: "₹1549",
-    affiliateLink: "https://link.amazon/B06XZaCza"
+id: "SHREE-P12",
+name: "Cotten Western Dress",
+images: [
+"https://i.ibb.co/QjvLj4qD/41-qb-ZZ19-NL.jpg",
+"https://i.ibb.co/qYyNQFSk/41-HJg-I60-Xn-L.jpg",
+"https://i.ibb.co/3mq6MRy4/31hcsn-SRZ0-L.jpg",
+"https://i.ibb.co/99TWbsF6/31-HCXie-CBy-L.jpg",
+"https://i.ibb.co/mFdtY6sT/31va-Z4yq-Is-L.jpg",
+"https://i.ibb.co/ym5gc76t/31-lau3a-MRL.jpg",
+"https://i.ibb.co/DHNGCRqg/31-CBb0b-Z9-DL.jpg",
+"https://i.ibb.co/gFf7pRf2/31-Dpi-Ra-d-FL.jpg"
+],
+description: "Chic cotton style for everyday elegance.",
+price: "₹599",
+affiliateLink: "https://link.amazon/B06AZrl4C"
 },
 {
-    id: "SHREE-P60",
-    name: "Handbag for Girls",
-    images: [
-        "https://i.ibb.co/twwzPVx6/Screenshot-20260824-090528-Amazon.jpg"
-    ],
-    description: "Stylish girls' handbag with a versatile design for everyday use.",
-    price: "₹1599",
-    affiliateLink: "https://link.amazon/B0bAC03On"
+id: "SHREE-P13",
+name: "Party Essential Dress",
+images: [
+"https://i.ibb.co/zVs3RqDt/IMG-20260728-WA0010.jpg",
+"https://i.ibb.co/Jj1BWjGB/31-6-WQzkv-ML.jpg",
+"https://i.ibb.co/jZrpfKDf/31ic-X30i-W3-L.jpg",
+"https://i.ibb.co/5xvpw2B9/31nvh-Ju-RR9-L.jpg",
+"https://i.ibb.co/6RSqMZrP/31h-Vxj2d-Zu-L.jpg",
+"https://i.ibb.co/9HJTD06J/41-EUgnaa-3-L.jpg"
+],
+description: "Stunning outfit for special evenings.",
+price: "₹699",
+affiliateLink: "https://link.amazon/B0b2ePn37"
 },
 {
-    id: "SHREE-P61",
-    name: "Girl's Cozy Headband",
-    images: [
-        "https://i.ibb.co/wN3V1phD/Screenshot-20260824-090701-Amazon.jpg"
-    ],
-    description: "Cute and comfortable headband designed to add a stylish touch to everyday looks.",
-    price: "₹399",
-    affiliateLink: "https://link.amazon/B0dK2bSJu"
+id: "SHREE-P14",
+name: "Stylish Stone Earrings",
+images: [
+"https://i.ibb.co/xSW2pS2H/IMG-20260729-WA0000.jpg",
+"https://i.ibb.co/PvfRRdfs/41jr-KCEa5-CL.jpg",
+"https://i.ibb.co/5WbxjrRm/41e8k-XYBQHL.jpg",
+"https://i.ibb.co/938RgY5q/31vr-RBZT0y-L.jpg"
+],
+description: "Gorgeous stone earrings for everyday look.",
+price: "₹249",
+affiliateLink: "https://link.amazon/B02wulj6X"
 },
 {
-    id: "SHREE-P62",
-    name: "Aesthetic Earbuds",
-    images: [
-        "https://i.ibb.co/qFrtP1Yy/51-Fxekpc-CLL.jpg",
-        "https://i.ibb.co/CXWcz0x/41-QHN3emlo-L.jpg",
-        "https://i.ibb.co/Kcd6rcHQ/51-Ej7loc-HHL.jpg",
-        "https://i.ibb.co/SDWtPVsV/51-SJmt-Oe-Uq-L.jpg",
-        "https://i.ibb.co/QFk5hB9h/41ph-XOy4-E1-L.jpg",
-        "https://i.ibb.co/cXvKzFhd/51-Eu-Pif-SQw-L.jpg",
-        "https://i.ibb.co/PvzYLxyw/41t-VFc1b-WUL.jpg",
-        "https://i.ibb.co/v6rLhkqB/41-Q19-Sv-GLKL.jpg"
-    ],
-    description: "Premium aesthetic design with crystal-clear audio and deep bass. Comfortable fit for all-day seamless listening.",
-    price: "₹2654",
-    affiliateLink: "https://link.amazon/B00QAKfOx"
+id: "SHREE-P15",
+name: "Collared Maxi Dress",
+images: [
+"https://i.ibb.co/gZ4VDY1D/IMG-20260731-WA0015.jpg",
+"https://i.ibb.co/5WNZ26BX/41huck-Bb0a-L.jpg",
+"https://i.ibb.co/j9ZJ8sP5/31uavg0-H8-L.jpg",
+"https://i.ibb.co/SXNYstH9/41-ggitmo-IL.jpg",
+"https://i.ibb.co/F4WBnQQf/41y-GJ3dq-Yi-L.jpg"
+],
+description: "Elegant maxi look for effortless style.",
+price: "₹649",
+affiliateLink: "https://link.amazon/B08cj0dBv"
 },
 {
-    id: "SHREE-P63",
-    name: "Portonics Earbuds",
-    images: [
-        "https://i.ibb.co/v60V8bt1/416f-Wi3-IZYL.jpg",
-        "https://i.ibb.co/rGPcCgFH/51-Pi-TZl-PREL.jpg",
-        "https://i.ibb.co/F4K5h6gX/41j-Gj-Ifn-PTL.jpg",
-        "https://i.ibb.co/Df06GS9f/31hodnx5m-GL.jpg",
-        "https://i.ibb.co/Df6vJzLK/41-Nsmr-Ityl-L.jpg"
-    ],
-    description: "Compact wireless earbuds delivering punchy sound and quick pairing. Perfect companion for daily workouts and calls.",
-    price: "₹739",
-    affiliateLink: "https://link.amazon/B04vQ3hSe"
+id: "SHREE-P16",
+name: "Women's Kurta Set",
+images: [
+"https://i.ibb.co/rKwvBt5F/IMG-20260731-WA0016.jpg",
+"https://i.ibb.co/wFCqfMdX/317-Wk-Os-C7d-L.jpg",
+"https://i.ibb.co/B5VLy9Nh/31-Ty-Pk-BS7v-L.jpg",
+"https://i.ibb.co/pB3VcVSf/31yho5ku5-OL.jpg"
+],
+description: "Graceful ethnic wear for festive vibes.",
+price: "₹849",
+affiliateLink: "https://link.amazon/B0azuTnbG"
 },
 {
-    id: "SHREE-P64",
-    name: "Ptron Earbuds",
-    images: [
-        "https://i.ibb.co/23FSHLqm/41-Sz0i-U5-WFL.jpg",
-        "https://i.ibb.co/LVC40WY/41-P-xw-Ggv0-L.jpg",
-        "https://i.ibb.co/DH3jWxfn/411-ZZZZJ1i-L.jpg",
-        "https://i.ibb.co/mF5tNQt0/41-E0-t-U7j2-L.jpg",
-        "https://i.ibb.co/gLDMLnCt/310-Kg-SWNo5-L.jpg",
-        "https://i.ibb.co/67PNHnnF/41-R8-P4-J3p-EL.jpg"
-    ],
-    description: "Ultra-lightweight earbuds with HD stereo sound and stable connectivity. Features smart touch controls for effortless access.",
-    price: "₹649",
-    affiliateLink: "https://link.amazon/B06O0cnJ6"
+id: "SHREE-P17",
+name: "Dori Belt Dress",
+images: [
+"https://i.ibb.co/Xf97w9J8/IMG-20260731-WA0017.jpg",
+"https://i.ibb.co/bgRyTWyF/41l8-GNZzx-L-SX679.jpg",
+"https://i.ibb.co/cc3YYDWT/51fz19oe25-L-SX342-SY445-QL70-ML2.jpg",
+"https://i.ibb.co/FLCN883M/41-NKdx1v-WL-SX679.jpg"
+],
+description: "Flattering silhouette with a cozy feel.",
+price: "₹395",
+affiliateLink: "https://link.amazon/B0ihODMZg"
 },
 {
-    id: "SHREE-P65",
-    name: "Ptrons Earbuds",
-    images: [
-        "https://i.ibb.co/wr7jRHLf/41582-HCr9-ZL.jpg",
-        "https://i.ibb.co/3YQLPrnG/41-Bi0-Ms-Ss1-L.jpg",
-        "https://i.ibb.co/K1FF8H6/41z-Fv6z-L4-LL.jpg",
-        "https://i.ibb.co/yFw0y7Bb/41n-Ae-Hg7xd-L.jpg",
-        "https://i.ibb.co/GvwThfTh/414na-BUkp-VL.jpg",
-        "https://i.ibb.co/4nNtkF95/31-UNcf0-Fo-L.jpg",
-        "https://i.ibb.co/rR5X4C4Z/31-Hz-CZe-Xwq-L.jpg"
-    ],
-    description: "Ergonomic in-ear design with powerful bass and long battery backup. Ideal for music lovers on a budget.",
-    price: "₹599",
-    affiliateLink: "https://link.amazon/B097Hs1lX"
+id: "SHREE-P18",
+name: "Ethnic Flats Sandals ( white )",
+images: [
+"https://i.ibb.co/k2pTX42m/IMG-20260731-WA0018.jpg",
+"https://i.ibb.co/7tbdp74M/41bobbs-H-WL.jpg",
+"https://i.ibb.co/Fb6GZV55/41ne1o-B89q-L.jpg",
+"https://i.ibb.co/vx5ry9gK/410q-IZ4a83-L.jpg"
+],
+description: "Elegant white flats for daily outfits.",
+price: "₹379",
+affiliateLink: "https://link.amazon/B0f9lsLHq"
 },
 {
-    id: "SHREE-P66",
-    name: "Ptron Earbuds",
-    images: [
-        "https://i.ibb.co/LhNK9rqK/41am-W8a-P8g-L.jpg",
-        "https://i.ibb.co/p6LJFp4q/41-V6-c-A3-HL.jpg",
-        "https://i.ibb.co/PG8NtRR4/21nf-YTSe0-ML.jpg"
-    ],
-    description: "Sleek wireless earbuds engineered for rich vocals and low-latency gaming. Comes with a pocket-friendly charging case.",
-    price: "₹699",
-    affiliateLink: "https://link.amazon/B095OQSm1"
+id: "SHREE-P19",
+name: "Ethnic Flats Sandals ( pink )",
+images: [
+"https://i.ibb.co/wrW92md6/IMG-20260731-WA0019.jpg",
+"https://i.ibb.co/bg6bwy8z/41l-Xi0f2-v-L.jpg",
+"https://i.ibb.co/VW8nzpmD/51af-UQPYu-VL.jpg",
+"https://i.ibb.co/WNRMB3rn/41-Vu-J2-ZGl-TL.jpg"
+],
+description: "Charming pink flats for comfortable wear.",
+price: "₹399",
+affiliateLink: "https://link.amazon/B0gAGmj6s"
 },
 {
-    id: "SHREE-P67",
-    name: "Noise Buds N1",
-    images: [
-        "https://i.ibb.co/vx2X28zk/41pcya-RY-l-L.jpg",
-        "https://i.ibb.co/tTQ93gY3/41ee-FYKk5t-L.jpg",
-        "https://i.ibb.co/fdyWX2Y7/51rj-Fmtd5v-L.jpg",
-        "https://i.ibb.co/RGTpqXw1/41tu-RRHx-CL.jpg",
-        "https://i.ibb.co/HT4xDvNP/31-Mms-THz2-LL.jpg"
-    ],
-    description: "Modern chrome finish buds with ultra-low latency and dynamic sound drivers. Built for clear calling and nonstop entertainment.",
-    price: "₹999",
-    affiliateLink: "https://link.amazon/B0j3ojog4"
+id: "SHREE-P20",
+name: "Asthetic Shoulder Handbag",
+images: [
+"https://i.ibb.co/0RPQYncn/IMG-20260731-WA0020.jpg",
+"https://i.ibb.co/5gCYMmKw/31-ZFnfv-OTw-L.jpg",
+"https://i.ibb.co/7xrx4Bv9/31-MXhgx-C0-GL.jpg",
+"https://i.ibb.co/FkdSTwc5/31s6-Pe-But-TL.jpg",
+"https://i.ibb.co/tw5CKcj4/31-ER2-SVb-Fq-L.jpg",
+"https://i.ibb.co/xSGjWLcp/21-Un8-Y3-Dsr-L.jpg"
+],
+description: "Chic bag to carry essentials in style.",
+price: "₹329",
+affiliateLink: "https://link.amazon/B03j07UFq"
 },
 {
-    id: "SHREE-P68",
-    name: "Sony Headphones",
-    images: [
-        "https://i.ibb.co/0Rx40tFm/41a46d-xqz-L.jpg",
-        "https://i.ibb.co/4n7qRvgK/41l5g-PW6-TUL.jpg",
-        "https://i.ibb.co/chgK6NfH/31s-YPw8qzb-L.jpg"
-    ],
-    description: "High-resolution studio acoustics paired with superior active noise cancellation. Ultra-cushioned earcups ensure premium comfort.",
-    price: "₹9879",
-    affiliateLink: "https://link.amazon/B07byJbmD"
+id: "SHREE-P21",
+name: "Ethnic Elegance Kurti",
+images: [
+"https://i.ibb.co/5hXcftJW/IMG-20260731-WA0023.jpg",
+"https://i.ibb.co/xSvrNq8k/IMG-20260731-WA0022.jpg",
+"https://i.ibb.co/HQWTc1x/414-Iu-PSmej-L.jpg",
+"https://i.ibb.co/KxJXZccm/41p5c-Zu-IAXL.jpg",
+"https://i.ibb.co/1YVYBnqG/41d4-CC7-Xk0-L.jpg",
+"https://i.ibb.co/XxqqTRqF/41hrh-Zp-Pj-JL.jpg"
+],
+description: "Intricate detailing for a refined look.",
+price: "₹799",
+affiliateLink: "https://link.amazon/B06lRViYN"
 },
 {
-    id: "SHREE-P69",
-    name: "Boat Earphones",
-    images: [
-        "https://i.ibb.co/yBF4xPkt/41x-ANVHKNa-L.jpg",
-        "https://i.ibb.co/MxyGLGdd/41-Hb-UP3i-P5-L.jpg",
-        "https://i.ibb.co/VY5VLL8M/313-U7-Xx9b4-L.jpg",
-        "https://i.ibb.co/Gfs3ncC2/41tyzj-ic-WL.jpg"
-    ],
-    description: "Signature boat bass with a tangle-free cable and built-in microphone. Sturdy, reliable, and made for daily rough use.",
-    price: "₹399",
-    affiliateLink: "https://link.amazon/B01jWUOVV"
+id: "SHREE-P22",
+name: "Cozy Pillows",
+images: ["https://i.ibb.co/0ysFS841/IMG-20260811-WA0000.jpg"],
+description: "Soft and aesthetic cozy pillow to upgrade your room vibe and comfort.",
+price: "₹664"
 },
 {
-    id: "SHREE-P70",
-    name: "Noise Headphones",
-    images: [
-        "https://i.ibb.co/Hf2C5d1f/31-SRz85wv3-L.jpg",
-        "https://i.ibb.co/994VSQQg/31-CDbwwzx-JL.jpg",
-        "https://i.ibb.co/7NCVVsSw/41-Fxvg-Kbd-L.jpg",
-        "https://i.ibb.co/KxdZFM61/41-EZx-Irxt4-L.jpg",
-        "https://i.ibb.co/RkjYVL6g/41-HDj1tny-L.jpg",
-        "https://i.ibb.co/Nd1h4hHh/31-B4pj7j7-ZL.jpg"
-    ],
-    description: "Over-ear wireless headphones offering immersive sound and active noise cancellation. Massive battery life for long journeys.",
-    price: "₹4999",
-    affiliateLink: "https://link.amazon/B0dyxuMpn"
+id: "SHREE-P23",
+name: "Women's Sleeveless kurti",
+images: [
+"https://i.ibb.co/gLzrNv59/cf99bfbb5899656f7c3623bf90dc20dd.jpg",
+"https://i.ibb.co/gFX1Jbtb/61cl-OCC9-Lq-L-SX679.jpg",
+"https://i.ibb.co/tTpsrNqh/61ls-S-u-ZKn-L-SX679.jpg"
+],
+description: "Chic and stylish sleeveless kurti designed for effortless everyday ethnic elegance and comfort.",
+price: "₹999",
+affiliateLink: "https://link.amazon/B08nTCaC8"
 },
 {
-    id: "SHREE-P71",
-    name: "Noise Buds",
-    images: [
-        "https://i.ibb.co/5h97XwYc/41-ZQBz-TJxt-L.jpg",
-        "https://i.ibb.co/bMFBbShh/51-R2-CXDFt-ML.jpg",
-        "https://i.ibb.co/W4QBKrdk/419-L0a0-TCCL.jpg",
-        "https://i.ibb.co/7NGLFPbs/41-Xp-Mb0-VUn-L.jpg",
-        "https://i.ibb.co/8DtCFRbm/31-Rf-JSay-Si-L.jpg"
-    ],
-    description: "True wireless earbuds offering crisp acoustics and environmental noise cancellation. Fast charging support keeps you going.",
-    price: "₹1299",
-    affiliateLink: "https://link.amazon/B08GoYNrS"
+id: "SHREE-P24",
+name: "Women's Sleeveless kurti",
+images: [
+"https://i.ibb.co/TB89Dh0T/f4a8af5325e019e96aeb3c1b7d907e92.jpg",
+"https://i.ibb.co/wrW7jfdJ/71-Z8-QAHVi-WL-SX679.jpg",
+"https://i.ibb.co/CSMhmMg/61-NOk-JH59j-L-SX679.jpg",
+"https://i.ibb.co/cX3RwK13/51g-Tth2tv-GL-SY879.jpg"
+],
+description: "Trendy sleeveless kurti featuring premium fabric for a gorgeous summer ethnic look and relaxed feel.",
+price: "₹999",
+affiliateLink: "https://www.amazon.in/dp/B0H2Q174S8"
 },
 {
-    id: "SHREE-P72",
-    name: "Boat Airdopes",
-    images: [
-        "https://i.ibb.co/7x53mGZz/41-HGp8-Zy-Jf-L.jpg",
-        "https://i.ibb.co/XR7MtCD/41-VMT50-Io8-L.jpg",
-        "https://i.ibb.co/TBD0RgsP/41-Mg-Ib9-AAg-L.jpg",
-        "https://i.ibb.co/6cnmttxn/41v-Vo-ECl6-TL.jpg",
-        "https://i.ibb.co/bjGkg2rb/415t-Tcu-Irg-L.jpg"
-    ],
-    description: "Insta Wake N’ Pair technology with thumping bass and water resistance. Stylish pocket case with extended playtime.",
-    price: "₹899",
-    affiliateLink: "https://link.amazon/B0cwwBDCo"
+id: "SHREE-P25",
+name: "Women's Shirt",
+images: ["https://i.ibb.co/yFfkRt7p/IMG-20260818-WA0003.jpg"],
+description: "Smart and casual women's shirt tailored for a clean, everyday modern outfit and comfortable fit.",
+price: "₹449",
+affiliateLink: "https://link.amazon/B0gPAuGGh"
 },
 {
-    id: "SHREE-P73",
-    name: "Heart Shape Earbuds",
-    images: [
-        "https://i.ibb.co/twWrcYNx/Screenshot-20260904-135853-Amazon.jpg"
-    ],
-    description: "Unique heart-shaped aesthetic earbuds that combine cute fashion with punchy audio. A standout accessory and perfect gift.",
-    price: "₹999",
-    affiliateLink: "https://link.amazon/B0bgBWnN8"
+id: "SHREE-P26",
+name: "Aesthetic Men's Shirt",
+images: [
+"https://i.ibb.co/hJWvCF2b/IMG-20260818-WA0002.jpg",
+"https://i.ibb.co/hhkkbRn/31g04b5-KEIL.jpg",
+"https://i.ibb.co/3YWCVCZD/310-Web-JS-UL.jpg",
+"https://i.ibb.co/zWGpfSvk/41m-L4-M3cq-L.jpg",
+"https://i.ibb.co/RTfys6fg/41-Ef-Lijok-NL.jpg"
+],
+description: "Aesthetic men's shirt offering a cool textured look, sharp styling, and ultimate daily comfort.",
+price: "₹499",
+affiliateLink: "https://link.amazon/B0bxp0L1q"
 },
 {
-    id: "SHREE-P74",
-    name: "Noide Buds VS102",
-    images: [
-        "https://i.ibb.co/xK04P45V/Screenshot-20260904-140421-Chrome.jpg"
-    ],
-    description: "Flybird design with rich bass and clear hands-free calling. Ergonomic fit tailored for non-stop daily music.",
-    price: "₹1499",
-    affiliateLink: "https://link.amazon/B0flCSAfi"
-},
-    {
-        id: "SHREE-P75",
-        name: "Aura Earbuds",
-        images: [
-            "https://i.ibb.co/DftMvmQs/517t-Ls-Z0-GTL.jpg",
-            "https://i.ibb.co/rV9RGRC/418-KOHl-T1-UL.jpg",
-            "https://i.ibb.co/V0XP28gy/41y-TR5-CRq4-L.jpg"
-        ],
-        description: "Futuristic transparent case design delivering crisp trebles and balanced bass. Ultra-fast Bluetooth sync with touch controls.",
-        price: "₹699",
-        affiliateLink: "https://link.amazon/B0j576UVY"
-    },
-    {
-        id: "SHREE-P76",
-        name: "Wired headphones",
-        images: [
-            "https://i.ibb.co/CK31SHpm/31-FVtqh-aj-L.jpg",
-            "https://i.ibb.co/NcvRqKH/41u-H7-Des-Yl-L.jpg",
-            "https://i.ibb.co/NgtJjWK2/51xvu2w-Fr1-L.jpg",
-            "https://i.ibb.co/vCkLbbk2/41gel-Fgpyl-L.jpg",
-            "https://i.ibb.co/vCkLbbk2/41gel-Fgpyl-L.jpg"
-        ],
-        description: "Classic on-ear headphones with soft cushioned ear pads and zero audio lag. Reliable wired connectivity for studio and desk setups.",
-        price: "₹1499",
-        affiliateLink: "https://link.amazon/B05KcrWJC"
-    },
-    {
-        id: "SHREE-P77",
-        name: "Cute Earbuds",
-        images: [
-            "https://i.ibb.co/m5gV6T9C/31-ZE6j-PRkk-L.jpg",
-            "https://i.ibb.co/JwDTGfbr/419-O3i-C-lx-L.jpg"
-        ],
-        description: "Charming pastel-toned design packed with rich audio performance. Compact, lightweight, and super comfortable in ears.",
-        price: "₹1999",
-        affiliateLink: "https://link.amazon/B09RqaZsz"
-    },
-    {
-        id: "SHREE-P78",
-        name: "Casual Shoes",
-        images: [
-            "https://i.ibb.co/ymBmKcV7/31-F1-Lmt-Nd7-L.jpg",
-            "https://i.ibb.co/xwb5NyT/414-XW9t-7r-L.jpg",
-            "https://i.ibb.co/1tdw8m6B/4183m61-Zhe-L.jpg"
-        ],
-        description: "Versatile everyday shoes with a breathable upper and cushioned insole. Perfect for college, casual outings, or daily walks.",
-        price: "₹659",
-        affiliateLink: "https://link.amazon/B05kNgNxU"
-    },
-    {
-        id: "SHREE-P79",
-        name: "Running Shoes",
-        images: [
-            "https://i.ibb.co/QvZyHxTV/Screenshot-20260904-143004-Chrome.jpg"
-        ],
-        description: "Lightweight running sneakers featuring responsive sole cushioning. Engineered for maximum grip and effortless morning jogs.",
-        price: "₹499",
-        affiliateLink: "https://link.amazon/B0aLQjGDa"
-    },
-    {
-        id: "SHREE-P80",
-        name: "Men's Sneakers",
-        images: [
-            "https://i.ibb.co/21xpB5n3/Screenshot-20260904-143134-Amazon.jpg"
-        ],
-        description: "Trendy street-style sneakers designed with durable soles and flexible upper. Elevates any casual denim look instantly.",
-        price: "₹799",
-        affiliateLink: "https://link.amazon/B0aINqqmN"
-    },
-    {
-        id: "SHREE-P81",
-        name: "Stylish Sneakers",
-        images: [
-            "https://i.ibb.co/zHFFyMVn/Screenshot-20260904-143249-Amazon.jpg"
-        ],
-        description: "Eye-catching contemporary sneaker silhouette with anti-skid traction. Blends sporty comfort with bold fashion effortlessly.",
-        price: "₹849",
-        affiliateLink: "https://link.amazon/B04XvH3F5"
-    },
-    {
-        id: "SHREE-P82",
-        name: "Cozy Sneakers",
-        images: [
-            "https://i.ibb.co/N29s1DHK/Screenshot-20260904-143414-Amazon.jpg"
-        ],
-        description: "Extra soft footbed sneakers ensuring cloud-like comfort all day. Modern minimalist profile that pairs with anything.",
-        price: "₹999",
-        affiliateLink: "https://link.amazon/B0iRhMcOx"
-    },
-    {
-        id: "SHREE-P83",
-        name: "Casual Sneakers",
-        images: [
-            "https://i.ibb.co/d0FgkLBc/Screenshot-20260904-143605-Amazon.jpg"
-        ],
-        description: "Classic lace-up sneakers offering a snug fit and solid ground grip. Durable construction ready for daily travel.",
-        price: "₹750",
-        affiliateLink: "https://link.amazon/B0gfObRYf"
-    },
-    {
-        id: "SHREE-P84",
-        name: "Casual Sneakers",
-        images: [
-            "https://i.ibb.co/60tDz5Hh/Screenshot-20260904-143749-Amazon.jpg"
-        ],
-        description: "Budget-friendly lightweight sneakers crafted with breathable mesh. Keeps your feet cool and relaxed through long days.",
-        price: "₹549",
-        affiliateLink: "https://link.amazon/B08UlKpHl"
-    },
-    {
-        id: "SHREE-P85",
-        name: "Asthetic Sneakers",
-        images: [
-            "https://i.ibb.co/YTyr7xd7/Screenshot-20260904-143933-Amazon.jpg"
-        ],
-        description: "Clean aesthetic profile with contrasting accents and durable rubber outsole. An absolute wardrobe essential for youth.",
-        price: "₹479",
-        affiliateLink: "https://link.amazon/B0f41waHk"
-    },
-    {
-        id: "SHREE-P86",
-        name: "Cozy Sneakers",
-        images: [
-            "https://i.ibb.co/ns0jXX4g/Screenshot-20260904-144115-Amazon.jpg",
-            "https://i.ibb.co/LdvzX92x/Screenshot-20260904-144103-Amazon.jpg"
-        ],
-        description: "Premium comfort footwear engineered with high-rebound cushioning. Delivers luxury walking feel and sturdy durability.",
-        price: "₹2599",
-        affiliateLink: "https://link.amazon/B02EMw7FE"
-    },
-    {
-        id: "SHREE-P87",
-        name: "Men's Sneakers",
-        images: [
-            "https://i.ibb.co/QvN9b7cH/Screenshot-20260904-144258-Amazon.jpg"
-        ],
-        description: "Sleek low-top sneakers built with sturdy canvas and flexible rubber base. Great value for daily commuting and college wear.",
-        price: "₹449",
-        affiliateLink: "https://link.amazon/B0bUzWtIl"
-    },
-    {
-        id: "SHREE-P88",
-        name: "Running Shoes",
-        images: [
-            "https://i.ibb.co/LXX2VXFQ/Screenshot-20260904-144439-Amazon.jpg",
-            "https://i.ibb.co/qM3pkk4D/Screenshot-20260904-144454-Amazon.jpg"
-        ],
-        description: "Athletic running trainers equipped with shock-absorbing soles. Keeps your feet energized through intense workouts.",
-        price: "₹599",
-        affiliateLink: "https://link.amazon/B01aasp0L"
-    },
-    {
-        id: "SHREE-P89",
-        name: "Stylish Shoes",
-        images: [
-            "https://i.ibb.co/m5vfnHtz/Screenshot-20260904-144640-Amazon.jpg"
-        ],
-        description: "Fashion-forward footwear with sharp detailing and supportive arch fit. Enhances your casual evening outings in style.",
-        price: "₹629",
-        affiliateLink: "https://link.amazon/B0aQ7Cnav"
-    },
-    {
-        id: "SHREE-P90",
-        name: "Cozy Sneakers",
-        images: [
-            "https://i.ibb.co/Fqw5pdwM/Screenshot-20260904-144848-Amazon.jpg",
-            "https://i.ibb.co/ZR2jMB5H/Screenshot-20260904-144822-Amazon.jpg"
-        ],
-        description: "Padded insole sneakers designed to reduce foot fatigue during extended wear. Simple, stylish, and highly comfortable.",
-        price: "₹499",
-        affiliateLink: "https://link.amazon/B05SRi8lt"
-    },
-    {
-        id: "SHREE-P91",
-        name: "Cozy Sneakers",
-        images: [
-            "https://i.ibb.co/0pMZ9Xxy/Screenshot-20260904-145027-Amazon.jpg",
-            "https://i.ibb.co/nM6PBQdV/Screenshot-20260904-145015-Amazon.jpg"
-        ],
-        description: "Everyday comfort sneakers with slip-resistant soles and soft inner lining. Reliable pick for routine outdoor walks.",
-        price: "₹449",
-        affiliateLink: "https://link.amazon/B09FW5XY3"
-    },
-    {
-        id: "SHREE-P92",
-        name: "Men's Sneakers",
-        images: [
-            "https://i.ibb.co/4Zdw5WSy/Screenshot-20260904-145225-Amazon.jpg"
-        ],
-        description: "Bold sneaker silhouette made with high-grade synthetic leather finish. Offers premium looks and exceptional durability.",
-        price: "₹999",
-        affiliateLink: "https://link.amazon/B01o7s2xl"
-    },
-    {
-        id: "SHREE-P93",
-        name: "Bata's Sneakers",
-        images: [
-            "https://i.ibb.co/4gsxc1Qc/Screenshot-20260904-145323-Amazon.jpg"
-        ],
-        description: "Trusted Bata craftsmanship offering long-lasting build and ergonomic support. Clean design suited for smart-casual wear.",
-        price: "₹1469",
-        affiliateLink: "https://link.amazon/B0bnmCgkE"
-    },
-    {
-        id: "SHREE-P94",
-        name: "Men's Shoe",
-        images: [
-            "https://i.ibb.co/P8C2jcb/Screenshot-20260904-145442-Amazon.jpg"
-        ],
-        description: "Smart semi-formal shoes crafted with durable stitching and cushioned base. Matches seamlessly with trousers and chinos.",
-        price: "₹709",
-        affiliateLink: "https://link.amazon/B05IFC5kF"
-    },
-    {
-        id: "SHREE-P95",
-        name: "Men's Formal Shoe",
-        images: [
-            "https://i.ibb.co/NnLf8cb9/Screenshot-20260904-145654-Amazon.jpg"
-        ],
-        description: "Polished formal derby shoes designed for office meetings and formal occasions. Offers an elegant look with non-slip sole.",
-        price: "₹769",
-        affiliateLink: "https://link.amazon/B05KoYwkI"
-    },
-    {
-        id: "SHREE-P96",
-        name: "Men's Shoes",
-        images: [
-            "https://i.ibb.co/qvbxP6N/Screenshot-20260904-145811-Amazon.jpg"
-        ],
-        description: "Versatile men's lifestyle shoes featuring a balanced sole and comfortable fit. Designed for active and daily lifestyles.",
-        price: "₹849",
-        affiliateLink: "https://link.amazon/B0aAk5VBh"
-    },
-    {
-        id: "SHREE-P97",
-        name: "Casual Sneakers",
-        images: [
-            "https://i.ibb.co/NdMwPxQt/Screenshot-20260904-145922-Amazon.jpg"
-        ],
-        description: "Urban street sneakers featuring reinforced toe caps and flexible soles. A solid everyday addition to your shoe rack.",
-        price: "₹749",
-        affiliateLink: "https://link.amazon/B0aGrHjnt"
-    },
-    {
-        id: "SHREE-P98",
-        name: "Casual Sneakers",
-        images: [
-            "https://i.ibb.co/n8Pqr6Dn/Screenshot-20260904-150059-Amazon.jpg"
-        ],
-        description: "Modern two-tone sneakers delivering maximum airflow and all-day ease. Perfect choice for casual weekend hangouts.",
-        price: "₹759",
-        affiliateLink: "https://link.amazon/B0ggVxyvG"
-    },
-    {
-        id: "SHREE-P99",
-        name: "Gold Plated Earrings",
-        images: [
-            "https://i.ibb.co/Xxc9KT94/Screenshot-20260904-150309-Amazon.jpg"
-        ],
-        description: "Intricately designed gold-plated earrings featuring high shine and elegance. Ideal for festive functions and weddings.",
-        price: "₹614",
-        affiliateLink: "https://link.amazon/B0dIQtNAz"
-    },
-    {
-        id: "SHREE-P100",
-        name: "Kashmiri Earrings",
-        images: [
-            "https://i.ibb.co/Gv1Vt6BV/Screenshot-20260904-150535-Amazon.jpg"
-        ],
-        description: "Traditional Kashmiri style drop earrings with exquisite ethnic detailing. Adds a timeless grace to ethnic outfits.",
-        price: "₹614",
-        affiliateLink: "https://link.amazon/B0dwWSkpv"
-    },
-    {
-        id: "SHREE-P101",
-        name: "Anarkali Kurta",
-        images: [
-            "https://i.ibb.co/chfLPzyN/Screenshot-20260904-150722-Amazon.jpg"
-        ],
-        description: "Graceful flowing Anarkali kurta crafted from breathable lightweight fabric. Features delicate patterns for family celebrations.",
-        price: "₹799",
-        affiliateLink: "https://link.amazon/B0eQp7IfX"
-    },
-    {
-        id: "SHREE-P102",
-        name: "Kurti With Pant",
-        images: [
-            "https://i.ibb.co/vCjHKHLs/Screenshot-20260904-150931-Amazon.jpg"
-        ],
-        description: "Chic coordinated kurti and pant set designed for modern ethnic comfort. Perfect for office wear or festive gatherings.",
-        price: "₹1799",
-        affiliateLink: "https://link.amazon/B0hcvuSBW"
-    },
-    {
-        id: "SHREE-P103",
-        name: "Anarkali Kurta",
-        images: [
-            "https://i.ibb.co/zjQdqhz/Screenshot-20260904-151054-Amazon.jpg"
-        ],
-        description: "Flared silhouette Anarkali embellished with traditional floral motifs. Offers a regal ethnic touch with effortless drape.",
-        price: "₹1271",
-        affiliateLink: "https://link.amazon/B09o4ZkKw"
-    },
-    {
-        id: "SHREE-P104",
-        name: "Kurta Plazzo",
-        images: [
-            "https://i.ibb.co/VptDj9cb/Screenshot-20260904-151233-Amazon.jpg"
-        ],
-        description: "Relaxed-fit kurta paired with wide-leg palazzo pants. Soft, airy cotton blend fabric for unmatched daily comfort.",
-        price: "₹698",
-        affiliateLink: "https://link.amazon/B04C5JtUM"
-    },
-    {
-        id: "SHREE-P105",
-        name: "Floral Kurta Set",
-        images: [
-            "https://i.ibb.co/s9kXmxXk/Screenshot-20260904-151407-Amazon.jpg"
-        ],
-        description: "Bright and vibrant floral print ethnic kurta set with fine borders. A refreshing pick for daytime events and pooja functions.",
-        price: "₹949",
-        affiliateLink: "https://link.amazon/B05OIfRax"
-    },
-    {
-        id: "SHREE-P106",
-        name: "Women's Dress",
-        images: [
-            "https://i.ibb.co/BK5Q8d3g/Screenshot-20260904-151806-Amazon.jpg"
-        ],
-        description: "Contemporary Western dress tailored with a flattering cut and comfortable drape. Easy to style for brunch or dinner dates.",
-        price: "₹699",
-        affiliateLink: "https://link.amazon/B04KCSO3g"
-    },
-    {
-        id: "SHREE-P107",
-        name: "Women's Cozy Sneakers",
-        images: [
-            "https://i.ibb.co/xKQdLRZJ/Screenshot-20260904-151931-Amazon.jpg"
-        ],
-        description: "Ultra-cushioned sneakers made specifically for female foot contours. Featherlight build ensuring fatigue-free steps all day.",
-        price: "₹1627",
-        affiliateLink: "https://link.amazon/B09jLLqXu"
-    },
-    {
-        id: "SHREE-P108",
-        name: "Women's Sleepers",
-        images: [
-            "https://i.ibb.co/MmxzqGp/Screenshot-20260904-152057-Amazon.jpg"
-        ],
-        description: "Soft anti-skid indoor and outdoor slippers with durable foot straps. Lightweight daily comfort for home use.",
-        price: "₹499",
-        affiliateLink: "https://link.amazon/B08A4wfl1"
-    },
-    {
-        id: "SHREE-P109",
-        name: "Showpiece Motor Bike",
-        images: [
-            "https://i.ibb.co/rfzm8wgx/Screenshot-20260904-152239-Amazon.jpg"
-        ],
-        description: "Handcrafted miniature motorbike decor item with vintage metallic finish. Eye-catching collectible for desks and bookshelves.",
-        price: "₹445",
-        affiliateLink: "https://link.amazon/B01jM6hs7"
-    },
-    {
-        id: "SHREE-P110",
-        name: "Showpiece Elephant",
-        images: [
-            "https://i.ibb.co/Y4cYSdV6/Screenshot-20260904-152435-Amazon.jpg",
-            "https://i.ibb.co/7xh0jFx5/Screenshot-20260904-152446-Amazon.jpg"
-        ],
-        description: "Artistic handcrafted elephant figurine symbolizing prosperity and elegance. Enhances home entryway or living room decor.",
-        price: "₹1499",
-        affiliateLink: "https://link.amazon/B08mjL1sM"
-    },
-    {
-        id: "SHREE-P111",
-        name: "Balaji Showpiece",
-        images: [
-            "https://i.ibb.co/5x1jxS15/Screenshot-20260904-152726-Amazon.jpg",
-            "https://i.ibb.co/5g62srZk/Screenshot-20260904-152738-Amazon.jpg"
-        ],
-        description: "Spiritual Lord Balaji idol detailed with intricate carving and divine finish. Ideal for home temple or gifting on auspicious occasions.",
-        price: "₹1199",
-        affiliateLink: "https://link.amazon/B095bAnc7"
-    },
-    {
-        id: "SHREE-P112",
-        name: "Helicopter Dispenser",
-        images: [
-            "https://i.ibb.co/fY0L1DKS/Screenshot-20260904-152936-Amazon.jpg",
-            "https://i.ibb.co/1tWQwdxq/Screenshot-20260904-153030-Amazon.jpg"
-        ],
-        description: "Novelty helicopter-shaped dispenser featuring an automatic fun design. A creative functional accent piece for any desk.",
-        price: "₹481",
-        affiliateLink: "https://link.amazon/B0evPmNUt"
-    },
-    {
-    id: "SHREE-P113",
-    name: "Car Perfume",
-    images: [
-        "https://i.ibb.co/wZDLTym6/Screenshot-20260913-183819-Amazon.jpg"
-    ],
-    description: "A stylish car perfume for a fresh and pleasant drive.",
-    price: "₹777",
-    affiliateLink: "https://link.amazon/B0f2hpVTi"
+id: "SHREE-P27",
+name: "Cozy Coffee Mug",
+images: [
+"https://i.ibb.co/BHVCWnRs/51at-Qk-MHWn-L.jpg",
+"https://i.ibb.co/fdqNrbhw/41-Fn0-Zk3-Pj-L.jpg",
+"https://i.ibb.co/j96PhCbC/41yp-cs09-LL.jpg",
+"https://i.ibb.co/svH5dTBy/41sos-UKym-CL.jpg",
+"https://i.ibb.co/MDkmMPYC/51-Dc-ETyp1-RL.jpg"
+],
+description: "Aesthetic and cozy coffee mug designed to elevate your daily coffee or tea ritual with style.",
+price: "₹599",
+affiliateLink: "https://link.amazon/B0gdIN5BJ"
 },
 {
-    id: "SHREE-P114",
-    name: "Hanuman Idol",
-    images: [
-        "https://i.ibb.co/JwG7yF7m/Screenshot-20260913-184054-Amazon.jpg"
-    ],
-    description: "A beautiful Hanuman idol for your home or pooja space.",
-    price: "₹599",
-    affiliateLink: "https://link.amazon/B0hwLWIKq"
+id: "SHREE-P28",
+name: "Couple's Coffee Mug",
+images: [
+"https://i.ibb.co/WNz1z5SZ/41-Tw9-QE9-Gx-L.jpg",
+"https://i.ibb.co/xK2V5n6d/41v8-Ip-S1c-KL.jpg",
+"https://i.ibb.co/xKR6cxbY/41-Ir1-Xj-Zlt-L.jpg"
+],
+description: "Charming couple's coffee mug set designed for sharing special moments and cozy mornings.",
+price: "₹785",
+affiliateLink: "https://link.amazon/B0iCbOcSf"
 },
 {
-    id: "SHREE-P115",
-    name: "Buddha Idol",
-    images: [
-        "https://i.ibb.co/4nqDcJ3t/Screenshot-20260913-184433-Amazon.jpg"
-    ],
-    description: "A peaceful Buddha idol for a calm and aesthetic space.",
-    price: "₹370",
-    affiliateLink: "https://link.amazon/B0eNz9A58"
+id: "SHREE-P29",
+name: "Cute Little Bottle",
+images: [
+"https://i.ibb.co/qL8ZY0gN/41cp-G18-D61-L.jpg",
+"https://i.ibb.co/bMd4SJ6y/41f-F-Yb-qf-L.jpg",
+"https://i.ibb.co/FkBfJJX6/51y-Cq-E9-B9q-L.jpg"
+],
+description: "Compact, portable, and super cute little bottle designed for easy everyday use.",
+price: "₹199",
+affiliateLink: "https://link.amazon/B0cW1GBms"
 },
 {
-    id: "SHREE-P116",
-    name: "Buddha Monk Idol",
-    images: [
-        "https://i.ibb.co/j9nhx5Kx/Screenshot-20260913-184709-Amazon.jpg"
-    ],
-    description: "A serene Buddha monk idol for peaceful home decor.",
-    price: "₹429",
-    affiliateLink: "https://link.amazon/B03Ztzp3o"
+id: "SHREE-P30",
+name: "Cozy Alarm Clock",
+images: [
+"https://i.ibb.co/PZNxcym4/41u-OKdfod-OL.jpg",
+"https://i.ibb.co/hF4Yw1pS/41-Bu6-PYLmx-L.jpg",
+"https://i.ibb.co/vvhhVyn1/41e0-Ydh-WAe-L.jpg",
+"https://i.ibb.co/93Yj4CtM/41c3-B4-CDf1-L.jpg",
+"https://i.ibb.co/fdysMjNn/418-Ur-R-t-AEL.jpg"
+],
+description: "Charming cozy alarm clock featuring a classic design to brighten up your desk or bedroom decor.",
+price: "₹496",
+affiliateLink: "https://link.amazon/B00blXMZQ"
 },
 {
-    id: "SHREE-P117",
-    name: "4 Panda Idols",
-    images: [
-        "https://i.ibb.co/S4tSjh71/Screenshot-20260913-184850-Amazon.jpg"
-    ],
-    description: "Cute panda idols to add a playful touch to your decor.",
-    price: "₹331",
-    affiliateLink: "https://link.amazon/B0h3v9cWX"
+id: "SHREE-P31",
+name: "Earrings for Women",
+images: [
+"https://i.ibb.co/67JY61bs/41xo-HRQuit-L.jpg",
+"https://i.ibb.co/R4HjyPHv/41ig6x6d-f-L.jpg",
+"https://i.ibb.co/zHfrX7Qb/41z-Pc5y5-EWL.jpg"
+],
+description: "Gorgeous women's earrings offering a chic and graceful finish to complement any look.",
+price: "₹607",
+affiliateLink: "https://link.amazon/B0ddOwAXC"
 },
 {
-    id: "SHREE-P118",
-    name: "6 Cat Idols",
-    images: [
-        "https://i.ibb.co/NgwTksNg/Screenshot-20260913-185122-Amazon.jpg"
-    ],
-    description: "Adorable cat idols for cute and charming home decor.",
-    price: "₹299",
-    affiliateLink: "https://link.amazon/B06qElUdf"
+id: "SHREE-P32",
+name: "Ethnic Girls Earrings",
+images: [
+"https://i.ibb.co/gb3X5S4r/41z-EZh-CDr-FL.jpg",
+"https://i.ibb.co/5gnvMr5p/51u-L5-Hyiqb-L.jpg",
+"https://i.ibb.co/DHSVmdvg/41-JCn-NATqm-L.jpg"
+],
+description: "Beautiful ethnic earrings designed with fine details to make your traditional style stand out.",
+price: "₹339",
+affiliateLink: "https://link.amazon/B07WFU2nt"
 },
 {
-    id: "SHREE-P119",
-    name: "Kurta with Palazzos",
-    images: [
-        "https://i.ibb.co/HskcxvQ/Screenshot-20260913-185349-Amazon.jpg"
-    ],
-    description: "A stylish kurta and palazzo set for an elegant everyday look.",
-    price: "₹818",
-    affiliateLink: "https://link.amazon/B0fA4PNrr"
+id: "SHREE-P33",
+name: "Wall's Photo Frame",
+images: [
+"https://i.ibb.co/TxRMcqwL/51-B-XFe-Vsp-L.jpg",
+"https://i.ibb.co/p6vn31TN/51-WQ0-s-Li-L.jpg",
+"https://i.ibb.co/Fknp4BrQ/51lj-3-OY1y-L.jpg",
+"https://i.ibb.co/fzB579xf/51-Pwa-Bzeo-QL.jpg"
+],
+description: "Stylish photo frame designed to decorate your walls and showcase your best moments.",
+price: "₹238",
+affiliateLink: "https://link.amazon/B09HPpj0T"
 },
 {
-    id: "SHREE-P120",
-    name: "Women's Salwar Suit",
-    images: [
-        "https://i.ibb.co/Gv7TwvyW/Screenshot-20260913-185954-Amazon.jpg"
-    ],
-    description: "A graceful women's salwar suit for a stylish ethnic look.",
-    price: "₹749",
-    affiliateLink: "https://link.amazon/B01xBuxn3"
+id: "SHREE-P34",
+name: "Wooden wall frame",
+images: [
+"https://i.ibb.co/q3rHHVRr/41gbn-z1-IYL.jpg",
+"https://i.ibb.co/Fb4P53zC/41z-KTRok7b-L.jpg",
+"https://i.ibb.co/F9XCN4X/516-O56-FNi2-L.jpg"
+],
+description: "Premium wooden wall frame tailored to give a classic aesthetic look to your home walls.",
+price: "₹228",
+affiliateLink: "https://link.amazon/B05jDTQrp"
 },
 {
-    id: "SHREE-P121",
-    name: "Women's Kurta Pant",
-    images: [
-        "https://i.ibb.co/xKgG2697/Screenshot-20260913-190154-Amazon.jpg"
-    ],
-    description: "A chic kurta pant set for a comfortable ethnic look.",
-    price: "₹599",
-    affiliateLink: "https://link.amazon/B05TLEtbE"
+id: "SHREE-P35",
+name: "Deer Wall Lamp",
+images: [
+"https://i.ibb.co/QFRtmwnj/41-Mo-YPw-SXSL.jpg",
+"https://i.ibb.co/WWx8j5XY/41xo-EBw1-Ng-L.jpg"
+],
+description: "Creative deer wall lamp that serves as both a stylish decor piece and soft ambient light.",
+price: "₹399",
+affiliateLink: "https://link.amazon/B08rXsYkq"
 },
 {
-    id: "SHREE-P122",
-    name: "Women's Kurta Pant",
-    images: [
-        "https://i.ibb.co/BVbmrv0L/Screenshot-20260913-190621-Amazon.jpg"
-    ],
-    description: "A stylish kurta pant set perfect for effortless everyday fashion.",
-    price: "₹959",
-    affiliateLink: "https://link.amazon/B0iD36EqV"
+id: "SHREE-P36",
+name: "Decoration Solar Lights",
+images: [
+"https://i.ibb.co/HfFBwnCZ/41bf-S948-S7-L.jpg",
+"https://i.ibb.co/pBv13XD0/41cnak-IHz-OL.jpg",
+"https://i.ibb.co/fdr2QMrs/41a-Nz-TLh8-KL.jpg",
+"https://i.ibb.co/FqzXnNrn/51v9-Cen-FGu-L.jpg",
+"https://i.ibb.co/23cw92nY/51i-k6-X5c-HL.jpg"
+],
+description: "Beautiful decoration solar lights that add a magical glow to your balcony, garden, or room.",
+price: "₹399",
+affiliateLink: "https://link.amazon/B0ebcKcxE"
 },
 {
-    id: "SHREE-P123",
-    name: "Cozy Water Bottle",
-    images: [
-        "https://i.ibb.co/vx0zp5Mt/Screenshot-20260913-190809-Amazon.jpg"
-    ],
-    description: "A cozy and stylish water bottle for everyday use.",
-    price: "₹1599",
-    affiliateLink: "https://link.amazon/B0gZ7gGkb"
+id: "SHREE-P37",
+name: "Apple Wrist Watch",
+images: [
+"https://i.ibb.co/gFrsLkGN/41-KQAyl-Cgr-L.jpg",
+"https://i.ibb.co/gLmMzC7Y/414c6h-T-7x-L.jpg",
+"https://i.ibb.co/1Y4p14yM/51x-Mysnfy-L.jpg",
+"https://i.ibb.co/pjz3D55w/419ia-W6-SNQL.jpg"
+],
+description: "Feature-packed Apple style wrist watch offering a seamless digital experience and sleek look.",
+price: "₹599",
+affiliateLink: "https://link.amazon/B0iR3W1VO"
 },
 {
-    id: "SHREE-P124",
-    name: "2 Cozy Bottles",
-    images: [
-        "https://i.ibb.co/pvmxmWQq/Screenshot-20260913-191001-Amazon.jpg",
-        "https://i.ibb.co/C3cxyK92/Screenshot-20260913-191018-Amazon.jpg",
-        "https://i.ibb.co/jvKdpjrQ/Screenshot-20260913-191037-Amazon.jpg"
-    ],
-    description: "Two cute and cozy bottles for everyday hydration.",
-    price: "₹280",
-    affiliateLink: "https://link.amazon/B0da4X7m8"
+id: "SHREE-P38",
+name: "Women's Heel Sandal",
+images: [
+"https://i.ibb.co/7dCnYDmq/41f-T0d0xig-L.jpg",
+"https://i.ibb.co/Y7KtyLvM/31-Zg-X-k-A5-L.jpg",
+"https://i.ibb.co/xKCTVHGd/41y-QOe-XMpw-L.jpg"
+],
+description: "Elegant heel sandals designed to give you a graceful posture and comfortable everyday wear.",
+price: "₹550",
+affiliateLink: "https://link.amazon/B03TSJPPV"
 },
 {
-    id: "SHREE-P125",
-    name: "Cozy Glass Bottle",
-    images: [
-        "https://i.ibb.co/fYLwkbCK/Screenshot-20260913-191204-Amazon.jpg"
-    ],
-    description: "A cute glass bottle with a cozy aesthetic for daily use.",
-    price: "₹199",
-    affiliateLink: "https://link.amazon/B05LyChS9"
+id: "SHREE-P39",
+name: "Women Heel Sandal",
+images: [
+"https://i.ibb.co/qY4M9G9t/31jr-Lh-LI1d-L.jpg",
+"https://i.ibb.co/xKZBkF9Q/31xbmf-RY8-TL.jpg"
+],
+description: "Fashionable women's heel sandals offering a perfect blend of comfort and chic aesthetics.",
+price: "₹589",
+affiliateLink: "https://link.amazon/B06LgpKNF"
 },
 {
-    id: "SHREE-P126",
-    name: "Aesthetic Glass Bottle",
-    images: [
-        "https://i.ibb.co/Tqc49MsH/Screenshot-20260913-191401-Amazon.jpg",
-        "https://i.ibb.co/ccfPLp5S/Screenshot-20260913-191416-Amazon.jpg"
-    ],
-    description: "An aesthetic glass bottle for stylish everyday hydration.",
-    price: "₹249",
-    affiliateLink: "https://link.amazon/B0fSi7aka"
+id: "SHREE-P40",
+name: "Elegent Women's Dress",
+images: [
+"https://i.ibb.co/WNpVpt3z/41sn-Rx-M1-Z9-L.jpg",
+"https://i.ibb.co/HLMBd9vk/41-Qm-Y4-Uaz-CL.jpg",
+"https://i.ibb.co/PGwBKjMs/41-Lot91n-ZRL.jpg",
+"https://i.ibb.co/5hHcRg3b/514-Bjb2-MVx-L.jpg"
+],
+description: "Graceful women's dress featuring a flattering fit and comfortable fabric for special outings.",
+price: "₹639",
+affiliateLink: "https://link.amazon/B09GICw5m"
 },
 {
-    id: "SHREE-P127",
-    name: "Cozy Small Projector",
-    images: [
-        "https://i.ibb.co/rfv31vPH/Screenshot-20260913-191609-Amazon.jpg",
-        "https://i.ibb.co/Y7bH4C4j/Screenshot-20260913-191737-Amazon.jpg",
-        "https://i.ibb.co/HL8MQ8FX/Screenshot-20260913-191751-Amazon.jpg",
-        "https://i.ibb.co/chPwM5Df/Screenshot-20260913-191812-Amazon.jpg"
-    ],
-    description: "A compact cozy projector for creating a relaxing atmosphere.",
-    price: "₹1280",
-    affiliateLink: "https://link.amazon/B08qK7f8S"
+id: "SHREE-P41",
+name: "Kurta for Women",
+images: [
+"https://i.ibb.co/PsKqYmMw/31-IC34-Qs2n-L.jpg",
+"https://i.ibb.co/tpGt3dm4/31-B060eqo9-L.jpg",
+"https://i.ibb.co/B5S4CJNq/31r-Hi-I3xls-L.jpg"
+],
+description: "Classic ethnic kurta for women offering breathable comfort and a refined traditional look.",
+price: "₹598",
+affiliateLink: "https://link.amazon/B0cACRQgQ"
 },
 {
-    id: "SHREE-P128",
-    name: "Cozy Bunny Lamp",
-    images: [
-        "https://i.ibb.co/8gQ6zR8d/Screenshot-20260913-192039-Amazon.jpg",
-        "https://i.ibb.co/Y4MPSJYb/Screenshot-20260913-192028-Amazon.jpg",
-        "https://i.ibb.co/V18wzgt/Screenshot-20260913-192053-Amazon.jpg",
-        "https://i.ibb.co/3ygWwdF7/Screenshot-20260913-192103-Amazon.jpg"
-    ],
-    description: "A cute bunny lamp to bring a soft and cozy touch to your room.",
-    price: "₹1071",
-    affiliateLink: "https://link.amazon/B07gUZYrt"
+id: "SHREE-P42",
+name: "Cozy Desk Lamp",
+images: [
+"https://i.ibb.co/tp3MMRxy/21d-PNOG6-ANL.jpg",
+"https://i.ibb.co/Sw7Jcxgb/41-Mc96-QV4o-L.jpg",
+"https://i.ibb.co/m5YzBHb0/51-EMRcz-JAk-L.jpg",
+"https://i.ibb.co/prKhqqH6/417kpj-UEin-L.jpg",
+"https://i.ibb.co/CpyZCjNn/41h4-Nexn-Xm-L.jpg"
+],
+description: "Sleek and aesthetic cozy desk lamp designed to upgrade your study or workspace lighting.",
+price: "₹298",
+affiliateLink: "https://link.amazon/B033O2UPy"
 },
 {
-    id: "SHREE-P129",
-    name: "Cute Mirror",
-    images: [
-        "https://i.ibb.co/MxtVYwcN/Screenshot-20260913-192329-Amazon.jpg",
-        "https://i.ibb.co/fYQ0fZ67/Screenshot-20260913-192341-Amazon.jpg",
-        "https://i.ibb.co/4gKZ9bYP/Screenshot-20260913-192355-Amazon.jpg",
-        "https://i.ibb.co/cKwNNkgH/Screenshot-20260913-192408-Amazon.jpg"
-    ],
-    description: "A cute decorative mirror for your vanity or room.",
-    price: "₹347",
-    affiliateLink: "https://link.amazon/B0199BgSA"
+id: "SHREE-P43",
+name: "Cozy Alarm Clock",
+images: [
+"https://i.ibb.co/gMGC3jG3/41-N0nxo22-BL.jpg",
+"https://i.ibb.co/MxyJ1P9H/41-B2-CNv-Ubm-L.jpg",
+"https://i.ibb.co/GfbscZj6/410-Se-Iaka9-L.jpg",
+"https://i.ibb.co/JjZT7qm6/41b8-MYAv-Bs-L.jpg"
+],
+description: "Modern minimalist alarm clock that looks great on any bedside table or desk setup.",
+price: "₹377",
+affiliateLink: "https://link.amazon/B0fbsQFZ2"
 },
 {
-    id: "SHREE-P130",
-    name: "Unicorn Table Lamp",
-    images: [
-        "https://i.ibb.co/s9Ln6tVv/Screenshot-20260913-192552-Amazon.jpg",
-        "https://i.ibb.co/tT0rVkZM/Screenshot-20260913-192606-Amazon.jpg"
-    ],
-    description: "A cute unicorn table lamp for a playful room setup.",
-    price: "₹333",
-    affiliateLink: "https://link.amazon/B09wQqmBv"
+id: "SHREE-P44",
+name: "Study Table",
+images: [
+"https://i.ibb.co/xSQQLmkj/41-Necwev3x-L.jpg",
+"https://i.ibb.co/0jqSJHmb/51g-D61-Zi-t-L.jpg",
+"https://i.ibb.co/PZDZwM4g/41-Gl2q-URRSL.jpg",
+"https://i.ibb.co/DPZNprdb/51-In-Mm3dz9-L.jpg"
+],
+description: "Durable and space-saving study table perfect for students and work-from-home setups.",
+price: "₹499",
+affiliateLink: "https://link.amazon/B016sDxWZ"
 },
 {
-    id: "SHREE-P131",
-    name: "Cycle Shape Pot",
-    images: [
-        "https://i.ibb.co/GQD0Xkmq/Screenshot-20260913-192906-Amazon.jpg",
-        "https://i.ibb.co/Xx1QBDy8/Screenshot-20260913-192920-Amazon.jpg"
-    ],
-    description: "A decorative cycle-shaped pot for adding charm to your space.",
-    price: "₹299",
-    affiliateLink: "https://link.amazon/B0hGeNNhW"
+id: "SHREE-P45",
+name: "Women's Trouser",
+images: [
+"https://i.ibb.co/wb2KwcB/410s82-QDj-GL.jpg",
+"https://i.ibb.co/Y4ZB67vd/41-H-q-Nxz-Ic-L.jpg",
+"https://i.ibb.co/G4pyyhBF/41-A1t0-D50e-L.jpg"
+],
+description: "Classic women's trouser crafted for maximum comfort and an effortless smart-casual fit.",
+price: "₹698",
+affiliateLink: "https://link.amazon/B0ehnc17L"
 },
 {
-    id: "SHREE-P132",
-    name: "Najar Battu Hanger",
-    images: [
-        "https://i.ibb.co/WNgtX4W9/Screenshot-20260913-193213-Amazon.jpg",
-        "https://i.ibb.co/WNtk1Q39/Screenshot-20260913-193222-Amazon.jpg"
-    ],
-    description: "A decorative Najar Battu hanger for your home entrance or wall.",
-    price: "₹199",
-    affiliateLink: "https://link.amazon/B0dpLavsw"
+id: "SHREE-P46",
+name: "Women's Trouser",
+images: [
+"https://i.ibb.co/tMsX3VSG/41f-OIdnp-DFL.jpg",
+"https://i.ibb.co/GQMy4G09/31x-SJwj-Nfg-L.jpg",
+"https://i.ibb.co/60gPbHX7/21-Mosk-UZXL.jpg"
+],
+description: "Relaxed-fit women's trouser offering superior comfort and versatile everyday style.",
+price: "₹628",
+affiliateLink: "https://link.amazon/B0510wNYv"
 },
 {
-    id: "SHREE-P133",
-    name: "Cozy Decorative Cycle",
-    images: [
-        "https://i.ibb.co/yc4Gs6WH/Screenshot-20260913-220047-Amazon.jpg",
-        "https://i.ibb.co/hR62zD41/Screenshot-20260913-220058-Amazon.jpg"
-    ],
-    description: "A charming decorative cycle for a cozy aesthetic setup.",
-    price: "₹423",
-    affiliateLink: "https://link.amazon/B0aUytIWC"
+id: "SHREE-P47",
+name: "Women's Crop Top",
+images: [
+"https://i.ibb.co/G4P3wMcV/31-Kgyou-W5-YL.jpg",
+"https://i.ibb.co/Ld7Sd8P6/31fjq-jil-XL.jpg",
+"https://i.ibb.co/NgKJQDzx/31-mnat5-ML.jpg"
+],
+description: "Chic women's crop top offering a comfortable fit and stylish modern aesthetic.",
+price: "₹311",
+affiliateLink: "https://link.amazon/B09HelAGp"
 },
 {
-    id: "SHREE-P134",
-    name: "Polo T Shirt",
-    images: [
-        "https://i.ibb.co/hR6b540N/Screenshot-20260914-105725-Amazon.jpg",
-        "https://i.ibb.co/r8WFr06/Screenshot-20260914-105743-Amazon.jpg"
-    ],
-    description: "A stylish polo T shirt for a clean and casual look.",
-    price: "₹399",
-    affiliateLink: "https://link.amazon/B0434SkFk"
+id: "SHREE-P48",
+name: "Women's Skirt",
+images: [
+"https://i.ibb.co/Xfd1LP85/31s5ptq2-Wz-L.jpg",
+"https://i.ibb.co/998CNc9L/31d-S6g2v-Mr-L.jpg"
+],
+description: "Flowing women's skirt that brings a playful and elegant vibe to your casual wardrobe.",
+price: "₹569",
+affiliateLink: "https://link.amazon/B07Hr2TYo"
 },
 {
-    id: "SHREE-P135",
-    name: "Milton Bottle",
-    images: [
-        "https://i.ibb.co/KcY5g4ww/Screenshot-20260914-110001-Amazon.jpg",
-        "https://i.ibb.co/QFQpJFsm/Screenshot-20260914-110015-Amazon.jpg",
-        "https://i.ibb.co/1J6FPx7z/Screenshot-20260914-110024-Amazon.jpg"
-    ],
-    description: "A practical Milton bottle for everyday hydration.",
-    price: "₹2275",
-    affiliateLink: "https://link.amazon/B0aIVXEGS"
+id: "SHREE-P49",
+name: "Women's Kurti",
+images: [
+"https://i.ibb.co/yF5tMShc/41-UVQ6-Ig6u-L.jpg",
+"https://i.ibb.co/jkXpc9T4/41r-Vg-NSy-Zv-L.jpg",
+"https://i.ibb.co/4ZRSYfBj/41-SQJ5im-QBL.jpg",
+"https://i.ibb.co/M5STPf01/413j-U-Su-BSL.jpg"
+],
+description: "Comfortable and graceful women's kurti featuring classic prints for casual and festive days.",
+price: "₹589",
+affiliateLink: "https://link.amazon/B05ID83LN"
 },
-    {
-        id: "SHREE-P136",
-        name: "Noise Headphones",
-        images: [
-            "https://i.ibb.co/PvG90kZ1/Screenshot-20260914-113701-Amazon.jpg",
-            "https://i.ibb.co/Q33QZcnM/Screenshot-20260914-113721-Amazon.jpg",
-            "https://i.ibb.co/TqW1bDyn/Screenshot-20260914-113743-Amazon.jpg"
-        ],
-        description: "Premium wireless sound with punchy bass and comfort fit.",
-        price: "₹4,499",
-        affiliateLink: "https://link.amazon/B05TLAYKc"
-    },
-    {
-        id: "SHREE-P137",
-        name: "Asthetic Wall Frame",
-        images: [
-            "https://i.ibb.co/8DyDSR0h/Screenshot-20260914-114353-Amazon.jpg",
-            "https://i.ibb.co/HDCBJRPX/Screenshot-20260914-114403-Amazon.jpg"
-        ],
-        description: "Elegant wall frame piece to elevate modern room aesthetics.",
-        price: "₹899",
-        affiliateLink: "https://link.amazon/B0afENjXX"
-    },
-    {
-        id: "SHREE-P138",
-        name: "Women's Maxi Dress",
-        images: [
-            "https://i.ibb.co/3m7fWFtm/Screenshot-20260914-114528-Amazon.jpg",
-            "https://i.ibb.co/gLND7ptQ/Screenshot-20260914-114543-Amazon.jpg"
-        ],
-        description: "Flowy and breathable casual dress for everyday outings.",
-        price: "₹999",
-        affiliateLink: "https://link.amazon/B0bFTw8E0"
-    },
-    {
-        id: "SHREE-P139",
-        name: "Women's Dress",
-        images: [
-            "https://i.ibb.co/8gZcCtrj/Screenshot-20260914-114711-Amazon.jpg",
-            "https://i.ibb.co/C3dS95Kn/Screenshot-20260914-114723-Amazon.jpg"
-        ],
-        description: "Stylish everyday attire with a soft and flattering finish.",
-        price: "₹879",
-        affiliateLink: "https://link.amazon/B02IC6eip"
-    },
-    {
-        id: "SHREE-P140",
-        name: "Women's Stylish Kurti",
-        images: [
-            "https://i.ibb.co/b5ST2RJ1/Screenshot-20260914-114944-Amazon.jpg",
-            "https://i.ibb.co/jvm4c0JB/Screenshot-20260914-115000-Amazon.jpg"
-        ],
-        description: "Chic ethnic wear pairing comfort with contemporary trends.",
-        price: "₹493",
-        affiliateLink: "https://link.amazon/B04NYW7GS"
-    },
-    {
-        id: "SHREE-P141",
-        name: "Cozy Party Wear",
-        images: [
-            "https://i.ibb.co/v6v07zgp/Screenshot-20260914-115327-Amazon.jpg",
-            "https://i.ibb.co/YBVH7PDj/Screenshot-20260914-115339-Amazon.jpg"
-        ],
-        description: "Statement party outfit delivering luxury comfort and glam appeal.",
-        price: "₹7,974",
-        affiliateLink: "https://link.amazon/B00x9BmdQ"
-    },
-    {
-        id: "SHREE-P142",
-        name: "Women's Dress",
-        images: [
-            "https://i.ibb.co/XxbD3X8q/Screenshot-20260914-115510-Amazon.jpg"
-        ],
-        description: "Minimalist everyday dress offering total ease and subtle charm.",
-        price: "₹550",
-        affiliateLink: "https://link.amazon/B0dDEf5dU"
-    },
-    {
-        id: "SHREE-P143",
-        name: "Women's Pretty Dress",
-        images: [
-            "https://i.ibb.co/PZ4dg8Zs/Screenshot-20260914-115649-Amazon.jpg",
-            "https://i.ibb.co/LdG6Y91z/Screenshot-20260914-115716-Amazon.jpg"
-        ],
-        description: "Graceful silhouette crafted for special occasions and dates.",
-        price: "₹7,862",
-        affiliateLink: "https://link.amazon/B0axHR7wu"
-    },
-    {
-        id: "SHREE-P144",
-        name: "Women's Asthetic Dress",
-        images: [
-            "https://i.ibb.co/spGK9jTV/Screenshot-20260914-131308-Amazon.jpg",
-            "https://i.ibb.co/wNLP2pv0/Screenshot-20260914-131318-Amazon.jpg"
-        ],
-        description: "High-end designer cut made with ultra-premium fabric detailing.",
-        price: "₹10,658",
-        affiliateLink: "https://link.amazon/B04luQI0O"
-    },
-    {
-        id: "SHREE-P145",
-        name: "Cozy Wall Decor",
-        images: [
-            "https://i.ibb.co/27xrY4Zx/Screenshot-20260914-175631-Amazon.jpg",
-            "https://i.ibb.co/jvxZ3cVR/Screenshot-20260914-175649-Amazon.jpg",
-            "https://i.ibb.co/TDChBN72/Screenshot-20260914-175702-Amazon.jpg"
-        ],
-        description: "Warm artistic accent to create a relaxing home ambiance.",
-        price: "₹1,499",
-        affiliateLink: "https://link.amazon/B0fVMRFcz"
-    },
-    {
-        id: "SHREE-P146",
-        name: "Kids Room Kit",
-        images: [
-            "https://i.ibb.co/SDYHZs7t/Screenshot-20260914-175900-Amazon.jpg",
-            "https://i.ibb.co/k2Ydr4v1/Screenshot-20260914-175914-Amazon.jpg",
-            "https://i.ibb.co/zq4rc3B/Screenshot-20260914-175923-Amazon.jpg"
-        ],
-        description: "Fun decorative pack tailored to brighten up any child's room.",
-        price: "₹1,729",
-        affiliateLink: "https://link.amazon/B0bMwV8l1"
-    },
-    {
-        id: "SHREE-P147",
-        name: "Wooden House Decor",
-        images: [
-            "https://i.ibb.co/Xf8SFdjd/Screenshot-20260914-180057-Amazon.jpg",
-            "https://i.ibb.co/nq0g4NTQ/Screenshot-20260914-180112-Amazon.jpg",
-            "https://i.ibb.co/ymRsSjPr/Screenshot-20260914-180122-Amazon.jpg",
-            "https://i.ibb.co/Fkf62HCz/Screenshot-20260914-180142-Amazon.jpg"
-        ],
-        description: "Rustic wooden showpiece adding warmth and organic style.",
-        price: "₹429",
-        affiliateLink: "https://link.amazon/B00gnVTeS"
-    },
-    {
-        id: "SHREE-P148",
-        name: "Wall Decor",
-        images: [
-            "https://i.ibb.co/NnYYbvw6/Screenshot-20260914-180256-Amazon.jpg"
-        ],
-        description: "Versatile decorative piece suited for halls, rooms, or study corners.",
-        price: "₹770",
-        affiliateLink: "https://link.amazon/B0hP7MLdv"
-    },
-    {
-        id: "SHREE-P149",
-        name: "Tiny Ai Robot",
-        images: [
-            "https://i.ibb.co/JwFn7VBw/Screenshot-20260914-180430-Amazon.jpg",
-            "https://i.ibb.co/XZbS3gLk/Screenshot-20260914-180421-Amazon.jpg",
-            "https://i.ibb.co/4h1rNJk/Screenshot-20260914-180440-Amazon.jpg",
-            "https://i.ibb.co/SX1tFC5Y/Screenshot-20260914-180449-Amazon.jpg"
-        ],
-        description: "Compact smart desktop companion featuring interactive AI behavior.",
-        price: "₹10,600",
-        affiliateLink: "https://link.amazon/B0e3mz3N8"
-    },
-    {
-        id: "SHREE-P150",
-        name: "Baba Yoda Toy",
-        images: [
-            "https://i.ibb.co/2pwFX11/Screenshot-20260914-180734-Amazon.jpg",
-            "https://i.ibb.co/20JfDH1m/Screenshot-20260914-180725-Amazon.jpg",
-            "https://i.ibb.co/QFY0sxND/Screenshot-20260914-180753-Amazon.jpg"
-        ],
-        description: "Adorable collectible plush figure perfect for fans and kids alike.",
-        price: "₹4,499",
-        affiliateLink: "https://link.amazon/B06vI4XzB"
-    },
-    {
-        id: "SHREE-P151",
-        name: "Dog Soft Toy",
-        images: [
-            "https://i.ibb.co/gkH32qY/Screenshot-20260914-181014-Amazon.jpg",
-            "https://i.ibb.co/8nLsQgjF/Screenshot-20260914-181022-Amazon.jpg",
-            "https://i.ibb.co/Pv86gs31/Screenshot-20260914-181038-Amazon.jpg"
-        ],
-        description: "Super soft cuddly companion made with huggable, safe material.",
-        price: "₹499",
-        affiliateLink: "https://link.amazon/B0iErHl0G"
-    },
-    {
-        id: "SHREE-P152",
-        name: "Capybara Soft Toy",
-        images: [
-            "https://i.ibb.co/SwdG5JCf/Screenshot-20260914-181226-Amazon.jpg"
-        ],
-        description: "Charming plushie with a calm vibe, great for desk decor or gifting.",
-        price: "₹407",
-        affiliateLink: "https://link.amazon/B0iPhRpCy"
-    },
-    {
-        id: "SHREE-P153",
-        name: "Ai Robot Pet",
-        images: [
-            "https://i.ibb.co/tTDYV5Zv/Screenshot-20260914-181447-Amazon.jpg",
-            "https://i.ibb.co/mF0h5dzh/Screenshot-20260914-181457-Amazon.jpg",
-            "https://i.ibb.co/rRztCknm/Screenshot-20260914-181505-Amazon.jpg"
-        ],
-        description: "Lifelike smart interactive robotic buddy that responds on touch.",
-        price: "₹7,407",
-        affiliateLink: "https://link.amazon/B0eI8dA58"
-    },
-    {
-        id: "SHREE-P154",
-        name: "Ai Robot Combo",
-        images: [
-            "https://i.ibb.co/dsrLPY4Q/Screenshot-20260914-181909-Amazon.jpg",
-            "https://i.ibb.co/bgQhGhF3/Screenshot-20260914-181919-Amazon.jpg",
-            "https://i.ibb.co/RkBts21V/Screenshot-20260914-181927-Amazon.jpg",
-            "https://i.ibb.co/qMWsryRK/Screenshot-20260914-181937-Amazon.jpg",
-            "https://i.ibb.co/wZCkhCT3/Screenshot-20260914-181956-Amazon.jpg",
-            "https://i.ibb.co/CsYvh2rv/Screenshot-20260914-182008-Amazon.jpg"
-        ],
-        description: "Comprehensive robotic tech kit built for advanced play and learning.",
-        price: "₹41,939",
-        affiliateLink: "https://link.amazon/B0hGVnyD6"
-    },
-    {
-        id: "SHREE-P155",
-        name: "Robot Toy",
-        images: [
-            "https://i.ibb.co/XfjD88kZ/Screenshot-20260914-182139-Amazon.jpg",
-            "https://i.ibb.co/1YDbsz6H/Screenshot-20260914-182154-Amazon.jpg",
-            "https://i.ibb.co/V0SWWPVT/Screenshot-20260914-182203-Amazon.jpg",
-            "https://i.ibb.co/8gJHmZT4/Screenshot-20260914-182218-Amazon.jpg"
-        ],
-        description: "Engaging dynamic robot packed with lights, sounds, and motion.",
-        price: "₹7,296",
-        affiliateLink: "https://link.amazon/B08ocwyii"
-    },
-    {
-        id: "SHREE-P156",
-        name: "Storytelling Robot",
-        images: [
-            "https://i.ibb.co/rRMTybc7/Screenshot-20260914-182335-Amazon.jpg",
-            "https://i.ibb.co/Xrnn22KY/Screenshot-20260914-182348-Amazon.jpg",
-            "https://i.ibb.co/VYLWmKd2/Screenshot-20260914-182404-Amazon.jpg"
-        ],
-        description: "Educational smart toy that narrates tales and teaches through voice.",
-        price: "₹899",
-        affiliateLink: "https://link.amazon/B03AGUWve"
-    },
-    {
-        id: "SHREE-P157",
-        name: "Kids Smart Watch",
-        images: [
-            "https://i.ibb.co/9mb40Dgf/Screenshot-20260914-182551-Amazon.jpg",
-            "https://i.ibb.co/PGbY2GdX/Screenshot-20260914-182559-Amazon.jpg",
-            "https://i.ibb.co/FkGRByNt/Screenshot-20260914-182609-Amazon.jpg",
-            "https://i.ibb.co/tpyzfzWc/Screenshot-20260914-182539-Amazon.jpg"
-        ],
-        description: "Durable smartwatch packed with calling features and safety tracker.",
-        price: "₹3,149",
-        affiliateLink: "https://link.amazon/B0hqdzCZG"
-    },
-    {
-        id: "SHREE-P158",
-        name: "Kid's Smart Watch",
-        images: [
-            "https://i.ibb.co/RGn2ZcPw/Screenshot-20260914-183429-Amazon.jpg"
-        ],
-        description: "Feature-rich touch smartwatch with long battery life and games.",
-        price: "₹6,499",
-        affiliateLink: "https://link.amazon/B04gdk87H"
-    },
-    {
-        id: "SHREE-P159",
-        name: "Women's Kurti",
-        images: [
-            "https://m.media-amazon.com/images/I/612YIRZkefL._SY445_.jpg"
-        ],
-        description: "Stylish Women's Kurti designed for a comfortable fit and an easy everyday look.",
-        price: "₹499",
-        affiliateLink: "https://www.amazon.in/dp/B0HD7PCFNQ?tag=pikafinds-21"
-    },
-    {
-        id: "SHREE-P160",
-        name: "Women's Kurti",
-        images: [
-            "https://m.media-amazon.com/images/I/4160dBegarL._SY445_.jpg"
-        ],
-        description: "Stylish Women's Kurti designed for a comfortable fit and an easy everyday look.",
-        price: "₹739",
-        affiliateLink: "https://www.amazon.in/dp/B0H8PBS2GH?tag=pikafinds-21"
-    },
-    {
-        id: "SHREE-P161",
-        name: "Women's Anarkali Suit",
-        images: [
-            "https://m.media-amazon.com/images/I/714SoL6pDhL._SY445_.jpg"
-        ],
-        description: "Useful Women's Anarkali Suit with a stylish design, made for convenient everyday use.",
-        price: "₹1259",
-        affiliateLink: "https://www.amazon.in/dp/B0H4HCYQJJ?tag=pikafinds-21"
-
-    },
-    {
-        id: "SHREE-P162",
-        name: "Women's Top",
-        images: [
-            "https://m.media-amazon.com/images/I/51kQah3PHvL._SX342_.jpg"
-        ],
-        description: "Stylish Women's Top designed for a comfortable fit and an easy everyday look.",
-        price: "₹379",
-        affiliateLink: "https://www.amazon.in/dp/B0GN938PJL?tag=pikafinds-21"
-    },
-    {
-        id: "SHREE-P163",
-        name: "Women's Sandals",
-        images: [
-            "https://m.media-amazon.com/images/I/618oMavp+SL._SY395_.jpg"
-        ],
-        description: "Comfortable Women's Sandals made for everyday use with a practical and stylish look.",
-        price: "₹699",
-        affiliateLink: "https://www.amazon.in/dp/B09VFFBMTP?tag=pikafinds-21"
-    },
-    {
-        id: "SHREE-P164",
-        name: "Women's Sandals",
-        images: [
-            "https://m.media-amazon.com/images/I/61bsp91c5TL._SY395_.jpg"
-        ],
-        description: "Comfortable Women's Sandals made for everyday use with a practical and stylish look.",
-        price: "₹879",
-        affiliateLink: "https://www.amazon.in/dp/B0F3JKWQRP?tag=pikafinds-21"
-    },
-    {
-        id: "SHREE-P165",
-        name: "Women's Sandals",
-        images: [
-            "https://m.media-amazon.com/images/I/51N+RmiuOLL._SY395_.jpg"
-        ],
-        description: "Comfortable Women's Sandals made for everyday use with a practical and stylish look.",
-        price: "₹579",
-        affiliateLink: "https://www.amazon.in/dp/B0DHPJS59R?tag=pikafinds-21"
-    },
-    {
-        id: "SHREE-P166",
-        name: "Women's Sandals",
-        images: [
-            "https://m.media-amazon.com/images/I/71eKI1IHvnL._SY395_.jpg"
-        ],
-        description: "Comfortable Women's Sandals made for everyday use with a practical and stylish look.",
-        price: "₹549",
-        affiliateLink: "https://www.amazon.in/dp/B0GVJKJCJ8?tag=pikafinds-21"
-    },
-    {
-        id: "SHREE-P167",
-        name: "Women's Sandals",
-        images: [
-            "https://m.media-amazon.com/images/I/41v3hFPuHOL._SY395_.jpg"
-        ],
-        description: "Comfortable Women's Sandals made for everyday use with a practical and stylish look.",
-        price: "₹399",
-        affiliateLink: "https://www.amazon.in/dp/B0GDVLTVH7?tag=pikafinds-21"
-    },
-    {
-        id: "SHREE-P168",
-        name: "Women's Slippers",
-        images: [
-            "https://m.media-amazon.com/images/I/71CZU7iXxkL._SX395_.jpg"
-        ],
-        description: "Comfortable Women's Slippers made for everyday use with a practical and stylish look.",
-        price: "₹899",
-        affiliateLink: "https://www.amazon.in/dp/B0DQXXLSTY?tag=pikafinds-21"
-    },
-    {
-        id: "SHREE-P169",
-        name: "Women's Sandals",
-        images: [
-            "https://m.media-amazon.com/images/I/61gLRqZhTcL._SY395_.jpg"
-        ],
-        description: "Comfortable Women's Sandals made for everyday use with a practical and stylish look.",
-        price: "₹2539",
-        affiliateLink: "https://www.amazon.in/dp/B0CV4YPJ5X?tag=pikafinds-21"
-    },
-    {
-        id: "SHREE-P170",
-        name: "Women's Slippers",
-        images: [
-            "https://m.media-amazon.com/images/I/81fj891dd9L._SY395_.jpg"
-        ],
-        description: "Comfortable Women's Slippers made for everyday use with a practical and stylish look.",
-        price: "₹499",
-        affiliateLink: "https://www.amazon.in/dp/B0HG3FZ4WY?tag=pikafinds-21"
-    },
-    {
-        id: "SHREE-P171",
-        name: "Men's Track Pant",
-        images: [
-            "https://m.media-amazon.com/images/I/51NPDLXe9NL._SX342_.jpg"
-        ],
-        description: "Stylish Men's Track Pant designed for a comfortable fit and an easy everyday look.",
-        price: "₹448",
-        affiliateLink: "https://www.amazon.in/dp/B0G6F5LWJM?tag=pikafinds-21"
-    },
-    {
-        id: "SHREE-P172",
-        name: "Men's Jeans",
-        images: [
-            "https://m.media-amazon.com/images/I/61dFcpPdJkL._SY445_.jpg"
-        ],
-        description: "Useful Men's Jeans with a stylish design, made for convenient everyday use.",
-        price: "₹460",
-        affiliateLink: "https://www.amazon.in/dp/B0DWK2B887?tag=pikafinds-21"
-    },
-    {
-        id: "SHREE-P173",
-        name: "Men's Cargo Pants",
-        images: [
-            "https://m.media-amazon.com/images/I/61j9jJhrStL._SY445_.jpg"
-        ],
-        description: "Stylish Men's Cargo Pants designed for a comfortable fit and an easy everyday look.",
-        price: "₹649",
-        affiliateLink: "https://www.amazon.in/dp/B0D91WCYXJ?tag=pikafinds-21"
-    },
-    {
-        id: "SHREE-P174",
-        name: "Men's Kurta",
-        images: [
-            "https://m.media-amazon.com/images/I/61KeD8F60GL._SX342_.jpg"
-        ],
-        description: "Useful Men's Kurta with a stylish design, made for convenient everyday use.",
-        price: "₹499",
-        affiliateLink: "https://www.amazon.in/dp/B0DHL5Y64T?tag=pikafinds-21"
-    },
-    {
-        id: "SHREE-P175",
-        name: "Men's T-Shirt",
-        images: [
-            "https://m.media-amazon.com/images/I/61EE6mtxi3L._SY445_.jpg"
-        ],
-        description: "Stylish Men's T-Shirt designed for a comfortable fit and an easy everyday look.",
-        price: "₹449",
-        affiliateLink: "https://www.amazon.in/dp/B0DCRZ94XK?tag=pikafinds-21"
-    },
-    {
-        id: "SHREE-P176",
-        name: "Men's Kurta",
-        images: [
-            "https://m.media-amazon.com/images/I/71a-pM2gh-L._SY445_.jpg"
-        ],
-        description: "Useful Men's Kurta with a stylish design, made for convenient everyday use.",
-        price: "₹485",
-        affiliateLink: "https://www.amazon.in/dp/B0FGJZL9ZQ?tag=pikafinds-21"
-    },
-    {
-        id: "SHREE-P177",
-        name: "Men's Kurta",
-        images: [
-            "https://m.media-amazon.com/images/I/91d2g3IXe+L._SX342_.jpg"
-        ],
-        description: "Useful Men's Kurta with a stylish design, made for convenient everyday use.",
-        price: "₹799",
-        affiliateLink: "https://www.amazon.in/dp/B0H9F5KR7Q?tag=pikafinds-21"
-    },
-    {
-        id: "SHREE-P178",
-        name: "Men's Shirt",
-        images: [
-            "https://m.media-amazon.com/images/I/71-ese1eCpL._SY445_.jpg"
-        ],
-        description: "Stylish Men's Shirt designed for a comfortable fit and an easy everyday look.",
-        price: "₹399",
-        affiliateLink: "https://www.amazon.in/dp/B0DS8KQ12C?tag=pikafinds-21"
-    },
-    {
-        id: "SHREE-P179",
-        name: "Men's Shirt",
-        images: [
-            "https://m.media-amazon.com/images/I/71DlrLjySWL._SX342_.jpg"
-        ],
-        description: "Stylish Men's Shirt designed for a comfortable fit and an easy everyday look.",
-        price: "₹529",
-        affiliateLink: "https://www.amazon.in/dp/B0822NT5MB?tag=pikafinds-21"
-    },
-    {
-        id: "SHREE-P180",
-        name: "Men's Shirt",
-        images: [
-            "https://m.media-amazon.com/images/I/81vVzUJvi8L._SY445_.jpg"
-        ],
-        description: "Stylish Men's Shirt designed for a comfortable fit and an easy everyday look.",
-        price: "₹324",
-        affiliateLink: "https://www.amazon.in/dp/B0DJMJYNW3?tag=pikafinds-21"
-    },
-    {
-        id: "SHREE-P181",
-        name: "Women's Necklace",
-        images: [
-            "https://m.media-amazon.com/images/I/71K4r1Yd27L._SY395_.jpg"
-        ],
-        description: "Elegant Women's Necklace that adds a simple and stylish touch to your everyday look.",
-        price: "₹399",
-        affiliateLink: "https://www.amazon.in/dp/B0B2LX5NJT?tag=pikafinds-21"
-    },
-    {
-        id: "SHREE-P182",
-        name: "Women's Rangriti",
-        images: [
-            "https://m.media-amazon.com/images/I/7195Bw1tyUL._SY395_.jpg"
-        ],
-        description: "Useful Women's Rangriti with a stylish design, made for convenient everyday use.",
-        price: "₹298",
-        affiliateLink: "https://www.amazon.in/dp/B0GF1QHD5D?tag=pikafinds-21"
-    },
-    {
-        id: "SHREE-P183",
-        name: "Women's Necklace",
-        images: [
-            "https://m.media-amazon.com/images/I/71vIqsskd2L._SY395_.jpg"
-        ],
-        description: "Elegant Women's Necklace that adds a simple and stylish touch to your everyday look.",
-        price: "₹254",
-        affiliateLink: "https://www.amazon.in/dp/B0FB47SJMB?tag=pikafinds-21"
-    },
-    {
-        id: "SHREE-P184",
-        name: "Women's Necklace",
-        images: [
-            "https://m.media-amazon.com/images/I/61ezXExRqgL._SY395_.jpg"
-        ],
-        description: "Elegant Women's Necklace that adds a simple and stylish touch to your everyday look.",
-        price: "₹562",
-        affiliateLink: "https://www.amazon.in/dp/B0C4H4MYNK?tag=pikafinds-21"
-    },
-    {
-        id: "SHREE-P185",
-        name: "Women's Necklace",
-        images: [
-            "https://m.media-amazon.com/images/I/71iTon-9sQL._SY395_.jpg"
-        ],
-        description: "Elegant Women's Necklace that adds a simple and stylish touch to your everyday look.",
-        price: "₹299",
-        affiliateLink: "https://www.amazon.in/dp/B0C9T81CRV?tag=pikafinds-21"
-    },
-    {
-        id: "SHREE-P186",
-        name: "Women's Earrings",
-        images: [
-            "https://m.media-amazon.com/images/I/71RCg3ZMn2L._SY395_.jpg"
-        ],
-        description: "Elegant Women's Earrings that adds a simple and stylish touch to your everyday look.",
-        price: "₹599",
-        affiliateLink: "https://www.amazon.in/dp/B0H7QHFQ9M?tag=pikafinds-21"
-    },
-    {
-        id: "SHREE-P187",
-        name: "Women's Necklace",
-        images: [
-            "https://m.media-amazon.com/images/I/61lzyJCkTtL._SX342_.jpg"
-        ],
-        description: "Elegant Women's Necklace that adds a simple and stylish touch to your everyday look.",
-        price: "₹489",
-        affiliateLink: "https://www.amazon.in/dp/B0GHMYXDDZ?tag=pikafinds-21"
-    },
-    {
-        id: "SHREE-P188",
-        name: "Women's Necklace",
-        images: [
-            "https://m.media-amazon.com/images/I/71pFMNcYCxL._SY395_.jpg"
-        ],
-        description: "Elegant Women's Necklace that adds a simple and stylish touch to your everyday look.",
-        price: "₹406",
-        affiliateLink: "https://www.amazon.in/dp/B0FRM25DHT?tag=pikafinds-21"
-    },
-    {
-        id: "SHREE-P189",
-        name: "Necklace",
-        images: [
-            "https://m.media-amazon.com/images/I/71cqR+QU5IL._SY395_.jpg"
-        ],
-        description: "Elegant Necklace that adds a simple and stylish touch to your everyday look.",
-        price: "₹1403",
-        affiliateLink: "https://www.amazon.in/dp/B0FQ561KLS?tag=pikafinds-21"
-    },
-    {
-        id: "SHREE-P190",
-        name: "Women's Saree",
-        images: [
-            "https://m.media-amazon.com/images/I/810i0Y5lTxL._SX342_.jpg"
-        ],
-        description: "Useful Women's Saree with a stylish design, made for convenient everyday use.",
-        price: "₹949",
-        affiliateLink: "https://www.amazon.in/dp/B0FR4N4Q2P?tag=pikafinds-21"
-    },
-    {
-        id: "SHREE-P191",
-        name: "Women's Saree",
-        images: [
-            "https://m.media-amazon.com/images/I/71ub0Bc5ZML._SY445_.jpg"
-        ],
-        description: "Useful Women's Saree with a stylish design, made for convenient everyday use.",
-        price: "₹867",
-        affiliateLink: "https://www.amazon.in/dp/B0F18WLSPQ?tag=pikafinds-21"
-    },
-    {
-        id: "SHREE-P192",
-        name: "Women's Saree",
-        images: [
-            "https://m.media-amazon.com/images/I/71s1RRjyMFL._SY445_.jpg"
-        ],
-        description: "Useful Women's Saree with a stylish design, made for convenient everyday use.",
-        price: "₹1222",
-        affiliateLink: "https://www.amazon.in/dp/B0FGQ523NK?tag=pikafinds-21"
-    },
-    {
-        id: "SHREE-P193",
-        name: "Women's Saree",
-        images: [
-            "https://m.media-amazon.com/images/I/51b+ILxQN0L._SY445_.jpg"
-        ],
-        description: "Useful Women's Saree with a stylish design, made for convenient everyday use.",
-        price: "₹496",
-        affiliateLink: "https://www.amazon.in/dp/B0C1SS9T24?tag=pikafinds-21"
-    },
-    {
-        id: "SHREE-P194",
-        name: "Women's Saree",
-        images: [
-            "https://m.media-amazon.com/images/I/61KQC68AvdL._SX342_.jpg"
-        ],
-        description: "Useful Women's Saree with a stylish design, made for convenient everyday use.",
-        price: "₹799",
-        affiliateLink: "https://www.amazon.in/dp/B0GTDTJ3NV?tag=pikafinds-21"
-    },
-    {
-        id: "SHREE-P195",
-        name: "Women's Saree",
-        images: [
-            "https://m.media-amazon.com/images/I/61f9Woie4eL._SY445_.jpg"
-        ],
-        description: "Useful Women's Saree with a stylish design, made for convenient everyday use.",
-        price: "₹1299",
-        affiliateLink: "https://www.amazon.in/dp/B0F2N4LGQJ?tag=pikafinds-21"
-    },
-    {
-        id: "SHREE-P196",
-        name: "Women's Saree",
-        images: [
-            "https://m.media-amazon.com/images/I/71K6unyyZ3L._SY445_.jpg"
-        ],
-        description: "Useful Women's Saree with a stylish design, made for convenient everyday use.",
-        price: "₹849",
-        affiliateLink: "https://www.amazon.in/dp/B0H42MD89F?tag=pikafinds-21"
-    },
-    {
-        id: "SHREE-P197",
-        name: "Women's Saree",
-        images: [
-            "https://m.media-amazon.com/images/I/6182KJZBz8L._SX342_.jpg"
-        ],
-        description: "Useful Women's Saree with a stylish design, made for convenient everyday use.",
-        price: "₹379",
-        affiliateLink: "https://www.amazon.in/dp/B0CWLHP7HV?tag=pikafinds-21"
-    },
-    {
-        id: "SHREE-P198",
-        name: "Women's Saree",
-        images: [
-            "https://m.media-amazon.com/images/I/51JZlM7UdcL._SX342_.jpg"
-        ],
-        description: "Useful Women's Saree with a stylish design, made for convenient everyday use.",
-        price: "₹799",
-        affiliateLink: "https://www.amazon.in/dp/B0GTDRM1WM?tag=pikafinds-21"
-    },
-    {
-        id: "SHREE-P199",
-        name: "Women's Saree",
-        images: [
-            "https://m.media-amazon.com/images/I/71+r0Y57+LL._SY445_.jpg"
-        ],
-        description: "Useful Women's Saree with a stylish design, made for convenient everyday use.",
-        price: "₹899",
-        affiliateLink: "https://www.amazon.in/dp/B0H45TRS9G?tag=pikafinds-21"
-    },
-    {
-        id: "SHREE-P200",
-        name: "Women's Saree",
-        images: [
-            "https://m.media-amazon.com/images/I/61t5Rq80yeL._SY445_.jpg"
-        ],
-        description: "Useful Women's Saree with a stylish design, made for convenient everyday use.",
-        price: "₹496",
-        affiliateLink: "https://www.amazon.in/dp/B0C1SPQJH1?tag=pikafinds-21"
-    },
-    {
-        id: "SHREE-P201",
-        name: "Women's Saree",
-        images: [
-            "https://m.media-amazon.com/images/I/416C9pec9nL._SY445_.jpg"
-        ],
-        description: "Useful Women's Saree with a stylish design, made for convenient everyday use.",
-        price: "₹464",
-        affiliateLink: "https://www.amazon.in/dp/B0H36F89NS?tag=pikafinds-21"
-    },
-    {
-        id: "SHREE-P202",
-        name: "Women's Saree",
-        images: [
-            "https://m.media-amazon.com/images/I/71BY-7f0JkL._SX342_.jpg"
-        ],
-        description: "Useful Women's Saree with a stylish design, made for convenient everyday use.",
-        price: "₹1559",
-        affiliateLink: "https://www.amazon.in/dp/B0DZ2N9Z9M?tag=pikafinds-21"
-    },
-    {
-        id: "SHREE-P203",
-        name: "Women's Saree",
-        images: [
-            "https://m.media-amazon.com/images/I/71EEu4SCnML._SY445_.jpg"
-        ],
-        description: "Useful Women's Saree with a stylish design, made for convenient everyday use.",
-        price: "₹999",
-        affiliateLink: "https://www.amazon.in/dp/B0H3VXGLND?tag=pikafinds-21"
-    },
-    {
-        id: "SHREE-P204",
-        name: "Women's Saree",
-        images: [
-            "https://m.media-amazon.com/images/I/617CBIg+hmL._SY445_.jpg"
-        ],
-        description: "Useful Women's Saree with a stylish design, made for convenient everyday use.",
-        price: "₹1429",
-        affiliateLink: "https://www.amazon.in/dp/B0HBQF8F93?tag=pikafinds-21"
-    },
-    {
-        id: "SHREE-P205",
-        name: "Women's Saree",
-        images: [
-            "https://m.media-amazon.com/images/I/71iiClY-RxL._SY445_.jpg"
-        ],
-        description: "Useful Women's Saree with a stylish design, made for convenient everyday use.",
-        price: "₹949",
-        affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
-    }
 {
-    id: "SHREE-P206",
-    name: "Men's Jeans",
-    images: [
-        "https://m.media-amazon.com/images/I/511CVQckKIL._SY445_.jpg"
-    ],
-    description: "Useful Men's Jeans with a stylish design, made for convenient everyday use.",
-    price: "₹748",
-    affiliateLink: "https://www.amazon.in/dp/B0GRH9MQN3?tag=pikafinds-21"
+id: "SHREE-P50",
+name: "Polo T Shirt",
+images: [
+"https://i.ibb.co/LhtLmWPt/Screenshot-20260824-084520-Amazon.jpg"
+],
+description: "Classic men's polo T-shirt with a comfortable and versatile style for everyday wear.",
+price: "₹699",
+affiliateLink: "https://link.amazon/B0j3jgiqE"
 },
+{
+id: "SHREE-P51",
+name: "Polo T Shirt",
+images: [
+"https://i.ibb.co/N63q3Gs8/Screenshot-20260824-084621-Amazon.jpg"
+],
+description: "Stylish polo T-shirt designed for a comfortable and smart casual look.",
+price: "₹429",
+affiliateLink: "https://link.amazon/B0dUZZGMt"
+},
+{
+id: "SHREE-P52",
+name: "Oversized T Shirt",
+images: [
+"https://i.ibb.co/BVYYS0GF/Screenshot-20260824-084912-Amazon.jpg"
+],
+description: "Comfortable oversized T-shirt with a relaxed fit, perfect for casual everyday outfits.",
+price: "₹299",
+affiliateLink: "https://link.amazon/B03jnJNvb"
+},
+{
+id: "SHREE-P53",
+name: "Men's Cotton Shirt",
+images: [
+"https://i.ibb.co/vRwMg87/Screenshot-20260824-085049-Amazon.jpg"
+],
+description: "Comfortable men's cotton shirt suitable for casual and everyday wear.",
+price: "₹349",
+affiliateLink: "https://link.amazon/B04ySeDJr"
+},
+{
+id: "SHREE-P54",
+name: "Men's Kurta T Shirt",
+images: [
+"https://i.ibb.co/LdhP3Tzk/Screenshot-20260824-085406-Amazon.jpg"
+],
+description: "Stylish men's kurta-style T-shirt combining traditional inspiration with a casual modern look.",
+price: "₹495",
+affiliateLink: "https://link.amazon/B03UuMFE8"
+},
+{
+id: "SHREE-P55",
+name: "Men's Denim Jeans",
+images: [
+"https://i.ibb.co/zVbM6yy2/Screenshot-20260824-085601-Amazon.jpg"
+],
+description: "Classic men's denim jeans designed for comfortable everyday styling.",
+price: "₹799",
+affiliateLink: "https://link.amazon/B03Vp99Cb"
+},
+{
+id: "SHREE-P56",
+name: "Men's Cargo Jeans",
+images: [
+"https://i.ibb.co/JRM9Jp4w/Screenshot-20260824-085654-Amazon.jpg"
+],
+description: "Casual men's cargo jeans with a practical and versatile everyday style.",
+price: "₹949",
+affiliateLink: "https://link.amazon/B0c5Hefs2"
+},
+{
+id: "SHREE-P57",
+name: "Healthy Seeds",
+images: [
+"https://i.ibb.co/gZGWcqNJ/Screenshot-20260824-085825-Amazon.jpg"
+],
+description: "A convenient selection of healthy seeds suitable for adding to everyday meals and snacks.",
+price: "₹249",
+affiliateLink: "https://link.amazon/B07EJvXMp"
+},
+{
+id: "SHREE-P58",
+name: "Girl's Lip Gloss",
+images: [
+"https://i.ibb.co/394rRDCJ/Screenshot-20260824-090059-Amazon.jpg"
+],
+description: "Glossy lip product with a fun and stylish look.",
+price: "₹110",
+affiliateLink: "https://link.amazon/B0hkQaKgj"
+},
+{
+id: "SHREE-P59",
+name: "Girl's Cozy Handbag",
+images: [
+"https://i.ibb.co/0yTbqF5M/Screenshot-20260824-090402-Amazon.jpg"
+],
+description: "Cute and stylish handbag designed to complement everyday outfits.",
+price: "₹1549",
+affiliateLink: "https://link.amazon/B06XZaCza"
+},
+{
+id: "SHREE-P60",
+name: "Handbag for Girls",
+images: [
+"https://i.ibb.co/twwzPVx6/Screenshot-20260824-090528-Amazon.jpg"
+],
+description: "Stylish girls' handbag with a versatile design for everyday use.",
+price: "₹1599",
+affiliateLink: "https://link.amazon/B0bAC03On"
+},
+{
+id: "SHREE-P61",
+name: "Girl's Cozy Headband",
+images: [
+"https://i.ibb.co/wN3V1phD/Screenshot-20260824-090701-Amazon.jpg"
+],
+description: "Cute and comfortable headband designed to add a stylish touch to everyday looks.",
+price: "₹399",
+affiliateLink: "https://link.amazon/B0dK2bSJu"
+},
+{
+id: "SHREE-P62",
+name: "Aesthetic Earbuds",
+images: [
+"https://i.ibb.co/qFrtP1Yy/51-Fxekpc-CLL.jpg",
+"https://i.ibb.co/CXWcz0x/41-QHN3emlo-L.jpg",
+"https://i.ibb.co/Kcd6rcHQ/51-Ej7loc-HHL.jpg",
+"https://i.ibb.co/SDWtPVsV/51-SJmt-Oe-Uq-L.jpg",
+"https://i.ibb.co/QFk5hB9h/41ph-XOy4-E1-L.jpg",
+"https://i.ibb.co/cXvKzFhd/51-Eu-Pif-SQw-L.jpg",
+"https://i.ibb.co/PvzYLxyw/41t-VFc1b-WUL.jpg",
+"https://i.ibb.co/v6rLhkqB/41-Q19-Sv-GLKL.jpg"
+],
+description: "Premium aesthetic design with crystal-clear audio and deep bass. Comfortable fit for all-day seamless listening.",
+price: "₹2654",
+affiliateLink: "https://link.amazon/B00QAKfOx"
+},
+{
+id: "SHREE-P63",
+name: "Portonics Earbuds",
+images: [
+"https://i.ibb.co/v60V8bt1/416f-Wi3-IZYL.jpg",
+"https://i.ibb.co/rGPcCgFH/51-Pi-TZl-PREL.jpg",
+"https://i.ibb.co/F4K5h6gX/41j-Gj-Ifn-PTL.jpg",
+"https://i.ibb.co/Df06GS9f/31hodnx5m-GL.jpg",
+"https://i.ibb.co/Df6vJzLK/41-Nsmr-Ityl-L.jpg"
+],
+description: "Compact wireless earbuds delivering punchy sound and quick pairing. Perfect companion for daily workouts and calls.",
+price: "₹739",
+affiliateLink: "https://link.amazon/B04vQ3hSe"
+},
+{
+id: "SHREE-P64",
+name: "Ptron Earbuds",
+images: [
+"https://i.ibb.co/23FSHLqm/41-Sz0i-U5-WFL.jpg",
+"https://i.ibb.co/LVC40WY/41-P-xw-Ggv0-L.jpg",
+"https://i.ibb.co/DH3jWxfn/411-ZZZZJ1i-L.jpg",
+"https://i.ibb.co/mF5tNQt0/41-E0-t-U7j2-L.jpg",
+"https://i.ibb.co/gLDMLnCt/310-Kg-SWNo5-L.jpg",
+"https://i.ibb.co/67PNHnnF/41-R8-P4-J3p-EL.jpg"
+],
+description: "Ultra-lightweight earbuds with HD stereo sound and stable connectivity. Features smart touch controls for effortless access.",
+price: "₹649",
+affiliateLink: "https://link.amazon/B06O0cnJ6"
+},
+{
+id: "SHREE-P65",
+name: "Ptrons Earbuds",
+images: [
+"https://i.ibb.co/wr7jRHLf/41582-HCr9-ZL.jpg",
+"https://i.ibb.co/3YQLPrnG/41-Bi0-Ms-Ss1-L.jpg",
+"https://i.ibb.co/K1FF8H6/41z-Fv6z-L4-LL.jpg",
+"https://i.ibb.co/yFw0y7Bb/41n-Ae-Hg7xd-L.jpg",
+"https://i.ibb.co/GvwThfTh/414na-BUkp-VL.jpg",
+"https://i.ibb.co/4nNtkF95/31-UNcf0-Fo-L.jpg",
+"https://i.ibb.co/rR5X4C4Z/31-Hz-CZe-Xwq-L.jpg"
+],
+description: "Ergonomic in-ear design with powerful bass and long battery backup. Ideal for music lovers on a budget.",
+price: "₹599",
+affiliateLink: "https://link.amazon/B097Hs1lX"
+},
+{
+id: "SHREE-P66",
+name: "Ptron Earbuds",
+images: [
+"https://i.ibb.co/LhNK9rqK/41am-W8a-P8g-L.jpg",
+"https://i.ibb.co/p6LJFp4q/41-V6-c-A3-HL.jpg",
+"https://i.ibb.co/PG8NtRR4/21nf-YTSe0-ML.jpg"
+],
+description: "Sleek wireless earbuds engineered for rich vocals and low-latency gaming. Comes with a pocket-friendly charging case.",
+price: "₹699",
+affiliateLink: "https://link.amazon/B095OQSm1"
+},
+{
+id: "SHREE-P67",
+name: "Noise Buds N1",
+images: [
+"https://i.ibb.co/vx2X28zk/41pcya-RY-l-L.jpg",
+"https://i.ibb.co/tTQ93gY3/41ee-FYKk5t-L.jpg",
+"https://i.ibb.co/fdyWX2Y7/51rj-Fmtd5v-L.jpg",
+"https://i.ibb.co/RGTpqXw1/41tu-RRHx-CL.jpg",
+"https://i.ibb.co/HT4xDvNP/31-Mms-THz2-LL.jpg"
+],
+description: "Modern chrome finish buds with ultra-low latency and dynamic sound drivers. Built for clear calling and nonstop entertainment.",
+price: "₹999",
+affiliateLink: "https://link.amazon/B0j3ojog4"
+},
+{
+id: "SHREE-P68",
+name: "Sony Headphones",
+images: [
+"https://i.ibb.co/0Rx40tFm/41a46d-xqz-L.jpg",
+"https://i.ibb.co/4n7qRvgK/41l5g-PW6-TUL.jpg",
+"https://i.ibb.co/chgK6NfH/31s-YPw8qzb-L.jpg"
+],
+description: "High-resolution studio acoustics paired with superior active noise cancellation. Ultra-cushioned earcups ensure premium comfort.",
+price: "₹9879",
+affiliateLink: "https://link.amazon/B07byJbmD"
+},
+{
+id: "SHREE-P69",
+name: "Boat Earphones",
+images: [
+"https://i.ibb.co/yBF4xPkt/41x-ANVHKNa-L.jpg",
+"https://i.ibb.co/MxyGLGdd/41-Hb-UP3i-P5-L.jpg",
+"https://i.ibb.co/VY5VLL8M/313-U7-Xx9b4-L.jpg",
+"https://i.ibb.co/Gfs3ncC2/41tyzj-ic-WL.jpg"
+],
+description: "Signature boat bass with a tangle-free cable and built-in microphone. Sturdy, reliable, and made for daily rough use.",
+price: "₹399",
+affiliateLink: "https://link.amazon/B01jWUOVV"
+},
+{
+id: "SHREE-P70",
+name: "Noise Headphones",
+images: [
+"https://i.ibb.co/Hf2C5d1f/31-SRz85wv3-L.jpg",
+"https://i.ibb.co/994VSQQg/31-CDbwwzx-JL.jpg",
+"https://i.ibb.co/7NCVVsSw/41-Fxvg-Kbd-L.jpg",
+"https://i.ibb.co/KxdZFM61/41-EZx-Irxt4-L.jpg",
+"https://i.ibb.co/RkjYVL6g/41-HDj1tny-L.jpg",
+"https://i.ibb.co/Nd1h4hHh/31-B4pj7j7-ZL.jpg"
+],
+description: "Over-ear wireless headphones offering immersive sound and active noise cancellation. Massive battery life for long journeys.",
+price: "₹4999",
+affiliateLink: "https://link.amazon/B0dyxuMpn"
+},
+{
+id: "SHREE-P71",
+name: "Noise Buds",
+images: [
+"https://i.ibb.co/5h97XwYc/41-ZQBz-TJxt-L.jpg",
+"https://i.ibb.co/bMFBbShh/51-R2-CXDFt-ML.jpg",
+"https://i.ibb.co/W4QBKrdk/419-L0a0-TCCL.jpg",
+"https://i.ibb.co/7NGLFPbs/41-Xp-Mb0-VUn-L.jpg",
+"https://i.ibb.co/8DtCFRbm/31-Rf-JSay-Si-L.jpg"
+],
+description: "True wireless earbuds offering crisp acoustics and environmental noise cancellation. Fast charging support keeps you going.",
+price: "₹1299",
+affiliateLink: "https://link.amazon/B08GoYNrS"
+},
+{
+id: "SHREE-P72",
+name: "Boat Airdopes",
+images: [
+"https://i.ibb.co/7x53mGZz/41-HGp8-Zy-Jf-L.jpg",
+"https://i.ibb.co/XR7MtCD/41-VMT50-Io8-L.jpg",
+"https://i.ibb.co/TBD0RgsP/41-Mg-Ib9-AAg-L.jpg",
+"https://i.ibb.co/6cnmttxn/41v-Vo-ECl6-TL.jpg",
+"https://i.ibb.co/bjGkg2rb/415t-Tcu-Irg-L.jpg"
+],
+description: "Insta Wake N’ Pair technology with thumping bass and water resistance. Stylish pocket case with extended playtime.",
+price: "₹899",
+affiliateLink: "https://link.amazon/B0cwwBDCo"
+},
+{
+id: "SHREE-P73",
+name: "Heart Shape Earbuds",
+images: [
+"https://i.ibb.co/twWrcYNx/Screenshot-20260904-135853-Amazon.jpg"
+],
+description: "Unique heart-shaped aesthetic earbuds that combine cute fashion with punchy audio. A standout accessory and perfect gift.",
+price: "₹999",
+affiliateLink: "https://link.amazon/B0bgBWnN8"
+},
+{
+id: "SHREE-P74",
+name: "Noide Buds VS102",
+images: [
+"https://i.ibb.co/xK04P45V/Screenshot-20260904-140421-Chrome.jpg"
+],
+description: "Flybird design with rich bass and clear hands-free calling. Ergonomic fit tailored for non-stop daily music.",
+price: "₹1499",
+affiliateLink: "https://link.amazon/B0flCSAfi"
+},
+{
+id: "SHREE-P75",
+name: "Aura Earbuds",
+images: [
+"https://i.ibb.co/DftMvmQs/517t-Ls-Z0-GTL.jpg",
+"https://i.ibb.co/rV9RGRC/418-KOHl-T1-UL.jpg",
+"https://i.ibb.co/V0XP28gy/41y-TR5-CRq4-L.jpg"
+],
+description: "Futuristic transparent case design delivering crisp trebles and balanced bass. Ultra-fast Bluetooth sync with touch controls.",
+price: "₹699",
+affiliateLink: "https://link.amazon/B0j576UVY"
+},
+{
+id: "SHREE-P76",
+name: "Wired headphones",
+images: [
+"https://i.ibb.co/CK31SHpm/31-FVtqh-aj-L.jpg",
+"https://i.ibb.co/NcvRqKH/41u-H7-Des-Yl-L.jpg",
+"https://i.ibb.co/NgtJjWK2/51xvu2w-Fr1-L.jpg",
+"https://i.ibb.co/vCkLbbk2/41gel-Fgpyl-L.jpg",
+"https://i.ibb.co/vCkLbbk2/41gel-Fgpyl-L.jpg"
+],
+description: "Classic on-ear headphones with soft cushioned ear pads and zero audio lag. Reliable wired connectivity for studio and desk setups.",
+price: "₹1499",
+affiliateLink: "https://link.amazon/B05KcrWJC"
+},
+{
+id: "SHREE-P77",
+name: "Cute Earbuds",
+images: [
+"https://i.ibb.co/m5gV6T9C/31-ZE6j-PRkk-L.jpg",
+"https://i.ibb.co/JwDTGfbr/419-O3i-C-lx-L.jpg"
+],
+description: "Charming pastel-toned design packed with rich audio performance. Compact, lightweight, and super comfortable in ears.",
+price: "₹1999",
+affiliateLink: "https://link.amazon/B09RqaZsz"
+},
+{
+id: "SHREE-P78",
+name: "Casual Shoes",
+images: [
+"https://i.ibb.co/ymBmKcV7/31-F1-Lmt-Nd7-L.jpg",
+"https://i.ibb.co/xwb5NyT/414-XW9t-7r-L.jpg",
+"https://i.ibb.co/1tdw8m6B/4183m61-Zhe-L.jpg"
+],
+description: "Versatile everyday shoes with a breathable upper and cushioned insole. Perfect for college, casual outings, or daily walks.",
+price: "₹659",
+affiliateLink: "https://link.amazon/B05kNgNxU"
+},
+{
+id: "SHREE-P79",
+name: "Running Shoes",
+images: [
+"https://i.ibb.co/QvZyHxTV/Screenshot-20260904-143004-Chrome.jpg"
+],
+description: "Lightweight running sneakers featuring responsive sole cushioning. Engineered for maximum grip and effortless morning jogs.",
+price: "₹499",
+affiliateLink: "https://link.amazon/B0aLQjGDa"
+},
+{
+id: "SHREE-P80",
+name: "Men's Sneakers",
+images: [
+"https://i.ibb.co/21xpB5n3/Screenshot-20260904-143134-Amazon.jpg"
+],
+description: "Trendy street-style sneakers designed with durable soles and flexible upper. Elevates any casual denim look instantly.",
+price: "₹799",
+affiliateLink: "https://link.amazon/B0aINqqmN"
+},
+{
+id: "SHREE-P81",
+name: "Stylish Sneakers",
+images: [
+"https://i.ibb.co/zHFFyMVn/Screenshot-20260904-143249-Amazon.jpg"
+],
+description: "Eye-catching contemporary sneaker silhouette with anti-skid traction. Blends sporty comfort with bold fashion effortlessly.",
+price: "₹849",
+affiliateLink: "https://link.amazon/B04XvH3F5"
+},
+{
+id: "SHREE-P82",
+name: "Cozy Sneakers",
+images: [
+"https://i.ibb.co/N29s1DHK/Screenshot-20260904-143414-Amazon.jpg"
+],
+description: "Extra soft footbed sneakers ensuring cloud-like comfort all day. Modern minimalist profile that pairs with anything.",
+price: "₹999",
+affiliateLink: "https://link.amazon/B0iRhMcOx"
+},
+{
+id: "SHREE-P83",
+name: "Casual Sneakers",
+images: [
+"https://i.ibb.co/d0FgkLBc/Screenshot-20260904-143605-Amazon.jpg"
+],
+description: "Classic lace-up sneakers offering a snug fit and solid ground grip. Durable construction ready for daily travel.",
+price: "₹750",
+affiliateLink: "https://link.amazon/B0gfObRYf"
+},
+{
+id: "SHREE-P84",
+name: "Casual Sneakers",
+images: [
+"https://i.ibb.co/60tDz5Hh/Screenshot-20260904-143749-Amazon.jpg"
+],
+description: "Budget-friendly lightweight sneakers crafted with breathable mesh. Keeps your feet cool and relaxed through long days.",
+price: "₹549",
+affiliateLink: "https://link.amazon/B08UlKpHl"
+},
+{
+id: "SHREE-P85",
+name: "Asthetic Sneakers",
+images: [
+"https://i.ibb.co/YTyr7xd7/Screenshot-20260904-143933-Amazon.jpg"
+],
+description: "Clean aesthetic profile with contrasting accents and durable rubber outsole. An absolute wardrobe essential for youth.",
+price: "₹479",
+affiliateLink: "https://link.amazon/B0f41waHk"
+},
+{
+id: "SHREE-P86",
+name: "Cozy Sneakers",
+images: [
+"https://i.ibb.co/ns0jXX4g/Screenshot-20260904-144115-Amazon.jpg",
+"https://i.ibb.co/LdvzX92x/Screenshot-20260904-144103-Amazon.jpg"
+],
+description: "Premium comfort footwear engineered with high-rebound cushioning. Delivers luxury walking feel and sturdy durability.",
+price: "₹2599",
+affiliateLink: "https://link.amazon/B02EMw7FE"
+},
+{
+id: "SHREE-P87",
+name: "Men's Sneakers",
+images: [
+"https://i.ibb.co/QvN9b7cH/Screenshot-20260904-144258-Amazon.jpg"
+],
+description: "Sleek low-top sneakers built with sturdy canvas and flexible rubber base. Great value for daily commuting and college wear.",
+price: "₹449",
+affiliateLink: "https://link.amazon/B0bUzWtIl"
+},
+{
+id: "SHREE-P88",
+name: "Running Shoes",
+images: [
+"https://i.ibb.co/LXX2VXFQ/Screenshot-20260904-144439-Amazon.jpg",
+"https://i.ibb.co/qM3pkk4D/Screenshot-20260904-144454-Amazon.jpg"
+],
+description: "Athletic running trainers equipped with shock-absorbing soles. Keeps your feet energized through intense workouts.",
+price: "₹599",
+affiliateLink: "https://link.amazon/B01aasp0L"
+},
+{
+id: "SHREE-P89",
+name: "Stylish Shoes",
+images: [
+"https://i.ibb.co/m5vfnHtz/Screenshot-20260904-144640-Amazon.jpg"
+],
+description: "Fashion-forward footwear with sharp detailing and supportive arch fit. Enhances your casual evening outings in style.",
+price: "₹629",
+affiliateLink: "https://link.amazon/B0aQ7Cnav"
+},
+{
+id: "SHREE-P90",
+name: "Cozy Sneakers",
+images: [
+"https://i.ibb.co/Fqw5pdwM/Screenshot-20260904-144848-Amazon.jpg",
+"https://i.ibb.co/ZR2jMB5H/Screenshot-20260904-144822-Amazon.jpg"
+],
+description: "Padded insole sneakers designed to reduce foot fatigue during extended wear. Simple, stylish, and highly comfortable.",
+price: "₹499",
+affiliateLink: "https://link.amazon/B05SRi8lt"
+},
+{
+id: "SHREE-P91",
+name: "Cozy Sneakers",
+images: [
+"https://i.ibb.co/0pMZ9Xxy/Screenshot-20260904-145027-Amazon.jpg",
+"https://i.ibb.co/nM6PBQdV/Screenshot-20260904-145015-Amazon.jpg"
+],
+description: "Everyday comfort sneakers with slip-resistant soles and soft inner lining. Reliable pick for routine outdoor walks.",
+price: "₹449",
+affiliateLink: "https://link.amazon/B09FW5XY3"
+},
+{
+id: "SHREE-P92",
+name: "Men's Sneakers",
+images: [
+"https://i.ibb.co/4Zdw5WSy/Screenshot-20260904-145225-Amazon.jpg"
+],
+description: "Bold sneaker silhouette made with high-grade synthetic leather finish. Offers premium looks and exceptional durability.",
+price: "₹999",
+affiliateLink: "https://link.amazon/B01o7s2xl"
+},
+{
+id: "SHREE-P93",
+name: "Bata's Sneakers",
+images: [
+"https://i.ibb.co/4gsxc1Qc/Screenshot-20260904-145323-Amazon.jpg"
+],
+description: "Trusted Bata craftsmanship offering long-lasting build and ergonomic support. Clean design suited for smart-casual wear.",
+price: "₹1469",
+affiliateLink: "https://link.amazon/B0bnmCgkE"
+},
+{
+id: "SHREE-P94",
+name: "Men's Shoe",
+images: [
+"https://i.ibb.co/P8C2jcb/Screenshot-20260904-145442-Amazon.jpg"
+],
+description: "Smart semi-formal shoes crafted with durable stitching and cushioned base. Matches seamlessly with trousers and chinos.",
+price: "₹709",
+affiliateLink: "https://link.amazon/B05IFC5kF"
+},
+{
+id: "SHREE-P95",
+name: "Men's Formal Shoe",
+images: [
+"https://i.ibb.co/NnLf8cb9/Screenshot-20260904-145654-Amazon.jpg"
+],
+description: "Polished formal derby shoes designed for office meetings and formal occasions. Offers an elegant look with non-slip sole.",
+price: "₹769",
+affiliateLink: "https://link.amazon/B05KoYwkI"
+},
+{
+id: "SHREE-P96",
+name: "Men's Shoes",
+images: [
+"https://i.ibb.co/qvbxP6N/Screenshot-20260904-145811-Amazon.jpg"
+],
+description: "Versatile men's lifestyle shoes featuring a balanced sole and comfortable fit. Designed for active and daily lifestyles.",
+price: "₹849",
+affiliateLink: "https://link.amazon/B0aAk5VBh"
+},
+{
+id: "SHREE-P97",
+name: "Casual Sneakers",
+images: [
+"https://i.ibb.co/NdMwPxQt/Screenshot-20260904-145922-Amazon.jpg"
+],
+description: "Urban street sneakers featuring reinforced toe caps and flexible soles. A solid everyday addition to your shoe rack.",
+price: "₹749",
+affiliateLink: "https://link.amazon/B0aGrHjnt"
+},
+{
+id: "SHREE-P98",
+name: "Casual Sneakers",
+images: [
+"https://i.ibb.co/n8Pqr6Dn/Screenshot-20260904-150059-Amazon.jpg"
+],
+description: "Modern two-tone sneakers delivering maximum airflow and all-day ease. Perfect choice for casual weekend hangouts.",
+price: "₹759",
+affiliateLink: "https://link.amazon/B0ggVxyvG"
+},
+{
+id: "SHREE-P99",
+name: "Gold Plated Earrings",
+images: [
+"https://i.ibb.co/Xxc9KT94/Screenshot-20260904-150309-Amazon.jpg"
+],
+description: "Intricately designed gold-plated earrings featuring high shine and elegance. Ideal for festive functions and weddings.",
+price: "₹614",
+affiliateLink: "https://link.amazon/B0dIQtNAz"
+},
+{
+id: "SHREE-P100",
+name: "Kashmiri Earrings",
+images: [
+"https://i.ibb.co/Gv1Vt6BV/Screenshot-20260904-150535-Amazon.jpg"
+],
+description: "Traditional Kashmiri style drop earrings with exquisite ethnic detailing. Adds a timeless grace to ethnic outfits.",
+price: "₹614",
+affiliateLink: "https://link.amazon/B0dwWSkpv"
+},
+{
+id: "SHREE-P101",
+name: "Anarkali Kurta",
+images: [
+"https://i.ibb.co/chfLPzyN/Screenshot-20260904-150722-Amazon.jpg"
+],
+description: "Graceful flowing Anarkali kurta crafted from breathable lightweight fabric. Features delicate patterns for family celebrations.",
+price: "₹799",
+affiliateLink: "https://link.amazon/B0eQp7IfX"
+},
+{
+id: "SHREE-P102",
+name: "Kurti With Pant",
+images: [
+"https://i.ibb.co/vCjHKHLs/Screenshot-20260904-150931-Amazon.jpg"
+],
+description: "Chic coordinated kurti and pant set designed for modern ethnic comfort. Perfect for office wear or festive gatherings.",
+price: "₹1799",
+affiliateLink: "https://link.amazon/B0hcvuSBW"
+},
+{
+id: "SHREE-P103",
+name: "Anarkali Kurta",
+images: [
+"https://i.ibb.co/zjQdqhz/Screenshot-20260904-151054-Amazon.jpg"
+],
+description: "Flared silhouette Anarkali embellished with traditional floral motifs. Offers a regal ethnic touch with effortless drape.",
+price: "₹1271",
+affiliateLink: "https://link.amazon/B09o4ZkKw"
+},
+{
+id: "SHREE-P104",
+name: "Kurta Plazzo",
+images: [
+"https://i.ibb.co/VptDj9cb/Screenshot-20260904-151233-Amazon.jpg"
+],
+description: "Relaxed-fit kurta paired with wide-leg palazzo pants. Soft, airy cotton blend fabric for unmatched daily comfort.",
+price: "₹698",
+affiliateLink: "https://link.amazon/B04C5JtUM"
+},
+{
+id: "SHREE-P105",
+name: "Floral Kurta Set",
+images: [
+"https://i.ibb.co/s9kXmxXk/Screenshot-20260904-151407-Amazon.jpg"
+],
+description: "Bright and vibrant floral print ethnic kurta set with fine borders. A refreshing pick for daytime events and pooja functions.",
+price: "₹949",
+affiliateLink: "https://link.amazon/B05OIfRax"
+},
+{
+id: "SHREE-P106",
+name: "Women's Dress",
+images: [
+"https://i.ibb.co/BK5Q8d3g/Screenshot-20260904-151806-Amazon.jpg"
+],
+description: "Contemporary Western dress tailored with a flattering cut and comfortable drape. Easy to style for brunch or dinner dates.",
+price: "₹699",
+affiliateLink: "https://link.amazon/B04KCSO3g"
+},
+{
+id: "SHREE-P107",
+name: "Women's Cozy Sneakers",
+images: [
+"https://i.ibb.co/xKQdLRZJ/Screenshot-20260904-151931-Amazon.jpg"
+],
+description: "Ultra-cushioned sneakers made specifically for female foot contours. Featherlight build ensuring fatigue-free steps all day.",
+price: "₹1627",
+affiliateLink: "https://link.amazon/B09jLLqXu"
+},
+{
+id: "SHREE-P108",
+name: "Women's Sleepers",
+images: [
+"https://i.ibb.co/MmxzqGp/Screenshot-20260904-152057-Amazon.jpg"
+],
+description: "Soft anti-skid indoor and outdoor slippers with durable foot straps. Lightweight daily comfort for home use.",
+price: "₹499",
+affiliateLink: "https://link.amazon/B08A4wfl1"
+},
+{
+id: "SHREE-P109",
+name: "Showpiece Motor Bike",
+images: [
+"https://i.ibb.co/rfzm8wgx/Screenshot-20260904-152239-Amazon.jpg"
+],
+description: "Handcrafted miniature motorbike decor item with vintage metallic finish. Eye-catching collectible for desks and bookshelves.",
+price: "₹445",
+affiliateLink: "https://link.amazon/B01jM6hs7"
+},
+{
+id: "SHREE-P110",
+name: "Showpiece Elephant",
+images: [
+"https://i.ibb.co/Y4cYSdV6/Screenshot-20260904-152435-Amazon.jpg",
+"https://i.ibb.co/7xh0jFx5/Screenshot-20260904-152446-Amazon.jpg"
+],
+description: "Artistic handcrafted elephant figurine symbolizing prosperity and elegance. Enhances home entryway or living room decor.",
+price: "₹1499",
+affiliateLink: "https://link.amazon/B08mjL1sM"
+},
+{
+id: "SHREE-P111",
+name: "Balaji Showpiece",
+images: [
+"https://i.ibb.co/5x1jxS15/Screenshot-20260904-152726-Amazon.jpg",
+"https://i.ibb.co/5g62srZk/Screenshot-20260904-152738-Amazon.jpg"
+],
+description: "Spiritual Lord Balaji idol detailed with intricate carving and divine finish. Ideal for home temple or gifting on auspicious occasions.",
+price: "₹1199",
+affiliateLink: "https://link.amazon/B095bAnc7"
+},
+{
+id: "SHREE-P112",
+name: "Helicopter Dispenser",
+images: [
+"https://i.ibb.co/fY0L1DKS/Screenshot-20260904-152936-Amazon.jpg",
+"https://i.ibb.co/1tWQwdxq/Screenshot-20260904-153030-Amazon.jpg"
+],
+description: "Novelty helicopter-shaped dispenser featuring an automatic fun design. A creative functional accent piece for any desk.",
+price: "₹481",
+affiliateLink: "https://link.amazon/B0evPmNUt"
+},
+{
+id: "SHREE-P113",
+name: "Car Perfume",
+images: [
+"https://i.ibb.co/wZDLTym6/Screenshot-20260913-183819-Amazon.jpg"
+],
+description: "A stylish car perfume for a fresh and pleasant drive.",
+price: "₹777",
+affiliateLink: "https://link.amazon/B0f2hpVTi"
+},
+{
+id: "SHREE-P114",
+name: "Hanuman Idol",
+images: [
+"https://i.ibb.co/JwG7yF7m/Screenshot-20260913-184054-Amazon.jpg"
+],
+description: "A beautiful Hanuman idol for your home or pooja space.",
+price: "₹599",
+affiliateLink: "https://link.amazon/B0hwLWIKq"
+},
+{
+id: "SHREE-P115",
+name: "Buddha Idol",
+images: [
+"https://i.ibb.co/4nqDcJ3t/Screenshot-20260913-184433-Amazon.jpg"
+],
+description: "A peaceful Buddha idol for a calm and aesthetic space.",
+price: "₹370",
+affiliateLink: "https://link.amazon/B0eNz9A58"
+},
+{
+id: "SHREE-P116",
+name: "Buddha Monk Idol",
+images: [
+"https://i.ibb.co/j9nhx5Kx/Screenshot-20260913-184709-Amazon.jpg"
+],
+description: "A serene Buddha monk idol for peaceful home decor.",
+price: "₹429",
+affiliateLink: "https://link.amazon/B03Ztzp3o"
+},
+{
+id: "SHREE-P117",
+name: "4 Panda Idols",
+images: [
+"https://i.ibb.co/S4tSjh71/Screenshot-20260913-184850-Amazon.jpg"
+],
+description: "Cute panda idols to add a playful touch to your decor.",
+price: "₹331",
+affiliateLink: "https://link.amazon/B0h3v9cWX"
+},
+{
+id: "SHREE-P118",
+name: "6 Cat Idols",
+images: [
+"https://i.ibb.co/NgwTksNg/Screenshot-20260913-185122-Amazon.jpg"
+],
+description: "Adorable cat idols for cute and charming home decor.",
+price: "₹299",
+affiliateLink: "https://link.amazon/B06qElUdf"
+},
+{
+id: "SHREE-P119",
+name: "Kurta with Palazzos",
+images: [
+"https://i.ibb.co/HskcxvQ/Screenshot-20260913-185349-Amazon.jpg"
+],
+description: "A stylish kurta and palazzo set for an elegant everyday look.",
+price: "₹818",
+affiliateLink: "https://link.amazon/B0fA4PNrr"
+},
+{
+id: "SHREE-P120",
+name: "Women's Salwar Suit",
+images: [
+"https://i.ibb.co/Gv7TwvyW/Screenshot-20260913-185954-Amazon.jpg"
+],
+description: "A graceful women's salwar suit for a stylish ethnic look.",
+price: "₹749",
+affiliateLink: "https://link.amazon/B01xBuxn3"
+},
+{
+id: "SHREE-P121",
+name: "Women's Kurta Pant",
+images: [
+"https://i.ibb.co/xKgG2697/Screenshot-20260913-190154-Amazon.jpg"
+],
+description: "A chic kurta pant set for a comfortable ethnic look.",
+price: "₹599",
+affiliateLink: "https://link.amazon/B05TLEtbE"
+},
+{
+id: "SHREE-P122",
+name: "Women's Kurta Pant",
+images: [
+"https://i.ibb.co/BVbmrv0L/Screenshot-20260913-190621-Amazon.jpg"
+],
+description: "A stylish kurta pant set perfect for effortless everyday fashion.",
+price: "₹959",
+affiliateLink: "https://link.amazon/B0iD36EqV"
+},
+{
+id: "SHREE-P123",
+name: "Cozy Water Bottle",
+images: [
+"https://i.ibb.co/vx0zp5Mt/Screenshot-20260913-190809-Amazon.jpg"
+],
+description: "A cozy and stylish water bottle for everyday use.",
+price: "₹1599",
+affiliateLink: "https://link.amazon/B0gZ7gGkb"
+},
+{
+id: "SHREE-P124",
+name: "2 Cozy Bottles",
+images: [
+"https://i.ibb.co/pvmxmWQq/Screenshot-20260913-191001-Amazon.jpg",
+"https://i.ibb.co/C3cxyK92/Screenshot-20260913-191018-Amazon.jpg",
+"https://i.ibb.co/jvKdpjrQ/Screenshot-20260913-191037-Amazon.jpg"
+],
+description: "Two cute and cozy bottles for everyday hydration.",
+price: "₹280",
+affiliateLink: "https://link.amazon/B0da4X7m8"
+},
+{
+id: "SHREE-P125",
+name: "Cozy Glass Bottle",
+images: [
+"https://i.ibb.co/fYLwkbCK/Screenshot-20260913-191204-Amazon.jpg"
+],
+description: "A cute glass bottle with a cozy aesthetic for daily use.",
+price: "₹199",
+affiliateLink: "https://link.amazon/B05LyChS9"
+},
+{
+id: "SHREE-P126",
+name: "Aesthetic Glass Bottle",
+images: [
+"https://i.ibb.co/Tqc49MsH/Screenshot-20260913-191401-Amazon.jpg",
+"https://i.ibb.co/ccfPLp5S/Screenshot-20260913-191416-Amazon.jpg"
+],
+description: "An aesthetic glass bottle for stylish everyday hydration.",
+price: "₹249",
+affiliateLink: "https://link.amazon/B0fSi7aka"
+},
+{
+id: "SHREE-P127",
+name: "Cozy Small Projector",
+images: [
+"https://i.ibb.co/rfv31vPH/Screenshot-20260913-191609-Amazon.jpg",
+"https://i.ibb.co/Y7bH4C4j/Screenshot-20260913-191737-Amazon.jpg",
+"https://i.ibb.co/HL8MQ8FX/Screenshot-20260913-191751-Amazon.jpg",
+"https://i.ibb.co/chPwM5Df/Screenshot-20260913-191812-Amazon.jpg"
+],
+description: "A compact cozy projector for creating a relaxing atmosphere.",
+price: "₹1280",
+affiliateLink: "https://link.amazon/B08qK7f8S"
+},
+{
+id: "SHREE-P128",
+name: "Cozy Bunny Lamp",
+images: [
+"https://i.ibb.co/8gQ6zR8d/Screenshot-20260913-192039-Amazon.jpg",
+"https://i.ibb.co/Y4MPSJYb/Screenshot-20260913-192028-Amazon.jpg",
+"https://i.ibb.co/V18wzgt/Screenshot-20260913-192053-Amazon.jpg",
+"https://i.ibb.co/3ygWwdF7/Screenshot-20260913-192103-Amazon.jpg"
+],
+description: "A cute bunny lamp to bring a soft and cozy touch to your room.",
+price: "₹1071",
+affiliateLink: "https://link.amazon/B07gUZYrt"
+},
+{
+id: "SHREE-P129",
+name: "Cute Mirror",
+images: [
+"https://i.ibb.co/MxtVYwcN/Screenshot-20260913-192329-Amazon.jpg",
+"https://i.ibb.co/fYQ0fZ67/Screenshot-20260913-192341-Amazon.jpg",
+"https://i.ibb.co/4gKZ9bYP/Screenshot-20260913-192355-Amazon.jpg",
+"https://i.ibb.co/cKwNNkgH/Screenshot-20260913-192408-Amazon.jpg"
+],
+description: "A cute decorative mirror for your vanity or room.",
+price: "₹347",
+affiliateLink: "https://link.amazon/B0199BgSA"
+},
+{
+id: "SHREE-P130",
+name: "Unicorn Table Lamp",
+images: [
+"https://i.ibb.co/s9Ln6tVv/Screenshot-20260913-192552-Amazon.jpg",
+"https://i.ibb.co/tT0rVkZM/Screenshot-20260913-192606-Amazon.jpg"
+],
+description: "A cute unicorn table lamp for a playful room setup.",
+price: "₹333",
+affiliateLink: "https://link.amazon/B09wQqmBv"
+},
+{
+id: "SHREE-P131",
+name: "Cycle Shape Pot",
+images: [
+"https://i.ibb.co/GQD0Xkmq/Screenshot-20260913-192906-Amazon.jpg",
+"https://i.ibb.co/Xx1QBDy8/Screenshot-20260913-192920-Amazon.jpg"
+],
+description: "A decorative cycle-shaped pot for adding charm to your space.",
+price: "₹299",
+affiliateLink: "https://link.amazon/B0hGeNNhW"
+},
+{
+id: "SHREE-P132",
+name: "Najar Battu Hanger",
+images: [
+"https://i.ibb.co/WNgtX4W9/Screenshot-20260913-193213-Amazon.jpg",
+"https://i.ibb.co/WNtk1Q39/Screenshot-20260913-193222-Amazon.jpg"
+],
+description: "A decorative Najar Battu hanger for your home entrance or wall.",
+price: "₹199",
+affiliateLink: "https://link.amazon/B0dpLavsw"
+},
+{
+id: "SHREE-P133",
+name: "Cozy Decorative Cycle",
+images: [
+"https://i.ibb.co/yc4Gs6WH/Screenshot-20260913-220047-Amazon.jpg",
+"https://i.ibb.co/hR62zD41/Screenshot-20260913-220058-Amazon.jpg"
+],
+description: "A charming decorative cycle for a cozy aesthetic setup.",
+price: "₹423",
+affiliateLink: "https://link.amazon/B0aUytIWC"
+},
+{
+id: "SHREE-P134",
+name: "Polo T Shirt",
+images: [
+"https://i.ibb.co/hR6b540N/Screenshot-20260914-105725-Amazon.jpg",
+"https://i.ibb.co/r8WFr06/Screenshot-20260914-105743-Amazon.jpg"
+],
+description: "A stylish polo T shirt for a clean and casual look.",
+price: "₹399",
+affiliateLink: "https://link.amazon/B0434SkFk"
+},
+{
+id: "SHREE-P135",
+name: "Milton Bottle",
+images: [
+"https://i.ibb.co/KcY5g4ww/Screenshot-20260914-110001-Amazon.jpg",
+"https://i.ibb.co/QFQpJFsm/Screenshot-20260914-110015-Amazon.jpg",
+"https://i.ibb.co/1J6FPx7z/Screenshot-20260914-110024-Amazon.jpg"
+],
+description: "A practical Milton bottle for everyday hydration.",
+price: "₹2275",
+affiliateLink: "https://link.amazon/B0aIVXEGS"
+},
+{
+id: "SHREE-P136",
+name: "Noise Headphones",
+images: [
+"https://i.ibb.co/PvG90kZ1/Screenshot-20260914-113701-Amazon.jpg",
+"https://i.ibb.co/Q33QZcnM/Screenshot-20260914-113721-Amazon.jpg",
+"https://i.ibb.co/TqW1bDyn/Screenshot-20260914-113743-Amazon.jpg"
+],
+description: "Premium wireless sound with punchy bass and comfort fit.",
+price: "₹4,499",
+affiliateLink: "https://link.amazon/B05TLAYKc"
+},
+{
+id: "SHREE-P137",
+name: "Asthetic Wall Frame",
+images: [
+"https://i.ibb.co/8DyDSR0h/Screenshot-20260914-114353-Amazon.jpg",
+"https://i.ibb.co/HDCBJRPX/Screenshot-20260914-114403-Amazon.jpg"
+],
+description: "Elegant wall frame piece to elevate modern room aesthetics.",
+price: "₹899",
+affiliateLink: "https://link.amazon/B0afENjXX"
+},
+{
+id: "SHREE-P138",
+name: "Women's Maxi Dress",
+images: [
+"https://i.ibb.co/3m7fWFtm/Screenshot-20260914-114528-Amazon.jpg",
+"https://i.ibb.co/gLND7ptQ/Screenshot-20260914-114543-Amazon.jpg"
+],
+description: "Flowy and breathable casual dress for everyday outings.",
+price: "₹999",
+affiliateLink: "https://link.amazon/B0bFTw8E0"
+},
+{
+id: "SHREE-P139",
+name: "Women's Dress",
+images: [
+"https://i.ibb.co/8gZcCtrj/Screenshot-20260914-114711-Amazon.jpg",
+"https://i.ibb.co/C3dS95Kn/Screenshot-20260914-114723-Amazon.jpg"
+],
+description: "Stylish everyday attire with a soft and flattering finish.",
+price: "₹879",
+affiliateLink: "https://link.amazon/B02IC6eip"
+},
+{
+id: "SHREE-P140",
+name: "Women's Stylish Kurti",
+images: [
+"https://i.ibb.co/b5ST2RJ1/Screenshot-20260914-114944-Amazon.jpg",
+"https://i.ibb.co/jvm4c0JB/Screenshot-20260914-115000-Amazon.jpg"
+],
+description: "Chic ethnic wear pairing comfort with contemporary trends.",
+price: "₹493",
+affiliateLink: "https://link.amazon/B04NYW7GS"
+},
+{
+id: "SHREE-P141",
+name: "Cozy Party Wear",
+images: [
+"https://i.ibb.co/v6v07zgp/Screenshot-20260914-115327-Amazon.jpg",
+"https://i.ibb.co/YBVH7PDj/Screenshot-20260914-115339-Amazon.jpg"
+],
+description: "Statement party outfit delivering luxury comfort and glam appeal.",
+price: "₹7,974",
+affiliateLink: "https://link.amazon/B00x9BmdQ"
+},
+{
+id: "SHREE-P142",
+name: "Women's Dress",
+images: [
+"https://i.ibb.co/XxbD3X8q/Screenshot-20260914-115510-Amazon.jpg"
+],
+description: "Minimalist everyday dress offering total ease and subtle charm.",
+price: "₹550",
+affiliateLink: "https://link.amazon/B0dDEf5dU"
+},
+{
+id: "SHREE-P143",
+name: "Women's Pretty Dress",
+images: [
+"https://i.ibb.co/PZ4dg8Zs/Screenshot-20260914-115649-Amazon.jpg",
+"https://i.ibb.co/LdG6Y91z/Screenshot-20260914-115716-Amazon.jpg"
+],
+description: "Graceful silhouette crafted for special occasions and dates.",
+price: "₹7,862",
+affiliateLink: "https://link.amazon/B0axHR7wu"
+},
+{
+id: "SHREE-P144",
+name: "Women's Asthetic Dress",
+images: [
+"https://i.ibb.co/spGK9jTV/Screenshot-20260914-131308-Amazon.jpg",
+"https://i.ibb.co/wNLP2pv0/Screenshot-20260914-131318-Amazon.jpg"
+],
+description: "High-end designer cut made with ultra-premium fabric detailing.",
+price: "₹10,658",
+affiliateLink: "https://link.amazon/B04luQI0O"
+},
+{
+id: "SHREE-P145",
+name: "Cozy Wall Decor",
+images: [
+"https://i.ibb.co/27xrY4Zx/Screenshot-20260914-175631-Amazon.jpg",
+"https://i.ibb.co/jvxZ3cVR/Screenshot-20260914-175649-Amazon.jpg",
+"https://i.ibb.co/TDChBN72/Screenshot-20260914-175702-Amazon.jpg"
+],
+description: "Warm artistic accent to create a relaxing home ambiance.",
+price: "₹1,499",
+affiliateLink: "https://link.amazon/B0fVMRFcz"
+},
+{
+id: "SHREE-P146",
+name: "Kids Room Kit",
+images: [
+"https://i.ibb.co/SDYHZs7t/Screenshot-20260914-175900-Amazon.jpg",
+"https://i.ibb.co/k2Ydr4v1/Screenshot-20260914-175914-Amazon.jpg",
+"https://i.ibb.co/zq4rc3B/Screenshot-20260914-175923-Amazon.jpg"
+],
+description: "Fun decorative pack tailored to brighten up any child's room.",
+price: "₹1,729",
+affiliateLink: "https://link.amazon/B0bMwV8l1"
+},
+{
+id: "SHREE-P147",
+name: "Wooden House Decor",
+images: [
+"https://i.ibb.co/Xf8SFdjd/Screenshot-20260914-180057-Amazon.jpg",
+"https://i.ibb.co/nq0g4NTQ/Screenshot-20260914-180112-Amazon.jpg",
+"https://i.ibb.co/ymRsSjPr/Screenshot-20260914-180122-Amazon.jpg",
+"https://i.ibb.co/Fkf62HCz/Screenshot-20260914-180142-Amazon.jpg"
+],
+description: "Rustic wooden showpiece adding warmth and organic style.",
+price: "₹429",
+affiliateLink: "https://link.amazon/B00gnVTeS"
+},
+{
+id: "SHREE-P148",
+name: "Wall Decor",
+images: [
+"https://i.ibb.co/NnYYbvw6/Screenshot-20260914-180256-Amazon.jpg"
+],
+description: "Versatile decorative piece suited for halls, rooms, or study corners.",
+price: "₹770",
+affiliateLink: "https://link.amazon/B0hP7MLdv"
+},
+{
+id: "SHREE-P149",
+name: "Tiny Ai Robot",
+images: [
+"https://i.ibb.co/JwFn7VBw/Screenshot-20260914-180430-Amazon.jpg",
+"https://i.ibb.co/XZbS3gLk/Screenshot-20260914-180421-Amazon.jpg",
+"https://i.ibb.co/4h1rNJk/Screenshot-20260914-180440-Amazon.jpg",
+"https://i.ibb.co/SX1tFC5Y/Screenshot-20260914-180449-Amazon.jpg"
+],
+description: "Compact smart desktop companion featuring interactive AI behavior.",
+price: "₹10,600",
+affiliateLink: "https://link.amazon/B0e3mz3N8"
+},
+{
+id: "SHREE-P150",
+name: "Baba Yoda Toy",
+images: [
+"https://i.ibb.co/2pwFX11/Screenshot-20260914-180734-Amazon.jpg",
+"https://i.ibb.co/20JfDH1m/Screenshot-20260914-180725-Amazon.jpg",
+"https://i.ibb.co/QFY0sxND/Screenshot-20260914-180753-Amazon.jpg"
+],
+description: "Adorable collectible plush figure perfect for fans and kids alike.",
+price: "₹4,499",
+affiliateLink: "https://link.amazon/B06vI4XzB"
+},
+{
+id: "SHREE-P151",
+name: "Dog Soft Toy",
+images: [
+"https://i.ibb.co/gkH32qY/Screenshot-20260914-181014-Amazon.jpg",
+"https://i.ibb.co/8nLsQgjF/Screenshot-20260914-181022-Amazon.jpg",
+"https://i.ibb.co/Pv86gs31/Screenshot-20260914-181038-Amazon.jpg"
+],
+description: "Super soft cuddly companion made with huggable, safe material.",
+price: "₹499",
+affiliateLink: "https://link.amazon/B0iErHl0G"
+},
+{
+id: "SHREE-P152",
+name: "Capybara Soft Toy",
+images: [
+"https://i.ibb.co/SwdG5JCf/Screenshot-20260914-181226-Amazon.jpg"
+],
+description: "Charming plushie with a calm vibe, great for desk decor or gifting.",
+price: "₹407",
+affiliateLink: "https://link.amazon/B0iPhRpCy"
+},
+{
+id: "SHREE-P153",
+name: "Ai Robot Pet",
+images: [
+"https://i.ibb.co/tTDYV5Zv/Screenshot-20260914-181447-Amazon.jpg",
+"https://i.ibb.co/mF0h5dzh/Screenshot-20260914-181457-Amazon.jpg",
+"https://i.ibb.co/rRztCknm/Screenshot-20260914-181505-Amazon.jpg"
+],
+description: "Lifelike smart interactive robotic buddy that responds on touch.",
+price: "₹7,407",
+affiliateLink: "https://link.amazon/B0eI8dA58"
+},
+{
+id: "SHREE-P154",
+name: "Ai Robot Combo",
+images: [
+"https://i.ibb.co/dsrLPY4Q/Screenshot-20260914-181909-Amazon.jpg",
+"https://i.ibb.co/bgQhGhF3/Screenshot-20260914-181919-Amazon.jpg",
+"https://i.ibb.co/RkBts21V/Screenshot-20260914-181927-Amazon.jpg",
+"https://i.ibb.co/qMWsryRK/Screenshot-20260914-181937-Amazon.jpg",
+"https://i.ibb.co/wZCkhCT3/Screenshot-20260914-181956-Amazon.jpg",
+"https://i.ibb.co/CsYvh2rv/Screenshot-20260914-182008-Amazon.jpg"
+],
+description: "Comprehensive robotic tech kit built for advanced play and learning.",
+price: "₹41,939",
+affiliateLink: "https://link.amazon/B0hGVnyD6"
+},
+{
+id: "SHREE-P155",
+name: "Robot Toy",
+images: [
+"https://i.ibb.co/XfjD88kZ/Screenshot-20260914-182139-Amazon.jpg",
+"https://i.ibb.co/1YDbsz6H/Screenshot-20260914-182154-Amazon.jpg",
+"https://i.ibb.co/V0SWWPVT/Screenshot-20260914-182203-Amazon.jpg",
+"https://i.ibb.co/8gJHmZT4/Screenshot-20260914-182218-Amazon.jpg"
+],
+description: "Engaging dynamic robot packed with lights, sounds, and motion.",
+price: "₹7,296",
+affiliateLink: "https://link.amazon/B08ocwyii"
+},
+{
+id: "SHREE-P156",
+name: "Storytelling Robot",
+images: [
+"https://i.ibb.co/rRMTybc7/Screenshot-20260914-182335-Amazon.jpg",
+"https://i.ibb.co/Xrnn22KY/Screenshot-20260914-182348-Amazon.jpg",
+"https://i.ibb.co/VYLWmKd2/Screenshot-20260914-182404-Amazon.jpg"
+],
+description: "Educational smart toy that narrates tales and teaches through voice.",
+price: "₹899",
+affiliateLink: "https://link.amazon/B03AGUWve"
+},
+{
+id: "SHREE-P157",
+name: "Kids Smart Watch",
+images: [
+"https://i.ibb.co/9mb40Dgf/Screenshot-20260914-182551-Amazon.jpg",
+"https://i.ibb.co/PGbY2GdX/Screenshot-20260914-182559-Amazon.jpg",
+"https://i.ibb.co/FkGRByNt/Screenshot-20260914-182609-Amazon.jpg",
+"https://i.ibb.co/tpyzfzWc/Screenshot-20260914-182539-Amazon.jpg"
+],
+description: "Durable smartwatch packed with calling features and safety tracker.",
+price: "₹3,149",
+affiliateLink: "https://link.amazon/B0hqdzCZG"
+},
+{
+id: "SHREE-P158",
+name: "Kid's Smart Watch",
+images: [
+"https://i.ibb.co/RGn2ZcPw/Screenshot-20260914-183429-Amazon.jpg"
+],
+description: "Feature-rich touch smartwatch with long battery life and games.",
+price: "₹6,499",
+affiliateLink: "https://link.amazon/B04gdk87H"
+},
+{
+id: "SHREE-P159",
+name: "Women's Kurti",
+images: [
+"https://m.media-amazon.com/images/I/612YIRZkefL._SY445_.jpg"
+],
+description: "Stylish Women's Kurti designed for a comfortable fit and an easy everyday look.",
+price: "₹499",
+affiliateLink: "https://www.amazon.in/dp/B0HD7PCFNQ?tag=pikafinds-21"
+},
+{
+id: "SHREE-P160",
+name: "Women's Kurti",
+images: [
+"https://m.media-amazon.com/images/I/4160dBegarL._SY445_.jpg"
+],
+description: "Stylish Women's Kurti designed for a comfortable fit and an easy everyday look.",
+price: "₹739",
+affiliateLink: "https://www.amazon.in/dp/B0H8PBS2GH?tag=pikafinds-21"
+},
+{
+id: "SHREE-P161",
+name: "Women's Anarkali Suit",
+images: [
+"https://m.media-amazon.com/images/I/714SoL6pDhL._SY445_.jpg"
+],
+description: "Useful Women's Anarkali Suit with a stylish design, made for convenient everyday use.",
+price: "₹1259",
+affiliateLink: "https://www.amazon.in/dp/B0H4HCYQJJ?tag=pikafinds-21"
+},
+{
+id: "SHREE-P162",
+name: "Women's Top",
+images: [
+"https://m.media-amazon.com/images/I/51kQah3PHvL._SX342_.jpg"
+],
+description: "Stylish Women's Top designed for a comfortable fit and an easy everyday look.",
+price: "₹379",
+affiliateLink: "https://www.amazon.in/dp/B0GN938PJL?tag=pikafinds-21"
+},
+{
+id: "SHREE-P163",
+name: "Women's Sandals",
+images: [
+"https://m.media-amazon.com/images/I/618oMavp+SL._SY395_.jpg"
+],
+description: "Comfortable Women's Sandals made for everyday use with a practical and stylish look.",
+price: "₹699",
+affiliateLink: "https://www.amazon.in/dp/B09VFFBMTP?tag=pikafinds-21"
+},
+{
+id: "SHREE-P164",
+name: "Women's Sandals",
+images: [
+"https://m.media-amazon.com/images/I/61bsp91c5TL._SY395_.jpg"
+],
+description: "Comfortable Women's Sandals made for everyday use with a practical and stylish look.",
+price: "₹879",
+affiliateLink: "https://www.amazon.in/dp/B0F3JKWQRP?tag=pikafinds-21"
+},
+{
+id: "SHREE-P165",
+name: "Women's Sandals",
+images: [
+"https://m.media-amazon.com/images/I/51N+RmiuOLL._SY395_.jpg"
+],
+description: "Comfortable Women's Sandals made for everyday use with a practical and stylish look.",
+price: "₹579",
+affiliateLink: "https://www.amazon.in/dp/B0DHPJS59R?tag=pikafinds-21"
+},
+{
+id: "SHREE-P166",
+name: "Women's Sandals",
+images: [
+"https://m.media-amazon.com/images/I/71eKI1IHvnL._SY395_.jpg"
+],
+description: "Comfortable Women's Sandals made for everyday use with a practical and stylish look.",
+price: "₹549",
+affiliateLink: "https://www.amazon.in/dp/B0GVJKJCJ8?tag=pikafinds-21"
+},
+{
+id: "SHREE-P167",
+name: "Women's Sandals",
+images: [
+"https://m.media-amazon.com/images/I/41v3hFPuHOL._SY395_.jpg"
+],
+description: "Comfortable Women's Sandals made for everyday use with a practical and stylish look.",
+price: "₹399",
+affiliateLink: "https://www.amazon.in/dp/B0GDVLTVH7?tag=pikafinds-21"
+},
+{
+id: "SHREE-P168",
+name: "Women's Slippers",
+images: [
+"https://m.media-amazon.com/images/I/71CZU7iXxkL._SX395_.jpg"
+],
+description: "Comfortable Women's Slippers made for everyday use with a practical and stylish look.",
+price: "₹899",
+affiliateLink: "https://www.amazon.in/dp/B0DQXXLSTY?tag=pikafinds-21"
+},
+{
+id: "SHREE-P169",
+name: "Women's Sandals",
+images: [
+"https://m.media-amazon.com/images/I/61gLRqZhTcL._SY395_.jpg"
+],
+description: "Comfortable Women's Sandals made for everyday use with a practical and stylish look.",
+price: "₹2539",
+affiliateLink: "https://www.amazon.in/dp/B0CV4YPJ5X?tag=pikafinds-21"
+},
+{
+id: "SHREE-P170",
+name: "Women's Slippers",
+images: [
+"https://m.media-amazon.com/images/I/81fj891dd9L._SY395_.jpg"
+],
+description: "Comfortable Women's Slippers made for everyday use with a practical and stylish look.",
+price: "₹499",
+affiliateLink: "https://www.amazon.in/dp/B0HG3FZ4WY?tag=pikafinds-21"
+},
+{
+id: "SHREE-P171",
+name: "Men's Track Pant",
+images: [
+"https://m.media-amazon.com/images/I/51NPDLXe9NL._SX342_.jpg"
+],
+description: "Stylish Men's Track Pant designed for a comfortable fit and an easy everyday look.",
+price: "₹448",
+affiliateLink: "https://www.amazon.in/dp/B0G6F5LWJM?tag=pikafinds-21"
+},
+{
+id: "SHREE-P172",
+name: "Men's Jeans",
+images: [
+"https://m.media-amazon.com/images/I/61dFcpPdJkL._SY445_.jpg"
+],
+description: "Useful Men's Jeans with a stylish design, made for convenient everyday use.",
+price: "₹460",
+affiliateLink: "https://www.amazon.in/dp/B0DWK2B887?tag=pikafinds-21"
+},
+{
+id: "SHREE-P173",
+name: "Men's Cargo Pants",
+images: [
+"https://m.media-amazon.com/images/I/61j9jJhrStL._SY445_.jpg"
+],
+description: "Stylish Men's Cargo Pants designed for a comfortable fit and an easy everyday look.",
+price: "₹649",
+affiliateLink: "https://www.amazon.in/dp/B0D91WCYXJ?tag=pikafinds-21"
+},
+{
+id: "SHREE-P174",
+name: "Men's Kurta",
+images: [
+"https://m.media-amazon.com/images/I/61KeD8F60GL._SX342_.jpg"
+],
+description: "Useful Men's Kurta with a stylish design, made for convenient everyday use.",
+price: "₹499",
+affiliateLink: "https://www.amazon.in/dp/B0DHL5Y64T?tag=pikafinds-21"
+},
+{
+id: "SHREE-P175",
+name: "Men's T-Shirt",
+images: [
+"https://m.media-amazon.com/images/I/61EE6mtxi3L._SY445_.jpg"
+],
+description: "Stylish Men's T-Shirt designed for a comfortable fit and an easy everyday look.",
+price: "₹449",
+affiliateLink: "https://www.amazon.in/dp/B0DCRZ94XK?tag=pikafinds-21"
+},
+{
+id: "SHREE-P176",
+name: "Men's Kurta",
+images: [
+"https://m.media-amazon.com/images/I/71a-pM2gh-L._SY445_.jpg"
+],
+description: "Useful Men's Kurta with a stylish design, made for convenient everyday use.",
+price: "₹485",
+affiliateLink: "https://www.amazon.in/dp/B0FGJZL9ZQ?tag=pikafinds-21"
+},
+{
+id: "SHREE-P177",
+name: "Men's Kurta",
+images: [
+"https://m.media-amazon.com/images/I/91d2g3IXe+L._SX342_.jpg"
+],
+description: "Useful Men's Kurta with a stylish design, made for convenient everyday use.",
+price: "₹799",
+affiliateLink: "https://www.amazon.in/dp/B0H9F5KR7Q?tag=pikafinds-21"
+},
+{
+id: "SHREE-P178",
+name: "Men's Shirt",
+images: [
+"https://m.media-amazon.com/images/I/71-ese1eCpL._SY445_.jpg"
+],
+description: "Stylish Men's Shirt designed for a comfortable fit and an easy everyday look.",
+price: "₹399",
+affiliateLink: "https://www.amazon.in/dp/B0DS8KQ12C?tag=pikafinds-21"
+},
+{
+id: "SHREE-P179",
+name: "Men's Shirt",
+images: [
+"https://m.media-amazon.com/images/I/71DlrLjySWL._SX342_.jpg"
+],
+description: "Stylish Men's Shirt designed for a comfortable fit and an easy everyday look.",
+price: "₹529",
+affiliateLink: "https://www.amazon.in/dp/B0822NT5MB?tag=pikafinds-21"
+},
+{
+id: "SHREE-P180",
+name: "Men's Shirt",
+images: [
+"https://m.media-amazon.com/images/I/81vVzUJvi8L._SY445_.jpg"
+],
+description: "Stylish Men's Shirt designed for a comfortable fit and an easy everyday look.",
+price: "₹324",
+affiliateLink: "https://www.amazon.in/dp/B0DJMJYNW3?tag=pikafinds-21"
+},
+{
+id: "SHREE-P181",
+name: "Women's Necklace",
+images: [
+"https://m.media-amazon.com/images/I/71K4r1Yd27L._SY395_.jpg"
+],
+description: "Elegant Women's Necklace that adds a simple and stylish touch to your everyday look.",
+price: "₹399",
+affiliateLink: "https://www.amazon.in/dp/B0B2LX5NJT?tag=pikafinds-21"
+},
+{
+id: "SHREE-P182",
+name: "Women's Rangriti",
+images: [
+"https://m.media-amazon.com/images/I/7195Bw1tyUL._SY395_.jpg"
+],
+description: "Useful Women's Rangriti with a stylish design, made for convenient everyday use.",
+price: "₹298",
+affiliateLink: "https://www.amazon.in/dp/B0GF1QHD5D?tag=pikafinds-21"
+},
+{
+id: "SHREE-P183",
+name: "Women's Necklace",
+images: [
+"https://m.media-amazon.com/images/I/71vIqsskd2L._SY395_.jpg"
+],
+description: "Elegant Women's Necklace that adds a simple and stylish touch to your everyday look.",
+price: "₹254",
+affiliateLink: "https://www.amazon.in/dp/B0FB47SJMB?tag=pikafinds-21"
+},
+{
+id: "SHREE-P184",
+name: "Women's Necklace",
+images: [
+"https://m.media-amazon.com/images/I/61ezXExRqgL._SY395_.jpg"
+],
+description: "Elegant Women's Necklace that adds a simple and stylish touch to your everyday look.",
+price: "₹562",
+affiliateLink: "https://www.amazon.in/dp/B0C4H4MYNK?tag=pikafinds-21"
+},
+{
+id: "SHREE-P185",
+name: "Women's Necklace",
+images: [
+"https://m.media-amazon.com/images/I/71iTon-9sQL._SY395_.jpg"
+],
+description: "Elegant Women's Necklace that adds a simple and stylish touch to your everyday look.",
+price: "₹299",
+affiliateLink: "https://www.amazon.in/dp/B0C9T81CRV?tag=pikafinds-21"
+},
+{
+id: "SHREE-P186",
+name: "Women's Earrings",
+images: [
+"https://m.media-amazon.com/images/I/71RCg3ZMn2L._SY395_.jpg"
+],
+description: "Elegant Women's Earrings that adds a simple and stylish touch to your everyday look.",
+price: "₹599",
+affiliateLink: "https://www.amazon.in/dp/B0H7QHFQ9M?tag=pikafinds-21"
+},
+{
+id: "SHREE-P187",
+name: "Women's Necklace",
+images: [
+"https://m.media-amazon.com/images/I/61lzyJCkTtL._SX342_.jpg"
+],
+description: "Elegant Women's Necklace that adds a simple and stylish touch to your everyday look.",
+price: "₹489",
+affiliateLink: "https://www.amazon.in/dp/B0GHMYXDDZ?tag=pikafinds-21"
+},
+{
+id: "SHREE-P188",
+name: "Women's Necklace",
+images: [
+"https://m.media-amazon.com/images/I/71pFMNcYCxL._SY395_.jpg"
+],
+description: "Elegant Women's Necklace that adds a simple and stylish touch to your everyday look.",
+price: "₹406",
+affiliateLink: "https://www.amazon.in/dp/B0FRM25DHT?tag=pikafinds-21"
+},
+{
+id: "SHREE-P189",
+name: "Necklace",
+images: [
+"https://m.media-amazon.com/images/I/71cqR+QU5IL._SY395_.jpg"
+],
+description: "Elegant Necklace that adds a simple and stylish touch to your everyday look.",
+price: "₹1403",
+affiliateLink: "https://www.amazon.in/dp/B0FQ561KLS?tag=pikafinds-21"
+},
+{
+id: "SHREE-P190",
+name: "Women's Saree",
+images: [
+"https://m.media-amazon.com/images/I/810i0Y5lTxL._SX342_.jpg"
+],
+description: "Useful Women's Saree with a stylish design, made for convenient everyday use.",
+price: "₹949",
+affiliateLink: "https://www.amazon.in/dp/B0FR4N4Q2P?tag=pikafinds-21"
+},
+{
+id: "SHREE-P191",
+name: "Women's Saree",
+images: [
+"https://m.media-amazon.com/images/I/71ub0Bc5ZML._SY445_.jpg"
+],
+description: "Useful Women's Saree with a stylish design, made for convenient everyday use.",
+price: "₹867",
+affiliateLink: "https://www.amazon.in/dp/B0F18WLSPQ?tag=pikafinds-21"
+},
+{
+id: "SHREE-P192",
+name: "Women's Saree",
+images: [
+"https://m.media-amazon.com/images/I/71s1RRjyMFL._SY445_.jpg"
+],
+description: "Useful Women's Saree with a stylish design, made for convenient everyday use.",
+price: "₹1222",
+affiliateLink: "https://www.amazon.in/dp/B0FGQ523NK?tag=pikafinds-21"
+},
+{
+id: "SHREE-P193",
+name: "Women's Saree",
+images: [
+"https://m.media-amazon.com/images/I/51b+ILxQN0L._SY445_.jpg"
+],
+description: "Useful Women's Saree with a stylish design, made for convenient everyday use.",
+price: "₹496",
+affiliateLink: "https://www.amazon.in/dp/B0C1SS9T24?tag=pikafinds-21"
+},
+{
+id: "SHREE-P194",
+name: "Women's Saree",
+images: [
+"https://m.media-amazon.com/images/I/61KQC68AvdL._SX342_.jpg"
+],
+description: "Useful Women's Saree with a stylish design, made for convenient everyday use.",
+price: "₹799",
+affiliateLink: "https://www.amazon.in/dp/B0GTDTJ3NV?tag=pikafinds-21"
+},
+{
+id: "SHREE-P195",
+name: "Women's Saree",
+images: [
+"https://m.media-amazon.com/images/I/61f9Woie4eL._SY445_.jpg"
+],
+description: "Useful Women's Saree with a stylish design, made for convenient everyday use.",
+price: "₹1299",
+affiliateLink: "https://www.amazon.in/dp/B0F2N4LGQJ?tag=pikafinds-21"
+},
+{
+id: "SHREE-P196",
+name: "Women's Saree",
+images: [
+"https://m.media-amazon.com/images/I/71K6unyyZ3L._SY445_.jpg"
+],
+description: "Useful Women's Saree with a stylish design, made for convenient everyday use.",
+price: "₹849",
+affiliateLink: "https://www.amazon.in/dp/B0H42MD89F?tag=pikafinds-21"
+},
+{
+id: "SHREE-P197",
+name: "Women's Saree",
+images: [
+"https://m.media-amazon.com/images/I/6182KJZBz8L._SX342_.jpg"
+],
+description: "Useful Women's Saree with a stylish design, made for convenient everyday use.",
+price: "₹379",
+affiliateLink: "https://www.amazon.in/dp/B0CWLHP7HV?tag=pikafinds-21"
+},
+{
+id: "SHREE-P198",
+name: "Women's Saree",
+images: [
+"https://m.media-amazon.com/images/I/51JZlM7UdcL._SX342_.jpg"
+],
+description: "Useful Women's Saree with a stylish design, made for convenient everyday use.",
+price: "₹799",
+affiliateLink: "https://www.amazon.in/dp/B0GTDRM1WM?tag=pikafinds-21"
+},
+{
+id: "SHREE-P199",
+name: "Women's Saree",
+images: [
+"https://m.media-amazon.com/images/I/71+r0Y57+LL._SY445_.jpg"
+],
+description: "Useful Women's Saree with a stylish design, made for convenient everyday use.",
+price: "₹899",
+affiliateLink: "https://www.amazon.in/dp/B0H45TRS9G?tag=pikafinds-21"
+},
+{
+id: "SHREE-P200",
+name: "Women's Saree",
+images: [
+"https://m.media-amazon.com/images/I/61t5Rq80yeL._SY445_.jpg"
+],
+description: "Useful Women's Saree with a stylish design, made for convenient everyday use.",
+price: "₹496",
+affiliateLink: "https://www.amazon.in/dp/B0C1SPQJH1?tag=pikafinds-21"
+},
+{
+id: "SHREE-P201",
+name: "Women's Saree",
+images: [
+"https://m.media-amazon.com/images/I/416C9pec9nL._SY445_.jpg"
+],
+description: "Useful Women's Saree with a stylish design, made for convenient everyday use.",
+price: "₹464",
+affiliateLink: "https://www.amazon.in/dp/B0H36F89NS?tag=pikafinds-21"
+},
+{
+id: "SHREE-P202",
+name: "Women's Saree",
+images: [
+"https://m.media-amazon.com/images/I/71BY-7f0JkL._SX342_.jpg"
+],
+description: "Useful Women's Saree with a stylish design, made for convenient everyday use.",
+price: "₹1559",
+affiliateLink: "https://www.amazon.in/dp/B0DZ2N9Z9M?tag=pikafinds-21"
+},
+{
+id: "SHREE-P203",
+name: "Women's Saree",
+images: [
+"https://m.media-amazon.com/images/I/71EEu4SCnML._SY445_.jpg"
+],
+description: "Useful Women's Saree with a stylish design, made for convenient everyday use.",
+price: "₹999",
+affiliateLink: "https://www.amazon.in/dp/B0H3VXGLND?tag=pikafinds-21"
+},
+{
+id: "SHREE-P204",
+name: "Women's Saree",
+images: [
+"https://m.media-amazon.com/images/I/617CBIg+hmL._SY445_.jpg"
+],
+description: "Useful Women's Saree with a stylish design, made for convenient everyday use.",
+price: "₹1429",
+affiliateLink: "https://www.amazon.in/dp/B0HBQF8F93?tag=pikafinds-21"
+},
+{
+id: "SHREE-P205",
+name: "Women's Saree",
+images: [
+"https://m.media-amazon.com/images/I/71iiClY-RxL._SY445_.jpg"
+],
+description: "Useful Women's Saree with a stylish design, made for convenient everyday use.",
+price: "₹949",
+affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
+}
 ];
-   
-
-
-
-
 // RESELLING CLOSET PRODUCTS
 const resellingProducts = [
-    {
-        id: "SHREE-C03",
-        name: "Men Trousers",
-        images: [
-            "https://i.ibb.co/qMVkm5Q3/ms-y6dhn-512-645925367.jpg"
-        ],
-        shortDescription: "Solid Lycra Men Trousers with premium stretchable comfort.",
-        description: "Solid Lycra Men Trousers with premium stretchable comfort.",
-        price: "₹249",
-        colors: [
-            { 
-                name: "Black", 
-                image: "https://i.ibb.co/qMVkm5Q3/ms-y6dhn-512-645925367.jpg", 
-                images: [
-                    "https://i.ibb.co/qMVkm5Q3/ms-y6dhn-512-645925367.jpg",
-                    "https://i.ibb.co/ycYZX8y3/ms-kufis-512-645925367.jpg",
-                    "https://i.ibb.co/svqQKj8s/ms-0x8fn-512-645925367.jpg",
-                    "https://i.ibb.co/N6RS1sLh/ms-r7d51-512-645925367.jpg"
-                ],
-                price: "₹249" 
-            },
-            { 
-                name: "Khaki", 
-                image: "https://i.ibb.co/V00tt1gN/ms-wrwn4-512-645925369.jpg", 
-                images: [
-                    "https://i.ibb.co/V00tt1gN/ms-wrwn4-512-645925369.jpg",
-                    "https://i.ibb.co/v4Nj4YdB/ms-infir-512-645925369.jpg",
-                    "https://i.ibb.co/FL7ZQCYB/ms-npsxt-512-645925369.jpg",
-                    "https://i.ibb.co/v4fvSPmT/ms-q4qox-512-645925369.jpg"
-                ],
-                price: "₹249" 
-            },
-            { 
-                name: "Brown", 
-                image: "https://i.ibb.co/rR7R3Sk2/ms-uhyan-512-645925366.jpg", 
-                images: [
-                    "https://i.ibb.co/rR7R3Sk2/ms-uhyan-512-645925366.jpg",
-                    "https://i.ibb.co/zVsqK5FV/ms-qquow-512-645925366.jpg",
-                    "https://i.ibb.co/VY1QxMmz/ms-hvbjy-512-645925366.jpg",
-                    "https://i.ibb.co/27WMLVH1/ms-zd1wb-512-645925366.jpg"
-                ],
-                price: "₹249" 
-            },
-            { 
-                name: "Blue", 
-                image: "https://i.ibb.co/G4LCqZ9W/ms-mrnwz-512-645925368.jpg", 
-                images: [
-                    "https://i.ibb.co/G4LCqZ9W/ms-mrnwz-512-645925368.jpg",
-                    "https://i.ibb.co/wFHBsrBR/ms-dzw8l-512-645925368.jpg",
-                    "https://i.ibb.co/1fTFVVjk/ms-xe2hh-512-645925368.jpg",
-                    "https://i.ibb.co/qFFqCSmL/ms-pzh8c-512-645925368.jpg"
-                ],
-                price: "₹249" 
-            },
-            { 
-                name: "Grey", 
-                image: "https://i.ibb.co/03FGG7P/ms-eoqvs-512-645925370.jpg", 
-                images: [
-                    "https://i.ibb.co/03FGG7P/ms-eoqvs-512-645925370.jpg",
-                    "https://i.ibb.co/C3jm2VCk/ms-8ygk1-512-645925370.jpg",
-                    "https://i.ibb.co/G4BqMbcf/ms-w2i47-512-645925370.jpg",
-                    "https://i.ibb.co/0pm5Vw2S/ms-wmsil-512-645925370.jpg"
-                ],
-                price: "₹249" 
-            },
-            { 
-                name: "Dark Green", 
-                image: "https://i.ibb.co/Kx9zx1fx/ms-9n86k-512-645925371.jpg", 
-                images: [
-                    "https://i.ibb.co/Kx9zx1fx/ms-9n86k-512-645925371.jpg",
-                    "https://i.ibb.co/N60JzH3w/ms-zom7y-512-645925371.jpg",
-                    "https://i.ibb.co/fRP4N2z/ms-pncyk-512-645925371.jpg",
-                    "https://i.ibb.co/ymJSYNRd/ms-4vi0l-512-645925371.jpg"
-                ],
-                price: "₹249" 
-            },
-            { 
-                name: "Light Green", 
-                image: "https://i.ibb.co/T3MwB4B/ms-d9o2d-512-645925373.jpg", 
-                images: [
-                    "https://i.ibb.co/T3MwB4B/ms-d9o2d-512-645925373.jpg",
-                    "https://i.ibb.co/QvMw3HYd/ms-ngu4q-512-645925373.jpg",
-                    "https://i.ibb.co/RThQ6Qrc/ms-dle1s-512-645925373.jpg"
-                ],
-                price: "₹249" 
-            },
-            { 
-                name: "White Grey", 
-                image: "https://i.ibb.co/Xx24yZYF/ms-schxo-512-645925374.jpg", 
-                images: [
-                    "https://i.ibb.co/Xx24yZYF/ms-schxo-512-645925374.jpg",
-                    "https://i.ibb.co/MyGH4VpV/ms-7huyz-512-645925374.jpg",
-                    "https://i.ibb.co/VWhdyDqJ/ms-3r1qs-512-645925374.jpg"
-                ],
-                price: "₹249" 
-            }
-        ],
-        sizes: [
-            { name: "28", price: "₹249" },
-            { name: "30", price: "₹249" },
-            { name: "32", price: "₹249" },
-            { name: "34", price: "₹249" },
-            { name: "36", price: "₹249" }
-        ]
-    },
-    {
-        id: "SHREE-C04",
-        name: "Stylish Men pant",
-        images: [
-            "https://i.ibb.co/7xV1gLdD/ms-cp5du-512-894738944.jpg"
-        ],
-        shortDescription: "Stylish Lycra Men pant with comfortable regular fit.",
-        description: "Stylish Lycra Men pant with comfortable regular fit.",
-        price: "₹499",
-        colors: [
-            { 
-                name: "Beige", 
-                image: "https://i.ibb.co/7xV1gLdD/ms-cp5du-512-894738944.jpg", 
-                images: [
-                    "https://i.ibb.co/7xV1gLdD/ms-cp5du-512-894738944.jpg",
-                    "https://i.ibb.co/yFjWMNms/ms-xcrkc-512-894738944.jpg",
-                    "https://i.ibb.co/5gjdRtpd/ms-xb6sg-512-894738944.jpg"
-                ],
-                price: "₹499" 
-            }
-        ],
-        sizes: [
-            { name: "28", price: "₹499" },
-            { name: "30", price: "₹499" },
-            { name: "32", price: "₹499" }
-        ]
-    },
-    {
-        id: "SHREE-C05",
-        name: "cargo cozy pant",
-        images: [
-            "https://i.ibb.co/6R1wQcDY/ms-2vl5s-512-542609354.jpg"
-        ],
-        shortDescription: 'Cozy cargo pants crafted from soft kapaas fabric.',
-        description: "Cozy cargo pants crafted from soft kapaas fabric.",
-        price: "₹299",
-        colors: [
-            { 
-                name: "Black", 
-                image: "https://i.ibb.co/6R1wQcDY/ms-2vl5s-512-542609354.jpg", 
-                images: [
-                    "https://i.ibb.co/6R1wQcDY/ms-2vl5s-512-542609354.jpg",
-                    "https://i.ibb.co/FL4wtB2s/ms-uwgz7-512-542609354.jpg",
-                    "https://i.ibb.co/ynh9vwY7/ms-wvt4u-512-645925354.jpg"
-                ],
-                price: "₹299" 
-            }
-        ],
-        sizes: [
-            { name: "26", price: "₹299" },
-            { name: "28", price: "₹299" }
-        ]
-    },
-    {
-        id: "SHREE-C06",
-        name: "Women's Denim jeans",
-        images: [
-            "https://i.ibb.co/WvV3wnsL/ms-ny0xz-512-1004855894.jpg"
-        ],
-        shortDescription: "Stylish Women's Denim jeans with classic fit.",
-        description: "Stylish Women's Denim jeans with classic fit.",
-        price: "₹549",
-        colors: [
-            { 
-                name: "Grey", 
-                image: "https://i.ibb.co/WvV3wnsL/ms-ny0xz-512-1004855894.jpg", 
-                images: [
-                    "https://i.ibb.co/WvV3wnsL/ms-ny0xz-512-1004855894.jpg",
-                    "https://i.ibb.co/m5cvGbNC/ms-cqvfe-512-1004855894.jpg",
-                    "https://i.ibb.co/XrWRJmzJ/ms-c4fqa-512-1004855894.jpg",
-                    "https://i.ibb.co/ns2cKyww/ms-anlqp-512-1004855894.jpg"
-                ],
-                price: "₹549" 
-            }
-        ],
-        sizes: [
-            { name: "24", price: "₹549" },
-            { name: "26", price: "₹549" },
-            { name: "28", price: "₹549" },
-            { name: "32", price: "₹549" },
-            { name: "34", price: "₹549" }
-        ]
-    },
-    {
-        id: "SHREE-C07",
-        name: "Men's Casual Pant",
-        images: [
-            "https://i.ibb.co/84My1Lc6/ms-lva1m-512-968821611.jpg"
-        ],
-        shortDescription: "Comfortable Men's Casual Pant crafted from soft kapaas fabric.",
-        description: "Comfortable Men's Casual Pant crafted from soft kapaas fabric.",
-        price: "₹499",
-        colors: [
-            { 
-                name: "Olive", 
-                image: "https://i.ibb.co/84My1Lc6/ms-lva1m-512-968821611.jpg", 
-                images: [
-                    "https://i.ibb.co/84My1Lc6/ms-lva1m-512-968821611.jpg",
-                    "https://i.ibb.co/M5Dbc39w/ms-hcujg-512-968821611.jpg",
-                    "https://i.ibb.co/hJS7yPGd/ms-f8zyy-512-968821611.jpg"
-                ],
-                price: "₹499" 
-            },
-            { 
-                name: "Beige", 
-                image: "https://i.ibb.co/zHFWnW6y/ms-lldsl-512-968821606.jpg", 
-                images: [
-                    "https://i.ibb.co/zHFWnW6y/ms-lldsl-512-968821606.jpg",
-                    "https://i.ibb.co/RkccW8Vd/ms-paqam-512-968821606.jpg",
-                    "https://i.ibb.co/MkXMsfqz/ms-vgsjx-512-968821606.jpg"
-                ],
-                price: "₹499" 
-            },
-            { 
-                name: "Brown", 
-                image: "https://i.ibb.co/23HXCbPx/ms-pj0zj-512-968821608.jpg", 
-                images: [
-                    "https://i.ibb.co/23HXCbPx/ms-pj0zj-512-968821608.jpg",
-                    "https://i.ibb.co/hJB3Nrmn/ms-pbmbk-512-968821608.jpg",
-                    "https://i.ibb.co/KcvNW5Pg/ms-mybq7-512-968821608.jpg"
-                ],
-                price: "₹499" 
-            }
-        ],
-        sizes: [
-            { name: "28", price: "₹499" },
-            { name: "30", price: "₹499" },
-            { name: "32", price: "₹499" },
-            { name: "34", price: "₹499" },
-            { name: "36", price: "₹499" }
-        ]
-    },
-    {
-        id: "SHREE-C08",
-        name: "Men's korean pant",
-        images: [
-            "https://i.ibb.co/BVmb1gtc/ms-dvijo-512-1023421032.jpg"
-        ],
-        shortDescription: "Trendy Men's korean pant crafted from stretchable lycra fabric.",
-        description: "Trendy Men's korean pant crafted from stretchable lycra fabric.",
-        price: "₹499",
-        colors: [
-            { 
-                name: "Cream", 
-                image: "https://i.ibb.co/BVmb1gtc/ms-dvijo-512-1023421032.jpg", 
-                images: [
-                    "https://i.ibb.co/BVmb1gtc/ms-dvijo-512-1023421032.jpg",
-                    "https://i.ibb.co/QjCZ6bHk/ms-sqmsq-512-1023421032.jpg",
-                    "https://i.ibb.co/Gv3WhJQZ/ms-ja9eg-512-1023421032.jpg"
-                ],
-                price: "₹499" 
-            }
-        ],
-        sizes: [
-            { name: "28", price: "₹499" },
-            { name: "30", price: "₹499" },
-            { name: "32", price: "₹499" },
-            { name: "34", price: "₹499" }
-        ]
-    },
-    {
-        id: "SHREE-C09",
-        name: "Casual Men's pant",
-        images: [
-            "https://i.ibb.co/Ng5fsbMF/ms-nheap-512-405075245.jpg"
-        ],
-        shortDescription: "Comfortable Casual Men's pant crafted from soft kapaas fabric.",
-        description: "Comfortable Casual Men's pant crafted from soft kapaas fabric.",
-        price: "₹349",
-        colors: [
-            { 
-                name: "Dark Green", 
-                image: "https://i.ibb.co/Ng5fsbMF/ms-nheap-512-405075245.jpg", 
-                images: [
-                    "https://i.ibb.co/Ng5fsbMF/ms-nheap-512-405075245.jpg",
-                    "https://i.ibb.co/rGGG6KSk/ms-t2gay-512-405075245.jpg",
-                    "https://i.ibb.co/svLfMNZ1/ms-cdzcu-512-405075245.jpg",
-                    "https://i.ibb.co/5XGxgXyk/ms-gjbwg-512-405075245.jpg"
-                ],
-                sizes: [
-                    { name: "28", price: "₹349" },
-                    { name: "30", price: "₹349" },
-                    { name: "32", price: "₹349" },
-                    { name: "34", price: "₹349" },
-                    { name: "36", price: "₹349" },
-                    { name: "38", price: "₹349" },
-                    { name: "40", price: "₹349" }
-                ],
-                price: "₹349" 
-            },
-            { 
-                name: "Navy blue", 
-                image: "https://i.ibb.co/Dc85gYv/ms-unkln-512-405075246.jpg", 
-                images: [
-                    "https://i.ibb.co/Dc85gYv/ms-unkln-512-405075246.jpg",
-                    "https://i.ibb.co/8LS050vZ/ms-wdqjn-512-405075246.jpg",
-                    "https://i.ibb.co/ccDrqzK6/ms-vd9sq-512-405075246.jpg",
-                    "https://i.ibb.co/Nd92gdNP/ms-62wpr-512-405075246.jpg"
-                ],
-                sizes: [
-                    { name: "28", price: "₹349" },
-                    { name: "30", price: "₹349" },
-                    { name: "32", price: "₹349" },
-                    { name: "34", price: "₹349" },
-                    { name: "36", price: "₹349" }
-                ],
-                price: "₹349" 
-            },
-            { 
-                name: "Blue", 
-                image: "https://i.ibb.co/3Y9y3jTR/ms-b2qlp-512-405075247.jpg", 
-                images: [
-                    "https://i.ibb.co/3Y9y3jTR/ms-b2qlp-512-405075247.jpg",
-                    "https://i.ibb.co/qMJrTmQZ/ms-pq8er-512-405075247.jpg",
-                    "https://i.ibb.co/m5PymdNw/ms-kqnqo-512-405075247.jpg",
-                    "https://i.ibb.co/KpXtPCpr/ms-c57ch-512-405075247.jpg"
-                ],
-                sizes: [
-                    { name: "26", price: "₹349" },
-                    { name: "28", price: "₹349" },
-                    { name: "30", price: "₹349" },
-                    { name: "32", price: "₹349" },
-                    { name: "34", price: "₹349" },
-                    { name: "36", price: "₹349" }
-                ],
-                price: "₹349" 
-            },
-            { 
-                name: "Cream", 
-                image: "https://i.ibb.co/dsg9cH7N/ms-66v0q-512-405075248.jpg", 
-                images: [
-                    "https://i.ibb.co/dsg9cH7N/ms-66v0q-512-405075248.jpg",
-                    "https://i.ibb.co/hJ31Zc8f/ms-grgvm-512-405075248.jpg",
-                    "https://i.ibb.co/84jSSm9r/ms-w5q3a-512-405075248.jpg",
-                    "https://i.ibb.co/6JLPH4tm/ms-mzxzq-512-405075248.jpg"
-                ],
-                sizes: [
-                    { name: "28", price: "₹349" },
-                    { name: "30", price: "₹349" },
-                    { name: "32", price: "₹349" },
-                    { name: "34", price: "₹349" }
-                ],
-                price: "₹349" 
-            },
-            { 
-                name: "Brown", 
-                image: "https://i.ibb.co/NvznsRK/ms-7inrq-512-405075249.jpg", 
-                images: [
-                    "https://i.ibb.co/NvznsRK/ms-7inrq-512-405075249.jpg",
-                    "https://i.ibb.co/HTmWPdHJ/ms-bjnvn-512-405075249.jpg",
-                    "https://i.ibb.co/dSDgHbW/ms-hhlaz-512-405075249.jpg"
-                ],
-                sizes: [
-                    { name: "26", price: "₹349" },
-                    { name: "28", price: "₹349" },
-                    { name: "30", price: "₹349" },
-                    { name: "32", price: "₹349" },
-                    { name: "34", price: "₹349" },
-                    { name: "36", price: "₹349" }
-                ],
-                price: "₹349" 
-            },
-            { 
-                name: "Grey malanze", 
-                image: "https://i.ibb.co/8FL7XBp/ms-b63el-512-405075250.jpg", 
-                images: [
-                    "https://i.ibb.co/8FL7XBp/ms-b63el-512-405075250.jpg",
-                    "https://i.ibb.co/SXKZ9ZbP/ms-hznt6-512-405075250.jpg"
-                ],
-                sizes: [
-                    { name: "28", price: "₹349" },
-                    { name: "30", price: "₹349" },
-                    { name: "32", price: "₹349" },
-                    { name: "34", price: "₹349" },
-                    { name: "35", price: "₹349" },
-                    { name: "38", price: "₹349" },
-                    { name: "40", price: "₹349" }
-                ],
-                price: "₹349" 
-            },
-            { 
-                name: "Grey", 
-                image: "https://i.ibb.co/tTT9Wghp/ms-c3ubo-512-405075251.jpg", 
-                images: [
-                    "https://i.ibb.co/tTT9Wghp/ms-c3ubo-512-405075251.jpg",
-                    "https://i.ibb.co/p6Sk8GQd/ms-omdap-512-405075251.jpg"
-                ],
-                sizes: [
-                    { name: "28", price: "₹349" },
-                    { name: "30", price: "₹349" },
-                    { name: "32", price: "₹349" },
-                    { name: "34", price: "₹349" },
-                    { name: "36", price: "₹349" },
-                    { name: "38", price: "₹349" },
-                    { name: "40", price: "₹349" }
-                ],
-                price: "₹349" 
-            },
-            { 
-                name: "Black", 
-                image: "https://i.ibb.co/NdMYBCJc/ms-0oi8x-512-405075252.jpg", 
-                images: [
-                    "https://i.ibb.co/NdMYBCJc/ms-0oi8x-512-405075252.jpg",
-                    "https://i.ibb.co/MktQwkt8/ms-wdmhj-512-405075252.jpg",
-                    "https://i.ibb.co/LDVc1Mwq/ms-bmmai-512-405075252.jpg"
-                ],
-                sizes: [
-                    { name: "28", price: "₹349" },
-                    { name: "30", price: "₹349" },
-                    { name: "32", price: "₹349" },
-                    { name: "34", price: "₹349" },
-                    { name: "36", price: "₹349" },
-                    { name: "38", price: "₹349" },
-                    { name: "40", price: "₹349" }
-                ],
-                price: "₹349" 
-            }
-        ]
-    },
-    {
-        id: "SHREE-C10",
-        name: "Men's Cargo",
-        images: [
-            "https://i.ibb.co/XZLkBY6Z/ms-k32rr-512-951668703.jpg"
-        ],
-        shortDescription: "Stylish Men's Cargo crafted from soft kapaas fabric.",
-        description: "Stylish Men's Cargo crafted from soft kapaas fabric.",
-        price: "₹369",
-        colors: [
-            { 
-                name: "Bhura", 
-                image: "https://i.ibb.co/XZLkBY6Z/ms-k32rr-512-951668703.jpg", 
-                images: [
-                    "https://i.ibb.co/XZLkBY6Z/ms-k32rr-512-951668703.jpg",
-                    "https://i.ibb.co/GQYw3MtZ/ms-nctoj-512-951668703.jpg",
-                    "https://i.ibb.co/hJqKgbxc/ms-y3mpz-512-951668703.jpg",
-                    "https://i.ibb.co/7dpQqJ3b/ms-bqyzm-512-968821603.jpg"
-                ],
-                price: "₹369" 
-            }
-        ],
-        sizes: [
-            { name: "28", price: "₹369" },
-            { name: "30", price: "₹369" },
-            { name: "32", price: "₹369" },
-            { name: "34", price: "₹369" },
-            { name: "36", price: "₹369" },
-            { name: "M", price: "₹369" },
-            { name: "L", price: "₹369" },
-            { name: "XL", price: "₹369" },
-            { name: "XXL", price: "₹369" },
-            { name: "XXXL", price: "₹369" }
-        ]
-    },
-    {
-        id: "SHREE-C11",
-        name: "Track pant",
-        images: [
-            "https://i.ibb.co/35kdcLYt/ms-rdcwz-512-1014430644.jpg"
-        ],
-        shortDescription: "Comfortable Track pant crafted from polyester fabric.",
-        description: "Comfortable Track pant crafted from polyester fabric.",
-        price: "₹399",
-        colors: [
-            { 
-                name: "Green", 
-                image: "https://i.ibb.co/35kdcLYt/ms-rdcwz-512-1014430644.jpg", 
-                images: [
-                    "https://i.ibb.co/35kdcLYt/ms-rdcwz-512-1014430644.jpg"
-                ],
-                price: "₹399" 
-            },
-            { 
-                name: "Blue", 
-                image: "https://i.ibb.co/tTLCzN8V/ms-ttwp1-512-1014430643.jpg", 
-                images: [
-                    "https://i.ibb.co/tTLCzN8V/ms-ttwp1-512-1014430643.jpg"
-                ],
-                price: "₹399" 
-            }
-        ],
-        sizes: [
-            { name: "S", price: "₹399" },
-            { name: "M", price: "₹399" },
-            { name: "L", price: "₹399" },
-            { name: "XL", price: "₹399" },
-            { name: "XXL", price: "₹399" }
-        ]
-    },
-    {
-        id: "SHREE-C12",
-        name: "Casual Pajama",
-        images: [
-            "https://i.ibb.co/JWqNwYNN/ms-jeuyx-512-1022799693.jpg"
-        ],
-        shortDescription: "Soft and comfortable Casual Pajama crafted from kapaas fabric.",
-        description: "Soft and comfortable Casual Pajama crafted from kapaas fabric.",
-        price: "₹329",
-        colors: [
-            { 
-                name: "Black", 
-                image: "https://i.ibb.co/JWqNwYNN/ms-jeuyx-512-1022799693.jpg", 
-                images: [
-                    "https://i.ibb.co/JWqNwYNN/ms-jeuyx-512-1022799693.jpg"
-                ],
-                price: "₹329" 
-            }
-        ],
-        sizes: [
-            { name: "S", price: "₹329" },
-            { name: "M", price: "₹329" },
-            { name: "L", price: "₹329" },
-            { name: "XL", price: "₹329" }
-        ]
-    },
-    {
-        id: "SHREE-C13",
-        name: "Beggy Track pant",
-        images: [
-            "https://i.ibb.co/Kx1pm4kt/ms-qgwsu-512-1022524034.jpg"
-        ],
-        shortDescription: "Stylish Beggy Track pant with combo track pants design.",
-        description: "Stylish Beggy Track pant with combo track pants design.<br><br><b>Specification:</b> Combo Track pants",
-        price: "₹549",
-        colors: [
-            { 
-                name: "Green + Blue", 
-                image: "https://i.ibb.co/Kx1pm4kt/ms-qgwsu-512-1022524034.jpg", 
-                images: [
-                    "https://i.ibb.co/Kx1pm4kt/ms-qgwsu-512-1022524034.jpg",
-                    "https://i.ibb.co/xtMtSGrV/ms-5kcee-512-1022524036.jpg",
-                    "https://i.ibb.co/JRbQD74d/ms-5a9cu-512-1022524034.jpg"
-                ],
-                price: "₹549" 
-            },
-            { 
-                name: "Black + Green", 
-                image: "https://i.ibb.co/t0qKLSG/ms-v9luj-512-1022524036.jpg", 
-                images: [
-                    "https://i.ibb.co/t0qKLSG/ms-v9luj-512-1022524036.jpg",
-                    "https://i.ibb.co/4nxRzJzJ/ms-ucmvt-512-1022524035.jpg",
-                    "https://i.ibb.co/bgYG2p1c/ms-lavsh-512-1022524034.jpg"
-                ],
-                price: "₹549" 
-            },
-            { 
-                name: "Black + Blue", 
-                image: "https://i.ibb.co/rRzcfTKt/ms-bxnxs-512-1022524035.jpg", 
-                images: [
-                    "https://i.ibb.co/rRzcfTKt/ms-bxnxs-512-1022524035.jpg",
-                    "https://i.ibb.co/Gv2cRZNc/ms-bk8z3-512-1022524036.jpg",
-                    "https://i.ibb.co/600XS5DJ/ms-9fdcz-512-1022524035.jpg"
-                ],
-                price: "₹549" 
-            }
-        ],
-        sizes: [
-            { name: "M", price: "₹549" },
-            { name: "L", price: "₹549" },
-            { name: "XL", price: "₹549" },
-            { name: "X", price: "₹549" }
-        ]
-    },
-    {
-        id: "SHREE-C14",
-        name: "Casual T - Shirt",
-        images: [
-            "https://i.ibb.co/sdkW9N7c/ms-081oq-512-142975418.jpg"
-        ],
-        shortDescription: "Casual T - Shirt crafted from polyester fabric.",
-        description: "Casual T - Shirt crafted from polyester fabric.",
-        price: "₹199",
-        colors: [
-            { 
-                name: "Black with white stripes", 
-                image: "https://i.ibb.co/sdkW9N7c/ms-081oq-512-142975418.jpg", 
-                images: [
-                    "https://i.ibb.co/sdkW9N7c/ms-081oq-512-142975418.jpg",
-                    "https://i.ibb.co/PzxFftpW/ms-u64jw-512-142975418.jpg"
-                ],
-                price: "₹199" 
-            }
-        ],
-        sizes: [
-            { name: "S", price: "₹199" },
-            { name: "M", price: "₹199" },
-            { name: "L", price: "₹199" },
-            { name: "XXL", price: "₹199" }
-        ]
-    },
-    {
-        id: "SHREE-C15",
-        name: "Stylish T - Shirt",
-        images: [
-            "https://i.ibb.co/VYs6fPLc/ms-pfzps-512-446366703.jpg"
-        ],
-        shortDescription: "Stylish printed T - Shirt crafted from cotton fabric.",
-        description: "Stylish printed T - Shirt crafted from cotton fabric.",
-        price: "₹349",
-        colors: [
-            { 
-                name: "Red + Green + Black", 
-                image: "https://i.ibb.co/VYs6fPLc/ms-pfzps-512-446366703.jpg", 
-                images: [
-                    "https://i.ibb.co/VYs6fPLc/ms-pfzps-512-446366703.jpg"
-                ],
-                price: "₹349" 
-            },
-            { 
-                name: "Violet + Green + Black", 
-                image: "https://i.ibb.co/PG8GvPRH/ms-izsob-512-446366705.jpg", 
-                images: [
-                    "https://i.ibb.co/PG8GvPRH/ms-izsob-512-446366705.jpg"
-                ],
-                price: "₹349" 
-            },
-            { 
-                name: "Violet + Pink + Beige", 
-                image: "https://i.ibb.co/WvcjrnkV/ms-kcmkp-512-446366704.jpg", 
-                images: [
-                    "https://i.ibb.co/WvcjrnkV/ms-kcmkp-512-446366704.jpg"
-                ],
-                price: "₹349" 
-            },
-            { 
-                name: "Red + Green + Beige", 
-                image: "https://i.ibb.co/JRYKMTMZ/ms-avgnf-512-446366707.jpg", 
-                images: [
-                    "https://i.ibb.co/JRYKMTMZ/ms-avgnf-512-446366707.jpg"
-                ],
-                price: "₹349" 
-            },
-            { 
-                name: "Green + Beige + Black", 
-                image: "https://i.ibb.co/QF2D96J2/ms-lwtcw-512-446366708.jpg", 
-                images: [
-                    "https://i.ibb.co/QF2D96J2/ms-lwtcw-512-446366708.jpg"
-                ],
-                price: "₹349" 
-            }
-        ],
-        sizes: [
-            { name: "S", price: "₹349" },
-            { name: "M", price: "₹349" },
-            { name: "L", price: "₹349" },
-            { name: "XL", price: "₹349" },
-            { name: "XXL", price: "₹349" }
-        ]
-    },
-    {
-        id: "SHREE-C16",
-        name: "Oversized T - shirt",
-        images: [
-            "https://i.ibb.co/mCfdygWN/ms-6tuwq-512-476893845.jpg"
-        ],
-        shortDescription: "Cotton Oversized T - shirt with unique anime/character prints.",
-        description: "Cotton Oversized T - shirt with unique anime/character prints.",
-        price: "₹259",
-        colors: [
-            { 
-                name: "Variant 1 (Itachi Uchiha)", 
-                image: "https://i.ibb.co/mCfdygWN/ms-6tuwq-512-476893845.jpg", 
-                images: [
-                    "https://i.ibb.co/mCfdygWN/ms-6tuwq-512-476893845.jpg",
-                    "https://i.ibb.co/XZnzBhPF/ms-chbjq-512-476893845.jpg",
-                    "https://i.ibb.co/JFQFZSLp/ms-lqw0c-512-476893845.jpg"
-                ],
-                sizes: [
-                    { name: "S", price: "₹259" },
-                    { name: "M", price: "₹259" },
-                    { name: "L", price: "₹259" },
-                    { name: "XL", price: "₹259" }
-                ],
-                price: "₹259" 
-            },
-            { 
-                name: "Variant 2 (One Piece)", 
-                image: "https://i.ibb.co/vxdcz3Cv/ms-skp28-512-476893842.jpg", 
-                images: [
-                    "https://i.ibb.co/vxdcz3Cv/ms-skp28-512-476893842.jpg",
-                    "https://i.ibb.co/FbtjxXdb/ms-xjzmp-512-476893842.jpg"
-                ],
-                sizes: [
-                    { name: "M", price: "₹259" },
-                    { name: "XL", price: "₹259" }
-                ],
-                price: "₹259" 
-            },
-            { 
-                name: "Variant 3 (Hatake Kakashi)", 
-                image: "https://i.ibb.co/0R7Pnm42/ms-orzfm-512-476893846.jpg", 
-                images: [
-                    "https://i.ibb.co/0R7Pnm42/ms-orzfm-512-476893846.jpg",
-                    "https://i.ibb.co/CK64kYgh/ms-wwalv-512-476893846.jpg",
-                    "https://i.ibb.co/nsM809dt/ms-3cjbw-512-476893846.jpg"
-                ],
-                sizes: [
-                    { name: "S", price: "₹259" },
-                    { name: "M", price: "₹259" },
-                    { name: "L", price: "₹259" },
-                    { name: "XL", price: "₹259" }
-                ],
-                price: "₹259" 
-            },
-            { 
-                name: "Variant 4 (Satoru Gojo)", 
-                image: "https://i.ibb.co/5h2B8RVV/ms-2hlyh-512-476893847.jpg", 
-                images: [
-                    "https://i.ibb.co/5h2B8RVV/ms-2hlyh-512-476893847.jpg",
-                    "https://i.ibb.co/JwYFMPN7/ms-aj1nw-512-476893847.jpg",
-                    "https://i.ibb.co/zdqyMhh/ms-lyblp-512-476893847.jpg"
-                ],
-                sizes: [
-                    { name: "M", price: "₹259" },
-                    { name: "L", price: "₹259" },
-                    { name: "XL", price: "₹259" }
-                ],
-                price: "₹259" 
-            },
-            { 
-                name: "Variant 5 (Yarmen Sukuna)", 
-                image: "https://i.ibb.co/nqkBNm1v/ms-6dhob-512-476893843.jpg", 
-                images: [
-                    "https://i.ibb.co/nqkBNm1v/ms-6dhob-512-476893843.jpg",
-                    "https://i.ibb.co/8ngD0ZbJ/ms-5hpo9-512-476893843.jpg",
-                    "https://i.ibb.co/Q30nztB5/ms-uqi7r-512-476893843.jpg"
-                ],
-                sizes: [
-                    { name: "S", price: "₹259" },
-                    { name: "M", price: "₹259" },
-                    { name: "L", price: "₹259" },
-                    { name: "XL", price: "₹259" }
-                ],
-                price: "₹259" 
-            }
-        ],
-        sizes: [
-            { name: "S", price: "₹259" },
-            { name: "M", price: "₹259" },
-            { name: "L", price: "₹259" },
-            { name: "XL", price: "₹259" }
-        ]
-    },
-    {
-        id: "SHREE-C17",
-        name: "Unisex T - Shirt",
-        images: [
-            "https://i.ibb.co/s95CtybR/ms-lamr8-512-478512632.jpg"
-        ],
-        shortDescription: "Pure Cotton Unisex T - Shirt with character prints.",
-        description: "Pure Cotton Unisex T - Shirt with character prints.",
-        price: "₹299",
-        colors: [
-            { 
-                name: "One Piece", 
-                image: "https://i.ibb.co/s95CtybR/ms-lamr8-512-478512632.jpg", 
-                images: [
-                    "https://i.ibb.co/s95CtybR/ms-lamr8-512-478512632.jpg",
-                    "https://i.ibb.co/7dhnpLSb/ms-du4mf-512-478512632.jpg",
-                    "https://i.ibb.co/MkPyt03S/ms-ieism-512-478512632.jpg"
-                ],
-                sizes: [
-                    { name: "S", price: "₹299" },
-                    { name: "M", price: "₹299" },
-                    { name: "XL", price: "₹299" },
-                    { name: "XXL", price: "₹299" }
-                ],
-                price: "₹299" 
-            },
-            { 
-                name: "Tom & Jerry", 
-                image: "https://i.ibb.co/svdpFC4L/ms-btn8e-512-478512633.jpg", 
-                images: [
-                    "https://i.ibb.co/svdpFC4L/ms-btn8e-512-478512633.jpg",
-                    "https://i.ibb.co/kgHX7R42/ms-rtc7e-512-478512633.jpg"
-                ],
-                sizes: [
-                    { name: "S", price: "₹299" },
-                    { name: "M", price: "₹299" },
-                    { name: "L", price: "₹299" },
-                    { name: "XL", price: "₹299" },
-                    { name: "XXL", price: "₹299" }
-                ],
-                price: "₹299" 
-            },
-            { 
-                name: "Snoopy", 
-                image: "https://i.ibb.co/DHTyYccw/ms-fillt-512-478512634.jpg", 
-                images: [
-                    "https://i.ibb.co/DHTyYccw/ms-fillt-512-478512634.jpg",
-                    "https://i.ibb.co/WvH9yBHW/ms-msq4m-512-478512634.jpg",
-                    "https://i.ibb.co/93359M5F/ms-ots6d-512-478512634.jpg"
-                ],
-                sizes: [
-                    { name: "S", price: "₹299" },
-                    { name: "M", price: "₹299" },
-                    { name: "L", price: "₹299" },
-                    { name: "XL", price: "₹299" },
-                    { name: "XXL", price: "₹299" }
-                ],
-                price: "₹299" 
-            }
-        ],
-        sizes: [
-            { name: "S", price: "₹299" },
-            { name: "M", price: "₹299" },
-            { name: "L", price: "₹299" },
-            { name: "XL", price: "₹299" },
-            { name: "XXL", price: "₹299" }
-        ]
-    },
-    {
-        id: "SHREE-C18",
-        name: "Oversized T - Shirt",
-        images: [
-            "https://i.ibb.co/zH6DdMCG/ms-awgtv-512-1029176290.jpg"
-        ],
-        shortDescription: "Cotton Oversized T - Shirt available in multiple vibrant colors.",
-        description: "Cotton Oversized T - Shirt available in multiple vibrant colors.",
-        price: "₹299",
-        colors: [
-            { 
-                name: "Grey", 
-                image: "https://i.ibb.co/zH6DdMCG/ms-awgtv-512-1029176290.jpg", 
-                images: [
-                    "https://i.ibb.co/zH6DdMCG/ms-awgtv-512-1029176290.jpg"
-                ],
-                price: "₹299" 
-            },
-            { 
-                name: "Gulabi", 
-                image: "https://i.ibb.co/XrmMgq8f/ms-ebiml-512-1029176288.jpg", 
-                images: [
-                    "https://i.ibb.co/XrmMgq8f/ms-ebiml-512-1029176288.jpg"
-                ],
-                price: "₹299" 
-            },
-            { 
-                name: "White", 
-                image: "https://i.ibb.co/hx7jwpJ4/ms-xjza1-512-1029176292.jpg", 
-                images: [
-                    "https://i.ibb.co/hx7jwpJ4/ms-xjza1-512-1029176292.jpg"
-                ],
-                price: "₹299" 
-            },
-            { 
-                name: "Lavender", 
-                image: "https://i.ibb.co/Q7By0Pdj/ms-ciaxd-512-1029176293.jpg", 
-                images: [
-                    "https://i.ibb.co/Q7By0Pdj/ms-ciaxd-512-1029176293.jpg"
-                ],
-                price: "₹299" 
-            },
-            { 
-                name: "Blue", 
-                image: "https://i.ibb.co/GvKpkjQS/ms-ni1i3-512-1029176294.jpg", 
-                images: [
-                    "https://i.ibb.co/GvKpkjQS/ms-ni1i3-512-1029176294.jpg"
-                ],
-                price: "₹299" 
-            },
-            { 
-                name: "Beige", 
-                image: "https://i.ibb.co/hRNB42Tg/ms-qwyug-512-1029176289.jpg", 
-                images: [
-                    "https://i.ibb.co/hRNB42Tg/ms-qwyug-512-1029176289.jpg"
-                ],
-                price: "₹299" 
-            },
-            { 
-                name: "Green", 
-                image: "https://i.ibb.co/JRvfG7vZ/ms-niukw-512-1029176287.jpg", 
-                images: [
-                    "https://i.ibb.co/JRvfG7vZ/ms-niukw-512-1029176287.jpg"
-                ],
-                price: "₹299" 
-            },
-            { 
-                name: "Dark Green", 
-                image: "https://i.ibb.co/zhK0dwYP/ms-igxat-512-1029176291.jpg", 
-                images: [
-                    "https://i.ibb.co/zhK0dwYP/ms-igxat-512-1029176291.jpg"
-                ],
-                price: "₹299" 
-            }
-        ],
-        sizes: [
-            { name: "S", price: "₹299" },
-            { name: "M", price: "₹299" },
-            { name: "L", price: "₹299" },
-            { name: "XL", price: "₹299" },
-            { name: "XXL", price: "₹299" }
-        ]
-    },
-    {
-        id: "SHREE-C19",
-        name: "Oversized T - shirt",
-        images: [
-            "https://i.ibb.co/jPq5zcgM/ms-azgag-512-618688885.jpg"
-        ],
-        shortDescription: "Cotton Oversized T - shirt featuring Satoru Gojo print.",
-        description: "Cotton Oversized T - shirt featuring Satoru Gojo print.",
-        price: "₹239",
-        colors: [
-            { 
-                name: "Black (Satoru Gojo)", 
-                image: "https://i.ibb.co/jPq5zcgM/ms-azgag-512-618688885.jpg", 
-                images: [
-                    "https://i.ibb.co/jPq5zcgM/ms-azgag-512-618688885.jpg",
-                    "https://i.ibb.co/7dVL0Lvv/ms-i3mqh-512-618688885.jpg"
-                ],
-                price: "₹239" 
-            }
-        ],
-        sizes: [
-            { name: "XS", price: "₹239" },
-            { name: "S", price: "₹239" },
-            { name: "M", price: "₹239" },
-            { name: "L", price: "₹239" },
-            { name: "XL", price: "₹239" },
-            { name: "XXL", price: "₹239" }
-        ]
-    },
-    {
-        id: "SHREE-C20",
-        name: "Brooklyn T shirt",
-        images: [
-            "https://i.ibb.co/tMpH3GKc/ms-montb-512-667586579.jpg"
-        ],
-        shortDescription: "Pure Kapaas Brooklyn T shirt available in multiple colors.",
-        description: "Pure Kapaas Brooklyn T shirt featuring comfortable fabric and stylish look.",
-        price: "₹349",
-        colors: [
-            {
-                name: "Green",
-                image: "https://i.ibb.co/tMpH3GKc/ms-montb-512-667586579.jpg",
-                images: [
-                    "https://i.ibb.co/tMpH3GKc/ms-montb-512-667586579.jpg",
-                    "https://i.ibb.co/zVQNmVQJ/ms-j3t2r-512-667586579.jpg",
-                    "https://i.ibb.co/C5gnchyt/ms-74fao-512-667586579.jpg"
-                ],
-                price: "₹349"
-            },
-            {
-                name: "Black",
-                image: "https://i.ibb.co/YFpvF5qF/ms-iedyg-512-667586580.jpg",
-                images: [
-                    "https://i.ibb.co/YFpvF5qF/ms-iedyg-512-667586580.jpg",
-                    "https://i.ibb.co/fGCjkYs4/ms-tr3se-512-667586580.jpg",
-                    "https://i.ibb.co/2Y7GWQzy/ms-9bhdl-512-667586580.jpg"
-                ],
-                price: "₹349"
-            }
-        ],
-        sizes: [
-            { name: "S", price: "₹349" },
-            { name: "M", price: "₹349" },
-            { name: "L", price: "₹349" },
-            { name: "XL", price: "₹349" },
-            { name: "XXL", price: "₹349" }
-        ]
-        },
-         {
-        id: "SHREE-C21",
-        name: "Dori belt dress",
-        images: ["https://i.ibb.co/p63N6q47/ms-yo45x-512-277086555.jpg"],
-        shortDescription: "Stylish jorjet dori belt dress available in multiple vibrant colors.",
-        description: "Elegant and comfortable jorjet fabric dress featuring a flattering dori belt design.",
-        price: "₹249",
-        colors: [
-            { name: "Maroon", image: "https://i.ibb.co/p63N6q47/ms-yo45x-512-277086555.jpg", images: ["https://i.ibb.co/p63N6q47/ms-yo45x-512-277086555.jpg", "https://i.ibb.co/Psk8hTzt/ms-s60pk-512-277086555.jpg"], price: "₹249" },
-            { name: "Black", image: "https://i.ibb.co/tw1kQcSk/ms-bbdky-512-277086556.jpg", images: ["https://i.ibb.co/tw1kQcSk/ms-bbdky-512-277086556.jpg"], price: "₹249" },
-            { name: "Yellow", image: "https://i.ibb.co/bgKJgP06/ms-tcuro-512-277086553.jpg", images: ["https://i.ibb.co/bgKJgP06/ms-tcuro-512-277086553.jpg", "https://i.ibb.co/LhJKcMsj/ms-rwioj-512-277086553.jpg", "https://i.ibb.co/274xCgT2/ms-5ndpu-512-277086553.jpg"], price: "₹249" },
-            { name: "Purple", image: "https://i.ibb.co/4w5pnvcP/ms-v47t8-512-277086557.jpg", images: ["https://i.ibb.co/4w5pnvcP/ms-v47t8-512-277086557.jpg", "https://i.ibb.co/vx249YCD/ms-li8i5-512-277086557.jpg"], price: "₹249" },
-            { name: "Light Pink", image: "https://i.ibb.co/d0RkTFjD/ms-r5ben-512-277086554.jpg", images: ["https://i.ibb.co/d0RkTFjD/ms-r5ben-512-277086554.jpg", "https://i.ibb.co/21HjggW2/ms-eimsa-512-277086554.jpg"], price: "₹249" }
-        ],
-        sizes: [
-            { name: "XS", price: "₹249" },
-            { name: "S", price: "₹249" },
-            { name: "M", price: "₹249" },
-            { name: "L", price: "₹249" }
-        ]
-    },
-    {
-        id: "SHREE-C22",
-        name: "Women's Mini Dress",
-        images: ["https://i.ibb.co/GQVkpVRH/ms-xoa6x-512-316602636.jpg"],
-        shortDescription: "Chic crepe mini dress designed for casual outings and parties.",
-        description: "Trendy women's mini dress crafted from soft crepe fabric for an effortless stylish look.",
-        price: "₹249",
-        colors: [
-            { name: "Brown", image: "https://i.ibb.co/GQVkpVRH/ms-xoa6x-512-316602636.jpg", images: ["https://i.ibb.co/GQVkpVRH/ms-xoa6x-512-316602636.jpg"], price: "₹249" },
-            { name: "Beige", image: "https://i.ibb.co/HL3yMPxR/ms-ywwr3-512-316602637.jpg", images: ["https://i.ibb.co/HL3yMPxR/ms-ywwr3-512-316602637.jpg"], price: "₹249" },
-            { name: "Maroon", image: "https://i.ibb.co/Fk0KQ8dC/ms-xyo9p-512-316602639.jpg", images: ["https://i.ibb.co/Fk0KQ8dC/ms-xyo9p-512-316602639.jpg", "https://i.ibb.co/qYfkcghm/ms-xiqr1-512-316602638.jpg"], price: "₹249" },
-            { name: "Green", image: "https://i.ibb.co/21YXZ5Xs/ms-yt08v-512-316602635.jpg", images: ["https://i.ibb.co/21YXZ5Xs/ms-yt08v-512-316602635.jpg"], price: "₹249" },
-            { name: "Black", image: "https://i.ibb.co/6250bwS/ms-w6ed8-512-316602634.jpg", images: ["https://i.ibb.co/6250bwS/ms-w6ed8-512-316602634.jpg"], price: "₹249" }
-        ],
-        sizes: [
-            { name: "XS", price: "₹249" },
-            { name: "S", price: "₹249" },
-            { name: "M", price: "₹249" },
-            { name: "L", price: "₹249" }
-        ]
-    },
-    {
-        id: "SHREE-C23",
-        name: "Women's Kurti",
-        images: ["https://i.ibb.co/B5zg3nbg/ms-gbnbv-512-985903375.jpg"],
-        shortDescription: "Elegant rayon kurti featuring fine prints and classic fit.",
-        description: "Comfortable and graceful rayon kurti designed for daily wear and ethnic styling.",
-        price: "₹429",
-        colors: [
-            { name: "Blue", image: "https://i.ibb.co/B5zg3nbg/ms-gbnbv-512-985903375.jpg", images: ["https://i.ibb.co/B5zg3nbg/ms-gbnbv-512-985903375.jpg", "https://i.ibb.co/nNSkhnLd/ms-bik7i-512-985903375.jpg", "https://i.ibb.co/MkfDr44Y/ms-xmap4-512-985903375.jpg"], price: "₹429" },
-            { name: "Orange", image: "https://i.ibb.co/93NQzfsj/ms-6atmf-512-985903377.jpg", images: ["https://i.ibb.co/93NQzfsj/ms-6atmf-512-985903377.jpg", "https://i.ibb.co/xKsWRrWL/ms-tman4-512-985903377.jpg", "https://i.ibb.co/PsNjcd7d/ms-qjafo-512-985903377.jpg"], price: "₹429" },
-            { name: "Yellow", image: "https://i.ibb.co/4RV2VVPs/ms-dgujn-512-985903378.jpg", images: ["https://i.ibb.co/4RV2VVPs/ms-dgujn-512-985903378.jpg", "https://i.ibb.co/xSZbKyFr/ms-4rddj-512-985903378.jpg", "https://i.ibb.co/Q7cGPns4/ms-voe1i-512-985903378.jpg"], price: "₹429" }
-        ],
-        sizes: [
-            { name: "XS", price: "₹429" },
-            { name: "S", price: "₹429" },
-            { name: "M", price: "₹429" },
-            { name: "L", price: "₹429" },
-            { name: "XL", price: "₹429" },
-            { name: "XXL", price: "₹429" },
-            { name: "XXXL", price: "₹429" },
-            { name: "4XL", price: "₹429" },
-            { name: "5XL", price: "₹429" }
-        ]
-    },
-    {
-        id: "SHREE-C24",
-        name: "Women's Kurta Set",
-        images: ["https://i.ibb.co/jm3SBs5/ms-8ee5x-512-588164719.jpg"],
-        shortDescription: "Premium cotton kurta set offering superior comfort and traditional appeal.",
-        description: "Classic cotton kurta set featuring exquisite patterns ideal for festive and casual wear.",
-        price: "₹349",
-        colors: [
-            { name: "Maroon", image: "https://i.ibb.co/jm3SBs5/ms-8ee5x-512-588164719.jpg", images: ["https://i.ibb.co/jm3SBs5/ms-8ee5x-512-588164719.jpg", "https://i.ibb.co/TqWHWTB4/ms-otxu9-512-588164719.jpg", "https://i.ibb.co/tMVr1Y5G/ms-ane4x-512-588164719.jpg", "https://i.ibb.co/KpBHRXbd/ms-uvw9p-512-588164719.jpg"], price: "₹349" }
-        ],
-        sizes: [
-            { name: "XXS", price: "₹349" },
-            { name: "XS", price: "₹349" },
-            { name: "S", price: "₹349" },
-            { name: "M", price: "₹349" },
-            { name: "L", price: "₹349" },
-            { name: "XL", price: "₹349" },
-            { name: "XXL", price: "₹349" },
-            { name: "XXXL", price: "₹349" }
-        ]
-    },
-    {
-        id: "SHREE-C25",
-        name: "Designer Kurta Set",
-        images: ["https://i.ibb.co/HTh5NFbT/ms-b3pwq-512-972567633.jpg"],
-        shortDescription: "Designer cotton kurta set crafted with fine detailing and elegant finish.",
-        description: "High-quality cotton designer kurta set that brings sophisticated style to your ethnic wardrobe.",
-        price: "₹369",
-        colors: [
-            { name: "Black", image: "https://i.ibb.co/HTh5NFbT/ms-b3pwq-512-972567633.jpg", images: ["https://i.ibb.co/HTh5NFbT/ms-b3pwq-512-972567633.jpg", "https://i.ibb.co/23Gxgfpf/ms-fmvh3-512-972567633.jpg", "https://i.ibb.co/TBvRg8Y5/ms-sohfm-512-972567633.jpg", "https://i.ibb.co/szDZpTD/ms-vevhq-512-972567633.jpg"], price: "₹369" }
-        ],
-        sizes: [
-            { name: "M", price: "₹369" },
-            { name: "L", price: "₹369" },
-            { name: "XL", price: "₹369" },
-            { name: "XXL", price: "₹369" },
-            { name: "XXXL", price: "₹369" },
-            { name: "4XL", price: "₹369" },
-            { name: "5XL", price: "₹369" }
-        ]
-    },
-    {
-        id: "SHREE-C26",
-        name: "Women's Cozy Dress",
-        images: ["https://i.ibb.co/MD8VsGJG/ms-amvpn-512-504507253.jpg"],
-        shortDescription: "Soft khaadi cotton cozy dress designed for all-day relaxed comfort.",
-        description: "Cozy and breathable khaadi cotton dress offering an aesthetic silhouette and supreme comfort.",
-        price: "₹399",
-        colors: [
-            { name: "Pink", image: "https://i.ibb.co/MD8VsGJG/ms-amvpn-512-504507253.jpg", images: ["https://i.ibb.co/MD8VsGJG/ms-amvpn-512-504507253.jpg", "https://i.ibb.co/27hT64xn/ms-woxdf-512-504507253.jpg", "https://i.ibb.co/8gYFyvRY/ms-vla3f-512-504507253.jpg", "https://i.ibb.co/HTVPfkX8/ms-yzxag-512-504507253.jpg"], price: "₹399" }
-        ],
-        sizes: [
-            { name: "XS", price: "₹399" },
-            { name: "S", price: "₹479" },
-            { name: "M", price: "₹399" },
-            { name: "L", price: "₹479" },
-            { name: "XL", price: "₹479" },
-            { name: "XXL", price: "₹479" },
-            { name: "XXXL", price: "₹479" },
-            { name: "4XL", price: "₹489" },
-            { name: "5XL", price: "₹489" }
-        ]
-    },
-    {
-        id: "SHREE-C27",
-        name: "Women's latest Kurti",
-        images: ["https://i.ibb.co/Nn9t7gWK/ms-i9eio-512-468271645.jpg"],
-        shortDescription: "Trendy rayon kurti featuring contemporary patterns and rich maroon tone.",
-        description: "Latest design rayon kurti tailored to give you a chic and elegant everyday ethnic look.",
-        price: "₹469",
-        colors: [
-            { name: "Maroon", image: "https://i.ibb.co/Nn9t7gWK/ms-i9eio-512-468271645.jpg", images: ["https://i.ibb.co/Nn9t7gWK/ms-i9eio-512-468271645.jpg", "https://i.ibb.co/TMxbx36H/ms-1bnwy-512-468271645.jpg", "https://i.ibb.co/GfkfzgJS/ms-4yync-512-468271645.jpg", "https://i.ibb.co/yCZ4nPC/ms-uzvd0-512-468271645.jpg"], price: "₹469" }
-        ],
-        sizes: [
-            { name: "L", price: "₹469" },
-            { name: "XXL", price: "₹469" },
-            { name: "XXXL", price: "₹469" }
-        ]
-    },
-    {
-        id: "SHREE-C28",
-        name: "Women's Flat Heels",
-        images: ["https://i.ibb.co/V1dMR9H/ms-8z35e-512-530997519.jpg"],
-        shortDescription: "Comfortable 2-inch flat heels in classic beige for graceful styling.",
-        description: "Stylish women's flat heels with a comfortable 2-inch elevation, perfect for daily wear and special occasions.",
-        price: "₹349",
-        colors: [
-            { name: "Beige", image: "https://i.ibb.co/V1dMR9H/ms-8z35e-512-530997519.jpg", images: ["https://i.ibb.co/V1dMR9H/ms-8z35e-512-530997519.jpg", "https://i.ibb.co/tp7RPYyh/ms-vmhzp-512-530997519.jpg", "https://i.ibb.co/s8CX6mK/ms-ptrvb-512-530997519.jpg", "https://i.ibb.co/zTLKWx7G/ms-qouce-512-530997519.jpg"], price: "₹349" }
-        ],
-        sizes: [
-            { name: "IND 4", price: "₹349" },
-            { name: "IND 5", price: "₹349" },
-            { name: "IND 6", price: "₹349" },
-            { name: "IND 7", price: "₹349" },
-            { name: "IND 8", price: "₹349" }
-        ]
-    },
-    {
-        id: "SHREE-C29",
-        name: "Men's Stylish Shirt",
-        images: ["https://i.ibb.co/bRmtLMBj/ms-mrunx-512-527490671.jpg"],
-        shortDescription: "Textured popcorn fabric men's shirt for a sharp and modern look.",
-        description: "Trendy men's stylish shirt made from comfortable popcorn fabric, built for casual and smart-casual wear.",
-        price: "₹249",
-        colors: [
-            { name: "White", image: "https://i.ibb.co/bRmtLMBj/ms-mrunx-512-527490671.jpg", images: ["https://i.ibb.co/bRmtLMBj/ms-mrunx-512-527490671.jpg", "https://i.ibb.co/tj6TjFj/ms-vjwfo-512-527490671.jpg"], price: "₹249" },
-            { name: "Black", image: "https://i.ibb.co/9mdtjv14/ms-reeub-512-527490672.jpg", images: ["https://i.ibb.co/9mdtjv14/ms-reeub-512-527490672.jpg", "https://i.ibb.co/wrcYS7vD/ms-fykza-512-527490672.jpg"], price: "₹249" }
-        ],
-        sizes: [
-            { name: "S", price: "₹249" },
-            { name: "M", price: "₹249" },
-            { name: "L", price: "₹249" },
-            { name: "XL", price: "₹249" }
-        ]
-    },
-    {
-        id: "SHREE-C30",
-        name: "Men's Casual Shirt",
-        images: ["https://i.ibb.co/v6hM62Lk/ms-9omkk-512-375103171.jpg"],
-        shortDescription: "Versatile popcorn fabric men's casual shirt in multiple solid colors.",
-        description: "Comfortable and light textured popcorn fabric shirt designed for everyday casual comfort.",
-        price: "₹229",
-        colors: [
-            { name: "Sky Blue", image: "https://i.ibb.co/v6hM62Lk/ms-9omkk-512-375103171.jpg", images: ["https://i.ibb.co/v6hM62Lk/ms-9omkk-512-375103171.jpg", "https://i.ibb.co/SZpXVFF/ms-vosnb-512-375103171.jpg"], price: "₹229" },
-            { name: "Navy Blue", image: "https://i.ibb.co/35PSsLdx/ms-fzfyu-512-375103167.jpg", images: ["https://i.ibb.co/35PSsLdx/ms-fzfyu-512-375103167.jpg"], price: "₹249" },
-            { name: "Black", image: "https://i.ibb.co/GQgpsFpd/ms-lpwfp-512-375103166.jpg", images: ["https://i.ibb.co/GQgpsFpd/ms-lpwfp-512-375103166.jpg"], price: "₹239" },
-            { name: "Maroon", image: "https://i.ibb.co/YTqf8jCk/ms-et9qu-512-375103170.jpg", images: ["https://i.ibb.co/YTqf8jCk/ms-et9qu-512-375103170.jpg"], price: "₹249" },
-            { name: "Grey", image: "https://i.ibb.co/CNXM5Kq/ms-cy54t-512-375103169.jpg", images: ["https://i.ibb.co/CNXM5Kq/ms-cy54t-512-375103169.jpg"], price: "₹259" },
-            { name: "Lavender", image: "https://i.ibb.co/1G0qXC45/ms-zef8g-512-375103173.jpg", images: ["https://i.ibb.co/1G0qXC45/ms-zef8g-512-375103173.jpg"], price: "₹269" },
-            { name: "White", image: "https://i.ibb.co/wFgLwx6M/ms-8clna-512-375103172.jpg", images: ["https://i.ibb.co/wFgLwx6M/ms-8clna-512-375103172.jpg"], price: "₹229" },
-            { name: "Green", image: "https://i.ibb.co/B5gmPxmC/ms-myvn4-512-375103168.jpg", images: ["https://i.ibb.co/B5gmPxmC/ms-myvn4-512-375103168.jpg"], price: "₹239" }
-        ],
-        sizes: [
-            { name: "S", price: "₹229" },
-            { name: "M", price: "₹229" },
-            { name: "L", price: "₹229" },
-            { name: "XL", price: "₹229" },
-            { name: "XXL", price: "₹229" }
-        ]
-    },
-    {
-        id: "SHREE-C31",
-        name: "Oversized T shirt (Combo Pack)",
-        images: ["https://i.ibb.co/zVM84wqr/ms-hulta-512-516216298.jpg"],
-        shortDescription: "Value combo pack of 2 pure kapaas oversized t-shirts with vibrant dual-tone themes.",
-        description: "Double up your style with this value-packed combo set of 2 premium kapaas oversized t-shirts, offering unmatched comfort and standout street style aesthetics.",
-        price: "₹399",
-        colors: [
-            { name: "Brown + Blue", image: "https://i.ibb.co/zVM84wqr/ms-hulta-512-516216298.jpg", images: ["https://i.ibb.co/zVM84wqr/ms-hulta-512-516216298.jpg", "https://i.ibb.co/dwxbP3z2/ms-q1xaf-512-516216298.jpg"], price: "₹399" },
-            { name: "Brown + Red", image: "https://i.ibb.co/C5n7C2Yv/ms-dx0ka-512-516216300.jpg", images: ["https://i.ibb.co/C5n7C2Yv/ms-dx0ka-512-516216300.jpg"], price: "₹399" },
-            { name: "Blue + Red", image: "https://i.ibb.co/hJgcbf8V/ms-rpavn-512-516216305.jpg", images: ["https://i.ibb.co/hJgcbf8V/ms-rpavn-512-516216305.jpg"], price: "₹399" },
-            { name: "Green + Black", image: "https://i.ibb.co/0j4mgdwF/ms-2bd4k-512-516216301.jpg", images: ["https://i.ibb.co/0j4mgdwF/ms-2bd4k-512-516216301.jpg"], price: "₹399" },
-            { name: "Grey + Green", image: "https://i.ibb.co/VYyFMGP5/ms-xipep-512-516216303.jpg", images: ["https://i.ibb.co/VYyFMGP5/ms-xipep-512-516216303.jpg"], price: "₹399" },
-            { name: "Brown + Green", image: "https://i.ibb.co/LzgxhPv1/ms-qrnf5-512-516216304.jpg", images: ["https://i.ibb.co/LzgxhPv1/ms-qrnf5-512-516216304.jpg"], price: "₹399" },
-            { name: "Black + Pink", image: "https://i.ibb.co/4w6pPXth/ms-grtn5-512-516216297.jpg", images: ["https://i.ibb.co/4w6pPXth/ms-grtn5-512-516216297.jpg"], price: "₹399" },
-            { name: "Green + Red", image: "https://i.ibb.co/Z6kJj85X/ms-mzd2x-512-516216299.jpg", images: ["https://i.ibb.co/Z6kJj85X/ms-mzd2x-512-516216299.jpg"], price: "₹399" }
-        ],
-        sizes: [
-            { name: "S", price: "₹399" },
-            { name: "M", price: "₹399" },
-            { name: "L", price: "₹399" },
-            { name: "XL", price: "₹399" },
-            { name: "XXL", price: "₹399" }
-        ]
-    },
-    {
-        id: "SHREE-C32",
-        name: "Men's Printed Shirt",
-        images: ["https://i.ibb.co/9Hwxx21L/ms-ubn5w-512-456371139.jpg"],
-        shortDescription: "Cotton men's printed shirt featuring eye-catching modern patterns.",
-        description: "Stylish and breathable cotton printed shirt designed to elevate your casual wardrobe effortlessly.",
-        price: "₹329",
-        colors: [
-            { name: "Black", image: "https://i.ibb.co/9Hwxx21L/ms-ubn5w-512-456371139.jpg", images: ["https://i.ibb.co/9Hwxx21L/ms-ubn5w-512-456371139.jpg"], price: "₹339" },
-            { name: "Blue", image: "https://i.ibb.co/21QqhGCn/ms-iasy5-512-456371137.jpg", images: ["https://i.ibb.co/21QqhGCn/ms-iasy5-512-456371137.jpg"], price: "₹329" },
-            { name: "White", image: "https://i.ibb.co/CKgQ5XtM/ms-j9wua-512-456371138.jpg", images: ["https://i.ibb.co/CKgQ5XtM/ms-j9wua-512-456371138.jpg"], price: "₹329" }
-        ],
-        sizes: [
-            { name: "S", price: "₹329" },
-            { name: "M", price: "₹329" },
-            { name: "L", price: "₹329" },
-            { name: "XL", price: "₹329" },
-            { name: "XXL", price: "₹329" }
-        ]
-    },
-    {
-        id: "SHREE-C33",
-        name: "Women's Short Kurti",
-        images: ["https://i.ibb.co/5W123zmb/ms-prsik-512-983823213.jpg"],
-        shortDescription: "Bright yellow cotton short kurti for a fresh and cheerful everyday look.",
-        description: "Charming cotton short kurti crafted with breathable fabric and elegant detailing for casual styling.",
-        price: "₹299",
-        colors: [
-            { name: "Yellow", image: "https://i.ibb.co/5W123zmb/ms-prsik-512-983823213.jpg", images: ["https://i.ibb.co/5W123zmb/ms-prsik-512-983823213.jpg", "https://i.ibb.co/6J4yCpXc/ms-2r7dn-512-983823213.jpg", "https://i.ibb.co/sdYg9G6d/ms-lz0fx-512-983823213.jpg"], price: "₹299" }
-        ],
-        sizes: [
-            { name: "XS", price: "₹299" },
-            { name: "S", price: "₹299" },
-            { name: "M", price: "₹299" },
-            { name: "L", price: "₹299" },
-            { name: "XL", price: "₹299" },
-            { name: "XXL", price: "₹299" }
-        ]
-    },
-    {
-        id: "SHREE-C34",
-        name: "Women's Short Kurti",
-        images: ["https://i.ibb.co/rRmhpwxF/ms-nfs4e-512-1041181898.jpg"],
-        shortDescription: "Sleek black cotton short kurti pairing modern fit with ethnic comfort.",
-        description: "Versatile black cotton short kurti that adds a touch of elegance to your daily wardrobe.",
-        price: "₹299",
-        colors: [
-            { name: "Black", image: "https://i.ibb.co/rRmhpwxF/ms-nfs4e-512-1041181898.jpg", images: ["https://i.ibb.co/rRmhpwxF/ms-nfs4e-512-1041181898.jpg", "https://i.ibb.co/4wXyvtht/ms-ukcfq-512-1041181898.jpg", "https://i.ibb.co/T6nVBsJ/ms-mm2sq-512-1041181898.jpg"], price: "₹299" }
-        ],
-        sizes: [
-            { name: "XS", price: "₹299" },
-            { name: "S", price: "₹299" },
-            { name: "M", price: "₹299" },
-            { name: "L", price: "₹299" },
-            { name: "XL", price: "₹299" }
-        ]
-    },
-    {
-        id: "SHREE-C35",
-        name: "Women's Short Kurti",
-        images: ["https://i.ibb.co/yn33DD5r/ms-9d8pq-512-1020792947.jpg"],
-        shortDescription: "Vibrant red cotton short kurti for a stylish everyday ethnic look.",
-        description: "Lightweight and comfortable cotton short kurti designed in a striking red tone.",
-        price: "₹299",
-        colors: [
-            { name: "Red", image: "https://i.ibb.co/yn33DD5r/ms-9d8pq-512-1020792947.jpg", images: ["https://i.ibb.co/yn33DD5r/ms-9d8pq-512-1020792947.jpg", "https://i.ibb.co/fVWhFSGW/ms-0ujbn-512-1020792947.jpg"], price: "₹299" }
-        ],
-        sizes: [
-            { name: "S", price: "₹299" },
-            { name: "M", price: "₹299" },
-            { name: "L", price: "₹299" },
-            { name: "XL", price: "₹299" }
-        ]
-    },
-    {
-        id: "SHREE-C36",
-        name: "Women's Short Kurti",
-        images: ["https://i.ibb.co/7tpqK6CD/ms-1kl5l-512-977386124.jpg"],
-        shortDescription: "Affordable and cozy blue cotton short kurti for casual wear.",
-        description: "Easy-breezy cotton short kurti in a soothing blue shade, offering high value and comfort.",
-        price: "₹199",
-        colors: [
-            { name: "Blue", image: "https://i.ibb.co/7tpqK6CD/ms-1kl5l-512-977386124.jpg", images: ["https://i.ibb.co/7tpqK6CD/ms-1kl5l-512-977386124.jpg", "https://i.ibb.co/zWGwbTfb/ms-qgrfg-512-977386124.jpg"], price: "₹199" }
-        ],
-        sizes: [
-            { name: "XS", price: "₹199" },
-            { name: "S", price: "₹199" },
-            { name: "M", price: "₹199" },
-            { name: "L", price: "₹199" },
-            { name: "XL", price: "₹199" },
-            { name: "XXL", price: "₹199" }
-        ]
-    },
-    {
-        id: "SHREE-C37",
-        name: "Women's Kurta",
-        images: ["https://i.ibb.co/DgMnKhh8/ms-soeyf-512-556963070.jpg"],
-        shortDescription: "Graceful rayon kurta in rich color variations for elegant ethnic wear.",
-        description: "Soft and flowing rayon kurta crafted with beautiful finish for standard casual and festive occasions.",
-        price: "₹399",
-        colors: [
-            { name: "Green", image: "https://i.ibb.co/DgMnKhh8/ms-soeyf-512-556963070.jpg", images: ["https://i.ibb.co/DgMnKhh8/ms-soeyf-512-556963070.jpg", "https://i.ibb.co/gbfCVhtR/ms-c7981-512-556963070.jpg", "https://i.ibb.co/nMYQSdRC/ms-ul0ay-512-556963070.jpg"], price: "₹399" },
-            { name: "Purple", image: "https://i.ibb.co/2mcmK9d/ms-ag7qk-512-556963072.jpg", images: ["https://i.ibb.co/2mcmK9d/ms-ag7qk-512-556963072.jpg", "https://i.ibb.co/MWb6VKW/ms-2lybj-512-556963072.jpg", "https://i.ibb.co/Cp0MQzTJ/ms-7xbgz-512-556963072.jpg"], price: "₹399" },
-            { name: "Orange", image: "https://i.ibb.co/jZ1NwFz1/ms-qpsac-512-556963071.jpg", images: ["https://i.ibb.co/jZ1NwFz1/ms-qpsac-512-556963071.jpg", "https://i.ibb.co/N6pPMXpR/ms-y4iov-512-556963071.jpg"], price: "₹399" }
-        ],
-        sizes: [
-            { name: "S", price: "₹399" },
-            { name: "M", price: "₹359" },
-            { name: "L", price: "₹399" },
-            { name: "XL", price: "₹399" },
-            { name: "XXL", price: "₹399" }
-        ]
-    },
-    {
-        id: "SHREE-C38",
-        name: "Women's Jaipuri Kurti",
-        images: ["https://i.ibb.co/1fgYPQPf/ms-uviso-512-616446241.jpg"],
-        shortDescription: "Traditional Jaipuri print rayon kurti offering vibrant ethnic charm.",
-        description: "Classic Jaipuri style rayon kurti featuring exquisite cultural prints and comfortable fit.",
-        price: "₹349",
-        colors: [
-            { name: "Purple", image: "https://i.ibb.co/1fgYPQPf/ms-uviso-512-616446241.jpg", images: ["https://i.ibb.co/1fgYPQPf/ms-uviso-512-616446241.jpg", "https://i.ibb.co/8L8mJYPm/ms-uh8jl-512-616446241.jpg", "https://i.ibb.co/G4B2sWxS/ms-rp610-512-616446241.jpg"], price: "₹349" },
-            { name: "Green", image: "https://i.ibb.co/wZBCks2V/ms-nqzmz-512-616446240.jpg", images: ["https://i.ibb.co/wZBCks2V/ms-nqzmz-512-616446240.jpg", "https://i.ibb.co/CKkVqJMc/ms-ysneq-512-616446240.jpg", "https://i.ibb.co/21yWFZvY/ms-kwrxj-512-616446240.jpg"], price: "₹339" }
-        ],
-        sizes: [
-            { name: "XS", price: "₹349" },
-            { name: "S", price: "₹349" },
-            { name: "M", price: "₹329" },
-            { name: "L", price: "₹349" },
-            { name: "XL", price: "₹349" },
-            { name: "XXL", price: "₹349" },
-            { name: "XXXL", price: "₹339" }
-        ]
-    },
-    {
-        id: "SHREE-C39",
-        name: "Combo Trousers",
-        images: ["https://i.ibb.co/xrJ5BVH/ms-0rhvw-512-620266054.jpg"],
-        shortDescription: "Comfortable cotton-blend combo trousers featuring versatile multi-color options.",
-        description: "Durable and cozy kapaas combo trousers tailored for ultimate comfort and everyday wearability.",
-        price: "₹319",
-        colors: [
-            { name: "Black + Pink", image: "https://i.ibb.co/xrJ5BVH/ms-0rhvw-512-620266054.jpg", images: ["https://i.ibb.co/xrJ5BVH/ms-0rhvw-512-620266054.jpg", "https://i.ibb.co/hFHskGYN/ms-xr5o8-512-620266054.jpg", "https://i.ibb.co/KSyX5xQ/ms-2skgs-512-620266053.jpg"], price: "₹319" },
-            { name: "Black + Brown", image: "https://i.ibb.co/v6n8LLDt/ms-s5qk1-512-620266050.jpg", images: ["https://i.ibb.co/v6n8LLDt/ms-s5qk1-512-620266050.jpg", "https://i.ibb.co/Cr4dV2P/ms-enedk-512-620266050.jpg"], price: "₹319" },
-            { name: "Beige + Brown", image: "https://i.ibb.co/LD9rPLy3/ms-atgo2-512-620266052.jpg", images: ["https://i.ibb.co/LD9rPLy3/ms-atgo2-512-620266052.jpg", "https://i.ibb.co/BDJ4WSy/ms-wiixt-512-620266052.jpg"], price: "₹319" },
-            { name: "Beige + Pink", image: "https://i.ibb.co/WNwgKh5F/ms-wivpc-512-620266053.jpg", images: ["https://i.ibb.co/WNwgKh5F/ms-wivpc-512-620266053.jpg", "https://i.ibb.co/spZTT2CJ/ms-yn9do-512-620266053.jpg"], price: "₹319" },
-            { name: "Black + Beige", image: "https://i.ibb.co/DPjmrLLx/ms-uxnvm-512-620266051.jpg", images: ["https://i.ibb.co/DPjmrLLx/ms-uxnvm-512-620266051.jpg", "https://i.ibb.co/NgbX3bQH/ms-oxbmh-512-620266051.jpg"], price: "₹319" }
-        ],
-        sizes: [
-            { name: "S", price: "₹319" },
-            { name: "M", price: "₹319" },
-            { name: "L", price: "₹319" },
-            { name: "XL", price: "₹319" },
-            { name: "XXL", price: "₹319" }
-        ]
-    },
-    {
-        id: "SHREE-C40",
-        name: "Blackberry Dress",
-        images: ["https://i.ibb.co/XZ0DRGt1/ms-sahxc-512-382519791.jpg"],
-        shortDescription: "Stunning jorjet Blackberry dress designed for parties and special outings.",
-        description: "Graceful jorjet fabric dress featuring a sleek cut and sophisticated look for an effortless statement.",
-        price: "₹399",
-        colors: [
-            { name: "Black", image: "https://i.ibb.co/XZ0DRGt1/ms-sahxc-512-382519791.jpg", images: ["https://i.ibb.co/XZ0DRGt1/ms-sahxc-512-382519791.jpg", "https://i.ibb.co/cc5h6PQD/ms-mz1wn-512-382519791.jpg", "https://i.ibb.co/jv88RnVT/ms-hpcjt-512-382519791.jpg"], price: "₹399" }
-        ],
-        sizes: [
-            { name: "XS", price: "₹399" },
-            { name: "S", price: "₹399" },
-            { name: "M", price: "₹339" },
-            { name: "L", price: "₹399" },
-            { name: "XL", price: "₹399" },
-            { name: "XXL", price: "₹399" },
-            { name: "XXXL", price: "₹399" },
-            { name: "4XL", price: "₹399" }
-        ]
-    }
-  ];
-
+{
+id: "SHREE-C03",
+name: "Men Trousers",
+images: [
+"https://i.ibb.co/qMVkm5Q3/ms-y6dhn-512-645925367.jpg"
+],
+shortDescription: "Solid Lycra Men Trousers with premium stretchable comfort.",
+description: "Solid Lycra Men Trousers with premium stretchable comfort.",
+price: "₹249",
+colors: [
+{
+name: "Black",
+image: "https://i.ibb.co/qMVkm5Q3/ms-y6dhn-512-645925367.jpg",
+images: [
+"https://i.ibb.co/qMVkm5Q3/ms-y6dhn-512-645925367.jpg",
+"https://i.ibb.co/ycYZX8y3/ms-kufis-512-645925367.jpg",
+"https://i.ibb.co/svqQKj8s/ms-0x8fn-512-645925367.jpg",
+"https://i.ibb.co/N6RS1sLh/ms-r7d51-512-645925367.jpg"
+],
+price: "₹249"
+},
+{
+name: "Khaki",
+image: "https://i.ibb.co/V00tt1gN/ms-wrwn4-512-645925369.jpg",
+images: [
+"https://i.ibb.co/V00tt1gN/ms-wrwn4-512-645925369.jpg",
+"https://i.ibb.co/v4Nj4YdB/ms-infir-512-645925369.jpg",
+"https://i.ibb.co/FL7ZQCYB/ms-npsxt-512-645925369.jpg",
+"https://i.ibb.co/v4fvSPmT/ms-q4qox-512-645925369.jpg"
+],
+price: "₹249"
+},
+{
+name: "Brown",
+image: "https://i.ibb.co/rR7R3Sk2/ms-uhyan-512-645925366.jpg",
+images: [
+"https://i.ibb.co/rR7R3Sk2/ms-uhyan-512-645925366.jpg",
+"https://i.ibb.co/zVsqK5FV/ms-qquow-512-645925366.jpg",
+"https://i.ibb.co/VY1QxMmz/ms-hvbjy-512-645925366.jpg",
+"https://i.ibb.co/27WMLVH1/ms-zd1wb-512-645925366.jpg"
+],
+price: "₹249"
+},
+{
+name: "Blue",
+image: "https://i.ibb.co/G4LCqZ9W/ms-mrnwz-512-645925368.jpg",
+images: [
+"https://i.ibb.co/G4LCqZ9W/ms-mrnwz-512-645925368.jpg",
+"https://i.ibb.co/wFHBsrBR/ms-dzw8l-512-645925368.jpg",
+"https://i.ibb.co/1fTFVVjk/ms-xe2hh-512-645925368.jpg",
+"https://i.ibb.co/qFFqCSmL/ms-pzh8c-512-645925368.jpg"
+],
+price: "₹249"
+},
+{
+name: "Grey",
+image: "https://i.ibb.co/03FGG7P/ms-eoqvs-512-645925370.jpg",
+images: [
+"https://i.ibb.co/03FGG7P/ms-eoqvs-512-645925370.jpg",
+"https://i.ibb.co/C3jm2VCk/ms-8ygk1-512-645925370.jpg",
+"https://i.ibb.co/G4BqMbcf/ms-w2i47-512-645925370.jpg",
+"https://i.ibb.co/0pm5Vw2S/ms-wmsil-512-645925370.jpg"
+],
+price: "₹249"
+},
+{
+name: "Dark Green",
+image: "https://i.ibb.co/Kx9zx1fx/ms-9n86k-512-645925371.jpg",
+images: [
+"https://i.ibb.co/Kx9zx1fx/ms-9n86k-512-645925371.jpg",
+"https://i.ibb.co/N60JzH3w/ms-zom7y-512-645925371.jpg",
+"https://i.ibb.co/fRP4N2z/ms-pncyk-512-645925371.jpg",
+"https://i.ibb.co/ymJSYNRd/ms-4vi0l-512-645925371.jpg"
+],
+price: "₹249"
+},
+{
+name: "Light Green",
+image: "https://i.ibb.co/T3MwB4B/ms-d9o2d-512-645925373.jpg",
+images: [
+"https://i.ibb.co/T3MwB4B/ms-d9o2d-512-645925373.jpg",
+"https://i.ibb.co/QvMw3HYd/ms-ngu4q-512-645925373.jpg",
+"https://i.ibb.co/RThQ6Qrc/ms-dle1s-512-645925373.jpg"
+],
+price: "₹249"
+},
+{
+name: "White Grey",
+image: "https://i.ibb.co/Xx24yZYF/ms-schxo-512-645925374.jpg",
+images: [
+"https://i.ibb.co/Xx24yZYF/ms-schxo-512-645925374.jpg",
+"https://i.ibb.co/MyGH4VpV/ms-7huyz-512-645925374.jpg",
+"https://i.ibb.co/VWhdyDqJ/ms-3r1qs-512-645925374.jpg"
+],
+price: "₹249"
+}
+],
+sizes: [
+{ name: "28", price: "₹249" },
+{ name: "30", price: "₹249" },
+{ name: "32", price: "₹249" },
+{ name: "34", price: "₹249" },
+{ name: "36", price: "₹249" }
+]
+},
+{
+id: "SHREE-C04",
+name: "Stylish Men pant",
+images: [
+"https://i.ibb.co/7xV1gLdD/ms-cp5du-512-894738944.jpg"
+],
+shortDescription: "Stylish Lycra Men pant with comfortable regular fit.",
+description: "Stylish Lycra Men pant with comfortable regular fit.",
+price: "₹499",
+colors: [
+{
+name: "Beige",
+image: "https://i.ibb.co/7xV1gLdD/ms-cp5du-512-894738944.jpg",
+images: [
+"https://i.ibb.co/7xV1gLdD/ms-cp5du-512-894738944.jpg",
+"https://i.ibb.co/yFjWMNms/ms-xcrkc-512-894738944.jpg",
+"https://i.ibb.co/5gjdRtpd/ms-xb6sg-512-894738944.jpg"
+],
+price: "₹499"
+}
+],
+sizes: [
+{ name: "28", price: "₹499" },
+{ name: "30", price: "₹499" },
+{ name: "32", price: "₹499" }
+]
+},
+{
+id: "SHREE-C05",
+name: "cargo cozy pant",
+images: [
+"https://i.ibb.co/6R1wQcDY/ms-2vl5s-512-542609354.jpg"
+],
+shortDescription: 'Cozy cargo pants crafted from soft kapaas fabric.',
+description: "Cozy cargo pants crafted from soft kapaas fabric.",
+price: "₹299",
+colors: [
+{
+name: "Black",
+image: "https://i.ibb.co/6R1wQcDY/ms-2vl5s-512-542609354.jpg",
+images: [
+"https://i.ibb.co/6R1wQcDY/ms-2vl5s-512-542609354.jpg",
+"https://i.ibb.co/FL4wtB2s/ms-uwgz7-512-542609354.jpg",
+"https://i.ibb.co/ynh9vwY7/ms-wvt4u-512-645925354.jpg"
+],
+price: "₹299"
+}
+],
+sizes: [
+{ name: "26", price: "₹299" },
+{ name: "28", price: "₹299" }
+]
+},
+{
+id: "SHREE-C06",
+name: "Women's Denim jeans",
+images: [
+"https://i.ibb.co/WvV3wnsL/ms-ny0xz-512-1004855894.jpg"
+],
+shortDescription: "Stylish Women's Denim jeans with classic fit.",
+description: "Stylish Women's Denim jeans with classic fit.",
+price: "₹549",
+colors: [
+{
+name: "Grey",
+image: "https://i.ibb.co/WvV3wnsL/ms-ny0xz-512-1004855894.jpg",
+images: [
+"https://i.ibb.co/WvV3wnsL/ms-ny0xz-512-1004855894.jpg",
+"https://i.ibb.co/m5cvGbNC/ms-cqvfe-512-1004855894.jpg",
+"https://i.ibb.co/XrWRJmzJ/ms-c4fqa-512-1004855894.jpg",
+"https://i.ibb.co/ns2cKyww/ms-anlqp-512-1004855894.jpg"
+],
+price: "₹549"
+}
+],
+sizes: [
+{ name: "24", price: "₹549" },
+{ name: "26", price: "₹549" },
+{ name: "28", price: "₹549" },
+{ name: "32", price: "₹549" },
+{ name: "34", price: "₹549" }
+]
+},
+{
+id: "SHREE-C07",
+name: "Men's Casual Pant",
+images: [
+"https://i.ibb.co/84My1Lc6/ms-lva1m-512-968821611.jpg"
+],
+shortDescription: "Comfortable Men's Casual Pant crafted from soft kapaas fabric.",
+description: "Comfortable Men's Casual Pant crafted from soft kapaas fabric.",
+price: "₹499",
+colors: [
+{
+name: "Olive",
+image: "https://i.ibb.co/84My1Lc6/ms-lva1m-512-968821611.jpg",
+images: [
+"https://i.ibb.co/84My1Lc6/ms-lva1m-512-968821611.jpg",
+"https://i.ibb.co/M5Dbc39w/ms-hcujg-512-968821611.jpg",
+"https://i.ibb.co/hJS7yPGd/ms-f8zyy-512-968821611.jpg"
+],
+price: "₹499"
+},
+{
+name: "Beige",
+image: "https://i.ibb.co/zHFWnW6y/ms-lldsl-512-968821606.jpg",
+images: [
+"https://i.ibb.co/zHFWnW6y/ms-lldsl-512-968821606.jpg",
+"https://i.ibb.co/RkccW8Vd/ms-paqam-512-968821606.jpg",
+"https://i.ibb.co/MkXMsfqz/ms-vgsjx-512-968821606.jpg"
+],
+price: "₹499"
+},
+{
+name: "Brown",
+image: "https://i.ibb.co/23HXCbPx/ms-pj0zj-512-968821608.jpg",
+images: [
+"https://i.ibb.co/23HXCbPx/ms-pj0zj-512-968821608.jpg",
+"https://i.ibb.co/hJB3Nrmn/ms-pbmbk-512-968821608.jpg",
+"https://i.ibb.co/KcvNW5Pg/ms-mybq7-512-968821608.jpg"
+],
+price: "₹499"
+}
+],
+sizes: [
+{ name: "28", price: "₹499" },
+{ name: "30", price: "₹499" },
+{ name: "32", price: "₹499" },
+{ name: "34", price: "₹499" },
+{ name: "36", price: "₹499" }
+]
+},
+{
+id: "SHREE-C08",
+name: "Men's korean pant",
+images: [
+"https://i.ibb.co/BVmb1gtc/ms-dvijo-512-1023421032.jpg"
+],
+shortDescription: "Trendy Men's korean pant crafted from stretchable lycra fabric.",
+description: "Trendy Men's korean pant crafted from stretchable lycra fabric.",
+price: "₹499",
+colors: [
+{
+name: "Cream",
+image: "https://i.ibb.co/BVmb1gtc/ms-dvijo-512-1023421032.jpg",
+images: [
+"https://i.ibb.co/BVmb1gtc/ms-dvijo-512-1023421032.jpg",
+"https://i.ibb.co/QjCZ6bHk/ms-sqmsq-512-1023421032.jpg",
+"https://i.ibb.co/Gv3WhJQZ/ms-ja9eg-512-1023421032.jpg"
+],
+price: "₹499"
+}
+],
+sizes: [
+{ name: "28", price: "₹499" },
+{ name: "30", price: "₹499" },
+{ name: "32", price: "₹499" },
+{ name: "34", price: "₹499" }
+]
+},
+{
+id: "SHREE-C09",
+name: "Casual Men's pant",
+images: [
+"https://i.ibb.co/Ng5fsbMF/ms-nheap-512-405075245.jpg"
+],
+shortDescription: "Comfortable Casual Men's pant crafted from soft kapaas fabric.",
+description: "Comfortable Casual Men's pant crafted from soft kapaas fabric.",
+price: "₹349",
+colors: [
+{
+name: "Dark Green",
+image: "https://i.ibb.co/Ng5fsbMF/ms-nheap-512-405075245.jpg",
+images: [
+"https://i.ibb.co/Ng5fsbMF/ms-nheap-512-405075245.jpg",
+"https://i.ibb.co/rGGG6KSk/ms-t2gay-512-405075245.jpg",
+"https://i.ibb.co/svLfMNZ1/ms-cdzcu-512-405075245.jpg",
+"https://i.ibb.co/5XGxgXyk/ms-gjbwg-512-405075245.jpg"
+],
+sizes: [
+{ name: "28", price: "₹349" },
+{ name: "30", price: "₹349" },
+{ name: "32", price: "₹349" },
+{ name: "34", price: "₹349" },
+{ name: "36", price: "₹349" },
+{ name: "38", price: "₹349" },
+{ name: "40", price: "₹349" }
+],
+price: "₹349"
+},
+{
+name: "Navy blue",
+image: "https://i.ibb.co/Dc85gYv/ms-unkln-512-405075246.jpg",
+images: [
+"https://i.ibb.co/Dc85gYv/ms-unkln-512-405075246.jpg",
+"https://i.ibb.co/8LS050vZ/ms-wdqjn-512-405075246.jpg",
+"https://i.ibb.co/ccDrqzK6/ms-vd9sq-512-405075246.jpg",
+"https://i.ibb.co/Nd92gdNP/ms-62wpr-512-405075246.jpg"
+],
+sizes: [
+{ name: "28", price: "₹349" },
+{ name: "30", price: "₹349" },
+{ name: "32", price: "₹349" },
+{ name: "34", price: "₹349" },
+{ name: "36", price: "₹349" }
+],
+price: "₹349"
+},
+{
+name: "Blue",
+image: "https://i.ibb.co/3Y9y3jTR/ms-b2qlp-512-405075247.jpg",
+images: [
+"https://i.ibb.co/3Y9y3jTR/ms-b2qlp-512-405075247.jpg",
+"https://i.ibb.co/qMJrTmQZ/ms-pq8er-512-405075247.jpg",
+"https://i.ibb.co/m5PymdNw/ms-kqnqo-512-405075247.jpg",
+"https://i.ibb.co/KpXtPCpr/ms-c57ch-512-405075247.jpg"
+],
+sizes: [
+{ name: "26", price: "₹349" },
+{ name: "28", price: "₹349" },
+{ name: "30", price: "₹349" },
+{ name: "32", price: "₹349" },
+{ name: "34", price: "₹349" },
+{ name: "36", price: "₹349" }
+],
+price: "₹349"
+},
+{
+name: "Cream",
+image: "https://i.ibb.co/dsg9cH7N/ms-66v0q-512-405075248.jpg",
+images: [
+"https://i.ibb.co/dsg9cH7N/ms-66v0q-512-405075248.jpg",
+"https://i.ibb.co/hJ31Zc8f/ms-grgvm-512-405075248.jpg",
+"https://i.ibb.co/84jSSm9r/ms-w5q3a-512-405075248.jpg",
+"https://i.ibb.co/6JLPH4tm/ms-mzxzq-512-405075248.jpg"
+],
+sizes: [
+{ name: "28", price: "₹349" },
+{ name: "30", price: "₹349" },
+{ name: "32", price: "₹349" },
+{ name: "34", price: "₹349" }
+],
+price: "₹349"
+},
+{
+name: "Brown",
+image: "https://i.ibb.co/NvznsRK/ms-7inrq-512-405075249.jpg",
+images: [
+"https://i.ibb.co/NvznsRK/ms-7inrq-512-405075249.jpg",
+"https://i.ibb.co/HTmWPdHJ/ms-bjnvn-512-405075249.jpg",
+"https://i.ibb.co/dSDgHbW/ms-hhlaz-512-405075249.jpg"
+],
+sizes: [
+{ name: "26", price: "₹349" },
+{ name: "28", price: "₹349" },
+{ name: "30", price: "₹349" },
+{ name: "32", price: "₹349" },
+{ name: "34", price: "₹349" },
+{ name: "36", price: "₹349" }
+],
+price: "₹349"
+},
+{
+name: "Grey malanze",
+image: "https://i.ibb.co/8FL7XBp/ms-b63el-512-405075250.jpg",
+images: [
+"https://i.ibb.co/8FL7XBp/ms-b63el-512-405075250.jpg",
+"https://i.ibb.co/SXKZ9ZbP/ms-hznt6-512-405075250.jpg"
+],
+sizes: [
+{ name: "28", price: "₹349" },
+{ name: "30", price: "₹349" },
+{ name: "32", price: "₹349" },
+{ name: "34", price: "₹349" },
+{ name: "35", price: "₹349" },
+{ name: "38", price: "₹349" },
+{ name: "40", price: "₹349" }
+],
+price: "₹349"
+},
+{
+name: "Grey",
+image: "https://i.ibb.co/tTT9Wghp/ms-c3ubo-512-405075251.jpg",
+images: [
+"https://i.ibb.co/tTT9Wghp/ms-c3ubo-512-405075251.jpg",
+"https://i.ibb.co/p6Sk8GQd/ms-omdap-512-405075251.jpg"
+],
+sizes: [
+{ name: "28", price: "₹349" },
+{ name: "30", price: "₹349" },
+{ name: "32", price: "₹349" },
+{ name: "34", price: "₹349" },
+{ name: "36", price: "₹349" },
+{ name: "38", price: "₹349" },
+{ name: "40", price: "₹349" }
+],
+price: "₹349"
+},
+{
+name: "Black",
+image: "https://i.ibb.co/NdMYBCJc/ms-0oi8x-512-405075252.jpg",
+images: [
+"https://i.ibb.co/NdMYBCJc/ms-0oi8x-512-405075252.jpg",
+"https://i.ibb.co/MktQwkt8/ms-wdmhj-512-405075252.jpg",
+"https://i.ibb.co/LDVc1Mwq/ms-bmmai-512-405075252.jpg"
+],
+sizes: [
+{ name: "28", price: "₹349" },
+{ name: "30", price: "₹349" },
+{ name: "32", price: "₹349" },
+{ name: "34", price: "₹349" },
+{ name: "36", price: "₹349" },
+{ name: "38", price: "₹349" },
+{ name: "40", price: "₹349" }
+],
+price: "₹349"
+}
+]
+},
+{
+id: "SHREE-C10",
+name: "Men's Cargo",
+images: [
+"https://i.ibb.co/XZLkBY6Z/ms-k32rr-512-951668703.jpg"
+],
+shortDescription: "Stylish Men's Cargo crafted from soft kapaas fabric.",
+description: "Stylish Men's Cargo crafted from soft kapaas fabric.",
+price: "₹369",
+colors: [
+{
+name: "Bhura",
+image: "https://i.ibb.co/XZLkBY6Z/ms-k32rr-512-951668703.jpg",
+images: [
+"https://i.ibb.co/XZLkBY6Z/ms-k32rr-512-951668703.jpg",
+"https://i.ibb.co/GQYw3MtZ/ms-nctoj-512-951668703.jpg",
+"https://i.ibb.co/hJqKgbxc/ms-y3mpz-512-951668703.jpg",
+"https://i.ibb.co/7dpQqJ3b/ms-bqyzm-512-968821603.jpg"
+],
+price: "₹369"
+}
+],
+sizes: [
+{ name: "28", price: "₹369" },
+{ name: "30", price: "₹369" },
+{ name: "32", price: "₹369" },
+{ name: "34", price: "₹369" },
+{ name: "36", price: "₹369" },
+{ name: "M", price: "₹369" },
+{ name: "L", price: "₹369" },
+{ name: "XL", price: "₹369" },
+{ name: "XXL", price: "₹369" },
+{ name: "XXXL", price: "₹369" }
+]
+},
+{
+id: "SHREE-C11",
+name: "Track pant",
+images: [
+"https://i.ibb.co/35kdcLYt/ms-rdcwz-512-1014430644.jpg"
+],
+shortDescription: "Comfortable Track pant crafted from polyester fabric.",
+description: "Comfortable Track pant crafted from polyester fabric.",
+price: "₹399",
+colors: [
+{
+name: "Green",
+image: "https://i.ibb.co/35kdcLYt/ms-rdcwz-512-1014430644.jpg",
+images: [
+"https://i.ibb.co/35kdcLYt/ms-rdcwz-512-1014430644.jpg"
+],
+price: "₹399"
+},
+{
+name: "Blue",
+image: "https://i.ibb.co/tTLCzN8V/ms-ttwp1-512-1014430643.jpg",
+images: [
+"https://i.ibb.co/tTLCzN8V/ms-ttwp1-512-1014430643.jpg"
+],
+price: "₹399"
+}
+],
+sizes: [
+{ name: "S", price: "₹399" },
+{ name: "M", price: "₹399" },
+{ name: "L", price: "₹399" },
+{ name: "XL", price: "₹399" },
+{ name: "XXL", price: "₹399" }
+]
+},
+{
+id: "SHREE-C12",
+name: "Casual Pajama",
+images: [
+"https://i.ibb.co/JWqNwYNN/ms-jeuyx-512-1022799693.jpg"
+],
+shortDescription: "Soft and comfortable Casual Pajama crafted from kapaas fabric.",
+description: "Soft and comfortable Casual Pajama crafted from kapaas fabric.",
+price: "₹329",
+colors: [
+{
+name: "Black",
+image: "https://i.ibb.co/JWqNwYNN/ms-jeuyx-512-1022799693.jpg",
+images: [
+"https://i.ibb.co/JWqNwYNN/ms-jeuyx-512-1022799693.jpg"
+],
+price: "₹329"
+}
+],
+sizes: [
+{ name: "S", price: "₹329" },
+{ name: "M", price: "₹329" },
+{ name: "L", price: "₹329" },
+{ name: "XL", price: "₹329" }
+]
+},
+{
+id: "SHREE-C13",
+name: "Beggy Track pant",
+images: [
+"https://i.ibb.co/Kx1pm4kt/ms-qgwsu-512-1022524034.jpg"
+],
+shortDescription: "Stylish Beggy Track pant with combo track pants design.",
+description: "Stylish Beggy Track pant with combo track pants design.<br><br><b>Specification:</b> Combo Track pants",
+price: "₹549",
+colors: [
+{
+name: "Green + Blue",
+image: "https://i.ibb.co/Kx1pm4kt/ms-qgwsu-512-1022524034.jpg",
+images: [
+"https://i.ibb.co/Kx1pm4kt/ms-qgwsu-512-1022524034.jpg",
+"https://i.ibb.co/xtMtSGrV/ms-5kcee-512-1022524036.jpg",
+"https://i.ibb.co/JRbQD74d/ms-5a9cu-512-1022524034.jpg"
+],
+price: "₹549"
+},
+{
+name: "Black + Green",
+image: "https://i.ibb.co/t0qKLSG/ms-v9luj-512-1022524036.jpg",
+images: [
+"https://i.ibb.co/t0qKLSG/ms-v9luj-512-1022524036.jpg",
+"https://i.ibb.co/4nxRzJzJ/ms-ucmvt-512-1022524035.jpg",
+"https://i.ibb.co/bgYG2p1c/ms-lavsh-512-1022524034.jpg"
+],
+price: "₹549"
+},
+{
+name: "Black + Blue",
+image: "https://i.ibb.co/rRzcfTKt/ms-bxnxs-512-1022524035.jpg",
+images: [
+"https://i.ibb.co/rRzcfTKt/ms-bxnxs-512-1022524035.jpg",
+"https://i.ibb.co/Gv2cRZNc/ms-bk8z3-512-1022524036.jpg",
+"https://i.ibb.co/600XS5DJ/ms-9fdcz-512-1022524035.jpg"
+],
+price: "₹549"
+}
+],
+sizes: [
+{ name: "M", price: "₹549" },
+{ name: "L", price: "₹549" },
+{ name: "XL", price: "₹549" },
+{ name: "X", price: "₹549" }
+]
+},
+{
+id: "SHREE-C14",
+name: "Casual T - Shirt",
+images: [
+"https://i.ibb.co/sdkW9N7c/ms-081oq-512-142975418.jpg"
+],
+shortDescription: "Casual T - Shirt crafted from polyester fabric.",
+description: "Casual T - Shirt crafted from polyester fabric.",
+price: "₹199",
+colors: [
+{
+name: "Black with white stripes",
+image: "https://i.ibb.co/sdkW9N7c/ms-081oq-512-142975418.jpg",
+images: [
+"https://i.ibb.co/sdkW9N7c/ms-081oq-512-142975418.jpg",
+"https://i.ibb.co/PzxFftpW/ms-u64jw-512-142975418.jpg"
+],
+price: "₹199"
+}
+],
+sizes: [
+{ name: "S", price: "₹199" },
+{ name: "M", price: "₹199" },
+{ name: "L", price: "₹199" },
+{ name: "XXL", price: "₹199" }
+]
+},
+{
+id: "SHREE-C15",
+name: "Stylish T - Shirt",
+images: [
+"https://i.ibb.co/VYs6fPLc/ms-pfzps-512-446366703.jpg"
+],
+shortDescription: "Stylish printed T - Shirt crafted from cotton fabric.",
+description: "Stylish printed T - Shirt crafted from cotton fabric.",
+price: "₹349",
+colors: [
+{
+name: "Red + Green + Black",
+image: "https://i.ibb.co/VYs6fPLc/ms-pfzps-512-446366703.jpg",
+images: [
+"https://i.ibb.co/VYs6fPLc/ms-pfzps-512-446366703.jpg"
+],
+price: "₹349"
+},
+{
+name: "Violet + Green + Black",
+image: "https://i.ibb.co/PG8GvPRH/ms-izsob-512-446366705.jpg",
+images: [
+"https://i.ibb.co/PG8GvPRH/ms-izsob-512-446366705.jpg"
+],
+price: "₹349"
+},
+{
+name: "Violet + Pink + Beige",
+image: "https://i.ibb.co/WvcjrnkV/ms-kcmkp-512-446366704.jpg",
+images: [
+"https://i.ibb.co/WvcjrnkV/ms-kcmkp-512-446366704.jpg"
+],
+price: "₹349"
+},
+{
+name: "Red + Green + Beige",
+image: "https://i.ibb.co/JRYKMTMZ/ms-avgnf-512-446366707.jpg",
+images: [
+"https://i.ibb.co/JRYKMTMZ/ms-avgnf-512-446366707.jpg"
+],
+price: "₹349"
+},
+{
+name: "Green + Beige + Black",
+image: "https://i.ibb.co/QF2D96J2/ms-lwtcw-512-446366708.jpg",
+images: [
+"https://i.ibb.co/QF2D96J2/ms-lwtcw-512-446366708.jpg"
+],
+price: "₹349"
+}
+],
+sizes: [
+{ name: "S", price: "₹349" },
+{ name: "M", price: "₹349" },
+{ name: "L", price: "₹349" },
+{ name: "XL", price: "₹349" },
+{ name: "XXL", price: "₹349" }
+]
+},
+{
+id: "SHREE-C16",
+name: "Oversized T - shirt",
+images: [
+"https://i.ibb.co/mCfdygWN/ms-6tuwq-512-476893845.jpg"
+],
+shortDescription: "Cotton Oversized T - shirt with unique anime/character prints.",
+description: "Cotton Oversized T - shirt with unique anime/character prints.",
+price: "₹259",
+colors: [
+{
+name: "Variant 1 (Itachi Uchiha)",
+image: "https://i.ibb.co/mCfdygWN/ms-6tuwq-512-476893845.jpg",
+images: [
+"https://i.ibb.co/mCfdygWN/ms-6tuwq-512-476893845.jpg",
+"https://i.ibb.co/XZnzBhPF/ms-chbjq-512-476893845.jpg",
+"https://i.ibb.co/JFQFZSLp/ms-lqw0c-512-476893845.jpg"
+],
+sizes: [
+{ name: "S", price: "₹259" },
+{ name: "M", price: "₹259" },
+{ name: "L", price: "₹259" },
+{ name: "XL", price: "₹259" }
+],
+price: "₹259"
+},
+{
+name: "Variant 2 (One Piece)",
+image: "https://i.ibb.co/vxdcz3Cv/ms-skp28-512-476893842.jpg",
+images: [
+"https://i.ibb.co/vxdcz3Cv/ms-skp28-512-476893842.jpg",
+"https://i.ibb.co/FbtjxXdb/ms-xjzmp-512-476893842.jpg"
+],
+sizes: [
+{ name: "M", price: "₹259" },
+{ name: "XL", price: "₹259" }
+],
+price: "₹259"
+},
+{
+name: "Variant 3 (Hatake Kakashi)",
+image: "https://i.ibb.co/0R7Pnm42/ms-orzfm-512-476893846.jpg",
+images: [
+"https://i.ibb.co/0R7Pnm42/ms-orzfm-512-476893846.jpg",
+"https://i.ibb.co/CK64kYgh/ms-wwalv-512-476893846.jpg",
+"https://i.ibb.co/nsM809dt/ms-3cjbw-512-476893846.jpg"
+],
+sizes: [
+{ name: "S", price: "₹259" },
+{ name: "M", price: "₹259" },
+{ name: "L", price: "₹259" },
+{ name: "XL", price: "₹259" }
+],
+price: "₹259"
+},
+{
+name: "Variant 4 (Satoru Gojo)",
+image: "https://i.ibb.co/5h2B8RVV/ms-2hlyh-512-476893847.jpg",
+images: [
+"https://i.ibb.co/5h2B8RVV/ms-2hlyh-512-476893847.jpg",
+"https://i.ibb.co/JwYFMPN7/ms-aj1nw-512-476893847.jpg",
+"https://i.ibb.co/zdqyMhh/ms-lyblp-512-476893847.jpg"
+],
+sizes: [
+{ name: "M", price: "₹259" },
+{ name: "L", price: "₹259" },
+{ name: "XL", price: "₹259" }
+],
+price: "₹259"
+},
+{
+name: "Variant 5 (Yarmen Sukuna)",
+image: "https://i.ibb.co/nqkBNm1v/ms-6dhob-512-476893843.jpg",
+images: [
+"https://i.ibb.co/nqkBNm1v/ms-6dhob-512-476893843.jpg",
+"https://i.ibb.co/8ngD0ZbJ/ms-5hpo9-512-476893843.jpg",
+"https://i.ibb.co/Q30nztB5/ms-uqi7r-512-476893843.jpg"
+],
+sizes: [
+{ name: "S", price: "₹259" },
+{ name: "M", price: "₹259" },
+{ name: "L", price: "₹259" },
+{ name: "XL", price: "₹259" }
+],
+price: "₹259"
+}
+],
+sizes: [
+{ name: "S", price: "₹259" },
+{ name: "M", price: "₹259" },
+{ name: "L", price: "₹259" },
+{ name: "XL", price: "₹259" }
+]
+},
+{
+id: "SHREE-C17",
+name: "Unisex T - Shirt",
+images: [
+"https://i.ibb.co/s95CtybR/ms-lamr8-512-478512632.jpg"
+],
+shortDescription: "Pure Cotton Unisex T - Shirt with character prints.",
+description: "Pure Cotton Unisex T - Shirt with character prints.",
+price: "₹299",
+colors: [
+{
+name: "One Piece",
+image: "https://i.ibb.co/s95CtybR/ms-lamr8-512-478512632.jpg",
+images: [
+"https://i.ibb.co/s95CtybR/ms-lamr8-512-478512632.jpg",
+"https://i.ibb.co/7dhnpLSb/ms-du4mf-512-478512632.jpg",
+"https://i.ibb.co/MkPyt03S/ms-ieism-512-478512632.jpg"
+],
+sizes: [
+{ name: "S", price: "₹299" },
+{ name: "M", price: "₹299" },
+{ name: "XL", price: "₹299" },
+{ name: "XXL", price: "₹299" }
+],
+price: "₹299"
+},
+{
+name: "Tom & Jerry",
+image: "https://i.ibb.co/svdpFC4L/ms-btn8e-512-478512633.jpg",
+images: [
+"https://i.ibb.co/svdpFC4L/ms-btn8e-512-478512633.jpg",
+"https://i.ibb.co/kgHX7R42/ms-rtc7e-512-478512633.jpg"
+],
+sizes: [
+{ name: "S", price: "₹299" },
+{ name: "M", price: "₹299" },
+{ name: "L", price: "₹299" },
+{ name: "XL", price: "₹299" },
+{ name: "XXL", price: "₹299" }
+],
+price: "₹299"
+},
+{
+name: "Snoopy",
+image: "https://i.ibb.co/DHTyYccw/ms-fillt-512-478512634.jpg",
+images: [
+"https://i.ibb.co/DHTyYccw/ms-fillt-512-478512634.jpg",
+"https://i.ibb.co/WvH9yBHW/ms-msq4m-512-478512634.jpg",
+"https://i.ibb.co/93359M5F/ms-ots6d-512-478512634.jpg"
+],
+sizes: [
+{ name: "S", price: "₹299" },
+{ name: "M", price: "₹299" },
+{ name: "L", price: "₹299" },
+{ name: "XL", price: "₹299" },
+{ name: "XXL", price: "₹299" }
+],
+price: "₹299"
+}
+],
+sizes: [
+{ name: "S", price: "₹299" },
+{ name: "M", price: "₹299" },
+{ name: "L", price: "₹299" },
+{ name: "XL", price: "₹299" },
+{ name: "XXL", price: "₹299" }
+]
+},
+{
+id: "SHREE-C18",
+name: "Oversized T - Shirt",
+images: [
+"https://i.ibb.co/zH6DdMCG/ms-awgtv-512-1029176290.jpg"
+],
+shortDescription: "Cotton Oversized T - Shirt available in multiple vibrant colors.",
+description: "Cotton Oversized T - Shirt available in multiple vibrant colors.",
+price: "₹299",
+colors: [
+{
+name: "Grey",
+image: "https://i.ibb.co/zH6DdMCG/ms-awgtv-512-1029176290.jpg",
+images: [
+"https://i.ibb.co/zH6DdMCG/ms-awgtv-512-1029176290.jpg"
+],
+price: "₹299"
+},
+{
+name: "Gulabi",
+image: "https://i.ibb.co/XrmMgq8f/ms-ebiml-512-1029176288.jpg",
+images: [
+"https://i.ibb.co/XrmMgq8f/ms-ebiml-512-1029176288.jpg"
+],
+price: "₹299"
+},
+{
+name: "White",
+image: "https://i.ibb.co/hx7jwpJ4/ms-xjza1-512-1029176292.jpg",
+images: [
+"https://i.ibb.co/hx7jwpJ4/ms-xjza1-512-1029176292.jpg"
+],
+price: "₹299"
+},
+{
+name: "Lavender",
+image: "https://i.ibb.co/Q7By0Pdj/ms-ciaxd-512-1029176293.jpg",
+images: [
+"https://i.ibb.co/Q7By0Pdj/ms-ciaxd-512-1029176293.jpg"
+],
+price: "₹299"
+},
+{
+name: "Blue",
+image: "https://i.ibb.co/GvKpkjQS/ms-ni1i3-512-1029176294.jpg",
+images: [
+"https://i.ibb.co/GvKpkjQS/ms-ni1i3-512-1029176294.jpg"
+],
+price: "₹299"
+},
+{
+name: "Beige",
+image: "https://i.ibb.co/hRNB42Tg/ms-qwyug-512-1029176289.jpg",
+images: [
+"https://i.ibb.co/hRNB42Tg/ms-qwyug-512-1029176289.jpg"
+],
+price: "₹299"
+},
+{
+name: "Green",
+image: "https://i.ibb.co/JRvfG7vZ/ms-niukw-512-1029176287.jpg",
+images: [
+"https://i.ibb.co/JRvfG7vZ/ms-niukw-512-1029176287.jpg"
+],
+price: "₹299"
+},
+{
+name: "Dark Green",
+image: "https://i.ibb.co/zhK0dwYP/ms-igxat-512-1029176291.jpg",
+images: [
+"https://i.ibb.co/zhK0dwYP/ms-igxat-512-1029176291.jpg"
+],
+price: "₹299"
+}
+],
+sizes: [
+{ name: "S", price: "₹299" },
+{ name: "M", price: "₹299" },
+{ name: "L", price: "₹299" },
+{ name: "XL", price: "₹299" },
+{ name: "XXL", price: "₹299" }
+]
+},
+{
+id: "SHREE-C19",
+name: "Oversized T - shirt",
+images: [
+"https://i.ibb.co/jPq5zcgM/ms-azgag-512-618688885.jpg"
+],
+shortDescription: "Cotton Oversized T - shirt featuring Satoru Gojo print.",
+description: "Cotton Oversized T - shirt featuring Satoru Gojo print.",
+price: "₹239",
+colors: [
+{
+name: "Black (Satoru Gojo)",
+image: "https://i.ibb.co/jPq5zcgM/ms-azgag-512-618688885.jpg",
+images: [
+"https://i.ibb.co/jPq5zcgM/ms-azgag-512-618688885.jpg",
+"https://i.ibb.co/7dVL0Lvv/ms-i3mqh-512-618688885.jpg"
+],
+price: "₹239"
+}
+],
+sizes: [
+{ name: "XS", price: "₹239" },
+{ name: "S", price: "₹239" },
+{ name: "M", price: "₹239" },
+{ name: "L", price: "₹239" },
+{ name: "XL", price: "₹239" },
+{ name: "XXL", price: "₹239" }
+]
+},
+{
+id: "SHREE-C20",
+name: "Brooklyn T shirt",
+images: [
+"https://i.ibb.co/tMpH3GKc/ms-montb-512-667586579.jpg"
+],
+shortDescription: "Pure Kapaas Brooklyn T shirt available in multiple colors.",
+description: "Pure Kapaas Brooklyn T shirt featuring comfortable fabric and stylish look.",
+price: "₹349",
+colors: [
+{
+name: "Green",
+image: "https://i.ibb.co/tMpH3GKc/ms-montb-512-667586579.jpg",
+images: [
+"https://i.ibb.co/tMpH3GKc/ms-montb-512-667586579.jpg",
+"https://i.ibb.co/zVQNmVQJ/ms-j3t2r-512-667586579.jpg",
+"https://i.ibb.co/C5gnchyt/ms-74fao-512-667586579.jpg"
+],
+price: "₹349"
+},
+{
+name: "Black",
+image: "https://i.ibb.co/YFpvF5qF/ms-iedyg-512-667586580.jpg",
+images: [
+"https://i.ibb.co/YFpvF5qF/ms-iedyg-512-667586580.jpg",
+"https://i.ibb.co/fGCjkYs4/ms-tr3se-512-667586580.jpg",
+"https://i.ibb.co/2Y7GWQzy/ms-9bhdl-512-667586580.jpg"
+],
+price: "₹349"
+}
+],
+sizes: [
+{ name: "S", price: "₹349" },
+{ name: "M", price: "₹349" },
+{ name: "L", price: "₹349" },
+{ name: "XL", price: "₹349" },
+{ name: "XXL", price: "₹349" }
+]
+},
+{
+id: "SHREE-C21",
+name: "Dori belt dress",
+images: ["https://i.ibb.co/p63N6q47/ms-yo45x-512-277086555.jpg"],
+shortDescription: "Stylish jorjet dori belt dress available in multiple vibrant colors.",
+description: "Elegant and comfortable jorjet fabric dress featuring a flattering dori belt design.",
+price: "₹249",
+colors: [
+{ name: "Maroon", image: "https://i.ibb.co/p63N6q47/ms-yo45x-512-277086555.jpg",
+images: ["https://i.ibb.co/p63N6q47/ms-yo45x-512-277086555.jpg",
+"https://i.ibb.co/Psk8hTzt/ms-s60pk-512-277086555.jpg"], price: "₹249" },
+{ name: "Black", image: "https://i.ibb.co/tw1kQcSk/ms-bbdky-512-277086556.jpg",
+images: ["https://i.ibb.co/tw1kQcSk/ms-bbdky-512-277086556.jpg"], price: "₹249" },
+{ name: "Yellow", image: "https://i.ibb.co/bgKJgP06/ms-tcuro-512-277086553.jpg",
+images: ["https://i.ibb.co/bgKJgP06/ms-tcuro-512-277086553.jpg",
+"https://i.ibb.co/LhJKcMsj/ms-rwioj-512-277086553.jpg",
+"https://i.ibb.co/274xCgT2/ms-5ndpu-512-277086553.jpg"], price: "₹249" },
+{ name: "Purple", image: "https://i.ibb.co/4w5pnvcP/ms-v47t8-512-277086557.jpg",
+images: ["https://i.ibb.co/4w5pnvcP/ms-v47t8-512-277086557.jpg",
+"https://i.ibb.co/vx249YCD/ms-li8i5-512-277086557.jpg"], price: "₹249" },
+{ name: "Light Pink", image:
+"https://i.ibb.co/d0RkTFjD/ms-r5ben-512-277086554.jpg", images:
+["https://i.ibb.co/d0RkTFjD/ms-r5ben-512-277086554.jpg",
+"https://i.ibb.co/21HjggW2/ms-eimsa-512-277086554.jpg"], price: "₹249" }
+],
+sizes: [
+{ name: "XS", price: "₹249" },
+{ name: "S", price: "₹249" },
+{ name: "M", price: "₹249" },
+{ name: "L", price: "₹249" }
+]
+},
+{
+id: "SHREE-C22",
+name: "Women's Mini Dress",
+images: ["https://i.ibb.co/GQVkpVRH/ms-xoa6x-512-316602636.jpg"],
+shortDescription: "Chic crepe mini dress designed for casual outings and parties.",
+description: "Trendy women's mini dress crafted from soft crepe fabric for an effortless stylish look.",
+price: "₹249",
+colors: [
+{ name: "Brown", image: "https://i.ibb.co/GQVkpVRH/ms-xoa6x-512-316602636.jpg",
+images: ["https://i.ibb.co/GQVkpVRH/ms-xoa6x-512-316602636.jpg"], price: "₹249" },
+{ name: "Beige", image: "https://i.ibb.co/HL3yMPxR/ms-ywwr3-512-316602637.jpg",
+images: ["https://i.ibb.co/HL3yMPxR/ms-ywwr3-512-316602637.jpg"], price: "₹249" },
+{ name: "Maroon", image: "https://i.ibb.co/Fk0KQ8dC/ms-xyo9p-512-316602639.jpg",
+images: ["https://i.ibb.co/Fk0KQ8dC/ms-xyo9p-512-316602639.jpg",
+"https://i.ibb.co/qYfkcghm/ms-xiqr1-512-316602638.jpg"], price: "₹249" },
+{ name: "Green", image: "https://i.ibb.co/21YXZ5Xs/ms-yt08v-512-316602635.jpg",
+images: ["https://i.ibb.co/21YXZ5Xs/ms-yt08v-512-316602635.jpg"], price: "₹249" },
+{ name: "Black", image: "https://i.ibb.co/6250bwS/ms-w6ed8-512-316602634.jpg",
+images: ["https://i.ibb.co/6250bwS/ms-w6ed8-512-316602634.jpg"], price: "₹249" }
+],
+sizes: [
+{ name: "XS", price: "₹249" },
+{ name: "S", price: "₹249" },
+{ name: "M", price: "₹249" },
+{ name: "L", price: "₹249" }
+]
+},
+{
+id: "SHREE-C23",
+name: "Women's Kurti",
+images: ["https://i.ibb.co/B5zg3nbg/ms-gbnbv-512-985903375.jpg"],
+shortDescription: "Elegant rayon kurti featuring fine prints and classic fit.",
+description: "Comfortable and graceful rayon kurti designed for daily wear and ethnic styling.",
+price: "₹429",
+colors: [
+{ name: "Blue", image: "https://i.ibb.co/B5zg3nbg/ms-gbnbv-512-985903375.jpg",
+images: ["https://i.ibb.co/B5zg3nbg/ms-gbnbv-512-985903375.jpg",
+"https://i.ibb.co/nNSkhnLd/ms-bik7i-512-985903375.jpg",
+"https://i.ibb.co/MkfDr44Y/ms-xmap4-512-985903375.jpg"], price: "₹429" },
+{ name: "Orange", image: "https://i.ibb.co/93NQzfsj/ms-6atmf-512-985903377.jpg",
+images: ["https://i.ibb.co/93NQzfsj/ms-6atmf-512-985903377.jpg",
+"https://i.ibb.co/xKsWRrWL/ms-tman4-512-985903377.jpg",
+"https://i.ibb.co/PsNjcd7d/ms-qjafo-512-985903377.jpg"], price: "₹429" },
+{ name: "Yellow", image: "https://i.ibb.co/4RV2VVPs/ms-dgujn-512-985903378.jpg",
+images: ["https://i.ibb.co/4RV2VVPs/ms-dgujn-512-985903378.jpg",
+"https://i.ibb.co/xSZbKyFr/ms-4rddj-512-985903378.jpg",
+"https://i.ibb.co/Q7cGPns4/ms-voe1i-512-985903378.jpg"], price: "₹429" }
+],
+sizes: [
+{ name: "XS", price: "₹429" },
+{ name: "S", price: "₹429" },
+{ name: "M", price: "₹429" },
+{ name: "L", price: "₹429" },
+{ name: "XL", price: "₹429" },
+{ name: "XXL", price: "₹429" },
+{ name: "XXXL", price: "₹429" },
+{ name: "4XL", price: "₹429" },
+{ name: "5XL", price: "₹429" }
+]
+},
+{
+id: "SHREE-C24",
+name: "Women's Kurta Set",
+images: ["https://i.ibb.co/jm3SBs5/ms-8ee5x-512-588164719.jpg"],
+shortDescription: "Premium cotton kurta set offering superior comfort and traditional appeal.",
+description: "Classic cotton kurta set featuring exquisite patterns ideal for festive and casual wear.",
+price: "₹349",
+colors: [
+{ name: "Maroon", image: "https://i.ibb.co/jm3SBs5/ms-8ee5x-512-588164719.jpg",
+images: ["https://i.ibb.co/jm3SBs5/ms-8ee5x-512-588164719.jpg",
+"https://i.ibb.co/TqWHWTB4/ms-otxu9-512-588164719.jpg",
+"https://i.ibb.co/tMVr1Y5G/ms-ane4x-512-588164719.jpg",
+"https://i.ibb.co/KpBHRXbd/ms-uvw9p-512-588164719.jpg"], price: "₹349" }
+],
+sizes: [
+{ name: "XXS", price: "₹349" },
+{ name: "XS", price: "₹349" },
+{ name: "S", price: "₹349" },
+{ name: "M", price: "₹349" },
+{ name: "L", price: "₹349" },
+{ name: "XL", price: "₹349" },
+{ name: "XXL", price: "₹349" },
+{ name: "XXXL", price: "₹349" }
+]
+},
+{
+id: "SHREE-C25",
+name: "Designer Kurta Set",
+images: ["https://i.ibb.co/HTh5NFbT/ms-b3pwq-512-972567633.jpg"],
+shortDescription: "Designer cotton kurta set crafted with fine detailing and elegant finish.",
+description: "High-quality cotton designer kurta set that brings sophisticated style to your ethnic wardrobe.",
+price: "₹369",
+colors: [
+{ name: "Black", image: "https://i.ibb.co/HTh5NFbT/ms-b3pwq-512-972567633.jpg",
+images: ["https://i.ibb.co/HTh5NFbT/ms-b3pwq-512-972567633.jpg",
+"https://i.ibb.co/23Gxgfpf/ms-fmvh3-512-972567633.jpg",
+"https://i.ibb.co/TBvRg8Y5/ms-sohfm-512-972567633.jpg",
+"https://i.ibb.co/szDZpTD/ms-vevhq-512-972567633.jpg"], price: "₹369" }
+],
+sizes: [
+{ name: "M", price: "₹369" },
+{ name: "L", price: "₹369" },
+{ name: "XL", price: "₹369" },
+{ name: "XXL", price: "₹369" },
+{ name: "XXXL", price: "₹369" },
+{ name: "4XL", price: "₹369" },
+{ name: "5XL", price: "₹369" }
+]
+},
+{
+id: "SHREE-C26",
+name: "Women's Cozy Dress",
+images: ["https://i.ibb.co/MD8VsGJG/ms-amvpn-512-504507253.jpg"],
+shortDescription: "Soft khaadi cotton cozy dress designed for all-day relaxed comfort.",
+description: "Cozy and breathable khaadi cotton dress offering an aesthetic silhouette and supreme comfort.",
+price: "₹399",
+colors: [
+{ name: "Pink", image: "https://i.ibb.co/MD8VsGJG/ms-amvpn-512-504507253.jpg",
+images: ["https://i.ibb.co/MD8VsGJG/ms-amvpn-512-504507253.jpg",
+"https://i.ibb.co/27hT64xn/ms-woxdf-512-504507253.jpg",
+"https://i.ibb.co/8gYFyvRY/ms-vla3f-512-504507253.jpg",
+"https://i.ibb.co/HTVPfkX8/ms-yzxag-512-504507253.jpg"], price: "₹399" }
+],
+sizes: [
+{ name: "XS", price: "₹399" },
+{ name: "S", price: "₹479" },
+{ name: "M", price: "₹399" },
+{ name: "L", price: "₹479" },
+{ name: "XL", price: "₹479" },
+{ name: "XXL", price: "₹479" },
+{ name: "XXXL", price: "₹479" },
+{ name: "4XL", price: "₹489" },
+{ name: "5XL", price: "₹489" }
+]
+},
+{
+id: "SHREE-C27",
+name: "Women's latest Kurti",
+images: ["https://i.ibb.co/Nn9t7gWK/ms-i9eio-512-468271645.jpg"],
+shortDescription: "Trendy rayon kurti featuring contemporary patterns and rich maroon tone.",
+description: "Latest design rayon kurti tailored to give you a chic and elegant everyday ethnic look.",
+price: "₹469",
+colors: [
+{ name: "Maroon", image: "https://i.ibb.co/Nn9t7gWK/ms-i9eio-512-468271645.jpg",
+images: ["https://i.ibb.co/Nn9t7gWK/ms-i9eio-512-468271645.jpg",
+"https://i.ibb.co/TMxbx36H/ms-1bnwy-512-468271645.jpg",
+"https://i.ibb.co/GfkfzgJS/ms-4yync-512-468271645.jpg",
+"https://i.ibb.co/yCZ4nPC/ms-uzvd0-512-468271645.jpg"], price: "₹469" }
+],
+sizes: [
+{ name: "L", price: "₹469" },
+{ name: "XXL", price: "₹469" },
+{ name: "XXXL", price: "₹469" }
+]
+},
+{
+id: "SHREE-C28",
+name: "Women's Flat Heels",
+images: ["https://i.ibb.co/V1dMR9H/ms-8z35e-512-530997519.jpg"],
+shortDescription: "Comfortable 2-inch flat heels in classic beige for graceful styling.",
+description: "Stylish women's flat heels with a comfortable 2-inch elevation, perfect for daily wear and special occasions.",
+price: "₹349",
+colors: [
+{ name: "Beige", image: "https://i.ibb.co/V1dMR9H/ms-8z35e-512-530997519.jpg",
+images: ["https://i.ibb.co/V1dMR9H/ms-8z35e-512-530997519.jpg",
+"https://i.ibb.co/tp7RPYyh/ms-vmhzp-512-530997519.jpg",
+"https://i.ibb.co/s8CX6mK/ms-ptrvb-512-530997519.jpg",
+"https://i.ibb.co/zTLKWx7G/ms-qouce-512-530997519.jpg"], price: "₹349" }
+],
+sizes: [
+{ name: "IND 4", price: "₹349" },
+{ name: "IND 5", price: "₹349" },
+{ name: "IND 6", price: "₹349" },
+{ name: "IND 7", price: "₹349" },
+{ name: "IND 8", price: "₹349" }
+]
+},
+{
+id: "SHREE-C29",
+name: "Men's Stylish Shirt",
+images: ["https://i.ibb.co/bRmtLMBj/ms-mrunx-512-527490671.jpg"],
+shortDescription: "Textured popcorn fabric men's shirt for a sharp and modern look.",
+description: "Trendy men's stylish shirt made from comfortable popcorn fabric, built for casual and smart-casual wear.",
+price: "₹249",
+colors: [
+{ name: "White", image: "https://i.ibb.co/bRmtLMBj/ms-mrunx-512-527490671.jpg",
+images: ["https://i.ibb.co/bRmtLMBj/ms-mrunx-512-527490671.jpg",
+"https://i.ibb.co/tj6TjFj/ms-vjwfo-512-527490671.jpg"], price: "₹249" },
+{ name: "Black", image: "https://i.ibb.co/9mdtjv14/ms-reeub-512-527490672.jpg",
+images: ["https://i.ibb.co/9mdtjv14/ms-reeub-512-527490672.jpg",
+"https://i.ibb.co/wrcYS7vD/ms-fykza-512-527490672.jpg"], price: "₹249" }
+],
+sizes: [
+{ name: "S", price: "₹249" },
+{ name: "M", price: "₹249" },
+{ name: "L", price: "₹249" },
+{ name: "XL", price: "₹249" }
+]
+},
+{
+id: "SHREE-C30",
+name: "Men's Casual Shirt",
+images: ["https://i.ibb.co/v6hM62Lk/ms-9omkk-512-375103171.jpg"],
+shortDescription: "Versatile popcorn fabric men's casual shirt in multiple solid colors.",
+description: "Comfortable and light textured popcorn fabric shirt designed for everyday casual comfort.",
+price: "₹229",
+colors: [
+{ name: "Sky Blue", image:
+"https://i.ibb.co/v6hM62Lk/ms-9omkk-512-375103171.jpg", images:
+["https://i.ibb.co/v6hM62Lk/ms-9omkk-512-375103171.jpg",
+"https://i.ibb.co/SZpXVFF/ms-vosnb-512-375103171.jpg"], price: "₹229" },
+{ name: "Navy Blue", image:
+"https://i.ibb.co/35PSsLdx/ms-fzfyu-512-375103167.jpg", images:
+["https://i.ibb.co/35PSsLdx/ms-fzfyu-512-375103167.jpg"], price: "₹249" },
+{ name: "Black", image: "https://i.ibb.co/GQgpsFpd/ms-lpwfp-512-375103166.jpg",
+images: ["https://i.ibb.co/GQgpsFpd/ms-lpwfp-512-375103166.jpg"], price: "₹239" },
+{ name: "Maroon", image: "https://i.ibb.co/YTqf8jCk/ms-et9qu-512-375103170.jpg",
+images: ["https://i.ibb.co/YTqf8jCk/ms-et9qu-512-375103170.jpg"], price: "₹249" },
+{ name: "Grey", image: "https://i.ibb.co/CNXM5Kq/ms-cy54t-512-375103169.jpg",
+images: ["https://i.ibb.co/CNXM5Kq/ms-cy54t-512-375103169.jpg"], price: "₹259" },
+{ name: "Lavender", image:
+"https://i.ibb.co/1G0qXC45/ms-zef8g-512-375103173.jpg", images:
+["https://i.ibb.co/1G0qXC45/ms-zef8g-512-375103173.jpg"], price: "₹269" },
+{ name: "White", image: "https://i.ibb.co/wFgLwx6M/ms-8clna-512-375103172.jpg",
+images: ["https://i.ibb.co/wFgLwx6M/ms-8clna-512-375103172.jpg"], price: "₹229" },
+{ name: "Green", image: "https://i.ibb.co/B5gmPxmC/ms-myvn4-512-375103168.jpg",
+images: ["https://i.ibb.co/B5gmPxmC/ms-myvn4-512-375103168.jpg"], price: "₹239" }
+],
+sizes: [
+{ name: "S", price: "₹229" },
+{ name: "M", price: "₹229" },
+{ name: "L", price: "₹229" },
+{ name: "XL", price: "₹229" },
+{ name: "XXL", price: "₹229" }
+]
+},
+{
+id: "SHREE-C31",
+name: "Oversized T shirt (Combo Pack)",
+images: ["https://i.ibb.co/zVM84wqr/ms-hulta-512-516216298.jpg"],
+shortDescription: "Value combo pack of 2 pure kapaas oversized t-shirts with vibrant dual-tone themes.",
+description: "Double up your style with this value-packed combo set of 2 premium kapaas oversized t-shirts, offering unmatched comfort and standout street style aesthetics.",
+price: "₹399",
+colors: [
+{ name: "Brown + Blue", image:
+"https://i.ibb.co/zVM84wqr/ms-hulta-512-516216298.jpg", images:
+["https://i.ibb.co/zVM84wqr/ms-hulta-512-516216298.jpg",
+"https://i.ibb.co/dwxbP3z2/ms-q1xaf-512-516216298.jpg"], price: "₹399" },
+{ name: "Brown + Red", image:
+"https://i.ibb.co/C5n7C2Yv/ms-dx0ka-512-516216300.jpg", images:
+["https://i.ibb.co/C5n7C2Yv/ms-dx0ka-512-516216300.jpg"], price: "₹399" },
+{ name: "Blue + Red", image:
+"https://i.ibb.co/hJgcbf8V/ms-rpavn-512-516216305.jpg", images:
+["https://i.ibb.co/hJgcbf8V/ms-rpavn-512-516216305.jpg"], price: "₹399" },
+{ name: "Green + Black", image:
+"https://i.ibb.co/0j4mgdwF/ms-2bd4k-512-516216301.jpg", images:
+["https://i.ibb.co/0j4mgdwF/ms-2bd4k-512-516216301.jpg"], price: "₹399" },
+{ name: "Grey + Green", image:
+"https://i.ibb.co/VYyFMGP5/ms-xipep-512-516216303.jpg", images:
+["https://i.ibb.co/VYyFMGP5/ms-xipep-512-516216303.jpg"], price: "₹399" },
+{ name: "Brown + Green", image:
+"https://i.ibb.co/LzgxhPv1/ms-qrnf5-512-516216304.jpg", images:
+["https://i.ibb.co/LzgxhPv1/ms-qrnf5-512-516216304.jpg"], price: "₹399" },
+{ name: "Black + Pink", image:
+"https://i.ibb.co/4w6pPXth/ms-grtn5-512-516216297.jpg", images:
+["https://i.ibb.co/4w6pPXth/ms-grtn5-512-516216297.jpg"], price: "₹399" },
+{ name: "Green + Red", image:
+"https://i.ibb.co/Z6kJj85X/ms-mzd2x-512-516216299.jpg", images:
+["https://i.ibb.co/Z6kJj85X/ms-mzd2x-512-516216299.jpg"], price: "₹399" }
+],
+sizes: [
+{ name: "S", price: "₹399" },
+{ name: "M", price: "₹399" },
+{ name: "L", price: "₹399" },
+{ name: "XL", price: "₹399" },
+{ name: "XXL", price: "₹399" }
+]
+},
+{
+id: "SHREE-C32",
+name: "Men's Printed Shirt",
+images: ["https://i.ibb.co/9Hwxx21L/ms-ubn5w-512-456371139.jpg"],
+shortDescription: "Cotton men's printed shirt featuring eye-catching modern patterns.",
+description: "Stylish and breathable cotton printed shirt designed to elevate your casual wardrobe effortlessly.",
+price: "₹329",
+colors: [
+{ name: "Black", image: "https://i.ibb.co/9Hwxx21L/ms-ubn5w-512-456371139.jpg",
+images: ["https://i.ibb.co/9Hwxx21L/ms-ubn5w-512-456371139.jpg"], price: "₹339" },
+{ name: "Blue", image: "https://i.ibb.co/21QqhGCn/ms-iasy5-512-456371137.jpg",
+images: ["https://i.ibb.co/21QqhGCn/ms-iasy5-512-456371137.jpg"], price: "₹329" },
+{ name: "White", image: "https://i.ibb.co/CKgQ5XtM/ms-j9wua-512-456371138.jpg",
+images: ["https://i.ibb.co/CKgQ5XtM/ms-j9wua-512-456371138.jpg"], price: "₹329" }
+],
+sizes: [
+{ name: "S", price: "₹329" },
+{ name: "M", price: "₹329" },
+{ name: "L", price: "₹329" },
+{ name: "XL", price: "₹329" },
+{ name: "XXL", price: "₹329" }
+]
+},
+{
+id: "SHREE-C33",
+name: "Women's Short Kurti",
+images: ["https://i.ibb.co/5W123zmb/ms-prsik-512-983823213.jpg"],
+shortDescription: "Bright yellow cotton short kurti for a fresh and cheerful everyday look.",
+description: "Charming cotton short kurti crafted with breathable fabric and elegant detailing for casual styling.",
+price: "₹299",
+colors: [
+{ name: "Yellow", image: "https://i.ibb.co/5W123zmb/ms-prsik-512-983823213.jpg",
+images: ["https://i.ibb.co/5W123zmb/ms-prsik-512-983823213.jpg",
+"https://i.ibb.co/6J4yCpXc/ms-2r7dn-512-983823213.jpg",
+"https://i.ibb.co/sdYg9G6d/ms-lz0fx-512-983823213.jpg"], price: "₹299" }
+],
+sizes: [
+{ name: "XS", price: "₹299" },
+{ name: "S", price: "₹299" },
+{ name: "M", price: "₹299" },
+{ name: "L", price: "₹299" },
+{ name: "XL", price: "₹299" },
+{ name: "XXL", price: "₹299" }
+]
+},
+{
+id: "SHREE-C34",
+name: "Women's Short Kurti",
+images: ["https://i.ibb.co/rRmhpwxF/ms-nfs4e-512-1041181898.jpg"],
+shortDescription: "Sleek black cotton short kurti pairing modern fit with ethnic comfort.",
+description: "Versatile black cotton short kurti that adds a touch of elegance to your daily wardrobe.",
+price: "₹299",
+colors: [
+{ name: "Black", image: "https://i.ibb.co/rRmhpwxF/ms-nfs4e-512-1041181898.jpg",
+images: ["https://i.ibb.co/rRmhpwxF/ms-nfs4e-512-1041181898.jpg",
+"https://i.ibb.co/4wXyvtht/ms-ukcfq-512-1041181898.jpg",
+"https://i.ibb.co/T6nVBsJ/ms-mm2sq-512-1041181898.jpg"], price: "₹299" }
+],
+sizes: [
+{ name: "XS", price: "₹299" },
+{ name: "S", price: "₹299" },
+{ name: "M", price: "₹299" },
+{ name: "L", price: "₹299" },
+{ name: "XL", price: "₹299" }
+]
+},
+{
+id: "SHREE-C35",
+name: "Women's Short Kurti",
+images: ["https://i.ibb.co/yn33DD5r/ms-9d8pq-512-1020792947.jpg"],
+shortDescription: "Vibrant red cotton short kurti for a stylish everyday ethnic look.",
+description: "Lightweight and comfortable cotton short kurti designed in a striking red tone.",
+price: "₹299",
+colors: [
+{ name: "Red", image: "https://i.ibb.co/yn33DD5r/ms-9d8pq-512-1020792947.jpg",
+images: ["https://i.ibb.co/yn33DD5r/ms-9d8pq-512-1020792947.jpg",
+"https://i.ibb.co/fVWhFSGW/ms-0ujbn-512-1020792947.jpg"], price: "₹299" }
+],
+sizes: [
+{ name: "S", price: "₹299" },
+{ name: "M", price: "₹299" },
+{ name: "L", price: "₹299" },
+{ name: "XL", price: "₹299" }
+]
+},
+{
+id: "SHREE-C36",
+name: "Women's Short Kurti",
+images: ["https://i.ibb.co/7tpqK6CD/ms-1kl5l-512-977386124.jpg"],
+shortDescription: "Affordable and cozy blue cotton short kurti for casual wear.",
+description: "Easy-breezy cotton short kurti in a soothing blue shade, offering high value and comfort.",
+price: "₹199",
+colors: [
+{ name: "Blue", image: "https://i.ibb.co/7tpqK6CD/ms-1kl5l-512-977386124.jpg",
+images: ["https://i.ibb.co/7tpqK6CD/ms-1kl5l-512-977386124.jpg",
+"https://i.ibb.co/zWGwbTfb/ms-qgrfg-512-977386124.jpg"], price: "₹199" }
+],
+sizes: [
+{ name: "XS", price: "₹199" },
+{ name: "S", price: "₹199" },
+{ name: "M", price: "₹199" },
+{ name: "L", price: "₹199" },
+{ name: "XL", price: "₹199" },
+{ name: "XXL", price: "₹199" }
+]
+},
+{
+id: "SHREE-C37",
+name: "Women's Kurta",
+images: ["https://i.ibb.co/DgMnKhh8/ms-soeyf-512-556963070.jpg"],
+shortDescription: "Graceful rayon kurta in rich color variations for elegant ethnic wear.",
+description: "Soft and flowing rayon kurta crafted with beautiful finish for standard casual and festive occasions.",
+price: "₹399",
+colors: [
+{ name: "Green", image: "https://i.ibb.co/DgMnKhh8/ms-soeyf-512-556963070.jpg",
+images: ["https://i.ibb.co/DgMnKhh8/ms-soeyf-512-556963070.jpg",
+"https://i.ibb.co/gbfCVhtR/ms-c7981-512-556963070.jpg",
+"https://i.ibb.co/nMYQSdRC/ms-ul0ay-512-556963070.jpg"], price: "₹399" },
+{ name: "Purple", image: "https://i.ibb.co/2mcmK9d/ms-ag7qk-512-556963072.jpg",
+images: ["https://i.ibb.co/2mcmK9d/ms-ag7qk-512-556963072.jpg",
+"https://i.ibb.co/MWb6VKW/ms-2lybj-512-556963072.jpg",
+"https://i.ibb.co/Cp0MQzTJ/ms-7xbgz-512-556963072.jpg"], price: "₹399" },
+{ name: "Orange", image: "https://i.ibb.co/jZ1NwFz1/ms-qpsac-512-556963071.jpg",
+images: ["https://i.ibb.co/jZ1NwFz1/ms-qpsac-512-556963071.jpg",
+"https://i.ibb.co/N6pPMXpR/ms-y4iov-512-556963071.jpg"], price: "₹399" }
+],
+sizes: [
+{ name: "S", price: "₹399" },
+{ name: "M", price: "₹359" },
+{ name: "L", price: "₹399" },
+{ name: "XL", price: "₹399" },
+{ name: "XXL", price: "₹399" }
+]
+},
+{
+id: "SHREE-C38",
+name: "Women's Jaipuri Kurti",
+images: ["https://i.ibb.co/1fgYPQPf/ms-uviso-512-616446241.jpg"],
+shortDescription: "Traditional Jaipuri print rayon kurti offering vibrant ethnic charm.",
+description: "Classic Jaipuri style rayon kurti featuring exquisite cultural prints and comfortable fit.",
+price: "₹349",
+colors: [
+{ name: "Purple", image: "https://i.ibb.co/1fgYPQPf/ms-uviso-512-616446241.jpg",
+images: ["https://i.ibb.co/1fgYPQPf/ms-uviso-512-616446241.jpg",
+"https://i.ibb.co/8L8mJYPm/ms-uh8jl-512-616446241.jpg",
+"https://i.ibb.co/G4B2sWxS/ms-rp610-512-616446241.jpg"], price: "₹349" },
+{ name: "Green", image: "https://i.ibb.co/wZBCks2V/ms-nqzmz-512-616446240.jpg",
+images: ["https://i.ibb.co/wZBCks2V/ms-nqzmz-512-616446240.jpg",
+"https://i.ibb.co/CKkVqJMc/ms-ysneq-512-616446240.jpg",
+"https://i.ibb.co/21yWFZvY/ms-kwrxj-512-616446240.jpg"], price: "₹339" }
+],
+sizes: [
+{ name: "XS", price: "₹349" },
+{ name: "S", price: "₹349" },
+{ name: "M", price: "₹329" },
+{ name: "L", price: "₹349" },
+{ name: "XL", price: "₹349" },
+{ name: "XXL", price: "₹349" },
+{ name: "XXXL", price: "₹339" }
+]
+},
+{
+id: "SHREE-C39",
+name: "Combo Trousers",
+images: ["https://i.ibb.co/xrJ5BVH/ms-0rhvw-512-620266054.jpg"],
+shortDescription: "Comfortable cotton-blend combo trousers featuring versatile multi-color options.",
+description: "Durable and cozy kapaas combo trousers tailored for ultimate comfort and everyday wearability.",
+price: "₹319",
+colors: [
+{ name: "Black + Pink", image:
+"https://i.ibb.co/xrJ5BVH/ms-0rhvw-512-620266054.jpg", images:
+["https://i.ibb.co/xrJ5BVH/ms-0rhvw-512-620266054.jpg",
+"https://i.ibb.co/hFHskGYN/ms-xr5o8-512-620266054.jpg",
+"https://i.ibb.co/KSyX5xQ/ms-2skgs-512-620266053.jpg"], price: "₹319" },
+{ name: "Black + Brown", image:
+"https://i.ibb.co/v6n8LLDt/ms-s5qk1-512-620266050.jpg", images:
+["https://i.ibb.co/v6n8LLDt/ms-s5qk1-512-620266050.jpg",
+"https://i.ibb.co/Cr4dV2P/ms-enedk-512-620266050.jpg"], price: "₹319" },
+{ name: "Beige + Brown", image:
+"https://i.ibb.co/LD9rPLy3/ms-atgo2-512-620266052.jpg", images:
+["https://i.ibb.co/LD9rPLy3/ms-atgo2-512-620266052.jpg",
+"https://i.ibb.co/BDJ4WSy/ms-wiixt-512-620266052.jpg"], price: "₹319" },
+{ name: "Beige + Pink", image:
+"https://i.ibb.co/WNwgKh5F/ms-wivpc-512-620266053.jpg", images:
+["https://i.ibb.co/WNwgKh5F/ms-wivpc-512-620266053.jpg",
+"https://i.ibb.co/spZTT2CJ/ms-yn9do-512-620266053.jpg"], price: "₹319" },
+{ name: "Black + Beige", image:
+"https://i.ibb.co/DPjmrLLx/ms-uxnvm-512-620266051.jpg", images:
+["https://i.ibb.co/DPjmrLLx/ms-uxnvm-512-620266051.jpg",
+"https://i.ibb.co/NgbX3bQH/ms-oxbmh-512-620266051.jpg"], price: "₹319" }
+],
+sizes: [
+{ name: "S", price: "₹319" },
+{ name: "M", price: "₹319" },
+{ name: "L", price: "₹319" },
+{ name: "XL", price: "₹319" },
+{ name: "XXL", price: "₹319" }
+]
+},
+{
+id: "SHREE-C40",
+name: "Blackberry Dress",
+images: ["https://i.ibb.co/XZ0DRGt1/ms-sahxc-512-382519791.jpg"],
+shortDescription: "Stunning jorjet Blackberry dress designed for parties and special outings.",
+description: "Graceful jorjet fabric dress featuring a sleek cut and sophisticated look for an effortless statement.",
+price: "₹399",
+colors: [
+{ name: "Black", image: "https://i.ibb.co/XZ0DRGt1/ms-sahxc-512-382519791.jpg",
+images: ["https://i.ibb.co/XZ0DRGt1/ms-sahxc-512-382519791.jpg",
+"https://i.ibb.co/cc5h6PQD/ms-mz1wn-512-382519791.jpg",
+"https://i.ibb.co/jv88RnVT/ms-hpcjt-512-382519791.jpg"], price: "₹399" }
+],
+sizes: [
+{ name: "XS", price: "₹399" },
+{ name: "S", price: "₹399" },
+{ name: "M", price: "₹339" },
+{ name: "L", price: "₹399" },
+{ name: "XL", price: "₹399" },
+{ name: "XXL", price: "₹399" },
+{ name: "XXXL", price: "₹399" },
+{ name: "4XL", price: "₹399" }
+]
+}
+];
 // CART STATE
 let cart = JSON.parse(localStorage.getItem('shree_cart')) || [];
 let selectedVariantColorIdx = 0;
 let selectedVariantSizeIdx = 0;
 let savedScrollPos = 0;
-
 // Render Home Products
 const homeContainer = document.getElementById('home-products');
 let homeHtml = '';
 homeFeaturedProducts.forEach((product, index) => {
-    homeHtml += `<div class="product-card"><div class="single-img-container" onclick="openProductDetail('home', ${index})"><img src="${product.image}" alt="${product.name}"></div><h3 onclick="openProductDetail('home', ${index})">${product.name}</h3><p>${product.description}</p><div class="price-row"><span class="price">${product.price}</span><a href="${product.affiliateLink}" target="_blank" class="btn-small">View Deal</a></div></div>`;
+homeHtml += `<div class="product-card"><div class="single-img-container"
+onclick="openProductDetail('home', ${index})"><img src="${product.image}"
+alt="${product.name}"></div><h3 onclick="openProductDetail('home',
+${index})">${product.name}</h3><p>${product.description}</p><div
+class="price-row"><span class="price">${product.price}</span><a
+href="${product.affiliateLink}" target="_blank" class="btn-small">View Deal</a></div></div>`;
 });
 homeContainer.innerHTML = homeHtml;
-
 // Render Finds Products
 const findsContainer = document.getElementById('finds-products');
 let findsHtml = '';
-
 affiliateProducts.forEach((product, index) => {
-    // Single main image display (matches Closet layout)
-    const firstImg = (Array.isArray(product.images) && product.images.length > 0) 
-        ? product.images[0] 
-        : (product.image || product.images || '');
-
-    const cleanPrice = String(product.price ?? '').trim().replace(/^[₹\s]+/, '');
-    const displayPrice = `₹${cleanPrice}`;
-    const swipeImagesHtml = `<div class="swipe-img-item" onclick="openLightbox('finds', ${index}, 0)"><img src="${firstImg}" alt="product image"></div>`;
-
-    findsHtml += `
-        <div class="product-card">
-            <div class="swipe-gallery-container" id="swipe-container-finds-${index}">
-                ${swipeImagesHtml}
-            </div>
-            <h3 onclick="openProductDetail('finds', ${index})">${product.name}</h3>
-            <p>${product.description || ''}</p>
-            <div class="price-row">
-                <span class="price">${displayPrice}</span>
-                <a href="${product.affiliateLink || '#'}" target="_blank" rel="noopener noreferrer" class="btn-small">View Deal</a>
-            </div>
-        </div>
-    `;
+// Single main image display (matches Closet layout)
+const firstImg = (Array.isArray(product.images) && product.images.length > 0)
+? product.images[0]
+: (product.image || product.images || '');
+const cleanPrice = String(product.price ?? '').trim().replace(/^[₹\s]+/, '');
+const displayPrice = `₹${cleanPrice}`;
+const swipeImagesHtml = `<div class="swipe-img-item" onclick="openLightbox('finds',
+${index}, 0)"><img src="${firstImg}" alt="product image"></div>`;
+findsHtml += `
+<div class="product-card">
+<div class="swipe-gallery-container" id="swipe-container-finds-${index}">
+${swipeImagesHtml}
+</div>
+<h3 onclick="openProductDetail('finds', ${index})">${product.name}</h3>
+<p>${product.description || ''}</p>
+<div class="price-row">
+<span class="price">${displayPrice}</span>
+<a href="${product.affiliateLink || '#'}" target="_blank" rel="noopener noreferrer"
+class="btn-small">View Deal</a>
+</div>
+</div>
+`;
 });
-
 findsContainer.innerHTML = findsHtml;
-
-
-
 // Render Closet Products
 const closetContainer = document.getElementById('closet-products');
 let closetHtml = '';
 resellingProducts.forEach((product, index) => {
-    let displayImg = product.colors ? product.colors[0].image : product.images[0];
-    let displayPrice = product.colors ? product.colors[0].price : product.price;
-    let swipeImagesHtml = `<div class="swipe-img-item" onclick="openLightbox('closet', ${index}, 0)"><img src="${displayImg}" alt="product image"></div>`;
-    
-    // Sanitize description string for safe inline usage (remove tags or replace quotes if needed)
-    let safeDesc = (product.shortDescription || product.description).replace(/"/g, '&quot;').replace(/'/g, '&#39;');
-    
-    closetHtml += `<div class="product-card"><div class="swipe-gallery-container" id="swipe-container-closet-${index}">${swipeImagesHtml}</div><h3 onclick="openProductDetail('closet', ${index})">${product.name}</h3><p>${product.shortDescription || product.description}</p><div class="price-row"><span class="price" id="closet-card-price-${index}">${displayPrice}</span><div class="btn-group"><button class="btn-small btn-cart" onclick="addToCartItem('${product.id}', '${product.name.replace(/'/g, "\\'")}', '${displayPrice}', '${displayImg}', '')">Add to Cart</button><button class="btn-small" onclick="buyNowItem('${product.id}', '${product.name.replace(/'/g, "\\'")}', '${displayPrice}', '${displayImg}', '')">Buy Now</button></div></div></div>`;
+let displayImg = product.colors ? product.colors[0].image : product.images[0];
+let displayPrice = product.colors ? product.colors[0].price : product.price;
+let swipeImagesHtml = `<div class="swipe-img-item" onclick="openLightbox('closet',
+${index}, 0)"><img src="${displayImg}" alt="product image"></div>`;
+// Sanitize description string for safe inline usage (remove tags or replace quotes if needed)
+let safeDesc = (product.shortDescription || product.description).replace(/"/g,
+'&quot;').replace(/'/g, '&#39;');
+closetHtml += `<div class="product-card"><div class="swipe-gallery-container"
+id="swipe-container-closet-${index}">${swipeImagesHtml}</div><h3
+onclick="openProductDetail('closet',
+${index})">${product.name}</h3><p>${product.shortDescription ||
+product.description}</p><div class="price-row"><span class="price"
+id="closet-card-price-${index}">${displayPrice}</span><div class="btn-group"><button
+class="btn-small btn-cart" onclick="addToCartItem('${product.id}',
+'${product.name.replace(/'/g, "\\'")}', '${displayPrice}', '${displayImg}', '')">Add to
+Cart</button><button class="btn-small" onclick="buyNowItem('${product.id}',
+'${product.name.replace(/'/g, "\\'")}', '${displayPrice}', '${displayImg}', '')">Buy
+Now</button></div></div></div>`;
 });
 closetContainer.innerHTML = closetHtml;
-
 // SEARCH MODAL TOGGLE & LIVE SEARCH
 function toggleSearchModal() {
-    const modal = document.getElementById('search-modal');
-    if (modal.style.display === 'flex') {
-        modal.style.display = 'none';
-    } else {
-        modal.style.display = 'flex';
-        document.getElementById('search-input').focus();
-    }
+const modal = document.getElementById('search-modal');
+if (modal.style.display === 'flex') {
+modal.style.display = 'none';
+} else {
+modal.style.display = 'flex';
+document.getElementById('search-input').focus();
 }
-
+}
 function performSearch() {
-    const query = document.getElementById('search-input').value.toLowerCase().trim();
-    const container = document.getElementById('search-results-container');
-
-    if (!query) {
-        container.innerHTML = `<p style="text-align: center; color: var(--text-light); font-size: 13px; grid-column: span 2; margin-top: 20px;">Type something to find your favorite picks 🤍</p>`;
-        return;
-    }
-
-    let allProducts = [
-        ...affiliateProducts.map(p => ({ ...p, type: 'finds', mainImg: p.images[0] })),
-        ...resellingProducts.map(p => ({ ...p, type: 'closet', mainImg: p.colors ? p.colors[0].image : p.images[0] }))
-    ];
-
-    let filtered = allProducts.filter(p => p.name.toLowerCase().includes(query) || p.description.toLowerCase().includes(query));
-
-    if (filtered.length === 0) {
-        container.innerHTML = `<p style="text-align: center; color: var(--text-light); font-size: 13px; grid-column: span 2; margin-top: 20px;">No cozy treasures found for "${query}" 🍃</p>`;
-        return;
-    }
-
-    let html = '';
-    filtered.forEach(p => {
-        let originalIdx = (p.type === 'finds') ? affiliateProducts.findIndex(item => item.id === p.id) : resellingProducts.findIndex(item => item.id === p.id);
-        html += `
-            <div class="product-card" style="cursor: pointer;" onclick="toggleSearchModal(); openProductDetail('${p.type}', ${originalIdx})">
-                <div style="width: 100%; height: 120px; background: #f9f9f9; border-radius: 8px; overflow: hidden; margin-bottom: 8px;">
-                    <img src="${p.mainImg}" alt="${p.name}" style="width: 100%; height: 100%; object-fit: cover;">
-                </div>
-                <h4 style="font-size: 14px; font-weight: 700; color: var(--text-dark); margin-bottom: 4px;">${p.name}</h4>
-                <p style="font-size: 12px; color: var(--primary-green); font-weight: 700; margin-bottom: 0;">${p.price}</p>
-            </div>
-        `;
-    });
-    container.innerHTML = html;
+const query = document.getElementById('search-input').value.toLowerCase().trim();
+const container = document.getElementById('search-results-container');
+if (!query) {
+container.innerHTML = `<p style="text-align: center; color: var(--text-light); font-size:
+13px; grid-column: span 2; margin-top: 20px;">Type something to find your favorite picks
+🤍</p>`;
+return;
 }
-
+let allProducts = [
+...affiliateProducts.map(p => ({ ...p, type: 'finds', mainImg: p.images[0] })),
+...resellingProducts.map(p => ({ ...p, type: 'closet', mainImg: p.colors ?
+p.colors[0].image : p.images[0] }))
+];
+let filtered = allProducts.filter(p => p.name.toLowerCase().includes(query) ||
+p.description.toLowerCase().includes(query));
+if (filtered.length === 0) {
+container.innerHTML = `<p style="text-align: center; color: var(--text-light); font-size:
+13px; grid-column: span 2; margin-top: 20px;">No cozy treasures found for "${query}"
+🍃</p>`;
+return;
+}
+let html = '';
+filtered.forEach(p => {
+let originalIdx = (p.type === 'finds') ? affiliateProducts.findIndex(item => item.id ===
+p.id) : resellingProducts.findIndex(item => item.id === p.id);
+html += `
+<div class="product-card" style="cursor: pointer;" onclick="toggleSearchModal();
+openProductDetail('${p.type}', ${originalIdx})">
+<div style="width: 100%; height: 120px; background: #f9f9f9; border-radius: 8px;
+overflow: hidden; margin-bottom: 8px;">
+<img src="${p.mainImg}" alt="${p.name}" style="width: 100%; height: 100%;
+object-fit: cover;">
+</div>
+<h4 style="font-size: 14px; font-weight: 700; color: var(--text-dark); margin-bottom:
+4px;">${p.name}</h4>
+<p style="font-size: 12px; color: var(--primary-green); font-weight: 700;
+margin-bottom: 0;">${p.price}</p>
+</div>
+`;
+});
+container.innerHTML = html;
+}
 // Page Switch Logic
 function switchPage(pageId, navElement) {
-    let pages = document.getElementsByClassName('page-section');
-    for(let i = 0; i < pages.length; i++) pages[i].classList.remove('active-page');
-    document.getElementById(pageId).classList.add('active-page');
-    
-    let navLinks = document.querySelectorAll('nav ul li a');
-    for(let i = 0; i < navLinks.length; i++) navLinks[i].classList.remove('active');
-    
-    if(navElement) {
-        navElement.classList.add('active');
-    } else {
-        if(pageId === 'home-page') document.getElementById('nav-home').classList.add('active');
-        if(pageId === 'finds-page') document.getElementById('nav-finds').classList.add('active');
-        if(pageId === 'closet-page') document.getElementById('nav-closet').classList.add('active');
-        if(pageId === 'categories-page') document.getElementById('nav-categories').classList.add('active');
-        if(pageId === 'about-page') document.getElementById('nav-about').classList.add('active');
-        if(pageId === 'contact-page') document.getElementById('nav-contact').classList.add('active');
-    }
-    
-    if (pageId !== 'product-detail-page') {
-        window.scrollTo(0, 0);
-    }
+let pages = document.getElementsByClassName('page-section');
+for(let i = 0; i < pages.length; i++) pages[i].classList.remove('active-page');
+document.getElementById(pageId).classList.add('active-page');
+let navLinks = document.querySelectorAll('nav ul li a');
+for(let i = 0; i < navLinks.length; i++) navLinks[i].classList.remove('active');
+if(navElement) {
+navElement.classList.add('active');
+} else {
+if(pageId === 'home-page')
+document.getElementById('nav-home').classList.add('active');
+if(pageId === 'finds-page') document.getElementById('nav-finds').classList.add('active');
+if(pageId === 'closet-page')
+document.getElementById('nav-closet').classList.add('active');
+if(pageId === 'categories-page')
+document.getElementById('nav-categories').classList.add('active');
+if(pageId === 'about-page')
+document.getElementById('nav-about').classList.add('active');
+if(pageId === 'contact-page')
+document.getElementById('nav-contact').classList.add('active');
 }
-
+if (pageId !== 'product-detail-page') {
+window.scrollTo(0, 0);
+}
+}
 // Open Product Detail
 function openProductDetail(type, index) {
-    savedScrollPos = window.scrollY; 
-    selectedVariantColorIdx = 0;
-    selectedVariantSizeIdx = 0;
-    
-    renderDetailPageContent(type, index);
-    switchPage('product-detail-page', null);
-    window.scrollTo(0, 0);
+savedScrollPos = window.scrollY;
+selectedVariantColorIdx = 0;
+selectedVariantSizeIdx = 0;
+renderDetailPageContent(type, index);
+switchPage('product-detail-page', null);
+window.scrollTo(0, 0);
 }
-
 function renderDetailPageContent(type, index) {
-    let p;
-    if(type === 'home') p = homeFeaturedProducts[index];
-    else if(type === 'finds') p = affiliateProducts[index];
-    else if(type === 'closet') p = resellingProducts[index];
-
-    const detailWrapper = document.getElementById('detail-wrapper');
-    
-    let currentImg = '';
-    let currentPriceFormatted = '';
-    let swipeImgsHtml = '';
-
-    if (type === 'closet' && p.colors) {
-        let activeColorObj = p.colors[selectedVariantColorIdx];
-        currentImg = activeColorObj.image;
-        let colorSizes = activeColorObj.sizes || p.sizes;
-        if (selectedVariantSizeIdx >= colorSizes.length) selectedVariantSizeIdx = 0;
-        currentPriceFormatted = colorSizes[selectedVariantSizeIdx] ? colorSizes[selectedVariantSizeIdx].price : activeColorObj.price;
-        
-        let colorImages = activeColorObj.images || [activeColorObj.image];
-        colorImages.forEach((imgLink, imgIdx) => {
-            swipeImgsHtml += `<div class="detail-swipe-item" onclick="openLightbox('closet', ${index}, ${imgIdx})"><img src="${imgLink}" alt="${p.name}"></div>`;
-        });
-    } else {
-        currentImg = (type === 'home') ? p.image : p.images[0];
-        currentPriceFormatted = p.price;
-        swipeImgsHtml = `<div class="detail-swipe-item"><img src="${currentImg}" alt="${p.name}"></div>`;
-    }
-
-    let colorsHtml = '';
-    if (type === 'closet' && p.colors) {
-        colorsHtml += `<div class="variant-section"><div class="variant-title">Color / Variant: <span style="font-weight:400; color:var(--text-light);">${p.colors[selectedVariantColorIdx].name}</span></div><div class="variant-options">`;
-        p.colors.forEach((col, cIdx) => {
-            let activeCls = (cIdx === selectedVariantColorIdx) ? 'active-variant' : '';
-            colorsHtml += `<button class="variant-btn ${activeCls}" onclick="selectVariantColor(${index}, ${cIdx})">${col.name}</button>`;
-        });
-        colorsHtml += `</div></div>`;
-    }
-
-    let sizesHtml = '';
-    let currentSizes = (type === 'closet' && p.colors && p.colors[selectedVariantColorIdx] && p.colors[selectedVariantColorIdx].sizes) ? p.colors[selectedVariantColorIdx].sizes : p.sizes;
-    if (type === 'closet' && currentSizes) {
-        if (selectedVariantSizeIdx >= currentSizes.length) selectedVariantSizeIdx = 0;
-        sizesHtml += `<div class="variant-section"><div class="variant-title">Size: <span style="font-weight:400; color:var(--text-light);">${currentSizes[selectedVariantSizeIdx].name}</span></div><div class="variant-options">`;
-        currentSizes.forEach((sz, sIdx) => {
-            let activeCls = (sIdx === selectedVariantSizeIdx) ? 'active-variant' : '';
-            sizesHtml += `<button class="variant-btn ${activeCls}" onclick="selectVariantSize(${index}, ${sIdx})">${sz.name}</button>`;
-        });
-        sizesHtml += `</div></div>`;
-    }
-
-    let actionButtons = '';
-    if(type === 'closet') {
-        let variantFullName = p.name;
-        if(p.colors) variantFullName += ` (${p.colors[selectedVariantColorIdx].name}`;
-        if(currentSizes) variantFullName += `, ${currentSizes[selectedVariantSizeIdx].name})`;
-        else if(p.colors) variantFullName += `)`;
-
-        let escapedVariantName = variantFullName.replace(/'/g, "\\'");
-
-        actionButtons = `
-            <button class="btn-small btn-cart" style="padding: 10px 20px; font-size: 14px;" onclick="addToCartItem('${p.id}', '${escapedVariantName}', '${currentPriceFormatted}', '${currentImg}', '')">Add to Cart</button>
-            <button class="btn-small" style="padding: 10px 20px; font-size: 14px;" onclick="buyNowItem('${p.id}', '${escapedVariantName}', '${currentPriceFormatted}', '${currentImg}', '')">Buy Now</button>
-        `;
-    } else {
-        let externalLink = p.affiliateLink || "#";
-        actionButtons = `<a href="${externalLink}" target="_blank" class="btn-small" style="padding: 10px 20px; font-size: 14px;">View Deal on Amazon 🤍</a>`;
-    }
-
-    let backNavText = (type === 'closet') ? 'Back to Closet' : ((type === 'finds') ? 'Back to Finds' : 'Back to Home');
-    let backNavAction = (type === 'closet') ? "goBackToSection('closet-page', document.getElementById('nav-closet'))" : ((type === 'finds') ? "goBackToSection('finds-page', document.getElementById('nav-finds'))" : "goBackToSection('home-page', document.getElementById('nav-home'))");
-
-    let descriptionDisplay = (type === 'closet') ? `<p style="font-size: 14px; color: var(--text-light); margin-bottom: 12px; font-weight: 600; white-space: pre-line;">${p.description}</p>` : ``;
-
-    detailWrapper.innerHTML = `
-        <button class="btn-back" onclick="${backNavAction}"><i class="fa-solid fa-arrow-left"></i> ${backNavText}</button>
-        <div class="detail-container">
-            <div class="detail-gallery-box">
-                <div class="detail-swipe-container">${swipeImgsHtml}</div>
-            </div>
-            <div class="detail-info">
-                <h2>${p.name}</h2>
-                ${descriptionDisplay}
-                <div style="font-size:12px; color:var(--primary-green); font-weight:700;">Product ID: ${p.id}</div>
-                <div class="price" id="detail-price-tag">${currentPriceFormatted}</div>
-                ${colorsHtml}
-                ${sizesHtml}
-                <div class="btn-group" style="margin-top: 15px; margin-bottom: 20px;">
-                    ${actionButtons}
-                </div>
-            </div>
-        </div>
-    `;
+let p;
+if(type === 'home') p = homeFeaturedProducts[index];
+else if(type === 'finds') p = affiliateProducts[index];
+else if(type === 'closet') p = resellingProducts[index];
+const detailWrapper = document.getElementById('detail-wrapper');
+let currentImg = '';
+let currentPriceFormatted = '';
+let swipeImgsHtml = '';
+if (type === 'closet' && p.colors) {
+let activeColorObj = p.colors[selectedVariantColorIdx];
+currentImg = activeColorObj.image;
+let colorSizes = activeColorObj.sizes || p.sizes;
+if (selectedVariantSizeIdx >= colorSizes.length) selectedVariantSizeIdx = 0;
+currentPriceFormatted = colorSizes[selectedVariantSizeIdx] ?
+colorSizes[selectedVariantSizeIdx].price : activeColorObj.price;
+let colorImages = activeColorObj.images || [activeColorObj.image];
+colorImages.forEach((imgLink, imgIdx) => {
+swipeImgsHtml += `<div class="detail-swipe-item" onclick="openLightbox('closet',
+${index}, ${imgIdx})"><img src="${imgLink}" alt="${p.name}"></div>`;
+});
+} else {
+currentImg = (type === 'home') ? p.image : p.images[0];
+currentPriceFormatted = p.price;
+swipeImgsHtml = `<div class="detail-swipe-item"><img src="${currentImg}"
+alt="${p.name}"></div>`;
 }
-
+let colorsHtml = '';
+if (type === 'closet' && p.colors) {
+colorsHtml += `<div class="variant-section"><div class="variant-title">Color / Variant:
+<span style="font-weight:400;
+color:var(--text-light);">${p.colors[selectedVariantColorIdx].name}</span></div><div
+class="variant-options">`;
+p.colors.forEach((col, cIdx) => {
+let activeCls = (cIdx === selectedVariantColorIdx) ? 'active-variant' : '';
+colorsHtml += `<button class="variant-btn ${activeCls}"
+onclick="selectVariantColor(${index}, ${cIdx})">${col.name}</button>`;
+});
+colorsHtml += `</div></div>`;
+}
+let sizesHtml = '';
+let currentSizes = (type === 'closet' && p.colors && p.colors[selectedVariantColorIdx] &&
+p.colors[selectedVariantColorIdx].sizes) ? p.colors[selectedVariantColorIdx].sizes : p.sizes;
+if (type === 'closet' && currentSizes) {
+if (selectedVariantSizeIdx >= currentSizes.length) selectedVariantSizeIdx = 0;
+sizesHtml += `<div class="variant-section"><div class="variant-title">Size: <span
+style="font-weight:400;
+color:var(--text-light);">${currentSizes[selectedVariantSizeIdx].name}</span></div><div
+class="variant-options">`;
+currentSizes.forEach((sz, sIdx) => {
+let activeCls = (sIdx === selectedVariantSizeIdx) ? 'active-variant' : '';
+sizesHtml += `<button class="variant-btn ${activeCls}"
+onclick="selectVariantSize(${index}, ${sIdx})">${sz.name}</button>`;
+});
+sizesHtml += `</div></div>`;
+}
+let actionButtons = '';
+if(type === 'closet') {
+let variantFullName = p.name;
+if(p.colors) variantFullName += ` (${p.colors[selectedVariantColorIdx].name}`;
+if(currentSizes) variantFullName += `, ${currentSizes[selectedVariantSizeIdx].name})`;
+else if(p.colors) variantFullName += `)`;
+let escapedVariantName = variantFullName.replace(/'/g, "\\'");
+actionButtons = `
+<button class="btn-small btn-cart" style="padding: 10px 20px; font-size: 14px;"
+onclick="addToCartItem('${p.id}', '${escapedVariantName}', '${currentPriceFormatted}',
+'${currentImg}', '')">Add to Cart</button>
+<button class="btn-small" style="padding: 10px 20px; font-size: 14px;"
+onclick="buyNowItem('${p.id}', '${escapedVariantName}', '${currentPriceFormatted}',
+'${currentImg}', '')">Buy Now</button>
+`;
+} else {
+let externalLink = p.affiliateLink || "#";
+actionButtons = `<a href="${externalLink}" target="_blank" class="btn-small"
+style="padding: 10px 20px; font-size: 14px;">View Deal on Amazon 🤍</a>`;
+}
+let backNavText = (type === 'closet') ? 'Back to Closet' : ((type === 'finds') ? 'Back to Finds' : 'Back to Home');
+let backNavAction = (type === 'closet') ? "goBackToSection('closet-page', document.getElementById('nav-closet'))" : ((type === 'finds') ?
+"goBackToSection('finds-page', document.getElementById('nav-finds'))" :
+"goBackToSection('home-page', document.getElementById('nav-home'))");
+let descriptionDisplay = (type === 'closet') ? `<p style="font-size: 14px; color:
+var(--text-light); margin-bottom: 12px; font-weight: 600; white-space:
+pre-line;">${p.description}</p>` : ``;
+detailWrapper.innerHTML = `
+<button class="btn-back" onclick="${backNavAction}"><i class="fa-solid
+fa-arrow-left"></i> ${backNavText}</button>
+<div class="detail-container">
+<div class="detail-gallery-box">
+<div class="detail-swipe-container">${swipeImgsHtml}</div>
+</div>
+<div class="detail-info">
+<h2>${p.name}</h2>
+${descriptionDisplay}
+<div style="font-size:12px; color:var(--primary-green); font-weight:700;">Product
+ID: ${p.id}</div>
+<div class="price" id="detail-price-tag">${currentPriceFormatted}</div>
+${colorsHtml}
+${sizesHtml}
+<div class="btn-group" style="margin-top: 15px; margin-bottom: 20px;">
+${actionButtons}
+</div>
+</div>
+</div>
+`;
+}
 function selectVariantColor(index, colorIdx) {
-    selectedVariantColorIdx = colorIdx;
-    selectedVariantSizeIdx = 0;
-    renderDetailPageContent('closet', index);
+selectedVariantColorIdx = colorIdx;
+selectedVariantSizeIdx = 0;
+renderDetailPageContent('closet', index);
 }
-
 function selectVariantSize(index, sizeIdx) {
-    selectedVariantSizeIdx = sizeIdx;
-    renderDetailPageContent('closet', index);
+selectedVariantSizeIdx = sizeIdx;
+renderDetailPageContent('closet', index);
 }
-
 function goBackToSection(pageId, navElement) {
-    switchPage(pageId, navElement);
-    window.scrollTo(0, savedScrollPos); 
+switchPage(pageId, navElement);
+window.scrollTo(0, savedScrollPos);
 }
-
 // Toast
 function showCozyToast(name, image) {
-    let toast = document.getElementById('cozy-toast');
-    if(!toast) {
-        toast = document.createElement('div');
-        toast.id = 'cozy-toast';
-        toast.className = 'cozy-toast';
-        toast.innerHTML = `<img id="toast-img" src="" alt="product"><div style="font-weight:700;" id="toast-title">Added to Bag!</div>`;
-        document.body.appendChild(toast);
-    }
-    document.getElementById('toast-img').src = image;
-    document.getElementById('toast-title').innerText = name + ' added to bag!';
-    toast.classList.add('show');
-    setTimeout(() => {
-        toast.classList.remove('show');
-    }, 5000);
+let toast = document.getElementById('cozy-toast');
+if(!toast) {
+toast = document.createElement('div');
+toast.id = 'cozy-toast';
+toast.className = 'cozy-toast';
+toast.innerHTML = `<img id="toast-img" src="" alt="product"><div
+style="font-weight:700;" id="toast-title">Added to Bag!</div>`;
+document.body.appendChild(toast);
 }
-
+document.getElementById('toast-img').src = image;
+document.getElementById('toast-title').innerText = name + ' added to bag!';
+toast.classList.add('show');
+setTimeout(() => {
+toast.classList.remove('show');
+}, 5000);
+}
 // Cart Functions
 function addToCartItem(id, name, price, image, affiliateLink) {
-    let existing = cart.find(item => item.name === name);
-    if(existing) {
-        if(existing.qty < 3) existing.qty += 1;
-    } else {
-        cart.push({ id: id, name: name, price: price, image: image, affiliateLink: affiliateLink, qty: 1 });
-    }
-    localStorage.setItem('shree_cart', JSON.stringify(cart));
-    updateCartUI();
-    showCozyToast(name, image);
+let existing = cart.find(item => item.name === name);
+if(existing) {
+if(existing.qty < 3) existing.qty += 1;
+} else {
+cart.push({ id: id, name: name, price: price, image: image, affiliateLink: affiliateLink, qty:
+1 });
 }
-
+localStorage.setItem('shree_cart', JSON.stringify(cart));
+updateCartUI();
+showCozyToast(name, image);
+}
 function buyNowItem(id, name, price, image, affiliateLink) {
-    addToCartItem(id, name, price, image, affiliateLink);
-    toggleCartDrawer();
+addToCartItem(id, name, price, image, affiliateLink);
+toggleCartDrawer();
 }
-
 function changeQty(index, delta) {
-    cart[index].qty += delta;
-    if(cart[index].qty > 3) cart[index].qty = 3;
-    if(cart[index].qty < 1) cart[index].qty = 1;
-    localStorage.setItem('shree_cart', JSON.stringify(cart));
-    updateCartUI();
+cart[index].qty += delta;
+if(cart[index].qty > 3) cart[index].qty = 3;
+if(cart[index].qty < 1) cart[index].qty = 1;
+localStorage.setItem('shree_cart', JSON.stringify(cart));
+updateCartUI();
 }
-
 function removeFromCart(index) {
-    cart.splice(index, 1);
-    localStorage.setItem('shree_cart', JSON.stringify(cart));
-    updateCartUI();
+cart.splice(index, 1);
+localStorage.setItem('shree_cart', JSON.stringify(cart));
+updateCartUI();
 }
-
 function openProductFromCart(name) {
-    toggleCartDrawer();
-    let foundCloset = resellingProducts.findIndex(p => p.name === name);
-    if(foundCloset !== -1) {
-        openProductDetail('closet', foundCloset);
-    }
+toggleCartDrawer();
+let foundCloset = resellingProducts.findIndex(p => p.name === name);
+if(foundCloset !== -1) {
+openProductDetail('closet', foundCloset);
 }
-
+}
 function updateCartUI() {
-    const badge = document.getElementById('cart-count');
-    let totalQty = cart.reduce((sum, item) => sum + item.qty, 0);
-    badge.innerText = totalQty;
-
-    const container = document.getElementById('cart-items-container');
-    const footerSec = document.getElementById('cart-footer-section');
-
-    if(cart.length === 0) {
-        container.innerHTML = `<p style="text-align: center; color: var(--text-light); margin-top: 40px;">Your cart is empty!</p>`;
-        footerSec.style.display = 'none';
-        return;
-    }
-
-    footerSec.style.display = 'flex';
-    let html = '';
-    let total = 0;
-
-    cart.forEach((item, index) => {
-        let numericPrice = parseInt(item.price.replace(/[^0-9]/g, '')) || 0;
-        total += numericPrice * item.qty;
-        let escapedName = item.name.replace(/'/g, "\\'");
-        html += `
-            <div class="cart-item">
-                <img src="${item.image}" alt="${item.name}" onclick="openProductFromCart('${escapedName}')">
-                <div class="cart-item-details">
-                    <h4 onclick="openProductFromCart('${escapedName}')">${item.name}</h4>
-                    <p style="font-size:11px; color:var(--primary-green); font-weight:700;">ID: ${item.id}</p>
-                    <p>${item.price}</p>
-                    <div class="qty-control">
-                        <button class="qty-btn" onclick="changeQty(${index}, -1)">-</button>
-                        <span>${item.qty}</span>
-                        <button class="qty-btn" onclick="changeQty(${index}, 1)">+</button>
-                    </div>
-                </div>
-                <i class="fa-solid fa-trash remove-item" onclick="removeFromCart(${index})"></i>
-            </div>
-        `;
-    });
-
-    container.innerHTML = html;
-    document.getElementById('cart-total-price').innerText = '₹' + total;
+const badge = document.getElementById('cart-count');
+let totalQty = cart.reduce((sum, item) => sum + item.qty, 0);
+badge.innerText = totalQty;
+const container = document.getElementById('cart-items-container');
+const footerSec = document.getElementById('cart-footer-section');
+if(cart.length === 0) {
+container.innerHTML = `<p style="text-align: center; color: var(--text-light); margin-top:
+40px;">Your cart is empty!</p>`;
+footerSec.style.display = 'none';
+return;
 }
-
+footerSec.style.display = 'flex';
+let html = '';
+let total = 0;
+cart.forEach((item, index) => {
+let numericPrice = parseInt(item.price.replace(/[^0-9]/g, '')) || 0;
+total += numericPrice * item.qty;
+let escapedName = item.name.replace(/'/g, "\\'");
+html += `
+<div class="cart-item">
+<img src="${item.image}" alt="${item.name}"
+onclick="openProductFromCart('${escapedName}')">
+<div class="cart-item-details">
+<h4 onclick="openProductFromCart('${escapedName}')">${item.name}</h4>
+<p style="font-size:11px; color:var(--primary-green); font-weight:700;">ID:
+${item.id}</p>
+<p>${item.price}</p>
+<div class="qty-control">
+<button class="qty-btn" onclick="changeQty(${index}, -1)">-</button>
+<span>${item.qty}</span>
+<button class="qty-btn" onclick="changeQty(${index}, 1)">+</button>
+</div>
+</div>
+<i class="fa-solid fa-trash remove-item" onclick="removeFromCart(${index})"></i>
+</div>
+`;
+});
+container.innerHTML = html;
+document.getElementById('cart-total-price').innerText = '₹' + total;
+}
 function toggleCartDrawer() {
-    const drawer = document.getElementById('cart-drawer');
-    drawer.classList.toggle('open');
+const drawer = document.getElementById('cart-drawer');
+drawer.classList.toggle('open');
 }
-
 function openCheckoutPage() {
-    toggleCartDrawer();
-    switchPage('checkout-page', null);
+toggleCartDrawer();
+switchPage('checkout-page', null);
 }
-
 // ==========================================
 // CONTACT EMAILJS - ONLY FOR CONTACT FORM
 // ==========================================
-
 const CONTACT_PUBLIC_KEY = "DNRJlokDKp5mriXcz";
 const CONTACT_SERVICE_ID = "service_shreestore";
 const CONTACT_TEMPLATE_ID = "template_c77f1ie";
-
 function handleContactForm(e) {
-    e.preventDefault();
-
-    const name = document.getElementById("contact-name").value.trim();
-    const email = document.getElementById("contact-email").value.trim();
-    const message = document.getElementById("contact-message").value.trim();
-
-    const btn = document.getElementById("contact-btn");
-    const statusEl = document.getElementById("contact-status");
-
-    btn.innerText = "Sending... 🤍";
-    btn.disabled = true;
-    statusEl.style.display = "none";
-
-    const contactParams = {
-        to_email: "pikapipikachuu2009@gmail.com",
-        from_name: name,
-        from_email: email,
-        reply_to: email,
-        message: message
-    };
-
-    // CONTACT ACCOUNT
-    emailjs.init("DNRJlokDKp5mriXcz");
-
-    emailjs.send(
-        "service_shreestore",
-        "template_c77f1ie",
-        contactParams
-    )
-    .then(function(response) {
-
-        console.log("CONTACT EMAIL SENT:", response);
-
-        // IMPORTANT:
-        // Checkout account ko wapas restore karo
-        emailjs.init("rtEfinvD0NNpYxlO2");
-
-        document.getElementById("contact-form").reset();
-
-        btn.innerText = "Send Message 🤍";
-        btn.disabled = false;
-
-        statusEl.innerText =
-            "Thank you! Your message has been sent to Shree 🤍";
-
-        statusEl.style.color = "";
-        statusEl.style.display = "block";
-
-        setTimeout(function () {
-            statusEl.style.display = "none";
-        }, 6000);
-
-    })
-    .catch(function(error) {
-
-        // Checkout account restore
-        emailjs.init("rtEfinvD0NNpYxlO2");
-
-        console.error("CONTACT EMAIL ERROR:", error);
-        console.error("STATUS:", error.status);
-        console.error("TEXT:", error.text);
-
-        btn.innerText = "Send Message 🤍";
-        btn.disabled = false;
-
-        statusEl.innerText =
-            "Error: " + (error.text || "Unable to send message");
-
-        statusEl.style.color = "#E58A8A";
-        statusEl.style.display = "block";
-    });
+e.preventDefault();
+const name = document.getElementById("contact-name").value.trim();
+const email = document.getElementById("contact-email").value.trim();
+const message = document.getElementById("contact-message").value.trim();
+const btn = document.getElementById("contact-btn");
+const statusEl = document.getElementById("contact-status");
+btn.innerText = "Sending... 🤍";
+btn.disabled = true;
+statusEl.style.display = "none";
+const contactParams = {
+to_email: "pikapipikachuu2009@gmail.com",
+from_name: name,
+from_email: email,
+reply_to: email,
+message: message
+};
+// CONTACT ACCOUNT
+emailjs.init("DNRJlokDKp5mriXcz");
+emailjs.send(
+"service_shreestore",
+"template_c77f1ie",
+contactParams
+)
+.then(function(response) {
+console.log("CONTACT EMAIL SENT:", response);
+// IMPORTANT:
+// Checkout account ko wapas restore karo
+emailjs.init("rtEfinvD0NNpYxlO2");
+document.getElementById("contact-form").reset();
+btn.innerText = "Send Message 🤍";
+btn.disabled = false;
+statusEl.innerText =
+"Thank you! Your message has been sent to Shree 🤍";
+statusEl.style.color = "";
+statusEl.style.display = "block";
+setTimeout(function () {
+statusEl.style.display = "none";
+}, 6000);
+})
+.catch(function(error) {
+// Checkout account restore
+emailjs.init("rtEfinvD0NNpYxlO2");
+console.error("CONTACT EMAIL ERROR:", error);
+console.error("STATUS:", error.status);
+console.error("TEXT:", error.text);
+btn.innerText = "Send Message 🤍";
+btn.disabled = false;
+statusEl.innerText =
+"Error: " + (error.text || "Unable to send message");
+statusEl.style.color = "#E58A8A";
+statusEl.style.display = "block";
+});
 }
 function handlePlaceOrder(e) {
-    e.preventDefault();
-    const name = document.getElementById('chk-name').value;
-    const email = document.getElementById('chk-email').value;
-    const phone = document.getElementById('chk-phone').value;
-    const address = document.getElementById('chk-address').value;
-    const pincode = document.getElementById('chk-pincode').value;
-
-    let total = 0;
-    cart.forEach(item => {
-        let num = parseInt(item.price.replace(/[^0-9]/g, '')) || 0;
-        total += num * item.qty;
-    });
-
-    const orderId = '#SHREE' + Math.floor(1000 + Math.random() * 9000);
-    const paymentMethodText = 'Cash on Delivery (COD)';
-
-    executeOrderFinalization({ name, email, phone, address, pincode, paymentMethod: paymentMethodText, total, orderId });
+e.preventDefault();
+const name = document.getElementById('chk-name').value;
+const email = document.getElementById('chk-email').value;
+const phone = document.getElementById('chk-phone').value;
+const address = document.getElementById('chk-address').value;
+const pincode = document.getElementById('chk-pincode').value;
+let total = 0;
+cart.forEach(item => {
+let num = parseInt(item.price.replace(/[^0-9]/g, '')) || 0;
+total += num * item.qty;
+});
+const orderId = '#SHREE' + Math.floor(1000 + Math.random() * 9000);
+const paymentMethodText = 'Cash on Delivery (COD)';
+executeOrderFinalization({ name, email, phone, address, pincode, paymentMethod:
+paymentMethodText, total, orderId });
 }
-
 function executeOrderFinalization(data) {
-    const orderDate = new Date().toLocaleString();
-    let itemsDetails = cart.map(i => `• [${i.id}] ${i.name} (Qty: ${i.qty}) - Price: ${i.price}`).join('\n');
-    let plainItemsDetails = cart.map(i => `• [${i.id}] ${i.name} (Qty: ${i.qty}) - Price: ${i.price}`).join('\n');
-
-    let templateParams = {
-        to_email: 'pikapipikachuu2009@gmail.com',
-        customer_name: data.name,
-        customer_email: data.email,
-        customer_phone: data.phone,
-        customer_address: data.address,
-        customer_pincode: data.pincode,
-        payment_method: data.paymentMethod,
-        total_amount: '₹' + data.total,
-        amount: '₹' + data.total,
-        order_id: data.orderId,
-        order_date: orderDate,
-        order_items: itemsDetails,
-        items: itemsDetails
-    };
-
-    emailjs.send('service_shreestore', 'template_o99gixn', templateParams)
-        .then(function(res) {
-            console.log('Admin email sent successfully!', res.status, res.text);
-        }, function(err) {
-            console.error('Failed to send admin email:', err.text || JSON.stringify(err));
-        });
-
-    let customerParams = {
-        to_email: data.email,
-        customer_name: data.name,
-        customer_email: data.email,
-        customer_phone: data.phone,
-        customer_address: data.address,
-        customer_pincode: data.pincode,
-        payment_method: data.paymentMethod,
-        total_amount: '₹' + data.total,
-        amount: '₹' + data.total,
-        order_id: data.orderId,
-        order_date: orderDate,
-        order_items: plainItemsDetails,
-        items: plainItemsDetails
-    };
-
-    emailjs.send('service_shreestore', 'template_xgf26mm', customerParams)
-        .then(function(res) {
-            console.log('Customer email sent successfully!', res.status, res.text);
-        }, function(err) {
-            console.error('Failed to send customer email:', err.text || JSON.stringify(err));
-        });
-
-    let successHtml = `Thank you <b>${data.name}</b>! Your order <b>${data.orderId}</b> has been placed successfully.<br>Payment: <b>${data.paymentMethod}</b><br>Total Cost: <b>₹${data.total}</b><br>Delivery Pincode: <b>${data.pincode}</b>.`;
-    document.getElementById('success-message').innerHTML = successHtml;
-    
-    cart = [];
-    localStorage.removeItem('shree_cart');
-    updateCartUI();
-    switchPage('success-page', null);
-}
-
+const orderDate = new Date().toLocaleString();
+let itemsDetails = cart.map(i => `• [${i.id}] ${i.name} (Qty: ${i.qty}) - Price:
+${i.price}`).join('\n');
+let plainItemsDetails = cart.map(i => `• [${i.id}] ${i.name} (Qty: ${i.qty}) - Price:
+${i.price}`).join('\n');
+let templateParams = {
+to_email: 'pikapipikachuu2009@gmail.com',
+customer_name: data.name,
+customer_email: data.email,
+customer_phone: data.phone,
+customer_address: data.address,
+customer_pincode: data.pincode,
+payment_method: data.paymentMethod,
+total_amount: '₹' + data.total,
+amount: '₹' + data.total,
+order_id: data.orderId,
+order_date: orderDate,
+order_items: itemsDetails,
+items: itemsDetails
+};
+emailjs.send('service_shreestore', 'template_o99gixn', templateParams)
+.then(function(res) {
+console.log('Admin email sent successfully!', res.status, res.text);
+}, function(err) {
+console.error('Failed to send admin email:', err.text || JSON.stringify(err));
+});
+let customerParams = {
+to_email: data.email,
+customer_name: data.name,
+customer_email: data.email,
+customer_phone: data.phone,
+customer_address: data.address,
+customer_pincode: data.pincode,
+payment_method: data.paymentMethod,
+total_amount: '₹' + data.total,
+amount: '₹' + data.total,
+order_id: data.orderId,
+order_date: orderDate,
+order_items: plainItemsDetails,
+items: plainItemsDetails
+};
+emailjs.send('service_shreestore', 'template_xgf26mm', customerParams)
+.then(function(res) {
+console.log('Customer email sent successfully!', res.status, res.text);
+}, function(err) {
+console.error('Failed to send customer email:', err.text || JSON.stringify(err));
+});
+let successHtml = `Thank you <b>${data.name}</b>! Your order <b>${data.orderId}</b>
+has been placed successfully.<br>Payment: <b>${data.paymentMethod}</b><br>Total Cost:
+<b>₹${data.total}</b><br>Delivery Pincode: <b>${data.pincode}</b>.`;
+document.getElementById('success-message').innerHTML = successHtml;
+cart = [];
+localStorage.removeItem('shree_cart');
 updateCartUI();
-
+switchPage('success-page', null);
+}
+updateCartUI();
 // Lightbox
 let currentCatalogType = 'finds';
 let currentLightboxProduct = -1;
 let currentLightboxImageIdx = 0;
-
 function openLightbox(type, productIndex, imgIndex) {
-    currentCatalogType = type;
-    currentLightboxProduct = productIndex;
-    currentLightboxImageIdx = imgIndex !== undefined ? imgIndex : 0;
-    document.body.style.overflow = 'hidden';
-    updateLightboxView();
-    document.getElementById('image-lightbox').style.display = 'flex';
+currentCatalogType = type;
+currentLightboxProduct = productIndex;
+currentLightboxImageIdx = imgIndex !== undefined ? imgIndex : 0;
+document.body.style.overflow = 'hidden';
+updateLightboxView();
+document.getElementById('image-lightbox').style.display = 'flex';
 }
-
 function closeLightbox() {
-    document.body.style.overflow = '';
-    document.getElementById('image-lightbox').style.display = 'none';
+document.body.style.overflow = '';
+document.getElementById('image-lightbox').style.display = 'none';
 }
-
 function getLightboxImages() {
-    if (currentCatalogType === 'finds') {
-        return affiliateProducts[currentLightboxProduct].images;
-    } else {
-        let p = resellingProducts[currentLightboxProduct];
-        if (p && p.colors) {
-            let colObj = p.colors[selectedVariantColorIdx];
-            return colObj.images || [colObj.image];
-        }
-        return p ? p.images : [];
-    }
+if (currentCatalogType === 'finds') {
+return affiliateProducts[currentLightboxProduct].images;
+} else {
+let p = resellingProducts[currentLightboxProduct];
+if (p && p.colors) {
+let colObj = p.colors[selectedVariantColorIdx];
+return colObj.images || [colObj.image];
 }
-
+return p ? p.images : [];
+}
+}
 function changeLightboxImage(direction) {
-    let imagesArray = getLightboxImages();
-    if (!imagesArray || imagesArray.length === 0) return;
-    currentLightboxImageIdx += direction;
-    if(currentLightboxImageIdx < 0) {
-        currentLightboxImageIdx = imagesArray.length - 1;
-    } else if(currentLightboxImageIdx >= imagesArray.length) {
-        currentLightboxImageIdx = 0;
-    }
-    updateLightboxView();
+let imagesArray = getLightboxImages();
+if (!imagesArray || imagesArray.length === 0) return;
+currentLightboxImageIdx += direction;
+if(currentLightboxImageIdx < 0) {
+currentLightboxImageIdx = imagesArray.length - 1;
+} else if(currentLightboxImageIdx >= imagesArray.length) {
+currentLightboxImageIdx = 0;
 }
-
+updateLightboxView();
+}
 function updateLightboxView() {
-    let imagesArray = getLightboxImages();
-    if (imagesArray && imagesArray[currentLightboxImageIdx]) {
-        document.getElementById('lightbox-main-img').src = imagesArray[currentLightboxImageIdx];
-    }
+let imagesArray = getLightboxImages();
+if (imagesArray && imagesArray[currentLightboxImageIdx]) {
+document.getElementById('lightbox-main-img').src =
+imagesArray[currentLightboxImageIdx];
 }
-
+}
 document.getElementById('image-lightbox').addEventListener('click', function(e) {
-    if(e.target === this) {
-        closeLightbox();
-    }
+if(e.target === this) {
+closeLightbox();
+}
 });
 // ==========================================
 // AUTO-OPEN PRODUCT FROM URL QUERY PARAM (?id=...)
 // Supports: Home, Finds, Closet
 // Example: ?id=SHREE-P03
 // ==========================================
-
 function checkAndOpenProductFromURL() {
-    const productId = new URLSearchParams(window.location.search).get('id');
-
-    if (!productId) return;
-
-    let index = resellingProducts.findIndex(p => p.id === productId);
-
-    if (index !== -1) {
-        setTimeout(() => {
-            openProductDetail('closet', index);
-        }, 500);
-        return;
-    }
-
-    index = affiliateProducts.findIndex(p => p.id === productId);
-
-    if (index !== -1) {
-        setTimeout(() => {
-            openProductDetail('finds', index);
-        }, 500);
-        return;
-    }
-
-    index = homeFeaturedProducts.findIndex(p => p.id === productId);
-
-    if (index !== -1) {
-        setTimeout(() => {
-            openProductDetail('home', index);
-        }, 500);
-    }
+const productId = new URLSearchParams(window.location.search).get('id');
+if (!productId) return;
+let index = resellingProducts.findIndex(p => p.id === productId);
+if (index !== -1) {
+setTimeout(() => {
+openProductDetail('closet', index);
+}, 500);
+return;
 }
-
+index = affiliateProducts.findIndex(p => p.id === productId);
+if (index !== -1) {
+setTimeout(() => {
+openProductDetail('finds', index);
+}, 500);
+return;
+}
+index = homeFeaturedProducts.findIndex(p => p.id === productId);
+if (index !== -1) {
+setTimeout(() => {
+openProductDetail('home', index);
+}, 500);
+}
+}
 if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', checkAndOpenProductFromURL);
+document.addEventListener('DOMContentLoaded', checkAndOpenProductFromURL);
 } else {
-    checkAndOpenProductFromURL();
+checkAndOpenProductFromURL();
 }
