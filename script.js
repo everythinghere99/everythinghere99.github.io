@@ -1,3 +1,4 @@
+
 const homeFeaturedProducts = [
 { id: "SHREE-H1", name: "Soft Cute kitty", image:
 "https://i.ibb.co/0kX0WzD/file-0000000030dc8206b14693c4d6249eb0-1.png", description:
