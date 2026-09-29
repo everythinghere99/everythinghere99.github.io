@@ -2347,7 +2347,7 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     description: "Useful Men's Jeans with a stylish design, made for convenient everyday use.",
     price: "₹748",
     affiliateLink: "https://www.amazon.in/dp/B0GRH9MQN3?tag=pikafinds-21"
-},
+}
 ];
 // RESELLING CLOSET PRODUCTS
 const resellingProducts = [
