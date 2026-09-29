@@ -2348,6 +2348,16 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     price: "₹1149",
     affiliateLink: "https://www.amazon.in/dp/B0DRZQ1YD8?tag=pikafinds-21"
 },
+{
+    id: "SHREE-P208",
+    name: "Multipurpose Cleaning",
+    images: [
+        "https://m.media-amazon.com/images/I/614lbFMxzyL._SY355_.jpg"
+    ],
+    description: "Useful Multipurpose Cleaning with a stylish design, made for convenient everyday use.",
+    price: "₹99",
+    affiliateLink: "https://www.amazon.in/dp/B0GQSRL7QY?tag=pikafinds-21"
+},
 ];
 // RESELLING CLOSET PRODUCTS
 const resellingProducts = [
