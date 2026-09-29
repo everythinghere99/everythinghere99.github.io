@@ -2358,6 +2358,16 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     price: "₹99",
     affiliateLink: "https://www.amazon.in/dp/B0GQSRL7QY?tag=pikafinds-21"
 },
+{
+    id: "SHREE-P209",
+    name: "Tempered glass",
+    images: [
+        "https://m.media-amazon.com/images/I/71x02tluPzL._SX342_.jpg"
+    ],
+    description: "Useful Tempered glass with a stylish design, made for convenient everyday use.",
+    price: "₹249",
+    affiliateLink: "https://www.amazon.in/dp/B0FY351V2R?tag=pikafinds-21"
+},
 ];
 // RESELLING CLOSET PRODUCTS
 const resellingProducts = [
