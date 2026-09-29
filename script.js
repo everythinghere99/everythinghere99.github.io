@@ -1,4 +1,3 @@
-
 const homeFeaturedProducts = [
 { id: "SHREE-H1", name: "Soft Cute kitty", image:
 "https://i.ibb.co/0kX0WzD/file-0000000030dc8206b14693c4d6249eb0-1.png", description:
@@ -2329,16 +2328,6 @@ description: "Useful Women's Saree with a stylish design, made for convenient ev
 price: "₹949",
 affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
 }
-{
-    id: "SHREE-P206",
-    name: "Men's Jeans",
-    images: [
-        "https://m.media-amazon.com/images/I/511CVQckKIL._SY445_.jpg"
-    ],
-    description: "Useful Men's Jeans with a stylish design, made for convenient everyday use.",
-    price: "₹748",
-    affiliateLink: "https://www.amazon.in/dp/B0GRH9MQN3?tag=pikafinds-21"
-},
 ];
 // RESELLING CLOSET PRODUCTS
 const resellingProducts = [
