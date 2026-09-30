@@ -1,3 +1,4 @@
+// ==================== 1. PRODUCT DATA ====================
 const homeFeaturedProducts = [
 { id: "SHREE-H1", name: "Soft Cute kitty", image:
 "https://i.ibb.co/0kX0WzD/file-0000000030dc8206b14693c4d6249eb0-1.png", description:
@@ -2379,6 +2380,7 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     affiliateLink: "https://www.amazon.in/dp/B0DS9RP6ZQ?tag=pikafinds-21"
 },
 ];
+// ==================== 2. RESELLING CLOSET PRODUCTS ====================
 // RESELLING CLOSET PRODUCTS
 const resellingProducts = [
 {
@@ -3882,11 +3884,13 @@ sizes: [
 ]
 }
 ];
+// ==================== 3. CART & VARIANT STATE ====================
 // CART STATE
 let cart = JSON.parse(localStorage.getItem('shree_cart')) || [];
 let selectedVariantColorIdx = 0;
 let selectedVariantSizeIdx = 0;
 let savedScrollPos = 0;
+// ==================== 4. PRODUCT CARD RENDERING ====================
 // Render Home Products
 const homeContainer = document.getElementById('home-products');
 let homeHtml = '';
@@ -3951,6 +3955,7 @@ Cart</button><button class="btn-small" onclick="buyNowItem('${product.id}',
 Now</button></div></div></div>`;
 });
 closetContainer.innerHTML = closetHtml;
+// ==================== 5. SEARCH & FILTERS ====================
 // SEARCH MODAL TOGGLE & LIVE SEARCH
 function toggleSearchModal() {
 const modal = document.getElementById('search-modal');
@@ -3961,50 +3966,415 @@ modal.style.display = 'flex';
 document.getElementById('search-input').focus();
 }
 }
-function performSearch() {
-const query = document.getElementById('search-input').value.toLowerCase().trim();
-const container = document.getElementById('search-results-container');
-if (!query) {
-container.innerHTML = `<p style="text-align: center; color: var(--text-light); font-size:
-13px; grid-column: span 2; margin-top: 20px;">Type something to find your favorite picks
-🤍</p>`;
-return;
-}
-let allProducts = [
-...affiliateProducts.map(p => ({ ...p, type: 'finds', mainImg: p.images[0] })),
-...resellingProducts.map(p => ({ ...p, type: 'closet', mainImg: p.colors ?
-p.colors[0].image : p.images[0] }))
+// SEARCH + CATEGORY FILTER SYSTEM
+// Categories are intentionally kept broad; detailed choices live inside filters.
+const STORE_CATEGORY_DEFS = [
+  { id: 'clothes', label: 'Clothes', icon: 'fa-solid fa-shirt', keywords: ['dress','kurti','kurta','shirt','t-shirt','t shirt','jeans','pant','pants','trouser','jogger','joggers','top','frock','saree','lehenga','jumpsuit','skirt','sweatshirt','hoodie','pajama','pajamas','track pant','cargo','wear','outfit','suit','anarkali','crop top'] },
+  { id: 'footwear', label: 'Footwear', icon: 'fa-solid fa-shoe-prints', keywords: ['shoe','shoes','sandal','sandals','slipper','slippers','sneaker','sneakers','flats','heels','footwear','flip flop','loafers','boots'] },
+  { id: 'jewellery', label: 'Jewellery & Accessories', icon: 'fa-regular fa-gem', keywords: ['earring','earrings','necklace','bracelet','bangle','ring','jhumka','jhumki','jewellery','jewelry','pendant','headband','belt','hair clip','hairband','accessory','accessories'] },
+  { id: 'watches', label: 'Watches', icon: 'fa-regular fa-clock', keywords: ['watch','wristwatch','smartwatch'] },
+  { id: 'bags', label: 'Bags & Wallets', icon: 'fa-solid fa-bag-shopping', keywords: ['bag','handbag','purse','wallet','backpack','sling','tote','pouch'] },
+  { id: 'toys', label: 'Toys & Games', icon: 'fa-solid fa-puzzle-piece', keywords: ['toy','plush','teddy','doll','puzzle','stuffed','kitty','soft toy','robot pet','robot toy','robot combo','storytelling robot'] },
+  { id: 'beauty', label: 'Beauty & Self Care', icon: 'fa-solid fa-wand-magic-sparkles', keywords: ['lip gloss','lipstick','makeup','beauty','skincare','cream','serum','cosmetic','cosmetics','face','hair care','nail'] },
+  { id: 'decor', label: 'Room Decor', icon: 'fa-solid fa-house', keywords: ['pillow','cushion','decor','decoration','vase','lamp','light','led','wall','room','curtain','plant','artificial flower','photo frame','wall frame','showpiece','mug','coffee mug','alarm clock'] },
+  { id: 'tech', label: 'Tech & Study', icon: 'fa-solid fa-headphones', keywords: ['camera','headphone','earphone','earbuds','speaker','gadget','charger','keyboard','mouse','tech','robot','ai robot','tablet','phone','study','pen','pencil','planner','notebook','organizer','stationery','study table','tumbler'] }
 ];
-let filtered = allProducts.filter(p => p.name.toLowerCase().includes(query) ||
-p.description.toLowerCase().includes(query));
-if (filtered.length === 0) {
-container.innerHTML = `<p style="text-align: center; color: var(--text-light); font-size:
-13px; grid-column: span 2; margin-top: 20px;">No cozy treasures found for "${query}"
-🍃</p>`;
-return;
+
+const CLOTHING_WORDS = ['dress','kurti','kurta','shirt','t-shirt','t shirt','jeans','pant','pants','trouser','jogger','joggers','top','frock','saree','lehenga','jumpsuit','skirt','sweatshirt','hoodie','pajama','pajamas','track pant','cargo','wear','outfit','suit','anarkali','crop top'];
+
+function getSearchableProductText(p) {
+  return `${p.name || ''} ${p.description || ''} ${p.shortDescription || ''}`.toLowerCase();
 }
-let html = '';
-filtered.forEach(p => {
-let originalIdx = (p.type === 'finds') ? affiliateProducts.findIndex(item => item.id ===
-p.id) : resellingProducts.findIndex(item => item.id === p.id);
-html += `
-<div class="product-card" style="cursor: pointer;" onclick="toggleSearchModal();
-openProductDetail('${p.type}', ${originalIdx})">
-<div style="width: 100%; height: 120px; background: #f9f9f9; border-radius: 8px;
-overflow: hidden; margin-bottom: 8px;">
-<img src="${p.mainImg}" alt="${p.name}" style="width: 100%; height: 100%;
-object-fit: cover;">
-</div>
-<h4 style="font-size: 14px; font-weight: 700; color: var(--text-dark); margin-bottom:
-4px;">${p.name}</h4>
-<p style="font-size: 12px; color: var(--primary-green); font-weight: 700;
-margin-bottom: 0;">${p.price}</p>
-</div>
-`;
-});
-container.innerHTML = html;
+
+function getProductCategoryMeta(p) {
+  const text = getSearchableProductText(p);
+  let categories = [];
+
+  STORE_CATEGORY_DEFS.forEach(cat => {
+    if (cat.keywords.some(keyword => text.includes(keyword))) categories.push(cat.id);
+  });
+
+  // Explicit product-type priority fixes ambiguous words such as "lamp" and "robot".
+  if (/(wall\s*lamp|table\s*lamp|ceiling\s*lamp|wall\s*decor|photo\s*frame|wall\s*frame|room\s*decor|house\s*decor|pillow|cushion|vase|showpiece|solar\s*lights)/i.test(text)) {
+    if (!categories.includes('decor')) categories.push('decor');
+  }
+  if (/(study\s*lamp|desk\s*lamp|study\s*table|study\s*essentials|stationery|notebook|planner|pen|pencil)/i.test(text)) {
+    categories = categories.filter(c => c !== 'decor');
+    if (!categories.includes('tech')) categories.push('tech');
+  }
+  if (/(dispenser|helicopter)/i.test(text) && /lamp|wall/i.test(text)) {
+    categories = categories.filter(c => c !== 'tech' && c !== 'study');
+    if (!categories.includes('decor')) categories.push('decor');
+  }
+  if (/(earbuds|earphone|headphone|charger|keyboard|mouse|camera|speaker)/i.test(text)) {
+    categories = categories.filter(c => c !== 'clothes' && c !== 'decor');
+    if (!categories.includes('tech')) categories.push('tech');
+  }
+
+  // Gender is a filter, not a category. It is available wherever the product data supports it.
+  let gender = 'unisex';
+  if (/(women|woman|girl|girls|ladies|women's|girl's|female|womens)/i.test(text)) gender = 'girls';
+  else if (/(men|man|boy|boys|gentlemen|men's|male|mens)/i.test(text)) gender = 'boys';
+  else if (/(kid|kids|child|children|baby|infant|toddler)/i.test(text)) gender = 'kids';
+
+  const hasClothing = CLOTHING_WORDS.some(word => text.includes(word));
+  if (hasClothing && !categories.includes('clothes')) categories.push('clothes');
+
+  // Remove the old broad gender categories completely.
+  categories = categories.filter(c => !['girls','boys','kids','study','food'].includes(c));
+  if (!categories.length) categories.push('other');
+
+  return { categories: [...new Set(categories)], gender, text };
 }
+
+function getAllStoreProducts() {
+  return [
+    ...homeFeaturedProducts.map((p, index) => ({ ...p, type: 'home', originalIndex: index, mainImg: p.image })),
+    ...affiliateProducts.map((p, index) => ({ ...p, type: 'finds', originalIndex: index, mainImg: p.images[0] })),
+    ...resellingProducts.map((p, index) => ({ ...p, type: 'closet', originalIndex: index, mainImg: p.colors ? p.colors[0].image : p.images[0] }))
+  ].map(p => ({ ...p, meta: getProductCategoryMeta(p) }));
+}
+
+function categoryLabel(categoryId) {
+  const found = STORE_CATEGORY_DEFS.find(c => c.id === categoryId);
+  return found ? found.label : 'Other';
+}
+
+let activeCategoryState = { categoryId: 'all', filters: {}, scrollTop: 0 };
+let categoryDetailContext = null;
+
+function readCategoryFilters() {
+  return {
+    source: document.getElementById('category-filter-source')?.value || 'all',
+    gender: document.getElementById('category-filter-gender')?.value || 'all',
+    size: document.getElementById('category-filter-size')?.value || 'all',
+    color: document.getElementById('category-filter-color')?.value || 'all'
+  };
+}
+
+window.openCategory = function openCategory(categoryId, preservedFilters = null, shouldScroll = true) {
+  const results = document.getElementById('category-results-container');
+  const title = document.getElementById('category-results-title');
+  const subtitle = document.getElementById('category-results-subtitle');
+  if (!results) return;
+
+  categoryId = categoryId || 'all';
+  const filters = preservedFilters || {};
+  activeCategoryState = { categoryId, filters: { ...filters }, scrollTop: activeCategoryState.scrollTop || 0 };
+  results.dataset.category = categoryId;
+
+  const label = categoryId === 'all' ? 'All Products' : categoryLabel(categoryId);
+  if (title) title.innerHTML = `${label} <i class="fa-regular fa-heart"></i>`;
+  if (subtitle) subtitle.textContent = categoryId === 'all'
+    ? 'Browse everything in one cozy place.'
+    : `Handpicked ${label.toLowerCase()} — use the filters below to narrow it down.`;
+
+  renderDynamicFilterControls(categoryId, 'category-filter-controls', filters);
+  renderCategoryResults(categoryId, filters);
+
+  if (shouldScroll) results.scrollIntoView({ behavior: 'smooth', block: 'start' });
+};
+
+function renderCategoryResults(categoryId = 'all', filters = {}) {
+  const container = document.getElementById('category-products-grid');
+  if (!container) return;
+  let products = getAllStoreProducts();
+  if (categoryId !== 'all') products = products.filter(p => p.meta.categories.includes(categoryId));
+  products = applyProductFilters(products, filters);
+
+  activeCategoryState.filters = { ...filters };
+  if (!products.length) {
+    container.innerHTML = `<p class="empty-category-message">No products matched these filters 🤍</p>`;
+    return;
+  }
+  container.innerHTML = products.map(p => categoryProductCardHTML(p)).join('');
+}
+
+function categoryProductCardHTML(p) {
+  const img = p.mainImg || '';
+  const price = p.colors ? p.colors[0].price : (p.price || '');
+  return `<div class="product-card category-result-card" onclick="openCategoryProduct('${p.type}', ${p.originalIndex})">
+    <div class="single-img-container"><img src="${img}" alt="${p.name}"></div>
+    <h3>${p.name}</h3>
+    <p>${p.shortDescription || p.description || ''}</p>
+    <div class="price-row"><span class="price">${price}</span><button class="btn-small" onclick="event.stopPropagation(); openCategoryProduct('${p.type}', ${p.originalIndex})">View</button></div>
+  </div>`;
+}
+
+function openCategoryProduct(type, index) {
+  categoryDetailContext = {
+    categoryId: activeCategoryState.categoryId,
+    filters: { ...activeCategoryState.filters },
+    scrollTop: window.scrollY
+  };
+  openProductDetail(type, index);
+}
+window.openCategoryProduct = openCategoryProduct;
+
+const IMAGE_COLOR_PALETTE = [
+  { key: 'black', label: 'Black', rgb: [25, 25, 25] },
+  { key: 'white', label: 'White', rgb: [245, 245, 245] },
+  { key: 'grey', label: 'Grey', rgb: [128, 128, 128] },
+  { key: 'red', label: 'Red', rgb: [210, 45, 45] },
+  { key: 'pink', label: 'Pink', rgb: [230, 110, 155] },
+  { key: 'orange', label: 'Orange', rgb: [235, 125, 45] },
+  { key: 'yellow', label: 'Yellow', rgb: [225, 190, 45] },
+  { key: 'green', label: 'Green', rgb: [55, 145, 75] },
+  { key: 'blue', label: 'Blue', rgb: [55, 105, 190] },
+  { key: 'purple', label: 'Purple', rgb: [125, 75, 165] },
+  { key: 'brown', label: 'Brown', rgb: [135, 85, 55] },
+  { key: 'beige', label: 'Beige', rgb: [205, 180, 145] },
+  { key: 'multicolor', label: 'Multicolour', rgb: null }
+];
+
+const imageColorCache = new Map();
+
+function nearestImagePaletteColor(r, g, b) {
+  let best = IMAGE_COLOR_PALETTE[0];
+  let bestDistance = Infinity;
+  IMAGE_COLOR_PALETTE.forEach(color => {
+    if (!color.rgb) return;
+    const d = Math.pow(r - color.rgb[0], 2) + Math.pow(g - color.rgb[1], 2) + Math.pow(b - color.rgb[2], 2);
+    if (d < bestDistance) {
+      bestDistance = d;
+      best = color;
+    }
+  });
+  return best.key;
+}
+
+function textColorFallback(p) {
+  const matches = `${p.name || ''} ${p.description || ''} ${p.shortDescription || ''}`.match(/\b(black|white|red|blue|green|pink|yellow|purple|orange|brown|beige|grey|gray|maroon|cream|navy)\b/gi) || [];
+  return [...new Set(matches.map(c => c.toLowerCase() === 'gray' ? 'grey' : c.toLowerCase()))];
+}
+
+function detectImageColors(imageUrl) {
+  if (!imageUrl) return Promise.resolve([]);
+  if (imageColorCache.has(imageUrl)) return Promise.resolve(imageColorCache.get(imageUrl));
+
+  return new Promise(resolve => {
+    const img = new Image();
+    img.crossOrigin = 'anonymous';
+    let finished = false;
+    const finish = colors => {
+      if (finished) return;
+      finished = true;
+      imageColorCache.set(imageUrl, colors);
+      resolve(colors);
+    };
+    img.onload = () => {
+      try {
+        const size = 40;
+        const canvas = document.createElement('canvas');
+        canvas.width = size;
+        canvas.height = size;
+        const ctx = canvas.getContext('2d', { willReadFrequently: true });
+        ctx.drawImage(img, 0, 0, size, size);
+        const data = ctx.getImageData(0, 0, size, size).data;
+        const buckets = {};
+        let total = 0;
+        for (let i = 0; i < data.length; i += 4) {
+          const a = data[i + 3];
+          if (a < 180) continue;
+          const r = data[i], g = data[i + 1], b = data[i + 2];
+          // Ignore near-white page/background pixels so product colour dominates.
+          const max = Math.max(r, g, b), min = Math.min(r, g, b);
+          if (max > 247 && min > 242) continue;
+          const key = nearestImagePaletteColor(r, g, b);
+          buckets[key] = (buckets[key] || 0) + 1;
+          total++;
+        }
+        if (!total) return finish([]);
+        const ranked = Object.entries(buckets).sort((a, b) => b[1] - a[1]);
+        const colors = ranked.filter(([, count]) => count / total >= 0.08).slice(0, 3).map(([key]) => key);
+        // If several strong colours are present, expose Multicolour too.
+        const strongCount = ranked.filter(([, count]) => count / total >= 0.16).length;
+        if (strongCount >= 3 && !colors.includes('multicolor')) colors.push('multicolor');
+        finish(colors);
+      } catch (e) {
+        finish([]);
+      }
+    };
+    img.onerror = () => finish([]);
+    setTimeout(() => finish([]), 3500);
+    img.src = imageUrl;
+  });
+}
+
+function getProductImageUrls(p) {
+  if (p.colors && p.colors.length) {
+    return p.colors.flatMap(c => (c.images || [c.image] || [])).filter(Boolean).slice(0, 1);
+  }
+  return (p.images || [p.mainImg]).filter(Boolean).slice(0, 1);
+}
+
+async function getProductColors(p) {
+  const fallback = textColorFallback(p);
+  const urls = getProductImageUrls(p);
+  const detectedSets = await Promise.all(urls.map(detectImageColors));
+  const detected = [...new Set(detectedSets.flat())];
+  const result = detected.length ? detected : fallback;
+  p.meta.imageColors = result;
+  return result;
+}
+
+async function enrichProductsWithImageColors(products) {
+  const pending = products.filter(p => !(p.meta && Array.isArray(p.meta.imageColors)));
+  const batchSize = 8;
+  for (let i = 0; i < pending.length; i += batchSize) {
+    await Promise.all(pending.slice(i, i + batchSize).map(getProductColors));
+  }
+  return products;
+}
+
+function applyProductFilters(products, filters = {}) {
+  return products.filter(p => {
+    if (filters.source && filters.source !== 'all' && p.type !== filters.source) return false;
+    if (filters.gender && filters.gender !== 'all' && p.meta.gender !== filters.gender) return false;
+
+    // Size is intentionally Closet-only. Finds do not disappear merely because
+    // they have no size data; the Size control itself is hidden unless Closet is selected.
+    if (filters.size && filters.size !== 'all') {
+      if (filters.source !== 'closet' || p.type !== 'closet') return false;
+      const hasSizeData = (p.sizes && p.sizes.length) || (p.colors && p.colors.some(c => c.sizes && c.sizes.length));
+      if (!hasSizeData) return false;
+      const sizeText = JSON.stringify(p.sizes || []) + JSON.stringify((p.colors || []).map(c => c.sizes || []));
+      if (!sizeText.toLowerCase().includes(String(filters.size).toLowerCase())) return false;
+    }
+
+    if (filters.color && filters.color !== 'all') {
+      const productColors = p.meta.imageColors || textColorFallback(p);
+      if (!productColors.includes(String(filters.color).toLowerCase())) return false;
+    }
+    return true;
+  });
+}
+
+function buildFilterOptions(products, categoryId = 'all', source = 'all') {
+  const filtered = (categoryId === 'all' ? products : products.filter(p => p.meta.categories.includes(categoryId)))
+    .filter(p => source === 'all' || p.type === source);
+  const genders = [...new Set(filtered.map(p => p.meta.gender).filter(Boolean))];
+  const sizes = source === 'closet' ? [...new Set(filtered.flatMap(p => [
+    ...(p.sizes || []).map(s => s.name),
+    ...((p.colors || []).flatMap(c => (c.sizes || []).map(s => s.name)))
+  ]).filter(Boolean))] : [];
+  const colors = [...new Set(filtered.flatMap(p => p.meta.imageColors || textColorFallback(p)).map(c => String(c).toLowerCase()).filter(Boolean))];
+  return { genders, sizes, colors };
+}
+
+async function renderDynamicFilterControls(categoryId = 'all', containerId = 'category-filter-controls', preservedFilters = {}) {
+  const container = document.getElementById(containerId);
+  if (!container) return;
+  const allProducts = getAllStoreProducts();
+  const selected = { source: 'all', gender: 'all', size: 'all', color: 'all', ...(preservedFilters || {}) };
+  const prefix = containerId === 'category-filter-controls' ? 'category-filter-' : 'search-filter-';
+
+  // Image colours are prepared before the Colour dropdown is built, so Finds
+  // participate in the same colour filtering as Closet products.
+  await enrichProductsWithImageColors(allProducts);
+  const source = selected.source || 'all';
+  const options = buildFilterOptions(allProducts, categoryId, source);
+
+  // If the user switches away from Closet, Size is invalid and is reset.
+  if (source !== 'closet') selected.size = 'all';
+
+  let html = `<select class="dynamic-filter" id="${prefix}source"><option value="all">All Sources</option><option value="finds">Finds</option><option value="closet">Closet</option></select>`;
+  if (options.genders.length > 1) {
+    html += `<select class="dynamic-filter" id="${prefix}gender"><option value="all">All Genders</option>${options.genders.map(g => `<option value="${g}">${g === 'girls' ? 'Girls' : g === 'boys' ? 'Boys' : g === 'kids' ? 'Kids' : 'Unisex'}</option>`).join('')}</select>`;
+  }
+  // IMPORTANT: Size exists only when Closet is explicitly selected.
+  if (source === 'closet' && options.sizes.length) {
+    html += `<select class="dynamic-filter" id="${prefix}size"><option value="all">Any Size</option>${options.sizes.map(s => `<option value="${s}">${s}</option>`).join('')}</select>`;
+  }
+  if (options.colors.length) {
+    const orderedColors = IMAGE_COLOR_PALETTE.map(c => c.key).filter(c => options.colors.includes(c));
+    html += `<select class="dynamic-filter" id="${prefix}color"><option value="all">Any Colour</option>${orderedColors.map(c => {
+      const label = IMAGE_COLOR_PALETTE.find(x => x.key === c)?.label || c;
+      return `<option value="${c}">${label}</option>`;
+    }).join('')}</select>`;
+  }
+  container.innerHTML = html;
+
+  ['source','gender','size','color'].forEach(key => {
+    const el = document.getElementById(prefix + key);
+    if (el && selected[key] && [...el.options].some(o => o.value === selected[key])) el.value = selected[key];
+  });
+
+  container.querySelectorAll('.dynamic-filter').forEach(select => select.addEventListener('change', async () => {
+    const currentSource = document.getElementById(prefix + 'source')?.value || 'all';
+    const filters = {
+      source: currentSource,
+      gender: document.getElementById(prefix + 'gender')?.value || 'all',
+      size: currentSource === 'closet' ? (document.getElementById(prefix + 'size')?.value || 'all') : 'all',
+      color: document.getElementById(prefix + 'color')?.value || 'all'
+    };
+
+    // Rebuild the controls immediately when Source changes so Size appears only
+    // for Closet and disappears for Finds/All.
+    if (select.id === prefix + 'source') {
+      if (containerId === 'category-filter-controls') {
+        activeCategoryState.filters = { ...filters };
+        await renderDynamicFilterControls(categoryId, containerId, filters);
+        renderCategoryResults(categoryId, filters);
+      } else {
+        await renderDynamicFilterControls(categoryId, containerId, filters);
+        performSearchWithCurrentFilters(filters);
+      }
+      return;
+    }
+
+    if (containerId === 'category-filter-controls') {
+      activeCategoryState.filters = { ...filters };
+      renderCategoryResults(categoryId, filters);
+    } else {
+      performSearchWithCurrentFilters(filters);
+    }
+  }));
+}
+
+function performSearchWithCurrentFilters(filters = {}) {
+  const query = document.getElementById('search-input').value.toLowerCase().trim();
+  const container = document.getElementById('search-results-container');
+  if (!container) return;
+  let filtered = getAllStoreProducts().filter(p => getSearchableProductText(p).includes(query));
+  filtered = applyProductFilters(filtered, filters);
+  renderSearchResults(filtered, container);
+}
+
+function performSearch() {
+  const query = document.getElementById('search-input').value.toLowerCase().trim();
+  const container = document.getElementById('search-results-container');
+  const filterContainer = document.getElementById('search-filter-controls');
+  if (!query) {
+    if (filterContainer) filterContainer.innerHTML = '';
+    container.innerHTML = `<p style="text-align:center;color:var(--text-light);font-size:13px;grid-column:span 2;margin-top:20px;">Type something to find your favorite picks 🤍</p>`;
+    return;
+  }
+
+  const allProducts = getAllStoreProducts();
+  const filtered = allProducts.filter(p => getSearchableProductText(p).includes(query));
+  const matchingCategories = [...new Set(filtered.flatMap(p => p.meta.categories))];
+  if (filterContainer) {
+    renderDynamicFilterControls(matchingCategories.length === 1 ? matchingCategories[0] : 'all', 'search-filter-controls');
+  }
+  renderSearchResults(filtered, container);
+}
+
+function renderSearchResults(filtered, container) {
+  if (!filtered.length) {
+    container.innerHTML = `<p style="text-align:center;color:var(--text-light);font-size:13px;grid-column:span 2;margin-top:20px;">No cozy treasures found 🍃</p>`;
+    return;
+  }
+  container.innerHTML = filtered.map(p => `<div class="product-card" style="cursor:pointer;" onclick="toggleSearchModal();openProductDetail('${p.type}', ${p.originalIndex})">
+    <div style="width:100%;height:120px;background:#f9f9f9;border-radius:8px;overflow:hidden;margin-bottom:8px;"><img src="${p.mainImg}" alt="${p.name}" style="width:100%;height:100%;object-fit:cover;"></div>
+    <h4 style="font-size:14px;font-weight:700;color:var(--text-dark);margin-bottom:4px;">${p.name}</h4>
+    <p style="font-size:12px;color:var(--primary-green);font-weight:700;margin-bottom:0;">${p.colors ? p.colors[0].price : p.price || ''}</p>
+  </div>`).join('');
+}
+
+// ==================== 6. PAGE NAVIGATION ====================
 // Page Switch Logic
+
 function switchPage(pageId, navElement) {
 let pages = document.getElementsByClassName('page-section');
 for(let i = 0; i < pages.length; i++) pages[i].classList.remove('active-page');
@@ -4030,9 +4400,10 @@ if (pageId !== 'product-detail-page') {
 window.scrollTo(0, 0);
 }
 }
+// ==================== 7. PRODUCT DETAIL & VARIANTS ====================
 // Open Product Detail
 function openProductDetail(type, index) {
-savedScrollPos = window.scrollY;
+if (!categoryDetailContext) savedScrollPos = window.scrollY;
 selectedVariantColorIdx = 0;
 selectedVariantSizeIdx = 0;
 renderDetailPageContent(type, index);
@@ -4115,10 +4486,10 @@ let externalLink = p.affiliateLink || "#";
 actionButtons = `<a href="${externalLink}" target="_blank" class="btn-small"
 style="padding: 10px 20px; font-size: 14px;">View Deal on Amazon 🤍</a>`;
 }
-let backNavText = (type === 'closet') ? 'Back to Closet' : ((type === 'finds') ? 'Back to Finds' : 'Back to Home');
-let backNavAction = (type === 'closet') ? "goBackToSection('closet-page', document.getElementById('nav-closet'))" : ((type === 'finds') ?
+let backNavText = categoryDetailContext ? 'Back to Categories' : ((type === 'closet') ? 'Back to Closet' : ((type === 'finds') ? 'Back to Finds' : 'Back to Home'));
+let backNavAction = categoryDetailContext ? 'goBackToCategory()' : ((type === 'closet') ? "goBackToSection('closet-page', document.getElementById('nav-closet'))" : ((type === 'finds') ?
 "goBackToSection('finds-page', document.getElementById('nav-finds'))" :
-"goBackToSection('home-page', document.getElementById('nav-home'))");
+"goBackToSection('home-page', document.getElementById('nav-home'))"));
 let descriptionDisplay = (type === 'closet') ? `<p style="font-size: 14px; color:
 var(--text-light); margin-bottom: 12px; font-weight: 600; white-space:
 pre-line;">${p.description}</p>` : ``;
@@ -4153,10 +4524,25 @@ function selectVariantSize(index, sizeIdx) {
 selectedVariantSizeIdx = sizeIdx;
 renderDetailPageContent('closet', index);
 }
+function goBackToCategory() {
+  if (!categoryDetailContext) {
+    openCategory('all');
+    return;
+  }
+  const ctx = { ...categoryDetailContext };
+  categoryDetailContext = null;
+  activeCategoryState = { categoryId: ctx.categoryId, filters: { ...ctx.filters }, scrollTop: ctx.scrollTop || 0 };
+  switchPage('categories-page', document.getElementById('nav-categories'));
+  openCategory(ctx.categoryId, ctx.filters, false);
+  window.scrollTo(0, ctx.scrollTop || 0);
+}
+window.goBackToCategory = goBackToCategory;
+
 function goBackToSection(pageId, navElement) {
 switchPage(pageId, navElement);
 window.scrollTo(0, savedScrollPos);
 }
+// ==================== 8. TOAST / USER FEEDBACK ====================
 // Toast
 function showCozyToast(name, image) {
 let toast = document.getElementById('cozy-toast');
@@ -4175,6 +4561,7 @@ setTimeout(() => {
 toast.classList.remove('show');
 }, 5000);
 }
+// ==================== 9. CART FUNCTIONS ====================
 // Cart Functions
 function addToCartItem(id, name, price, image, affiliateLink) {
 let existing = cart.find(item => item.name === name);
@@ -4261,6 +4648,7 @@ toggleCartDrawer();
 switchPage('checkout-page', null);
 }
 // ==========================================
+// ==================== 10. CONTACT FORM ====================
 // CONTACT EMAILJS - ONLY FOR CONTACT FORM
 // ==========================================
 const CONTACT_PUBLIC_KEY = "DNRJlokDKp5mriXcz";
@@ -4320,6 +4708,7 @@ statusEl.style.color = "#E58A8A";
 statusEl.style.display = "block";
 });
 }
+// ==================== 11. CHECKOUT & ORDER PLACEMENT ====================
 function handlePlaceOrder(e) {
 e.preventDefault();
 const name = document.getElementById('chk-name').value;
@@ -4395,6 +4784,9 @@ updateCartUI();
 switchPage('success-page', null);
 }
 updateCartUI();
+renderDynamicFilterControls('all', 'category-filter-controls');
+renderCategoryResults('all');
+// ==================== 12. IMAGE LIGHTBOX ====================
 // Lightbox
 let currentCatalogType = 'finds';
 let currentLightboxProduct = -1;
@@ -4446,6 +4838,7 @@ if(e.target === this) {
 closeLightbox();
 }
 });
+// ==================== 13. PRODUCT URL AUTO-OPEN ====================
 // ==========================================
 // AUTO-OPEN PRODUCT FROM URL QUERY PARAM (?id=...)
 // Supports: Home, Finds, Closet
