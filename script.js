@@ -2368,6 +2368,16 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     price: "₹249",
     affiliateLink: "https://www.amazon.in/dp/B0FY351V2R?tag=pikafinds-21"
 },
+{
+    id: "SHREE-P210",
+    name: "Cozy Charger Case",
+    images: [
+        "https://m.media-amazon.com/images/I/6159ppOR7NL._SY355_.jpg"
+    ],
+    description: "Useful Cozy Charger Case with a stylish design, made for convenient everyday use.",
+    price: "₹188",
+    affiliateLink: "https://www.amazon.in/dp/B0DS9RP6ZQ?tag=pikafinds-21"
+},
 ];
 // RESELLING CLOSET PRODUCTS
 const resellingProducts = [
