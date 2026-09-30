@@ -40,6 +40,7 @@ class="active">Home</a></li>
 id="search-input"
 placeholder="Search for dresses, kurtis, shoes..."
 onkeyup="performSearch()">
+<div id="search-filter-controls" class="dynamic-filter-row"></div>
 <div id="search-results-container" class="search-results-grid">
 <p style="text-align: center; color: var(--text-light); font-size: 13px; grid-column: span 4; margin-top: 20px;">
 Type something to find your favorite picks 🤍
@@ -167,7 +168,34 @@ Swipe through images or tap to view in full size
 <div id="closet-page" class="page-section products-bg">
 <section class="section-wrapper">
 <h2 class="section-title">
-Shree's Closet <i class="fa-regular fa-heart" style="color: var(--accent-pink);"></i> </h2> <p class="section-subtitle"> Aesthetic picks curated specially for your cozy space 🤍 </p> <div class="product-grid" id="closet-products"></div> </section> </div> <!-- PRODUCT DETAIL --> <div id="product-detail-page" class="page-section"> <div class="static-page-wrapper" id="detail-wrapper"></div> </div> <!-- CATEGORIES --> <div id="categories-page" class="page-section"> <div class="static-page-wrapper"> <h2>Explore Categories 🌿</h2> <p style="text-align: center; color: var(--text-light); margin-bottom: 35px;"> Handpicked aesthetic collections curated specially for your cozy space. </p> <div class="cat-detail-grid"> <div class="cat-detail-card" onclick="switchPage('finds-page', document.getElementById('nav-finds'))" style="cursor: pointer;"> <img src="https://i.ibb.co/VYfW70F4/file-00000000becc8208891c44f11d4fb2d6-1.png" alt="Study"> <div> <h3>Study Essentials</h3> <p> Lamps, aesthetic planners, cute pens & organizers for productive study vibes. </p> </div> </div> <div class="cat-detail-card" onclick="switchPage('finds-page', document.getElementById('nav-finds'))" style="cursor: pointer;"> <img src="https://i.ibb.co/chhFJTyX/file-00000000becc8208891c44f11d4fb2d6-2.png" alt="Decor"> <div> <h3>Room Decor</h3> <p> Cozy lights, artificial vases, and aesthetic touches to transform your room. </p> </div> </div> <div class="cat-detail-card" onclick="switchPage('finds-page', document.getElementById('nav-finds'))" style="cursor: pointer;"> <img src="https://i.ibb.co/gMX8kbVq/file-00000000becc8208891c44f11d4fb2d6-3.png" alt="Accessories"> <div> <h3>Cute Accessories</h3> <p> Adorable plushies, keychains, and tiny details that bring joy. </p> </div> </div> <div class="cat-detail-card" onclick="switchPage('finds-page', document.getElementById('nav-finds'))" style="cursor: pointer;"> <img src="https://i.ibb.co/pB8vZrZy/file-00000000becc8208891c44f11d4fb2d6-4.png" alt="Tech"> <div> <h3>Tech Gadgets</h3> <p> Pastel headphones, mini instant cameras, and aesthetic desk tech. </p> </div> </div> </div> </div> </div> <!-- ABOUT --> <div id="about-page" class="page-section"> <div class="static-page-wrapper"> <h2>About Us 🤍</h2> <div class="about-content" style="max-width: 850px; margin: 0 auto; text-align: left; line-height: 1.8;"> <div style="background: #F0F3EA; padding: 22px; border-radius: 12px; border: 1.5px solid #678A6C; margin-bottom: 25px;"> <h3 style="color: var(--primary-green); margin-bottom: 10px; font-size: 18px;"> ✨Welcome to Shree's Store Universe! 🌿
+Shree's Closet <i class="fa-regular fa-heart" style="color: var(--accent-pink);"></i> </h2> <p class="section-subtitle"> Aesthetic picks curated specially for your cozy space 🤍 </p> <div class="product-grid" id="closet-products"></div> </section> </div> <!-- PRODUCT DETAIL --> <div id="product-detail-page" class="page-section"> <div class="static-page-wrapper" id="detail-wrapper"></div> </div> <!-- CATEGORIES -->
+<div id="categories-page" class="page-section">
+  <div class="static-page-wrapper categories-page-wrapper">
+    <h2>Explore Categories 🌿</h2>
+    <p class="category-page-intro">Shop by what you are looking for — from cute fashion to cozy decor, toys, jewellery and more.</p>
+
+    <div class="store-category-grid">
+      <button class="store-category-card" onclick="openCategory('clothes')"><span class="category-icon"><i class="fa-solid fa-shirt"></i></span><strong>Clothes</strong><small>Girls, boys, kids & more</small></button>
+      <button class="store-category-card" onclick="openCategory('footwear')"><span class="category-icon"><i class="fa-solid fa-shoe-prints"></i></span><strong>Footwear</strong><small>Shoes, sandals & slippers</small></button>
+      <button class="store-category-card" onclick="openCategory('jewellery')"><span class="category-icon"><i class="fa-regular fa-gem"></i></span><strong>Jewellery & Accessories</strong><small>Earrings, bags, hair & more</small></button>
+      <button class="store-category-card" onclick="openCategory('watches')"><span class="category-icon"><i class="fa-regular fa-clock"></i></span><strong>Watches</strong><small>Smart & everyday watches</small></button>
+      <button class="store-category-card" onclick="openCategory('bags')"><span class="category-icon"><i class="fa-solid fa-bag-shopping"></i></span><strong>Bags & Wallets</strong><small>Handbags, backpacks & more</small></button>
+      <button class="store-category-card" onclick="openCategory('toys')"><span class="category-icon"><i class="fa-solid fa-puzzle-piece"></i></span><strong>Toys & Games</strong><small>Plushies, robots & playtime</small></button>
+      <button class="store-category-card" onclick="openCategory('beauty')"><span class="category-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></span><strong>Beauty & Self Care</strong><small>Little glow-up essentials</small></button>
+      <button class="store-category-card" onclick="openCategory('decor')"><span class="category-icon"><i class="fa-solid fa-house"></i></span><strong>Room Decor</strong><small>Cozy lights, frames & decor</small></button>
+      <button class="store-category-card" onclick="openCategory('tech')"><span class="category-icon"><i class="fa-solid fa-headphones"></i></span><strong>Tech & Study</strong><small>Gadgets, stationery & desk picks</small></button>
+      <button class="store-category-card all-category-card" onclick="openCategory('all')"><span class="category-icon"><i class="fa-solid fa-sparkles"></i></span><strong>View All</strong><small>All store products</small></button>
+    </div>
+
+    <section id="category-results-container" class="category-results-section">
+      <h2 id="category-results-title">All Products <i class="fa-regular fa-heart"></i></h2>
+      <p id="category-results-subtitle" class="category-page-intro">Browse everything in one cozy place.</p>
+      <div id="category-filter-controls" class="dynamic-filter-row"></div>
+      <div id="category-products-grid" class="product-grid category-products-grid"></div>
+    </section>
+  </div>
+</div>
+<!-- ABOUT --> <div id="about-page" class="page-section"> <div class="static-page-wrapper"> <h2>About Us 🤍</h2> <div class="about-content" style="max-width: 850px; margin: 0 auto; text-align: left; line-height: 1.8;"> <div style="background: #F0F3EA; padding: 22px; border-radius: 12px; border: 1.5px solid #678A6C; margin-bottom: 25px;"> <h3 style="color: var(--primary-green); margin-bottom: 10px; font-size: 18px;"> ✨Welcome to Shree's Store Universe! 🌿
 </h3>
 <p style="margin-bottom: 10px; font-size: 14px;">
 Aapke man me ye sawal aa raha hoga ki yahan **Finds** aur **Closet** do
