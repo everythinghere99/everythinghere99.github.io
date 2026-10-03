@@ -2399,6 +2399,16 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     price: "₹2000",
     affiliateLink: "https://www.amazon.in/dp/B0H7XTXHQM?tag=pikafinds-21"
 },
+{
+    id: "SHREE-P213",
+    name: "Women's Sandals",
+    images: [
+        "https://m.media-amazon.com/images/I/61tiOFB3OlL._SY395_.jpg"
+    ],
+    description: "Comfortable Women's Sandals made for everyday use with a practical and stylish look.",
+    price: "₹999",
+    affiliateLink: "https://www.amazon.in/dp/B0CQLKHJJC?tag=pikafinds-21"
+},
 ];
 // ==================== 2. RESELLING CLOSET PRODUCTS ====================
 // RESELLING CLOSET PRODUCTS
