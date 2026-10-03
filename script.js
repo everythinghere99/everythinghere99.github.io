@@ -2409,6 +2409,16 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     price: "₹999",
     affiliateLink: "https://www.amazon.in/dp/B0CQLKHJJC?tag=pikafinds-21"
 },
+{
+    id: "SHREE-P214",
+    name: "Women's Earrings",
+    images: [
+        "https://m.media-amazon.com/images/I/81BnZ4kuZxL._SY395_.jpg"
+    ],
+    description: "Elegant Women's Earrings that adds a simple and stylish touch to your everyday look.",
+    price: "₹399",
+    affiliateLink: "https://www.amazon.in/dp/B07RNH683S?tag=pikafinds-21"
+},
 ];
 // ==================== 2. RESELLING CLOSET PRODUCTS ====================
 // RESELLING CLOSET PRODUCTS
