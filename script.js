@@ -2719,6 +2719,16 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     price: "₹1499",
     affiliateLink: "https://www.amazon.in/dp/B0HG7GLCZR?tag=pikafinds-21"
 },
+{
+    id: "SHREE-P245",
+    name: "Premium Mirror",
+    images: [
+        "https://m.media-amazon.com/images/I/515-ES9oTGL._SY355_.jpg"
+    ],
+    description: "Useful Premium Mirror with a stylish design, made for convenient everyday use.",
+    price: "₹15180",
+    affiliateLink: "https://www.amazon.in/dp/B0D1GD878K?tag=pikafinds-21"
+},
 ];
 // ==================== 2. RESELLING CLOSET PRODUCTS ====================
 // RESELLING CLOSET PRODUCTS
