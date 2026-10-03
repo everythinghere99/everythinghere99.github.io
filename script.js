@@ -2639,6 +2639,16 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     price: "₹169",
     affiliateLink: "https://www.amazon.in/dp/B0CQLKSXZL?tag=pikafinds-21"
 },
+{
+    id: "SHREE-P237",
+    name: "Silicon mat",
+    images: [
+        "https://m.media-amazon.com/images/I/61b6zpHD-1L._SY355_.jpg"
+    ],
+    description: "Useful Silicon mat with a stylish design, made for convenient everyday use.",
+    price: "₹289",
+    affiliateLink: "https://www.amazon.in/dp/B0FVTBGN81?tag=pikafinds-21"
+},
 ];
 // ==================== 2. RESELLING CLOSET PRODUCTS ====================
 // RESELLING CLOSET PRODUCTS
