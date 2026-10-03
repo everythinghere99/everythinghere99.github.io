@@ -2599,6 +2599,16 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     price: "₹349",
     affiliateLink: "https://www.amazon.in/dp/B0CQLR6XTJ?tag=pikafinds-21"
 },
+{
+    id: "SHREE-P233",
+    name: "Microfiber mat",
+    images: [
+        "https://m.media-amazon.com/images/I/71MBOmm+Y7L._SY355_.jpg"
+    ],
+    description: "Useful Microfiber mat with a stylish design, made for convenient everyday use.",
+    price: "₹498",
+    affiliateLink: "https://www.amazon.in/dp/B0F7FBCNRX?tag=pikafinds-21"
+},
 ];
 // ==================== 2. RESELLING CLOSET PRODUCTS ====================
 // RESELLING CLOSET PRODUCTS
