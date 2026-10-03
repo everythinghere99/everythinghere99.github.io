@@ -2419,6 +2419,16 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     price: "₹399",
     affiliateLink: "https://www.amazon.in/dp/B07RNH683S?tag=pikafinds-21"
 },
+{
+    id: "SHREE-P215",
+    name: "Women's Necklace",
+    images: [
+        "https://m.media-amazon.com/images/I/81RFytWPThL._SY395_.jpg"
+    ],
+    description: "Elegant Women's Necklace that adds a simple and stylish touch to your everyday look.",
+    price: "₹699",
+    affiliateLink: "https://www.amazon.in/dp/B07BK5ZT38?tag=pikafinds-21"
+},
 ];
 // ==================== 2. RESELLING CLOSET PRODUCTS ====================
 // RESELLING CLOSET PRODUCTS
