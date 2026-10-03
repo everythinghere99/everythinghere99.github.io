@@ -3349,6 +3349,16 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     price: "₹649",
     affiliateLink: "https://www.amazon.in/dp/B0DZXDCPZT?tag=pikafinds-21"
 },
+{
+    id: "SHREE-P308",
+    name: "Men's Jeans",
+    images: [
+        "https://m.media-amazon.com/images/I/61UBYVYdMbL._SY445_.jpg"
+    ],
+    description: "Useful Men's Jeans with a stylish design, made for convenient everyday use.",
+    price: "₹768",
+    affiliateLink: "https://www.amazon.in/dp/B0D7SJJ57Z?tag=pikafinds-21"
+},
 ];
 // ==================== 2. RESELLING CLOSET PRODUCTS ====================
 // RESELLING CLOSET PRODUCTS
