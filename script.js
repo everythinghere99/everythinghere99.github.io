@@ -2849,6 +2849,16 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     price: "₹299",
     affiliateLink: "https://www.amazon.in/dp/B0G2XV5D3H?tag=pikafinds-21"
 },
+{
+    id: "SHREE-P258",
+    name: "Girl's Lip Gloss",
+    images: [
+        "https://m.media-amazon.com/images/I/710xXwcrhSL._SY355_.jpg"
+    ],
+    description: "Useful Girl's Lip Gloss with a stylish design, made for convenient everyday use.",
+    price: "₹279",
+    affiliateLink: "https://www.amazon.in/dp/B0FV3C9172?tag=pikafinds-21"
+},
 ];
 // ==================== 2. RESELLING CLOSET PRODUCTS ====================
 // RESELLING CLOSET PRODUCTS
