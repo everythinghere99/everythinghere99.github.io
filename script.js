@@ -2569,6 +2569,16 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     price: "₹349",
     affiliateLink: "https://www.amazon.in/dp/B0HJBHNZ9M?tag=pikafinds-21"
 },
+{
+    id: "SHREE-P230",
+    name: "Small bouquet decor",
+    images: [
+        "https://m.media-amazon.com/images/I/61jFxq1yN1L._SY355_.jpg"
+    ],
+    description: "Useful Small bouquet decor with a stylish design, made for convenient everyday use.",
+    price: "₹298",
+    affiliateLink: "https://www.amazon.in/dp/B0H42CRF5T?tag=pikafinds-21"
+},
 ];
 // ==================== 2. RESELLING CLOSET PRODUCTS ====================
 // RESELLING CLOSET PRODUCTS
