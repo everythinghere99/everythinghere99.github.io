@@ -2699,6 +2699,16 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     price: "₹399",
     affiliateLink: "https://www.amazon.in/dp/B0H9GJX4N7?tag=pikafinds-21"
 },
+{
+    id: "SHREE-P243",
+    name: "Scented Candles",
+    images: [
+        "https://m.media-amazon.com/images/I/51xs3TFlBOL._SX342_.jpg"
+    ],
+    description: "Useful Scented Candles with a stylish design, made for convenient everyday use.",
+    price: "₹149",
+    affiliateLink: "https://www.amazon.in/dp/B0HC5ZHHRQ?tag=pikafinds-21"
+},
 ];
 // ==================== 2. RESELLING CLOSET PRODUCTS ====================
 // RESELLING CLOSET PRODUCTS
