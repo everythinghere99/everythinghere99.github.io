@@ -2629,6 +2629,16 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     price: "₹298",
     affiliateLink: "https://www.amazon.in/dp/B074XNM757?tag=pikafinds-21"
 },
+{
+    id: "SHREE-P236",
+    name: "Foam mat",
+    images: [
+        "https://m.media-amazon.com/images/I/51FxiHi1R4L._SY355_.jpg"
+    ],
+    description: "Useful Foam mat with a stylish design, made for convenient everyday use.",
+    price: "₹169",
+    affiliateLink: "https://www.amazon.in/dp/B0CQLKSXZL?tag=pikafinds-21"
+},
 ];
 // ==================== 2. RESELLING CLOSET PRODUCTS ====================
 // RESELLING CLOSET PRODUCTS
