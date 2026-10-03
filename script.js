@@ -2609,6 +2609,16 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     price: "₹498",
     affiliateLink: "https://www.amazon.in/dp/B0F7FBCNRX?tag=pikafinds-21"
 },
+{
+    id: "SHREE-P234",
+    name: "Rubber mat",
+    images: [
+        "https://m.media-amazon.com/images/I/71cu6aslmxL._SY355_.jpg"
+    ],
+    description: "Useful Rubber mat with a stylish design, made for convenient everyday use.",
+    price: "₹345",
+    affiliateLink: "https://www.amazon.in/dp/B0C1GYMQ34?tag=pikafinds-21"
+},
 ];
 // ==================== 2. RESELLING CLOSET PRODUCTS ====================
 // RESELLING CLOSET PRODUCTS
