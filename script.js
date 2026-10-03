@@ -3449,6 +3449,16 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     price: "₹539",
     affiliateLink: "https://www.amazon.in/dp/B0GMQ18H8H?tag=pikafinds-21"
 },
+{
+    id: "SHREE-P318",
+    name: "Hair Clutcher",
+    images: [
+        "https://m.media-amazon.com/images/I/81e-dHfNqdL._SY355_.jpg"
+    ],
+    description: "Useful Hair Clutcher with a stylish design, made for convenient everyday use.",
+    price: "₹299",
+    affiliateLink: "https://www.amazon.in/dp/B0F9XG2GJ3?tag=pikafinds-21"
+},
 ];
 // ==================== 2. RESELLING CLOSET PRODUCTS ====================
 // RESELLING CLOSET PRODUCTS
