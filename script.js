@@ -3079,6 +3079,16 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     price: "₹950",
     affiliateLink: "https://www.amazon.in/dp/B0FJSC9F8B?tag=pikafinds-21"
 },
+{
+    id: "SHREE-P281",
+    name: "Women's Kurta",
+    images: [
+        "https://m.media-amazon.com/images/I/71RZwjReBqL._SY445_.jpg"
+    ],
+    description: "Useful Women's Kurta with a stylish design, made for convenient everyday use.",
+    price: "₹1999",
+    affiliateLink: "https://www.amazon.in/dp/B0H2BJJR4D?tag=pikafinds-21"
+},
 ];
 // ==================== 2. RESELLING CLOSET PRODUCTS ====================
 // RESELLING CLOSET PRODUCTS
