@@ -2879,6 +2879,16 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     price: "₹1423",
     affiliateLink: "https://www.amazon.in/dp/B0DZ2NLRZT?tag=pikafinds-21"
 },
+{
+    id: "SHREE-P261",
+    name: "Women's Anarkali Suit",
+    images: [
+        "https://m.media-amazon.com/images/I/41tOBN7uefL._SY445_.jpg"
+    ],
+    description: "Useful Women's Anarkali Suit with a stylish design, made for convenient everyday use.",
+    price: "₹1029",
+    affiliateLink: "https://www.amazon.in/dp/B0GQ9J4SLF?tag=pikafinds-21"
+},
 ];
 // ==================== 2. RESELLING CLOSET PRODUCTS ====================
 // RESELLING CLOSET PRODUCTS
