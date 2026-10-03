@@ -2679,6 +2679,16 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     price: "₹249",
     affiliateLink: "https://www.amazon.in/dp/B0FTGG46ZQ?tag=pikafinds-21"
 },
+{
+    id: "SHREE-P241",
+    name: "Flower decor",
+    images: [
+        "https://m.media-amazon.com/images/I/618o78IpnRL._SY355_.jpg"
+    ],
+    description: "Useful Flower decor with a stylish design, made for convenient everyday use.",
+    price: "₹250",
+    affiliateLink: "https://www.amazon.in/dp/B0FRYB812Q?tag=pikafinds-21"
+},
 ];
 // ==================== 2. RESELLING CLOSET PRODUCTS ====================
 // RESELLING CLOSET PRODUCTS
