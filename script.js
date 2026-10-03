@@ -2549,6 +2549,16 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     price: "₹399",
     affiliateLink: "https://www.amazon.in/dp/B0GY12WRB1?tag=pikafinds-21"
 },
+{
+    id: "SHREE-P228",
+    name: "Flower basket decor",
+    images: [
+        "https://m.media-amazon.com/images/I/81f8bEWnDvL._SY355_.jpg"
+    ],
+    description: "Useful Flower basket decor with a stylish design, made for convenient everyday use.",
+    price: "₹289",
+    affiliateLink: "https://www.amazon.in/dp/B0GF1W1GD3?tag=pikafinds-21"
+},
 ];
 // ==================== 2. RESELLING CLOSET PRODUCTS ====================
 // RESELLING CLOSET PRODUCTS
