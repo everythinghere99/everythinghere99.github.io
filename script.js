@@ -3099,6 +3099,16 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     price: "₹1509",
     affiliateLink: "https://www.amazon.in/dp/B0H6C7G2VF?tag=pikafinds-21"
 },
+{
+    id: "SHREE-P283",
+    name: "Women's Handbag",
+    images: [
+        "https://m.media-amazon.com/images/I/71VkSNswfmL._SX342_.jpg"
+    ],
+    description: "Useful Women's Handbag with a stylish design, made for convenient everyday use.",
+    price: "₹949",
+    affiliateLink: "https://www.amazon.in/dp/B0F2ZWMDLL?tag=pikafinds-21"
+},
 ];
 // ==================== 2. RESELLING CLOSET PRODUCTS ====================
 // RESELLING CLOSET PRODUCTS
