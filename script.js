@@ -2919,6 +2919,16 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     price: "₹2399",
     affiliateLink: "https://www.amazon.in/dp/B09ZSXFNM7?tag=pikafinds-21"
 },
+{
+    id: "SHREE-P265",
+    name: "Women's Lehenga",
+    images: [
+        "https://m.media-amazon.com/images/I/91FoXDopcyL._SY445_.jpg"
+    ],
+    description: "Useful Women's Lehenga with a stylish design, made for convenient everyday use.",
+    price: "₹3749",
+    affiliateLink: "https://www.amazon.in/dp/B09MBWVGX1?tag=pikafinds-21"
+},
 ];
 // ==================== 2. RESELLING CLOSET PRODUCTS ====================
 // RESELLING CLOSET PRODUCTS
