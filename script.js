@@ -2789,6 +2789,16 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     price: "₹198",
     affiliateLink: "https://www.amazon.in/dp/B0BYJWG9DZ?tag=pikafinds-21"
 },
+{
+    id: "SHREE-P252",
+    name: "Men's Cargo Pants",
+    images: [
+        "https://m.media-amazon.com/images/I/51US8mRLhYL._SY445_.jpg"
+    ],
+    description: "Stylish Men's Cargo Pants designed for a comfortable fit and an easy everyday look.",
+    price: "₹644",
+    affiliateLink: "https://www.amazon.in/dp/B0DF2JVC3K?tag=pikafinds-21"
+},
 ];
 // ==================== 2. RESELLING CLOSET PRODUCTS ====================
 // RESELLING CLOSET PRODUCTS
