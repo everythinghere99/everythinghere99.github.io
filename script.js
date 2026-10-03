@@ -2459,6 +2459,16 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     price: "₹229",
     affiliateLink: "https://www.amazon.in/dp/B0B94444P5?tag=pikafinds-21"
 },
+{
+    id: "SHREE-P219",
+    name: "Divyakosh Beads",
+    images: [
+        "https://m.media-amazon.com/images/I/71yt9IO4KiL._SX355_.jpg"
+    ],
+    description: "Useful Divyakosh Beads with a stylish design, made for convenient everyday use.",
+    price: "₹999",
+    affiliateLink: "https://www.amazon.in/dp/B0DPXFH4LB?tag=pikafinds-21"
+},
 ];
 // ==================== 2. RESELLING CLOSET PRODUCTS ====================
 // RESELLING CLOSET PRODUCTS
