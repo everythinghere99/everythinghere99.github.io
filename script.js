@@ -2439,6 +2439,16 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     price: "₹419",
     affiliateLink: "https://www.amazon.in/dp/B07SJV8WXG?tag=pikafinds-21"
 },
+{
+    id: "SHREE-P217",
+    name: "Divyakosh Toran",
+    images: [
+        "https://m.media-amazon.com/images/I/81TB8TNqtHL._SX355_.jpg"
+    ],
+    description: "Useful Divyakosh Toran with a stylish design, made for convenient everyday use.",
+    price: "₹951",
+    affiliateLink: "https://www.amazon.in/dp/B0CR7PTPFZ?tag=pikafinds-21"
+},
 ];
 // ==================== 2. RESELLING CLOSET PRODUCTS ====================
 // RESELLING CLOSET PRODUCTS
