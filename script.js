@@ -2659,6 +2659,16 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     price: "₹360",
     affiliateLink: "https://www.amazon.in/dp/B0H1RKSR6T?tag=pikafinds-21"
 },
+{
+    id: "SHREE-P239",
+    name: "Premium Candles",
+    images: [
+        "https://m.media-amazon.com/images/I/61H+AFSPpTL._SY355_.jpg"
+    ],
+    description: "Useful Premium Candles with a stylish design, made for convenient everyday use.",
+    price: "₹899",
+    affiliateLink: "https://www.amazon.in/dp/B0FDQR6HJN?tag=pikafinds-21"
+},
 ];
 // ==================== 2. RESELLING CLOSET PRODUCTS ====================
 // RESELLING CLOSET PRODUCTS
