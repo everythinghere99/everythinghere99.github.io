@@ -2449,6 +2449,16 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     price: "₹951",
     affiliateLink: "https://www.amazon.in/dp/B0CR7PTPFZ?tag=pikafinds-21"
 },
+{
+    id: "SHREE-P218",
+    name: "Home Decor",
+    images: [
+        "https://m.media-amazon.com/images/I/61izRtJQKoL._SY355_.jpg"
+    ],
+    description: "Useful Home Decor with a stylish design, made for convenient everyday use.",
+    price: "₹229",
+    affiliateLink: "https://www.amazon.in/dp/B0B94444P5?tag=pikafinds-21"
+},
 ];
 // ==================== 2. RESELLING CLOSET PRODUCTS ====================
 // RESELLING CLOSET PRODUCTS
