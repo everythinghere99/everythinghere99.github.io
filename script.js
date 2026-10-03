@@ -2809,6 +2809,16 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     price: "₹279",
     affiliateLink: "https://www.amazon.in/dp/B0FG2LNKYC?tag=pikafinds-21"
 },
+{
+    id: "SHREE-P254",
+    name: "Girl's Hair Clip",
+    images: [
+        "https://m.media-amazon.com/images/I/81aDv3DAaFL._SY355_.jpg"
+    ],
+    description: "Useful Girl's Hair Clip with a stylish design, made for convenient everyday use.",
+    price: "₹189",
+    affiliateLink: "https://www.amazon.in/dp/B0HGM7H49C?tag=pikafinds-21"
+},
 ];
 // ==================== 2. RESELLING CLOSET PRODUCTS ====================
 // RESELLING CLOSET PRODUCTS
