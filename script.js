@@ -3049,6 +3049,16 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     price: "₹274",
     affiliateLink: "https://www.amazon.in/dp/B08L64NTWX?tag=pikafinds-21"
 },
+{
+    id: "SHREE-P278",
+    name: "Women's Denim",
+    images: [
+        "https://m.media-amazon.com/images/I/41AF6VrTD8L._SY445_.jpg"
+    ],
+    description: "Useful Women's Denim with a stylish design, made for convenient everyday use.",
+    price: "₹529",
+    affiliateLink: "https://www.amazon.in/dp/B0G3PCQSL7?tag=pikafinds-21"
+},
 ];
 // ==================== 2. RESELLING CLOSET PRODUCTS ====================
 // RESELLING CLOSET PRODUCTS
