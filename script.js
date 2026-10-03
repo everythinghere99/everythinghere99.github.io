@@ -2649,6 +2649,16 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     price: "₹289",
     affiliateLink: "https://www.amazon.in/dp/B0FVTBGN81?tag=pikafinds-21"
 },
+{
+    id: "SHREE-P238",
+    name: "Candles decor",
+    images: [
+        "https://m.media-amazon.com/images/I/81X-ojax8cL._SX342_.jpg"
+    ],
+    description: "Useful Candles decor with a stylish design, made for convenient everyday use.",
+    price: "₹360",
+    affiliateLink: "https://www.amazon.in/dp/B0H1RKSR6T?tag=pikafinds-21"
+},
 ];
 // ==================== 2. RESELLING CLOSET PRODUCTS ====================
 // RESELLING CLOSET PRODUCTS
