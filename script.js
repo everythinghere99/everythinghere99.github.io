@@ -3439,6 +3439,16 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     price: "₹520",
     affiliateLink: "https://www.amazon.in/dp/B09MC11K5S?tag=pikafinds-21"
 },
+{
+    id: "SHREE-P317",
+    name: "Girl's Cozy Mug",
+    images: [
+        "https://m.media-amazon.com/images/I/41ze5EGJzzL._SY355_.jpg"
+    ],
+    description: "Useful Girl's Cozy Mug with a stylish design, made for convenient everyday use.",
+    price: "₹539",
+    affiliateLink: "https://www.amazon.in/dp/B0GMQ18H8H?tag=pikafinds-21"
+},
 ];
 // ==================== 2. RESELLING CLOSET PRODUCTS ====================
 // RESELLING CLOSET PRODUCTS
