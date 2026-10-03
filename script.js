@@ -2529,6 +2529,16 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     price: "₹695",
     affiliateLink: "https://www.amazon.in/dp/B0DH3Q7P8K?tag=pikafinds-21"
 },
+{
+    id: "SHREE-P226",
+    name: "Shopping planner",
+    images: [
+        "https://m.media-amazon.com/images/I/71vicR1kfcL._SY355_.jpg"
+    ],
+    description: "Useful Shopping planner with a stylish design, made for convenient everyday use.",
+    price: "₹395",
+    affiliateLink: "https://www.amazon.in/dp/B0B3LQT24C?tag=pikafinds-21"
+},
 ];
 // ==================== 2. RESELLING CLOSET PRODUCTS ====================
 // RESELLING CLOSET PRODUCTS
