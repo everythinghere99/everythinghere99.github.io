@@ -2379,6 +2379,16 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     price: "₹188",
     affiliateLink: "https://www.amazon.in/dp/B0DS9RP6ZQ?tag=pikafinds-21"
 },
+{
+    id: "SHREE-P211",
+    name: "Women's Slippers",
+    images: [
+        "https://m.media-amazon.com/images/I/5170aDaJtZL._SY395_.jpg"
+    ],
+    description: "Comfortable Women's Slippers made for everyday use with a practical and stylish look.",
+    price: "₹699",
+    affiliateLink: "https://www.amazon.in/dp/B0H7CK8Y2K?tag=pikafinds-21"
+},
 ];
 // ==================== 2. RESELLING CLOSET PRODUCTS ====================
 // RESELLING CLOSET PRODUCTS
