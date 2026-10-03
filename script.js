@@ -3379,6 +3379,16 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     price: "₹799",
     affiliateLink: "https://www.amazon.in/dp/B0H1LY76HF?tag=pikafinds-21"
 },
+{
+    id: "SHREE-P311",
+    name: "Men's T-Shirt",
+    images: [
+        "https://m.media-amazon.com/images/I/6162R2lh9dL._SY445_.jpg"
+    ],
+    description: "Stylish Men's T-Shirt designed for a comfortable fit and an easy everyday look.",
+    price: "₹1199",
+    affiliateLink: "https://www.amazon.in/dp/B0H5X8ZGBT?tag=pikafinds-21"
+},
 ];
 // ==================== 2. RESELLING CLOSET PRODUCTS ====================
 // RESELLING CLOSET PRODUCTS
