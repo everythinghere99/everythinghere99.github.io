@@ -2969,6 +2969,16 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     price: "₹1799",
     affiliateLink: "https://www.amazon.in/dp/B0G5GS7J4Y?tag=pikafinds-21"
 },
+{
+    id: "SHREE-P270",
+    name: "Women's Dress",
+    images: [
+        "https://m.media-amazon.com/images/I/613rpFYgNKL._SX342_.jpg"
+    ],
+    description: "Stylish Women's Dress designed for a comfortable fit and an easy everyday look.",
+    price: "₹2300",
+    affiliateLink: "https://www.amazon.in/dp/B0F66DDNLC?tag=pikafinds-21"
+},
 ];
 // ==================== 2. RESELLING CLOSET PRODUCTS ====================
 // RESELLING CLOSET PRODUCTS
