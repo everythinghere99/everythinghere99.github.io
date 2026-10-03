@@ -2519,6 +2519,16 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     price: "₹579",
     affiliateLink: "https://www.amazon.in/dp/B0H9HHK6CD?tag=pikafinds-21"
 },
+{
+    id: "SHREE-P225",
+    name: "Meal planner",
+    images: [
+        "https://m.media-amazon.com/images/I/81dLlUPayjL._SY355_.jpg"
+    ],
+    description: "Useful Meal planner with a stylish design, made for convenient everyday use.",
+    price: "₹695",
+    affiliateLink: "https://www.amazon.in/dp/B0DH3Q7P8K?tag=pikafinds-21"
+},
 ];
 // ==================== 2. RESELLING CLOSET PRODUCTS ====================
 // RESELLING CLOSET PRODUCTS
