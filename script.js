@@ -3419,6 +3419,16 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     price: "₹445",
     affiliateLink: "https://www.amazon.in/dp/B0DF2SXFVJ?tag=pikafinds-21"
 },
+{
+    id: "SHREE-P315",
+    name: "Panda Mug",
+    images: [
+        "https://m.media-amazon.com/images/I/51K7bdGBI-L._SY355_.jpg"
+    ],
+    description: "Useful Panda Mug with a stylish design, made for convenient everyday use.",
+    price: "₹599",
+    affiliateLink: "https://www.amazon.in/dp/B08PDF61G5?tag=pikafinds-21"
+},
 ];
 // ==================== 2. RESELLING CLOSET PRODUCTS ====================
 // RESELLING CLOSET PRODUCTS
