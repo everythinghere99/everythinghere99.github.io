@@ -2539,6 +2539,16 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     price: "₹395",
     affiliateLink: "https://www.amazon.in/dp/B0B3LQT24C?tag=pikafinds-21"
 },
+{
+    id: "SHREE-P227",
+    name: "Flower pot decor",
+    images: [
+        "https://m.media-amazon.com/images/I/61FyRYJ2CvL._SY355_.jpg"
+    ],
+    description: "Useful Flower pot decor with a stylish design, made for convenient everyday use.",
+    price: "₹399",
+    affiliateLink: "https://www.amazon.in/dp/B0GY12WRB1?tag=pikafinds-21"
+},
 ];
 // ==================== 2. RESELLING CLOSET PRODUCTS ====================
 // RESELLING CLOSET PRODUCTS
