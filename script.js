@@ -3329,6 +3329,16 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     price: "₹1192",
     affiliateLink: "https://www.amazon.in/dp/B0F29KKQ6N?tag=pikafinds-21"
 },
+{
+    id: "SHREE-P306",
+    name: "Men's Beggy Jeans",
+    images: [
+        "https://m.media-amazon.com/images/I/61a3zW2KrEL._SY445_.jpg"
+    ],
+    description: "Useful Men's Beggy Jeans with a stylish design, made for convenient everyday use.",
+    price: "₹1299",
+    affiliateLink: "https://www.amazon.in/dp/B0G6THGMCH?tag=pikafinds-21"
+},
 ];
 // ==================== 2. RESELLING CLOSET PRODUCTS ====================
 // RESELLING CLOSET PRODUCTS
