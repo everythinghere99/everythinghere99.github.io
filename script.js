@@ -2689,6 +2689,16 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     price: "₹250",
     affiliateLink: "https://www.amazon.in/dp/B0FRYB812Q?tag=pikafinds-21"
 },
+{
+    id: "SHREE-P242",
+    name: "Handmade Candles",
+    images: [
+        "https://m.media-amazon.com/images/I/71nX17USW+L._SX342_.jpg"
+    ],
+    description: "Useful Handmade Candles with a stylish design, made for convenient everyday use.",
+    price: "₹399",
+    affiliateLink: "https://www.amazon.in/dp/B0H9GJX4N7?tag=pikafinds-21"
+},
 ];
 // ==================== 2. RESELLING CLOSET PRODUCTS ====================
 // RESELLING CLOSET PRODUCTS
