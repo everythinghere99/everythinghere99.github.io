@@ -3209,6 +3209,16 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     price: "₹6015",
     affiliateLink: "https://www.amazon.in/dp/B0FWB8JSWX?tag=pikafinds-21"
 },
+{
+    id: "SHREE-P294",
+    name: "Women's Kurti",
+    images: [
+        "https://m.media-amazon.com/images/I/71gKp6p2W5L._SY445_.jpg"
+    ],
+    description: "Stylish Women's Kurti designed for a comfortable fit and an easy everyday look.",
+    price: "₹435",
+    affiliateLink: "https://www.amazon.in/dp/B0CK4RJWTW?tag=pikafinds-21"
+},
 ];
 // ==================== 2. RESELLING CLOSET PRODUCTS ====================
 // RESELLING CLOSET PRODUCTS
