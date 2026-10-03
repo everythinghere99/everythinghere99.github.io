@@ -2859,6 +2859,16 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     price: "₹279",
     affiliateLink: "https://www.amazon.in/dp/B0FV3C9172?tag=pikafinds-21"
 },
+{
+    id: "SHREE-P259",
+    name: "Women's Saree",
+    images: [
+        "https://m.media-amazon.com/images/I/71gS38s-xUL._SX342_.jpg"
+    ],
+    description: "Useful Women's Saree with a stylish design, made for convenient everyday use.",
+    price: "₹1391",
+    affiliateLink: "https://www.amazon.in/dp/B0DZ2NMLFH?tag=pikafinds-21"
+},
 ];
 // ==================== 2. RESELLING CLOSET PRODUCTS ====================
 // RESELLING CLOSET PRODUCTS
