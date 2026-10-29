@@ -3473,10 +3473,7 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     id: "SHREE-P320",
     name: "Women's Hair Clips",
     images: [
-        "https://m.media-amazon.com/images/I/71uEp-flm9L._SY355_PIbundle-3",
-        "TopRight",
-        "0",
-        "0_SX343SY355SH20_.jpg"
+        "https://m.media-amazon.com/images/I/71uEp-flm9L._SY355_.jpg"
     ],
     description: "Useful Women's Hair Clips with a stylish design, made for convenient everyday use.",
     price: "₹199",
@@ -3486,10 +3483,7 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     id: "SHREE-P321",
     name: "Hair Clips Set",
     images: [
-        "https://m.media-amazon.com/images/I/81GreaD6IJL._SY355_PIbundle-30",
-        "TopRight",
-        "0",
-        "0_AA355SH20_.jpg"
+        "https://m.media-amazon.com/images/I/81GreaD6IJL._SY355_.jpg"
     ],
     description: "Useful Hair Clips Set with a stylish design, made for convenient everyday use.",
     price: "₹419",
@@ -3499,10 +3493,7 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     id: "SHREE-P322",
     name: "Cozy Hair Clips",
     images: [
-        "https://m.media-amazon.com/images/I/81Z7cQqwRwL._SY355_PIbundle-11",
-        "TopRight",
-        "0",
-        "0_AA355SH20_.jpg"
+        "https://m.media-amazon.com/images/I/81Z7cQqwRwL._SY355_.jpg"
     ],
     description: "Useful Cozy Hair Clips with a stylish design, made for convenient everyday use.",
     price: "₹295",
