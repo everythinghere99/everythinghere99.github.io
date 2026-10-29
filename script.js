@@ -3525,6 +3525,19 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     price: "₹419",
     affiliateLink: "https://www.amazon.in/dp/B0GSWZPQMJ?tag=pikafinds-21"
 },
+{
+    id: "SHREE-P325",
+    name: "Cozy Hair Clips",
+    images: [
+        "https://m.media-amazon.com/images/I/81Z7cQqwRwL._SY355_PIbundle-11",
+        "TopRight",
+        "0",
+        "0_AA355SH20_.jpg"
+    ],
+    description: "Useful Cozy Hair Clips with a stylish design, made for convenient everyday use.",
+    price: "₹295",
+    affiliateLink: "https://www.amazon.in/dp/B099FD4Y2D?tag=pikafinds-21"
+},
 ];
 // ==================== 2. RESELLING CLOSET PRODUCTS ====================
 // RESELLING CLOSET PRODUCTS
