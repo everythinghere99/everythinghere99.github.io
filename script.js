@@ -3499,6 +3499,16 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     price: "₹295",
     affiliateLink: "https://www.amazon.in/dp/B099FD4Y2D?tag=pikafinds-21"
 },
+{
+    id: "SHREE-P323",
+    name: "Wireless Earbuds",
+    images: [
+        "https://m.media-amazon.com/images/I/61dj32WdrxL._SX342_.jpg"
+    ],
+    description: "Useful Wireless Earbuds with a stylish design, made for convenient everyday use.",
+    price: "₹1799",
+    affiliateLink: "https://www.amazon.in/dp/B0DBGP48NW?tag=pikafinds-21"
+},
 ];
 // ==================== 2. RESELLING CLOSET PRODUCTS ====================
 // RESELLING CLOSET PRODUCTS
