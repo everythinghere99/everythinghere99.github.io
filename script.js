@@ -3512,6 +3512,19 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     price: "₹189",
     affiliateLink: "https://www.amazon.in/dp/B0DGLQ9R9R?tag=pikafinds-21"
 },
+{
+    id: "SHREE-P324",
+    name: "Women's hair clips",
+    images: [
+        "https://m.media-amazon.com/images/I/81GreaD6IJL._SY355_PIbundle-30",
+        "TopRight",
+        "0",
+        "0_AA355SH20_.jpg"
+    ],
+    description: "Useful Women's hair clips with a stylish design, made for convenient everyday use.",
+    price: "₹419",
+    affiliateLink: "https://www.amazon.in/dp/B0GSWZPQMJ?tag=pikafinds-21"
+},
 ];
 // ==================== 2. RESELLING CLOSET PRODUCTS ====================
 // RESELLING CLOSET PRODUCTS
