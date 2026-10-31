@@ -3549,6 +3549,16 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     price: "₹349",
     affiliateLink: "https://www.amazon.in/dp/B0GX715T4D?tag=pikafinds-21"
 },
+{
+    id: "SHREE-P328",
+    name: "Pluspoint Panda",
+    images: [
+        "https://m.media-amazon.com/images/I/51aW871-zOL._SY355_.jpg"
+    ],
+    description: "Useful Pluspoint Panda with a stylish design, made for convenient everyday use.",
+    price: "₹450",
+    affiliateLink: "https://www.amazon.in/dp/B0F7GJ21V9?tag=pikafinds-21"
+},
 ];
 // ==================== 2. RESELLING CLOSET PRODUCTS ====================
 // RESELLING CLOSET PRODUCTS
