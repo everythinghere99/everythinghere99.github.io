@@ -3529,6 +3529,16 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     price: "₹479",
     affiliateLink: "https://www.amazon.in/dp/B0GY3TZG29?tag=pikafinds-21"
 },
+{
+    id: "SHREE-P326",
+    name: "Women's Cute Keychain",
+    images: [
+        "https://m.media-amazon.com/images/I/619Q7tRUzhL._SX342_.jpg"
+    ],
+    description: "Useful Women's Cute Keychain with a stylish design, made for convenient everyday use.",
+    price: "₹281",
+    affiliateLink: "https://www.amazon.in/dp/B0FY6TDDRP?tag=pikafinds-21"
+},
 ];
 // ==================== 2. RESELLING CLOSET PRODUCTS ====================
 // RESELLING CLOSET PRODUCTS
