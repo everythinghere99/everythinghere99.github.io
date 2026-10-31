@@ -3539,6 +3539,16 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     price: "₹281",
     affiliateLink: "https://www.amazon.in/dp/B0FY6TDDRP?tag=pikafinds-21"
 },
+{
+    id: "SHREE-P327",
+    name: "Women's Kawaii Premium",
+    images: [
+        "https://m.media-amazon.com/images/I/71rmBfLs03L._SX342_.jpg"
+    ],
+    description: "Useful Women's Kawaii Premium with a stylish design, made for convenient everyday use.",
+    price: "₹349",
+    affiliateLink: "https://www.amazon.in/dp/B0GX715T4D?tag=pikafinds-21"
+},
 ];
 // ==================== 2. RESELLING CLOSET PRODUCTS ====================
 // RESELLING CLOSET PRODUCTS
