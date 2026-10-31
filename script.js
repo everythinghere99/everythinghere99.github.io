@@ -3559,6 +3559,16 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     price: "₹450",
     affiliateLink: "https://www.amazon.in/dp/B0F7GJ21V9?tag=pikafinds-21"
 },
+{
+    id: "SHREE-P329",
+    name: "Women's Hoodie",
+    images: [
+        "https://m.media-amazon.com/images/I/41HlsP3rCaL._SX342_.jpg"
+    ],
+    description: "Useful Women's Hoodie with a stylish design, made for convenient everyday use.",
+    price: "₹499",
+    affiliateLink: "https://www.amazon.in/dp/B0DDPNSF2Y?tag=pikafinds-21"
+},
 ];
 // ==================== 2. RESELLING CLOSET PRODUCTS ====================
 // RESELLING CLOSET PRODUCTS
