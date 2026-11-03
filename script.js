@@ -3582,6 +3582,16 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     price: "₹299",
     affiliateLink: "https://www.amazon.in/dp/B0GY93VV13?tag=pikafinds-21"
 },
+{
+    id: "SHREE-P331",
+    name: "Item",
+    images: [
+        "https://images-na.ssl-images-amazon.com/images/P/B0CW3TSZP8.01._SCLZZZZZZZ_SX900_.jpg"
+    ],
+    description: "Useful Item with a stylish design, made for convenient everyday use.",
+    price: "369",
+    affiliateLink: "https://www.amazon.in/dp/B0CW3TSZP8?tag=pikafinds-21"
+},
 ];
 // ==================== 2. RESELLING CLOSET PRODUCTS ====================
 // RESELLING CLOSET PRODUCTS
