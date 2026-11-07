@@ -3602,6 +3602,16 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     price: "₹208",
     affiliateLink: "https://www.amazon.in/dp/B0GCVKPQX6?tag=pikafinds-21"
 },
+{
+    id: "SHREE-P333",
+    name: "Women's Scented Flower",
+    images: [
+        "https://m.media-amazon.com/images/I/61anp6vTQNL._SX342_.jpg"
+    ],
+    description: "Useful Women's Scented Flower with a stylish design, made for convenient everyday use.",
+    price: "₹349",
+    affiliateLink: "https://www.amazon.in/dp/B0HGNP2WSK?tag=pikafinds-21"
+},
 ];
 // ==================== 2. RESELLING CLOSET PRODUCTS ====================
 // RESELLING CLOSET PRODUCTS
