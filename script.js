@@ -3622,6 +3622,16 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     price: "₹297",
     affiliateLink: "https://www.amazon.in/dp/B0H1RGDVTP?tag=pikafinds-21"
 },
+{
+    id: "SHREE-P335",
+    name: "Women's Plastic Cute",
+    images: [
+        "https://m.media-amazon.com/images/I/51KuEYWcHLL._SX342_.jpg"
+    ],
+    description: "Useful Women's Plastic Cute with a stylish design, made for convenient everyday use.",
+    price: "₹60",
+    affiliateLink: "https://www.amazon.in/dp/B0GHZC91J1?tag=pikafinds-21"
+},
 ];
 // ==================== 2. RESELLING CLOSET PRODUCTS ====================
 // RESELLING CLOSET PRODUCTS
