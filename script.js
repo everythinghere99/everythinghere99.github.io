@@ -3642,6 +3642,16 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     price: "₹297",
     affiliateLink: "https://www.amazon.in/dp/B0F9YYCLQW?tag=pikafinds-21"
 },
+{
+    id: "SHREE-P337",
+    name: "Sweatshirt",
+    images: [
+        "https://images-na.ssl-images-amazon.com/images/P/B0HB3X5RBC.01._SCLZZZZZZZ_SX900_.jpg"
+    ],
+    description: "Stylish Sweatshirt designed for a comfortable fit and an easy everyday look.",
+    price: "299",
+    affiliateLink: "https://www.amazon.in/dp/B0HB3X5RBC?tag=pikafinds-21"
+},
 ];
 // ==================== 2. RESELLING CLOSET PRODUCTS ====================
 // RESELLING CLOSET PRODUCTS
