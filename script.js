@@ -3652,6 +3652,16 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     price: "299",
     affiliateLink: "https://www.amazon.in/dp/B0HB3X5RBC?tag=pikafinds-21"
 },
+{
+    id: "SHREE-P338",
+    name: "Korean Jeans",
+    images: [
+        "https://images-na.ssl-images-amazon.com/images/P/B0DTPVNSCB.01._SCLZZZZZZZ_SX900_.jpg"
+    ],
+    description: "Useful Korean Jeans with a stylish design, made for convenient everyday use.",
+    price: "899",
+    affiliateLink: "https://www.amazon.in/dp/B0DTPVNSCB?tag=pikafinds-21"
+},
 ];
 // ==================== 2. RESELLING CLOSET PRODUCTS ====================
 // RESELLING CLOSET PRODUCTS
