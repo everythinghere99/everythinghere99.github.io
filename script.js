@@ -3662,6 +3662,16 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     price: "899",
     affiliateLink: "https://www.amazon.in/dp/B0DTPVNSCB?tag=pikafinds-21"
 },
+{
+    id: "SHREE-P339",
+    name: "Women's Oversized T-Shirt",
+    images: [
+        "https://m.media-amazon.com/images/I/61mB1y6aBvL._SX342_.jpg"
+    ],
+    description: "Stylish Women's Oversized T-Shirt designed for a comfortable fit and an easy everyday look.",
+    price: "₹344",
+    affiliateLink: "https://www.amazon.in/dp/B0F7HN9YF4?tag=pikafinds-21"
+},
 ];
 // ==================== 2. RESELLING CLOSET PRODUCTS ====================
 // RESELLING CLOSET PRODUCTS
