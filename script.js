@@ -3682,6 +3682,16 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     price: "₹668",
     affiliateLink: "https://www.amazon.in/dp/B0HP6DNX9X?tag=pikafinds-21"
 },
+{
+    id: "SHREE-P341",
+    name: "Women's Jeans",
+    images: [
+        "https://m.media-amazon.com/images/I/61XLqZ-wyCL._SY445_.jpg"
+    ],
+    description: "Useful Women's Jeans with a stylish design, made for convenient everyday use.",
+    price: "₹899",
+    affiliateLink: "https://www.amazon.in/dp/B0DTPWVPSX?tag=pikafinds-21"
+},
 ];
 // ==================== 2. RESELLING CLOSET PRODUCTS ====================
 // RESELLING CLOSET PRODUCTS
