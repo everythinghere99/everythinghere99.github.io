@@ -3692,6 +3692,16 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     price: "₹899",
     affiliateLink: "https://www.amazon.in/dp/B0DTPWVPSX?tag=pikafinds-21"
 },
+{
+    id: "SHREE-P342",
+    name: "Blue Nectar",
+    images: [
+        "https://m.media-amazon.com/images/I/61RYpdPH+2L._SY355_.jpg"
+    ],
+    description: "Useful Blue Nectar with a stylish design, made for convenient everyday use.",
+    price: "₹515",
+    affiliateLink: "https://www.amazon.in/dp/B0C4H9SXML?tag=pikafinds-21"
+},
 ];
 // ==================== 2. RESELLING CLOSET PRODUCTS ====================
 // RESELLING CLOSET PRODUCTS
