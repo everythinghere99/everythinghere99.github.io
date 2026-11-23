@@ -3702,6 +3702,16 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     price: "₹515",
     affiliateLink: "https://www.amazon.in/dp/B0C4H9SXML?tag=pikafinds-21"
 },
+{
+    id: "SHREE-P343",
+    name: "Women's The Souled",
+    images: [
+        "https://m.media-amazon.com/images/I/61agOWpDxEL._SY445_.jpg"
+    ],
+    description: "Useful Women's The Souled with a stylish design, made for convenient everyday use.",
+    price: "₹2299",
+    affiliateLink: "https://www.amazon.in/dp/B0GHLBDGM8?tag=pikafinds-21"
+},
 ];
 // ==================== 2. RESELLING CLOSET PRODUCTS ====================
 // RESELLING CLOSET PRODUCTS
