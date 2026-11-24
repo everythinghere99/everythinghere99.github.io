@@ -3712,6 +3712,19 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     price: "₹2299",
     affiliateLink: "https://www.amazon.in/dp/B0GHLBDGM8?tag=pikafinds-21"
 },
+{
+    id: "SHREE-P344",
+    name: "Anna Creations",
+    images: [
+        "https://m.media-amazon.com/images/I/71Dy74atgOL._SY355_PIbundle-8",
+        "TopRight",
+        "0",
+        "0_AA355SH20_.jpg"
+    ],
+    description: "Useful Anna Creations with a stylish design, made for convenient everyday use.",
+    price: "₹306",
+    affiliateLink: "https://www.amazon.in/dp/B0DQY8MWFL?tag=pikafinds-21"
+},
 ];
 // ==================== 2. RESELLING CLOSET PRODUCTS ====================
 // RESELLING CLOSET PRODUCTS
