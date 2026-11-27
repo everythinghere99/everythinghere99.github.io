@@ -3725,6 +3725,16 @@ affiliateLink: "https://www.amazon.in/dp/B0DXPFN8C2?tag=pikafinds-21"
     price: "₹306",
     affiliateLink: "https://www.amazon.in/dp/B0DQY8MWFL?tag=pikafinds-21"
 },
+{
+    id: "SHREE-P345",
+    name: "Inch tape",
+    images: [
+        "https://images-na.ssl-images-amazon.com/images/P/B0DCSRVJ4N.01._SCLZZZZZZZ_SX900_.jpg"
+    ],
+    description: "Useful Inch tape with a stylish design, made for convenient everyday use.",
+    price: "₹37",
+    affiliateLink: "https://www.amazon.in/dp/B0DCSRVJ4N?tag=pikafinds-21"
+},
 ];
 // ==================== 2. RESELLING CLOSET PRODUCTS ====================
 // RESELLING CLOSET PRODUCTS
